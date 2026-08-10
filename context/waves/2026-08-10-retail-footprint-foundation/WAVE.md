@@ -25,6 +25,7 @@ before broader chain coverage begins.
 | 06 | Home improvement market packet | complete | Added Markdown/JSON packet output for Home Depot vs. Lowe's in Atlanta / Marietta / Cumberland. |
 | 07 | Packet narrative summary | complete | Added an evidence-derived executive summary to Markdown and JSON market packets. |
 | 08 | Packet schema contract | complete | Added a JSON Schema and compatibility notes for market-packet consumers. |
+| 09 | Packet validator command | complete | Added `validate-packet` for repo-local market-packet JSON contract checks. |
 
 ## Success criteria
 

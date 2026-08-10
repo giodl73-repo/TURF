@@ -8,6 +8,7 @@ place-context disagreements, and distance catchments into one auditable packet.
 ```powershell
 cargo run -p turf-cli -- market-packet "Home Improvement" "Atlanta / Marietta / Cumberland" fixtures\packets\home-improvement-atlanta-stores.csv fixtures\packets\home-improvement-atlanta-places.csv fixtures\packets\home-improvement-atlanta-demand.csv
 cargo run -p turf-cli -- market-packet --json "Home Improvement" "Atlanta / Marietta / Cumberland" fixtures\packets\home-improvement-atlanta-stores.csv fixtures\packets\home-improvement-atlanta-places.csv fixtures\packets\home-improvement-atlanta-demand.csv
+cargo run -p turf-cli -- validate-packet reports\home-improvement-atlanta.json
 ```
 
 ## Inputs
@@ -24,6 +25,8 @@ The Markdown packet is meant for human review. The JSON packet is meant for
 agents, dashboards, and future atlas generation.
 
 The JSON shape is documented in `schemas/market-packet.schema.json`.
+`validate-packet` checks the required current contract for checked-in packet
+artifacts.
 
 Both formats preserve:
 

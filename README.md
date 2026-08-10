@@ -18,6 +18,7 @@ cargo run -p turf-cli -- place-context fixtures\geography\place-contexts.csv
 cargo run -p turf-cli -- place-context --json fixtures\geography\place-contexts.csv
 cargo run -p turf-cli -- catchment fixtures\brands\home-improvement-pois.csv fixtures\geography\demand-points.csv
 cargo run -p turf-cli -- market-packet "Home Improvement" "Atlanta / Marietta / Cumberland" fixtures\packets\home-improvement-atlanta-stores.csv fixtures\packets\home-improvement-atlanta-places.csv fixtures\packets\home-improvement-atlanta-demand.csv
+cargo run -p turf-cli -- validate-packet reports\home-improvement-atlanta.json
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -36,6 +37,9 @@ and gravity models, not a claim about corporate territories.
 The `market-packet` command combines those contracts into a first readable
 report. The checked-in example is `reports\home-improvement-atlanta.md`, with a
 JSON companion for dashboards and future atlas generation.
+
+The `validate-packet` command checks a market-packet JSON file against TURF's
+current required-field contract without adding a runtime schema dependency.
 
 ## Product thesis
 

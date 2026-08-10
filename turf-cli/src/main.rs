@@ -4,7 +4,7 @@ use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
     build_market_packet, inspect_place_contexts, parse_demand_points, parse_place_contexts,
     parse_store_points, render_market_packet_json, render_market_packet_markdown,
-    render_place_context_findings_json, summarize_footprint,
+    render_place_context_findings_json, summarize_footprint, validate_market_packet_json,
 };
 
 fn main() {
@@ -109,6 +109,15 @@ fn run() -> Result<(), String> {
             }
             Ok(())
         }
+        Some("validate-packet") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli validate-packet <market-packet.json>")?;
+            let json = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            validate_market_packet_json(&json)?;
+            println!("valid,{}", path);
+            Ok(())
+        }
         Some("--help") | Some("-h") | None => {
             print_help();
             Ok(())
@@ -127,6 +136,7 @@ fn print_help() {
     println!(
         "  market-packet [--json] <category> <geography> <stores.csv> <places.csv> <demand.csv>"
     );
+    println!("  validate-packet <market-packet.json>  Check market packet JSON contract");
 }
 
 fn print_summary(summary: &turf_core::FootprintSummary) {

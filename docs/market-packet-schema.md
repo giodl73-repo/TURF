@@ -23,6 +23,12 @@ Get-Content schemas\market-packet.schema.json -Raw | ConvertFrom-Json | Out-Null
 Get-Content reports\home-improvement-atlanta.json -Raw | ConvertFrom-Json | Out-Null
 ```
 
+Use TURF's built-in contract check for repo-local packet validation:
+
+```powershell
+cargo run -p turf-cli -- validate-packet reports\home-improvement-atlanta.json
+```
+
 The repo does not yet include a JSON Schema validation dependency. Until TURF
 adds one intentionally, schema validation remains a documented consumer
-contract plus JSON parse checks.
+contract plus JSON parse checks and the built-in required-field validator.

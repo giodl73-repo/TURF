@@ -699,12 +699,81 @@ pub fn render_market_packet_json(packet: &MarketPacket) -> String {
     output
 }
 
+pub fn validate_market_packet_json(json: &str) -> Result<(), String> {
+    let trimmed = json.trim();
+    if !trimmed.starts_with('{') || !trimmed.ends_with('}') {
+        return Err("market packet JSON must be an object".to_string());
+    }
+
+    let required_keys = [
+        "\"category\":",
+        "\"geography\":",
+        "\"total_stores\":",
+        "\"narrative_summary\":",
+        "\"brands\":[",
+        "\"cities\":[",
+        "\"place_findings\":[",
+        "\"catchments\":[",
+        "\"cautions\":[",
+    ];
+    for key in required_keys {
+        if !trimmed.contains(key) {
+            return Err(format!("market packet JSON missing {key}"));
+        }
+    }
+
+    let required_nested_keys = [
+        "\"brand\":",
+        "\"stores\":",
+        "\"city\":",
+        "\"state\":",
+        "\"leader\":",
+        "\"leader_stores\":",
+        "\"status\":",
+        "\"place_id\":",
+        "\"finding_kind\":",
+        "\"demand_id\":",
+        "\"assigned_brand\":",
+        "\"assigned_store_id\":",
+        "\"distance_miles\":",
+        "\"weight\":",
+    ];
+    for key in required_nested_keys {
+        if !trimmed.contains(key) {
+            return Err(format!("market packet JSON missing nested {key}"));
+        }
+    }
+
+    validate_status_values(trimmed)?;
+
+    Ok(())
+}
+
 fn required<'a>(value: &'a str, line_number: usize, field: &str) -> Result<&'a str, String> {
     if value.is_empty() {
         Err(format!("line {line_number}: missing {field}"))
     } else {
         Ok(value)
     }
+}
+
+fn validate_status_values(json: &str) -> Result<(), String> {
+    let marker = "\"status\":\"";
+    let mut remainder = json;
+    while let Some(offset) = remainder.find(marker) {
+        let value_start = offset + marker.len();
+        let value_remainder = &remainder[value_start..];
+        let Some(value_end) = value_remainder.find('"') else {
+            return Err("market packet JSON has an unterminated status value".to_string());
+        };
+        let value = &value_remainder[..value_end];
+        if value != "dominant" && value != "contested" {
+            return Err(format!("market packet JSON has invalid status: {value}"));
+        }
+        remainder = &value_remainder[value_end + 1..];
+    }
+
+    Ok(())
 }
 
 fn required_argument<'a>(value: &'a str, field: &str) -> Result<&'a str, String> {
@@ -1015,5 +1084,24 @@ demand-1,Near Marietta,atl-edge-30339,33.9526,-84.5499,10
         assert!(json.contains("\"category\":\"Home Improvement\""));
         assert!(json.contains("\"narrative_summary\""));
         assert!(json.contains("\"catchments\""));
+        validate_market_packet_json(&json).expect("packet validates");
+    }
+
+    #[test]
+    fn rejects_market_packet_json_missing_required_fields() {
+        let error = validate_market_packet_json("{\"category\":\"Home Improvement\"}")
+            .expect_err("missing fields should fail");
+
+        assert!(error.contains("missing"));
+    }
+
+    #[test]
+    fn rejects_market_packet_json_with_unknown_city_status() {
+        let json = "\
+{\"category\":\"Home Improvement\",\"geography\":\"Atlanta\",\"total_stores\":1,\"narrative_summary\":\"summary\",\"brands\":[{\"brand\":\"Home Depot\",\"stores\":1}],\"cities\":[{\"city\":\"Atlanta\",\"state\":\"GA\",\"leader\":\"Home Depot\",\"leader_stores\":1,\"total_stores\":1,\"status\":\"owned\"}],\"place_findings\":[{\"place_id\":\"atl\",\"label\":\"Atlanta\",\"finding_kind\":\"kind\",\"finding\":\"finding\"}],\"catchments\":[{\"demand_id\":\"demand\",\"label\":\"Demand\",\"place_id\":\"atl\",\"assigned_brand\":\"Home Depot\",\"assigned_store_id\":\"hd\",\"distance_miles\":0.0,\"weight\":1}],\"cautions\":[\"caution\"]}";
+
+        let error = validate_market_packet_json(json).expect_err("invalid status should fail");
+
+        assert!(error.contains("invalid status"));
     }
 }

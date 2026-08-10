@@ -142,3 +142,27 @@ Status: pass.
 
 The schema describes TURF-generated packet outputs only. It does not authorize
 or imply any external data acquisition.
+
+## Pulse 09 Validator Review
+
+### Future Agent
+
+Status: pass.
+
+`validate-packet` gives future agents a simple command to run before changing
+or trusting checked-in packet JSON.
+
+### Report Contract Editor
+
+Status: pass with watch item.
+
+The validator covers required fields and status labels. The watch item is that
+full JSON Schema validation should become an intentional dependency decision,
+not an accidental one.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The validator checks TURF-produced report structure only and does not change
+source acquisition policy.
