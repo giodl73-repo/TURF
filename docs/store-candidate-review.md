@@ -39,6 +39,8 @@ Current reason codes:
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- export-packet-ready fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- export-packet-ready-postal fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 ```
 
 ## Rules
@@ -51,3 +53,5 @@ cargo run -p turf-cli -- export-packet-ready fixtures\stores\overture-home-impro
   explicitly states otherwise.
 - `export-packet-ready` produces the smaller `StorePoint` CSV shape used by
   summary and catchment commands.
+- `export-packet-ready-postal` preserves postal code and adds a ZIP-derived
+  `zcta_candidate` key for future Census enrichment.

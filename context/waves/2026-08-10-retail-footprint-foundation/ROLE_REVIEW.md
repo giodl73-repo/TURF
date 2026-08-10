@@ -288,3 +288,29 @@ Status: pass.
 `export-packet-ready` gives future agents a repeatable way to turn reviewed
 candidates into the existing store-point shape used by summaries and
 catchments.
+
+## Pulse 15 Georgia Postal Footprint Read
+
+### Market Geographer
+
+Status: pass with required next gate.
+
+The pulse keeps source postal ZIPs separate from confirmed Census ZCTAs by
+calling the derived join field `zcta_candidate`. The next gate is a Census
+relationship-file or TIGER/Line join before claiming county, CBSA, urban area,
+or ZCTA polygon membership.
+
+### Market Analyst
+
+Status: pass.
+
+The postal read identifies 21 contested ZIP/ZCTA-candidate groups. That is a
+more useful queue for territory investigation than scanning all 106 postal
+groups.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse uses Overture-provided postal codes and existing Census/ZCTA source
+policy. It does not acquire or redistribute restricted USPS address files.

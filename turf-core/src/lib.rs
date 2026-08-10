@@ -44,6 +44,18 @@ pub struct ReviewedStorePoint {
     pub review_reason: String,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct PostalStorePoint {
+    pub brand: String,
+    pub store_id: String,
+    pub city: String,
+    pub state: String,
+    pub postal_code: String,
+    pub zcta_candidate: String,
+    pub latitude: f64,
+    pub longitude: f64,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct BrandSummary {
     pub brand: String,
@@ -54,6 +66,16 @@ pub struct BrandSummary {
 pub struct CityDominance {
     pub city: String,
     pub state: String,
+    pub leader: String,
+    pub leader_stores: usize,
+    pub total_stores: usize,
+    pub status: MarketStatus,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct PostalCodeDominance {
+    pub postal_code: String,
+    pub zcta_candidate: String,
     pub leader: String,
     pub leader_stores: usize,
     pub total_stores: usize,
@@ -511,6 +533,28 @@ pub fn packet_ready_store_points(reviewed_points: &[ReviewedStorePoint]) -> Vec<
         .collect()
 }
 
+pub fn packet_ready_postal_store_points(
+    reviewed_points: &[ReviewedStorePoint],
+) -> Vec<PostalStorePoint> {
+    reviewed_points
+        .iter()
+        .filter(|point| point.review_status == "packet_ready")
+        .map(|point| {
+            let postal_code = normalize_zip5(&point.postal_code);
+            PostalStorePoint {
+                brand: point.brand.clone(),
+                store_id: point.store_id.clone(),
+                city: point.city.clone(),
+                state: point.state.clone(),
+                zcta_candidate: postal_code.clone(),
+                postal_code,
+                latitude: point.latitude,
+                longitude: point.longitude,
+            }
+        })
+        .collect()
+}
+
 pub fn render_store_points_csv(points: &[StorePoint]) -> String {
     let mut output = String::from("brand,store_id,city,state,latitude,longitude\n");
     for point in points {
@@ -528,6 +572,72 @@ pub fn render_store_points_csv(points: &[StorePoint]) -> String {
         output.push('\n');
     }
     output
+}
+
+pub fn render_postal_store_points_csv(points: &[PostalStorePoint]) -> String {
+    let mut output =
+        String::from("brand,store_id,city,state,postal_code,zcta_candidate,latitude,longitude\n");
+    for point in points {
+        output.push_str(&point.brand);
+        output.push(',');
+        output.push_str(&point.store_id);
+        output.push(',');
+        output.push_str(&point.city);
+        output.push(',');
+        output.push_str(&point.state);
+        output.push(',');
+        output.push_str(&point.postal_code);
+        output.push(',');
+        output.push_str(&point.zcta_candidate);
+        output.push(',');
+        output.push_str(&point.latitude.to_string());
+        output.push(',');
+        output.push_str(&point.longitude.to_string());
+        output.push('\n');
+    }
+    output
+}
+
+pub fn summarize_postal_footprint(points: &[PostalStorePoint]) -> Vec<PostalCodeDominance> {
+    let mut postal_counts: BTreeMap<(String, String), BTreeMap<String, usize>> = BTreeMap::new();
+
+    for point in points {
+        *postal_counts
+            .entry((point.postal_code.clone(), point.zcta_candidate.clone()))
+            .or_default()
+            .entry(point.brand.clone())
+            .or_insert(0) += 1;
+    }
+
+    postal_counts
+        .into_iter()
+        .map(|((postal_code, zcta_candidate), counts)| {
+            let total_stores = counts.values().sum();
+            let (leader, leader_stores) = counts
+                .iter()
+                .max_by(|left, right| left.1.cmp(right.1).then_with(|| right.0.cmp(left.0)))
+                .map(|(brand, stores)| (brand.clone(), *stores))
+                .unwrap_or_else(|| ("none".to_string(), 0));
+            let tied_leaders = counts
+                .values()
+                .filter(|stores| **stores == leader_stores)
+                .count();
+            let status = if tied_leaders > 1 || leader_stores * 2 <= total_stores {
+                MarketStatus::Contested
+            } else {
+                MarketStatus::Dominant
+            };
+
+            PostalCodeDominance {
+                postal_code,
+                zcta_candidate,
+                leader,
+                leader_stores,
+                total_stores,
+                status,
+            }
+        })
+        .collect()
 }
 
 pub fn parse_demand_points(csv: &str) -> Result<Vec<DemandPoint>, String> {
@@ -1028,6 +1138,13 @@ fn validate_review_reason(value: &str, line_number: usize) -> Result<(), String>
     }
 }
 
+fn normalize_zip5(value: &str) -> String {
+    value
+        .chars()
+        .take_while(|character| *character != '-')
+        .collect()
+}
+
 fn required_argument<'a>(value: &'a str, field: &str) -> Result<&'a str, String> {
     if value.trim().is_empty() {
         Err(format!("missing {field}"))
@@ -1253,6 +1370,31 @@ Lowe's,low-0001,Lowe's Garden Center,456 Test Ave,Atlanta,GA,30304,33.7520,-84.3
         assert!(rendered.starts_with("brand,store_id,city,state,latitude,longitude"));
         assert!(rendered.contains("Home Depot,hd-0001,Atlanta,GA,33.7517,-84.3901"));
         assert!(!rendered.contains("low-0001"));
+    }
+
+    #[test]
+    fn derives_packet_ready_postal_store_points() {
+        let csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303-1234,33.7517,-84.3901,user fixture,2026-08-10,user_provided,packet_ready,primary_store_candidate
+Lowe's,low-0001,Lowe's Atlanta,456 Test Ave,Atlanta,GA,30303,33.7520,-84.3904,user fixture,2026-08-10,user_provided,packet_ready,primary_store_candidate
+Lowe's,low-0002,Lowe's Garden Center,789 Test Ave,Atlanta,GA,30304,33.7530,-84.3908,user fixture,2026-08-10,user_provided,needs_review,garden_center_candidate
+";
+        let reviewed = parse_reviewed_store_points(csv).expect("reviewed stores parse");
+        let points = packet_ready_postal_store_points(&reviewed);
+        let summary = summarize_postal_footprint(&points);
+        let rendered = render_postal_store_points_csv(&points);
+
+        assert_eq!(points.len(), 2);
+        assert_eq!(points[0].postal_code, "30303");
+        assert_eq!(points[0].zcta_candidate, "30303");
+        assert_eq!(summary.len(), 1);
+        assert_eq!(summary[0].status, MarketStatus::Contested);
+        assert!(rendered.starts_with(
+            "brand,store_id,city,state,postal_code,zcta_candidate,latitude,longitude"
+        ));
+        assert!(rendered.contains("Home Depot,hd-0001,Atlanta,GA,30303,30303"));
+        assert!(!rendered.contains("low-0002"));
     }
 
     #[test]

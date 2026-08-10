@@ -17,6 +17,12 @@ Derived store-point input:
 fixtures/brands/home-improvement-georgia-packet-ready.csv
 ```
 
+Derived postal store-point input:
+
+```text
+fixtures/brands/home-improvement-georgia-packet-ready-postal.csv
+```
+
 ## Review Gate
 
 | Review status | Rows |
@@ -50,6 +56,53 @@ municipality, county, CBSA, urban area, or drive-time territory.
 |---|---:|
 | Home Depot | 73 |
 | Lowe's | 17 |
+
+## Postal ZIP / ZCTA-Candidate Read
+
+The postal fixture keeps the source `postal_code` field and adds
+`zcta_candidate`, a five-digit ZIP-derived key for future Census joins. Per
+TURF's postal/ZCTA source review, this is not yet a confirmed Census ZCTA
+polygon join.
+
+| Postal status | ZIP/ZCTA-candidate groups |
+|---|---:|
+| Dominant | 85 |
+| Contested | 21 |
+| Total | 106 |
+
+| Leading brand | ZIP/ZCTA-candidate groups |
+|---|---:|
+| Home Depot | 86 |
+| Lowe's | 20 |
+
+## Contested ZIP/ZCTA-Candidate Groups
+
+These are same-ZIP candidate groups where the current packet-ready sample does
+not show a clear postal-level winner.
+
+| ZIP/ZCTA candidate | Leader label | Leader stores | Total stores |
+|---|---|---:|---:|
+| 30004 | Home Depot | 1 | 2 |
+| 30013 | Home Depot | 1 | 2 |
+| 30041 | Home Depot | 1 | 2 |
+| 30052 | Home Depot | 1 | 2 |
+| 30064 | Home Depot | 1 | 2 |
+| 30078 | Home Depot | 1 | 2 |
+| 30106 | Home Depot | 1 | 2 |
+| 30117 | Home Depot | 1 | 2 |
+| 30135 | Home Depot | 1 | 2 |
+| 30214 | Home Depot | 1 | 2 |
+| 30223 | Home Depot | 1 | 2 |
+| 30260 | Home Depot | 1 | 2 |
+| 30328 | Home Depot | 1 | 2 |
+| 30606 | Home Depot | 1 | 2 |
+| 30742 | Home Depot | 1 | 2 |
+| 30907 | Home Depot | 1 | 2 |
+| 31093 | Home Depot | 1 | 2 |
+| 31419 | Home Depot | 1 | 2 |
+| 31707 | Home Depot | 1 | 2 |
+| 31788 | Home Depot | 1 | 2 |
+| 31909 | Home Depot | 1 | 2 |
 
 ## Contested City/Locality Groups
 
@@ -88,6 +141,9 @@ not show a clear city-level winner.
 - The 20 contested city/locality groups are mostly 1-to-1 pairings. Those are
   better candidates for ZIP/ZCTA, road, and catchment analysis than for simple
   city-level scoring.
+- The postal view finds 21 contested ZIP/ZCTA-candidate groups. That is a
+  better first target list for county, metro, and drive-time enrichment than the
+  full statewide footprint.
 - Address city/locality is not enough. TURF needs to attach ZIP/ZCTA, county,
   CBSA, urban area, and drive-time layers before saying how these chains divide
   Georgia.
@@ -97,6 +153,8 @@ not show a clear city-level winner.
 ```powershell
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- export-packet-ready fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- export-packet-ready-postal fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```

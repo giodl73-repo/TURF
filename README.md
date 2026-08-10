@@ -22,6 +22,7 @@ cargo run -p turf-cli -- validate-packet reports\home-improvement-atlanta.json
 cargo run -p turf-cli -- validate-stores fixtures\stores\national-store-intake-sample.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -54,6 +55,10 @@ marks extracted rows as `packet_ready`, `needs_review`, or `exclude`.
 
 The `summarize-review` command reads the reviewed candidate layer, reports
 review status counts, and summarizes the packet-ready footprint.
+
+The `summarize-postal-review` command groups packet-ready rows by source postal
+code and a ZIP-derived `zcta_candidate` key for later Census joins. TURF keeps
+that key separate from confirmed Census ZCTA geometry.
 
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
