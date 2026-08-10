@@ -89,6 +89,16 @@ pub struct CatchmentAssignment {
     pub weight: f64,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct MarketPacket {
+    pub category: String,
+    pub geography: String,
+    pub summary: FootprintSummary,
+    pub place_findings: Vec<PlaceContextFinding>,
+    pub catchments: Vec<CatchmentAssignment>,
+    pub cautions: Vec<String>,
+}
+
 pub fn parse_place_contexts(csv: &str) -> Result<Vec<PlaceContext>, String> {
     let mut lines = csv.lines();
     let header = lines.next().ok_or("missing CSV header")?;
@@ -453,11 +463,248 @@ pub fn assign_nearest_store(
     Ok(assignments)
 }
 
+pub fn build_market_packet(
+    category: &str,
+    geography: &str,
+    stores: &[StorePoint],
+    contexts: &[PlaceContext],
+    demand_points: &[DemandPoint],
+) -> Result<MarketPacket, String> {
+    Ok(MarketPacket {
+        category: required_argument(category, "category")?.to_string(),
+        geography: required_argument(geography, "geography")?.to_string(),
+        summary: summarize_footprint(stores),
+        place_findings: inspect_place_contexts(contexts),
+        catchments: assign_nearest_store(stores, demand_points)?,
+        cautions: vec![
+            "Distance catchments are straight-line nearest-store assignments, not drive-time models."
+                .to_string(),
+            "Place context preserves postal, civic, Census, lived-place, and market layers separately."
+                .to_string(),
+            "TURF does not claim to know private company territories unless a company publishes them."
+                .to_string(),
+        ],
+    })
+}
+
+pub fn render_market_packet_markdown(packet: &MarketPacket) -> String {
+    let mut output = String::new();
+
+    output.push_str("# ");
+    output.push_str(&packet.category);
+    output.push_str(" Market Packet: ");
+    output.push_str(&packet.geography);
+    output.push_str("\n\n");
+
+    output.push_str("## Scope\n\n");
+    output.push_str("- Category: ");
+    output.push_str(&packet.category);
+    output.push('\n');
+    output.push_str("- Geography: ");
+    output.push_str(&packet.geography);
+    output.push('\n');
+    output.push_str("- Store points: ");
+    output.push_str(&packet.summary.total_stores.to_string());
+    output.push_str("\n\n");
+
+    output.push_str("## Brand Footprint\n\n");
+    output.push_str("| Brand | Stores |\n|---|---:|\n");
+    for brand in &packet.summary.brand_summaries {
+        output.push_str("| ");
+        output.push_str(&brand.brand);
+        output.push_str(" | ");
+        output.push_str(&brand.stores.to_string());
+        output.push_str(" |\n");
+    }
+    output.push('\n');
+
+    output.push_str("## City Read\n\n");
+    output.push_str("| City | State | Leader | Stores | Status |\n|---|---|---|---:|---|\n");
+    for city in &packet.summary.city_dominance {
+        output.push_str("| ");
+        output.push_str(&city.city);
+        output.push_str(" | ");
+        output.push_str(&city.state);
+        output.push_str(" | ");
+        output.push_str(&city.leader);
+        output.push_str(" | ");
+        output.push_str(&city.leader_stores.to_string());
+        output.push('/');
+        output.push_str(&city.total_stores.to_string());
+        output.push_str(" | ");
+        output.push_str(market_status_label(&city.status));
+        output.push_str(" |\n");
+    }
+    output.push('\n');
+
+    output.push_str("## Place Context Warnings\n\n");
+    if packet.place_findings.is_empty() {
+        output.push_str("No place-context disagreements detected.\n\n");
+    } else {
+        output.push_str("| Place | Finding | Detail |\n|---|---|---|\n");
+        for finding in &packet.place_findings {
+            output.push_str("| ");
+            output.push_str(&finding.label);
+            output.push_str(" | ");
+            output.push_str(&finding.finding_kind);
+            output.push_str(" | ");
+            output.push_str(&finding.finding);
+            output.push_str(" |\n");
+        }
+        output.push('\n');
+    }
+
+    output.push_str("## Distance Catchments\n\n");
+    output.push_str("| Demand point | Place | Assigned brand | Store | Miles | Weight |\n");
+    output.push_str("|---|---|---|---|---:|---:|\n");
+    for catchment in &packet.catchments {
+        output.push_str("| ");
+        output.push_str(&catchment.label);
+        output.push_str(" | ");
+        output.push_str(&catchment.place_id);
+        output.push_str(" | ");
+        output.push_str(&catchment.assigned_brand);
+        output.push_str(" | ");
+        output.push_str(&catchment.assigned_store_id);
+        output.push_str(" | ");
+        output.push_str(&format!("{:.2}", catchment.distance_miles));
+        output.push_str(" | ");
+        output.push_str(&format_number(catchment.weight));
+        output.push_str(" |\n");
+    }
+    output.push('\n');
+
+    output.push_str("## TURF Cautions\n\n");
+    for caution in &packet.cautions {
+        output.push_str("- ");
+        output.push_str(caution);
+        output.push('\n');
+    }
+
+    output
+}
+
+pub fn render_market_packet_json(packet: &MarketPacket) -> String {
+    let mut output = String::from("{");
+    output.push_str("\"category\":\"");
+    output.push_str(&escape_json(&packet.category));
+    output.push_str("\",\"geography\":\"");
+    output.push_str(&escape_json(&packet.geography));
+    output.push_str("\",\"total_stores\":");
+    output.push_str(&packet.summary.total_stores.to_string());
+
+    output.push_str(",\"brands\":[");
+    for (index, brand) in packet.summary.brand_summaries.iter().enumerate() {
+        if index > 0 {
+            output.push(',');
+        }
+        output.push_str("{\"brand\":\"");
+        output.push_str(&escape_json(&brand.brand));
+        output.push_str("\",\"stores\":");
+        output.push_str(&brand.stores.to_string());
+        output.push('}');
+    }
+
+    output.push_str("],\"cities\":[");
+    for (index, city) in packet.summary.city_dominance.iter().enumerate() {
+        if index > 0 {
+            output.push(',');
+        }
+        output.push_str("{\"city\":\"");
+        output.push_str(&escape_json(&city.city));
+        output.push_str("\",\"state\":\"");
+        output.push_str(&escape_json(&city.state));
+        output.push_str("\",\"leader\":\"");
+        output.push_str(&escape_json(&city.leader));
+        output.push_str("\",\"leader_stores\":");
+        output.push_str(&city.leader_stores.to_string());
+        output.push_str(",\"total_stores\":");
+        output.push_str(&city.total_stores.to_string());
+        output.push_str(",\"status\":\"");
+        output.push_str(market_status_label(&city.status));
+        output.push_str("\"}");
+    }
+
+    output.push_str("],\"place_findings\":[");
+    for (index, finding) in packet.place_findings.iter().enumerate() {
+        if index > 0 {
+            output.push(',');
+        }
+        output.push_str("{\"place_id\":\"");
+        output.push_str(&escape_json(&finding.place_id));
+        output.push_str("\",\"label\":\"");
+        output.push_str(&escape_json(&finding.label));
+        output.push_str("\",\"finding_kind\":\"");
+        output.push_str(&escape_json(&finding.finding_kind));
+        output.push_str("\",\"finding\":\"");
+        output.push_str(&escape_json(&finding.finding));
+        output.push_str("\"}");
+    }
+
+    output.push_str("],\"catchments\":[");
+    for (index, catchment) in packet.catchments.iter().enumerate() {
+        if index > 0 {
+            output.push(',');
+        }
+        output.push_str("{\"demand_id\":\"");
+        output.push_str(&escape_json(&catchment.demand_id));
+        output.push_str("\",\"label\":\"");
+        output.push_str(&escape_json(&catchment.label));
+        output.push_str("\",\"place_id\":\"");
+        output.push_str(&escape_json(&catchment.place_id));
+        output.push_str("\",\"assigned_brand\":\"");
+        output.push_str(&escape_json(&catchment.assigned_brand));
+        output.push_str("\",\"assigned_store_id\":\"");
+        output.push_str(&escape_json(&catchment.assigned_store_id));
+        output.push_str("\",\"distance_miles\":");
+        output.push_str(&format!("{:.2}", catchment.distance_miles));
+        output.push_str(",\"weight\":");
+        output.push_str(&format_number(catchment.weight));
+        output.push('}');
+    }
+
+    output.push_str("],\"cautions\":[");
+    for (index, caution) in packet.cautions.iter().enumerate() {
+        if index > 0 {
+            output.push(',');
+        }
+        output.push('"');
+        output.push_str(&escape_json(caution));
+        output.push('"');
+    }
+    output.push_str("]}");
+
+    output
+}
+
 fn required<'a>(value: &'a str, line_number: usize, field: &str) -> Result<&'a str, String> {
     if value.is_empty() {
         Err(format!("line {line_number}: missing {field}"))
     } else {
         Ok(value)
+    }
+}
+
+fn required_argument<'a>(value: &'a str, field: &str) -> Result<&'a str, String> {
+    if value.trim().is_empty() {
+        Err(format!("missing {field}"))
+    } else {
+        Ok(value.trim())
+    }
+}
+
+fn market_status_label(status: &MarketStatus) -> &'static str {
+    match status {
+        MarketStatus::Dominant => "dominant",
+        MarketStatus::Contested => "contested",
+    }
+}
+
+fn format_number(value: f64) -> String {
+    if value.fract() == 0.0 {
+        format!("{value:.0}")
+    } else {
+        value.to_string()
     }
 }
 
@@ -629,5 +876,42 @@ demand-1,Near Marietta,marietta,33.9526,-84.5499,10
         assert_eq!(assignments.len(), 1);
         assert_eq!(assignments[0].assigned_store_id, "hd-mar-001");
         assert!(assignments[0].distance_miles < 0.25);
+    }
+
+    #[test]
+    fn builds_market_packet_from_existing_contracts() {
+        let stores = parse_store_points(SAMPLE).expect("stores parse");
+        let contexts = parse_place_contexts(
+            "\
+place_id,label,postal_city,state,zip_code,zcta,municipality,county,census_place,cbsa,urban_area,lived_place,market_area,delivery_relevance,governance_relevance,statistics_relevance,market_relevance
+atl-edge-30339,Cumberland / Vinings edge,Atlanta,GA,30339,30339,unincorporated,Cobb,Vinings CDP,Atlanta Metro,Atlanta Urban Area,Cumberland-Vinings,Northwest Atlanta retail edge,high,medium,high,high
+",
+        )
+        .expect("contexts parse");
+        let demand = parse_demand_points(
+            "\
+demand_id,label,place_id,latitude,longitude,weight
+demand-1,Near Marietta,atl-edge-30339,33.9526,-84.5499,10
+",
+        )
+        .expect("demand parses");
+
+        let packet = build_market_packet(
+            "Home Improvement",
+            "Atlanta / Marietta / Cumberland",
+            &stores,
+            &contexts,
+            &demand,
+        )
+        .expect("packet builds");
+        let markdown = render_market_packet_markdown(&packet);
+        let json = render_market_packet_json(&packet);
+
+        assert_eq!(packet.summary.total_stores, 5);
+        assert_eq!(packet.catchments[0].assigned_store_id, "hd-mar-001");
+        assert!(markdown.contains("# Home Improvement Market Packet"));
+        assert!(markdown.contains("postal_city_municipality_mismatch"));
+        assert!(json.contains("\"category\":\"Home Improvement\""));
+        assert!(json.contains("\"catchments\""));
     }
 }

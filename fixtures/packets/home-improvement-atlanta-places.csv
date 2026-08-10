@@ -1,0 +1,3 @@
+place_id,label,postal_city,state,zip_code,zcta,municipality,county,census_place,cbsa,urban_area,lived_place,market_area,delivery_relevance,governance_relevance,statistics_relevance,market_relevance
+atl-edge-30339,Cumberland / Vinings edge,Atlanta,GA,30339,30339,unincorporated,Cobb,Vinings CDP,Atlanta-Sandy Springs-Alpharetta GA Metro Area,Atlanta GA Urban Area,Cumberland-Vinings,Northwest Atlanta retail edge,high,medium,high,high
+buckhead-30305,Buckhead neighborhood core,Atlanta,GA,30305,30305,Atlanta,Fulton,Atlanta city,Atlanta-Sandy Springs-Alpharetta GA Metro Area,Atlanta GA Urban Area,Buckhead,Buckhead luxury retail district,high,high,high,high
