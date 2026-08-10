@@ -506,3 +506,35 @@ Status: pass with caveat.
 The pulse uses Overture candidate rows and public Census context. The NAPA layer
 should remain marked as first-pass because affiliated and parent-company naming
 requires deeper review before any stronger store-census claim.
+
+## Pulse 23 Washington Category Spread Comparison
+
+### Market Analyst
+
+Status: pass.
+
+The report captures the important spread difference: home improvement is sparse
+and Home-Depot-led, while auto parts is dense and fragmented between NAPA,
+O'Reilly, AutoZone, and Advance.
+
+### Market Geographer
+
+Status: pass.
+
+The comparison correctly uses city, ZCTA, county, CBSA, and ferry-side coverage
+as different views of spread rather than collapsing them into one geography.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The category comparison shows why TURF needs category-specific catchment logic:
+big-box destination stores and local service stores should not share the same
+distance assumptions.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse compares already-reviewed, checked-in Overture-derived fixtures and
+does not introduce new source claims.

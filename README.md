@@ -99,6 +99,9 @@ The first chain expansion decision is:
 The first auto-parts comparison report is:
 `reports\auto-parts-seattle-puget-sound.md`.
 
+The first cross-category spread comparison is:
+`reports\washington-category-spread-comparison.md`.
+
 ## Product thesis
 
 Retail chains leave a public geography behind. Store locations, roads, cities,
