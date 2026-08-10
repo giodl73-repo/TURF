@@ -23,6 +23,12 @@ Derived postal store-point input:
 fixtures/brands/home-improvement-georgia-packet-ready-postal.csv
 ```
 
+Derived county store-point input:
+
+```text
+fixtures/brands/home-improvement-georgia-packet-ready-county.csv
+```
+
 ## Review Gate
 
 | Review status | Rows |
@@ -74,6 +80,45 @@ polygon join.
 |---|---:|
 | Home Depot | 86 |
 | Lowe's | 20 |
+
+## County Read
+
+The county fixture joins each `zcta_candidate` to the 2020 Census county with
+the largest ZCTA land overlap. This is a Census relationship-file context, not
+a rooftop point-in-county geocode.
+
+County context fixture:
+
+```text
+fixtures/geography/georgia-zcta-county-primary-2020.csv
+```
+
+| County status | Primary county groups |
+|---|---:|
+| Dominant | 48 |
+| Contested | 11 |
+| Total | 59 |
+
+| Leading brand | Primary county groups |
+|---|---:|
+| Home Depot | 48 |
+| Lowe's | 11 |
+
+## Contested Primary County Groups
+
+| County | Leader label | Leader stores | Total stores |
+|---|---|---:|---:|
+| Catoosa County | Home Depot | 1 | 2 |
+| Colquitt County | Home Depot | 1 | 2 |
+| Dougherty County | Home Depot | 1 | 2 |
+| Floyd County | Home Depot | 1 | 2 |
+| Forsyth County | Home Depot | 1 | 2 |
+| Henry County | Home Depot | 1 | 2 |
+| Houston County | Home Depot | 1 | 2 |
+| Muscogee County | Home Depot | 1 | 2 |
+| Rockdale County | Home Depot | 1 | 2 |
+| Spalding County | Home Depot | 1 | 2 |
+| Whitfield County | Home Depot | 1 | 2 |
 
 ## Contested ZIP/ZCTA-Candidate Groups
 
@@ -144,6 +189,9 @@ not show a clear city-level winner.
 - The postal view finds 21 contested ZIP/ZCTA-candidate groups. That is a
   better first target list for county, metro, and drive-time enrichment than the
   full statewide footprint.
+- The county view compresses the signal further: 59 primary county groups, with
+  11 contested counties. The largest observed concentration is in the Atlanta
+  suburban counties, especially Cobb, Fulton, and Gwinnett.
 - Address city/locality is not enough. TURF needs to attach ZIP/ZCTA, county,
   CBSA, urban area, and drive-time layers before saying how these chains divide
   Georgia.
@@ -154,7 +202,9 @@ not show a clear city-level winner.
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- export-packet-ready fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- export-packet-ready-postal fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- export-packet-ready-county fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
 cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- summarize-county-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```

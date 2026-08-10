@@ -57,6 +57,29 @@ pub struct PostalStorePoint {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct ZctaCountyContext {
+    pub zcta_candidate: String,
+    pub county_geoid: String,
+    pub county_name: String,
+    pub relationship_source: String,
+    pub relationship_vintage: String,
+}
+
+#[derive(Debug, Clone, PartialEq)]
+pub struct CountyStorePoint {
+    pub brand: String,
+    pub store_id: String,
+    pub city: String,
+    pub state: String,
+    pub postal_code: String,
+    pub zcta_candidate: String,
+    pub county_geoid: String,
+    pub county_name: String,
+    pub latitude: f64,
+    pub longitude: f64,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct BrandSummary {
     pub brand: String,
     pub stores: usize,
@@ -76,6 +99,16 @@ pub struct CityDominance {
 pub struct PostalCodeDominance {
     pub postal_code: String,
     pub zcta_candidate: String,
+    pub leader: String,
+    pub leader_stores: usize,
+    pub total_stores: usize,
+    pub status: MarketStatus,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct CountyDominance {
+    pub county_geoid: String,
+    pub county_name: String,
     pub leader: String,
     pub leader_stores: usize,
     pub total_stores: usize,
@@ -518,6 +551,59 @@ pub fn validate_reviewed_store_points(csv: &str) -> Result<usize, String> {
     Ok(parse_reviewed_store_points(csv)?.len())
 }
 
+pub fn parse_zcta_county_contexts(csv: &str) -> Result<Vec<ZctaCountyContext>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "zcta_candidate",
+        "county_geoid",
+        "county_name",
+        "relationship_source",
+        "relationship_vintage",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut contexts = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        contexts.push(ZctaCountyContext {
+            zcta_candidate: required(fields[0], line_number, "zcta_candidate")?.to_string(),
+            county_geoid: required(fields[1], line_number, "county_geoid")?.to_string(),
+            county_name: required(fields[2], line_number, "county_name")?.to_string(),
+            relationship_source: required(fields[3], line_number, "relationship_source")?
+                .to_string(),
+            relationship_vintage: required(fields[4], line_number, "relationship_vintage")?
+                .to_string(),
+        });
+    }
+
+    Ok(contexts)
+}
+
+pub fn validate_zcta_county_contexts(csv: &str) -> Result<usize, String> {
+    Ok(parse_zcta_county_contexts(csv)?.len())
+}
+
 pub fn packet_ready_store_points(reviewed_points: &[ReviewedStorePoint]) -> Vec<StorePoint> {
     reviewed_points
         .iter()
@@ -598,6 +684,71 @@ pub fn render_postal_store_points_csv(points: &[PostalStorePoint]) -> String {
     output
 }
 
+pub fn enrich_postal_store_points_with_county(
+    points: &[PostalStorePoint],
+    contexts: &[ZctaCountyContext],
+) -> Result<Vec<CountyStorePoint>, String> {
+    let context_by_zcta: BTreeMap<&str, &ZctaCountyContext> = contexts
+        .iter()
+        .map(|context| (context.zcta_candidate.as_str(), context))
+        .collect();
+    let mut enriched = Vec::new();
+
+    for point in points {
+        let context = context_by_zcta
+            .get(point.zcta_candidate.as_str())
+            .ok_or_else(|| {
+                format!(
+                    "missing county context for zcta_candidate {}",
+                    point.zcta_candidate
+                )
+            })?;
+        enriched.push(CountyStorePoint {
+            brand: point.brand.clone(),
+            store_id: point.store_id.clone(),
+            city: point.city.clone(),
+            state: point.state.clone(),
+            postal_code: point.postal_code.clone(),
+            zcta_candidate: point.zcta_candidate.clone(),
+            county_geoid: context.county_geoid.clone(),
+            county_name: context.county_name.clone(),
+            latitude: point.latitude,
+            longitude: point.longitude,
+        });
+    }
+
+    Ok(enriched)
+}
+
+pub fn render_county_store_points_csv(points: &[CountyStorePoint]) -> String {
+    let mut output = String::from(
+        "brand,store_id,city,state,postal_code,zcta_candidate,county_geoid,county_name,latitude,longitude\n",
+    );
+    for point in points {
+        output.push_str(&point.brand);
+        output.push(',');
+        output.push_str(&point.store_id);
+        output.push(',');
+        output.push_str(&point.city);
+        output.push(',');
+        output.push_str(&point.state);
+        output.push(',');
+        output.push_str(&point.postal_code);
+        output.push(',');
+        output.push_str(&point.zcta_candidate);
+        output.push(',');
+        output.push_str(&point.county_geoid);
+        output.push(',');
+        output.push_str(&point.county_name);
+        output.push(',');
+        output.push_str(&point.latitude.to_string());
+        output.push(',');
+        output.push_str(&point.longitude.to_string());
+        output.push('\n');
+    }
+    output
+}
+
 pub fn summarize_postal_footprint(points: &[PostalStorePoint]) -> Vec<PostalCodeDominance> {
     let mut postal_counts: BTreeMap<(String, String), BTreeMap<String, usize>> = BTreeMap::new();
 
@@ -631,6 +782,48 @@ pub fn summarize_postal_footprint(points: &[PostalStorePoint]) -> Vec<PostalCode
             PostalCodeDominance {
                 postal_code,
                 zcta_candidate,
+                leader,
+                leader_stores,
+                total_stores,
+                status,
+            }
+        })
+        .collect()
+}
+
+pub fn summarize_county_footprint(points: &[CountyStorePoint]) -> Vec<CountyDominance> {
+    let mut county_counts: BTreeMap<(String, String), BTreeMap<String, usize>> = BTreeMap::new();
+
+    for point in points {
+        *county_counts
+            .entry((point.county_geoid.clone(), point.county_name.clone()))
+            .or_default()
+            .entry(point.brand.clone())
+            .or_insert(0) += 1;
+    }
+
+    county_counts
+        .into_iter()
+        .map(|((county_geoid, county_name), counts)| {
+            let total_stores = counts.values().sum();
+            let (leader, leader_stores) = counts
+                .iter()
+                .max_by(|left, right| left.1.cmp(right.1).then_with(|| right.0.cmp(left.0)))
+                .map(|(brand, stores)| (brand.clone(), *stores))
+                .unwrap_or_else(|| ("none".to_string(), 0));
+            let tied_leaders = counts
+                .values()
+                .filter(|stores| **stores == leader_stores)
+                .count();
+            let status = if tied_leaders > 1 || leader_stores * 2 <= total_stores {
+                MarketStatus::Contested
+            } else {
+                MarketStatus::Dominant
+            };
+
+            CountyDominance {
+                county_geoid,
+                county_name,
                 leader,
                 leader_stores,
                 total_stores,
@@ -1395,6 +1588,46 @@ Lowe's,low-0002,Lowe's Garden Center,789 Test Ave,Atlanta,GA,30304,33.7530,-84.3
         ));
         assert!(rendered.contains("Home Depot,hd-0001,Atlanta,GA,30303,30303"));
         assert!(!rendered.contains("low-0002"));
+    }
+
+    #[test]
+    fn enriches_packet_ready_postal_store_points_with_county() {
+        let reviewed_csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.3901,user fixture,2026-08-10,user_provided,packet_ready,primary_store_candidate
+Lowe's,low-0001,Lowe's Atlanta,456 Test Ave,Atlanta,GA,30303,33.7520,-84.3904,user fixture,2026-08-10,user_provided,packet_ready,primary_store_candidate
+";
+        let context_csv = "\
+zcta_candidate,county_geoid,county_name,relationship_source,relationship_vintage
+30303,13121,Fulton County,Census 2020 ZCTA5 County relationship file,2020
+";
+        let reviewed = parse_reviewed_store_points(reviewed_csv).expect("reviewed stores parse");
+        let postal = packet_ready_postal_store_points(&reviewed);
+        let contexts = parse_zcta_county_contexts(context_csv).expect("contexts parse");
+        let county_points =
+            enrich_postal_store_points_with_county(&postal, &contexts).expect("county join works");
+        let summary = summarize_county_footprint(&county_points);
+        let rendered = render_county_store_points_csv(&county_points);
+
+        assert_eq!(county_points.len(), 2);
+        assert_eq!(county_points[0].county_name, "Fulton County");
+        assert_eq!(summary.len(), 1);
+        assert_eq!(summary[0].status, MarketStatus::Contested);
+        assert!(rendered.contains("Home Depot,hd-0001,Atlanta,GA,30303,30303,13121,Fulton County"));
+    }
+
+    #[test]
+    fn rejects_missing_county_context() {
+        let reviewed_csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.3901,user fixture,2026-08-10,user_provided,packet_ready,primary_store_candidate
+";
+        let reviewed = parse_reviewed_store_points(reviewed_csv).expect("reviewed stores parse");
+        let postal = packet_ready_postal_store_points(&reviewed);
+        let error = enrich_postal_store_points_with_county(&postal, &[])
+            .expect_err("missing context fails");
+
+        assert!(error.contains("missing county context"));
     }
 
     #[test]

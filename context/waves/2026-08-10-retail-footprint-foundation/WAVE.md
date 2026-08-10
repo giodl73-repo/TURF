@@ -32,6 +32,7 @@ before broader chain coverage begins.
 | 13 | Georgia Overture candidate review | complete | Added reviewed Georgia candidate layer, status contract, validator command, and review notes. |
 | 14 | Georgia reviewed footprint read | complete | Added packet-ready export path, statewide reviewed fixture, and first Georgia footprint report. |
 | 15 | Georgia postal footprint read | complete | Added postal packet-ready export, ZIP/ZCTA-candidate grouping, and postal readout in the Georgia report. |
+| 16 | Georgia county context read | complete | Added Census ZCTA-county context fixture, county-enriched export, and county dominance readout. |
 
 ## Success criteria
 

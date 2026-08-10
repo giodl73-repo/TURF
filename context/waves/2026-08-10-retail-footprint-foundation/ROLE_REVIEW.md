@@ -314,3 +314,28 @@ Status: pass.
 
 The pulse uses Overture-provided postal codes and existing Census/ZCTA source
 policy. It does not acquire or redistribute restricted USPS address files.
+
+## Pulse 16 Georgia County Context Read
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The pulse uses Census ZCTA-to-county relationship data and states that the
+county assignment is based on largest ZCTA land overlap, not a rooftop geocode.
+That is acceptable for first-pass county context.
+
+### Market Analyst
+
+Status: pass.
+
+The county read compresses Georgia into 59 primary county groups and identifies
+11 contested counties. This is a better territory investigation queue than the
+full store list.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The Census relationship file is public Census geography context. The pulse does
+not use restricted USPS files or official retailer locator scraping.

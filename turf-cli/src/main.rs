@@ -2,13 +2,14 @@ use std::{collections::BTreeMap, env, fs, process};
 
 use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
-    build_market_packet, inspect_place_contexts, packet_ready_postal_store_points,
-    packet_ready_store_points, parse_demand_points, parse_place_contexts,
-    parse_reviewed_store_points, parse_store_points, render_market_packet_json,
+    build_market_packet, enrich_postal_store_points_with_county, inspect_place_contexts,
+    packet_ready_postal_store_points, packet_ready_store_points, parse_demand_points,
+    parse_place_contexts, parse_reviewed_store_points, parse_store_points,
+    parse_zcta_county_contexts, render_county_store_points_csv, render_market_packet_json,
     render_market_packet_markdown, render_place_context_findings_json,
-    render_postal_store_points_csv, render_store_points_csv, summarize_footprint,
-    summarize_postal_footprint, validate_market_packet_json, validate_national_store_points,
-    validate_reviewed_store_points,
+    render_postal_store_points_csv, render_store_points_csv, summarize_county_footprint,
+    summarize_footprint, summarize_postal_footprint, validate_market_packet_json,
+    validate_national_store_points, validate_reviewed_store_points, validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -140,6 +141,15 @@ fn run() -> Result<(), String> {
             println!("valid,{},{}", path, rows);
             Ok(())
         }
+        Some("validate-zcta-county") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli validate-zcta-county <zcta-county.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let rows = validate_zcta_county_contexts(&csv)?;
+            println!("valid,{},{}", path, rows);
+            Ok(())
+        }
         Some("summarize-review") => {
             let path = args
                 .next()
@@ -184,6 +194,43 @@ fn run() -> Result<(), String> {
             print!("{}", render_postal_store_points_csv(&points));
             Ok(())
         }
+        Some("summarize-county-review") => {
+            let reviewed_path = args.next().ok_or(
+                "usage: turf-cli summarize-county-review <reviewed-stores.csv> <zcta-county.csv>",
+            )?;
+            let context_path = args.next().ok_or(
+                "usage: turf-cli summarize-county-review <reviewed-stores.csv> <zcta-county.csv>",
+            )?;
+            let reviewed_csv = fs::read_to_string(&reviewed_path)
+                .map_err(|error| format!("{reviewed_path}: {error}"))?;
+            let context_csv = fs::read_to_string(&context_path)
+                .map_err(|error| format!("{context_path}: {error}"))?;
+            let reviewed_points = parse_reviewed_store_points(&reviewed_csv)?;
+            let postal_points = packet_ready_postal_store_points(&reviewed_points);
+            let contexts = parse_zcta_county_contexts(&context_csv)?;
+            let county_points = enrich_postal_store_points_with_county(&postal_points, &contexts)?;
+            let summary = summarize_county_footprint(&county_points);
+            print_county_summary(&summary);
+            Ok(())
+        }
+        Some("export-packet-ready-county") => {
+            let reviewed_path = args
+                .next()
+                .ok_or("usage: turf-cli export-packet-ready-county <reviewed-stores.csv> <zcta-county.csv>")?;
+            let context_path = args
+                .next()
+                .ok_or("usage: turf-cli export-packet-ready-county <reviewed-stores.csv> <zcta-county.csv>")?;
+            let reviewed_csv = fs::read_to_string(&reviewed_path)
+                .map_err(|error| format!("{reviewed_path}: {error}"))?;
+            let context_csv = fs::read_to_string(&context_path)
+                .map_err(|error| format!("{context_path}: {error}"))?;
+            let reviewed_points = parse_reviewed_store_points(&reviewed_csv)?;
+            let postal_points = packet_ready_postal_store_points(&reviewed_points);
+            let contexts = parse_zcta_county_contexts(&context_csv)?;
+            let county_points = enrich_postal_store_points_with_county(&postal_points, &contexts)?;
+            print!("{}", render_county_store_points_csv(&county_points));
+            Ok(())
+        }
         Some("--help") | Some("-h") | None => {
             print_help();
             Ok(())
@@ -207,10 +254,13 @@ fn print_help() {
     println!(
         "  validate-store-review <reviewed-stores.csv>  Check reviewed store candidate contract"
     );
+    println!("  validate-zcta-county <zcta-county.csv>  Check ZCTA-county context contract");
     println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
     println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
     println!("  summarize-postal-review <reviewed-stores.csv>  Summarize packet-ready postal ZIPs");
     println!("  export-packet-ready-postal <reviewed-stores.csv>  Print packet-ready postal CSV");
+    println!("  summarize-county-review <reviewed-stores.csv> <zcta-county.csv>");
+    println!("  export-packet-ready-county <reviewed-stores.csv> <zcta-county.csv>");
 }
 
 fn print_summary(summary: &turf_core::FootprintSummary) {
@@ -295,6 +345,25 @@ fn print_postal_summary(summary: &[turf_core::PostalCodeDominance]) {
             postal_code.leader,
             postal_code.leader_stores,
             postal_code.total_stores,
+            status
+        );
+    }
+}
+
+fn print_county_summary(summary: &[turf_core::CountyDominance]) {
+    println!("county_geoid,county_name,leader,leader_stores,total_stores,status");
+    for county in summary {
+        let status = match county.status {
+            MarketStatus::Dominant => "dominant",
+            MarketStatus::Contested => "contested",
+        };
+        println!(
+            "{},{},{},{},{},{}",
+            county.county_geoid,
+            county.county_name,
+            county.leader,
+            county.leader_stores,
+            county.total_stores,
             status
         );
     }
