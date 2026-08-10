@@ -46,6 +46,9 @@ The `validate-stores` command checks the stricter national chain store intake
 contract. Home Depot and Lowe's national coverage must pass that source and
 license gate before TURF generates broader packets.
 
+The first approved national acquisition path is Overture Places, documented in
+`docs\overture-home-improvement-acquisition.md`.
+
 ## Product thesis
 
 Retail chains leave a public geography behind. Store locations, roads, cities,

@@ -190,3 +190,27 @@ Status: pass.
 
 `validate-stores` gives future agents a concrete gate before generating larger
 regional or national packets.
+
+## Pulse 11 Overture Acquisition Review
+
+### Source Policy Auditor
+
+Status: pass.
+
+The Overture path uses open-data documentation and keeps official Home Depot
+and Lowe's locators out of committed dataset acquisition.
+
+### Market Analyst
+
+Status: pass.
+
+The brand filters and candidate-review notes identify the first practical path
+toward national Home Depot/Lowe's coverage while leaving room to reject false
+positives.
+
+### Future Agent
+
+Status: pass.
+
+The extraction plan states that exact Overture field paths must be verified
+against the active release before a real extract runs.

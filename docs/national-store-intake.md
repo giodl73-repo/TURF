@@ -37,3 +37,6 @@ cargo run -p turf-cli -- validate-stores fixtures\stores\national-store-intake-s
 - `restricted` and `unknown` rows cannot be used for public national coverage.
 - Home Depot and Lowe's national ingestion must pass this contract before any
   packet generation expands beyond fixtures.
+
+The first approved acquisition path is documented in
+`docs/overture-home-improvement-acquisition.md`.

@@ -25,7 +25,8 @@ Use one of these approved paths instead:
 Overture Places is the first preferred research target because its places guide
 describes a broad real-world entity dataset and states that the places theme is
 published under permissive licenses. TURF still needs a concrete extraction
-pulse before committing Overture-derived Home Depot/Lowe's rows.
+pulse before committing Overture-derived Home Depot/Lowe's rows. The extraction
+plan is documented in `docs/overture-home-improvement-acquisition.md`.
 
 ## Acquisition Gate
 
