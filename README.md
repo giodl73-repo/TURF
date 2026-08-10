@@ -14,12 +14,17 @@ Run the built-in home improvement fixture:
 
 ```powershell
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-pois.csv
+cargo run -p turf-cli -- place-context fixtures\geography\place-contexts.csv
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
 and `longitude`, then prints brand counts and city-level dominance. It is a
 small contract for the larger product: public chain locations go in, market
 footprint evidence comes out.
+
+The `place-context` command inspects the foundational geography contract. It
+keeps postal city, ZIP Code, ZCTA, municipality, county, Census place, lived
+place, and market area separate, then reports where those layers disagree.
 
 ## Product thesis
 

@@ -20,7 +20,7 @@ before broader chain coverage begins.
 | 01 | Workspace foundation | complete | Created repo skeleton, docs, skills, fixture, and first tested summary command. |
 | 02 | Learning roadmap | complete | Add the postal/address-first roadmap that teaches the original public TURF layer before retail rivalry. |
 | 03 | Open source review | complete | Added postal/ZCTA source review and ZIP/ZCTA business-use hypothesis register. |
-| 04 | Place-context contract | pending | Define address, delivery locality, ZIP/ZCTA, municipality, county, Census place, CBSA, urban-area, and market fields. |
+| 04 | Place-context contract | complete | Added executable place-context contract, fixture, docs, CLI command, and tests. |
 | 05 | Catchment model sketch | pending | Define nearest-distance, drive-time, and gravity-model outputs without binding to one map provider. |
 | 06 | Home improvement market packet | pending | Emit a first city/market packet for Home Depot vs. Lowe's from approved inputs. |
 

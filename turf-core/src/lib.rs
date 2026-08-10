@@ -39,6 +39,149 @@ pub struct FootprintSummary {
     pub city_dominance: Vec<CityDominance>,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct PlaceContext {
+    pub place_id: String,
+    pub label: String,
+    pub postal_city: String,
+    pub state: String,
+    pub zip_code: String,
+    pub zcta: String,
+    pub municipality: String,
+    pub county: String,
+    pub census_place: String,
+    pub cbsa: String,
+    pub urban_area: String,
+    pub lived_place: String,
+    pub market_area: String,
+    pub delivery_relevance: String,
+    pub governance_relevance: String,
+    pub statistics_relevance: String,
+    pub market_relevance: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct PlaceContextFinding {
+    pub place_id: String,
+    pub label: String,
+    pub finding: String,
+}
+
+pub fn parse_place_contexts(csv: &str) -> Result<Vec<PlaceContext>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "place_id",
+        "label",
+        "postal_city",
+        "state",
+        "zip_code",
+        "zcta",
+        "municipality",
+        "county",
+        "census_place",
+        "cbsa",
+        "urban_area",
+        "lived_place",
+        "market_area",
+        "delivery_relevance",
+        "governance_relevance",
+        "statistics_relevance",
+        "market_relevance",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut contexts = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        contexts.push(PlaceContext {
+            place_id: required(fields[0], line_number, "place_id")?.to_string(),
+            label: required(fields[1], line_number, "label")?.to_string(),
+            postal_city: required(fields[2], line_number, "postal_city")?.to_string(),
+            state: required(fields[3], line_number, "state")?.to_string(),
+            zip_code: required(fields[4], line_number, "zip_code")?.to_string(),
+            zcta: required(fields[5], line_number, "zcta")?.to_string(),
+            municipality: required(fields[6], line_number, "municipality")?.to_string(),
+            county: required(fields[7], line_number, "county")?.to_string(),
+            census_place: required(fields[8], line_number, "census_place")?.to_string(),
+            cbsa: required(fields[9], line_number, "cbsa")?.to_string(),
+            urban_area: required(fields[10], line_number, "urban_area")?.to_string(),
+            lived_place: required(fields[11], line_number, "lived_place")?.to_string(),
+            market_area: required(fields[12], line_number, "market_area")?.to_string(),
+            delivery_relevance: required(fields[13], line_number, "delivery_relevance")?
+                .to_string(),
+            governance_relevance: required(fields[14], line_number, "governance_relevance")?
+                .to_string(),
+            statistics_relevance: required(fields[15], line_number, "statistics_relevance")?
+                .to_string(),
+            market_relevance: required(fields[16], line_number, "market_relevance")?.to_string(),
+        });
+    }
+
+    Ok(contexts)
+}
+
+pub fn inspect_place_contexts(contexts: &[PlaceContext]) -> Vec<PlaceContextFinding> {
+    let mut findings = Vec::new();
+
+    for context in contexts {
+        if context.postal_city != context.municipality {
+            findings.push(PlaceContextFinding {
+                place_id: context.place_id.clone(),
+                label: context.label.clone(),
+                finding: format!(
+                    "postal_city differs from municipality: {} vs {}",
+                    context.postal_city, context.municipality
+                ),
+            });
+        }
+
+        if context.municipality != context.census_place {
+            findings.push(PlaceContextFinding {
+                place_id: context.place_id.clone(),
+                label: context.label.clone(),
+                finding: format!(
+                    "municipality differs from census_place: {} vs {}",
+                    context.municipality, context.census_place
+                ),
+            });
+        }
+
+        if context.lived_place != context.market_area {
+            findings.push(PlaceContextFinding {
+                place_id: context.place_id.clone(),
+                label: context.label.clone(),
+                finding: format!(
+                    "lived_place differs from market_area: {} vs {}",
+                    context.lived_place, context.market_area
+                ),
+            });
+        }
+    }
+
+    findings
+}
+
 pub fn parse_store_points(csv: &str) -> Result<Vec<StorePoint>, String> {
     let mut lines = csv.lines();
     let header = lines.next().ok_or("missing CSV header")?;
@@ -214,5 +357,25 @@ Lowe's,low-mar-001,Marietta,GA,33.96,-84.54
             .expect("Marietta row");
         assert_eq!(marietta.leader, "Home Depot");
         assert_eq!(marietta.status, MarketStatus::Dominant);
+    }
+
+    #[test]
+    fn parses_and_inspects_place_contexts() {
+        let csv = "\
+place_id,label,postal_city,state,zip_code,zcta,municipality,county,census_place,cbsa,urban_area,lived_place,market_area,delivery_relevance,governance_relevance,statistics_relevance,market_relevance
+tysons-22102,Tysons commercial core,McLean,VA,22102,22102,unincorporated,Fairfax,Tysons CDP,Washington Metro,Washington Urban Area,Tysons,Tysons regional retail core,high,medium,high,high
+";
+        let contexts = parse_place_contexts(csv).expect("place context parses");
+        let findings = inspect_place_contexts(&contexts);
+
+        assert_eq!(contexts.len(), 1);
+        assert_eq!(contexts[0].zip_code, "22102");
+        assert_eq!(contexts[0].zcta, "22102");
+        assert_eq!(findings.len(), 3);
+        assert!(
+            findings
+                .iter()
+                .any(|finding| finding.finding.contains("postal_city differs"))
+        );
     }
 }

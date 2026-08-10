@@ -1,0 +1,4 @@
+place_id,label,postal_city,state,zip_code,zcta,municipality,county,census_place,cbsa,urban_area,lived_place,market_area,delivery_relevance,governance_relevance,statistics_relevance,market_relevance
+atl-edge-30339,Cumberland / Vinings edge,Atlanta,GA,30339,30339,unincorporated,Cobb,Vinings CDP,Atlanta-Sandy Springs-Alpharetta GA Metro Area,Atlanta GA Urban Area,Cumberland-Vinings,Northwest Atlanta retail edge,high,medium,high,high
+las-colinas-75039,Las Colinas office district,Irving,TX,75039,75039,Irving,Dallas,Irving city,Dallas-Fort Worth-Arlington TX Metro Area,Dallas-Fort Worth-Arlington TX Urban Area,Las Colinas,North Dallas office retail corridor,high,high,high,high
+tysons-22102,Tysons commercial core,McLean,VA,22102,22102,unincorporated,Fairfax,Tysons CDP,Washington-Arlington-Alexandria DC-VA-MD-WV Metro Area,Washington DC-VA-MD Urban Area,Tysons,Tysons regional retail core,high,medium,high,high
