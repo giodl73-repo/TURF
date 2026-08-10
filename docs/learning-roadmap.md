@@ -124,6 +124,8 @@ Question: Where do chains create borders?
 Inputs to study:
 
 - Home Depot vs. Lowe's.
+- AutoZone/O'Reilly/NAPA/Advance auto-parts grids.
+- Target vs. Walmart.
 - Best Buy vs. Walmart/Target electronics adjacency.
 - McDonald's/Burger King/Wendy's QSR grids.
 - Category-specific chains where stores follow malls, highways, suburbs,
@@ -134,6 +136,19 @@ Outputs:
 - Rivalry packet.
 - Catchment overlap report.
 - Border-zone and white-space atlas pages.
+
+## Chain Expansion Sequence
+
+After the Home Depot/Lowe's foundation, TURF should add auto parts first, then
+Target/Walmart, and treat Costco as a later regional destination-store contrast.
+
+Auto parts teaches denser neighborhood and corridor service geography.
+Target/Walmart then tests a bigger mass-retail distinction: which places are
+Walmart places, Target places, both, or neither. Costco is still useful,
+especially in Puget Sound, but it should follow because its lower store count
+pushes the problem toward wider destination catchments.
+
+The current decision note is `docs/chain-expansion-sequence.md`.
 
 ## First Roadmap Wave
 

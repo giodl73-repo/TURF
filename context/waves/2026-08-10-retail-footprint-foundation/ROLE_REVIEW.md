@@ -447,3 +447,28 @@ Status: pass.
 The pulse uses Overture candidate rows, public Census relationship files, and a
 public WSDOT route list. It does not use restricted retailer locator scraping or
 claim access to company-defined territories.
+
+## Pulse 21 Chain Expansion Sequence
+
+### Market Analyst
+
+Status: pass.
+
+The sequence is coherent: auto parts gives the next local-grain service network,
+then Target/Walmart gives the bigger mass-retail territory contrast.
+
+### Market Geographer
+
+Status: pass.
+
+The decision preserves geography learning goals by adding a dense neighborhood
+category before jumping to lower-count destination retail.
+
+### Source Policy Auditor
+
+Status: pass with next-output request.
+
+The next implementation pulse must verify brand filters and Overture field
+behavior for auto parts before committing extracted rows. NAPA should receive
+extra review because affiliated or independent store naming may be messier than
+single-banner corporate chains.

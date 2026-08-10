@@ -92,6 +92,9 @@ The first statewide reviewed footprint report is:
 The first Puget Sound ferry-aware read is:
 `reports\home-improvement-seattle-puget-sound.md`.
 
+The first chain expansion decision is:
+`docs\chain-expansion-sequence.md`.
+
 ## Product thesis
 
 Retail chains leave a public geography behind. Store locations, roads, cities,
@@ -120,6 +123,9 @@ layer before moving to roads, catchments, and retail rivalry.
    chains.
 6. **National Atlas** - reproducible national reports for selected retail and
    QSR categories.
+
+The next category sequence is auto parts first, then Target/Walmart, then
+Costco as a later regional destination-store contrast.
 
 ## Data policy
 
