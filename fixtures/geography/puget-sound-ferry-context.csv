@@ -1,0 +1,4 @@
+place_id,label,county_name,water_context,ferry_route_hint,retail_read_hint,context_source,context_source_url
+bainbridge-island,Bainbridge Island,Kitsap County,puget_sound_island,Seattle / Bainbridge Island,no direct packet-ready Home Depot or Lowe's row; read via Kitsap anchors,WSDOT ferry routes,https://wsdot.wa.gov/travel/washington-state-ferries
+kingston,Kingston,Kitsap County,puget_sound_ferry_terminal,Edmonds / Kingston,no direct packet-ready Home Depot or Lowe's row; read via Poulsbo and Silverdale anchors,WSDOT ferry routes,https://wsdot.wa.gov/travel/washington-state-ferries
+bremerton,Bremerton,Kitsap County,puget_sound_ferry_terminal,Seattle / Bremerton,Bremerton metro is separate from Seattle CBSA and is contested 2 to 2,WSDOT ferry routes,https://wsdot.wa.gov/travel/washington-state-ferries

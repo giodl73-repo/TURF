@@ -1,0 +1,23 @@
+county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,csa_code,csa_title,central_outlying,metro_context_status,relationship_source,relationship_vintage
+53005,Benton County,28420,Kennewick-Richland WA,Metropolitan Statistical Area,314,Kennewick-Richland-Walla Walla WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53007,Chelan County,48300,Wenatchee-East Wenatchee WA,Metropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53009,Clallam County,38820,Port Angeles WA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53011,Clark County,38900,Portland-Vancouver-Hillsboro OR-WA,Metropolitan Statistical Area,440,Portland-Vancouver-Salem OR-WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53015,Cowlitz County,31020,Longview-Kelso WA,Metropolitan Statistical Area,440,Portland-Vancouver-Salem OR-WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53021,Franklin County,28420,Kennewick-Richland WA,Metropolitan Statistical Area,314,Kennewick-Richland-Walla Walla WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53025,Grant County,34180,Moses Lake WA,Micropolitan Statistical Area,393,Moses Lake-Othello WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53027,Grays Harbor County,10140,Aberdeen WA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53029,Island County,36020,Oak Harbor WA,Micropolitan Statistical Area,500,Seattle-Tacoma WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,500,Seattle-Tacoma WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53035,Kitsap County,14740,Bremerton-Silverdale-Port Orchard WA,Metropolitan Statistical Area,500,Seattle-Tacoma WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53041,Lewis County,16500,Centralia WA,Micropolitan Statistical Area,500,Seattle-Tacoma WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53047,Okanogan County,,Non-CBSA Washington county,Non-CBSA,,,,non_cbsa,Census July 2023 CBSA delineation file,2023-07
+53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,500,Seattle-Tacoma WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53057,Skagit County,34580,Mount Vernon-Anacortes WA,Metropolitan Statistical Area,500,Seattle-Tacoma WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,500,Seattle-Tacoma WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,518,Spokane-Spokane Valley-Coeur d'Alene WA-ID,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53065,Stevens County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,518,Spokane-Spokane Valley-Coeur d'Alene WA-ID,Outlying,cbsa,Census July 2023 CBSA delineation file,2023-07
+53067,Thurston County,36500,Olympia-Lacey-Tumwater WA,Metropolitan Statistical Area,500,Seattle-Tacoma WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53071,Walla Walla County,47460,Walla Walla WA,Metropolitan Statistical Area,314,Kennewick-Richland-Walla Walla WA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53073,Whatcom County,13380,Bellingham WA,Metropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+53077,Yakima County,49420,Yakima WA,Metropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07

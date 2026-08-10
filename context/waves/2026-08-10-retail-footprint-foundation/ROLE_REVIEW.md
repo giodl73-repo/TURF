@@ -413,3 +413,37 @@ Status: pass with next-output request.
 The ring proxy is enough for a first hypothesis test. The next output should
 compare this with drive-time or road-network distance for the close mirrored
 suburban pairs.
+
+## Pulse 20 Seattle Puget Sound Ferry Read
+
+### Market Analyst
+
+Status: pass.
+
+The Washington extract gives a useful second-market comparison: Home Depot leads
+statewide and in the Seattle CBSA, while the separate Bremerton-Silverdale-Port
+Orchard CBSA is contested at 2 to 2.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse correctly separates Seattle-Tacoma-Bellevue CBSA from the Bremerton
+metro and records Bainbridge Island, Kingston, and Bremerton as ferry-linked
+places rather than ordinary radius suburbs.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The report states the important modeling limitation: straight-line distance is
+not enough across Puget Sound. The next output should add a ferry-aware route
+edge or impedance fixture before computing catchments across water.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse uses Overture candidate rows, public Census relationship files, and a
+public WSDOT route list. It does not use restricted retailer locator scraping or
+claim access to company-defined territories.

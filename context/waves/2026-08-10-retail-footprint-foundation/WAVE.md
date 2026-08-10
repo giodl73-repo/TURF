@@ -36,6 +36,7 @@ before broader chain coverage begins.
 | 17 | Georgia metro context read | complete | Added Census CBSA context fixture, metro-enriched export, and metro/micro dominance readout. |
 | 18 | Atlanta CBSA drilldown | complete | Added metro drilldown command, Atlanta CBSA nearest-competitor spacing report, and report findings. |
 | 19 | Atlanta suburban ring test | complete | Added distance-ring classification for Atlanta CBSA and tested Lowe's suburbanity hypothesis. |
+| 20 | Seattle Puget Sound ferry read | complete | Added Washington extract, Seattle/Bremerton metro reads, and ferry-aware Puget Sound context. |
 
 ## Success criteria
 

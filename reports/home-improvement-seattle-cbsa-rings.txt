@@ -1,0 +1,48 @@
+ring,leader,leader_stores,total_stores,status,home_depot_stores,lowes_stores,lowes_share
+urban_core,Home Depot,4,7,dominant,4,3,0.429
+inner_suburb,Home Depot,14,21,dominant,14,7,0.333
+outer_suburb,Home Depot,8,14,dominant,8,6,0.429
+
+brand,store_id,city,county_name,ring,distance_from_core_miles
+Home Depot,df562fe5-7fc1-46ab-bcf8-81a18c27741a,Seattle,King County,urban_core,1.92
+Lowe's,cdcc538b-d620-4207-ba12-e6d56c3aca21,Seattle,King County,urban_core,2.47
+Home Depot,45e6536f-482c-4e46-a8b1-01ebc45c7c39,Seattle,King County,urban_core,5.03
+Home Depot,77acc2f6-06e8-47d2-b9e7-ad36e15ed6f8,Bellevue,King County,urban_core,7.02
+Home Depot,1134a2e4-b3ae-4c69-a0fb-d30b2be4e2b4,Seattle,King County,urban_core,7.48
+Lowe's,b6a7e46d-b668-4157-b490-b72b04b07465,Seattle,King County,urban_core,7.93
+Lowe's,918dd0e7-8bdb-4d78-a509-f1a28aa73902,Renton,King County,urban_core,9.60
+Lowe's,c9b6b7c0-cd7d-4351-b433-b63194646dce,Tukwila,King County,inner_suburb,10.75
+Home Depot,b85b8120-d1a1-4599-a217-69b7e4d12613,Renton,King County,inner_suburb,10.95
+Home Depot,4f7473a5-0270-4f21-80a4-291ecb258bf4,Redmond,King County,inner_suburb,11.53
+Home Depot,79c9ea56-672e-4607-a861-10e006e4941f,Shoreline,King County,inner_suburb,11.75
+Home Depot,ac170089-1eb0-40e4-af39-d8d1811d75ec,Tukwila,King County,inner_suburb,11.93
+Home Depot,4ea5a07b-565c-47ce-9556-32e4d1df56b5,Bothell,King County,inner_suburb,12.82
+Lowe's,390b52da-fabc-4179-a19b-c1017671d37a,Issaquah,King County,inner_suburb,13.45
+Home Depot,c7f345b9-cb03-4e74-b25e-001ea56f89e0,Issaquah,King County,inner_suburb,14.35
+Home Depot,b8a429f4-3a93-4ddc-ba75-586008121059,Issaquah,King County,inner_suburb,14.36
+Lowe's,b42e4314-53ed-4d65-bfad-1ac6d7014b59,Lynnwood,Snohomish County,inner_suburb,14.95
+Lowe's,b4808e3a-6545-4a5c-8dc1-758e9e094d5e,Kent,King County,inner_suburb,15.34
+Home Depot,c5b96201-f944-4fcf-903d-9329b2e1ec63,Lynnwood,Snohomish County,inner_suburb,15.89
+Home Depot,3ea3d67c-6368-45f0-841b-0da320ae2d7d,Kent,King County,inner_suburb,17.60
+Lowe's,d498095c-4ff8-478e-862c-6a98eb1ced60,Mill Creek,Snohomish County,inner_suburb,19.61
+Home Depot,9c074382-880f-4235-8095-23522d8180d7,Everett,Snohomish County,inner_suburb,19.82
+Home Depot,fbbc3217-3f0b-48eb-8dba-de1797ae1c58,Covington,King County,inner_suburb,20.26
+Lowe's,f9b31d02-e221-4a74-926a-2cba46f2b1a0,Auburn,King County,inner_suburb,20.45
+Home Depot,31b23375-aad2-4769-ae2d-6919c9873fb1,Gig Harbor,Pierce County,inner_suburb,21.46
+Home Depot,7aee2dbc-a231-499b-bb08-8c61f39ad4dc,Federal Way,King County,inner_suburb,22.24
+Home Depot,880e5035-9fc4-4e3a-8c65-598b81131ee1,Federal Way,King County,inner_suburb,22.24
+Lowe's,0a2d8088-b384-4157-8349-4c4a9f41f85f,Monroe,Snohomish County,inner_suburb,24.45
+Home Depot,3b5adbbb-44f4-4b4c-8005-11204dc3428b,Snohomish,Snohomish County,outer_suburb,25.47
+Home Depot,3a673914-d328-4939-8113-07564704d792,Snohomish,Snohomish County,outer_suburb,25.48
+Lowe's,11c5cf29-f7e0-4f99-8536-058a09194627,Everett,Snohomish County,outer_suburb,26.42
+Lowe's,0ef746bc-7c9a-40b5-86ff-d269fb86c2ea,Tacoma,Pierce County,outer_suburb,26.77
+Home Depot,5918342d-14f1-4844-b8e0-7cd61029799a,Tacoma,Pierce County,outer_suburb,26.94
+Home Depot,892ad5cd-ab74-4ea2-94b3-3d29218d440b,Tacoma,Pierce County,outer_suburb,29.24
+Home Depot,a470b311-e3e6-4f73-a007-1fcb5ade4caa,Puyallup,Pierce County,outer_suburb,30.94
+Lowe's,2545c148-c7cb-4db3-b0f3-4aea540d7a60,Puyallup,Pierce County,outer_suburb,31.11
+Home Depot,c217a919-a3c1-4374-8170-3d65c2cbf415,Bonney Lake,Pierce County,outer_suburb,31.36
+Lowe's,efdcf3bc-3f16-4be4-8fd4-c1058b9ded54,Bonney Lake,Pierce County,outer_suburb,31.37
+Lowe's,abc6e05b-69ac-4222-a9a6-9a860dab64f8,Lakewood,Pierce County,outer_suburb,31.37
+Home Depot,0113026a-f15c-434d-9d71-0cb0fbd4f3e2,Marysville,Snohomish County,outer_suburb,33.48
+Home Depot,847418b5-fbeb-4265-a2aa-ab72d3200c52,Tacoma,Pierce County,outer_suburb,33.83
+Lowe's,87985523-9cd3-4220-be70-87d9f7d059c3,Arlington,Snohomish County,outer_suburb,38.15

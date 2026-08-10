@@ -1,0 +1,15 @@
+metro,Bremerton-Silverdale-Port Orchard WA
+total_stores,4
+
+brand,stores
+Home Depot,2
+Lowe's,2
+
+county_geoid,county_name,leader,leader_stores,total_stores,status
+53035,Kitsap County,Home Depot,2,4,contested
+
+brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles
+Lowe's,790011a6-f872-4ec6-a479-6580c80251bb,Silverdale,Kitsap County,Home Depot,e9fa3dff-83ee-4a7a-b1d9-073d610cd2be,Silverdale,Kitsap County,0.44
+Home Depot,e9fa3dff-83ee-4a7a-b1d9-073d610cd2be,Silverdale,Kitsap County,Lowe's,790011a6-f872-4ec6-a479-6580c80251bb,Silverdale,Kitsap County,0.44
+Home Depot,3736a4c3-d91b-43c3-8aa9-087efa5260d6,Poulsbo,Kitsap County,Lowe's,790011a6-f872-4ec6-a479-6580c80251bb,Silverdale,Kitsap County,7.06
+Lowe's,b14096a1-fde9-427d-88a4-5e158758da90,Port Orchard,Kitsap County,Home Depot,e9fa3dff-83ee-4a7a-b1d9-073d610cd2be,Silverdale,Kitsap County,11.59

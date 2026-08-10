@@ -1,0 +1,93 @@
+brand,store_id,city,state,postal_code,zcta_candidate,county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,metro_context_status,latitude,longitude
+Home Depot,1c7836c7-494e-43e6-9039-4b3225d94aa2,Aberdeen,WA,98520,98520,53027,Grays Harbor County,10140,Aberdeen WA,Micropolitan Statistical Area,cbsa,46.965484619140625,-123.84197235107422
+Home Depot,77acc2f6-06e8-47d2-b9e7-ad36e15ed6f8,Bellevue,WA,98005,98005,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.612457275390625,-122.18170928955078
+Home Depot,a383072e-ce94-45fd-a7c0-83aa5c74c094,Bellingham,WA,98226,98226,53073,Whatcom County,13380,Bellingham WA,Metropolitan Statistical Area,cbsa,48.785465240478516,-122.47982788085938
+Home Depot,c217a919-a3c1-4374-8170-3d65c2cbf415,Bonney Lake,WA,98391,98391,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.17014694213867,-122.14617919921875
+Home Depot,4ea5a07b-565c-47ce-9556-32e4d1df56b5,Bothell,WA,98011,98011,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.75994110107422,-122.17774963378906
+Home Depot,a3c96e8d-bf5b-4db2-8327-430b2b4a48cd,Burlington,WA,98233,98233,53057,Skagit County,34580,Mount Vernon-Anacortes WA,Metropolitan Statistical Area,cbsa,48.44795227050781,-122.33868408203125
+Home Depot,c4853dbb-5e0a-4406-813a-65d9d6abce04,Chehalis,WA,98532,98532,53041,Lewis County,16500,Centralia WA,Micropolitan Statistical Area,cbsa,46.6815071105957,-122.97686004638672
+Home Depot,efb59acd-918b-47c7-a0e1-44d94df81e87,Chehalis,WA,98532,98532,53041,Lewis County,16500,Centralia WA,Micropolitan Statistical Area,cbsa,46.68141174316406,-122.97676849365234
+Home Depot,a9710f47-1980-4e25-91bd-e0d30f48a705,College Place,WA,99324,99324,53071,Walla Walla County,47460,Walla Walla WA,Metropolitan Statistical Area,cbsa,46.05147171020508,-118.37223815917969
+Home Depot,fbbc3217-3f0b-48eb-8dba-de1797ae1c58,Covington,WA,98042,98042,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.35967254638672,-122.09730529785156
+Home Depot,9c074382-880f-4235-8095-23522d8180d7,Everett,WA,98204,98204,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.888545989990234,-122.25631713867188
+Home Depot,880e5035-9fc4-4e3a-8c65-598b81131ee1,Federal Way,WA,98003,98003,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.284584045410156,-122.31092071533203
+Home Depot,7aee2dbc-a231-499b-bb08-8c61f39ad4dc,Federal Way,WA,98003,98003,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.28467559814453,-122.31094360351563
+Home Depot,31b23375-aad2-4769-ae2d-6919c9873fb1,Gig Harbor,WA,98332,98332,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.35719299316406,-122.60679626464844
+Home Depot,b8a429f4-3a93-4ddc-ba75-586008121059,Issaquah,WA,98029,98029,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.54710006713867,-122.03682708740234
+Home Depot,c7f345b9-cb03-4e74-b25e-001ea56f89e0,Issaquah,WA,98029,98029,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.5470085144043,-122.0369873046875
+Home Depot,e8000a4b-b7ab-4f80-8e10-fad3421933c5,Kennewick,WA,99337,99337,53005,Benton County,28420,Kennewick-Richland WA,Metropolitan Statistical Area,cbsa,46.185577392578125,-119.17255401611328
+Home Depot,3ea3d67c-6368-45f0-841b-0da320ae2d7d,Kent,WA,98030,98030,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.36745834350586,-122.20097351074219
+Home Depot,0069210d-1843-437f-927f-abe49227c43c,Lacey,WA,98516,98516,53067,Thurston County,36500,Olympia-Lacey-Tumwater WA,Metropolitan Statistical Area,cbsa,47.04330062866211,-122.82315063476563
+Home Depot,dacdae37-a89f-48e4-8875-0fdbf462eeea,Lacey,WA,98516,98516,53067,Thurston County,36500,Olympia-Lacey-Tumwater WA,Metropolitan Statistical Area,cbsa,47.06052780151367,-122.76295471191406
+Home Depot,fa223cda-0651-4344-8b6e-5897e0fe11e4,Liberty Lake,WA,99019,99019,53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,47.66801834106445,-117.11400604248047
+Home Depot,eae8b5c6-3642-4df7-adbc-34cbd9de306a,Longview,WA,98632,98632,53015,Cowlitz County,31020,Longview-Kelso WA,Metropolitan Statistical Area,cbsa,46.121639251708984,-122.9301986694336
+Home Depot,c5b96201-f944-4fcf-903d-9329b2e1ec63,Lynnwood,WA,98037,98037,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.83262634277344,-122.27191925048828
+Home Depot,0113026a-f15c-434d-9d71-0cb0fbd4f3e2,Marysville,WA,98271,98271,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,48.08098602294922,-122.18782806396484
+Home Depot,0ecfc9ba-094d-4c3a-990a-18d64a7ec6eb,Moses Lake,WA,98837,98837,53025,Grant County,34180,Moses Lake WA,Micropolitan Statistical Area,cbsa,47.14790725708008,-119.2925033569336
+Home Depot,fd733943-55bd-44c6-b147-fb35bf052b23,Oak Harbor,WA,98277,98277,53029,Island County,36020,Oak Harbor WA,Micropolitan Statistical Area,cbsa,48.29318618774414,-122.65449523925781
+Home Depot,a36a72da-e0b8-4fc9-854b-a68daf13a8fa,Olympia,WA,98501,98501,53067,Thurston County,36500,Olympia-Lacey-Tumwater WA,Metropolitan Statistical Area,cbsa,47.03688049316406,-122.85003662109375
+Home Depot,344bbb19-a438-4245-94ac-7af2ed93cd3f,Omak,WA,98841,98841,53047,Okanogan County,,Non-CBSA Washington county,Non-CBSA,non_cbsa,48.41509246826172,-119.50386047363281
+Home Depot,14aeacf0-d3f2-476f-90c1-1957de2cdef9,Omak,WA,98841,98841,53047,Okanogan County,,Non-CBSA Washington county,Non-CBSA,non_cbsa,48.41518783569336,-119.50365447998047
+Home Depot,3736a4c3-d91b-43c3-8aa9-087efa5260d6,Poulsbo,WA,98370,98370,53035,Kitsap County,14740,Bremerton-Silverdale-Port Orchard WA,Metropolitan Statistical Area,cbsa,47.760440826416016,-122.6629867553711
+Home Depot,a470b311-e3e6-4f73-a007-1fcb5ade4caa,Puyallup,WA,98374,98374,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.159263610839844,-122.28973388671875
+Home Depot,4f7473a5-0270-4f21-80a4-291ecb258bf4,Redmond,WA,98052,98052,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.669334411621094,-122.10274505615234
+Home Depot,b85b8120-d1a1-4599-a217-69b7e4d12613,Renton,WA,98057,98057,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.472843170166016,-122.20511627197266
+Home Depot,f8e58fa5-426a-4198-b39e-de5f3235d1f5,Richland,WA,99352,99352,53005,Benton County,28420,Kennewick-Richland WA,Metropolitan Statistical Area,cbsa,46.23015594482422,-119.22827911376953
+Home Depot,d7334ed6-77a1-4de7-8de2-93e735bb2952,Richland,WA,99352,99352,53005,Benton County,28420,Kennewick-Richland WA,Metropolitan Statistical Area,cbsa,46.25476837158203,-119.31131744384766
+Home Depot,45e6536f-482c-4e46-a8b1-01ebc45c7c39,Seattle,WA,98106,98106,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.5365104675293,-122.3636474609375
+Home Depot,1134a2e4-b3ae-4c69-a0fb-d30b2be4e2b4,Seattle,WA,98133,98133,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.71419143676758,-122.3431167602539
+Home Depot,df562fe5-7fc1-46ab-bcf8-81a18c27741a,Seattle,WA,98134,98134,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.5785026550293,-122.33590698242188
+Home Depot,9b89cb16-26c3-49d8-aebd-8d0346c8da5d,Sequim,WA,98382,98382,53009,Clallam County,38820,Port Angeles WA,Micropolitan Statistical Area,cbsa,48.07677459716797,-123.13062286376953
+Home Depot,79c9ea56-672e-4607-a861-10e006e4941f,Shoreline,WA,98133,98133,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.776092529296875,-122.34209442138672
+Home Depot,e9fa3dff-83ee-4a7a-b1d9-073d610cd2be,Silverdale,WA,98383,98383,53035,Kitsap County,14740,Bremerton-Silverdale-Port Orchard WA,Metropolitan Statistical Area,cbsa,47.66353988647461,-122.68670654296875
+Home Depot,3a673914-d328-4939-8113-07564704d792,Snohomish,WA,98290,98290,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.942169189453125,-122.10584259033203
+Home Depot,3b5adbbb-44f4-4b4c-8005-11204dc3428b,Snohomish,WA,98290,98290,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.94184875488281,-122.1053695678711
+Home Depot,cbb42958-68ed-4008-b827-51a74da2dd44,Spokane,WA,99218,99218,53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,47.741031646728516,-117.40741729736328
+Home Depot,fcf49371-21ba-4c65-8ca7-31e05f1cc640,Spokane Valley,WA,99212,99212,53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,47.657413482666016,-117.3332748413086
+Home Depot,14b26f13-d5cf-47d3-8751-d203cd749162,Spokane Valley,WA,99212,99212,53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,47.6584587097168,-117.32771301269531
+Home Depot,892ad5cd-ab74-4ea2-94b3-3d29218d440b,Tacoma,WA,98409,98409,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.19266891479492,-122.46482849121094
+Home Depot,5918342d-14f1-4844-b8e0-7cd61029799a,Tacoma,WA,98409,98409,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.2330436706543,-122.4988021850586
+Home Depot,847418b5-fbeb-4265-a2aa-ab72d3200c52,Tacoma,WA,98445,98445,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.12120056152344,-122.43115997314453
+Home Depot,ac170089-1eb0-40e4-af39-d8d1811d75ec,Tukwila,WA,98188,98188,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.443058013916016,-122.2481918334961
+Home Depot,c741a4b5-8ec1-426d-b99b-4b50ceaf1633,Tumwater,WA,98512,98512,53067,Thurston County,36500,Olympia-Lacey-Tumwater WA,Metropolitan Statistical Area,cbsa,46.991493225097656,-122.91998291015625
+Home Depot,86aab697-f09b-4484-9bef-0372ff6259f5,Vancouver,WA,98665,98665,53011,Clark County,38900,Portland-Vancouver-Hillsboro OR-WA,Metropolitan Statistical Area,cbsa,45.6838264465332,-122.5993423461914
+Home Depot,8986f20b-ba0d-465f-a569-10356754a847,Vancouver,WA,98683,98683,53011,Clark County,38900,Portland-Vancouver-Hillsboro OR-WA,Metropolitan Statistical Area,cbsa,45.62022399902344,-122.47981262207031
+Home Depot,2c727620-f944-4d4e-9f49-5df8a6e6b098,Wenatchee,WA,98801,98801,53007,Chelan County,48300,Wenatchee-East Wenatchee WA,Metropolitan Statistical Area,cbsa,47.45153045654297,-120.33566284179688
+Home Depot,d79cbd85-781b-49fe-8042-41f6c086ac7f,Wenatchee,WA,98801,98801,53007,Chelan County,48300,Wenatchee-East Wenatchee WA,Metropolitan Statistical Area,cbsa,47.451446533203125,-120.3357162475586
+Home Depot,3bc05482-6865-4d98-80ac-309634496ed7,Yakima,WA,98903,98903,53077,Yakima County,49420,Yakima WA,Metropolitan Statistical Area,cbsa,46.5720329284668,-120.48594665527344
+Home Depot,e4f7e26a-be92-4a63-9444-e63d3fe9106b,Yakima,WA,98903,98903,53077,Yakima County,49420,Yakima WA,Metropolitan Statistical Area,cbsa,46.572078704833984,-120.48579406738281
+Lowe's,87985523-9cd3-4220-be70-87d9f7d059c3,Arlington,WA,98223,98223,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,48.1496467590332,-122.18656158447266
+Lowe's,f9b31d02-e221-4a74-926a-2cba46f2b1a0,Auburn,WA,98002,98002,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.31885528564453,-122.22747802734375
+Lowe's,21a0a44c-f44d-43c0-99d9-b9b2c2b95416,Bellingham,WA,98226,98226,53073,Whatcom County,13380,Bellingham WA,Metropolitan Statistical Area,cbsa,48.7703857421875,-122.46100616455078
+Lowe's,cdef6556-f71b-4042-bdce-abdb9ff58faa,Bellingham,WA,98226,98226,53073,Whatcom County,13380,Bellingham WA,Metropolitan Statistical Area,cbsa,48.770225524902344,-122.46139526367188
+Lowe's,efdcf3bc-3f16-4be4-8fd4-c1058b9ded54,Bonney Lake,WA,98391,98391,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.166717529296875,-122.16414642333984
+Lowe's,11c5cf29-f7e0-4f99-8536-058a09194627,Everett,WA,98201,98201,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.977603912353516,-122.19671630859375
+Lowe's,390b52da-fabc-4179-a19b-c1017671d37a,Issaquah,WA,98027,98027,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.54936599731445,-122.05615234375
+Lowe's,462fd3fc-303f-4ef8-ae2a-297b319f37c8,Kennewick,WA,99336,99336,53005,Benton County,28420,Kennewick-Richland WA,Metropolitan Statistical Area,cbsa,46.215599060058594,-119.22211456298828
+Lowe's,fb354fcd-db08-43ef-a2ca-ec4d3004ea75,Kennewick,WA,99336,99336,53005,Benton County,28420,Kennewick-Richland WA,Metropolitan Statistical Area,cbsa,46.2200927734375,-119.22151947021484
+Lowe's,b4808e3a-6545-4a5c-8dc1-758e9e094d5e,Kent,WA,98032,98032,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.38565444946289,-122.29468536376953
+Lowe's,abc6e05b-69ac-4222-a9a6-9a860dab64f8,Lakewood,WA,98499,98499,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.16752624511719,-122.50505828857422
+Lowe's,556e0456-81d1-443a-b834-ecd9f02f1dd2,Longview,WA,98632,98632,53015,Cowlitz County,31020,Longview-Kelso WA,Metropolitan Statistical Area,cbsa,46.148231506347656,-122.9586410522461
+Lowe's,dc45109d-718e-4609-b0bf-794030e9f8dd,Loon Lake,WA,99148,99148,53065,Stevens County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,48.08396911621094,-117.63285064697266
+Lowe's,b42e4314-53ed-4d65-bfad-1ac6d7014b59,Lynnwood,WA,98036,98036,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.819366455078125,-122.27645874023438
+Lowe's,d498095c-4ff8-478e-862c-6a98eb1ced60,Mill Creek,WA,98012,98012,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.8769645690918,-122.20525360107422
+Lowe's,0a2d8088-b384-4157-8349-4c4a9f41f85f,Monroe,WA,98272,98272,53061,Snohomish County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.8634147644043,-121.97075653076172
+Lowe's,f8f55409-45f4-409b-b1a4-8b616f5731e2,Moses Lake,WA,98837,98837,53025,Grant County,34180,Moses Lake WA,Micropolitan Statistical Area,cbsa,47.10553741455078,-119.25582122802734
+Lowe's,78a535e3-4d8a-4ce1-b417-b21821661aa2,Mount Vernon,WA,98273,98273,53057,Skagit County,34580,Mount Vernon-Anacortes WA,Metropolitan Statistical Area,cbsa,48.43672180175781,-122.34486389160156
+Lowe's,bd553c81-aea1-4768-b23f-0a3fe882870e,Pasco,WA,99301,99301,53021,Franklin County,28420,Kennewick-Richland WA,Metropolitan Statistical Area,cbsa,46.26832962036133,-119.18547821044922
+Lowe's,b14096a1-fde9-427d-88a4-5e158758da90,Port Orchard,WA,98367,98367,53035,Kitsap County,14740,Bremerton-Silverdale-Port Orchard WA,Metropolitan Statistical Area,cbsa,47.49817657470703,-122.64524841308594
+Lowe's,2545c148-c7cb-4db3-b0f3-4aea540d7a60,Puyallup,WA,98374,98374,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.15702819824219,-122.28606414794922
+Lowe's,918dd0e7-8bdb-4d78-a509-f1a28aa73902,Renton,WA,98057,98057,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.50010681152344,-122.19903564453125
+Lowe's,b6a7e46d-b668-4157-b490-b72b04b07465,Seattle,WA,98133,98133,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.720497131347656,-122.34711456298828
+Lowe's,cdcc538b-d620-4207-ba12-e6d56c3aca21,Seattle,WA,98144,98144,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.579322814941406,-122.29715728759766
+Lowe's,790011a6-f872-4ec6-a479-6580c80251bb,Silverdale,WA,98383,98383,53035,Kitsap County,14740,Bremerton-Silverdale-Port Orchard WA,Metropolitan Statistical Area,cbsa,47.65894317626953,-122.68012237548828
+Lowe's,0bfb4c5a-18f6-4e4b-b233-c9226280edd2,Spokane,WA,99208,99208,53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,47.717529296875,-117.40966796875
+Lowe's,5335da3e-fe1c-4267-b6e7-eea81289ba21,Spokane Valley,WA,99037,99037,53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,47.66476821899414,-117.1927719116211
+Lowe's,a60f1168-4034-48cb-a284-d7aa50bb1865,Spokane Valley,WA,99037,99037,53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,47.665802001953125,-117.18680572509766
+Lowe's,3a101afd-86ab-4045-b879-98b2954b0184,Spokane Valley,WA,99212,99212,53063,Spokane County,44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,47.65605545043945,-117.33483123779297
+Lowe's,0ef746bc-7c9a-40b5-86ff-d269fb86c2ea,Tacoma,WA,98466,98466,53053,Pierce County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.23640060424805,-122.50326538085938
+Lowe's,c9b6b7c0-cd7d-4351-b433-b63194646dce,Tukwila,WA,98188,98188,53033,King County,42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,47.46052169799805,-122.25094604492188
+Lowe's,abd72a0b-b2f2-43e0-8882-3d15a96b3e40,Union Gap,WA,98903,98903,53077,Yakima County,49420,Yakima WA,Metropolitan Statistical Area,cbsa,46.56369400024414,-120.47476196289063
+Lowe's,33be6f84-065a-42a4-96bf-ceaf92729d22,Vancouver,WA,98662,98662,53011,Clark County,38900,Portland-Vancouver-Hillsboro OR-WA,Metropolitan Statistical Area,cbsa,45.67619323730469,-122.55477142333984
+Lowe's,9cc8ec9b-e182-4399-9faa-73a61419dfb3,Vancouver,WA,98683,98683,53011,Clark County,38900,Portland-Vancouver-Hillsboro OR-WA,Metropolitan Statistical Area,cbsa,45.61530685424805,-122.47876739501953
+Lowe's,ff7512a6-fe6e-4ed3-9cb4-3349f45141d7,Yakima,WA,98903,98903,53077,Yakima County,49420,Yakima WA,Metropolitan Statistical Area,cbsa,46.56459045410156,-120.49459838867188

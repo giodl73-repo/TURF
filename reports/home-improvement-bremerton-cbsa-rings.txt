@@ -1,0 +1,9 @@
+ring,leader,leader_stores,total_stores,status,home_depot_stores,lowes_stores,lowes_share
+urban_core,Lowe's,2,3,dominant,1,2,0.667
+inner_suburb,Home Depot,1,1,dominant,1,0,0.000
+
+brand,store_id,city,county_name,ring,distance_from_core_miles
+Lowe's,b14096a1-fde9-427d-88a4-5e158758da90,Port Orchard,Kitsap County,urban_core,4.69
+Lowe's,790011a6-f872-4ec6-a479-6580c80251bb,Silverdale,Kitsap County,urban_core,6.95
+Home Depot,e9fa3dff-83ee-4a7a-b1d9-073d610cd2be,Silverdale,Kitsap County,urban_core,7.35
+Home Depot,3736a4c3-d91b-43c3-8aa9-087efa5260d6,Poulsbo,Kitsap County,inner_suburb,13.61
