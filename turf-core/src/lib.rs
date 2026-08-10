@@ -173,6 +173,25 @@ pub struct NearestCompetitor {
     pub distance_miles: f64,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct MetroRingStorePoint {
+    pub brand: String,
+    pub store_id: String,
+    pub city: String,
+    pub county_name: String,
+    pub ring: String,
+    pub distance_from_core_miles: f64,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct MetroRingDominance {
+    pub ring: String,
+    pub leader: String,
+    pub leader_stores: usize,
+    pub total_stores: usize,
+    pub status: MarketStatus,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum MarketStatus {
     Dominant,
@@ -1188,6 +1207,76 @@ pub fn nearest_opposite_brand(points: &[MetroStorePoint]) -> Vec<NearestCompetit
     pairs
 }
 
+pub fn classify_metro_rings(
+    points: &[MetroStorePoint],
+    core_latitude: f64,
+    core_longitude: f64,
+) -> Vec<MetroRingStorePoint> {
+    points
+        .iter()
+        .map(|point| {
+            let distance = haversine_miles(
+                core_latitude,
+                core_longitude,
+                point.latitude,
+                point.longitude,
+            );
+            MetroRingStorePoint {
+                brand: point.brand.clone(),
+                store_id: point.store_id.clone(),
+                city: point.city.clone(),
+                county_name: point.county_name.clone(),
+                ring: metro_ring_label(distance).to_string(),
+                distance_from_core_miles: distance,
+            }
+        })
+        .collect()
+}
+
+pub fn summarize_metro_rings(points: &[MetroRingStorePoint]) -> Vec<MetroRingDominance> {
+    let mut ring_counts: BTreeMap<String, BTreeMap<String, usize>> = BTreeMap::new();
+
+    for point in points {
+        *ring_counts
+            .entry(point.ring.clone())
+            .or_default()
+            .entry(point.brand.clone())
+            .or_insert(0) += 1;
+    }
+
+    let mut summaries: Vec<MetroRingDominance> = ring_counts
+        .into_iter()
+        .map(|(ring, counts)| {
+            let total_stores = counts.values().sum();
+            let (leader, leader_stores) = counts
+                .iter()
+                .max_by(|left, right| left.1.cmp(right.1).then_with(|| right.0.cmp(left.0)))
+                .map(|(brand, stores)| (brand.clone(), *stores))
+                .unwrap_or_else(|| ("none".to_string(), 0));
+            let tied_leaders = counts
+                .values()
+                .filter(|stores| **stores == leader_stores)
+                .count();
+            let status = if tied_leaders > 1 || leader_stores * 2 <= total_stores {
+                MarketStatus::Contested
+            } else {
+                MarketStatus::Dominant
+            };
+
+            MetroRingDominance {
+                ring,
+                leader,
+                leader_stores,
+                total_stores,
+                status,
+            }
+        })
+        .collect();
+
+    summaries.sort_by_key(|summary| metro_ring_order(&summary.ring));
+    summaries
+}
+
 pub fn parse_demand_points(csv: &str) -> Result<Vec<DemandPoint>, String> {
     let mut lines = csv.lines();
     let header = lines.next().ok_or("missing CSV header")?;
@@ -1700,6 +1789,28 @@ fn normalize_zip5(value: &str) -> String {
         .collect()
 }
 
+fn metro_ring_label(distance_miles: f64) -> &'static str {
+    if distance_miles < 10.0 {
+        "urban_core"
+    } else if distance_miles < 25.0 {
+        "inner_suburb"
+    } else if distance_miles < 45.0 {
+        "outer_suburb"
+    } else {
+        "exurb"
+    }
+}
+
+fn metro_ring_order(value: &str) -> usize {
+    match value {
+        "urban_core" => 0,
+        "inner_suburb" => 1,
+        "outer_suburb" => 2,
+        "exurb" => 3,
+        _ => 4,
+    }
+}
+
 fn required_argument<'a>(value: &'a str, field: &str) -> Result<&'a str, String> {
     if value.trim().is_empty() {
         Err(format!("missing {field}"))
@@ -2099,6 +2210,91 @@ county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,csa_code,csa_title,centr
         assert_eq!(nearest.len(), 2);
         assert_eq!(nearest[0].nearest_store_id, "low-1");
         assert!(nearest[0].distance_miles < 0.05);
+    }
+
+    #[test]
+    fn classifies_metro_rings_from_core_distance() {
+        let points = vec![
+            MetroStorePoint {
+                brand: "Home Depot".to_string(),
+                store_id: "core".to_string(),
+                city: "Atlanta".to_string(),
+                state: "GA".to_string(),
+                postal_code: "30303".to_string(),
+                zcta_candidate: "30303".to_string(),
+                county_geoid: "13121".to_string(),
+                county_name: "Fulton County".to_string(),
+                cbsa_code: "12060".to_string(),
+                cbsa_title: "Atlanta-Sandy Springs-Roswell GA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 33.7490,
+                longitude: -84.3880,
+            },
+            MetroStorePoint {
+                brand: "Lowe's".to_string(),
+                store_id: "inner".to_string(),
+                city: "Sandy Springs".to_string(),
+                state: "GA".to_string(),
+                postal_code: "30328".to_string(),
+                zcta_candidate: "30328".to_string(),
+                county_geoid: "13121".to_string(),
+                county_name: "Fulton County".to_string(),
+                cbsa_code: "12060".to_string(),
+                cbsa_title: "Atlanta-Sandy Springs-Roswell GA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 33.9243,
+                longitude: -84.3785,
+            },
+            MetroStorePoint {
+                brand: "Home Depot".to_string(),
+                store_id: "outer".to_string(),
+                city: "Cumming".to_string(),
+                state: "GA".to_string(),
+                postal_code: "30041".to_string(),
+                zcta_candidate: "30041".to_string(),
+                county_geoid: "13117".to_string(),
+                county_name: "Forsyth County".to_string(),
+                cbsa_code: "12060".to_string(),
+                cbsa_title: "Atlanta-Sandy Springs-Roswell GA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 34.2073,
+                longitude: -84.1402,
+            },
+            MetroStorePoint {
+                brand: "Home Depot".to_string(),
+                store_id: "exurb".to_string(),
+                city: "Dahlonega".to_string(),
+                state: "GA".to_string(),
+                postal_code: "30533".to_string(),
+                zcta_candidate: "30533".to_string(),
+                county_geoid: "13187".to_string(),
+                county_name: "Lumpkin County".to_string(),
+                cbsa_code: "12060".to_string(),
+                cbsa_title: "Atlanta-Sandy Springs-Roswell GA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 34.5261,
+                longitude: -83.9844,
+            },
+        ];
+
+        let rings = classify_metro_rings(&points, 33.7490, -84.3880);
+        let summary = summarize_metro_rings(&rings);
+
+        assert_eq!(rings[0].ring, "urban_core");
+        assert_eq!(rings[1].ring, "inner_suburb");
+        assert_eq!(rings[2].ring, "outer_suburb");
+        assert_eq!(rings[3].ring, "exurb");
+        assert_eq!(
+            summary
+                .iter()
+                .map(|ring| ring.ring.as_str())
+                .collect::<Vec<_>>(),
+            vec!["urban_core", "inner_suburb", "outer_suburb", "exurb"]
+        );
     }
 
     #[test]

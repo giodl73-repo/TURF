@@ -41,6 +41,12 @@ Atlanta CBSA drilldown:
 reports/home-improvement-atlanta-cbsa-drilldown.txt
 ```
 
+Atlanta CBSA distance-ring test:
+
+```text
+reports/home-improvement-atlanta-cbsa-rings.txt
+```
+
 ## Review Gate
 
 | Review status | Rows |
@@ -201,6 +207,24 @@ Closest mirrored city pairs:
 | Marietta | Cobb County | 0.45 |
 | Douglasville | Douglas County | 0.45 |
 
+## Atlanta Distance-Ring Test
+
+This test classifies Atlanta CBSA stores by straight-line distance from an
+Atlanta core point at `33.7490,-84.3880`. It is a suburbanity proxy, not a
+Census urban/suburban classification.
+
+| Ring | Definition | Home Depot | Lowe's | Total | Lowe's share |
+|---|---|---:|---:|---:|---:|
+| `urban_core` | Under 10 miles from core | 6 | 1 | 7 | 0.143 |
+| `inner_suburb` | 10 to under 25 miles | 31 | 13 | 44 | 0.295 |
+| `outer_suburb` | 25 to under 45 miles | 19 | 6 | 25 | 0.240 |
+| `exurb` | 45 miles or more | 3 | 0 | 3 | 0.000 |
+
+This supports a narrower version of the suburban hypothesis: in this
+Overture-derived Atlanta CBSA sample, Lowe's share is highest in the
+`inner_suburb` ring and second-highest in the `outer_suburb` ring. It does not
+show Lowe's over-indexing in the urban core or far exurb fringe.
+
 ## Contested Primary County Groups
 
 | County | Leader label | Leader stores | Total stores |
@@ -295,6 +319,9 @@ not show a clear city-level winner.
 - Inside the Atlanta CBSA, the chains often mirror each other closely. Twelve
   packet-ready stores have an opposite-brand nearest neighbor within half a mile
   and 24 are within one mile.
+- The first Atlanta ring test supports a cautious answer to the suburbanity
+  question: Lowe's is more visible in the inner and outer suburban rings than in
+  the urban core, but Home Depot still leads every ring.
 - Address city/locality is not enough. TURF needs to attach ZIP/ZCTA, county,
   CBSA, urban area, and drive-time layers before saying how these chains divide
   Georgia.
@@ -312,5 +339,6 @@ cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-i
 cargo run -p turf-cli -- summarize-county-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
 cargo run -p turf-cli -- summarize-metro-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
+cargo run -p turf-cli -- ring-metro-review 12060 33.7490 -84.3880 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```

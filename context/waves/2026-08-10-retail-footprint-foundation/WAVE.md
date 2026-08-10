@@ -35,6 +35,7 @@ before broader chain coverage begins.
 | 16 | Georgia county context read | complete | Added Census ZCTA-county context fixture, county-enriched export, and county dominance readout. |
 | 17 | Georgia metro context read | complete | Added Census CBSA context fixture, metro-enriched export, and metro/micro dominance readout. |
 | 18 | Atlanta CBSA drilldown | complete | Added metro drilldown command, Atlanta CBSA nearest-competitor spacing report, and report findings. |
+| 19 | Atlanta suburban ring test | complete | Added distance-ring classification for Atlanta CBSA and tested Lowe's suburbanity hypothesis. |
 
 ## Success criteria
 

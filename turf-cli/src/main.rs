@@ -2,7 +2,7 @@ use std::{collections::BTreeMap, env, fs, process};
 
 use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
-    build_market_packet, enrich_county_store_points_with_metro,
+    build_market_packet, classify_metro_rings, enrich_county_store_points_with_metro,
     enrich_postal_store_points_with_county, filter_metro_store_points, inspect_place_contexts,
     nearest_opposite_brand, packet_ready_postal_store_points, packet_ready_store_points,
     parse_county_cbsa_contexts, parse_demand_points, parse_place_contexts,
@@ -11,8 +11,9 @@ use turf_core::{
     render_metro_store_points_csv, render_place_context_findings_json,
     render_postal_store_points_csv, render_store_points_csv, summarize_counties_in_metro,
     summarize_county_footprint, summarize_footprint, summarize_metro_footprint,
-    summarize_postal_footprint, validate_county_cbsa_contexts, validate_market_packet_json,
-    validate_national_store_points, validate_reviewed_store_points, validate_zcta_county_contexts,
+    summarize_metro_rings, summarize_postal_footprint, validate_county_cbsa_contexts,
+    validate_market_packet_json, validate_national_store_points, validate_reviewed_store_points,
+    validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -298,6 +299,41 @@ fn run() -> Result<(), String> {
             print_metro_drilldown(&focused_points);
             Ok(())
         }
+        Some("ring-metro-review") => {
+            let cbsa_code = args
+                .next()
+                .ok_or("usage: turf-cli ring-metro-review <cbsa-code> <core-latitude> <core-longitude> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let core_latitude = args
+                .next()
+                .ok_or("usage: turf-cli ring-metro-review <cbsa-code> <core-latitude> <core-longitude> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?
+                .parse::<f64>()
+                .map_err(|_| "invalid core-latitude".to_string())?;
+            let core_longitude = args
+                .next()
+                .ok_or("usage: turf-cli ring-metro-review <cbsa-code> <core-latitude> <core-longitude> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?
+                .parse::<f64>()
+                .map_err(|_| "invalid core-longitude".to_string())?;
+            let reviewed_path = args
+                .next()
+                .ok_or("usage: turf-cli ring-metro-review <cbsa-code> <core-latitude> <core-longitude> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let zcta_county_path = args
+                .next()
+                .ok_or("usage: turf-cli ring-metro-review <cbsa-code> <core-latitude> <core-longitude> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let county_cbsa_path = args
+                .next()
+                .ok_or("usage: turf-cli ring-metro-review <cbsa-code> <core-latitude> <core-longitude> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let metro_points =
+                load_metro_store_points(&reviewed_path, &zcta_county_path, &county_cbsa_path)?;
+            let focused_points = filter_metro_store_points(&metro_points, &cbsa_code);
+            if focused_points.is_empty() {
+                return Err(format!(
+                    "no packet-ready stores found for cbsa_code {cbsa_code}"
+                ));
+            }
+            let rings = classify_metro_rings(&focused_points, core_latitude, core_longitude);
+            print_metro_ring_summary(&rings);
+            Ok(())
+        }
         Some("--help") | Some("-h") | None => {
             print_help();
             Ok(())
@@ -335,6 +371,9 @@ fn print_help() {
     );
     println!(
         "  drilldown-metro-review <cbsa-code> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
+    );
+    println!(
+        "  ring-metro-review <cbsa-code> <core-latitude> <core-longitude> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
     );
 }
 
@@ -519,6 +558,61 @@ fn print_metro_drilldown(points: &[turf_core::MetroStorePoint]) {
             pair.nearest_city,
             pair.nearest_county_name,
             pair.distance_miles
+        );
+    }
+}
+
+fn print_metro_ring_summary(points: &[turf_core::MetroRingStorePoint]) {
+    println!(
+        "ring,leader,leader_stores,total_stores,status,home_depot_stores,lowes_stores,lowes_share"
+    );
+    for ring in summarize_metro_rings(points) {
+        let status = match ring.status {
+            MarketStatus::Dominant => "dominant",
+            MarketStatus::Contested => "contested",
+        };
+        let home_depot = points
+            .iter()
+            .filter(|point| point.ring == ring.ring && point.brand == "Home Depot")
+            .count();
+        let lowes = points
+            .iter()
+            .filter(|point| point.ring == ring.ring && point.brand == "Lowe's")
+            .count();
+        let lowes_share = if ring.total_stores == 0 {
+            0.0
+        } else {
+            lowes as f64 / ring.total_stores as f64
+        };
+        println!(
+            "{},{},{},{},{},{},{},{:.3}",
+            ring.ring,
+            ring.leader,
+            ring.leader_stores,
+            ring.total_stores,
+            status,
+            home_depot,
+            lowes,
+            lowes_share
+        );
+    }
+    println!();
+    println!("brand,store_id,city,county_name,ring,distance_from_core_miles");
+    let mut sorted = points.to_vec();
+    sorted.sort_by(|left, right| {
+        left.distance_from_core_miles
+            .total_cmp(&right.distance_from_core_miles)
+            .then_with(|| left.store_id.cmp(&right.store_id))
+    });
+    for point in sorted {
+        println!(
+            "{},{},{},{},{},{:.2}",
+            point.brand,
+            point.store_id,
+            point.city,
+            point.county_name,
+            point.ring,
+            point.distance_from_core_miles
         );
     }
 }

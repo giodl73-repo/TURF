@@ -46,6 +46,7 @@ cargo run -p turf-cli -- export-packet-ready-county fixtures\stores\overture-hom
 cargo run -p turf-cli -- summarize-metro-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- export-packet-ready-metro fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
+cargo run -p turf-cli -- ring-metro-review 12060 33.7490 -84.3880 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 ```
 
 ## Rules
@@ -66,3 +67,5 @@ cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-h
   context for metro/micro reporting.
 - `drilldown-metro-review` focuses one CBSA and reports county dominance and
   nearest opposite-brand spacing.
+- `ring-metro-review` classifies one CBSA by distance from an explicit core
+  point and reports brand mix by ring.

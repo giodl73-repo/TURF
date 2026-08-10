@@ -1,0 +1,86 @@
+ring,leader,leader_stores,total_stores,status,home_depot_stores,lowes_stores,lowes_share
+urban_core,Home Depot,6,7,dominant,6,1,0.143
+inner_suburb,Home Depot,31,44,dominant,31,13,0.295
+outer_suburb,Home Depot,19,25,dominant,19,6,0.240
+exurb,Home Depot,3,3,dominant,3,0,0.000
+
+brand,store_id,city,county_name,ring,distance_from_core_miles
+Home Depot,5ad4a937-d081-4623-ada9-c9fb7735dcad,Atlanta,Fulton County,urban_core,2.29
+Home Depot,9cac628d-fffb-4b0c-853e-2c52f16f4be1,Atlanta,Fulton County,urban_core,5.36
+Home Depot,d5e26341-7e47-44ba-835c-70ea2992ccee,Atlanta,Fulton County,urban_core,6.84
+Home Depot,2f0bfeb1-3636-4b9d-b9cf-53ef948b0383,Atlanta,Fulton County,urban_core,7.03
+Home Depot,75e08845-7c50-4745-ba3b-b8095438b8c2,Decatur,DeKalb County,urban_core,8.14
+Lowe's,63a3389c-d348-4d85-950e-5e2c47cdabb9,East Point,Fulton County,urban_core,9.29
+Home Depot,e2877a0c-da49-44ef-807e-03b2517b6a0f,Atlanta,Cobb County,urban_core,9.32
+Lowe's,d8dfeaeb-2ae4-42be-bb0d-279de317fb33,Chamblee,DeKalb County,inner_suburb,10.25
+Home Depot,f148395f-7523-4d30-b169-edce95f1c2a7,Decatur,DeKalb County,inner_suburb,10.36
+Lowe's,b118ba6b-fc3b-490d-9573-51287192360e,Sandy Springs,Fulton County,inner_suburb,11.63
+Home Depot,1624281d-ca84-4efc-97b5-62167c34cf64,Decatur,DeKalb County,inner_suburb,12.08
+Home Depot,f02d19c6-6784-4154-81b3-ba5bb7077e3e,Ellenwood,DeKalb County,inner_suburb,12.59
+Home Depot,fffe98e9-d544-4ee2-b4b8-f08c4a0b663b,Sandy Springs,Fulton County,inner_suburb,12.62
+Lowe's,14b0a96b-a7e1-4ddb-9381-e51e89db4f1c,Morrow,Clayton County,inner_suburb,12.90
+Home Depot,bad9ba23-8009-4d02-a456-fdb076228f85,Lithia Springs,Douglas County,inner_suburb,12.94
+Lowe's,b3ac511f-8580-47e0-b4e1-76c29faa9f63,Lithonia,DeKalb County,inner_suburb,12.99
+Home Depot,646e9f02-6dba-438d-9cf1-88d0fb212ad5,Riverdale,Clayton County,inner_suburb,13.20
+Home Depot,b52f1a47-f797-4fbb-bd75-212e7dbbe305,Morrow,Clayton County,inner_suburb,13.31
+Home Depot,d9a35157-1718-4a7f-a7a7-ec85898188e2,Atlanta,DeKalb County,inner_suburb,13.44
+Home Depot,9521a639-d625-4d7e-8295-d748d0a8ea9e,Austell,Cobb County,inner_suburb,13.86
+Home Depot,9c39cfec-7f18-4232-b4a7-6872740b0059,Norcross,Gwinnett County,inner_suburb,14.05
+Lowe's,06a8dac5-9b33-43d7-baf6-32db4d163753,Mableton,Cobb County,inner_suburb,14.12
+Lowe's,f166fecb-d9c0-40aa-b17f-47168da01386,Stockbridge,Henry County,inner_suburb,15.11
+Home Depot,c58c9215-c5e4-4ee7-98bd-c68325f36133,Marietta,Cobb County,inner_suburb,16.26
+Home Depot,6a46012d-3210-4afe-8214-4a8ca91c5fc5,Powder Springs,Cobb County,inner_suburb,18.49
+Home Depot,7eb474fa-c530-411f-8b70-931426e56438,Fayetteville,Fayette County,inner_suburb,18.64
+Home Depot,a0cf656a-08a1-4ed0-97b8-d1d89169ccf8,Lilburn,Gwinnett County,inner_suburb,18.94
+Home Depot,de3f4a50-2855-40e2-baab-5234d9c46977,Lilburn,Gwinnett County,inner_suburb,19.04
+Home Depot,3618c2e9-f70a-4076-8c4d-a5bff5a44d00,Marietta,Cobb County,inner_suburb,19.14
+Home Depot,d31972f1-7c3d-460f-bb8d-493c1d446124,Roswell,Fulton County,inner_suburb,19.17
+Lowe's,7c903db4-f652-473d-bccc-92e0503abf1c,Fayetteville,Fayette County,inner_suburb,19.38
+Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,inner_suburb,19.49
+Home Depot,397b44ce-d5cb-4601-b0f4-bce53a39ca9b,Duluth,Gwinnett County,inner_suburb,20.12
+Lowe's,40ed1380-7924-4588-a2ef-928cfcb9ac01,Alpharetta,Fulton County,inner_suburb,20.34
+Home Depot,6c3e166c-2f0a-496a-b6d2-cc10e7a3e3a9,Marietta,Cobb County,inner_suburb,20.46
+Home Depot,6180ad86-897c-456e-af15-d59a634e53ed,Kennesaw,Cobb County,inner_suburb,20.48
+Home Depot,87f5fa2b-92b0-43ed-b684-1a6596fc66be,Hampton,Clayton County,inner_suburb,20.78
+Home Depot,373b91fc-4a58-40eb-b22b-581da706f5b5,Roswell,Fulton County,inner_suburb,21.41
+Lowe's,4d66291d-83fc-4798-8cad-8de68234a799,Douglasville,Douglas County,inner_suburb,21.43
+Home Depot,68e23179-dbd8-4ae0-8672-afa0aa3c4a0c,Johns Creek,Fulton County,inner_suburb,21.60
+Home Depot,366456bd-a9f7-4e87-bb59-3634eb8994d3,Douglasville,Douglas County,inner_suburb,21.81
+Home Depot,4ed76c71-3829-4ea3-be70-a1818aee8447,McDonough,Henry County,inner_suburb,22.01
+Lowe's,5da9af33-a892-4a2e-b7d9-ce17924fa3a6,Conyers,Rockdale County,inner_suburb,22.50
+Home Depot,4b03f10e-1b57-4835-a9df-cb8a7c61cae4,Hiram,Paulding County,inner_suburb,22.95
+Home Depot,24937a8f-1e3c-4737-8e38-0120c0207ba4,Conyers,Rockdale County,inner_suburb,23.24
+Lowe's,88c6ebf2-0631-4e51-aa38-bd7eb6cdab57,Snellville,Gwinnett County,inner_suburb,23.54
+Home Depot,3de46ff9-bac4-41e1-8d44-31f2a0d13bfc,Snellville,Gwinnett County,inner_suburb,23.62
+Home Depot,ebca87d5-d30b-48da-8b0b-b8300afdff50,Kennesaw,Cobb County,inner_suburb,24.18
+Home Depot,9603c92e-644f-4b5c-af72-e4b2642e59ba,Alpharetta,Fulton County,inner_suburb,24.53
+Lowe's,c432016e-9099-4381-af71-27247b1b67a5,Alpharetta,Fulton County,inner_suburb,24.67
+Home Depot,4cf35df1-bfc5-4f74-96db-99c5304b858f,Woodstock,Cherokee County,inner_suburb,24.87
+Home Depot,34b2e317-433a-4049-a75e-8d9ac01064bc,Suwanee,Gwinnett County,outer_suburb,25.01
+Home Depot,7764f7d5-9a80-4bde-af57-ba551a18ab77,Acworth,Cobb County,outer_suburb,26.11
+Home Depot,49148559-765e-4c50-88fc-1571304d6781,Lawrenceville,Gwinnett County,outer_suburb,26.18
+Home Depot,64da7bd7-0b37-41fd-981a-f0367f53c205,Suwanee,Gwinnett County,outer_suburb,26.95
+Home Depot,c6d7b45b-4a8a-4996-b82f-c16f45df0e40,Peachtree City,Fayette County,outer_suburb,27.04
+Lowe's,6689f05b-6f61-43ce-897d-6ba9f9106687,Suwanee,Gwinnett County,outer_suburb,27.56
+Home Depot,1f9c59ba-5b80-43c6-a399-7491460ee661,Loganville,Walton County,outer_suburb,28.13
+Lowe's,b49f8f2d-b23c-492e-a7ca-36e5fc37adda,Loganville,Walton County,outer_suburb,28.24
+Home Depot,d40c1ba9-38b6-40ed-98bb-9b5205b5dbb1,Canton,Cherokee County,outer_suburb,28.50
+Home Depot,b3ebd9bc-4412-453a-8be2-7bdd890987ea,Newnan,Coweta County,outer_suburb,31.47
+Home Depot,2f9f3ffb-9498-4f22-a3af-71ebbad225d6,Villa Rica,Carroll County,outer_suburb,31.88
+Home Depot,d7faed01-01a8-4e35-a2a5-fcb0caaf6047,Buford,Gwinnett County,outer_suburb,32.36
+Lowe's,8d7441a5-ff76-4597-9da3-5109058aca6f,Buford,Gwinnett County,outer_suburb,32.75
+Home Depot,47be310e-5c40-4175-9add-d35c1e545301,Cumming,Forsyth County,outer_suburb,33.24
+Lowe's,468f7889-9d71-4be0-a6b4-6cbf02b730b7,Cumming,Forsyth County,outer_suburb,33.36
+Home Depot,3f09729c-1589-47fa-8575-774987eba1e1,Covington,Newton County,outer_suburb,33.64
+Home Depot,51183b53-e735-4493-8be3-78bd54fcc085,Griffin,Spalding County,outer_suburb,34.99
+Lowe's,368038c6-25e9-4cc6-8210-a66aa98aab3c,Griffin,Spalding County,outer_suburb,35.22
+Home Depot,bde9ae59-3b64-4838-9615-5071c98653af,Dacula,Gwinnett County,outer_suburb,35.23
+Home Depot,68581cee-1de8-495d-85d8-d620c8b4a295,Canton,Cherokee County,outer_suburb,35.25
+Home Depot,2c33c593-2be1-4a9d-81a2-e9a52d341812,Monroe,Walton County,outer_suburb,37.10
+Home Depot,e8749fcb-ef75-4a1e-ae55-28d776e05c81,Cartersville,Bartow County,outer_suburb,37.88
+Home Depot,fb31a166-6687-4e56-b7de-e90bbfcbfad5,Bethlehem,Barrow County,outer_suburb,38.40
+Home Depot,a4351741-c364-448f-be09-8ffddd3db70d,Carrollton,Carroll County,outer_suburb,41.61
+Lowe's,e37c8915-a8b2-45ab-bfe4-90bac65013f8,Carrollton,Carroll County,outer_suburb,42.08
+Home Depot,d0351204-3a77-4b7c-a183-311537acc40d,Dawsonville,Dawson County,exurb,46.44
+Home Depot,935d37ee-7570-4092-91a6-eba34ea75b04,Jasper,Pickens County,exurb,49.87
+Home Depot,fdfad406-b8ab-4a19-8a23-14ea485941c6,Dahlonega,Lumpkin County,exurb,55.44

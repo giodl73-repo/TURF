@@ -388,3 +388,28 @@ Status: pass.
 
 The drilldown uses already-approved Overture candidates and public Census
 context. It does not infer internal Home Depot or Lowe's operating territories.
+
+## Pulse 19 Atlanta Suburban Ring Test
+
+### Market Analyst
+
+Status: pass.
+
+The ring test gives a clear answer to the working hypothesis: Lowe's share is
+highest in the inner-suburb ring and second-highest in the outer-suburb ring,
+but Home Depot still leads every ring.
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The report correctly labels the rings as a distance-from-core proxy, not a
+Census urban/suburban classification.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The ring proxy is enough for a first hypothesis test. The next output should
+compare this with drive-time or road-network distance for the close mirrored
+suburban pairs.
