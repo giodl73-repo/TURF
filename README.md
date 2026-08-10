@@ -20,6 +20,7 @@ cargo run -p turf-cli -- catchment fixtures\brands\home-improvement-pois.csv fix
 cargo run -p turf-cli -- market-packet "Home Improvement" "Atlanta / Marietta / Cumberland" fixtures\packets\home-improvement-atlanta-stores.csv fixtures\packets\home-improvement-atlanta-places.csv fixtures\packets\home-improvement-atlanta-demand.csv
 cargo run -p turf-cli -- validate-packet reports\home-improvement-atlanta.json
 cargo run -p turf-cli -- validate-stores fixtures\stores\national-store-intake-sample.csv
+cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -46,11 +47,17 @@ The `validate-stores` command checks the stricter national chain store intake
 contract. Home Depot and Lowe's national coverage must pass that source and
 license gate before TURF generates broader packets.
 
+The `validate-store-review` command checks the reviewed candidate layer that
+marks extracted rows as `packet_ready`, `needs_review`, or `exclude`.
+
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
 The first bounded live candidate extract is Georgia:
 `fixtures\stores\overture-home-improvement-georgia-2026-07-22.csv`.
+
+The first reviewed candidate layer is:
+`fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv`.
 
 ## Product thesis
 

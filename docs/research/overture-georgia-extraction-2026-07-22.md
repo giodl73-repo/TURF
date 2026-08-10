@@ -81,6 +81,10 @@ Every row carries:
   is intentionally simple and does not support quoted CSV fields yet.
 - This extract should feed a review packet before any broader Southeast or
   national extraction.
+- The first review pass is documented in
+  `docs/research/overture-georgia-review-2026-07-22.md`, with reviewed
+  candidates at
+  `fixtures/stores/overture-home-improvement-georgia-review-2026-07-22.csv`.
 
 ## Validation
 

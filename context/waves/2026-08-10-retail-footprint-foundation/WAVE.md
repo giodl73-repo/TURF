@@ -29,6 +29,7 @@ before broader chain coverage begins.
 | 10 | National store intake gate | complete | Added source-policy and `validate-stores` gate for Home Depot/Lowe's national acquisition. |
 | 11 | Overture acquisition plan | complete | Added Overture Places extraction plan and open-license candidate intake sample. |
 | 12 | Georgia Overture candidate extract | complete | Added first bounded live Overture Home Depot/Lowe's candidate CSV for Georgia. |
+| 13 | Georgia Overture candidate review | complete | Added reviewed Georgia candidate layer, status contract, validator command, and review notes. |
 
 ## Success criteria
 

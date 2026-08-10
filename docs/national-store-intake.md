@@ -43,3 +43,9 @@ The first approved acquisition path is documented in
 
 The first bounded Overture candidate file is
 `fixtures/stores/overture-home-improvement-georgia-2026-07-22.csv`.
+
+Raw candidate files must remain separate from reviewed candidate files. The
+review contract is documented in `docs/store-candidate-review.md`; it adds
+`review_status` and `review_reason` so likely garden center, rental,
+ProServices, office, duplicate, stale, or false-positive rows are handled
+explicitly before packet generation.

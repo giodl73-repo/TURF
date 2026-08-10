@@ -238,3 +238,27 @@ Status: pass.
 
 The extraction note records release, fields, filters, counts, and validation
 commands so the next pulse can reproduce or audit the candidate file.
+
+## Pulse 13 Georgia Candidate Review
+
+### Source Policy Auditor
+
+Status: pass.
+
+The raw Overture extract remains intact and the reviewed layer carries the same
+open-source attribution fields plus explicit review status and reason fields.
+
+### Market Analyst
+
+Status: pass.
+
+The first pass separates 132 packet-ready candidates from 3 rows needing review
+and 1 excluded foundation/office candidate. That is enough to drive a Georgia
+packet without pretending the extract is a final store census.
+
+### Future Agent
+
+Status: pass.
+
+`validate-store-review` gives future agents a concrete gate before turning
+candidate extracts into packet inputs.

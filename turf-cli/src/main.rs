@@ -5,7 +5,7 @@ use turf_core::{
     build_market_packet, inspect_place_contexts, parse_demand_points, parse_place_contexts,
     parse_store_points, render_market_packet_json, render_market_packet_markdown,
     render_place_context_findings_json, summarize_footprint, validate_market_packet_json,
-    validate_national_store_points,
+    validate_national_store_points, validate_reviewed_store_points,
 };
 
 fn main() {
@@ -128,6 +128,15 @@ fn run() -> Result<(), String> {
             println!("valid,{},{}", path, rows);
             Ok(())
         }
+        Some("validate-store-review") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli validate-store-review <reviewed-stores.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let rows = validate_reviewed_store_points(&csv)?;
+            println!("valid,{},{}", path, rows);
+            Ok(())
+        }
         Some("--help") | Some("-h") | None => {
             print_help();
             Ok(())
@@ -148,6 +157,9 @@ fn print_help() {
     );
     println!("  validate-packet <market-packet.json>  Check market packet JSON contract");
     println!("  validate-stores <national-stores.csv>  Check national store intake contract");
+    println!(
+        "  validate-store-review <reviewed-stores.csv>  Check reviewed store candidate contract"
+    );
 }
 
 fn print_summary(summary: &turf_core::FootprintSummary) {
