@@ -363,3 +363,28 @@ Status: pass.
 
 The CBSA context comes from a public Census delineation workbook. The report
 does not imply that CBSAs are company-defined regions.
+
+## Pulse 18 Atlanta CBSA Drilldown
+
+### Market Analyst
+
+Status: pass.
+
+The drilldown turns the statewide finding into a concrete territory queue:
+Gwinnett, Fulton, Cobb, DeKalb, and close mirrored suburbs such as Cumming,
+Snellville, Loganville, Marietta, and Douglasville.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Nearest opposite-brand spacing is a useful first signal, but it is straight-line
+distance. The next output should test drive-time or road-network distance for
+the closest mirrored pairs.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The drilldown uses already-approved Overture candidates and public Census
+context. It does not infer internal Home Depot or Lowe's operating territories.

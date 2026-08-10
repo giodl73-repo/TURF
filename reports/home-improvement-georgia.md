@@ -35,6 +35,12 @@ Derived metro store-point input:
 fixtures/brands/home-improvement-georgia-packet-ready-metro.csv
 ```
 
+Atlanta CBSA drilldown:
+
+```text
+reports/home-improvement-atlanta-cbsa-drilldown.txt
+```
+
 ## Review Gate
 
 | Review status | Rows |
@@ -153,6 +159,48 @@ fixtures/geography/georgia-county-cbsa-2023.csv
 | Rome GA | Home Depot | 1 | 2 |
 | Warner Robins GA | Home Depot | 1 | 2 |
 
+## Atlanta CBSA Drilldown
+
+The Atlanta-Sandy Springs-Roswell GA CBSA is the main observed signal in this
+Georgia pass.
+
+| Brand | Stores |
+|---|---:|
+| Home Depot | 59 |
+| Lowe's | 20 |
+| Total | 79 |
+
+| County | Leader | Leader stores | Total stores | Status |
+|---|---|---:|---:|---|
+| Gwinnett County | Home Depot | 10 | 13 | dominant |
+| Fulton County | Home Depot | 9 | 13 | dominant |
+| Cobb County | Home Depot | 9 | 11 | dominant |
+| DeKalb County | Home Depot | 5 | 7 | dominant |
+| Clayton County | Home Depot | 3 | 4 | dominant |
+| Forsyth County | Home Depot | 1 | 2 | contested |
+| Henry County | Home Depot | 1 | 2 | contested |
+| Rockdale County | Home Depot | 1 | 2 | contested |
+| Spalding County | Home Depot | 1 | 2 | contested |
+
+Nearest opposite-brand spacing inside the Atlanta CBSA:
+
+| Spacing read | Stores |
+|---|---:|
+| Opposite-brand neighbor under 0.5 miles | 12 |
+| Opposite-brand neighbor under 1.0 mile | 24 |
+| Nearest opposite-brand neighbor in same county | 55 |
+
+Closest mirrored city pairs:
+
+| City | County | Distance miles |
+|---|---|---:|
+| Cumming | Forsyth County | 0.26 |
+| Griffin | Spalding County | 0.28 |
+| Snellville | Gwinnett County | 0.36 |
+| Loganville | Walton County | 0.40 |
+| Marietta | Cobb County | 0.45 |
+| Douglasville | Douglas County | 0.45 |
+
 ## Contested Primary County Groups
 
 | County | Leader label | Leader stores | Total stores |
@@ -244,6 +292,9 @@ not show a clear city-level winner.
 - The metro view reveals the main story so far: the Atlanta CBSA contains 79 of
   the 132 packet-ready stores, with Home Depot leading 59 to 20. Most statewide
   rivalry is therefore metro-edge and suburban, not evenly distributed.
+- Inside the Atlanta CBSA, the chains often mirror each other closely. Twelve
+  packet-ready stores have an opposite-brand nearest neighbor within half a mile
+  and 24 are within one mile.
 - Address city/locality is not enough. TURF needs to attach ZIP/ZCTA, county,
   CBSA, urban area, and drive-time layers before saying how these chains divide
   Georgia.
@@ -260,5 +311,6 @@ cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvem
 cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-county-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
 cargo run -p turf-cli -- summarize-metro-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
+cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```

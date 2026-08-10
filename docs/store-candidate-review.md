@@ -45,6 +45,7 @@ cargo run -p turf-cli -- summarize-county-review fixtures\stores\overture-home-i
 cargo run -p turf-cli -- export-packet-ready-county fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
 cargo run -p turf-cli -- summarize-metro-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- export-packet-ready-metro fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
+cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 ```
 
 ## Rules
@@ -63,3 +64,5 @@ cargo run -p turf-cli -- export-packet-ready-metro fixtures\stores\overture-home
   ZCTA-county context for county-level reporting.
 - `export-packet-ready-metro` joins county-enriched rows to bounded CBSA
   context for metro/micro reporting.
+- `drilldown-metro-review` focuses one CBSA and reports county dominance and
+  nearest opposite-brand spacing.

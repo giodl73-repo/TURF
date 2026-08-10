@@ -3,12 +3,13 @@ use std::{collections::BTreeMap, env, fs, process};
 use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
     build_market_packet, enrich_county_store_points_with_metro,
-    enrich_postal_store_points_with_county, inspect_place_contexts,
-    packet_ready_postal_store_points, packet_ready_store_points, parse_county_cbsa_contexts,
-    parse_demand_points, parse_place_contexts, parse_reviewed_store_points, parse_store_points,
-    parse_zcta_county_contexts, render_county_store_points_csv, render_market_packet_json,
-    render_market_packet_markdown, render_metro_store_points_csv,
-    render_place_context_findings_json, render_postal_store_points_csv, render_store_points_csv,
+    enrich_postal_store_points_with_county, filter_metro_store_points, inspect_place_contexts,
+    nearest_opposite_brand, packet_ready_postal_store_points, packet_ready_store_points,
+    parse_county_cbsa_contexts, parse_demand_points, parse_place_contexts,
+    parse_reviewed_store_points, parse_store_points, parse_zcta_county_contexts,
+    render_county_store_points_csv, render_market_packet_json, render_market_packet_markdown,
+    render_metro_store_points_csv, render_place_context_findings_json,
+    render_postal_store_points_csv, render_store_points_csv, summarize_counties_in_metro,
     summarize_county_footprint, summarize_footprint, summarize_metro_footprint,
     summarize_postal_footprint, validate_county_cbsa_contexts, validate_market_packet_json,
     validate_national_store_points, validate_reviewed_store_points, validate_zcta_county_contexts,
@@ -273,6 +274,30 @@ fn run() -> Result<(), String> {
             print!("{}", render_metro_store_points_csv(&metro_points));
             Ok(())
         }
+        Some("drilldown-metro-review") => {
+            let cbsa_code = args
+                .next()
+                .ok_or("usage: turf-cli drilldown-metro-review <cbsa-code> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let reviewed_path = args
+                .next()
+                .ok_or("usage: turf-cli drilldown-metro-review <cbsa-code> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let zcta_county_path = args
+                .next()
+                .ok_or("usage: turf-cli drilldown-metro-review <cbsa-code> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let county_cbsa_path = args
+                .next()
+                .ok_or("usage: turf-cli drilldown-metro-review <cbsa-code> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let metro_points =
+                load_metro_store_points(&reviewed_path, &zcta_county_path, &county_cbsa_path)?;
+            let focused_points = filter_metro_store_points(&metro_points, &cbsa_code);
+            if focused_points.is_empty() {
+                return Err(format!(
+                    "no packet-ready stores found for cbsa_code {cbsa_code}"
+                ));
+            }
+            print_metro_drilldown(&focused_points);
+            Ok(())
+        }
         Some("--help") | Some("-h") | None => {
             print_help();
             Ok(())
@@ -307,6 +332,9 @@ fn print_help() {
     println!("  summarize-metro-review <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>");
     println!(
         "  export-packet-ready-metro <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
+    );
+    println!(
+        "  drilldown-metro-review <cbsa-code> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
     );
 }
 
@@ -435,6 +463,62 @@ fn print_metro_summary(summary: &[turf_core::MetroDominance]) {
             metro.leader_stores,
             metro.total_stores,
             status
+        );
+    }
+}
+
+fn print_metro_drilldown(points: &[turf_core::MetroStorePoint]) {
+    let title = points
+        .first()
+        .map(|point| point.cbsa_title.as_str())
+        .unwrap_or("unknown");
+    println!("metro,{}", title);
+    println!("total_stores,{}", points.len());
+    println!();
+
+    let mut brand_counts: BTreeMap<&str, usize> = BTreeMap::new();
+    for point in points {
+        *brand_counts.entry(&point.brand).or_insert(0) += 1;
+    }
+    println!("brand,stores");
+    for (brand, stores) in brand_counts {
+        println!("{brand},{stores}");
+    }
+    println!();
+
+    println!("county_geoid,county_name,leader,leader_stores,total_stores,status");
+    for county in summarize_counties_in_metro(points) {
+        let status = match county.status {
+            MarketStatus::Dominant => "dominant",
+            MarketStatus::Contested => "contested",
+        };
+        println!(
+            "{},{},{},{},{},{}",
+            county.county_geoid,
+            county.county_name,
+            county.leader,
+            county.leader_stores,
+            county.total_stores,
+            status
+        );
+    }
+    println!();
+
+    println!(
+        "brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles"
+    );
+    for pair in nearest_opposite_brand(points) {
+        println!(
+            "{},{},{},{},{},{},{},{},{:.2}",
+            pair.brand,
+            pair.store_id,
+            pair.city,
+            pair.county_name,
+            pair.nearest_brand,
+            pair.nearest_store_id,
+            pair.nearest_city,
+            pair.nearest_county_name,
+            pair.distance_miles
         );
     }
 }

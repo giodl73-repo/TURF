@@ -160,6 +160,19 @@ pub struct MetroDominance {
     pub status: MarketStatus,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct NearestCompetitor {
+    pub brand: String,
+    pub store_id: String,
+    pub city: String,
+    pub county_name: String,
+    pub nearest_brand: String,
+    pub nearest_store_id: String,
+    pub nearest_city: String,
+    pub nearest_county_name: String,
+    pub distance_miles: f64,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum MarketStatus {
     Dominant,
@@ -1075,6 +1088,106 @@ pub fn summarize_metro_footprint(points: &[MetroStorePoint]) -> Vec<MetroDominan
         .collect()
 }
 
+pub fn filter_metro_store_points(
+    points: &[MetroStorePoint],
+    cbsa_code: &str,
+) -> Vec<MetroStorePoint> {
+    points
+        .iter()
+        .filter(|point| point.cbsa_code == cbsa_code)
+        .cloned()
+        .collect()
+}
+
+pub fn summarize_counties_in_metro(points: &[MetroStorePoint]) -> Vec<CountyDominance> {
+    let mut county_counts: BTreeMap<(String, String), BTreeMap<String, usize>> = BTreeMap::new();
+
+    for point in points {
+        *county_counts
+            .entry((point.county_geoid.clone(), point.county_name.clone()))
+            .or_default()
+            .entry(point.brand.clone())
+            .or_insert(0) += 1;
+    }
+
+    county_counts
+        .into_iter()
+        .map(|((county_geoid, county_name), counts)| {
+            let total_stores = counts.values().sum();
+            let (leader, leader_stores) = counts
+                .iter()
+                .max_by(|left, right| left.1.cmp(right.1).then_with(|| right.0.cmp(left.0)))
+                .map(|(brand, stores)| (brand.clone(), *stores))
+                .unwrap_or_else(|| ("none".to_string(), 0));
+            let tied_leaders = counts
+                .values()
+                .filter(|stores| **stores == leader_stores)
+                .count();
+            let status = if tied_leaders > 1 || leader_stores * 2 <= total_stores {
+                MarketStatus::Contested
+            } else {
+                MarketStatus::Dominant
+            };
+
+            CountyDominance {
+                county_geoid,
+                county_name,
+                leader,
+                leader_stores,
+                total_stores,
+                status,
+            }
+        })
+        .collect()
+}
+
+pub fn nearest_opposite_brand(points: &[MetroStorePoint]) -> Vec<NearestCompetitor> {
+    let mut pairs = Vec::new();
+
+    for point in points {
+        let nearest = points
+            .iter()
+            .filter(|candidate| candidate.brand != point.brand)
+            .map(|candidate| {
+                (
+                    candidate,
+                    haversine_miles(
+                        point.latitude,
+                        point.longitude,
+                        candidate.latitude,
+                        candidate.longitude,
+                    ),
+                )
+            })
+            .min_by(|left, right| {
+                left.1
+                    .total_cmp(&right.1)
+                    .then_with(|| left.0.store_id.cmp(&right.0.store_id))
+            });
+
+        if let Some((nearest, distance_miles)) = nearest {
+            pairs.push(NearestCompetitor {
+                brand: point.brand.clone(),
+                store_id: point.store_id.clone(),
+                city: point.city.clone(),
+                county_name: point.county_name.clone(),
+                nearest_brand: nearest.brand.clone(),
+                nearest_store_id: nearest.store_id.clone(),
+                nearest_city: nearest.city.clone(),
+                nearest_county_name: nearest.county_name.clone(),
+                distance_miles,
+            });
+        }
+    }
+
+    pairs.sort_by(|left, right| {
+        left.distance_miles
+            .total_cmp(&right.distance_miles)
+            .then_with(|| left.store_id.cmp(&right.store_id))
+    });
+    pairs
+}
+
 pub fn parse_demand_points(csv: &str) -> Result<Vec<DemandPoint>, String> {
     let mut lines = csv.lines();
     let header = lines.next().ok_or("missing CSV header")?;
@@ -1921,6 +2034,71 @@ county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,csa_code,csa_title,centr
         let error = parse_county_cbsa_contexts(metro_csv).expect_err("status should fail");
 
         assert!(error.contains("invalid metro_context_status"));
+    }
+
+    #[test]
+    fn filters_metro_and_finds_nearest_opposite_brand() {
+        let points = vec![
+            MetroStorePoint {
+                brand: "Home Depot".to_string(),
+                store_id: "hd-1".to_string(),
+                city: "Atlanta".to_string(),
+                state: "GA".to_string(),
+                postal_code: "30303".to_string(),
+                zcta_candidate: "30303".to_string(),
+                county_geoid: "13121".to_string(),
+                county_name: "Fulton County".to_string(),
+                cbsa_code: "12060".to_string(),
+                cbsa_title: "Atlanta-Sandy Springs-Roswell GA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 33.7517,
+                longitude: -84.3901,
+            },
+            MetroStorePoint {
+                brand: "Lowe's".to_string(),
+                store_id: "low-1".to_string(),
+                city: "Atlanta".to_string(),
+                state: "GA".to_string(),
+                postal_code: "30303".to_string(),
+                zcta_candidate: "30303".to_string(),
+                county_geoid: "13121".to_string(),
+                county_name: "Fulton County".to_string(),
+                cbsa_code: "12060".to_string(),
+                cbsa_title: "Atlanta-Sandy Springs-Roswell GA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 33.7520,
+                longitude: -84.3904,
+            },
+            MetroStorePoint {
+                brand: "Home Depot".to_string(),
+                store_id: "hd-other".to_string(),
+                city: "Savannah".to_string(),
+                state: "GA".to_string(),
+                postal_code: "31404".to_string(),
+                zcta_candidate: "31404".to_string(),
+                county_geoid: "13051".to_string(),
+                county_name: "Chatham County".to_string(),
+                cbsa_code: "42340".to_string(),
+                cbsa_title: "Savannah GA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 32.0809,
+                longitude: -81.0912,
+            },
+        ];
+
+        let atlanta = filter_metro_store_points(&points, "12060");
+        let counties = summarize_counties_in_metro(&atlanta);
+        let nearest = nearest_opposite_brand(&atlanta);
+
+        assert_eq!(atlanta.len(), 2);
+        assert_eq!(counties.len(), 1);
+        assert_eq!(counties[0].status, MarketStatus::Contested);
+        assert_eq!(nearest.len(), 2);
+        assert_eq!(nearest[0].nearest_store_id, "low-1");
+        assert!(nearest[0].distance_miles < 0.05);
     }
 
     #[test]

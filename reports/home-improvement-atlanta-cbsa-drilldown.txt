@@ -1,0 +1,111 @@
+metro,Atlanta-Sandy Springs-Roswell GA
+total_stores,79
+
+brand,stores
+Home Depot,59
+Lowe's,20
+
+county_geoid,county_name,leader,leader_stores,total_stores,status
+13013,Barrow County,Home Depot,1,1,dominant
+13015,Bartow County,Home Depot,1,1,dominant
+13045,Carroll County,Home Depot,2,3,dominant
+13057,Cherokee County,Home Depot,3,3,dominant
+13063,Clayton County,Home Depot,3,4,dominant
+13067,Cobb County,Home Depot,9,11,dominant
+13077,Coweta County,Home Depot,1,1,dominant
+13085,Dawson County,Home Depot,1,1,dominant
+13089,DeKalb County,Home Depot,5,7,dominant
+13097,Douglas County,Home Depot,2,3,dominant
+13113,Fayette County,Home Depot,2,3,dominant
+13117,Forsyth County,Home Depot,1,2,contested
+13121,Fulton County,Home Depot,9,13,dominant
+13135,Gwinnett County,Home Depot,10,13,dominant
+13151,Henry County,Home Depot,1,2,contested
+13187,Lumpkin County,Home Depot,1,1,dominant
+13217,Newton County,Home Depot,1,1,dominant
+13223,Paulding County,Home Depot,1,1,dominant
+13227,Pickens County,Home Depot,1,1,dominant
+13247,Rockdale County,Home Depot,1,2,contested
+13255,Spalding County,Home Depot,1,2,contested
+13297,Walton County,Home Depot,2,3,dominant
+
+brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles
+Lowe's,468f7889-9d71-4be0-a6b4-6cbf02b730b7,Cumming,Forsyth County,Home Depot,47be310e-5c40-4175-9add-d35c1e545301,Cumming,Forsyth County,0.26
+Home Depot,47be310e-5c40-4175-9add-d35c1e545301,Cumming,Forsyth County,Lowe's,468f7889-9d71-4be0-a6b4-6cbf02b730b7,Cumming,Forsyth County,0.26
+Lowe's,368038c6-25e9-4cc6-8210-a66aa98aab3c,Griffin,Spalding County,Home Depot,51183b53-e735-4493-8be3-78bd54fcc085,Griffin,Spalding County,0.28
+Home Depot,51183b53-e735-4493-8be3-78bd54fcc085,Griffin,Spalding County,Lowe's,368038c6-25e9-4cc6-8210-a66aa98aab3c,Griffin,Spalding County,0.28
+Home Depot,3de46ff9-bac4-41e1-8d44-31f2a0d13bfc,Snellville,Gwinnett County,Lowe's,88c6ebf2-0631-4e51-aa38-bd7eb6cdab57,Snellville,Gwinnett County,0.36
+Lowe's,88c6ebf2-0631-4e51-aa38-bd7eb6cdab57,Snellville,Gwinnett County,Home Depot,3de46ff9-bac4-41e1-8d44-31f2a0d13bfc,Snellville,Gwinnett County,0.36
+Home Depot,1f9c59ba-5b80-43c6-a399-7491460ee661,Loganville,Walton County,Lowe's,b49f8f2d-b23c-492e-a7ca-36e5fc37adda,Loganville,Walton County,0.40
+Lowe's,b49f8f2d-b23c-492e-a7ca-36e5fc37adda,Loganville,Walton County,Home Depot,1f9c59ba-5b80-43c6-a399-7491460ee661,Loganville,Walton County,0.40
+Home Depot,3618c2e9-f70a-4076-8c4d-a5bff5a44d00,Marietta,Cobb County,Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,0.45
+Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,Home Depot,3618c2e9-f70a-4076-8c4d-a5bff5a44d00,Marietta,Cobb County,0.45
+Home Depot,366456bd-a9f7-4e87-bb59-3634eb8994d3,Douglasville,Douglas County,Lowe's,4d66291d-83fc-4798-8cad-8de68234a799,Douglasville,Douglas County,0.45
+Lowe's,4d66291d-83fc-4798-8cad-8de68234a799,Douglasville,Douglas County,Home Depot,366456bd-a9f7-4e87-bb59-3634eb8994d3,Douglasville,Douglas County,0.45
+Home Depot,9603c92e-644f-4b5c-af72-e4b2642e59ba,Alpharetta,Fulton County,Lowe's,c432016e-9099-4381-af71-27247b1b67a5,Alpharetta,Fulton County,0.52
+Lowe's,c432016e-9099-4381-af71-27247b1b67a5,Alpharetta,Fulton County,Home Depot,9603c92e-644f-4b5c-af72-e4b2642e59ba,Alpharetta,Fulton County,0.52
+Lowe's,14b0a96b-a7e1-4ddb-9381-e51e89db4f1c,Morrow,Clayton County,Home Depot,b52f1a47-f797-4fbb-bd75-212e7dbbe305,Morrow,Clayton County,0.54
+Home Depot,b52f1a47-f797-4fbb-bd75-212e7dbbe305,Morrow,Clayton County,Lowe's,14b0a96b-a7e1-4ddb-9381-e51e89db4f1c,Morrow,Clayton County,0.54
+Home Depot,a4351741-c364-448f-be09-8ffddd3db70d,Carrollton,Carroll County,Lowe's,e37c8915-a8b2-45ab-bfe4-90bac65013f8,Carrollton,Carroll County,0.60
+Lowe's,e37c8915-a8b2-45ab-bfe4-90bac65013f8,Carrollton,Carroll County,Home Depot,a4351741-c364-448f-be09-8ffddd3db70d,Carrollton,Carroll County,0.60
+Lowe's,06a8dac5-9b33-43d7-baf6-32db4d163753,Mableton,Cobb County,Home Depot,9521a639-d625-4d7e-8295-d748d0a8ea9e,Austell,Cobb County,0.63
+Home Depot,9521a639-d625-4d7e-8295-d748d0a8ea9e,Austell,Cobb County,Lowe's,06a8dac5-9b33-43d7-baf6-32db4d163753,Mableton,Cobb County,0.63
+Lowe's,7c903db4-f652-473d-bccc-92e0503abf1c,Fayetteville,Fayette County,Home Depot,7eb474fa-c530-411f-8b70-931426e56438,Fayetteville,Fayette County,0.85
+Home Depot,7eb474fa-c530-411f-8b70-931426e56438,Fayetteville,Fayette County,Lowe's,7c903db4-f652-473d-bccc-92e0503abf1c,Fayetteville,Fayette County,0.85
+Lowe's,8d7441a5-ff76-4597-9da3-5109058aca6f,Buford,Gwinnett County,Home Depot,d7faed01-01a8-4e35-a2a5-fcb0caaf6047,Buford,Gwinnett County,0.88
+Home Depot,d7faed01-01a8-4e35-a2a5-fcb0caaf6047,Buford,Gwinnett County,Lowe's,8d7441a5-ff76-4597-9da3-5109058aca6f,Buford,Gwinnett County,0.88
+Home Depot,1624281d-ca84-4efc-97b5-62167c34cf64,Decatur,DeKalb County,Lowe's,b3ac511f-8580-47e0-b4e1-76c29faa9f63,Lithonia,DeKalb County,1.12
+Lowe's,b3ac511f-8580-47e0-b4e1-76c29faa9f63,Lithonia,DeKalb County,Home Depot,1624281d-ca84-4efc-97b5-62167c34cf64,Decatur,DeKalb County,1.12
+Lowe's,40ed1380-7924-4588-a2ef-928cfcb9ac01,Alpharetta,Fulton County,Home Depot,d31972f1-7c3d-460f-bb8d-493c1d446124,Roswell,Fulton County,1.43
+Home Depot,d31972f1-7c3d-460f-bb8d-493c1d446124,Roswell,Fulton County,Lowe's,40ed1380-7924-4588-a2ef-928cfcb9ac01,Alpharetta,Fulton County,1.43
+Lowe's,b118ba6b-fc3b-490d-9573-51287192360e,Sandy Springs,Fulton County,Home Depot,fffe98e9-d544-4ee2-b4b8-f08c4a0b663b,Sandy Springs,Fulton County,1.53
+Home Depot,fffe98e9-d544-4ee2-b4b8-f08c4a0b663b,Sandy Springs,Fulton County,Lowe's,b118ba6b-fc3b-490d-9573-51287192360e,Sandy Springs,Fulton County,1.53
+Home Depot,24937a8f-1e3c-4737-8e38-0120c0207ba4,Conyers,Rockdale County,Lowe's,5da9af33-a892-4a2e-b7d9-ce17924fa3a6,Conyers,Rockdale County,1.53
+Lowe's,5da9af33-a892-4a2e-b7d9-ce17924fa3a6,Conyers,Rockdale County,Home Depot,24937a8f-1e3c-4737-8e38-0120c0207ba4,Conyers,Rockdale County,1.53
+Home Depot,34b2e317-433a-4049-a75e-8d9ac01064bc,Suwanee,Gwinnett County,Lowe's,6689f05b-6f61-43ce-897d-6ba9f9106687,Suwanee,Gwinnett County,2.62
+Lowe's,6689f05b-6f61-43ce-897d-6ba9f9106687,Suwanee,Gwinnett County,Home Depot,34b2e317-433a-4049-a75e-8d9ac01064bc,Suwanee,Gwinnett County,2.62
+Home Depot,f148395f-7523-4d30-b169-edce95f1c2a7,Decatur,DeKalb County,Lowe's,b3ac511f-8580-47e0-b4e1-76c29faa9f63,Lithonia,DeKalb County,2.65
+Lowe's,f166fecb-d9c0-40aa-b17f-47168da01386,Stockbridge,Henry County,Home Depot,b52f1a47-f797-4fbb-bd75-212e7dbbe305,Morrow,Clayton County,2.66
+Lowe's,d8dfeaeb-2ae4-42be-bb0d-279de317fb33,Chamblee,DeKalb County,Home Depot,d9a35157-1718-4a7f-a7a7-ec85898188e2,Atlanta,DeKalb County,3.31
+Home Depot,d9a35157-1718-4a7f-a7a7-ec85898188e2,Atlanta,DeKalb County,Lowe's,d8dfeaeb-2ae4-42be-bb0d-279de317fb33,Chamblee,DeKalb County,3.31
+Home Depot,373b91fc-4a58-40eb-b22b-581da706f5b5,Roswell,Fulton County,Lowe's,40ed1380-7924-4588-a2ef-928cfcb9ac01,Alpharetta,Fulton County,4.15
+Home Depot,bde9ae59-3b64-4838-9615-5071c98653af,Dacula,Gwinnett County,Lowe's,8d7441a5-ff76-4597-9da3-5109058aca6f,Buford,Gwinnett County,4.32
+Home Depot,6a46012d-3210-4afe-8214-4a8ca91c5fc5,Powder Springs,Cobb County,Lowe's,06a8dac5-9b33-43d7-baf6-32db4d163753,Mableton,Cobb County,4.58
+Home Depot,646e9f02-6dba-438d-9cf1-88d0fb212ad5,Riverdale,Clayton County,Lowe's,14b0a96b-a7e1-4ddb-9381-e51e89db4f1c,Morrow,Clayton County,4.70
+Home Depot,de3f4a50-2855-40e2-baab-5234d9c46977,Lilburn,Gwinnett County,Lowe's,88c6ebf2-0631-4e51-aa38-bd7eb6cdab57,Snellville,Gwinnett County,4.85
+Lowe's,63a3389c-d348-4d85-950e-5e2c47cdabb9,East Point,Fulton County,Home Depot,d5e26341-7e47-44ba-835c-70ea2992ccee,Atlanta,Fulton County,4.88
+Home Depot,d5e26341-7e47-44ba-835c-70ea2992ccee,Atlanta,Fulton County,Lowe's,63a3389c-d348-4d85-950e-5e2c47cdabb9,East Point,Fulton County,4.88
+Home Depot,9cac628d-fffb-4b0c-853e-2c52f16f4be1,Atlanta,Fulton County,Lowe's,d8dfeaeb-2ae4-42be-bb0d-279de317fb33,Chamblee,DeKalb County,5.03
+Home Depot,49148559-765e-4c50-88fc-1571304d6781,Lawrenceville,Gwinnett County,Lowe's,6689f05b-6f61-43ce-897d-6ba9f9106687,Suwanee,Gwinnett County,5.13
+Home Depot,bad9ba23-8009-4d02-a456-fdb076228f85,Lithia Springs,Douglas County,Lowe's,06a8dac5-9b33-43d7-baf6-32db4d163753,Mableton,Cobb County,5.18
+Home Depot,6180ad86-897c-456e-af15-d59a634e53ed,Kennesaw,Cobb County,Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,5.52
+Home Depot,c58c9215-c5e4-4ee7-98bd-c68325f36133,Marietta,Cobb County,Lowe's,b118ba6b-fc3b-490d-9573-51287192360e,Sandy Springs,Fulton County,5.53
+Home Depot,f02d19c6-6784-4154-81b3-ba5bb7077e3e,Ellenwood,DeKalb County,Lowe's,f166fecb-d9c0-40aa-b17f-47168da01386,Stockbridge,Henry County,5.58
+Home Depot,75e08845-7c50-4745-ba3b-b8095438b8c2,Decatur,DeKalb County,Lowe's,d8dfeaeb-2ae4-42be-bb0d-279de317fb33,Chamblee,DeKalb County,5.71
+Home Depot,2f0bfeb1-3636-4b9d-b9cf-53ef948b0383,Atlanta,Fulton County,Lowe's,14b0a96b-a7e1-4ddb-9381-e51e89db4f1c,Morrow,Clayton County,5.93
+Home Depot,a0cf656a-08a1-4ed0-97b8-d1d89169ccf8,Lilburn,Gwinnett County,Lowe's,88c6ebf2-0631-4e51-aa38-bd7eb6cdab57,Snellville,Gwinnett County,5.96
+Home Depot,64da7bd7-0b37-41fd-981a-f0367f53c205,Suwanee,Gwinnett County,Lowe's,c432016e-9099-4381-af71-27247b1b67a5,Alpharetta,Fulton County,6.31
+Home Depot,7764f7d5-9a80-4bde-af57-ba551a18ab77,Acworth,Cobb County,Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,6.82
+Home Depot,e2877a0c-da49-44ef-807e-03b2517b6a0f,Atlanta,Cobb County,Lowe's,b118ba6b-fc3b-490d-9573-51287192360e,Sandy Springs,Fulton County,6.84
+Home Depot,4ed76c71-3829-4ea3-be70-a1818aee8447,McDonough,Henry County,Lowe's,f166fecb-d9c0-40aa-b17f-47168da01386,Stockbridge,Henry County,6.96
+Home Depot,87f5fa2b-92b0-43ed-b684-1a6596fc66be,Hampton,Clayton County,Lowe's,7c903db4-f652-473d-bccc-92e0503abf1c,Fayetteville,Fayette County,6.99
+Home Depot,ebca87d5-d30b-48da-8b0b-b8300afdff50,Kennesaw,Cobb County,Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,7.37
+Home Depot,9c39cfec-7f18-4232-b4a7-6872740b0059,Norcross,Gwinnett County,Lowe's,d8dfeaeb-2ae4-42be-bb0d-279de317fb33,Chamblee,DeKalb County,7.39
+Home Depot,397b44ce-d5cb-4601-b0f4-bce53a39ca9b,Duluth,Gwinnett County,Lowe's,6689f05b-6f61-43ce-897d-6ba9f9106687,Suwanee,Gwinnett County,7.52
+Home Depot,68e23179-dbd8-4ae0-8672-afa0aa3c4a0c,Johns Creek,Fulton County,Lowe's,40ed1380-7924-4588-a2ef-928cfcb9ac01,Alpharetta,Fulton County,7.68
+Home Depot,5ad4a937-d081-4623-ada9-c9fb7735dcad,Atlanta,Fulton County,Lowe's,d8dfeaeb-2ae4-42be-bb0d-279de317fb33,Chamblee,DeKalb County,8.01
+Home Depot,4b03f10e-1b57-4835-a9df-cb8a7c61cae4,Hiram,Paulding County,Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,8.20
+Home Depot,6c3e166c-2f0a-496a-b6d2-cc10e7a3e3a9,Marietta,Cobb County,Lowe's,40ed1380-7924-4588-a2ef-928cfcb9ac01,Alpharetta,Fulton County,8.39
+Home Depot,2c33c593-2be1-4a9d-81a2-e9a52d341812,Monroe,Walton County,Lowe's,b49f8f2d-b23c-492e-a7ca-36e5fc37adda,Loganville,Walton County,10.10
+Home Depot,c6d7b45b-4a8a-4996-b82f-c16f45df0e40,Peachtree City,Fayette County,Lowe's,7c903db4-f652-473d-bccc-92e0503abf1c,Fayetteville,Fayette County,10.12
+Home Depot,2f9f3ffb-9498-4f22-a3af-71ebbad225d6,Villa Rica,Carroll County,Lowe's,4d66291d-83fc-4798-8cad-8de68234a799,Douglasville,Douglas County,10.46
+Home Depot,4cf35df1-bfc5-4f74-96db-99c5304b858f,Woodstock,Cherokee County,Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,10.84
+Home Depot,fb31a166-6687-4e56-b7de-e90bbfcbfad5,Bethlehem,Barrow County,Lowe's,b49f8f2d-b23c-492e-a7ca-36e5fc37adda,Loganville,Walton County,10.89
+Home Depot,3f09729c-1589-47fa-8575-774987eba1e1,Covington,Newton County,Lowe's,5da9af33-a892-4a2e-b7d9-ce17924fa3a6,Conyers,Rockdale County,11.28
+Home Depot,d0351204-3a77-4b7c-a183-311537acc40d,Dawsonville,Dawson County,Lowe's,468f7889-9d71-4be0-a6b4-6cbf02b730b7,Cumming,Forsyth County,13.09
+Home Depot,d40c1ba9-38b6-40ed-98bb-9b5205b5dbb1,Canton,Cherokee County,Lowe's,40ed1380-7924-4588-a2ef-928cfcb9ac01,Alpharetta,Fulton County,13.49
+Home Depot,68581cee-1de8-495d-85d8-d620c8b4a295,Canton,Cherokee County,Lowe's,c432016e-9099-4381-af71-27247b1b67a5,Alpharetta,Fulton County,15.57
+Home Depot,b3ebd9bc-4412-453a-8be2-7bdd890987ea,Newnan,Coweta County,Lowe's,7c903db4-f652-473d-bccc-92e0503abf1c,Fayetteville,Fayette County,17.69
+Home Depot,e8749fcb-ef75-4a1e-ae55-28d776e05c81,Cartersville,Bartow County,Lowe's,e4bf784e-f18b-4b1e-a361-ea0e9d2a8476,Marietta,Cobb County,18.77
+Home Depot,fdfad406-b8ab-4a19-8a23-14ea485941c6,Dahlonega,Lumpkin County,Lowe's,468f7889-9d71-4be0-a6b4-6cbf02b730b7,Cumming,Forsyth County,22.08
+Home Depot,935d37ee-7570-4092-91a6-eba34ea75b04,Jasper,Pickens County,Lowe's,468f7889-9d71-4be0-a6b4-6cbf02b730b7,Cumming,Forsyth County,27.24
