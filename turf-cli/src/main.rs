@@ -1,8 +1,9 @@
 use std::{env, fs, process};
 
 use turf_core::{
-    MarketStatus, PlaceContextFinding, inspect_place_contexts, parse_place_contexts,
-    parse_store_points, render_place_context_findings_json, summarize_footprint,
+    CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
+    inspect_place_contexts, parse_demand_points, parse_place_contexts, parse_store_points,
+    render_place_context_findings_json, summarize_footprint,
 };
 
 fn main() {
@@ -48,6 +49,23 @@ fn run() -> Result<(), String> {
             }
             Ok(())
         }
+        Some("catchment") => {
+            let store_path = args
+                .next()
+                .ok_or("usage: turf-cli catchment <store-points.csv> <demand-points.csv>")?;
+            let demand_path = args
+                .next()
+                .ok_or("usage: turf-cli catchment <store-points.csv> <demand-points.csv>")?;
+            let store_csv = fs::read_to_string(&store_path)
+                .map_err(|error| format!("{store_path}: {error}"))?;
+            let demand_csv = fs::read_to_string(&demand_path)
+                .map_err(|error| format!("{demand_path}: {error}"))?;
+            let stores = parse_store_points(&store_csv)?;
+            let demand_points = parse_demand_points(&demand_csv)?;
+            let assignments = assign_nearest_store(&stores, &demand_points)?;
+            print_catchment_assignments(&assignments);
+            Ok(())
+        }
         Some("--help") | Some("-h") | None => {
             print_help();
             Ok(())
@@ -62,6 +80,7 @@ fn print_help() {
     println!("Commands:");
     println!("  summarize <store-points.csv>  Summarize brand footprint and city dominance");
     println!("  place-context [--json] <places.csv>  Inspect postal/civic/Census/market layers");
+    println!("  catchment <stores.csv> <demand.csv>  Assign demand points to nearest stores");
 }
 
 fn print_summary(summary: &turf_core::FootprintSummary) {
@@ -91,6 +110,22 @@ fn print_place_context_findings(findings: &[PlaceContextFinding]) {
         println!(
             "{},{},{},{}",
             finding.place_id, finding.label, finding.finding_kind, finding.finding
+        );
+    }
+}
+
+fn print_catchment_assignments(assignments: &[CatchmentAssignment]) {
+    println!("demand_id,label,place_id,assigned_brand,assigned_store_id,distance_miles,weight");
+    for assignment in assignments {
+        println!(
+            "{},{},{},{},{},{:.2},{}",
+            assignment.demand_id,
+            assignment.label,
+            assignment.place_id,
+            assignment.assigned_brand,
+            assignment.assigned_store_id,
+            assignment.distance_miles,
+            assignment.weight
         );
     }
 }

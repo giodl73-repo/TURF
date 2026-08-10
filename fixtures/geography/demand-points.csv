@@ -1,0 +1,7 @@
+demand_id,label,place_id,latitude,longitude,weight
+atl-cumberland-office,Cumberland office cluster,atl-edge-30339,33.8842,-84.4697,100
+atl-vinings-residential,Vinings residential edge,atl-edge-30339,33.8648,-84.4644,70
+marietta-square,Marietta Square,atl-edge-30339,33.9526,-84.5499,60
+greenville-downtown,Downtown Greenville,greenville-core,34.8526,-82.3940,90
+austin-downtown,Downtown Austin,austin-core,30.2672,-97.7431,100
+austin-north-loop,North Austin loop,austin-core,30.3072,-97.7500,80

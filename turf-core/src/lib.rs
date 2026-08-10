@@ -68,6 +68,27 @@ pub struct PlaceContextFinding {
     pub finding: String,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct DemandPoint {
+    pub demand_id: String,
+    pub label: String,
+    pub place_id: String,
+    pub latitude: f64,
+    pub longitude: f64,
+    pub weight: f64,
+}
+
+#[derive(Debug, Clone, PartialEq)]
+pub struct CatchmentAssignment {
+    pub demand_id: String,
+    pub label: String,
+    pub place_id: String,
+    pub assigned_brand: String,
+    pub assigned_store_id: String,
+    pub distance_miles: f64,
+    pub weight: f64,
+}
+
 pub fn parse_place_contexts(csv: &str) -> Result<Vec<PlaceContext>, String> {
     let mut lines = csv.lines();
     let header = lines.next().ok_or("missing CSV header")?;
@@ -262,6 +283,65 @@ pub fn parse_store_points(csv: &str) -> Result<Vec<StorePoint>, String> {
     Ok(points)
 }
 
+pub fn parse_demand_points(csv: &str) -> Result<Vec<DemandPoint>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "demand_id",
+        "label",
+        "place_id",
+        "latitude",
+        "longitude",
+        "weight",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut points = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let latitude = fields[3]
+            .parse::<f64>()
+            .map_err(|_| format!("line {line_number}: invalid latitude"))?;
+        let longitude = fields[4]
+            .parse::<f64>()
+            .map_err(|_| format!("line {line_number}: invalid longitude"))?;
+        let weight = fields[5]
+            .parse::<f64>()
+            .map_err(|_| format!("line {line_number}: invalid weight"))?;
+
+        points.push(DemandPoint {
+            demand_id: required(fields[0], line_number, "demand_id")?.to_string(),
+            label: required(fields[1], line_number, "label")?.to_string(),
+            place_id: required(fields[2], line_number, "place_id")?.to_string(),
+            latitude,
+            longitude,
+            weight,
+        });
+    }
+
+    Ok(points)
+}
+
 pub fn summarize_footprint(points: &[StorePoint]) -> FootprintSummary {
     let mut brand_counts: BTreeMap<String, usize> = BTreeMap::new();
     let mut city_counts: BTreeMap<(String, String), BTreeMap<String, usize>> = BTreeMap::new();
@@ -317,12 +397,69 @@ pub fn summarize_footprint(points: &[StorePoint]) -> FootprintSummary {
     }
 }
 
+pub fn assign_nearest_store(
+    stores: &[StorePoint],
+    demand_points: &[DemandPoint],
+) -> Result<Vec<CatchmentAssignment>, String> {
+    if stores.is_empty() {
+        return Err("cannot assign catchments without stores".to_string());
+    }
+
+    let mut assignments = Vec::new();
+    for demand_point in demand_points {
+        let nearest = stores
+            .iter()
+            .map(|store| {
+                (
+                    store,
+                    haversine_miles(
+                        demand_point.latitude,
+                        demand_point.longitude,
+                        store.latitude,
+                        store.longitude,
+                    ),
+                )
+            })
+            .min_by(|left, right| {
+                left.1
+                    .total_cmp(&right.1)
+                    .then_with(|| left.0.store_id.cmp(&right.0.store_id))
+            })
+            .expect("stores is non-empty");
+
+        assignments.push(CatchmentAssignment {
+            demand_id: demand_point.demand_id.clone(),
+            label: demand_point.label.clone(),
+            place_id: demand_point.place_id.clone(),
+            assigned_brand: nearest.0.brand.clone(),
+            assigned_store_id: nearest.0.store_id.clone(),
+            distance_miles: nearest.1,
+            weight: demand_point.weight,
+        });
+    }
+
+    Ok(assignments)
+}
+
 fn required<'a>(value: &'a str, line_number: usize, field: &str) -> Result<&'a str, String> {
     if value.is_empty() {
         Err(format!("line {line_number}: missing {field}"))
     } else {
         Ok(value)
     }
+}
+
+fn haversine_miles(lat_a: f64, lon_a: f64, lat_b: f64, lon_b: f64) -> f64 {
+    let radius_miles = 3958.8_f64;
+    let d_lat = (lat_b - lat_a).to_radians();
+    let d_lon = (lon_b - lon_a).to_radians();
+    let lat_a = lat_a.to_radians();
+    let lat_b = lat_b.to_radians();
+
+    let a = (d_lat / 2.0).sin().powi(2) + lat_a.cos() * lat_b.cos() * (d_lon / 2.0).sin().powi(2);
+    let c = 2.0 * a.sqrt().atan2((1.0 - a).sqrt());
+
+    radius_miles * c
 }
 
 fn escape_json(value: &str) -> String {
@@ -432,5 +569,23 @@ tysons-22102,Tysons commercial core,McLean,VA,22102,22102,unincorporated,Fairfax
         assert!(json.starts_with("{\"findings\":["));
         assert!(json.contains("\"finding_kind\":\"test_kind\""));
         assert!(json.contains("Quoted \\\"Place\\\""));
+    }
+
+    #[test]
+    fn assigns_nearest_store_catchment() {
+        let stores = parse_store_points(SAMPLE).expect("stores parse");
+        let demand = parse_demand_points(
+            "\
+demand_id,label,place_id,latitude,longitude,weight
+demand-1,Near Marietta,marietta,33.9526,-84.5499,10
+",
+        )
+        .expect("demand parses");
+
+        let assignments = assign_nearest_store(&stores, &demand).expect("assigns");
+
+        assert_eq!(assignments.len(), 1);
+        assert_eq!(assignments[0].assigned_store_id, "hd-mar-001");
+        assert!(assignments[0].distance_miles < 0.25);
     }
 }

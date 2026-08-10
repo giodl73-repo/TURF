@@ -16,6 +16,7 @@ Run the built-in home improvement fixture:
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-pois.csv
 cargo run -p turf-cli -- place-context fixtures\geography\place-contexts.csv
 cargo run -p turf-cli -- place-context --json fixtures\geography\place-contexts.csv
+cargo run -p turf-cli -- catchment fixtures\brands\home-improvement-pois.csv fixtures\geography\demand-points.csv
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -26,6 +27,10 @@ footprint evidence comes out.
 The `place-context` command inspects the foundational geography contract. It
 keeps postal city, ZIP Code, ZCTA, municipality, county, Census place, lived
 place, and market area separate, then reports where those layers disagree.
+
+The `catchment` command assigns public demand points to their nearest fixture
+store by straight-line distance. It is an auditable baseline for later drive-time
+and gravity models, not a claim about corporate territories.
 
 ## Product thesis
 
