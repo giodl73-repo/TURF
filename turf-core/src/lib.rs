@@ -80,6 +80,39 @@ pub struct CountyStorePoint {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct CountyCbsaContext {
+    pub county_geoid: String,
+    pub county_name: String,
+    pub cbsa_code: String,
+    pub cbsa_title: String,
+    pub cbsa_type: String,
+    pub csa_code: String,
+    pub csa_title: String,
+    pub central_outlying: String,
+    pub metro_context_status: String,
+    pub relationship_source: String,
+    pub relationship_vintage: String,
+}
+
+#[derive(Debug, Clone, PartialEq)]
+pub struct MetroStorePoint {
+    pub brand: String,
+    pub store_id: String,
+    pub city: String,
+    pub state: String,
+    pub postal_code: String,
+    pub zcta_candidate: String,
+    pub county_geoid: String,
+    pub county_name: String,
+    pub cbsa_code: String,
+    pub cbsa_title: String,
+    pub cbsa_type: String,
+    pub metro_context_status: String,
+    pub latitude: f64,
+    pub longitude: f64,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct BrandSummary {
     pub brand: String,
     pub stores: usize,
@@ -109,6 +142,18 @@ pub struct PostalCodeDominance {
 pub struct CountyDominance {
     pub county_geoid: String,
     pub county_name: String,
+    pub leader: String,
+    pub leader_stores: usize,
+    pub total_stores: usize,
+    pub status: MarketStatus,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct MetroDominance {
+    pub cbsa_code: String,
+    pub cbsa_title: String,
+    pub cbsa_type: String,
+    pub metro_context_status: String,
     pub leader: String,
     pub leader_stores: usize,
     pub total_stores: usize,
@@ -604,6 +649,74 @@ pub fn validate_zcta_county_contexts(csv: &str) -> Result<usize, String> {
     Ok(parse_zcta_county_contexts(csv)?.len())
 }
 
+pub fn parse_county_cbsa_contexts(csv: &str) -> Result<Vec<CountyCbsaContext>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "county_geoid",
+        "county_name",
+        "cbsa_code",
+        "cbsa_title",
+        "cbsa_type",
+        "csa_code",
+        "csa_title",
+        "central_outlying",
+        "metro_context_status",
+        "relationship_source",
+        "relationship_vintage",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut contexts = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let status = required(fields[8], line_number, "metro_context_status")?;
+        validate_metro_context_status(status, line_number)?;
+
+        contexts.push(CountyCbsaContext {
+            county_geoid: required(fields[0], line_number, "county_geoid")?.to_string(),
+            county_name: required(fields[1], line_number, "county_name")?.to_string(),
+            cbsa_code: fields[2].to_string(),
+            cbsa_title: required(fields[3], line_number, "cbsa_title")?.to_string(),
+            cbsa_type: required(fields[4], line_number, "cbsa_type")?.to_string(),
+            csa_code: fields[5].to_string(),
+            csa_title: fields[6].to_string(),
+            central_outlying: fields[7].to_string(),
+            metro_context_status: status.to_string(),
+            relationship_source: required(fields[9], line_number, "relationship_source")?
+                .to_string(),
+            relationship_vintage: required(fields[10], line_number, "relationship_vintage")?
+                .to_string(),
+        });
+    }
+
+    Ok(contexts)
+}
+
+pub fn validate_county_cbsa_contexts(csv: &str) -> Result<usize, String> {
+    Ok(parse_county_cbsa_contexts(csv)?.len())
+}
+
 pub fn packet_ready_store_points(reviewed_points: &[ReviewedStorePoint]) -> Vec<StorePoint> {
     reviewed_points
         .iter()
@@ -749,6 +862,83 @@ pub fn render_county_store_points_csv(points: &[CountyStorePoint]) -> String {
     output
 }
 
+pub fn enrich_county_store_points_with_metro(
+    points: &[CountyStorePoint],
+    contexts: &[CountyCbsaContext],
+) -> Result<Vec<MetroStorePoint>, String> {
+    let context_by_county: BTreeMap<&str, &CountyCbsaContext> = contexts
+        .iter()
+        .map(|context| (context.county_geoid.as_str(), context))
+        .collect();
+    let mut enriched = Vec::new();
+
+    for point in points {
+        let context = context_by_county
+            .get(point.county_geoid.as_str())
+            .ok_or_else(|| {
+                format!(
+                    "missing metro context for county_geoid {}",
+                    point.county_geoid
+                )
+            })?;
+        enriched.push(MetroStorePoint {
+            brand: point.brand.clone(),
+            store_id: point.store_id.clone(),
+            city: point.city.clone(),
+            state: point.state.clone(),
+            postal_code: point.postal_code.clone(),
+            zcta_candidate: point.zcta_candidate.clone(),
+            county_geoid: point.county_geoid.clone(),
+            county_name: point.county_name.clone(),
+            cbsa_code: context.cbsa_code.clone(),
+            cbsa_title: context.cbsa_title.clone(),
+            cbsa_type: context.cbsa_type.clone(),
+            metro_context_status: context.metro_context_status.clone(),
+            latitude: point.latitude,
+            longitude: point.longitude,
+        });
+    }
+
+    Ok(enriched)
+}
+
+pub fn render_metro_store_points_csv(points: &[MetroStorePoint]) -> String {
+    let mut output = String::from(
+        "brand,store_id,city,state,postal_code,zcta_candidate,county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,metro_context_status,latitude,longitude\n",
+    );
+    for point in points {
+        output.push_str(&point.brand);
+        output.push(',');
+        output.push_str(&point.store_id);
+        output.push(',');
+        output.push_str(&point.city);
+        output.push(',');
+        output.push_str(&point.state);
+        output.push(',');
+        output.push_str(&point.postal_code);
+        output.push(',');
+        output.push_str(&point.zcta_candidate);
+        output.push(',');
+        output.push_str(&point.county_geoid);
+        output.push(',');
+        output.push_str(&point.county_name);
+        output.push(',');
+        output.push_str(&point.cbsa_code);
+        output.push(',');
+        output.push_str(&point.cbsa_title);
+        output.push(',');
+        output.push_str(&point.cbsa_type);
+        output.push(',');
+        output.push_str(&point.metro_context_status);
+        output.push(',');
+        output.push_str(&point.latitude.to_string());
+        output.push(',');
+        output.push_str(&point.longitude.to_string());
+        output.push('\n');
+    }
+    output
+}
+
 pub fn summarize_postal_footprint(points: &[PostalStorePoint]) -> Vec<PostalCodeDominance> {
     let mut postal_counts: BTreeMap<(String, String), BTreeMap<String, usize>> = BTreeMap::new();
 
@@ -830,6 +1020,58 @@ pub fn summarize_county_footprint(points: &[CountyStorePoint]) -> Vec<CountyDomi
                 status,
             }
         })
+        .collect()
+}
+
+pub fn summarize_metro_footprint(points: &[MetroStorePoint]) -> Vec<MetroDominance> {
+    let mut metro_counts: BTreeMap<(String, String, String, String), BTreeMap<String, usize>> =
+        BTreeMap::new();
+
+    for point in points {
+        *metro_counts
+            .entry((
+                point.cbsa_code.clone(),
+                point.cbsa_title.clone(),
+                point.cbsa_type.clone(),
+                point.metro_context_status.clone(),
+            ))
+            .or_default()
+            .entry(point.brand.clone())
+            .or_insert(0) += 1;
+    }
+
+    metro_counts
+        .into_iter()
+        .map(
+            |((cbsa_code, cbsa_title, cbsa_type, metro_context_status), counts)| {
+                let total_stores = counts.values().sum();
+                let (leader, leader_stores) = counts
+                    .iter()
+                    .max_by(|left, right| left.1.cmp(right.1).then_with(|| right.0.cmp(left.0)))
+                    .map(|(brand, stores)| (brand.clone(), *stores))
+                    .unwrap_or_else(|| ("none".to_string(), 0));
+                let tied_leaders = counts
+                    .values()
+                    .filter(|stores| **stores == leader_stores)
+                    .count();
+                let status = if tied_leaders > 1 || leader_stores * 2 <= total_stores {
+                    MarketStatus::Contested
+                } else {
+                    MarketStatus::Dominant
+                };
+
+                MetroDominance {
+                    cbsa_code,
+                    cbsa_title,
+                    cbsa_type,
+                    metro_context_status,
+                    leader,
+                    leader_stores,
+                    total_stores,
+                    status,
+                }
+            },
+        )
         .collect()
 }
 
@@ -1331,6 +1573,13 @@ fn validate_review_reason(value: &str, line_number: usize) -> Result<(), String>
     }
 }
 
+fn validate_metro_context_status(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "cbsa" | "non_cbsa" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid metro_context_status")),
+    }
+}
+
 fn normalize_zip5(value: &str) -> String {
     value
         .chars()
@@ -1628,6 +1877,50 @@ Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.
             .expect_err("missing context fails");
 
         assert!(error.contains("missing county context"));
+    }
+
+    #[test]
+    fn enriches_county_store_points_with_metro() {
+        let reviewed_csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.3901,user fixture,2026-08-10,user_provided,packet_ready,primary_store_candidate
+Lowe's,low-0001,Lowe's Atlanta,456 Test Ave,Atlanta,GA,30303,33.7520,-84.3904,user fixture,2026-08-10,user_provided,packet_ready,primary_store_candidate
+";
+        let county_csv = "\
+zcta_candidate,county_geoid,county_name,relationship_source,relationship_vintage
+30303,13121,Fulton County,Census 2020 ZCTA5 County relationship file,2020
+";
+        let metro_csv = "\
+county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,csa_code,csa_title,central_outlying,metro_context_status,relationship_source,relationship_vintage
+13121,Fulton County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+";
+        let reviewed = parse_reviewed_store_points(reviewed_csv).expect("reviewed stores parse");
+        let postal = packet_ready_postal_store_points(&reviewed);
+        let county_context = parse_zcta_county_contexts(county_csv).expect("county context parses");
+        let county_points = enrich_postal_store_points_with_county(&postal, &county_context)
+            .expect("county join works");
+        let metro_context = parse_county_cbsa_contexts(metro_csv).expect("metro context parses");
+        let metro_points = enrich_county_store_points_with_metro(&county_points, &metro_context)
+            .expect("metro join works");
+        let summary = summarize_metro_footprint(&metro_points);
+        let rendered = render_metro_store_points_csv(&metro_points);
+
+        assert_eq!(metro_points.len(), 2);
+        assert_eq!(metro_points[0].cbsa_code, "12060");
+        assert_eq!(summary.len(), 1);
+        assert_eq!(summary[0].status, MarketStatus::Contested);
+        assert!(rendered.contains("Atlanta-Sandy Springs-Roswell GA"));
+    }
+
+    #[test]
+    fn rejects_unknown_metro_context_status() {
+        let metro_csv = "\
+county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,csa_code,csa_title,central_outlying,metro_context_status,relationship_source,relationship_vintage
+13121,Fulton County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,maybe,Census July 2023 CBSA delineation file,2023-07
+";
+        let error = parse_county_cbsa_contexts(metro_csv).expect_err("status should fail");
+
+        assert!(error.contains("invalid metro_context_status"));
     }
 
     #[test]

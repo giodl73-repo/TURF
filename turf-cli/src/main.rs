@@ -2,13 +2,15 @@ use std::{collections::BTreeMap, env, fs, process};
 
 use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
-    build_market_packet, enrich_postal_store_points_with_county, inspect_place_contexts,
-    packet_ready_postal_store_points, packet_ready_store_points, parse_demand_points,
-    parse_place_contexts, parse_reviewed_store_points, parse_store_points,
+    build_market_packet, enrich_county_store_points_with_metro,
+    enrich_postal_store_points_with_county, inspect_place_contexts,
+    packet_ready_postal_store_points, packet_ready_store_points, parse_county_cbsa_contexts,
+    parse_demand_points, parse_place_contexts, parse_reviewed_store_points, parse_store_points,
     parse_zcta_county_contexts, render_county_store_points_csv, render_market_packet_json,
-    render_market_packet_markdown, render_place_context_findings_json,
-    render_postal_store_points_csv, render_store_points_csv, summarize_county_footprint,
-    summarize_footprint, summarize_postal_footprint, validate_market_packet_json,
+    render_market_packet_markdown, render_metro_store_points_csv,
+    render_place_context_findings_json, render_postal_store_points_csv, render_store_points_csv,
+    summarize_county_footprint, summarize_footprint, summarize_metro_footprint,
+    summarize_postal_footprint, validate_county_cbsa_contexts, validate_market_packet_json,
     validate_national_store_points, validate_reviewed_store_points, validate_zcta_county_contexts,
 };
 
@@ -150,6 +152,15 @@ fn run() -> Result<(), String> {
             println!("valid,{},{}", path, rows);
             Ok(())
         }
+        Some("validate-county-cbsa") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli validate-county-cbsa <county-cbsa.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let rows = validate_county_cbsa_contexts(&csv)?;
+            println!("valid,{},{}", path, rows);
+            Ok(())
+        }
         Some("summarize-review") => {
             let path = args
                 .next()
@@ -231,6 +242,37 @@ fn run() -> Result<(), String> {
             print!("{}", render_county_store_points_csv(&county_points));
             Ok(())
         }
+        Some("summarize-metro-review") => {
+            let reviewed_path = args
+                .next()
+                .ok_or("usage: turf-cli summarize-metro-review <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let zcta_county_path = args
+                .next()
+                .ok_or("usage: turf-cli summarize-metro-review <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let county_cbsa_path = args
+                .next()
+                .ok_or("usage: turf-cli summarize-metro-review <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let metro_points =
+                load_metro_store_points(&reviewed_path, &zcta_county_path, &county_cbsa_path)?;
+            let summary = summarize_metro_footprint(&metro_points);
+            print_metro_summary(&summary);
+            Ok(())
+        }
+        Some("export-packet-ready-metro") => {
+            let reviewed_path = args
+                .next()
+                .ok_or("usage: turf-cli export-packet-ready-metro <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let zcta_county_path = args
+                .next()
+                .ok_or("usage: turf-cli export-packet-ready-metro <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let county_cbsa_path = args
+                .next()
+                .ok_or("usage: turf-cli export-packet-ready-metro <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>")?;
+            let metro_points =
+                load_metro_store_points(&reviewed_path, &zcta_county_path, &county_cbsa_path)?;
+            print!("{}", render_metro_store_points_csv(&metro_points));
+            Ok(())
+        }
         Some("--help") | Some("-h") | None => {
             print_help();
             Ok(())
@@ -255,12 +297,17 @@ fn print_help() {
         "  validate-store-review <reviewed-stores.csv>  Check reviewed store candidate contract"
     );
     println!("  validate-zcta-county <zcta-county.csv>  Check ZCTA-county context contract");
+    println!("  validate-county-cbsa <county-cbsa.csv>  Check county-CBSA context contract");
     println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
     println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
     println!("  summarize-postal-review <reviewed-stores.csv>  Summarize packet-ready postal ZIPs");
     println!("  export-packet-ready-postal <reviewed-stores.csv>  Print packet-ready postal CSV");
     println!("  summarize-county-review <reviewed-stores.csv> <zcta-county.csv>");
     println!("  export-packet-ready-county <reviewed-stores.csv> <zcta-county.csv>");
+    println!("  summarize-metro-review <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>");
+    println!(
+        "  export-packet-ready-metro <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
+    );
 }
 
 fn print_summary(summary: &turf_core::FootprintSummary) {
@@ -367,4 +414,46 @@ fn print_county_summary(summary: &[turf_core::CountyDominance]) {
             status
         );
     }
+}
+
+fn print_metro_summary(summary: &[turf_core::MetroDominance]) {
+    println!(
+        "cbsa_code,cbsa_title,cbsa_type,metro_context_status,leader,leader_stores,total_stores,status"
+    );
+    for metro in summary {
+        let status = match metro.status {
+            MarketStatus::Dominant => "dominant",
+            MarketStatus::Contested => "contested",
+        };
+        println!(
+            "{},{},{},{},{},{},{},{}",
+            metro.cbsa_code,
+            metro.cbsa_title,
+            metro.cbsa_type,
+            metro.metro_context_status,
+            metro.leader,
+            metro.leader_stores,
+            metro.total_stores,
+            status
+        );
+    }
+}
+
+fn load_metro_store_points(
+    reviewed_path: &str,
+    zcta_county_path: &str,
+    county_cbsa_path: &str,
+) -> Result<Vec<turf_core::MetroStorePoint>, String> {
+    let reviewed_csv =
+        fs::read_to_string(reviewed_path).map_err(|error| format!("{reviewed_path}: {error}"))?;
+    let zcta_county_csv = fs::read_to_string(zcta_county_path)
+        .map_err(|error| format!("{zcta_county_path}: {error}"))?;
+    let county_cbsa_csv = fs::read_to_string(county_cbsa_path)
+        .map_err(|error| format!("{county_cbsa_path}: {error}"))?;
+    let reviewed_points = parse_reviewed_store_points(&reviewed_csv)?;
+    let postal_points = packet_ready_postal_store_points(&reviewed_points);
+    let zcta_contexts = parse_zcta_county_contexts(&zcta_county_csv)?;
+    let county_points = enrich_postal_store_points_with_county(&postal_points, &zcta_contexts)?;
+    let cbsa_contexts = parse_county_cbsa_contexts(&county_cbsa_csv)?;
+    enrich_county_store_points_with_metro(&county_points, &cbsa_contexts)
 }

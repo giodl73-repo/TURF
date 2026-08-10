@@ -24,6 +24,7 @@ cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-imp
 cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-county-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
+cargo run -p turf-cli -- summarize-metro-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -63,6 +64,9 @@ that key separate from confirmed Census ZCTA geometry.
 
 The `summarize-county-review` command joins packet-ready postal rows to a
 Census ZCTA-to-county context fixture and reports primary county dominance.
+
+The `summarize-metro-review` command joins county-enriched rows to a Census
+CBSA/micropolitan context fixture and reports metro-level dominance.
 
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.

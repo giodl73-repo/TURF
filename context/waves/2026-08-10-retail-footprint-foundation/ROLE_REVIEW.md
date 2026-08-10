@@ -339,3 +339,27 @@ Status: pass.
 
 The Census relationship file is public Census geography context. The pulse does
 not use restricted USPS files or official retailer locator scraping.
+
+## Pulse 17 Georgia Metro Context Read
+
+### Market Geographer
+
+Status: pass.
+
+The pulse uses Census July 2023 CBSA delineations and keeps metro/micro context
+separate from ZIP, ZCTA, county, and drive-time territory.
+
+### Market Analyst
+
+Status: pass.
+
+The metro read identifies Atlanta-Sandy Springs-Roswell as the main observed
+Home Depot/Lowe's battleground in Georgia: 79 packet-ready stores, with Home
+Depot leading 59 to 20.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The CBSA context comes from a public Census delineation workbook. The report
+does not imply that CBSAs are company-defined regions.

@@ -29,6 +29,12 @@ Derived county store-point input:
 fixtures/brands/home-improvement-georgia-packet-ready-county.csv
 ```
 
+Derived metro store-point input:
+
+```text
+fixtures/brands/home-improvement-georgia-packet-ready-metro.csv
+```
+
 ## Review Gate
 
 | Review status | Rows |
@@ -103,6 +109,49 @@ fixtures/geography/georgia-zcta-county-primary-2020.csv
 |---|---:|
 | Home Depot | 48 |
 | Lowe's | 11 |
+
+## Metro / Micro Read
+
+The metro fixture joins primary counties to the Census July 2023 CBSA
+delineation file. Counties outside the delineation file remain explicit
+`non_cbsa` rows.
+
+Metro context fixture:
+
+```text
+fixtures/geography/georgia-county-cbsa-2023.csv
+```
+
+| Metro status | Metro/micro/non-CBSA groups |
+|---|---:|
+| Dominant | 25 |
+| Contested | 7 |
+| Total | 32 |
+
+| Leading brand | Metro/micro/non-CBSA groups |
+|---|---:|
+| Home Depot | 23 |
+| Lowe's | 9 |
+
+## Largest Metro Signal
+
+| Metro/micro area | Leader | Leader stores | Total stores | Status |
+|---|---|---:|---:|---|
+| Atlanta-Sandy Springs-Roswell GA | Home Depot | 59 | 79 | dominant |
+| Non-CBSA Georgia county | Home Depot | 5 | 6 | dominant |
+| Savannah GA | Home Depot | 3 | 5 | dominant |
+
+## Contested Metro / Micro Groups
+
+| Metro/micro area | Leader label | Leader stores | Total stores |
+|---|---|---:|---:|
+| Albany GA | Home Depot | 1 | 2 |
+| Chattanooga TN-GA | Home Depot | 1 | 2 |
+| Columbus GA-AL | Home Depot | 1 | 2 |
+| Dalton GA | Home Depot | 1 | 2 |
+| Moultrie GA | Home Depot | 1 | 2 |
+| Rome GA | Home Depot | 1 | 2 |
+| Warner Robins GA | Home Depot | 1 | 2 |
 
 ## Contested Primary County Groups
 
@@ -192,6 +241,9 @@ not show a clear city-level winner.
 - The county view compresses the signal further: 59 primary county groups, with
   11 contested counties. The largest observed concentration is in the Atlanta
   suburban counties, especially Cobb, Fulton, and Gwinnett.
+- The metro view reveals the main story so far: the Atlanta CBSA contains 79 of
+  the 132 packet-ready stores, with Home Depot leading 59 to 20. Most statewide
+  rivalry is therefore metro-edge and suburban, not evenly distributed.
 - Address city/locality is not enough. TURF needs to attach ZIP/ZCTA, county,
   CBSA, urban area, and drive-time layers before saying how these chains divide
   Georgia.
@@ -203,8 +255,10 @@ cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-imp
 cargo run -p turf-cli -- export-packet-ready fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- export-packet-ready-postal fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- export-packet-ready-county fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
+cargo run -p turf-cli -- export-packet-ready-metro fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-county-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
+cargo run -p turf-cli -- summarize-metro-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```

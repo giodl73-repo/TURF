@@ -43,6 +43,8 @@ cargo run -p turf-cli -- summarize-postal-review fixtures\stores\overture-home-i
 cargo run -p turf-cli -- export-packet-ready-postal fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize-county-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
 cargo run -p turf-cli -- export-packet-ready-county fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv
+cargo run -p turf-cli -- summarize-metro-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
+cargo run -p turf-cli -- export-packet-ready-metro fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 ```
 
 ## Rules
@@ -59,3 +61,5 @@ cargo run -p turf-cli -- export-packet-ready-county fixtures\stores\overture-hom
   `zcta_candidate` key for future Census enrichment.
 - `export-packet-ready-county` joins packet-ready postal rows to bounded
   ZCTA-county context for county-level reporting.
+- `export-packet-ready-metro` joins county-enriched rows to bounded CBSA
+  context for metro/micro reporting.

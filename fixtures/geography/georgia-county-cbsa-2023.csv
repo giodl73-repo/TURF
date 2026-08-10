@@ -1,0 +1,60 @@
+county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,csa_code,csa_title,central_outlying,metro_context_status,relationship_source,relationship_vintage
+13009,Baldwin County,33300,Milledgeville GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13013,Barrow County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Outlying,cbsa,Census July 2023 CBSA delineation file,2023-07
+13015,Bartow County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Outlying,cbsa,Census July 2023 CBSA delineation file,2023-07
+13021,Bibb County,31420,Macon-Bibb County GA,Metropolitan Statistical Area,356,Macon-Bibb County--Warner Robins GA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13031,Bulloch County,44340,Statesboro GA,Micropolitan Statistical Area,496,Savannah-Hinesville-Statesboro GA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13045,Carroll County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Outlying,cbsa,Census July 2023 CBSA delineation file,2023-07
+13047,Catoosa County,16860,Chattanooga TN-GA,Metropolitan Statistical Area,174,Chattanooga-Cleveland-Dalton TN-GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13051,Chatham County,42340,Savannah GA,Metropolitan Statistical Area,496,Savannah-Hinesville-Statesboro GA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13057,Cherokee County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13059,Clarke County,12020,Athens-Clarke County GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13063,Clayton County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13067,Cobb County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13069,Coffee County,20060,Douglas GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13071,Colquitt County,34220,Moultrie GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13073,Columbia County,12260,Augusta-Richmond County GA-SC,Metropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13077,Coweta County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13081,Crisp County,18380,Cordele GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13085,Dawson County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13087,Decatur County,12460,Bainbridge GA,Micropolitan Statistical Area,533,Tallahassee-Bainbridge FL-GA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13089,DeKalb County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13095,Dougherty County,10500,Albany GA,Metropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13097,Douglas County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13103,Effingham County,42340,Savannah GA,Metropolitan Statistical Area,496,Savannah-Hinesville-Statesboro GA,Outlying,cbsa,Census July 2023 CBSA delineation file,2023-07
+13111,Fannin County,,Non-CBSA Georgia county,Non-CBSA,,,,non_cbsa,Census July 2023 CBSA delineation file,2023-07
+13113,Fayette County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13115,Floyd County,40660,Rome GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13117,Forsyth County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13121,Fulton County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13123,Gilmer County,,Non-CBSA Georgia county,Non-CBSA,,,,non_cbsa,Census July 2023 CBSA delineation file,2023-07
+13127,Glynn County,15260,Brunswick-St. Simons GA,Metropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13129,Gordon County,15660,Calhoun GA,Micropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13133,Greene County,,Non-CBSA Georgia county,Non-CBSA,,,,non_cbsa,Census July 2023 CBSA delineation file,2023-07
+13135,Gwinnett County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13137,Habersham County,18460,Cornelia GA,Micropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13139,Hall County,23580,Gainesville GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13147,Hart County,,Non-CBSA Georgia county,Non-CBSA,,,,non_cbsa,Census July 2023 CBSA delineation file,2023-07
+13151,Henry County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13153,Houston County,47580,Warner Robins GA,Metropolitan Statistical Area,356,Macon-Bibb County--Warner Robins GA,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13157,Jackson County,27600,Jefferson GA,Micropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13175,Laurens County,20140,Dublin GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13185,Lowndes County,46660,Valdosta GA,Metropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13187,Lumpkin County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Outlying,cbsa,Census July 2023 CBSA delineation file,2023-07
+13215,Muscogee County,17980,Columbus GA-AL,Metropolitan Statistical Area,194,Columbus-Auburn-Opelika GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13217,Newton County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13223,Paulding County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13227,Pickens County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Outlying,cbsa,Census July 2023 CBSA delineation file,2023-07
+13233,Polk County,16340,Cedartown GA,Micropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13241,Rabun County,,Non-CBSA Georgia county,Non-CBSA,,,,non_cbsa,Census July 2023 CBSA delineation file,2023-07
+13247,Rockdale County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13255,Spalding County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Outlying,cbsa,Census July 2023 CBSA delineation file,2023-07
+13257,Stephens County,45740,Toccoa GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13261,Sumter County,11140,Americus GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13275,Thomas County,45620,Thomasville GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13285,Troup County,29300,LaGrange GA-AL,Micropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13291,Union County,,Non-CBSA Georgia county,Non-CBSA,,,,non_cbsa,Census July 2023 CBSA delineation file,2023-07
+13293,Upson County,45580,Thomaston GA,Micropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13297,Walton County,12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,122,Atlanta--Athens-Clarke County--Sandy Springs GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13299,Ware County,48180,Waycross GA,Micropolitan Statistical Area,,,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
+13313,Whitfield County,19140,Dalton GA,Metropolitan Statistical Area,174,Chattanooga-Cleveland-Dalton TN-GA-AL,Central,cbsa,Census July 2023 CBSA delineation file,2023-07
