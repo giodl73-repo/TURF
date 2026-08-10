@@ -29,16 +29,25 @@ implicitly divide the United States even when their internal district maps are
 private. TURF should make that geography inspectable without pretending to know
 unpublished corporate territories.
 
+TURF learns that geography from the ground up. Postal addressing is the first
+lesson: addresses, ZIPs, post offices, and delivery-locality conventions are
+the practical national location system that often defines American daily life
+whether or not a city, town, annexation, or government boundary lines up with
+it. The roadmap in `docs\learning-roadmap.md` starts with that "original TURF"
+layer before moving to roads, catchments, and retail rivalry.
+
 ## Development phases
 
-1. **Footprint Foundation** - data policy, POI intake contract, and first
+1. **Addressable America** - postal/address geography, place identity, and the
+   difference between mailing, civic, Census, and market boundaries.
+2. **Footprint Foundation** - data policy, POI intake contract, and first
    brand/city summary fixture.
-2. **Catchment Lines** - nearest-distance and drive-time catchments for each
+3. **Catchment Lines** - nearest-distance and drive-time catchments for each
    store and brand.
-3. **Contested Markets** - city, county, CBSA, and urban-area dominance maps.
-4. **Corridor Rivalry** - highway and suburban edge patterns across competing
+4. **Contested Markets** - city, county, CBSA, and urban-area dominance maps.
+5. **Corridor Rivalry** - highway and suburban edge patterns across competing
    chains.
-5. **National Atlas** - reproducible national reports for selected retail and
+6. **National Atlas** - reproducible national reports for selected retail and
    QSR categories.
 
 ## Data policy
