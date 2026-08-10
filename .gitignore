@@ -1,0 +1,7 @@
+/target/
+/.claude/settings.local.json
+/.claude/scheduled_tasks.lock
+/.claude/agents_state/
+*.log
+*.tmp
+.cargo/config.toml

@@ -1,0 +1,11 @@
+brand,store_id,city,state,latitude,longitude
+Home Depot,hd-atlanta-001,Atlanta,GA,33.7517,-84.3901
+Lowe's,low-atlanta-001,Atlanta,GA,33.8067,-84.4102
+Home Depot,hd-marietta-001,Marietta,GA,33.9526,-84.5499
+Home Depot,hd-marietta-002,Marietta,GA,33.9803,-84.5038
+Lowe's,low-marietta-001,Marietta,GA,33.9560,-84.5400
+Lowe's,low-greenville-001,Greenville,SC,34.8526,-82.3940
+Lowe's,low-greenville-002,Greenville,SC,34.8203,-82.3301
+Home Depot,hd-greenville-001,Greenville,SC,34.8488,-82.4005
+Home Depot,hd-austin-001,Austin,TX,30.2672,-97.7431
+Lowe's,low-austin-001,Austin,TX,30.3072,-97.7500
