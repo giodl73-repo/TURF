@@ -6,6 +6,10 @@
 - Geography: Atlanta / Marietta / Cumberland
 - Store points: 5
 
+## Executive Summary
+
+Home Improvement in Atlanta / Marietta / Cumberland: 1 city read is contested and 1 city read is dominant. Lowe's leads the distance-weighted demand sample with 250 assigned weight. 5 place-context warnings require postal, civic, Census, lived-place, and market labels to stay separate.
+
 ## Brand Footprint
 
 | Brand | Stores |

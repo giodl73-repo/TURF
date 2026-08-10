@@ -93,6 +93,7 @@ pub struct CatchmentAssignment {
 pub struct MarketPacket {
     pub category: String,
     pub geography: String,
+    pub narrative_summary: String,
     pub summary: FootprintSummary,
     pub place_findings: Vec<PlaceContextFinding>,
     pub catchments: Vec<CatchmentAssignment>,
@@ -470,12 +471,26 @@ pub fn build_market_packet(
     contexts: &[PlaceContext],
     demand_points: &[DemandPoint],
 ) -> Result<MarketPacket, String> {
+    let category = required_argument(category, "category")?.to_string();
+    let geography = required_argument(geography, "geography")?.to_string();
+    let summary = summarize_footprint(stores);
+    let place_findings = inspect_place_contexts(contexts);
+    let catchments = assign_nearest_store(stores, demand_points)?;
+    let narrative_summary = summarize_packet_narrative(
+        &category,
+        &geography,
+        &summary,
+        &place_findings,
+        &catchments,
+    );
+
     Ok(MarketPacket {
-        category: required_argument(category, "category")?.to_string(),
-        geography: required_argument(geography, "geography")?.to_string(),
-        summary: summarize_footprint(stores),
-        place_findings: inspect_place_contexts(contexts),
-        catchments: assign_nearest_store(stores, demand_points)?,
+        category,
+        geography,
+        narrative_summary,
+        summary,
+        place_findings,
+        catchments,
         cautions: vec![
             "Distance catchments are straight-line nearest-store assignments, not drive-time models."
                 .to_string(),
@@ -505,6 +520,10 @@ pub fn render_market_packet_markdown(packet: &MarketPacket) -> String {
     output.push('\n');
     output.push_str("- Store points: ");
     output.push_str(&packet.summary.total_stores.to_string());
+    output.push_str("\n\n");
+
+    output.push_str("## Executive Summary\n\n");
+    output.push_str(&packet.narrative_summary);
     output.push_str("\n\n");
 
     output.push_str("## Brand Footprint\n\n");
@@ -592,6 +611,9 @@ pub fn render_market_packet_json(packet: &MarketPacket) -> String {
     output.push_str(&escape_json(&packet.geography));
     output.push_str("\",\"total_stores\":");
     output.push_str(&packet.summary.total_stores.to_string());
+    output.push_str(",\"narrative_summary\":\"");
+    output.push_str(&escape_json(&packet.narrative_summary));
+    output.push('"');
 
     output.push_str(",\"brands\":[");
     for (index, brand) in packet.summary.brand_summaries.iter().enumerate() {
@@ -700,11 +722,87 @@ fn market_status_label(status: &MarketStatus) -> &'static str {
     }
 }
 
+fn summarize_packet_narrative(
+    category: &str,
+    geography: &str,
+    summary: &FootprintSummary,
+    place_findings: &[PlaceContextFinding],
+    catchments: &[CatchmentAssignment],
+) -> String {
+    let city_read = if summary.city_dominance.is_empty() {
+        "no city-level store read is available".to_string()
+    } else {
+        let contested = summary
+            .city_dominance
+            .iter()
+            .filter(|city| city.status == MarketStatus::Contested)
+            .count();
+        let dominant = summary.city_dominance.len() - contested;
+        format!(
+            "{} and {}",
+            count_phrase(
+                contested,
+                "city read",
+                "city reads",
+                "is contested",
+                "are contested"
+            ),
+            count_phrase(
+                dominant,
+                "city read",
+                "city reads",
+                "is dominant",
+                "are dominant"
+            )
+        )
+    };
+
+    let catchment_read = if catchments.is_empty() {
+        "no demand catchments are assigned".to_string()
+    } else {
+        let mut brand_weights: BTreeMap<String, f64> = BTreeMap::new();
+        for catchment in catchments {
+            *brand_weights
+                .entry(catchment.assigned_brand.clone())
+                .or_insert(0.0) += catchment.weight;
+        }
+        let (leader, weight) = brand_weights
+            .iter()
+            .max_by(|left, right| left.1.total_cmp(right.1).then_with(|| right.0.cmp(left.0)))
+            .map(|(brand, weight)| (brand.as_str(), *weight))
+            .unwrap_or(("none", 0.0));
+        format!(
+            "{} leads the distance-weighted demand sample with {} assigned weight",
+            leader,
+            format_number(weight)
+        )
+    };
+
+    format!(
+        "{category} in {geography}: {city_read}. {catchment_read}. {} place-context warnings require postal, civic, Census, lived-place, and market labels to stay separate.",
+        place_findings.len()
+    )
+}
+
 fn format_number(value: f64) -> String {
     if value.fract() == 0.0 {
         format!("{value:.0}")
     } else {
         value.to_string()
+    }
+}
+
+fn count_phrase(
+    count: usize,
+    singular: &str,
+    plural: &str,
+    singular_state: &str,
+    plural_state: &str,
+) -> String {
+    if count == 1 {
+        format!("{count} {singular} {singular_state}")
+    } else {
+        format!("{count} {plural} {plural_state}")
     }
 }
 
@@ -909,9 +1007,13 @@ demand-1,Near Marietta,atl-edge-30339,33.9526,-84.5499,10
 
         assert_eq!(packet.summary.total_stores, 5);
         assert_eq!(packet.catchments[0].assigned_store_id, "hd-mar-001");
+        assert!(packet.narrative_summary.contains("Home Improvement"));
+        assert!(packet.narrative_summary.contains("place-context warnings"));
         assert!(markdown.contains("# Home Improvement Market Packet"));
+        assert!(markdown.contains("## Executive Summary"));
         assert!(markdown.contains("postal_city_municipality_mismatch"));
         assert!(json.contains("\"category\":\"Home Improvement\""));
+        assert!(json.contains("\"narrative_summary\""));
         assert!(json.contains("\"catchments\""));
     }
 }

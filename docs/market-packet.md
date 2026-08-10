@@ -25,6 +25,7 @@ agents, dashboards, and future atlas generation.
 
 Both formats preserve:
 
+- Executive narrative summary.
 - Brand footprint counts.
 - City-level dominant/contested labels.
 - Place-context warnings.

@@ -96,3 +96,26 @@ Status: pass with watch item.
 
 Markdown and JSON now expose the same packet sections. The watch item is schema
 stability: future JSON changes should be additive where possible.
+
+## Pulse 07 Narrative Review
+
+### Retail Operator
+
+Status: pass.
+
+The packet now has a quick read before the tables: contested/dominant city read,
+distance-weighted catchment leader, and place-context warning count.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The narrative is derived from existing fixture evidence and keeps the caution
+language intact. It does not add unsupported claims about private territories.
+
+### Report Contract Editor
+
+Status: pass.
+
+`narrative_summary` is an additive JSON field and the Markdown section preserves
+the existing packet table order underneath it.
