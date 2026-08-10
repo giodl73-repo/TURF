@@ -28,6 +28,7 @@ before broader chain coverage begins.
 | 09 | Packet validator command | complete | Added `validate-packet` for repo-local market-packet JSON contract checks. |
 | 10 | National store intake gate | complete | Added source-policy and `validate-stores` gate for Home Depot/Lowe's national acquisition. |
 | 11 | Overture acquisition plan | complete | Added Overture Places extraction plan and open-license candidate intake sample. |
+| 12 | Georgia Overture candidate extract | complete | Added first bounded live Overture Home Depot/Lowe's candidate CSV for Georgia. |
 
 ## Success criteria
 

@@ -214,3 +214,27 @@ Status: pass.
 
 The extraction plan states that exact Overture field paths must be verified
 against the active release before a real extract runs.
+
+## Pulse 12 Georgia Extract Review
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows are sourced from Overture Places, carry `license_status=open`, and avoid
+official Home Depot/Lowe's locator scraping.
+
+### Market Analyst
+
+Status: pass with review requirement.
+
+The extract provides a first Georgia candidate base: 92 Home Depot rows and 44
+Lowe's rows. Before packet generation, review likely false positives such as
+garden centers and duplicate/stale records.
+
+### Future Agent
+
+Status: pass.
+
+The extraction note records release, fields, filters, counts, and validation
+commands so the next pulse can reproduce or audit the candidate file.

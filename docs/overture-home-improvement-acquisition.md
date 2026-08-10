@@ -82,3 +82,8 @@ where lower(brand.names.primary) in (
 
 The exact field paths must be verified against the active Overture release
 before running a real extract.
+
+## First Bounded Extract
+
+The first bounded live extract is documented in
+`docs/research/overture-georgia-extraction-2026-07-22.md`.

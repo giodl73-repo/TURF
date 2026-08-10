@@ -49,6 +49,9 @@ license gate before TURF generates broader packets.
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
+The first bounded live candidate extract is Georgia:
+`fixtures\stores\overture-home-improvement-georgia-2026-07-22.csv`.
+
 ## Product thesis
 
 Retail chains leave a public geography behind. Store locations, roads, cities,

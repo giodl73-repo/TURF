@@ -40,3 +40,6 @@ cargo run -p turf-cli -- validate-stores fixtures\stores\national-store-intake-s
 
 The first approved acquisition path is documented in
 `docs/overture-home-improvement-acquisition.md`.
+
+The first bounded Overture candidate file is
+`fixtures/stores/overture-home-improvement-georgia-2026-07-22.csv`.
