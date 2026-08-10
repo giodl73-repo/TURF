@@ -45,3 +45,10 @@ cargo run -p turf-cli -- place-context --json fixtures\geography\place-contexts.
 The CSV form emits `place_id`, `label`, `finding_kind`, and `finding`. The JSON
 form emits the same findings as a `{"findings":[...]}` object for dashboards,
 agents, and later packet generation.
+
+Current finding kinds:
+
+- `zip_zcta_mismatch`
+- `postal_city_municipality_mismatch`
+- `municipality_census_place_mismatch`
+- `lived_place_market_area_mismatch`

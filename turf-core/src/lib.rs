@@ -167,6 +167,18 @@ pub fn inspect_place_contexts(contexts: &[PlaceContext]) -> Vec<PlaceContextFind
     let mut findings = Vec::new();
 
     for context in contexts {
+        if context.zip_code != context.zcta {
+            findings.push(PlaceContextFinding {
+                place_id: context.place_id.clone(),
+                label: context.label.clone(),
+                finding_kind: "zip_zcta_mismatch".to_string(),
+                finding: format!(
+                    "zip_code differs from zcta: {} vs {}",
+                    context.zip_code, context.zcta
+                ),
+            });
+        }
+
         if context.postal_city != context.municipality {
             findings.push(PlaceContextFinding {
                 place_id: context.place_id.clone(),
@@ -551,7 +563,37 @@ tysons-22102,Tysons commercial core,McLean,VA,22102,22102,unincorporated,Fairfax
         assert!(
             findings
                 .iter()
-                .any(|finding| finding.finding.contains("postal_city differs"))
+                .any(|finding| finding.finding_kind == "postal_city_municipality_mismatch")
+        );
+        assert!(
+            findings
+                .iter()
+                .any(|finding| finding.finding_kind == "municipality_census_place_mismatch")
+        );
+        assert!(
+            findings
+                .iter()
+                .any(|finding| finding.finding_kind == "lived_place_market_area_mismatch")
+        );
+    }
+
+    #[test]
+    fn reports_zip_and_zcta_as_separate_layers() {
+        let csv = "\
+place_id,label,postal_city,state,zip_code,zcta,municipality,county,census_place,cbsa,urban_area,lived_place,market_area,delivery_relevance,governance_relevance,statistics_relevance,market_relevance
+zip-zcta-test,ZIP ZCTA distinction,Testville,TS,99999,99998,Testville,Test County,Testville,Test Metro,Test Urban Area,Testville,Testville,high,medium,high,medium
+";
+        let contexts = parse_place_contexts(csv).expect("place context parses");
+        let findings = inspect_place_contexts(&contexts);
+
+        assert_eq!(contexts[0].zip_code, "99999");
+        assert_eq!(contexts[0].zcta, "99998");
+        assert_eq!(findings.len(), 1);
+        assert_eq!(findings[0].finding_kind, "zip_zcta_mismatch");
+        assert!(
+            findings[0]
+                .finding
+                .contains("zip_code differs from zcta: 99999 vs 99998")
         );
     }
 

@@ -29,3 +29,6 @@ Complete. Validation passed with `cargo fmt --check`, `cargo test --workspace`,
 `cargo run -p turf-cli -- place-context fixtures\geography\place-contexts.csv`,
 `cargo run -p turf-cli -- place-context --json fixtures\geography\place-contexts.csv`,
 and `git diff --check` on 2026-08-10.
+
+Follow-up hardening added an explicit `zip_zcta_mismatch` finding and unit test
+so ZIP Code and ZCTA remain executable as separate layers.
