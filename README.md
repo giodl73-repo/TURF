@@ -102,6 +102,9 @@ The first auto-parts comparison report is:
 The first cross-category spread comparison is:
 `reports\washington-category-spread-comparison.md`.
 
+RET, Retail Enclave Typology, is introduced in:
+`docs\ret-taxonomy.md`.
+
 ## Product thesis
 
 Retail chains leave a public geography behind. Store locations, roads, cities,

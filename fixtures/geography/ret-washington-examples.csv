@@ -1,0 +1,15 @@
+geography_id,geography_type,label,category,enclave_type,primary_brand,store_count,competing_brand_count,evidence_summary,source_report
+kingston,place,Kingston WA,home_improvement,white_space,,0,0,No direct packet-ready Home Depot or Lowe's row in Kingston,reports/washington-category-spread-comparison.md
+kingston,place,Kingston WA,auto_parts,ferry_side_enclave,NAPA Auto Parts,2,0,Two NAPA rows appear in ferry-linked Kingston where home improvement has no direct row,reports/washington-category-spread-comparison.md
+42660,cbsa,Seattle-Tacoma-Bellevue WA,home_improvement,anchor_market,Home Depot,42,1,Home Depot leads the destination big-box layer 26 to 16,reports/home-improvement-seattle-puget-sound.md
+42660,cbsa,Seattle-Tacoma-Bellevue WA,auto_parts,contested_service_grid,O'Reilly Auto Parts,197,3,O'Reilly is largest with 89 rows but AutoZone NAPA and Advance are also present,reports/auto-parts-seattle-puget-sound.md
+14740,cbsa,Bremerton-Silverdale-Port Orchard WA,home_improvement,anchor_market,,4,2,Home Depot and Lowe's tie 2 to 2 in a thin regional big-box layer,reports/home-improvement-seattle-puget-sound.md
+14740,cbsa,Bremerton-Silverdale-Port Orchard WA,auto_parts,brand_led_service_mesh,NAPA Auto Parts,17,2,NAPA leads Kitsap auto parts with 9 rows while O'Reilly and AutoZone remain present,reports/auto-parts-seattle-puget-sound.md
+bainbridge-island,place,Bainbridge Island WA,home_improvement,white_space,,0,0,No direct packet-ready Home Depot or Lowe's row in Bainbridge Island,reports/home-improvement-seattle-puget-sound.md
+bainbridge-island,place,Bainbridge Island WA,auto_parts,white_space,,0,0,No direct packet-ready auto-parts row in Bainbridge Island,reports/auto-parts-seattle-puget-sound.md
+poulsbo,place,Poulsbo WA,home_improvement,anchor_market,Home Depot,1,0,One Home Depot row anchors the local home-improvement read,reports/washington-category-spread-comparison.md
+poulsbo,place,Poulsbo WA,auto_parts,service_mesh,,2,2,NAPA and O'Reilly both appear in Poulsbo showing local service competition,reports/washington-category-spread-comparison.md
+silverdale,place,Silverdale WA,home_improvement,anchor_market,,2,2,Home Depot and Lowe's both appear as thin big-box anchors,reports/washington-category-spread-comparison.md
+silverdale,place,Silverdale WA,auto_parts,brand_led_service_mesh,NAPA Auto Parts,3,1,NAPA has two rows and O'Reilly one row in a local service cluster,reports/washington-category-spread-comparison.md
+port-orchard,place,Port Orchard WA,home_improvement,anchor_market,Lowe's,1,0,One Lowe's row anchors the local home-improvement read,reports/washington-category-spread-comparison.md
+port-orchard,place,Port Orchard WA,auto_parts,contested_service_grid,,3,3,AutoZone NAPA and O'Reilly each appear once in Port Orchard,reports/washington-category-spread-comparison.md

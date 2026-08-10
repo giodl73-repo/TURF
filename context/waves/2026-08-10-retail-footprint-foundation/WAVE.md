@@ -40,6 +40,7 @@ before broader chain coverage begins.
 | 21 | Chain expansion sequence | complete | Set auto parts as the next category, followed by Target/Walmart and later Costco contrast. |
 | 22 | Washington auto parts footprint | complete | Added Washington auto-parts extract and showed denser Seattle/Kitsap service geography. |
 | 23 | Washington category spread comparison | complete | Compared home improvement vs auto parts as big-box destination vs local service geography. |
+| 24 | RET taxonomy sketch | complete | Introduced Retail Enclave Typology and seeded Washington enclave examples. |
 
 ## Success criteria
 

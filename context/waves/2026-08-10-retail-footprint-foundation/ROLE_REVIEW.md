@@ -538,3 +538,36 @@ Status: pass.
 
 The pulse compares already-reviewed, checked-in Overture-derived fixtures and
 does not introduce new source claims.
+
+## Pulse 24 RET Taxonomy Sketch
+
+### Market Analyst
+
+Status: pass.
+
+RET gives the project a useful language beyond dominance counts: anchor markets,
+service meshes, contested grids, brand-led meshes, ferry-side enclaves, and
+white spaces.
+
+### Market Geographer
+
+Status: pass.
+
+The examples preserve place/category specificity. Kingston can be
+home-improvement white space and an auto-parts ferry-side enclave at the same
+time.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The typology names the catchment problem clearly. The next technical step should
+validate the RET fixture and then add conservative rule-based classification
+features.
+
+### Source Policy Auditor
+
+Status: pass.
+
+RET is framed as an interpretation of already-reviewed public footprint
+evidence, not an assertion of private corporate territories.
