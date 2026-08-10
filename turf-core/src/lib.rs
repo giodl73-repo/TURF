@@ -496,6 +496,40 @@ pub fn validate_reviewed_store_points(csv: &str) -> Result<usize, String> {
     Ok(parse_reviewed_store_points(csv)?.len())
 }
 
+pub fn packet_ready_store_points(reviewed_points: &[ReviewedStorePoint]) -> Vec<StorePoint> {
+    reviewed_points
+        .iter()
+        .filter(|point| point.review_status == "packet_ready")
+        .map(|point| StorePoint {
+            brand: point.brand.clone(),
+            store_id: point.store_id.clone(),
+            city: point.city.clone(),
+            state: point.state.clone(),
+            latitude: point.latitude,
+            longitude: point.longitude,
+        })
+        .collect()
+}
+
+pub fn render_store_points_csv(points: &[StorePoint]) -> String {
+    let mut output = String::from("brand,store_id,city,state,latitude,longitude\n");
+    for point in points {
+        output.push_str(&point.brand);
+        output.push(',');
+        output.push_str(&point.store_id);
+        output.push(',');
+        output.push_str(&point.city);
+        output.push(',');
+        output.push_str(&point.state);
+        output.push(',');
+        output.push_str(&point.latitude.to_string());
+        output.push(',');
+        output.push_str(&point.longitude.to_string());
+        output.push('\n');
+    }
+    output
+}
+
 pub fn parse_demand_points(csv: &str) -> Result<Vec<DemandPoint>, String> {
     let mut lines = csv.lines();
     let header = lines.next().ok_or("missing CSV header")?;
@@ -1201,6 +1235,24 @@ Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.
         let error = parse_reviewed_store_points(csv).expect_err("review reason should fail");
 
         assert!(error.contains("invalid review_reason"));
+    }
+
+    #[test]
+    fn derives_packet_ready_store_points() {
+        let csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.3901,user fixture,2026-08-10,user_provided,packet_ready,primary_store_candidate
+Lowe's,low-0001,Lowe's Garden Center,456 Test Ave,Atlanta,GA,30304,33.7520,-84.3904,user fixture,2026-08-10,user_provided,needs_review,garden_center_candidate
+";
+        let reviewed = parse_reviewed_store_points(csv).expect("reviewed stores parse");
+        let points = packet_ready_store_points(&reviewed);
+        let rendered = render_store_points_csv(&points);
+
+        assert_eq!(points.len(), 1);
+        assert_eq!(points[0].store_id, "hd-0001");
+        assert!(rendered.starts_with("brand,store_id,city,state,latitude,longitude"));
+        assert!(rendered.contains("Home Depot,hd-0001,Atlanta,GA,33.7517,-84.3901"));
+        assert!(!rendered.contains("low-0001"));
     }
 
     #[test]

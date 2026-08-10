@@ -1,10 +1,11 @@
-use std::{env, fs, process};
+use std::{collections::BTreeMap, env, fs, process};
 
 use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
-    build_market_packet, inspect_place_contexts, parse_demand_points, parse_place_contexts,
-    parse_store_points, render_market_packet_json, render_market_packet_markdown,
-    render_place_context_findings_json, summarize_footprint, validate_market_packet_json,
+    build_market_packet, inspect_place_contexts, packet_ready_store_points, parse_demand_points,
+    parse_place_contexts, parse_reviewed_store_points, parse_store_points,
+    render_market_packet_json, render_market_packet_markdown, render_place_context_findings_json,
+    render_store_points_csv, summarize_footprint, validate_market_packet_json,
     validate_national_store_points, validate_reviewed_store_points,
 };
 
@@ -137,6 +138,29 @@ fn run() -> Result<(), String> {
             println!("valid,{},{}", path, rows);
             Ok(())
         }
+        Some("summarize-review") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli summarize-review <reviewed-stores.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let reviewed_points = parse_reviewed_store_points(&csv)?;
+            print_review_summary(&reviewed_points);
+            let points = packet_ready_store_points(&reviewed_points);
+            let summary = summarize_footprint(&points);
+            println!();
+            print_summary(&summary);
+            Ok(())
+        }
+        Some("export-packet-ready") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli export-packet-ready <reviewed-stores.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let reviewed_points = parse_reviewed_store_points(&csv)?;
+            let points = packet_ready_store_points(&reviewed_points);
+            print!("{}", render_store_points_csv(&points));
+            Ok(())
+        }
         Some("--help") | Some("-h") | None => {
             print_help();
             Ok(())
@@ -160,6 +184,8 @@ fn print_help() {
     println!(
         "  validate-store-review <reviewed-stores.csv>  Check reviewed store candidate contract"
     );
+    println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
+    println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
 }
 
 fn print_summary(summary: &turf_core::FootprintSummary) {
@@ -206,5 +232,26 @@ fn print_catchment_assignments(assignments: &[CatchmentAssignment]) {
             assignment.distance_miles,
             assignment.weight
         );
+    }
+}
+
+fn print_review_summary(points: &[turf_core::ReviewedStorePoint]) {
+    let mut status_counts: BTreeMap<&str, usize> = BTreeMap::new();
+    let mut reason_counts: BTreeMap<&str, usize> = BTreeMap::new();
+
+    for point in points {
+        *status_counts.entry(&point.review_status).or_insert(0) += 1;
+        *reason_counts.entry(&point.review_reason).or_insert(0) += 1;
+    }
+
+    println!("review_status,rows");
+    for (status, rows) in status_counts {
+        println!("{status},{rows}");
+    }
+
+    println!();
+    println!("review_reason,rows");
+    for (reason, rows) in reason_counts {
+        println!("{reason},{rows}");
     }
 }

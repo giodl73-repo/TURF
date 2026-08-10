@@ -21,6 +21,8 @@ cargo run -p turf-cli -- market-packet "Home Improvement" "Atlanta / Marietta / 
 cargo run -p turf-cli -- validate-packet reports\home-improvement-atlanta.json
 cargo run -p turf-cli -- validate-stores fixtures\stores\national-store-intake-sample.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -50,6 +52,9 @@ license gate before TURF generates broader packets.
 The `validate-store-review` command checks the reviewed candidate layer that
 marks extracted rows as `packet_ready`, `needs_review`, or `exclude`.
 
+The `summarize-review` command reads the reviewed candidate layer, reports
+review status counts, and summarizes the packet-ready footprint.
+
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
@@ -58,6 +63,9 @@ The first bounded live candidate extract is Georgia:
 
 The first reviewed candidate layer is:
 `fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv`.
+
+The first statewide reviewed footprint report is:
+`reports\home-improvement-georgia.md`.
 
 ## Product thesis
 

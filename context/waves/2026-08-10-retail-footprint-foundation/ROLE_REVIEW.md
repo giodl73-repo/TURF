@@ -262,3 +262,29 @@ Status: pass.
 
 `validate-store-review` gives future agents a concrete gate before turning
 candidate extracts into packet inputs.
+
+## Pulse 14 Georgia Reviewed Footprint Read
+
+### Market Analyst
+
+Status: pass.
+
+The first statewide read separates the main signal from the caveat: Home Depot
+has 90 packet-ready Georgia rows versus 42 for Lowe's, but city/locality alone
+is a coarse territory layer.
+
+### Market Geographer
+
+Status: pass with next-output request.
+
+The report correctly avoids treating address city/locality as ZIP, ZCTA,
+municipality, county, CBSA, urban area, or drive-time territory. The next output
+should attach ZIP/ZCTA and county/metro context to the Georgia rows.
+
+### Future Agent
+
+Status: pass.
+
+`export-packet-ready` gives future agents a repeatable way to turn reviewed
+candidates into the existing store-point shape used by summaries and
+catchments.

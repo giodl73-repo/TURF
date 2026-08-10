@@ -37,6 +37,8 @@ Current reason codes:
 
 ```powershell
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- summarize-review fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- export-packet-ready fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv
 ```
 
 ## Rules
@@ -47,3 +49,5 @@ cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-home-imp
   `exclude` with a reason.
 - Market packets should consume only `packet_ready` rows unless a report
   explicitly states otherwise.
+- `export-packet-ready` produces the smaller `StorePoint` CSV shape used by
+  summary and catchment commands.

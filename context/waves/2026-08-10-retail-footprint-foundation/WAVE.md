@@ -30,6 +30,7 @@ before broader chain coverage begins.
 | 11 | Overture acquisition plan | complete | Added Overture Places extraction plan and open-license candidate intake sample. |
 | 12 | Georgia Overture candidate extract | complete | Added first bounded live Overture Home Depot/Lowe's candidate CSV for Georgia. |
 | 13 | Georgia Overture candidate review | complete | Added reviewed Georgia candidate layer, status contract, validator command, and review notes. |
+| 14 | Georgia reviewed footprint read | complete | Added packet-ready export path, statewide reviewed fixture, and first Georgia footprint report. |
 
 ## Success criteria
 
