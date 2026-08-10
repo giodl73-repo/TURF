@@ -19,6 +19,7 @@ cargo run -p turf-cli -- place-context --json fixtures\geography\place-contexts.
 cargo run -p turf-cli -- catchment fixtures\brands\home-improvement-pois.csv fixtures\geography\demand-points.csv
 cargo run -p turf-cli -- market-packet "Home Improvement" "Atlanta / Marietta / Cumberland" fixtures\packets\home-improvement-atlanta-stores.csv fixtures\packets\home-improvement-atlanta-places.csv fixtures\packets\home-improvement-atlanta-demand.csv
 cargo run -p turf-cli -- validate-packet reports\home-improvement-atlanta.json
+cargo run -p turf-cli -- validate-stores fixtures\stores\national-store-intake-sample.csv
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -40,6 +41,10 @@ JSON companion for dashboards and future atlas generation.
 
 The `validate-packet` command checks a market-packet JSON file against TURF's
 current required-field contract without adding a runtime schema dependency.
+
+The `validate-stores` command checks the stricter national chain store intake
+contract. Home Depot and Lowe's national coverage must pass that source and
+license gate before TURF generates broader packets.
 
 ## Product thesis
 
@@ -75,7 +80,8 @@ layer before moving to roads, catchments, and retail rivalry.
 TURF starts with open or explicitly licensed inputs. Official store locators can
 be used for manual validation only when their terms allow it. The repo should
 not scrape private APIs or imply it has access to unpublished corporate region
-boundaries.
+boundaries. The Home Depot / Lowe's acquisition gate is documented in
+`docs\research\home-improvement-source-policy.md`.
 
 ## Non-goals
 

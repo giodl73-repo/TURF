@@ -10,6 +10,22 @@ pub struct StorePoint {
     pub longitude: f64,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct NationalStorePoint {
+    pub brand: String,
+    pub store_id: String,
+    pub store_name: String,
+    pub address: String,
+    pub city: String,
+    pub state: String,
+    pub postal_code: String,
+    pub latitude: f64,
+    pub longitude: f64,
+    pub source: String,
+    pub source_date: String,
+    pub license_status: String,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct BrandSummary {
     pub brand: String,
@@ -304,6 +320,80 @@ pub fn parse_store_points(csv: &str) -> Result<Vec<StorePoint>, String> {
     }
 
     Ok(points)
+}
+
+pub fn parse_national_store_points(csv: &str) -> Result<Vec<NationalStorePoint>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "brand",
+        "store_id",
+        "store_name",
+        "address",
+        "city",
+        "state",
+        "postal_code",
+        "latitude",
+        "longitude",
+        "source",
+        "source_date",
+        "license_status",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut points = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let latitude = fields[7]
+            .parse::<f64>()
+            .map_err(|_| format!("line {line_number}: invalid latitude"))?;
+        let longitude = fields[8]
+            .parse::<f64>()
+            .map_err(|_| format!("line {line_number}: invalid longitude"))?;
+        let license_status = required(fields[11], line_number, "license_status")?;
+        validate_license_status(license_status, line_number)?;
+
+        points.push(NationalStorePoint {
+            brand: required(fields[0], line_number, "brand")?.to_string(),
+            store_id: required(fields[1], line_number, "store_id")?.to_string(),
+            store_name: required(fields[2], line_number, "store_name")?.to_string(),
+            address: required(fields[3], line_number, "address")?.to_string(),
+            city: required(fields[4], line_number, "city")?.to_string(),
+            state: required(fields[5], line_number, "state")?.to_string(),
+            postal_code: required(fields[6], line_number, "postal_code")?.to_string(),
+            latitude,
+            longitude,
+            source: required(fields[9], line_number, "source")?.to_string(),
+            source_date: required(fields[10], line_number, "source_date")?.to_string(),
+            license_status: license_status.to_string(),
+        });
+    }
+
+    Ok(points)
+}
+
+pub fn validate_national_store_points(csv: &str) -> Result<usize, String> {
+    Ok(parse_national_store_points(csv)?.len())
 }
 
 pub fn parse_demand_points(csv: &str) -> Result<Vec<DemandPoint>, String> {
@@ -776,6 +866,13 @@ fn validate_status_values(json: &str) -> Result<(), String> {
     Ok(())
 }
 
+fn validate_license_status(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "open" | "user_provided" | "validation_only" | "restricted" | "unknown" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid license_status")),
+    }
+}
+
 fn required_argument<'a>(value: &'a str, field: &str) -> Result<&'a str, String> {
     if value.trim().is_empty() {
         Err(format!("missing {field}"))
@@ -923,6 +1020,30 @@ Lowe's,low-mar-001,Marietta,GA,33.96,-84.54
         assert_eq!(points.len(), 5);
         assert_eq!(points[0].brand, "Home Depot");
         assert_eq!(points[1].brand, "Lowe's");
+    }
+
+    #[test]
+    fn parses_national_store_points() {
+        let csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status
+Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.3901,user fixture,2026-08-10,user_provided
+";
+        let points = parse_national_store_points(csv).expect("national stores parse");
+
+        assert_eq!(points.len(), 1);
+        assert_eq!(points[0].postal_code, "30303");
+        assert_eq!(points[0].license_status, "user_provided");
+    }
+
+    #[test]
+    fn rejects_unknown_national_store_license_status() {
+        let csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status
+Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.3901,user fixture,2026-08-10,scraped
+";
+        let error = parse_national_store_points(csv).expect_err("license status should fail");
+
+        assert!(error.contains("invalid license_status"));
     }
 
     #[test]

@@ -16,6 +16,9 @@ Official store directories and store locators can be used to check coverage
 when their terms permit manual inspection. They should not be scraped, cached,
 or redistributed unless the source policy explicitly allows it.
 
+Home Depot and Lowe's national acquisition is governed by
+`docs/research/home-improvement-source-policy.md`.
+
 ## Disallowed repository contents
 
 - Raw proprietary POI datasets.

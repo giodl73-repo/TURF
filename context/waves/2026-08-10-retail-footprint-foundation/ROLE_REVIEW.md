@@ -166,3 +166,27 @@ Status: pass.
 
 The validator checks TURF-produced report structure only and does not change
 source acquisition policy.
+
+## Pulse 10 National Store Intake Review
+
+### Source Policy Auditor
+
+Status: pass.
+
+The policy blocks automated scraping of official Home Depot and Lowe's store
+locators for committed datasets unless reuse rights are explicit. Open and
+user-provided paths remain available.
+
+### Retail Operator
+
+Status: pass.
+
+The intake contract adds the fields needed for national operational use:
+address, postal code, coordinates, source, source date, and license status.
+
+### Future Agent
+
+Status: pass.
+
+`validate-stores` gives future agents a concrete gate before generating larger
+regional or national packets.

@@ -26,6 +26,7 @@ before broader chain coverage begins.
 | 07 | Packet narrative summary | complete | Added an evidence-derived executive summary to Markdown and JSON market packets. |
 | 08 | Packet schema contract | complete | Added a JSON Schema and compatibility notes for market-packet consumers. |
 | 09 | Packet validator command | complete | Added `validate-packet` for repo-local market-packet JSON contract checks. |
+| 10 | National store intake gate | complete | Added source-policy and `validate-stores` gate for Home Depot/Lowe's national acquisition. |
 
 ## Success criteria
 
