@@ -34,3 +34,14 @@ claims can say which layer they use.
 - Do not treat `zcta` as an official USPS delivery territory.
 - Do not infer a corporate territory from a place context alone.
 - Every generated report must preserve the source layer names.
+
+## Commands
+
+```powershell
+cargo run -p turf-cli -- place-context fixtures\geography\place-contexts.csv
+cargo run -p turf-cli -- place-context --json fixtures\geography\place-contexts.csv
+```
+
+The CSV form emits `place_id`, `label`, `finding_kind`, and `finding`. The JSON
+form emits the same findings as a `{"findings":[...]}` object for dashboards,
+agents, and later packet generation.

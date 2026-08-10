@@ -15,6 +15,7 @@ Run the built-in home improvement fixture:
 ```powershell
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-pois.csv
 cargo run -p turf-cli -- place-context fixtures\geography\place-contexts.csv
+cargo run -p turf-cli -- place-context --json fixtures\geography\place-contexts.csv
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,

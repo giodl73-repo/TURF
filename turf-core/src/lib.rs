@@ -64,6 +64,7 @@ pub struct PlaceContext {
 pub struct PlaceContextFinding {
     pub place_id: String,
     pub label: String,
+    pub finding_kind: String,
     pub finding: String,
 }
 
@@ -149,6 +150,7 @@ pub fn inspect_place_contexts(contexts: &[PlaceContext]) -> Vec<PlaceContextFind
             findings.push(PlaceContextFinding {
                 place_id: context.place_id.clone(),
                 label: context.label.clone(),
+                finding_kind: "postal_city_municipality_mismatch".to_string(),
                 finding: format!(
                     "postal_city differs from municipality: {} vs {}",
                     context.postal_city, context.municipality
@@ -160,6 +162,7 @@ pub fn inspect_place_contexts(contexts: &[PlaceContext]) -> Vec<PlaceContextFind
             findings.push(PlaceContextFinding {
                 place_id: context.place_id.clone(),
                 label: context.label.clone(),
+                finding_kind: "municipality_census_place_mismatch".to_string(),
                 finding: format!(
                     "municipality differs from census_place: {} vs {}",
                     context.municipality, context.census_place
@@ -171,6 +174,7 @@ pub fn inspect_place_contexts(contexts: &[PlaceContext]) -> Vec<PlaceContextFind
             findings.push(PlaceContextFinding {
                 place_id: context.place_id.clone(),
                 label: context.label.clone(),
+                finding_kind: "lived_place_market_area_mismatch".to_string(),
                 finding: format!(
                     "lived_place differs from market_area: {} vs {}",
                     context.lived_place, context.market_area
@@ -180,6 +184,26 @@ pub fn inspect_place_contexts(contexts: &[PlaceContext]) -> Vec<PlaceContextFind
     }
 
     findings
+}
+
+pub fn render_place_context_findings_json(findings: &[PlaceContextFinding]) -> String {
+    let mut output = String::from("{\"findings\":[");
+    for (index, finding) in findings.iter().enumerate() {
+        if index > 0 {
+            output.push(',');
+        }
+        output.push_str("{\"place_id\":\"");
+        output.push_str(&escape_json(&finding.place_id));
+        output.push_str("\",\"label\":\"");
+        output.push_str(&escape_json(&finding.label));
+        output.push_str("\",\"finding_kind\":\"");
+        output.push_str(&escape_json(&finding.finding_kind));
+        output.push_str("\",\"finding\":\"");
+        output.push_str(&escape_json(&finding.finding));
+        output.push_str("\"}");
+    }
+    output.push_str("]}");
+    output
 }
 
 pub fn parse_store_points(csv: &str) -> Result<Vec<StorePoint>, String> {
@@ -301,6 +325,21 @@ fn required<'a>(value: &'a str, line_number: usize, field: &str) -> Result<&'a s
     }
 }
 
+fn escape_json(value: &str) -> String {
+    let mut escaped = String::new();
+    for character in value.chars() {
+        match character {
+            '"' => escaped.push_str("\\\""),
+            '\\' => escaped.push_str("\\\\"),
+            '\n' => escaped.push_str("\\n"),
+            '\r' => escaped.push_str("\\r"),
+            '\t' => escaped.push_str("\\t"),
+            _ => escaped.push(character),
+        }
+    }
+    escaped
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -377,5 +416,21 @@ tysons-22102,Tysons commercial core,McLean,VA,22102,22102,unincorporated,Fairfax
                 .iter()
                 .any(|finding| finding.finding.contains("postal_city differs"))
         );
+    }
+
+    #[test]
+    fn renders_place_context_findings_json() {
+        let findings = vec![PlaceContextFinding {
+            place_id: "quote-test".to_string(),
+            label: "Quoted \"Place\"".to_string(),
+            finding_kind: "test_kind".to_string(),
+            finding: "postal_city differs from municipality: A vs B".to_string(),
+        }];
+
+        let json = render_place_context_findings_json(&findings);
+
+        assert!(json.starts_with("{\"findings\":["));
+        assert!(json.contains("\"finding_kind\":\"test_kind\""));
+        assert!(json.contains("Quoted \\\"Place\\\""));
     }
 }

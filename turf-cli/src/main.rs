@@ -2,7 +2,7 @@ use std::{env, fs, process};
 
 use turf_core::{
     MarketStatus, PlaceContextFinding, inspect_place_contexts, parse_place_contexts,
-    parse_store_points, summarize_footprint,
+    parse_store_points, render_place_context_findings_json, summarize_footprint,
 };
 
 fn main() {
@@ -26,13 +26,26 @@ fn run() -> Result<(), String> {
             Ok(())
         }
         Some("place-context") => {
-            let path = args
+            let format = args
                 .next()
-                .ok_or("usage: turf-cli place-context <place-contexts.csv>")?;
+                .ok_or("usage: turf-cli place-context [--json] <place-contexts.csv>")?;
+            let (json, path) = if format == "--json" {
+                (
+                    true,
+                    args.next()
+                        .ok_or("usage: turf-cli place-context [--json] <place-contexts.csv>")?,
+                )
+            } else {
+                (false, format)
+            };
             let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
             let contexts = parse_place_contexts(&csv)?;
             let findings = inspect_place_contexts(&contexts);
-            print_place_context_findings(&findings);
+            if json {
+                println!("{}", render_place_context_findings_json(&findings));
+            } else {
+                print_place_context_findings(&findings);
+            }
             Ok(())
         }
         Some("--help") | Some("-h") | None => {
@@ -48,7 +61,7 @@ fn print_help() {
     println!();
     println!("Commands:");
     println!("  summarize <store-points.csv>  Summarize brand footprint and city dominance");
-    println!("  place-context <places.csv>    Inspect postal/civic/Census/market layers");
+    println!("  place-context [--json] <places.csv>  Inspect postal/civic/Census/market layers");
 }
 
 fn print_summary(summary: &turf_core::FootprintSummary) {
@@ -73,8 +86,11 @@ fn print_summary(summary: &turf_core::FootprintSummary) {
 }
 
 fn print_place_context_findings(findings: &[PlaceContextFinding]) {
-    println!("place_id,label,finding");
+    println!("place_id,label,finding_kind,finding");
     for finding in findings {
-        println!("{},{},{}", finding.place_id, finding.label, finding.finding);
+        println!(
+            "{},{},{},{}",
+            finding.place_id, finding.label, finding.finding_kind, finding.finding
+        );
     }
 }
