@@ -1,0 +1,25 @@
+cbsa_code,cbsa_title,cbsa_type,metro_context_status,leader,leader_stores,total_stores,status
+,Non-CBSA Washington county,Non-CBSA,non_cbsa,NAPA Auto Parts,24,25,dominant
+10140,Aberdeen WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,6,9,dominant
+13380,Bellingham WA,Metropolitan Statistical Area,cbsa,O'Reilly Auto Parts,9,18,contested
+14740,Bremerton-Silverdale-Port Orchard WA,Metropolitan Statistical Area,cbsa,NAPA Auto Parts,9,17,dominant
+16500,Centralia WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,9,13,dominant
+21260,Ellensburg WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,2,5,contested
+28420,Kennewick-Richland WA,Metropolitan Statistical Area,cbsa,NAPA Auto Parts,9,27,contested
+30300,Lewiston ID-WA,Metropolitan Statistical Area,cbsa,NAPA Auto Parts,2,4,contested
+31020,Longview-Kelso WA,Metropolitan Statistical Area,cbsa,NAPA Auto Parts,4,10,contested
+34180,Moses Lake WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,8,14,dominant
+34580,Mount Vernon-Anacortes WA,Metropolitan Statistical Area,cbsa,NAPA Auto Parts,8,15,dominant
+36020,Oak Harbor WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,3,5,dominant
+36500,Olympia-Lacey-Tumwater WA,Metropolitan Statistical Area,cbsa,O'Reilly Auto Parts,7,20,contested
+36830,Othello WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,2,4,contested
+38820,Port Angeles WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,2,5,contested
+38900,Portland-Vancouver-Hillsboro OR-WA,Metropolitan Statistical Area,cbsa,O'Reilly Auto Parts,8,24,contested
+39040,Port Townsend WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,2,3,dominant
+39420,Pullman WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,2,3,dominant
+42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,O'Reilly Auto Parts,89,197,contested
+43220,Shelton WA,Micropolitan Statistical Area,cbsa,NAPA Auto Parts,3,5,dominant
+44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,O'Reilly Auto Parts,16,39,contested
+47460,Walla Walla WA,Metropolitan Statistical Area,cbsa,AutoZone,1,3,contested
+48300,Wenatchee-East Wenatchee WA,Metropolitan Statistical Area,cbsa,NAPA Auto Parts,10,15,dominant
+49420,Yakima WA,Metropolitan Statistical Area,cbsa,NAPA Auto Parts,10,27,contested

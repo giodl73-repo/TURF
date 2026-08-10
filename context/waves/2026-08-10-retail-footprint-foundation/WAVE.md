@@ -38,6 +38,7 @@ before broader chain coverage begins.
 | 19 | Atlanta suburban ring test | complete | Added distance-ring classification for Atlanta CBSA and tested Lowe's suburbanity hypothesis. |
 | 20 | Seattle Puget Sound ferry read | complete | Added Washington extract, Seattle/Bremerton metro reads, and ferry-aware Puget Sound context. |
 | 21 | Chain expansion sequence | complete | Set auto parts as the next category, followed by Target/Walmart and later Costco contrast. |
+| 22 | Washington auto parts footprint | complete | Added Washington auto-parts extract and showed denser Seattle/Kitsap service geography. |
 
 ## Success criteria
 

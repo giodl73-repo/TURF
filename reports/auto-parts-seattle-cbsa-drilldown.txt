@@ -1,0 +1,212 @@
+metro,Seattle-Tacoma-Bellevue WA
+total_stores,197
+
+brand,stores
+Advance Auto Parts,15
+AutoZone,50
+NAPA Auto Parts,43
+O'Reilly Auto Parts,89
+
+county_geoid,county_name,leader,leader_stores,total_stores,status
+53033,King County,O'Reilly Auto Parts,42,91,contested
+53053,Pierce County,O'Reilly Auto Parts,25,55,contested
+53061,Snohomish County,O'Reilly Auto Parts,22,51,contested
+
+brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles
+AutoZone,268f104f-4464-459f-9b7a-c36a7eda9ea4,Kirkland,King County,O'Reilly Auto Parts,9fca934e-f648-4dd7-a01b-1ab36960a263,Kirkland,King County,0.01
+O'Reilly Auto Parts,9fca934e-f648-4dd7-a01b-1ab36960a263,Kirkland,King County,AutoZone,268f104f-4464-459f-9b7a-c36a7eda9ea4,Kirkland,King County,0.01
+O'Reilly Auto Parts,ba2f2529-0747-4923-94de-b117f3d06b6e,Auburn,King County,AutoZone,f5a34476-cc97-401f-b0d1-a72b694e7b29,Auburn,King County,0.05
+AutoZone,f5a34476-cc97-401f-b0d1-a72b694e7b29,Auburn,King County,O'Reilly Auto Parts,ba2f2529-0747-4923-94de-b117f3d06b6e,Auburn,King County,0.05
+NAPA Auto Parts,3ba252db-41ec-4e12-a4b3-bf2c28358230,Lakewood,Pierce County,AutoZone,bee8134c-93b9-4f17-b381-76d076090052,Lakewood,Pierce County,0.05
+AutoZone,bee8134c-93b9-4f17-b381-76d076090052,Lakewood,Pierce County,NAPA Auto Parts,3ba252db-41ec-4e12-a4b3-bf2c28358230,Lakewood,Pierce County,0.05
+O'Reilly Auto Parts,ecb27cc7-eb47-49b9-9c28-ade3766ae9be,Edgewood,Pierce County,AutoZone,ee4f9983-05d3-438c-980b-1eac6d47e74e,Edgewood,Pierce County,0.05
+AutoZone,ee4f9983-05d3-438c-980b-1eac6d47e74e,Edgewood,Pierce County,O'Reilly Auto Parts,ecb27cc7-eb47-49b9-9c28-ade3766ae9be,Edgewood,Pierce County,0.05
+O'Reilly Auto Parts,16ca5b45-3d48-4d9e-b105-f2c2ea20bc4c,Graham,Pierce County,AutoZone,d0de5d89-9398-46b8-a316-917ff8db9c07,Graham,Pierce County,0.06
+AutoZone,d0de5d89-9398-46b8-a316-917ff8db9c07,Graham,Pierce County,O'Reilly Auto Parts,16ca5b45-3d48-4d9e-b105-f2c2ea20bc4c,Graham,Pierce County,0.06
+O'Reilly Auto Parts,2b8ea240-ea54-4636-92f6-c69d793e76ae,Arlington,Snohomish County,AutoZone,63bb2f00-384c-4865-ac5d-430b4e6bfd0e,Arlington,Snohomish County,0.07
+AutoZone,63bb2f00-384c-4865-ac5d-430b4e6bfd0e,Arlington,Snohomish County,O'Reilly Auto Parts,2b8ea240-ea54-4636-92f6-c69d793e76ae,Arlington,Snohomish County,0.07
+AutoZone,38cb14a0-99c3-46ed-b395-6128c0b67ad8,Bonney Lake,Pierce County,O'Reilly Auto Parts,d2bdd02f-e21f-4dfd-a1e9-dfb62009ed05,Bonney Lake,Pierce County,0.07
+O'Reilly Auto Parts,d2bdd02f-e21f-4dfd-a1e9-dfb62009ed05,Bonney Lake,Pierce County,AutoZone,38cb14a0-99c3-46ed-b395-6128c0b67ad8,Bonney Lake,Pierce County,0.07
+O'Reilly Auto Parts,e527f8a6-72d5-4529-b467-5bb0ab61e5a2,Des Moines,King County,AutoZone,ec13e0d9-4d90-436b-b80f-8ff5f4635cf8,Seatac,King County,0.07
+AutoZone,ec13e0d9-4d90-436b-b80f-8ff5f4635cf8,Seatac,King County,O'Reilly Auto Parts,e527f8a6-72d5-4529-b467-5bb0ab61e5a2,Des Moines,King County,0.07
+AutoZone,4e5b37f8-3646-43ba-9217-26b4fc297744,Renton,King County,O'Reilly Auto Parts,ba4959c4-a43a-4727-b6b2-63849b50136e,Renton,King County,0.08
+O'Reilly Auto Parts,ba4959c4-a43a-4727-b6b2-63849b50136e,Renton,King County,AutoZone,4e5b37f8-3646-43ba-9217-26b4fc297744,Renton,King County,0.08
+AutoZone,90579900-6b12-4666-9ebc-7c48c1b08a16,Monroe,Snohomish County,O'Reilly Auto Parts,c4a2519d-6fa1-4dd3-8654-41ea23358dd7,Monroe,Snohomish County,0.08
+O'Reilly Auto Parts,c4a2519d-6fa1-4dd3-8654-41ea23358dd7,Monroe,Snohomish County,AutoZone,90579900-6b12-4666-9ebc-7c48c1b08a16,Monroe,Snohomish County,0.08
+O'Reilly Auto Parts,319249b5-5b48-4a99-8cb3-4a54a68fc4f5,Shoreline,King County,AutoZone,7cc21b20-1c96-4e97-b658-2ef354f14b4e,Shoreline,King County,0.08
+AutoZone,7cc21b20-1c96-4e97-b658-2ef354f14b4e,Shoreline,King County,O'Reilly Auto Parts,319249b5-5b48-4a99-8cb3-4a54a68fc4f5,Shoreline,King County,0.08
+AutoZone,01f9560d-b4e3-43f8-94b1-252cfe148822,Everett,Snohomish County,O'Reilly Auto Parts,eac488a8-0785-4fe6-b2a1-2ff6a6c124d6,Everett,Snohomish County,0.10
+O'Reilly Auto Parts,eac488a8-0785-4fe6-b2a1-2ff6a6c124d6,Everett,Snohomish County,AutoZone,01f9560d-b4e3-43f8-94b1-252cfe148822,Everett,Snohomish County,0.10
+AutoZone,22bbf11f-45c2-4340-b9dc-8a033f1bfef7,Lake Stevens,Snohomish County,Advance Auto Parts,6a28b73c-b3f8-4ada-a50f-a9aefcde4301,Lake Stevens,Snohomish County,0.11
+Advance Auto Parts,6a28b73c-b3f8-4ada-a50f-a9aefcde4301,Lake Stevens,Snohomish County,AutoZone,22bbf11f-45c2-4340-b9dc-8a033f1bfef7,Lake Stevens,Snohomish County,0.11
+NAPA Auto Parts,1e1527f2-b5a5-4788-a25d-88e5fc73dd1c,Enumclaw,King County,AutoZone,3b2f1b08-5ca7-4d5e-96c1-fda3bc64a9f0,Enumclaw,King County,0.11
+AutoZone,3b2f1b08-5ca7-4d5e-96c1-fda3bc64a9f0,Enumclaw,King County,NAPA Auto Parts,1e1527f2-b5a5-4788-a25d-88e5fc73dd1c,Enumclaw,King County,0.11
+AutoZone,31fa5b11-205b-4602-ba42-3d9b892907d3,Everett,Snohomish County,O'Reilly Auto Parts,3e42a097-62a8-4f90-bfd2-d48b9df36f21,Everett,Snohomish County,0.12
+O'Reilly Auto Parts,3e42a097-62a8-4f90-bfd2-d48b9df36f21,Everett,Snohomish County,AutoZone,31fa5b11-205b-4602-ba42-3d9b892907d3,Everett,Snohomish County,0.12
+O'Reilly Auto Parts,622354c9-1dd5-4ca5-998b-040d7cbb1f55,Granite Falls,Snohomish County,NAPA Auto Parts,6ea364a1-1162-4065-a7fe-9ea970817ce6,Granite Falls,Snohomish County,0.13
+NAPA Auto Parts,6ea364a1-1162-4065-a7fe-9ea970817ce6,Granite Falls,Snohomish County,O'Reilly Auto Parts,622354c9-1dd5-4ca5-998b-040d7cbb1f55,Granite Falls,Snohomish County,0.13
+NAPA Auto Parts,4cafb7d3-cb3e-4cb6-979b-fd5748d7bbb2,Burien,King County,AutoZone,9b951270-cd1a-4219-8814-bb75f4a17a6e,Burien,King County,0.13
+AutoZone,9b951270-cd1a-4219-8814-bb75f4a17a6e,Burien,King County,NAPA Auto Parts,4cafb7d3-cb3e-4cb6-979b-fd5748d7bbb2,Burien,King County,0.13
+AutoZone,bf7dcfd0-d221-4e79-b0b0-5c072c7ca612,Lynnwood,Snohomish County,O'Reilly Auto Parts,d5ff2b53-a106-49fb-bd6e-14aa4678c78b,Lynnwood,Snohomish County,0.13
+O'Reilly Auto Parts,d5ff2b53-a106-49fb-bd6e-14aa4678c78b,Lynnwood,Snohomish County,AutoZone,bf7dcfd0-d221-4e79-b0b0-5c072c7ca612,Lynnwood,Snohomish County,0.13
+O'Reilly Auto Parts,78d04297-b364-40f7-94d2-b87330a2de0e,Enumclaw,King County,AutoZone,3b2f1b08-5ca7-4d5e-96c1-fda3bc64a9f0,Enumclaw,King County,0.13
+O'Reilly Auto Parts,fbaf29bd-0bb2-4da7-b0d4-dae4b2767bc0,Lake Stevens,Snohomish County,AutoZone,22bbf11f-45c2-4340-b9dc-8a033f1bfef7,Lake Stevens,Snohomish County,0.14
+AutoZone,cfca72a4-6ff4-4e53-ba5a-943a0a297168,Puyallup,Pierce County,O'Reilly Auto Parts,dcfffb58-3bd0-411b-9551-ee73f4ab194e,Puyallup,Pierce County,0.15
+O'Reilly Auto Parts,dcfffb58-3bd0-411b-9551-ee73f4ab194e,Puyallup,Pierce County,AutoZone,cfca72a4-6ff4-4e53-ba5a-943a0a297168,Puyallup,Pierce County,0.15
+O'Reilly Auto Parts,5039588f-ba10-4460-b522-2520f4b8182a,Lakewood,Pierce County,NAPA Auto Parts,57fe550c-57ad-41f0-a56b-ec04cfdd5f05,Tacoma,Pierce County,0.15
+NAPA Auto Parts,57fe550c-57ad-41f0-a56b-ec04cfdd5f05,Tacoma,Pierce County,O'Reilly Auto Parts,5039588f-ba10-4460-b522-2520f4b8182a,Lakewood,Pierce County,0.15
+NAPA Auto Parts,7f76ef19-75b1-4630-ae51-f9bc2dcb6a02,Seatac,King County,AutoZone,ec13e0d9-4d90-436b-b80f-8ff5f4635cf8,Seatac,King County,0.16
+Advance Auto Parts,3be04b0d-0d5a-4465-96bc-fc0267eff3fe,Tacoma,Pierce County,O'Reilly Auto Parts,607c524a-36fe-4643-9c20-29e4d609a6b9,Tacoma,Pierce County,0.16
+O'Reilly Auto Parts,607c524a-36fe-4643-9c20-29e4d609a6b9,Tacoma,Pierce County,Advance Auto Parts,3be04b0d-0d5a-4465-96bc-fc0267eff3fe,Tacoma,Pierce County,0.16
+AutoZone,22b23f72-8101-43ab-a437-ffa3bc390e7b,Renton,King County,O'Reilly Auto Parts,5c4c3f1d-623a-4c29-84d9-38a28bc8454f,Renton,King County,0.17
+O'Reilly Auto Parts,5c4c3f1d-623a-4c29-84d9-38a28bc8454f,Renton,King County,AutoZone,22b23f72-8101-43ab-a437-ffa3bc390e7b,Renton,King County,0.17
+AutoZone,5af6306e-eb3f-4507-9261-54d74c7c5e10,Arlington,Snohomish County,O'Reilly Auto Parts,874687e0-9048-4dc1-a8a5-2a629f97bab8,Arlington,Snohomish County,0.17
+O'Reilly Auto Parts,874687e0-9048-4dc1-a8a5-2a629f97bab8,Arlington,Snohomish County,AutoZone,5af6306e-eb3f-4507-9261-54d74c7c5e10,Arlington,Snohomish County,0.17
+O'Reilly Auto Parts,ba7f48af-bfb0-4121-b33d-7bd0522b8585,Renton,King County,AutoZone,bc44e439-4585-4e71-9c0d-88ed8894056a,Renton,King County,0.19
+AutoZone,bc44e439-4585-4e71-9c0d-88ed8894056a,Renton,King County,O'Reilly Auto Parts,ba7f48af-bfb0-4121-b33d-7bd0522b8585,Renton,King County,0.19
+AutoZone,e4a2938c-fb1b-4b1c-bd5e-3697ad352cde,Lynnwood,Snohomish County,O'Reilly Auto Parts,e6fd4548-b507-410d-9924-ff40a6dce84d,Lynnwood,Snohomish County,0.20
+O'Reilly Auto Parts,e6fd4548-b507-410d-9924-ff40a6dce84d,Lynnwood,Snohomish County,AutoZone,e4a2938c-fb1b-4b1c-bd5e-3697ad352cde,Lynnwood,Snohomish County,0.20
+Advance Auto Parts,02de93aa-2f02-497f-ae91-ab53946e9720,Lakewood,Pierce County,O'Reilly Auto Parts,6488b6de-14d9-49ca-8618-78fcf2f19884,Lakewood,Pierce County,0.20
+O'Reilly Auto Parts,6488b6de-14d9-49ca-8618-78fcf2f19884,Lakewood,Pierce County,Advance Auto Parts,02de93aa-2f02-497f-ae91-ab53946e9720,Lakewood,Pierce County,0.20
+Advance Auto Parts,4f7e27da-edf6-4fb4-8d7e-ad3b720f16df,Kent,King County,AutoZone,620bbcc1-7b47-4145-87a7-7c267ec1ecde,Kent,King County,0.21
+AutoZone,620bbcc1-7b47-4145-87a7-7c267ec1ecde,Kent,King County,Advance Auto Parts,4f7e27da-edf6-4fb4-8d7e-ad3b720f16df,Kent,King County,0.21
+O'Reilly Auto Parts,25f30ae8-668f-4d81-9b01-454761b30cb7,Tacoma,Pierce County,Advance Auto Parts,85e15090-8c82-444e-878f-9cf445fa9cf0,Parkland,Pierce County,0.22
+Advance Auto Parts,85e15090-8c82-444e-878f-9cf445fa9cf0,Parkland,Pierce County,O'Reilly Auto Parts,25f30ae8-668f-4d81-9b01-454761b30cb7,Tacoma,Pierce County,0.22
+O'Reilly Auto Parts,815e7e3e-3751-4ccf-8035-b3ee692f5486,Gig Harbor,Pierce County,AutoZone,e69a4860-6f90-40f8-a236-163a5603d497,Gig Harbor,Pierce County,0.22
+AutoZone,e69a4860-6f90-40f8-a236-163a5603d497,Gig Harbor,Pierce County,O'Reilly Auto Parts,815e7e3e-3751-4ccf-8035-b3ee692f5486,Gig Harbor,Pierce County,0.22
+NAPA Auto Parts,3e503fac-ac30-449e-8569-857ca9a9b051,Tacoma,Pierce County,O'Reilly Auto Parts,67c7eab6-2060-4adc-a8ec-b2638e4074f2,Tacoma,Pierce County,0.24
+O'Reilly Auto Parts,67c7eab6-2060-4adc-a8ec-b2638e4074f2,Tacoma,Pierce County,NAPA Auto Parts,3e503fac-ac30-449e-8569-857ca9a9b051,Tacoma,Pierce County,0.24
+O'Reilly Auto Parts,1d7126c0-93f9-4c6b-9403-d5d969e37abe,Seattle,King County,AutoZone,282f9b9e-cad6-4936-86c0-b86d5bde6cff,Seattle,King County,0.25
+AutoZone,282f9b9e-cad6-4936-86c0-b86d5bde6cff,Seattle,King County,O'Reilly Auto Parts,1d7126c0-93f9-4c6b-9403-d5d969e37abe,Seattle,King County,0.25
+O'Reilly Auto Parts,5320c482-0654-4db7-bb61-f0c5a34bf7b2,Kirkland,King County,AutoZone,268f104f-4464-459f-9b7a-c36a7eda9ea4,Kirkland,King County,0.26
+NAPA Auto Parts,4a493e71-2ce3-49fd-9d8b-cc7c7c48df64,Federal Way,King County,Advance Auto Parts,e2f3b241-099b-4ac9-8084-57497e5a333c,Federal Way,King County,0.26
+Advance Auto Parts,e2f3b241-099b-4ac9-8084-57497e5a333c,Federal Way,King County,NAPA Auto Parts,4a493e71-2ce3-49fd-9d8b-cc7c7c48df64,Federal Way,King County,0.26
+Advance Auto Parts,34eb5bfe-c4de-4ae3-a581-a6906fb01ef2,Snohomish,Snohomish County,O'Reilly Auto Parts,e110c049-5d2f-4860-b1e2-3554e03c3d16,Snohomish,Snohomish County,0.26
+O'Reilly Auto Parts,e110c049-5d2f-4860-b1e2-3554e03c3d16,Snohomish,Snohomish County,Advance Auto Parts,34eb5bfe-c4de-4ae3-a581-a6906fb01ef2,Snohomish,Snohomish County,0.26
+AutoZone,4f398f8a-f49f-4118-8bf3-f0a91ad0686f,Marysville,Snohomish County,O'Reilly Auto Parts,9fb9178b-a28c-4263-a50c-725d42eefdc9,Marysville,Snohomish County,0.27
+O'Reilly Auto Parts,9fb9178b-a28c-4263-a50c-725d42eefdc9,Marysville,Snohomish County,AutoZone,4f398f8a-f49f-4118-8bf3-f0a91ad0686f,Marysville,Snohomish County,0.27
+O'Reilly Auto Parts,716bd5f1-e1b3-4be0-a5b6-7a898fa0a46a,Puyallup,Pierce County,Advance Auto Parts,d657d3f9-c5c6-4f19-9ffe-40ec1a7e4e00,Puyallup,Pierce County,0.27
+Advance Auto Parts,d657d3f9-c5c6-4f19-9ffe-40ec1a7e4e00,Puyallup,Pierce County,O'Reilly Auto Parts,716bd5f1-e1b3-4be0-a5b6-7a898fa0a46a,Puyallup,Pierce County,0.27
+O'Reilly Auto Parts,74356f5b-de5b-4148-90a0-19d3ee574e7e,Woodinville,King County,NAPA Auto Parts,dcfe6443-5baf-4e07-ba25-b49daa7591b5,Woodinville,King County,0.27
+NAPA Auto Parts,dcfe6443-5baf-4e07-ba25-b49daa7591b5,Woodinville,King County,O'Reilly Auto Parts,74356f5b-de5b-4148-90a0-19d3ee574e7e,Woodinville,King County,0.27
+O'Reilly Auto Parts,528a0f48-eb7b-4c1a-bb5b-d348320e85e5,Kent,King County,Advance Auto Parts,4f7e27da-edf6-4fb4-8d7e-ad3b720f16df,Kent,King County,0.27
+O'Reilly Auto Parts,cfcfbdef-846b-47ea-886c-04d8c04a961b,Woodinville,King County,NAPA Auto Parts,dcfe6443-5baf-4e07-ba25-b49daa7591b5,Woodinville,King County,0.28
+Advance Auto Parts,00b6ef93-d341-4ac0-bc9c-8dc44bee8aaf,Burien,King County,AutoZone,9b951270-cd1a-4219-8814-bb75f4a17a6e,Burien,King County,0.29
+AutoZone,729c7daf-a16a-4340-ad71-45206976371d,Lynnwood,Snohomish County,O'Reilly Auto Parts,e6fd4548-b507-410d-9924-ff40a6dce84d,Lynnwood,Snohomish County,0.29
+NAPA Auto Parts,4c767589-0c6b-4215-a812-e590ebfa3dcc,Monroe,Snohomish County,O'Reilly Auto Parts,c4a2519d-6fa1-4dd3-8654-41ea23358dd7,Monroe,Snohomish County,0.33
+NAPA Auto Parts,59b4a358-c95c-432c-af48-0240ec0158e9,Auburn,King County,O'Reilly Auto Parts,bc9e62d7-8a51-4f0b-b446-76bb81343975,Auburn,King County,0.33
+O'Reilly Auto Parts,bc9e62d7-8a51-4f0b-b446-76bb81343975,Auburn,King County,NAPA Auto Parts,59b4a358-c95c-432c-af48-0240ec0158e9,Auburn,King County,0.33
+NAPA Auto Parts,71537cf3-a8e1-4606-90b4-d03a63865371,Federal Way,King County,Advance Auto Parts,e2f3b241-099b-4ac9-8084-57497e5a333c,Federal Way,King County,0.35
+O'Reilly Auto Parts,5658ba13-989c-42d7-a101-8d492ad83daf,Federal Way,King County,NAPA Auto Parts,71537cf3-a8e1-4606-90b4-d03a63865371,Federal Way,King County,0.35
+NAPA Auto Parts,126b10f6-9e57-4243-89f8-128065f09bad,Everett,Snohomish County,Advance Auto Parts,ab2f33b5-8367-4d68-95e4-6713ef0ee67c,Everett,Snohomish County,0.37
+Advance Auto Parts,ab2f33b5-8367-4d68-95e4-6713ef0ee67c,Everett,Snohomish County,NAPA Auto Parts,126b10f6-9e57-4243-89f8-128065f09bad,Everett,Snohomish County,0.37
+AutoZone,4b36baf0-69f6-4ed8-97c6-69f89b9763f5,Federal Way,King County,O'Reilly Auto Parts,a8d8b513-d02a-48aa-a8e7-6c259c081dc4,Federal Way,King County,0.37
+O'Reilly Auto Parts,a8d8b513-d02a-48aa-a8e7-6c259c081dc4,Federal Way,King County,AutoZone,4b36baf0-69f6-4ed8-97c6-69f89b9763f5,Federal Way,King County,0.37
+O'Reilly Auto Parts,8d4d2904-5b7a-42e7-85f7-d8eb680a68e5,Burien,King County,NAPA Auto Parts,4cafb7d3-cb3e-4cb6-979b-fd5748d7bbb2,Burien,King County,0.40
+NAPA Auto Parts,92f46d0f-2a5c-4096-99fd-e330cf3880fb,Everett,Snohomish County,O'Reilly Auto Parts,fed8e59a-1b29-4259-88db-6112de054340,Everett,Snohomish County,0.43
+O'Reilly Auto Parts,fed8e59a-1b29-4259-88db-6112de054340,Everett,Snohomish County,NAPA Auto Parts,92f46d0f-2a5c-4096-99fd-e330cf3880fb,Everett,Snohomish County,0.43
+AutoZone,27bfb9f3-fe97-4bfc-95f6-b54baa80f62f,Covington,King County,NAPA Auto Parts,71d5a9f5-0294-424a-95f0-0a509841853c,Covington,King County,0.44
+NAPA Auto Parts,71d5a9f5-0294-424a-95f0-0a509841853c,Covington,King County,AutoZone,27bfb9f3-fe97-4bfc-95f6-b54baa80f62f,Covington,King County,0.44
+O'Reilly Auto Parts,01a1e173-9b9e-4a3d-9649-d408f4374993,Covington,King County,AutoZone,27bfb9f3-fe97-4bfc-95f6-b54baa80f62f,Covington,King County,0.46
+NAPA Auto Parts,67583992-2ba9-4f75-84b7-9f222758413a,Tacoma,Pierce County,Advance Auto Parts,85e15090-8c82-444e-878f-9cf445fa9cf0,Parkland,Pierce County,0.47
+NAPA Auto Parts,49ccbcb4-f608-4f36-9932-0dc6155d95ca,Marysville,Snohomish County,O'Reilly Auto Parts,9fb9178b-a28c-4263-a50c-725d42eefdc9,Marysville,Snohomish County,0.48
+NAPA Auto Parts,c20ee2d3-d694-4273-9449-821b4f56735d,Kirkland,King County,O'Reilly Auto Parts,5320c482-0654-4db7-bb61-f0c5a34bf7b2,Kirkland,King County,0.50
+AutoZone,b520d212-1357-4787-b1f0-1e9793468211,Tacoma,Pierce County,Advance Auto Parts,3be04b0d-0d5a-4465-96bc-fc0267eff3fe,Tacoma,Pierce County,0.51
+NAPA Auto Parts,9edf7aa5-7f1d-43de-9652-94ace74ad6fe,Lynnwood,Snohomish County,AutoZone,729c7daf-a16a-4340-ad71-45206976371d,Lynnwood,Snohomish County,0.56
+AutoZone,9d98354b-f943-4a22-b108-e2c18e3af846,Auburn,King County,NAPA Auto Parts,59b4a358-c95c-432c-af48-0240ec0158e9,Auburn,King County,0.59
+AutoZone,e4aa12d2-cee4-4838-8577-d0da8fe95509,Tacoma,Pierce County,O'Reilly Auto Parts,f67ce9e5-3635-4242-8e2c-65939649eb2d,Tacoma,Pierce County,0.62
+O'Reilly Auto Parts,f67ce9e5-3635-4242-8e2c-65939649eb2d,Tacoma,Pierce County,AutoZone,e4aa12d2-cee4-4838-8577-d0da8fe95509,Tacoma,Pierce County,0.62
+NAPA Auto Parts,cf416bc9-ad7d-46af-8a31-658d754737f7,Everett,Snohomish County,Advance Auto Parts,ab2f33b5-8367-4d68-95e4-6713ef0ee67c,Everett,Snohomish County,0.62
+O'Reilly Auto Parts,63a3ffc8-093f-4081-96f2-62c576732ff3,Redmond,King County,NAPA Auto Parts,a3b2d115-b681-4dbb-b616-61f822755d65,Bellevue,King County,0.65
+NAPA Auto Parts,a3b2d115-b681-4dbb-b616-61f822755d65,Bellevue,King County,O'Reilly Auto Parts,63a3ffc8-093f-4081-96f2-62c576732ff3,Redmond,King County,0.65
+NAPA Auto Parts,3ae69033-2977-4656-bbac-4136d791560f,Puyallup,Pierce County,AutoZone,f4828fe2-483d-4d34-ade6-b5f40174cf61,Puyallup,Pierce County,0.68
+AutoZone,f4828fe2-483d-4d34-ade6-b5f40174cf61,Puyallup,Pierce County,NAPA Auto Parts,3ae69033-2977-4656-bbac-4136d791560f,Puyallup,Pierce County,0.68
+O'Reilly Auto Parts,8fd73334-f20c-4595-860c-3921cb548bb9,Puyallup,Pierce County,AutoZone,f4828fe2-483d-4d34-ade6-b5f40174cf61,Puyallup,Pierce County,0.70
+O'Reilly Auto Parts,0d9dce9e-c52a-48b5-9174-5ffe7d8ba5e7,Seattle,King County,Advance Auto Parts,59522d30-d103-4df2-9b51-a84022656eb0,Seattle,King County,0.71
+Advance Auto Parts,59522d30-d103-4df2-9b51-a84022656eb0,Seattle,King County,O'Reilly Auto Parts,0d9dce9e-c52a-48b5-9174-5ffe7d8ba5e7,Seattle,King County,0.71
+O'Reilly Auto Parts,2f41c0f5-c04e-4c77-9575-84c2732f31b1,Kent,King County,AutoZone,620bbcc1-7b47-4145-87a7-7c267ec1ecde,Kent,King County,0.73
+O'Reilly Auto Parts,dc5a37df-d41b-4958-ab47-17a7173029ee,Seattle,King County,NAPA Auto Parts,fe32b1b4-4c82-4e77-9125-185c085eab6d,Seattle,King County,0.74
+NAPA Auto Parts,fe32b1b4-4c82-4e77-9125-185c085eab6d,Seattle,King County,O'Reilly Auto Parts,dc5a37df-d41b-4958-ab47-17a7173029ee,Seattle,King County,0.74
+Advance Auto Parts,42d58f10-48a2-4a8f-b499-bc49e87e2df0,Auburn,King County,AutoZone,9d98354b-f943-4a22-b108-e2c18e3af846,Auburn,King County,0.74
+O'Reilly Auto Parts,295e83c2-df97-449f-a5ae-b381ebdb74e2,Mill Creek,Snohomish County,AutoZone,35290978-40ce-4501-a027-62507d7c924c,Mill Creek,Snohomish County,0.75
+AutoZone,35290978-40ce-4501-a027-62507d7c924c,Mill Creek,Snohomish County,O'Reilly Auto Parts,295e83c2-df97-449f-a5ae-b381ebdb74e2,Mill Creek,Snohomish County,0.75
+AutoZone,6bfe3deb-a474-44cb-907b-65676b8e7427,Stanwood,Snohomish County,NAPA Auto Parts,e29f0c4e-e20c-476f-9cf3-d72d85d17212,Stanwood,Snohomish County,0.76
+NAPA Auto Parts,e29f0c4e-e20c-476f-9cf3-d72d85d17212,Stanwood,Snohomish County,AutoZone,6bfe3deb-a474-44cb-907b-65676b8e7427,Stanwood,Snohomish County,0.76
+NAPA Auto Parts,d6649129-37d1-4fc1-9b4d-6c6e9b8a2664,Tukwila,King County,O'Reilly Auto Parts,e5f44433-fda1-4488-8f57-293426c7d0c8,Burien,King County,0.77
+O'Reilly Auto Parts,e5f44433-fda1-4488-8f57-293426c7d0c8,Burien,King County,NAPA Auto Parts,d6649129-37d1-4fc1-9b4d-6c6e9b8a2664,Tukwila,King County,0.77
+NAPA Auto Parts,7225e91b-d64a-47b8-a804-395facbd28ca,Snohomish,Snohomish County,Advance Auto Parts,34eb5bfe-c4de-4ae3-a581-a6906fb01ef2,Snohomish,Snohomish County,0.82
+AutoZone,986fa2d3-a83a-4949-a39d-a8cecdbcd231,Tacoma,Pierce County,O'Reilly Auto Parts,67c7eab6-2060-4adc-a8ec-b2638e4074f2,Tacoma,Pierce County,0.82
+O'Reilly Auto Parts,0d12f8be-0464-4aff-a4ca-8260a40c1ff9,Tacoma,Pierce County,AutoZone,60521778-e56f-49ef-b85c-d340a312096c,Tacoma,Pierce County,0.85
+AutoZone,60521778-e56f-49ef-b85c-d340a312096c,Tacoma,Pierce County,O'Reilly Auto Parts,0d12f8be-0464-4aff-a4ca-8260a40c1ff9,Tacoma,Pierce County,0.85
+O'Reilly Auto Parts,03930f73-f495-4712-a1a7-f534871bd581,Puyallup,Pierce County,NAPA Auto Parts,3ae69033-2977-4656-bbac-4136d791560f,Puyallup,Pierce County,0.85
+O'Reilly Auto Parts,1b0c7bc0-8232-4bde-b339-84a7656651a4,Issaquah,King County,NAPA Auto Parts,fa109fe7-16ed-4a88-bfb0-8271c74f5a36,Issaquah,King County,0.87
+NAPA Auto Parts,fa109fe7-16ed-4a88-bfb0-8271c74f5a36,Issaquah,King County,O'Reilly Auto Parts,1b0c7bc0-8232-4bde-b339-84a7656651a4,Issaquah,King County,0.87
+NAPA Auto Parts,ff5ddf92-caa8-43c1-ae1a-4c19e4763e12,Arlington,Snohomish County,AutoZone,63bb2f00-384c-4865-ac5d-430b4e6bfd0e,Arlington,Snohomish County,0.91
+NAPA Auto Parts,391dc5ff-879f-4a23-a0ac-757b7128ce7a,North Bend,King County,O'Reilly Auto Parts,84c692c6-1501-4dfc-bdbc-8396546ae04b,North Bend,King County,0.94
+O'Reilly Auto Parts,84c692c6-1501-4dfc-bdbc-8396546ae04b,North Bend,King County,NAPA Auto Parts,391dc5ff-879f-4a23-a0ac-757b7128ce7a,North Bend,King County,0.94
+Advance Auto Parts,f0233363-f342-4ca6-8b1d-6a8263902e37,Lynnwood,Snohomish County,AutoZone,e4a2938c-fb1b-4b1c-bd5e-3697ad352cde,Lynnwood,Snohomish County,0.95
+O'Reilly Auto Parts,7428ebf3-ce00-46ba-9848-25e773e2fb56,Maple Valley,King County,NAPA Auto Parts,7b67d95b-7066-471b-a800-352d33aec06e,Maple Valley,King County,0.97
+NAPA Auto Parts,7b67d95b-7066-471b-a800-352d33aec06e,Maple Valley,King County,O'Reilly Auto Parts,7428ebf3-ce00-46ba-9848-25e773e2fb56,Maple Valley,King County,0.97
+AutoZone,79b5ee9d-cdb6-4816-8913-be76cd630b1f,Everett,Snohomish County,O'Reilly Auto Parts,fed8e59a-1b29-4259-88db-6112de054340,Everett,Snohomish County,1.02
+O'Reilly Auto Parts,107a350a-4630-41b2-beba-ee3a15cf50c5,Kent,King County,AutoZone,cc22faa1-5246-4bc9-a7d4-caa8d6aa9112,Federal Way,King County,1.13
+AutoZone,cc22faa1-5246-4bc9-a7d4-caa8d6aa9112,Federal Way,King County,O'Reilly Auto Parts,107a350a-4630-41b2-beba-ee3a15cf50c5,Kent,King County,1.13
+O'Reilly Auto Parts,d10a38c2-c9bd-4208-9e09-0d3ab0d4c1a6,Mountlake Terrace,Snohomish County,NAPA Auto Parts,9edf7aa5-7f1d-43de-9652-94ace74ad6fe,Lynnwood,Snohomish County,1.16
+AutoZone,4576b4da-fe80-4081-ae38-41022940bc5c,Puyallup,Pierce County,O'Reilly Auto Parts,716bd5f1-e1b3-4be0-a5b6-7a898fa0a46a,Puyallup,Pierce County,1.17
+NAPA Auto Parts,61469418-ee52-4804-9bbe-8a474d1eca5c,Kent,King County,O'Reilly Auto Parts,528a0f48-eb7b-4c1a-bb5b-d348320e85e5,Kent,King County,1.19
+O'Reilly Auto Parts,07196770-6274-4303-a547-dcc37785fdd0,Tacoma,Pierce County,AutoZone,60521778-e56f-49ef-b85c-d340a312096c,Tacoma,Pierce County,1.21
+O'Reilly Auto Parts,09730c0a-811f-46e4-856a-5fd31ef920bc,Renton,King County,AutoZone,4e5b37f8-3646-43ba-9217-26b4fc297744,Renton,King County,1.22
+AutoZone,9fbad2bb-ac90-4429-8b97-7ebc815c91ad,Tacoma,Pierce County,O'Reilly Auto Parts,607c524a-36fe-4643-9c20-29e4d609a6b9,Tacoma,Pierce County,1.24
+O'Reilly Auto Parts,608b5b41-5b93-44ba-af61-c91276e14172,Auburn,King County,Advance Auto Parts,42d58f10-48a2-4a8f-b499-bc49e87e2df0,Auburn,King County,1.28
+O'Reilly Auto Parts,e8126a23-91ec-45dd-a380-4e6b7cf4bf28,Puyallup,Pierce County,AutoZone,4576b4da-fe80-4081-ae38-41022940bc5c,Puyallup,Pierce County,1.33
+NAPA Auto Parts,a169eafd-45ba-4e96-8062-7856450df5bc,Redmond,King County,O'Reilly Auto Parts,eecb81a1-bbb5-41d8-a527-d32ef23b53c3,Redmond,King County,1.35
+O'Reilly Auto Parts,eecb81a1-bbb5-41d8-a527-d32ef23b53c3,Redmond,King County,NAPA Auto Parts,a169eafd-45ba-4e96-8062-7856450df5bc,Redmond,King County,1.35
+O'Reilly Auto Parts,f224ea16-e380-40ca-8169-219818ef89ac,Kent,King County,NAPA Auto Parts,61469418-ee52-4804-9bbe-8a474d1eca5c,Kent,King County,1.40
+O'Reilly Auto Parts,e88446de-be55-41ad-bede-74b7ba5b465c,Everett,Snohomish County,AutoZone,35290978-40ce-4501-a027-62507d7c924c,Mill Creek,Snohomish County,1.43
+O'Reilly Auto Parts,ca0c4d15-b99f-468e-8335-7ffa0781362b,Stanwood,Snohomish County,AutoZone,6bfe3deb-a474-44cb-907b-65676b8e7427,Stanwood,Snohomish County,1.43
+AutoZone,73692b3d-b99b-4905-9231-b7303f56e3c9,Spanaway,Pierce County,O'Reilly Auto Parts,25f30ae8-668f-4d81-9b01-454761b30cb7,Tacoma,Pierce County,1.44
+O'Reilly Auto Parts,5e3ea8f4-2736-4cf0-81f5-42db0a84965a,Renton,King County,NAPA Auto Parts,c1b45a07-d88e-4d9e-8c18-b5cb9285e7a5,Kent,King County,1.45
+NAPA Auto Parts,c1b45a07-d88e-4d9e-8c18-b5cb9285e7a5,Kent,King County,O'Reilly Auto Parts,5e3ea8f4-2736-4cf0-81f5-42db0a84965a,Renton,King County,1.45
+AutoZone,0ac8e060-25fb-446a-ad31-59eb64ddf96c,Maple Valley,King County,NAPA Auto Parts,7b67d95b-7066-471b-a800-352d33aec06e,Maple Valley,King County,1.47
+O'Reilly Auto Parts,54a1ef2d-e4f7-4f8e-ad6f-0f257cb014c5,Sumner,Pierce County,NAPA Auto Parts,c1a87a10-ee6a-4265-8743-2a7c58d8f96c,Sumner,Pierce County,1.47
+NAPA Auto Parts,c1a87a10-ee6a-4265-8743-2a7c58d8f96c,Sumner,Pierce County,O'Reilly Auto Parts,54a1ef2d-e4f7-4f8e-ad6f-0f257cb014c5,Sumner,Pierce County,1.47
+O'Reilly Auto Parts,5e80c647-d4e4-4cf2-925b-d72c94b0ac7c,Kirkland,King County,NAPA Auto Parts,a169eafd-45ba-4e96-8062-7856450df5bc,Redmond,King County,1.50
+NAPA Auto Parts,227e013d-feb5-40ff-8c6c-5e495bad800a,Gig Harbor,Pierce County,AutoZone,e69a4860-6f90-40f8-a236-163a5603d497,Gig Harbor,Pierce County,1.51
+O'Reilly Auto Parts,6f361a2e-9f12-4972-a698-d8b8296a8a41,Lakewood,Pierce County,NAPA Auto Parts,3ba252db-41ec-4e12-a4b3-bf2c28358230,Lakewood,Pierce County,1.51
+AutoZone,1cc10c66-9e14-4db1-9ad3-f7b581e2b049,Seattle,King County,O'Reilly Auto Parts,ec98a96f-80ef-43e9-ba3e-82cdcd19aa28,Seattle,King County,1.52
+O'Reilly Auto Parts,ec98a96f-80ef-43e9-ba3e-82cdcd19aa28,Seattle,King County,AutoZone,1cc10c66-9e14-4db1-9ad3-f7b581e2b049,Seattle,King County,1.52
+O'Reilly Auto Parts,70538314-5737-4728-8f91-1a55949acfdc,Edmonds,Snohomish County,NAPA Auto Parts,9edf7aa5-7f1d-43de-9652-94ace74ad6fe,Lynnwood,Snohomish County,1.53
+AutoZone,d33bb527-63ad-47a1-8cf6-0a5340580de1,Bellevue,King County,NAPA Auto Parts,a3b2d115-b681-4dbb-b616-61f822755d65,Bellevue,King County,1.53
+AutoZone,1604c062-4ccb-4a20-ac71-90835092a2a8,University Place,Pierce County,O'Reilly Auto Parts,b4b55120-7f68-4f6b-bbb9-5f21839e6825,Tacoma,Pierce County,1.53
+O'Reilly Auto Parts,b4b55120-7f68-4f6b-bbb9-5f21839e6825,Tacoma,Pierce County,AutoZone,1604c062-4ccb-4a20-ac71-90835092a2a8,University Place,Pierce County,1.53
+O'Reilly Auto Parts,a422c4e2-b969-47ff-bcf9-058472860969,Marysville,Snohomish County,AutoZone,4f398f8a-f49f-4118-8bf3-f0a91ad0686f,Marysville,Snohomish County,1.68
+AutoZone,af8f492d-798a-4408-aa98-d898b2a57e71,Seattle,King County,NAPA Auto Parts,d6649129-37d1-4fc1-9b4d-6c6e9b8a2664,Tukwila,King County,1.75
+NAPA Auto Parts,1a83bbe0-2e01-436c-b921-e8c69b0c3578,Fife,Pierce County,O'Reilly Auto Parts,68402364-0a71-4119-9f05-980119e28679,Fife,Pierce County,1.76
+O'Reilly Auto Parts,68402364-0a71-4119-9f05-980119e28679,Fife,Pierce County,NAPA Auto Parts,1a83bbe0-2e01-436c-b921-e8c69b0c3578,Fife,Pierce County,1.76
+NAPA Auto Parts,4ab3b078-4657-4621-9b8a-aa45c5acd945,Seattle,King County,O'Reilly Auto Parts,dfac6546-70c8-4ed6-a2a0-ceb9f72c5708,Seattle,King County,1.88
+O'Reilly Auto Parts,dfac6546-70c8-4ed6-a2a0-ceb9f72c5708,Seattle,King County,NAPA Auto Parts,4ab3b078-4657-4621-9b8a-aa45c5acd945,Seattle,King County,1.88
+O'Reilly Auto Parts,17ae2615-fe28-47aa-9dee-68545d837819,Shoreline,King County,AutoZone,7cc21b20-1c96-4e97-b658-2ef354f14b4e,Shoreline,King County,1.88
+Advance Auto Parts,6add6cd2-a4d7-4c67-a2b0-955e744342c1,Kent,King County,NAPA Auto Parts,c1b45a07-d88e-4d9e-8c18-b5cb9285e7a5,Kent,King County,2.01
+O'Reilly Auto Parts,49438be5-4bd0-4715-9098-4f0109cc42ef,Puyallup,Pierce County,AutoZone,d0de5d89-9398-46b8-a316-917ff8db9c07,Graham,Pierce County,2.05
+O'Reilly Auto Parts,ed5ea43d-5c32-41e9-ba1d-7288df5f04b2,Bellevue,King County,AutoZone,d33bb527-63ad-47a1-8cf6-0a5340580de1,Bellevue,King County,2.14
+NAPA Auto Parts,ea7ec6c4-dcb7-4852-996f-245ba07e9959,Seattle,King County,O'Reilly Auto Parts,ec98a96f-80ef-43e9-ba3e-82cdcd19aa28,Seattle,King County,2.15
+AutoZone,12bf5d5c-8134-4d18-bf56-e5f719800e0a,Federal Way,King County,O'Reilly Auto Parts,a8d8b513-d02a-48aa-a8e7-6c259c081dc4,Federal Way,King County,2.18
+Advance Auto Parts,d722ee72-e952-4c6f-8089-cb12ff9ee009,Seattle,King County,NAPA Auto Parts,ea7ec6c4-dcb7-4852-996f-245ba07e9959,Seattle,King County,2.24
+O'Reilly Auto Parts,56174a34-d8f7-452f-91b4-7e174bb888d2,Seattle,King County,NAPA Auto Parts,4ab3b078-4657-4621-9b8a-aa45c5acd945,Seattle,King County,2.30
+O'Reilly Auto Parts,d7c10a17-b509-4528-8d47-91c289eebc48,Seattle,King County,NAPA Auto Parts,fe32b1b4-4c82-4e77-9125-185c085eab6d,Seattle,King County,2.42
+O'Reilly Auto Parts,af174ebe-1db9-414a-b248-b94c863fe2c0,Bothell,King County,NAPA Auto Parts,dcfe6443-5baf-4e07-ba25-b49daa7591b5,Woodinville,King County,2.44
+O'Reilly Auto Parts,59b1e532-40ab-4e1b-9585-33fa29ee8d40,Lynnwood,Snohomish County,AutoZone,35290978-40ce-4501-a027-62507d7c924c,Mill Creek,Snohomish County,2.55
+O'Reilly Auto Parts,f4fcb5f8-cdf3-472b-a1a3-1a8af83985c5,Bellevue,King County,AutoZone,d33bb527-63ad-47a1-8cf6-0a5340580de1,Bellevue,King County,2.63
+O'Reilly Auto Parts,c2732c95-200f-4075-a801-4cbd70c3a817,Puyallup,Pierce County,Advance Auto Parts,d657d3f9-c5c6-4f19-9ffe-40ec1a7e4e00,Puyallup,Pierce County,3.10
+O'Reilly Auto Parts,dc38bab5-790d-486d-b3a3-4aed5f43ee59,Spanaway,Pierce County,AutoZone,cfca72a4-6ff4-4e53-ba5a-943a0a297168,Puyallup,Pierce County,3.38
+AutoZone,55134f07-1e48-4dc0-b3c8-4c926b06e2fa,Lakewood,Pierce County,O'Reilly Auto Parts,5039588f-ba10-4460-b522-2520f4b8182a,Lakewood,Pierce County,3.69
+AutoZone,fd7f3b44-ea62-48f6-8c07-ac3e6dbd43c7,Stanwood,Snohomish County,O'Reilly Auto Parts,ca0c4d15-b99f-468e-8335-7ffa0781362b,Stanwood,Snohomish County,3.82
+O'Reilly Auto Parts,a33ce6c3-9f19-46cc-adc4-0d785787f8dc,Kenmore,King County,NAPA Auto Parts,dcfe6443-5baf-4e07-ba25-b49daa7591b5,Woodinville,King County,4.14
+O'Reilly Auto Parts,b44d0f71-7d2b-4efa-94a1-1b1126c74e77,Orting,Pierce County,AutoZone,4576b4da-fe80-4081-ae38-41022940bc5c,Puyallup,Pierce County,4.35
+O'Reilly Auto Parts,a9d050c3-9859-44dd-bcd8-bdffc4a0d7d0,Snohomish,Snohomish County,AutoZone,35290978-40ce-4501-a027-62507d7c924c,Mill Creek,Snohomish County,4.55
+O'Reilly Auto Parts,d9d371d1-e07e-4288-80ae-2896ca9b8eea,Bothell,Snohomish County,AutoZone,35290978-40ce-4501-a027-62507d7c924c,Mill Creek,Snohomish County,4.56
+NAPA Auto Parts,751b5822-2375-495a-8878-4e4d2482f6a3,Gig Harbor,Pierce County,AutoZone,e69a4860-6f90-40f8-a236-163a5603d497,Gig Harbor,Pierce County,5.94
+NAPA Auto Parts,eef35ed6-5e87-47aa-9b3e-c288e27c74a0,Vashon,King County,O'Reilly Auto Parts,8d4d2904-5b7a-42e7-85f7-d8eb680a68e5,Burien,King County,6.17
+O'Reilly Auto Parts,cc25c16a-28bf-473c-a813-12d12ab2e424,Sultan,Snohomish County,NAPA Auto Parts,4c767589-0c6b-4215-a812-e590ebfa3dcc,Monroe,Snohomish County,7.61
+NAPA Auto Parts,ea4e36a3-ddad-45cc-82ff-d06d758cd0e9,Duvall,King County,O'Reilly Auto Parts,eecb81a1-bbb5-41d8-a527-d32ef23b53c3,Redmond,King County,8.33
+NAPA Auto Parts,ef41d832-bd14-4134-8746-41770a8f2b7a,Eatonville,Pierce County,O'Reilly Auto Parts,16ca5b45-3d48-4d9e-b105-f2c2ea20bc4c,Graham,Pierce County,13.09
+NAPA Auto Parts,2c0c42e1-813d-4151-9353-d1cc4c6f2a3f,Darrington,Snohomish County,O'Reilly Auto Parts,622354c9-1dd5-4ca5-998b-040d7cbb1f55,Granite Falls,Snohomish County,20.66

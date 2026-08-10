@@ -1,0 +1,29 @@
+metro,Bremerton-Silverdale-Port Orchard WA
+total_stores,17
+
+brand,stores
+AutoZone,3
+NAPA Auto Parts,9
+O'Reilly Auto Parts,5
+
+county_geoid,county_name,leader,leader_stores,total_stores,status
+53035,Kitsap County,NAPA Auto Parts,9,17,dominant
+
+brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles
+NAPA Auto Parts,341d61e5-1167-4342-b57d-050b1f50b0a8,Bremerton,Kitsap County,O'Reilly Auto Parts,d59157ba-f7bc-4331-b272-f31b151a71ad,Bremerton,Kitsap County,0.06
+O'Reilly Auto Parts,d59157ba-f7bc-4331-b272-f31b151a71ad,Bremerton,Kitsap County,NAPA Auto Parts,341d61e5-1167-4342-b57d-050b1f50b0a8,Bremerton,Kitsap County,0.06
+AutoZone,b7d3f1b3-6db7-4285-a52c-3880cdf12677,Port Orchard,Kitsap County,O'Reilly Auto Parts,ee0bc662-6d90-4265-91e2-ee0524323973,Port Orchard,Kitsap County,0.15
+O'Reilly Auto Parts,ee0bc662-6d90-4265-91e2-ee0524323973,Port Orchard,Kitsap County,AutoZone,b7d3f1b3-6db7-4285-a52c-3880cdf12677,Port Orchard,Kitsap County,0.15
+O'Reilly Auto Parts,bfdc25f6-0835-4849-9bdb-ed676c41c73f,Silverdale,Kitsap County,NAPA Auto Parts,c64667dc-15f5-4f29-9698-866b7b5ce4e1,Silverdale,Kitsap County,0.20
+NAPA Auto Parts,c64667dc-15f5-4f29-9698-866b7b5ce4e1,Silverdale,Kitsap County,O'Reilly Auto Parts,bfdc25f6-0835-4849-9bdb-ed676c41c73f,Silverdale,Kitsap County,0.20
+AutoZone,92c6c19c-33f5-4938-aa85-535cc6895562,Bremerton,Kitsap County,O'Reilly Auto Parts,d59157ba-f7bc-4331-b272-f31b151a71ad,Bremerton,Kitsap County,0.21
+O'Reilly Auto Parts,a4065bae-3e0f-4ea7-a97e-84455d0ddbfc,Bremerton,Kitsap County,NAPA Auto Parts,f7b1adbc-1585-4400-926b-ddd1a9d08e21,Bremerton,Kitsap County,0.27
+NAPA Auto Parts,f7b1adbc-1585-4400-926b-ddd1a9d08e21,Bremerton,Kitsap County,O'Reilly Auto Parts,a4065bae-3e0f-4ea7-a97e-84455d0ddbfc,Bremerton,Kitsap County,0.27
+AutoZone,b0e6cfb2-96ad-4976-b81c-a1bebc0ba7ad,Bremerton,Kitsap County,NAPA Auto Parts,f7b1adbc-1585-4400-926b-ddd1a9d08e21,Bremerton,Kitsap County,0.54
+NAPA Auto Parts,ff778ff0-c7f5-4a5d-a0b5-3d968f092501,Silverdale,Kitsap County,O'Reilly Auto Parts,bfdc25f6-0835-4849-9bdb-ed676c41c73f,Silverdale,Kitsap County,0.57
+O'Reilly Auto Parts,c466a1d9-462f-47c2-8338-5d0091efa600,Poulsbo,Kitsap County,NAPA Auto Parts,fe1c17f8-2c6c-492d-984c-ef6055b0afd8,Poulsbo,Kitsap County,0.88
+NAPA Auto Parts,fe1c17f8-2c6c-492d-984c-ef6055b0afd8,Poulsbo,Kitsap County,O'Reilly Auto Parts,c466a1d9-462f-47c2-8338-5d0091efa600,Poulsbo,Kitsap County,0.88
+NAPA Auto Parts,e08d184e-000f-4f6b-a86a-857b2b13d6b7,Port Orchard,Kitsap County,O'Reilly Auto Parts,ee0bc662-6d90-4265-91e2-ee0524323973,Port Orchard,Kitsap County,1.18
+NAPA Auto Parts,a54768e3-5e50-4207-b8e7-41293399e6bc,Bremerton,Kitsap County,O'Reilly Auto Parts,a4065bae-3e0f-4ea7-a97e-84455d0ddbfc,Bremerton,Kitsap County,1.52
+NAPA Auto Parts,424f345a-7ada-48fd-a706-a1d4e71bcec9,Kingston,Kitsap County,O'Reilly Auto Parts,c466a1d9-462f-47c2-8338-5d0091efa600,Poulsbo,Kitsap County,7.33
+NAPA Auto Parts,d99c80df-882d-4e14-be04-617ccff67cef,Kingston,Kitsap County,O'Reilly Auto Parts,c466a1d9-462f-47c2-8338-5d0091efa600,Poulsbo,Kitsap County,7.47

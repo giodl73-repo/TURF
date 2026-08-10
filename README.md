@@ -28,6 +28,7 @@ cargo run -p turf-cli -- summarize-metro-review fixtures\stores\overture-home-im
 cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- ring-metro-review 12060 33.7490 -84.3880 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-home-improvement-washington-review-2026-07-22.csv fixtures\geography\washington-zcta-county-primary-2020.csv fixtures\geography\washington-county-cbsa-2023.csv
+cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -94,6 +95,9 @@ The first Puget Sound ferry-aware read is:
 
 The first chain expansion decision is:
 `docs\chain-expansion-sequence.md`.
+
+The first auto-parts comparison report is:
+`reports\auto-parts-seattle-puget-sound.md`.
 
 ## Product thesis
 

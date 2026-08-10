@@ -472,3 +472,37 @@ The next implementation pulse must verify brand filters and Overture field
 behavior for auto parts before committing extracted rows. NAPA should receive
 extra review because affiliated or independent store naming may be messier than
 single-banner corporate chains.
+
+## Pulse 22 Washington Auto Parts Footprint
+
+### Market Analyst
+
+Status: pass.
+
+The pulse validates the sequencing decision. Auto parts produces a much denser
+Washington layer than home improvement, with 507 packet-ready rows compared
+with 92 for Home Depot/Lowe's.
+
+### Market Geographer
+
+Status: pass.
+
+The report shows the local geography gain: auto parts reaches 230 ZCTA
+candidates and 39 counties, and gives Kingston a direct packet-ready row where
+the home-improvement layer had none.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The dense nearest-opposite-brand spacing in Seattle and Kitsap is useful, but
+the next modeling step should either generalize ring output for arbitrary brand
+sets or add ferry-aware impedance before computing Puget Sound catchments.
+
+### Source Policy Auditor
+
+Status: pass with caveat.
+
+The pulse uses Overture candidate rows and public Census context. The NAPA layer
+should remain marked as first-pass because affiliated and parent-company naming
+requires deeper review before any stronger store-census claim.
