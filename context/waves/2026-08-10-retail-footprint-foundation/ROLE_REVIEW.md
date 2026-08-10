@@ -119,3 +119,26 @@ Status: pass.
 
 `narrative_summary` is an additive JSON field and the Markdown section preserves
 the existing packet table order underneath it.
+
+## Pulse 08 Schema Review
+
+### Report Contract Editor
+
+Status: pass.
+
+The schema makes required packet fields explicit and documents additive-change
+expectations for consumers.
+
+### Future Agent
+
+Status: pass.
+
+Future agents now have a concrete contract to inspect before changing JSON
+output.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The schema describes TURF-generated packet outputs only. It does not authorize
+or imply any external data acquisition.

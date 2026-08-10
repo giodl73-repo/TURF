@@ -24,6 +24,7 @@ before broader chain coverage begins.
 | 05 | Catchment model sketch | complete | Added the nearest-distance catchment command, demand-point fixture, model notes, and tests. |
 | 06 | Home improvement market packet | complete | Added Markdown/JSON packet output for Home Depot vs. Lowe's in Atlanta / Marietta / Cumberland. |
 | 07 | Packet narrative summary | complete | Added an evidence-derived executive summary to Markdown and JSON market packets. |
+| 08 | Packet schema contract | complete | Added a JSON Schema and compatibility notes for market-packet consumers. |
 
 ## Success criteria
 

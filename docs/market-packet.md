@@ -23,6 +23,8 @@ cargo run -p turf-cli -- market-packet --json "Home Improvement" "Atlanta / Mari
 The Markdown packet is meant for human review. The JSON packet is meant for
 agents, dashboards, and future atlas generation.
 
+The JSON shape is documented in `schemas/market-packet.schema.json`.
+
 Both formats preserve:
 
 - Executive narrative summary.

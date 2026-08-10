@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/giodl73-repo/TURF/schemas/market-packet.schema.json",
+  "title": "TURF Market Packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "category",
+    "geography",
+    "total_stores",
+    "narrative_summary",
+    "brands",
+    "cities",
+    "place_findings",
+    "catchments",
+    "cautions"
+  ],
+  "properties": {
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "geography": {
+      "type": "string",
+      "minLength": 1
+    },
+    "total_stores": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "narrative_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "brands": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/brand"
+      }
+    },
+    "cities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/city"
+      }
+    },
+    "place_findings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/place_finding"
+      }
+    },
+    "catchments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/catchment"
+      }
+    },
+    "cautions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "brand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["brand", "stores"],
+      "properties": {
+        "brand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stores": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "city": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "city",
+        "state",
+        "leader",
+        "leader_stores",
+        "total_stores",
+        "status"
+      ],
+      "properties": {
+        "city": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "type": "string",
+          "minLength": 1
+        },
+        "leader": {
+          "type": "string",
+          "minLength": 1
+        },
+        "leader_stores": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_stores": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "status": {
+          "type": "string",
+          "enum": ["dominant", "contested"]
+        }
+      }
+    },
+    "place_finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["place_id", "label", "finding_kind", "finding"],
+      "properties": {
+        "place_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "finding_kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "finding": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "catchment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "demand_id",
+        "label",
+        "place_id",
+        "assigned_brand",
+        "assigned_store_id",
+        "distance_miles",
+        "weight"
+      ],
+      "properties": {
+        "demand_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "place_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assigned_brand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assigned_store_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distance_miles": {
+          "type": "number",
+          "minimum": 0
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}
