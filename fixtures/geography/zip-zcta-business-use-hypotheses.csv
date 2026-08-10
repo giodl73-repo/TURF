@@ -1,0 +1,6 @@
+hypothesis_id,subject,geography_basis,use_case,evidence_status,next_evidence_needed,notes
+H-ZIP-001,major retailers,ZIP or postal-derived geography,market planning,plausible,public methodology note or report schema,Do not promote to observed until a source names the geography.
+H-ZIP-002,QSR chains,ZIP/ZCTA or address-derived trade areas,franchise coverage and market white space,plausible,franchise or market-planning source,Could differ by franchisor and region.
+H-ZIP-003,logistics and delivery operators,ZIP or carrier-route-like geography,routing coverage and delivery cost,plausible,operator methodology or product documentation,Postal basis may be combined with routes roads and service commitments.
+H-ZCTA-001,retail analysts,ZCTA,demographic joins and market comparison,plausible,analytics documentation using ZCTA with Census/ACS data,ZCTA is likely for public demographic analysis because Census publishes data that way.
+H-ZCTA-002,all major companies,ZCTA as universal territory basis,unknown,multiple sourced company examples across industries,Current roadmap treats this as too broad until proven.

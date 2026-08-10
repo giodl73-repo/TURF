@@ -67,6 +67,11 @@ atlas:
 4. Commercial America.
 5. Rivalry America.
 
+The first source review lives in
+`docs\research\postal-zcta-source-review.md`. Its current decision is to treat
+postal/address geography as foundational, while keeping ZIP Codes, ZCTAs,
+postal city, civic place, and TURF market area as separate fields.
+
 ## Shared-system boundary
 
 - FLETCH is planned for fetch/cache manifests and source registries.
