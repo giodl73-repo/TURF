@@ -39,6 +39,7 @@ Validate and summarize them with:
 ```powershell
 cargo run -p turf-cli -- validate-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- summarize-ret fixtures\geography\ret-washington-examples.csv
+cargo run -p turf-cli -- suggest-ret-metro auto_parts fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 ```
 
 They are deliberately hand-reviewed examples, not model output. TURF should
@@ -77,3 +78,6 @@ features:
 
 The first classifier should be explainable and conservative. It should output
 the typology label, supporting measures, and a short evidence summary.
+
+The first metro-level candidate generator is documented in
+`reports/ret-metro-candidate-readout.md`.

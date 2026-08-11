@@ -31,6 +31,7 @@ cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-h
 cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- validate-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- summarize-ret fixtures\geography\ret-washington-examples.csv
+cargo run -p turf-cli -- suggest-ret-metro auto_parts fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -83,6 +84,9 @@ core point and reports brand mix by ring.
 The `validate-ret` and `summarize-ret` commands check and summarize Retail
 Enclave Typology examples.
 
+The `suggest-ret-metro` command derives conservative RET candidate labels from
+packet-ready metro store features.
+
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
@@ -109,6 +113,9 @@ The first cross-category spread comparison is:
 
 RET, Retail Enclave Typology, is introduced in:
 `docs\ret-taxonomy.md`.
+
+The first rule-based RET candidate readout is:
+`reports\ret-metro-candidate-readout.md`.
 
 ## Product thesis
 

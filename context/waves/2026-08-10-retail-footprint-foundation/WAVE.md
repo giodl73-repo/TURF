@@ -42,6 +42,7 @@ before broader chain coverage begins.
 | 23 | Washington category spread comparison | complete | Compared home improvement vs auto parts as big-box destination vs local service geography. |
 | 24 | RET taxonomy sketch | complete | Introduced Retail Enclave Typology and seeded Washington enclave examples. |
 | 25 | Executable RET examples | complete | Added RET parser, validator, summary command, CLI wiring, and tests. |
+| 26 | RET metro candidate rules | complete | Added rule-based metro RET suggestions and Washington candidate outputs. |
 
 ## Success criteria
 

@@ -602,3 +602,36 @@ Status: pass.
 
 The command validates hand-reviewed RET interpretations over checked-in public
 evidence and does not add new data acquisition or private-territory claims.
+
+## Pulse 26 RET Metro Candidate Rules
+
+### Market Analyst
+
+Status: pass.
+
+The candidate command makes category spread differences machine-readable:
+home improvement remains anchor-market shaped while auto parts splits into
+contested grids, brand-led meshes, service meshes, and small anchor-like metros.
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The first pass is metro-level and does not yet encode ferry-side place overrides.
+That is acceptable because the output is explicitly labeled as candidate
+classification.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The features are the right first cut: store density, brand count, leader share,
+and nearest opposite-brand spacing. The next step should score candidate labels
+against the hand-reviewed RET example fixture.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse reuses checked-in reviewed Overture/Census fixtures and does not add a
+new acquisition source.

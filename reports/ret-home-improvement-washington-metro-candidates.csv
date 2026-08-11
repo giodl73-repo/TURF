@@ -1,0 +1,19 @@
+category,geography_id,geography_type,label,enclave_type,primary_brand,total_stores,brand_count,leader_share,nearest_opposite_brand_miles,evidence_summary
+home_improvement,non_cbsa,region,Non-CBSA Washington county,anchor_market,Home Depot,2,1,1.000,,2 stores across 1 brands with leader share 1.000
+home_improvement,10140,cbsa,Aberdeen WA,anchor_market,Home Depot,1,1,1.000,,1 stores across 1 brands with leader share 1.000
+home_improvement,13380,cbsa,Bellingham WA,anchor_market,Lowe's,3,2,0.667,1.35,3 stores across 2 brands with leader share 0.667
+home_improvement,14740,cbsa,Bremerton-Silverdale-Port Orchard WA,anchor_market,Home Depot,4,2,0.500,0.44,4 stores across 2 brands with leader share 0.500
+home_improvement,16500,cbsa,Centralia WA,anchor_market,Home Depot,2,1,1.000,,2 stores across 1 brands with leader share 1.000
+home_improvement,28420,cbsa,Kennewick-Richland WA,anchor_market,Home Depot,6,2,0.500,0.77,6 stores across 2 brands with leader share 0.500
+home_improvement,31020,cbsa,Longview-Kelso WA,anchor_market,Home Depot,2,2,0.500,2.29,2 stores across 2 brands with leader share 0.500
+home_improvement,34180,cbsa,Moses Lake WA,anchor_market,Home Depot,2,2,0.500,3.40,2 stores across 2 brands with leader share 0.500
+home_improvement,34580,cbsa,Mount Vernon-Anacortes WA,anchor_market,Home Depot,2,2,0.500,0.83,2 stores across 2 brands with leader share 0.500
+home_improvement,36020,cbsa,Oak Harbor WA,anchor_market,Home Depot,1,1,1.000,,1 stores across 1 brands with leader share 1.000
+home_improvement,36500,cbsa,Olympia-Lacey-Tumwater WA,anchor_market,Home Depot,4,1,1.000,,4 stores across 1 brands with leader share 1.000
+home_improvement,38820,cbsa,Port Angeles WA,anchor_market,Home Depot,1,1,1.000,,1 stores across 1 brands with leader share 1.000
+home_improvement,38900,cbsa,Portland-Vancouver-Hillsboro OR-WA,anchor_market,Home Depot,4,2,0.500,0.34,4 stores across 2 brands with leader share 0.500
+home_improvement,42660,cbsa,Seattle-Tacoma-Bellevue WA,anchor_market,Home Depot,42,2,0.619,0.23,42 stores across 2 brands with leader share 0.619
+home_improvement,44060,cbsa,Spokane-Spokane Valley WA,anchor_market,Lowe's,9,2,0.556,0.12,9 stores across 2 brands with leader share 0.556
+home_improvement,47460,cbsa,Walla Walla WA,anchor_market,Home Depot,1,1,1.000,,1 stores across 1 brands with leader share 1.000
+home_improvement,48300,cbsa,Wenatchee-East Wenatchee WA,anchor_market,Home Depot,2,1,1.000,,2 stores across 1 brands with leader share 1.000
+home_improvement,49420,cbsa,Yakima WA,anchor_market,Home Depot,4,2,0.500,0.66,4 stores across 2 brands with leader share 0.500

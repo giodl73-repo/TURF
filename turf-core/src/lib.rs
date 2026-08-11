@@ -220,6 +220,21 @@ pub struct RetSummary {
     pub geography_type_counts: Vec<RetCount>,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct RetMetroCandidate {
+    pub category: String,
+    pub geography_id: String,
+    pub geography_type: String,
+    pub label: String,
+    pub enclave_type: String,
+    pub primary_brand: String,
+    pub total_stores: usize,
+    pub brand_count: usize,
+    pub leader_share: f64,
+    pub nearest_opposite_brand_miles: Option<f64>,
+    pub evidence_summary: String,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum MarketStatus {
     Dominant,
@@ -1386,6 +1401,84 @@ pub fn summarize_ret_examples(examples: &[RetExample]) -> RetSummary {
     }
 }
 
+pub fn suggest_ret_metro_candidates(
+    category: &str,
+    points: &[MetroStorePoint],
+) -> Vec<RetMetroCandidate> {
+    let mut metro_groups: BTreeMap<(String, String, String), Vec<MetroStorePoint>> =
+        BTreeMap::new();
+
+    for point in points {
+        metro_groups
+            .entry((
+                point.cbsa_code.clone(),
+                point.cbsa_title.clone(),
+                point.metro_context_status.clone(),
+            ))
+            .or_default()
+            .push(point.clone());
+    }
+
+    metro_groups
+        .into_iter()
+        .map(|((cbsa_code, cbsa_title, metro_context_status), points)| {
+            let mut brand_counts: BTreeMap<String, usize> = BTreeMap::new();
+            for point in &points {
+                *brand_counts.entry(point.brand.clone()).or_insert(0) += 1;
+            }
+            let total_stores = points.len();
+            let brand_count = brand_counts.len();
+            let (primary_brand, leader_stores) = brand_counts
+                .iter()
+                .max_by(|left, right| left.1.cmp(right.1).then_with(|| right.0.cmp(left.0)))
+                .map(|(brand, stores)| (brand.clone(), *stores))
+                .unwrap_or_else(|| ("".to_string(), 0));
+            let leader_share = if total_stores == 0 {
+                0.0
+            } else {
+                leader_stores as f64 / total_stores as f64
+            };
+            let nearest_opposite_brand_miles = nearest_opposite_brand(&points)
+                .into_iter()
+                .map(|pair| pair.distance_miles)
+                .min_by(|left, right| left.total_cmp(right));
+            let enclave_type =
+                suggest_ret_enclave_type(category, total_stores, brand_count, leader_share);
+            let geography_id = if cbsa_code.is_empty() {
+                "non_cbsa".to_string()
+            } else {
+                cbsa_code
+            };
+            let geography_type = if metro_context_status == "cbsa" {
+                "cbsa".to_string()
+            } else {
+                "region".to_string()
+            };
+            let label = if cbsa_title.is_empty() {
+                "Non-CBSA geography".to_string()
+            } else {
+                cbsa_title
+            };
+
+            RetMetroCandidate {
+                category: category.to_string(),
+                geography_id,
+                geography_type,
+                label,
+                enclave_type,
+                primary_brand,
+                total_stores,
+                brand_count,
+                leader_share,
+                nearest_opposite_brand_miles,
+                evidence_summary: format!(
+                    "{total_stores} stores across {brand_count} brands with leader share {leader_share:.3}"
+                ),
+            }
+        })
+        .collect()
+}
+
 pub fn parse_demand_points(csv: &str) -> Result<Vec<DemandPoint>, String> {
     let mut lines = csv.lines();
     let header = lines.next().ok_or("missing CSV header")?;
@@ -1924,6 +2017,39 @@ fn ret_counts<'a>(values: impl Iterator<Item = &'a String>) -> Vec<RetCount> {
         .collect()
 }
 
+fn suggest_ret_enclave_type(
+    category: &str,
+    total_stores: usize,
+    brand_count: usize,
+    leader_share: f64,
+) -> String {
+    if total_stores == 0 {
+        return "white_space".to_string();
+    }
+
+    if category == "home_improvement" && brand_count <= 2 {
+        return "anchor_market".to_string();
+    }
+
+    if total_stores >= 20 && brand_count >= 3 && leader_share <= 0.5 {
+        return "contested_service_grid".to_string();
+    }
+
+    if total_stores >= 10 && brand_count >= 3 && leader_share > 0.5 {
+        return "brand_led_service_mesh".to_string();
+    }
+
+    if total_stores >= 6 && brand_count >= 2 {
+        return "service_mesh".to_string();
+    }
+
+    if total_stores <= 5 {
+        return "anchor_market".to_string();
+    }
+
+    "service_mesh".to_string()
+}
+
 fn normalize_zip5(value: &str) -> String {
     value
         .chars()
@@ -2393,6 +2519,81 @@ county_geoid,county_name,cbsa_code,cbsa_title,cbsa_type,csa_code,csa_title,centr
         assert_eq!(nearest.len(), 2);
         assert_eq!(nearest[0].nearest_store_id, "low-1");
         assert!(nearest[0].distance_miles < 0.05);
+    }
+
+    #[test]
+    fn suggests_ret_metro_candidates_from_store_features() {
+        let home_points = vec![
+            MetroStorePoint {
+                brand: "Home Depot".to_string(),
+                store_id: "hd-1".to_string(),
+                city: "Seattle".to_string(),
+                state: "WA".to_string(),
+                postal_code: "98101".to_string(),
+                zcta_candidate: "98101".to_string(),
+                county_geoid: "53033".to_string(),
+                county_name: "King County".to_string(),
+                cbsa_code: "42660".to_string(),
+                cbsa_title: "Seattle-Tacoma-Bellevue WA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 47.6062,
+                longitude: -122.3321,
+            },
+            MetroStorePoint {
+                brand: "Lowe's".to_string(),
+                store_id: "low-1".to_string(),
+                city: "Seattle".to_string(),
+                state: "WA".to_string(),
+                postal_code: "98102".to_string(),
+                zcta_candidate: "98102".to_string(),
+                county_geoid: "53033".to_string(),
+                county_name: "King County".to_string(),
+                cbsa_code: "42660".to_string(),
+                cbsa_title: "Seattle-Tacoma-Bellevue WA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 47.6070,
+                longitude: -122.3330,
+            },
+        ];
+        let home_candidates = suggest_ret_metro_candidates("home_improvement", &home_points);
+
+        assert_eq!(home_candidates.len(), 1);
+        assert_eq!(home_candidates[0].enclave_type, "anchor_market");
+        assert_eq!(home_candidates[0].brand_count, 2);
+
+        let mut auto_points = Vec::new();
+        for index in 0..20 {
+            let brand = match index % 4 {
+                0 => "O'Reilly Auto Parts",
+                1 => "AutoZone",
+                2 => "NAPA Auto Parts",
+                _ => "Advance Auto Parts",
+            };
+            auto_points.push(MetroStorePoint {
+                brand: brand.to_string(),
+                store_id: format!("auto-{index}"),
+                city: "Seattle".to_string(),
+                state: "WA".to_string(),
+                postal_code: "98101".to_string(),
+                zcta_candidate: "98101".to_string(),
+                county_geoid: "53033".to_string(),
+                county_name: "King County".to_string(),
+                cbsa_code: "42660".to_string(),
+                cbsa_title: "Seattle-Tacoma-Bellevue WA".to_string(),
+                cbsa_type: "Metropolitan Statistical Area".to_string(),
+                metro_context_status: "cbsa".to_string(),
+                latitude: 47.6062 + index as f64 * 0.001,
+                longitude: -122.3321,
+            });
+        }
+        let auto_candidates = suggest_ret_metro_candidates("auto_parts", &auto_points);
+
+        assert_eq!(auto_candidates.len(), 1);
+        assert_eq!(auto_candidates[0].enclave_type, "contested_service_grid");
+        assert_eq!(auto_candidates[0].brand_count, 4);
+        assert!(auto_candidates[0].nearest_opposite_brand_miles.is_some());
     }
 
     #[test]

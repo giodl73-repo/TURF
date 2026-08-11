@@ -9,11 +9,12 @@ use turf_core::{
     parse_reviewed_store_points, parse_store_points, parse_zcta_county_contexts,
     render_county_store_points_csv, render_market_packet_json, render_market_packet_markdown,
     render_metro_store_points_csv, render_place_context_findings_json,
-    render_postal_store_points_csv, render_store_points_csv, summarize_counties_in_metro,
-    summarize_county_footprint, summarize_footprint, summarize_metro_footprint,
-    summarize_metro_rings, summarize_postal_footprint, summarize_ret_examples,
-    validate_county_cbsa_contexts, validate_market_packet_json, validate_national_store_points,
-    validate_ret_examples, validate_reviewed_store_points, validate_zcta_county_contexts,
+    render_postal_store_points_csv, render_store_points_csv, suggest_ret_metro_candidates,
+    summarize_counties_in_metro, summarize_county_footprint, summarize_footprint,
+    summarize_metro_footprint, summarize_metro_rings, summarize_postal_footprint,
+    summarize_ret_examples, validate_county_cbsa_contexts, validate_market_packet_json,
+    validate_national_store_points, validate_ret_examples, validate_reviewed_store_points,
+    validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -180,6 +181,25 @@ fn run() -> Result<(), String> {
             let examples = parse_ret_examples(&csv)?;
             let summary = summarize_ret_examples(&examples);
             print_ret_summary(&summary);
+            Ok(())
+        }
+        Some("suggest-ret-metro") => {
+            let category = args.next().ok_or(
+                "usage: turf-cli suggest-ret-metro <category> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>",
+            )?;
+            let reviewed_path = args.next().ok_or(
+                "usage: turf-cli suggest-ret-metro <category> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>",
+            )?;
+            let zcta_county_path = args.next().ok_or(
+                "usage: turf-cli suggest-ret-metro <category> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>",
+            )?;
+            let county_cbsa_path = args.next().ok_or(
+                "usage: turf-cli suggest-ret-metro <category> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>",
+            )?;
+            let metro_points =
+                load_metro_store_points(&reviewed_path, &zcta_county_path, &county_cbsa_path)?;
+            let candidates = suggest_ret_metro_candidates(&category, &metro_points);
+            print_ret_metro_candidates(&candidates);
             Ok(())
         }
         Some("summarize-review") => {
@@ -380,6 +400,9 @@ fn print_help() {
     println!("  validate-county-cbsa <county-cbsa.csv>  Check county-CBSA context contract");
     println!("  validate-ret <ret-examples.csv>  Check Retail Enclave Typology examples");
     println!("  summarize-ret <ret-examples.csv>  Summarize Retail Enclave Typology examples");
+    println!(
+        "  suggest-ret-metro <category> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
+    );
     println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
     println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
     println!("  summarize-postal-review <reviewed-stores.csv>  Summarize packet-ready postal ZIPs");
@@ -543,6 +566,32 @@ fn print_ret_summary(summary: &turf_core::RetSummary) {
     println!("geography_type,examples");
     for count in &summary.geography_type_counts {
         println!("{},{}", count.key, count.examples);
+    }
+}
+
+fn print_ret_metro_candidates(candidates: &[turf_core::RetMetroCandidate]) {
+    println!(
+        "category,geography_id,geography_type,label,enclave_type,primary_brand,total_stores,brand_count,leader_share,nearest_opposite_brand_miles,evidence_summary"
+    );
+    for candidate in candidates {
+        let nearest = candidate
+            .nearest_opposite_brand_miles
+            .map(|distance| format!("{distance:.2}"))
+            .unwrap_or_default();
+        println!(
+            "{},{},{},{},{},{},{},{},{:.3},{},{}",
+            candidate.category,
+            candidate.geography_id,
+            candidate.geography_type,
+            candidate.label,
+            candidate.enclave_type,
+            candidate.primary_brand,
+            candidate.total_stores,
+            candidate.brand_count,
+            candidate.leader_share,
+            nearest,
+            candidate.evidence_summary
+        );
     }
 }
 
