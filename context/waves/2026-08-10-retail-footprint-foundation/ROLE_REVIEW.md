@@ -1202,3 +1202,37 @@ Status: pass with next-output request.
 Mass retail creates stronger catchment questions than QSR or auto parts. The
 next model should test whether Lynnwood/Alderwood absorbs nearby thin and mixed
 edge nodes such as Edmonds, Mountlake Terrace, Shoreline, and Kenmore.
+
+## Pulse 44 Washington Grocery Layer
+
+### Market Analyst
+
+Status: pass.
+
+Grocery adds a neighborhood-completeness signal. Northgate/Lake City now reads
+as a grocery-service grid, while Lynnwood/Alderwood remains the regional
+absorber because grocery stacks with mass retail, home improvement, auto parts,
+and QSR.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse strengthens the distinction between corridor and neighborhood node.
+Aurora remains a corridor; Northgate/Lake City gains a neighborhood grocery
+identity; Edmonds remains a ferry-town service edge.
+
+### Source Policy Auditor
+
+Status: pass with review caveat.
+
+Rows come from open Overture Places. Pharmacy, fuel, gas, distribution,
+warehouse, liquor, deli, and duplicate rows were excluded in the reviewed layer.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Grocery should be tested with smaller catchment assumptions than mass retail.
+The next model should compare neighborhood grocery access against regional
+anchor absorption.

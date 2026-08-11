@@ -60,6 +60,7 @@ before broader chain coverage begins.
 | 41 | RET place spacing profile | complete | Added selected-place same-category opposite-brand spacing to separate capacity from rivalry-supported candidates. |
 | 42 | North Seattle enclave profile | complete | Profiled Aurora, Northgate/Lake City, Edmonds, Lynnwood/Alderwood, Bothell/Kenmore, Mill Creek, and Everett as nested RET types. |
 | 43 | Washington mass retail layer | complete | Added Target/Walmart/Costco Washington extract and used it to sharpen North Seattle anchor/corridor types. |
+| 44 | Washington grocery layer | complete | Added Washington grocery extract and used it to distinguish Northgate/Lake City neighborhood service from Aurora corridor and Alderwood anchor. |
 
 ## Success criteria
 
