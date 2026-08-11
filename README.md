@@ -53,6 +53,7 @@ cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-pack
 duckdb -c ".read queries/ret-profile-v0-metro-comparison.sql"
 duckdb -c ".read queries/ret-profile-v0-place-capacity-matrix.sql"
 duckdb -c ".read queries/ret-profile-v0-place-spacing-summary.sql"
+duckdb -c ".read queries/ret-north-seattle-enclave-profile.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -200,6 +201,9 @@ The first Seattle/Atlanta RET capacity synthesis is:
 
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.
+
+The first North Seattle / South Snohomish enclave profile is:
+`reports\ret-north-seattle-enclave-profile.md`.
 
 ## Product thesis
 

@@ -1137,3 +1137,35 @@ Status: pass with next-output request.
 The next layer should replace or supplement straight-line spacing with road,
 drive-time, or corridor context, especially for Atlanta suburban strips and
 Puget Sound ferry-side places.
+
+## Pulse 42 North Seattle Enclave Profile
+
+### Market Analyst
+
+Status: pass.
+
+The profile validates the emerging RET vocabulary. Aurora reads as a corridor,
+Lynnwood/Alderwood as a regional anchor absorber, Edmonds as a ferry-town
+service edge, and Everett as a larger complete daily-life node.
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The query keeps city and subcity slices explicit. Aurora and Northgate/Lake
+City are latitude/longitude slices inside Seattle rows, not official
+neighborhood boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse uses checked-in reviewed Overture-derived rows only. It adds no new
+external source and does not infer private chain territories.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The profile should eventually be tested against road corridors and drive-time
+links, especially between Aurora, Shoreline, Edmonds, and Lynnwood/Alderwood.

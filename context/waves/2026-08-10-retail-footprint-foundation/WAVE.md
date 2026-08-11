@@ -58,6 +58,7 @@ before broader chain coverage begins.
 | 39 | Georgia auto parts backfill | complete | Backfilled Georgia auto parts and refreshed RET profiles so Atlanta has all three daily-life category layers. |
 | 40 | RET capacity synthesis | complete | Added Seattle/Bremerton/Atlanta capacity archetype synthesis and next spacing/access questions. |
 | 41 | RET place spacing profile | complete | Added selected-place same-category opposite-brand spacing to separate capacity from rivalry-supported candidates. |
+| 42 | North Seattle enclave profile | complete | Profiled Aurora, Northgate/Lake City, Edmonds, Lynnwood/Alderwood, Bothell/Kenmore, Mill Creek, and Everett as nested RET types. |
 
 ## Success criteria
 
