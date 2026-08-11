@@ -36,12 +36,14 @@ Generate the first metro comparison with:
 
 ```powershell
 duckdb -c ".read queries/ret-profile-v0-metro-comparison.sql"
+duckdb -c ".read queries/ret-profile-v0-place-capacity-matrix.sql"
 ```
 
 The generated output is:
 
 ```text
 reports/ret-profile-v0-metro-comparison.csv
+reports/ret-profile-v0-place-capacity-matrix.csv
 ```
 
 The first comparison covers:
@@ -53,3 +55,8 @@ The first comparison covers:
 This is a profile fixture, not a final classifier. It gives TURF a stable
 cross-category shape that can later become a Rust CLI command once parks,
 postal/civic amenities, and ACS income bands pass their own source gates.
+
+The place capacity matrix adds a lower-grain read. It records selected enclaves
+as `0`, `1`, `2+`, or `source_gate_pending` for each tracked store type so TURF
+can distinguish observed absence, single presence, repeated capacity, and
+unfilled source coverage.

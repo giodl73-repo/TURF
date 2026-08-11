@@ -49,6 +49,7 @@ cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-q
 cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv fixtures\geography\georgia-qsr-zcta-county-primary-2020.csv fixtures\geography\georgia-qsr-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 duckdb -c ".read queries/ret-profile-v0-metro-comparison.sql"
+duckdb -c ".read queries/ret-profile-v0-place-capacity-matrix.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -184,6 +185,9 @@ The first neutral RET profile contract is:
 
 The first RET Profile v0 metro comparison is:
 `reports\ret-profile-v0-readout.md`.
+
+The first RET Profile v0 place capacity matrix is:
+`reports\ret-profile-v0-place-capacity-readout.md`.
 
 ## Product thesis
 

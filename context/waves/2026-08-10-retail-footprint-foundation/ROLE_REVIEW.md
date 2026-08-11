@@ -1004,3 +1004,37 @@ Status: pass with next-output request.
 The v0 profile is a good structural comparison, and the added capacity bands
 avoid treating every co-located brand pair as rivalry. Corridor and access
 interpretation still needs public amenity layers and road/drive-time impedance.
+
+## Pulse 38 RET Place Capacity Matrix
+
+### Market Analyst
+
+Status: pass.
+
+The matrix gives RET a better early signal than "contested": selected places
+now show observed absence, single presence, repeated capacity, and source-gated
+store types for each tracked brand layer.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse stays at the source city/place-label grain and does not collapse
+those rows into municipalities, ZIPs, ZCTAs, or official neighborhoods. Ferry
+places remain explicitly labeled as movement-context places.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse reuses checked-in reviewed Overture-derived fixtures. Georgia auto
+parts are marked `source_gate_pending` instead of being misread as observed
+zeros.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The 0/1/2+ matrix is ready to intersect with spacing and travel impedance.
+Future rivalry claims should require proximity, corridor, or catchment evidence
+beyond co-presence.
