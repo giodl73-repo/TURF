@@ -1,0 +1,3 @@
+category,geography_id,geography_type,label,expected_enclave_type,suggested_enclave_type,evaluation_status
+auto_parts,42660,cbsa,Seattle-Tacoma-Bellevue WA,contested_service_grid,contested_service_grid,match
+auto_parts,14740,cbsa,Bremerton-Silverdale-Port Orchard WA,brand_led_service_mesh,brand_led_service_mesh,match

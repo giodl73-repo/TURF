@@ -40,6 +40,7 @@ Validate and summarize them with:
 cargo run -p turf-cli -- validate-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- summarize-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- suggest-ret-metro auto_parts fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
+cargo run -p turf-cli -- evaluate-ret-metro fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-washington-metro-candidates.csv
 ```
 
 They are deliberately hand-reviewed examples, not model output. TURF should
@@ -81,3 +82,6 @@ the typology label, supporting measures, and a short evidence summary.
 
 The first metro-level candidate generator is documented in
 `reports/ret-metro-candidate-readout.md`.
+
+The first candidate-vs-example evaluation is documented in
+`reports/ret-metro-candidate-evaluation.md`.

@@ -635,3 +635,34 @@ Status: pass.
 
 The pulse reuses checked-in reviewed Overture/Census fixtures and does not add a
 new acquisition source.
+
+## Pulse 27 RET Candidate Evaluation
+
+### Market Analyst
+
+Status: pass.
+
+The first scorecard is small but useful: all four comparable metro examples
+match the generated RET candidate labels.
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The evaluator correctly limits itself to `cbsa` and `region` examples. Place
+examples like Kingston and Bainbridge still need a separate place-level RET
+candidate path.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next model gate should add place-level RET candidates so ferry-side
+enclaves and white-space examples can be evaluated.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse compares generated labels to already-reviewed fixtures and does not
+introduce new source material.

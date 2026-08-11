@@ -3,9 +3,10 @@ use std::{collections::BTreeMap, env, fs, process};
 use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
     build_market_packet, classify_metro_rings, enrich_county_store_points_with_metro,
-    enrich_postal_store_points_with_county, filter_metro_store_points, inspect_place_contexts,
-    nearest_opposite_brand, packet_ready_postal_store_points, packet_ready_store_points,
-    parse_county_cbsa_contexts, parse_demand_points, parse_place_contexts, parse_ret_examples,
+    enrich_postal_store_points_with_county, evaluate_ret_metro_candidates,
+    filter_metro_store_points, inspect_place_contexts, nearest_opposite_brand,
+    packet_ready_postal_store_points, packet_ready_store_points, parse_county_cbsa_contexts,
+    parse_demand_points, parse_place_contexts, parse_ret_examples, parse_ret_metro_candidates,
     parse_reviewed_store_points, parse_store_points, parse_zcta_county_contexts,
     render_county_store_points_csv, render_market_packet_json, render_market_packet_markdown,
     render_metro_store_points_csv, render_place_context_findings_json,
@@ -200,6 +201,23 @@ fn run() -> Result<(), String> {
                 load_metro_store_points(&reviewed_path, &zcta_county_path, &county_cbsa_path)?;
             let candidates = suggest_ret_metro_candidates(&category, &metro_points);
             print_ret_metro_candidates(&candidates);
+            Ok(())
+        }
+        Some("evaluate-ret-metro") => {
+            let examples_path = args.next().ok_or(
+                "usage: turf-cli evaluate-ret-metro <ret-examples.csv> <ret-metro-candidates.csv>",
+            )?;
+            let candidates_path = args.next().ok_or(
+                "usage: turf-cli evaluate-ret-metro <ret-examples.csv> <ret-metro-candidates.csv>",
+            )?;
+            let examples_csv = fs::read_to_string(&examples_path)
+                .map_err(|error| format!("{examples_path}: {error}"))?;
+            let candidates_csv = fs::read_to_string(&candidates_path)
+                .map_err(|error| format!("{candidates_path}: {error}"))?;
+            let examples = parse_ret_examples(&examples_csv)?;
+            let candidates = parse_ret_metro_candidates(&candidates_csv)?;
+            let evaluations = evaluate_ret_metro_candidates(&examples, &candidates);
+            print_ret_candidate_evaluations(&evaluations);
             Ok(())
         }
         Some("summarize-review") => {
@@ -403,6 +421,7 @@ fn print_help() {
     println!(
         "  suggest-ret-metro <category> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
     );
+    println!("  evaluate-ret-metro <ret-examples.csv> <ret-metro-candidates.csv>");
     println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
     println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
     println!("  summarize-postal-review <reviewed-stores.csv>  Summarize packet-ready postal ZIPs");
@@ -591,6 +610,24 @@ fn print_ret_metro_candidates(candidates: &[turf_core::RetMetroCandidate]) {
             candidate.leader_share,
             nearest,
             candidate.evidence_summary
+        );
+    }
+}
+
+fn print_ret_candidate_evaluations(evaluations: &[turf_core::RetCandidateEvaluation]) {
+    println!(
+        "category,geography_id,geography_type,label,expected_enclave_type,suggested_enclave_type,evaluation_status"
+    );
+    for evaluation in evaluations {
+        println!(
+            "{},{},{},{},{},{},{}",
+            evaluation.category,
+            evaluation.geography_id,
+            evaluation.geography_type,
+            evaluation.label,
+            evaluation.expected_enclave_type,
+            evaluation.suggested_enclave_type,
+            evaluation.evaluation_status
         );
     }
 }

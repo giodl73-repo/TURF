@@ -43,6 +43,7 @@ before broader chain coverage begins.
 | 24 | RET taxonomy sketch | complete | Introduced Retail Enclave Typology and seeded Washington enclave examples. |
 | 25 | Executable RET examples | complete | Added RET parser, validator, summary command, CLI wiring, and tests. |
 | 26 | RET metro candidate rules | complete | Added rule-based metro RET suggestions and Washington candidate outputs. |
+| 27 | RET candidate evaluation | complete | Added metro candidate-vs-example evaluation command and first Washington scorecard. |
 
 ## Success criteria
 

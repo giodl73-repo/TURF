@@ -1,0 +1,3 @@
+category,geography_id,geography_type,label,expected_enclave_type,suggested_enclave_type,evaluation_status
+home_improvement,42660,cbsa,Seattle-Tacoma-Bellevue WA,anchor_market,anchor_market,match
+home_improvement,14740,cbsa,Bremerton-Silverdale-Port Orchard WA,anchor_market,anchor_market,match

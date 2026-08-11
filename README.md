@@ -32,6 +32,7 @@ cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-a
 cargo run -p turf-cli -- validate-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- summarize-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- suggest-ret-metro auto_parts fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
+cargo run -p turf-cli -- evaluate-ret-metro fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-washington-metro-candidates.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -87,6 +88,9 @@ Enclave Typology examples.
 The `suggest-ret-metro` command derives conservative RET candidate labels from
 packet-ready metro store features.
 
+The `evaluate-ret-metro` command compares generated metro RET candidates with
+hand-reviewed RET examples.
+
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
@@ -116,6 +120,9 @@ RET, Retail Enclave Typology, is introduced in:
 
 The first rule-based RET candidate readout is:
 `reports\ret-metro-candidate-readout.md`.
+
+The first RET candidate evaluation is:
+`reports\ret-metro-candidate-evaluation.md`.
 
 ## Product thesis
 

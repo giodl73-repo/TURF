@@ -1,4 +1,4 @@
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, BTreeSet};
 
 #[derive(Debug, Clone, PartialEq)]
 pub struct StorePoint {
@@ -233,6 +233,17 @@ pub struct RetMetroCandidate {
     pub leader_share: f64,
     pub nearest_opposite_brand_miles: Option<f64>,
     pub evidence_summary: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RetCandidateEvaluation {
+    pub category: String,
+    pub geography_id: String,
+    pub geography_type: String,
+    pub label: String,
+    pub expected_enclave_type: String,
+    pub suggested_enclave_type: String,
+    pub evaluation_status: String,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -741,6 +752,87 @@ pub fn parse_ret_examples(csv: &str) -> Result<Vec<RetExample>, String> {
 
 pub fn validate_ret_examples(csv: &str) -> Result<usize, String> {
     Ok(parse_ret_examples(csv)?.len())
+}
+
+pub fn parse_ret_metro_candidates(csv: &str) -> Result<Vec<RetMetroCandidate>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "category",
+        "geography_id",
+        "geography_type",
+        "label",
+        "enclave_type",
+        "primary_brand",
+        "total_stores",
+        "brand_count",
+        "leader_share",
+        "nearest_opposite_brand_miles",
+        "evidence_summary",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut candidates = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let geography_type = required(fields[2], line_number, "geography_type")?;
+        validate_ret_geography_type(geography_type, line_number)?;
+        let enclave_type = required(fields[4], line_number, "enclave_type")?;
+        validate_ret_enclave_type(enclave_type, line_number)?;
+        let total_stores = fields[6]
+            .parse::<usize>()
+            .map_err(|_| format!("line {line_number}: invalid total_stores"))?;
+        let brand_count = fields[7]
+            .parse::<usize>()
+            .map_err(|_| format!("line {line_number}: invalid brand_count"))?;
+        let leader_share = fields[8]
+            .parse::<f64>()
+            .map_err(|_| format!("line {line_number}: invalid leader_share"))?;
+        let nearest_opposite_brand_miles =
+            if fields[9].is_empty() {
+                None
+            } else {
+                Some(fields[9].parse::<f64>().map_err(|_| {
+                    format!("line {line_number}: invalid nearest_opposite_brand_miles")
+                })?)
+            };
+
+        candidates.push(RetMetroCandidate {
+            category: required(fields[0], line_number, "category")?.to_string(),
+            geography_id: required(fields[1], line_number, "geography_id")?.to_string(),
+            geography_type: geography_type.to_string(),
+            label: required(fields[3], line_number, "label")?.to_string(),
+            enclave_type: enclave_type.to_string(),
+            primary_brand: fields[5].to_string(),
+            total_stores,
+            brand_count,
+            leader_share,
+            nearest_opposite_brand_miles,
+            evidence_summary: required(fields[10], line_number, "evidence_summary")?.to_string(),
+        });
+    }
+
+    Ok(candidates)
 }
 
 pub fn parse_zcta_county_contexts(csv: &str) -> Result<Vec<ZctaCountyContext>, String> {
@@ -1399,6 +1491,61 @@ pub fn summarize_ret_examples(examples: &[RetExample]) -> RetSummary {
         category_counts: ret_counts(examples.iter().map(|example| &example.category)),
         geography_type_counts: ret_counts(examples.iter().map(|example| &example.geography_type)),
     }
+}
+
+pub fn evaluate_ret_metro_candidates(
+    examples: &[RetExample],
+    candidates: &[RetMetroCandidate],
+) -> Vec<RetCandidateEvaluation> {
+    let mut candidate_by_key: BTreeMap<(String, String, String), &RetMetroCandidate> =
+        BTreeMap::new();
+    let mut candidate_categories: BTreeSet<String> = BTreeSet::new();
+
+    for candidate in candidates {
+        candidate_categories.insert(candidate.category.clone());
+        candidate_by_key.insert(
+            (
+                candidate.category.clone(),
+                candidate.geography_id.clone(),
+                candidate.geography_type.clone(),
+            ),
+            candidate,
+        );
+    }
+
+    examples
+        .iter()
+        .filter(|example| {
+            candidate_categories.contains(&example.category)
+                && (example.geography_type == "cbsa" || example.geography_type == "region")
+        })
+        .map(|example| {
+            let key = (
+                example.category.clone(),
+                example.geography_id.clone(),
+                example.geography_type.clone(),
+            );
+            let candidate = candidate_by_key.get(&key);
+            let suggested_enclave_type = candidate
+                .map(|candidate| candidate.enclave_type.clone())
+                .unwrap_or_default();
+            let evaluation_status = match candidate {
+                Some(candidate) if candidate.enclave_type == example.enclave_type => "match",
+                Some(_) => "mismatch",
+                None => "missing_candidate",
+            };
+
+            RetCandidateEvaluation {
+                category: example.category.clone(),
+                geography_id: example.geography_id.clone(),
+                geography_type: example.geography_type.clone(),
+                label: example.label.clone(),
+                expected_enclave_type: example.enclave_type.clone(),
+                suggested_enclave_type,
+                evaluation_status: evaluation_status.to_string(),
+            }
+        })
+        .collect()
 }
 
 pub fn suggest_ret_metro_candidates(
@@ -2327,6 +2474,29 @@ kingston,place,Kingston WA,auto_parts,castle_town,NAPA Auto Parts,2,0,NAPA rows 
         let error = parse_ret_examples(csv).expect_err("invalid RET type should fail");
 
         assert!(error.contains("invalid enclave_type"));
+    }
+
+    #[test]
+    fn evaluates_ret_metro_candidates_against_examples() {
+        let examples_csv = "\
+geography_id,geography_type,label,category,enclave_type,primary_brand,store_count,competing_brand_count,evidence_summary,source_report
+42660,cbsa,Seattle-Tacoma-Bellevue WA,home_improvement,anchor_market,Home Depot,42,1,Home Depot leads,reports/example.md
+42660,cbsa,Seattle-Tacoma-Bellevue WA,auto_parts,contested_service_grid,O'Reilly Auto Parts,197,3,All brands present,reports/example.md
+kingston,place,Kingston WA,auto_parts,ferry_side_enclave,NAPA Auto Parts,2,0,NAPA rows appear,reports/example.md
+";
+        let candidates_csv = "\
+category,geography_id,geography_type,label,enclave_type,primary_brand,total_stores,brand_count,leader_share,nearest_opposite_brand_miles,evidence_summary
+home_improvement,42660,cbsa,Seattle-Tacoma-Bellevue WA,anchor_market,Home Depot,42,2,0.619,0.23,42 stores across 2 brands with leader share 0.619
+auto_parts,42660,cbsa,Seattle-Tacoma-Bellevue WA,service_mesh,O'Reilly Auto Parts,197,4,0.452,0.01,197 stores across 4 brands with leader share 0.452
+";
+        let examples = parse_ret_examples(examples_csv).expect("examples parse");
+        let candidates = parse_ret_metro_candidates(candidates_csv).expect("candidates parse");
+        let evaluations = evaluate_ret_metro_candidates(&examples, &candidates);
+
+        assert_eq!(evaluations.len(), 2);
+        assert_eq!(evaluations[0].evaluation_status, "match");
+        assert_eq!(evaluations[1].evaluation_status, "mismatch");
+        assert_eq!(evaluations[1].suggested_enclave_type, "service_mesh");
     }
 
     #[test]
