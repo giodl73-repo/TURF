@@ -48,6 +48,7 @@ cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-geor
 cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-qsr-washington-review-2026-07-22.csv fixtures\geography\washington-qsr-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv fixtures\geography\georgia-qsr-zcta-county-primary-2020.csv fixtures\geography\georgia-qsr-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
+duckdb -c ".read queries/ret-profile-v0-metro-comparison.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -177,6 +178,12 @@ The first same-place RET competitor-spacing readout is:
 
 The first spacing-aware place candidate evaluation is:
 `reports\ret-place-spacing-candidate-evaluation.md`.
+
+The first neutral RET profile contract is:
+`docs\ret-profile-v0.md`.
+
+The first RET Profile v0 metro comparison is:
+`reports\ret-profile-v0-readout.md`.
 
 ## Product thesis
 

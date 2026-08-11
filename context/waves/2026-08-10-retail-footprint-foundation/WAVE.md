@@ -53,6 +53,7 @@ before broader chain coverage begins.
 | 34 | QSR Overture acquisition gate | complete | Added Washington QSR brand filters, DuckDB query, and review gate for open Overture extraction. |
 | 35 | Washington QSR footprint | complete | Ran Overture QSR extraction, added reviewed Washington QSR layer, and reported Seattle/Kitsap ferry geography. |
 | 36 | Atlanta QSR backfill | complete | Backfilled Georgia QSR, added Atlanta CBSA/ring reports, and compared Atlanta against Seattle. |
+| 37 | RET Profile v0 | complete | Added the neutral cross-category metro profile contract and generated Seattle/Bremerton/Atlanta comparison rows. |
 
 ## Success criteria
 

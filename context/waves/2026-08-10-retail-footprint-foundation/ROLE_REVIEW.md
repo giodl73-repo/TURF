@@ -970,3 +970,36 @@ Status: pass with caveat.
 Rows come from open Overture Places and public Census files. Ten non-ZCTA ZIP
 rows were kept as `needs_review`, preserving raw evidence without forcing an
 unaudited Census join.
+
+## Pulse 37 RET Profile v0
+
+### Market Analyst
+
+Status: pass.
+
+The profile moves TURF from single-category reports toward enclave profiles.
+Seattle, Bremerton, and Atlanta are now comparable by category mix, brand
+leadership, contested layers, and movement context.
+
+### Market Geographer
+
+Status: pass.
+
+The profile keeps geography labels explicit: CBSA profile rows are not place
+profiles, ZIP/ZCTA income remains source-gated, and Puget Sound ferry context
+is recorded as movement context rather than ordinary radius distance.
+
+### Source Policy Auditor
+
+Status: pass with source gates.
+
+The pulse reuses checked-in reviewed Overture/Census-derived fixtures. Parks,
+libraries, post offices, and ACS income bands remain `source_gate_pending`
+until their acquisition paths are reviewed and reproducible.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The v0 profile is a good structural comparison, but corridor and access
+interpretation still needs public amenity layers and road/drive-time impedance.
