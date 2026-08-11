@@ -1,0 +1,678 @@
+metro,Atlanta-Sandy Springs-Roswell GA
+total_stores,639
+
+brand,stores
+Burger King,119
+McDonald's,229
+Taco Bell,135
+Wendy's,156
+
+county_geoid,county_name,leader,leader_stores,total_stores,status
+13013,Barrow County,McDonald's,3,8,contested
+13015,Bartow County,McDonald's,8,24,contested
+13035,Butts County,Burger King,2,6,contested
+13045,Carroll County,McDonald's,7,21,contested
+13057,Cherokee County,McDonald's,11,27,contested
+13063,Clayton County,McDonald's,10,26,contested
+13067,Cobb County,McDonald's,29,84,contested
+13077,Coweta County,McDonald's,5,16,contested
+13085,Dawson County,McDonald's,2,5,contested
+13089,DeKalb County,McDonald's,30,73,contested
+13097,Douglas County,Taco Bell,6,19,contested
+13113,Fayette County,McDonald's,4,11,contested
+13117,Forsyth County,McDonald's,7,18,contested
+13121,Fulton County,McDonald's,38,96,contested
+13135,Gwinnett County,McDonald's,34,98,contested
+13143,Haralson County,McDonald's,1,3,contested
+13151,Henry County,McDonald's,12,34,contested
+13187,Lumpkin County,McDonald's,1,3,contested
+13199,Meriwether County,McDonald's,1,1,dominant
+13211,Morgan County,Burger King,1,4,contested
+13217,Newton County,McDonald's,5,13,contested
+13223,Paulding County,McDonald's,4,13,contested
+13227,Pickens County,Burger King,1,4,contested
+13231,Pike County,Burger King,1,1,dominant
+13247,Rockdale County,Burger King,3,12,contested
+13255,Spalding County,McDonald's,3,9,contested
+13297,Walton County,Wendy's,4,10,contested
+
+brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles
+Taco Bell,91c95cf1-51f1-4ed7-9428-5041b01d2647,Cartersville,Bartow County,Burger King,d0a64222-16f2-43fc-a802-70e4ef66f71a,Cartersville,Bartow County,0.00
+Burger King,d0a64222-16f2-43fc-a802-70e4ef66f71a,Cartersville,Bartow County,Taco Bell,91c95cf1-51f1-4ed7-9428-5041b01d2647,Cartersville,Bartow County,0.00
+Burger King,52736cb9-5683-4478-9bbd-806856d7b08d,Lawrenceville,Gwinnett County,Taco Bell,eb34b520-61a6-4b24-b5d8-a0a15cf9b62b,Lawrenceville,Gwinnett County,0.01
+Taco Bell,eb34b520-61a6-4b24-b5d8-a0a15cf9b62b,Lawrenceville,Gwinnett County,Burger King,52736cb9-5683-4478-9bbd-806856d7b08d,Lawrenceville,Gwinnett County,0.01
+Taco Bell,6bcdd7a7-d415-4f50-ab10-2ecdfbf9d639,Cartersville,Bartow County,Wendy's,72eb11b6-9a1f-4c47-8985-ebc0c441390e,Cartersville,Bartow County,0.01
+Wendy's,72eb11b6-9a1f-4c47-8985-ebc0c441390e,Cartersville,Bartow County,Taco Bell,6bcdd7a7-d415-4f50-ab10-2ecdfbf9d639,Cartersville,Bartow County,0.01
+Wendy's,0922c59a-1851-42fc-a2b0-ae11af715fa4,Buford,Gwinnett County,Taco Bell,2f7f776e-500b-43e9-8a9e-d5734ce92853,Buford,Gwinnett County,0.02
+Taco Bell,2f7f776e-500b-43e9-8a9e-d5734ce92853,Buford,Gwinnett County,Wendy's,0922c59a-1851-42fc-a2b0-ae11af715fa4,Buford,Gwinnett County,0.02
+Wendy's,55945622-dc00-4b0d-b9a7-56db3266228a,Covington,Newton County,McDonald's,9e210e24-47a5-482e-9db5-f51a348794a5,Covington,Newton County,0.03
+McDonald's,9e210e24-47a5-482e-9db5-f51a348794a5,Covington,Newton County,Wendy's,55945622-dc00-4b0d-b9a7-56db3266228a,Covington,Newton County,0.03
+Taco Bell,929f05d1-c3d9-4bbe-bd35-9d49b47a1e07,Carrollton,Carroll County,Wendy's,96271043-738c-423d-8dde-ed97b6a00a01,Carrollton,Carroll County,0.03
+Wendy's,96271043-738c-423d-8dde-ed97b6a00a01,Carrollton,Carroll County,Taco Bell,929f05d1-c3d9-4bbe-bd35-9d49b47a1e07,Carrollton,Carroll County,0.03
+Taco Bell,12776cb9-3107-475d-94c0-19d938eed872,Dallas,Paulding County,Wendy's,9da36585-2290-4911-aaeb-5797f44166b2,Dallas,Paulding County,0.03
+Wendy's,9da36585-2290-4911-aaeb-5797f44166b2,Dallas,Paulding County,Taco Bell,12776cb9-3107-475d-94c0-19d938eed872,Dallas,Paulding County,0.03
+Burger King,423a76d2-6dc6-4f07-bffe-ffe051c57f07,Atlanta,Fulton County,McDonald's,b5b31302-0377-4d1d-989c-de6a479848c7,Atlanta,Fulton County,0.03
+McDonald's,b5b31302-0377-4d1d-989c-de6a479848c7,Atlanta,Fulton County,Burger King,423a76d2-6dc6-4f07-bffe-ffe051c57f07,Atlanta,Fulton County,0.03
+Wendy's,8544775d-3465-4546-84b7-769edd4ad4aa,Conyers,Rockdale County,McDonald's,aef0df1e-8ff0-4cd7-8579-bb1ed39e6f62,Conyers,Rockdale County,0.03
+McDonald's,aef0df1e-8ff0-4cd7-8579-bb1ed39e6f62,Conyers,Rockdale County,Wendy's,8544775d-3465-4546-84b7-769edd4ad4aa,Conyers,Rockdale County,0.03
+Burger King,40500aaa-5fba-4318-8161-9f5625ecdd26,Atlanta,Fulton County,McDonald's,5f7afaf5-9bf6-4710-81db-159e90e9b8fe,Atlanta,Fulton County,0.03
+McDonald's,5f7afaf5-9bf6-4710-81db-159e90e9b8fe,Atlanta,Fulton County,Burger King,40500aaa-5fba-4318-8161-9f5625ecdd26,Atlanta,Fulton County,0.03
+Wendy's,9dd6ffd8-f54d-4246-b0c6-e9751a7fcf6a,Marietta,Cobb County,Taco Bell,abfe918b-e6d2-4efd-8b68-50cd09ac2ddc,Marietta,Cobb County,0.03
+Taco Bell,abfe918b-e6d2-4efd-8b68-50cd09ac2ddc,Marietta,Cobb County,Wendy's,9dd6ffd8-f54d-4246-b0c6-e9751a7fcf6a,Marietta,Cobb County,0.03
+Wendy's,9961aa1b-4ec4-4c0c-9e88-6beca49aef2f,Atlanta,DeKalb County,McDonald's,baae0dde-1c5e-4604-b120-2ba7e034e9fa,Atlanta,DeKalb County,0.03
+McDonald's,baae0dde-1c5e-4604-b120-2ba7e034e9fa,Atlanta,DeKalb County,Wendy's,9961aa1b-4ec4-4c0c-9e88-6beca49aef2f,Atlanta,DeKalb County,0.03
+Taco Bell,41bba04c-820b-496e-9789-000518323824,College Park,Fulton County,McDonald's,49303cb3-aa99-46b2-9605-40b997200a10,College Park,Fulton County,0.03
+McDonald's,49303cb3-aa99-46b2-9605-40b997200a10,College Park,Fulton County,Taco Bell,41bba04c-820b-496e-9789-000518323824,College Park,Fulton County,0.03
+Burger King,6e1d3cd8-d020-4eaf-a5dc-0775c46976db,Smyrna,Cobb County,Taco Bell,80a29eff-5676-4f35-b10d-ce2164f095ef,Smyrna,Cobb County,0.03
+Taco Bell,80a29eff-5676-4f35-b10d-ce2164f095ef,Smyrna,Cobb County,Burger King,6e1d3cd8-d020-4eaf-a5dc-0775c46976db,Smyrna,Cobb County,0.03
+McDonald's,77872674-f1ef-4fe4-ad0d-a8bafea126f6,Jackson,Butts County,Taco Bell,9ff8cd4d-f17c-4862-a655-36a7cb1c2ef9,Jackson,Butts County,0.03
+Taco Bell,9ff8cd4d-f17c-4862-a655-36a7cb1c2ef9,Jackson,Butts County,McDonald's,77872674-f1ef-4fe4-ad0d-a8bafea126f6,Jackson,Butts County,0.03
+Burger King,7c3f0f4f-e38b-4b3c-b7e7-0eec44c20f69,McDonough,Henry County,Wendy's,c5b9ab45-492a-4b22-a73f-797cbae58833,McDonough,Henry County,0.03
+Wendy's,c5b9ab45-492a-4b22-a73f-797cbae58833,McDonough,Henry County,Burger King,7c3f0f4f-e38b-4b3c-b7e7-0eec44c20f69,McDonough,Henry County,0.03
+Wendy's,15fb4d12-04ca-4ef2-b476-e5db4ab0780d,Cumming,Forsyth County,Taco Bell,211736e9-ed1d-4d4a-809b-c3b7c655d8f6,Cumming,Forsyth County,0.03
+Taco Bell,211736e9-ed1d-4d4a-809b-c3b7c655d8f6,Cumming,Forsyth County,Wendy's,15fb4d12-04ca-4ef2-b476-e5db4ab0780d,Cumming,Forsyth County,0.03
+Wendy's,5b62e063-c131-4517-8cd6-fa93072305c0,Morrow,Clayton County,Taco Bell,c8cd8752-f7de-44bc-9b72-36100fdbb0ad,Morrow,Clayton County,0.03
+Taco Bell,c8cd8752-f7de-44bc-9b72-36100fdbb0ad,Morrow,Clayton County,Wendy's,5b62e063-c131-4517-8cd6-fa93072305c0,Morrow,Clayton County,0.03
+Taco Bell,66f0eb58-372d-4c3b-a288-5e391d540f55,Lithia Springs,Douglas County,Burger King,c49ac6ae-eb38-4bf5-8ecd-0691716989a3,Lithia Springs,Douglas County,0.04
+Burger King,c49ac6ae-eb38-4bf5-8ecd-0691716989a3,Lithia Springs,Douglas County,Taco Bell,66f0eb58-372d-4c3b-a288-5e391d540f55,Lithia Springs,Douglas County,0.04
+Taco Bell,a34fdd9f-ba81-495b-99d1-700df4d6c336,Lawrenceville,Gwinnett County,McDonald's,eed52ef1-eb95-4663-a41b-caa8d6a2763b,Lawrenceville,Gwinnett County,0.04
+McDonald's,eed52ef1-eb95-4663-a41b-caa8d6a2763b,Lawrenceville,Gwinnett County,Taco Bell,a34fdd9f-ba81-495b-99d1-700df4d6c336,Lawrenceville,Gwinnett County,0.04
+Burger King,69ab9907-7f5c-40b0-82a1-c6132c51a6fe,Winder,Barrow County,Wendy's,6ebb9571-fc70-49da-a282-6bf97a10a712,Winder,Barrow County,0.04
+Wendy's,6ebb9571-fc70-49da-a282-6bf97a10a712,Winder,Barrow County,Burger King,69ab9907-7f5c-40b0-82a1-c6132c51a6fe,Winder,Barrow County,0.04
+McDonald's,1bb2c96c-f3f3-462b-a1f0-fff1be753b08,Villa Rica,Carroll County,Taco Bell,2c1e2b0d-0c13-40ea-9bad-23f046d9d948,Villa Rica,Carroll County,0.04
+Taco Bell,2c1e2b0d-0c13-40ea-9bad-23f046d9d948,Villa Rica,Carroll County,McDonald's,1bb2c96c-f3f3-462b-a1f0-fff1be753b08,Villa Rica,Carroll County,0.04
+Burger King,42657ecc-e969-4684-acd6-84e5577775d1,Union City,Fulton County,Wendy's,853b0b87-331b-4a38-b956-3081ba467a31,Union City,Fulton County,0.04
+Wendy's,853b0b87-331b-4a38-b956-3081ba467a31,Union City,Fulton County,Burger King,42657ecc-e969-4684-acd6-84e5577775d1,Union City,Fulton County,0.04
+Taco Bell,14be44f7-e53f-451d-a8a7-e2f1562a3cbb,Duluth,Gwinnett County,Burger King,19cfe647-fdd7-4eb2-a410-cc77f43257ad,Duluth,Gwinnett County,0.04
+Burger King,19cfe647-fdd7-4eb2-a410-cc77f43257ad,Duluth,Gwinnett County,Taco Bell,14be44f7-e53f-451d-a8a7-e2f1562a3cbb,Duluth,Gwinnett County,0.04
+Taco Bell,2e8d0f74-6e5e-4176-951a-ff8074dc2e88,Marietta,Cobb County,Burger King,58a6c3a8-9cc9-4c73-a44d-1e0052dd7879,Marietta,Cobb County,0.04
+Burger King,58a6c3a8-9cc9-4c73-a44d-1e0052dd7879,Marietta,Cobb County,Taco Bell,2e8d0f74-6e5e-4176-951a-ff8074dc2e88,Marietta,Cobb County,0.04
+McDonald's,5ce3822b-96f7-457b-b6b8-788b75a6b7e6,Lithonia,DeKalb County,Burger King,750e01bc-a3c3-47f0-b775-a1671edc418a,Lithonia,DeKalb County,0.04
+Burger King,750e01bc-a3c3-47f0-b775-a1671edc418a,Lithonia,DeKalb County,McDonald's,5ce3822b-96f7-457b-b6b8-788b75a6b7e6,Lithonia,DeKalb County,0.04
+Wendy's,e72d54b9-330e-4f00-8b88-2e88b3e4124c,Villa Rica,Carroll County,McDonald's,1bb2c96c-f3f3-462b-a1f0-fff1be753b08,Villa Rica,Carroll County,0.04
+Burger King,d40f3663-f3cb-4552-b3f7-79a79b457c24,Stone Mountain,DeKalb County,McDonald's,e553cc9d-29b2-4ae0-b705-30e8d6d88cc9,Stone Mountain,DeKalb County,0.04
+McDonald's,e553cc9d-29b2-4ae0-b705-30e8d6d88cc9,Stone Mountain,DeKalb County,Burger King,d40f3663-f3cb-4552-b3f7-79a79b457c24,Stone Mountain,DeKalb County,0.04
+McDonald's,0cbd91d1-658d-4db6-b100-77d84ac3c447,Marietta,Cobb County,Taco Bell,4e68e63d-b891-4e2c-8a0d-16ce17cd8cc6,Marietta,Cobb County,0.05
+Taco Bell,4e68e63d-b891-4e2c-8a0d-16ce17cd8cc6,Marietta,Cobb County,McDonald's,0cbd91d1-658d-4db6-b100-77d84ac3c447,Marietta,Cobb County,0.05
+Wendy's,d5dd2b01-1373-4c00-aadc-9ec5a115f3f4,Covington,Newton County,Taco Bell,f1c4f22a-1890-47c7-a112-c37cfb3cecbf,Covington,Newton County,0.05
+Taco Bell,f1c4f22a-1890-47c7-a112-c37cfb3cecbf,Covington,Newton County,Wendy's,d5dd2b01-1373-4c00-aadc-9ec5a115f3f4,Covington,Newton County,0.05
+McDonald's,95b48c41-17d0-4acf-96a1-75ea59624fb0,Canton,Cherokee County,Burger King,a523c862-96a1-4268-9dd0-472f15a96fb2,Canton,Cherokee County,0.05
+Burger King,a523c862-96a1-4268-9dd0-472f15a96fb2,Canton,Cherokee County,McDonald's,95b48c41-17d0-4acf-96a1-75ea59624fb0,Canton,Cherokee County,0.05
+Taco Bell,831a36c2-19be-4f58-94e1-507cfcc29c2d,Suwanee,Gwinnett County,Wendy's,df6051f3-e565-416e-826a-4551ae59f103,Suwanee,Gwinnett County,0.05
+Wendy's,df6051f3-e565-416e-826a-4551ae59f103,Suwanee,Gwinnett County,Taco Bell,831a36c2-19be-4f58-94e1-507cfcc29c2d,Suwanee,Gwinnett County,0.05
+Taco Bell,81ae5518-ea2b-4a0e-b81c-11729ca152db,Powder Springs,Cobb County,McDonald's,84dc6dfd-c182-4018-9728-43e53ccf3fd2,Powder Springs,Cobb County,0.05
+McDonald's,84dc6dfd-c182-4018-9728-43e53ccf3fd2,Powder Springs,Cobb County,Taco Bell,81ae5518-ea2b-4a0e-b81c-11729ca152db,Powder Springs,Cobb County,0.05
+Wendy's,1c754aca-0305-4eef-ab93-b2561bcf8646,Atlanta,Fulton County,McDonald's,3c056172-8cd3-4688-bf9a-df8497a92035,South Fulton,Fulton County,0.05
+McDonald's,3c056172-8cd3-4688-bf9a-df8497a92035,South Fulton,Fulton County,Wendy's,1c754aca-0305-4eef-ab93-b2561bcf8646,Atlanta,Fulton County,0.05
+Wendy's,341d2568-b11d-40db-8734-b834d2188f3b,Stockbridge,Henry County,McDonald's,b7c25edc-8133-40c1-b482-9f3b9544595c,Stockbridge,Henry County,0.05
+McDonald's,b7c25edc-8133-40c1-b482-9f3b9544595c,Stockbridge,Henry County,Wendy's,341d2568-b11d-40db-8734-b834d2188f3b,Stockbridge,Henry County,0.05
+Taco Bell,fe125193-2b97-4399-aede-7b5406441e97,Winder,Barrow County,Wendy's,6ebb9571-fc70-49da-a282-6bf97a10a712,Winder,Barrow County,0.06
+Taco Bell,3bcbcd02-c5bd-40ee-b7e4-ff8ef4f2d08b,Adairsville,Bartow County,Burger King,db8c797c-7708-4cb5-9051-50ef42fb662f,Adairsville,Bartow County,0.06
+Burger King,db8c797c-7708-4cb5-9051-50ef42fb662f,Adairsville,Bartow County,Taco Bell,3bcbcd02-c5bd-40ee-b7e4-ff8ef4f2d08b,Adairsville,Bartow County,0.06
+McDonald's,a99684e6-4e70-4a8a-9ba1-4c436a4f1696,McDonough,Henry County,Wendy's,e8f3a49e-02c4-4609-884f-b8d22bf0b039,McDonough,Henry County,0.06
+Wendy's,e8f3a49e-02c4-4609-884f-b8d22bf0b039,McDonough,Henry County,McDonald's,a99684e6-4e70-4a8a-9ba1-4c436a4f1696,McDonough,Henry County,0.06
+McDonald's,63e2a87c-8f89-4737-927b-336151bb881d,Union City,Fulton County,Wendy's,853b0b87-331b-4a38-b956-3081ba467a31,Union City,Fulton County,0.06
+McDonald's,c849cff2-ba36-47ed-87e3-f855391ccb15,Lithia Springs,Douglas County,Wendy's,f3a63b9b-2d8f-44c4-8fde-3b104b0cce5d,Lithia Springs,Douglas County,0.06
+Wendy's,f3a63b9b-2d8f-44c4-8fde-3b104b0cce5d,Lithia Springs,Douglas County,McDonald's,c849cff2-ba36-47ed-87e3-f855391ccb15,Lithia Springs,Douglas County,0.06
+Burger King,dce24459-79b0-4f3b-a08e-1975d5941337,Ellenwood,DeKalb County,McDonald's,f96e1712-4b4a-4da5-a48a-99bd04927393,Ellenwood,DeKalb County,0.06
+McDonald's,f96e1712-4b4a-4da5-a48a-99bd04927393,Ellenwood,DeKalb County,Burger King,dce24459-79b0-4f3b-a08e-1975d5941337,Ellenwood,DeKalb County,0.06
+Wendy's,391ce477-0808-49fe-b8ec-f01cf8e537bd,Suwanee,Gwinnett County,McDonald's,d928d706-6d7b-4d91-a17c-86e0dbcf4598,Suwanee,Gwinnett County,0.06
+McDonald's,d928d706-6d7b-4d91-a17c-86e0dbcf4598,Suwanee,Gwinnett County,Wendy's,391ce477-0808-49fe-b8ec-f01cf8e537bd,Suwanee,Gwinnett County,0.06
+Wendy's,4b99b296-94de-4e27-a5fc-2b1eff62d049,Cartersville,Bartow County,Taco Bell,cf1f1c57-1aef-4b3c-9748-b7028bc2d0d8,Cartersville,Bartow County,0.06
+Taco Bell,cf1f1c57-1aef-4b3c-9748-b7028bc2d0d8,Cartersville,Bartow County,Wendy's,4b99b296-94de-4e27-a5fc-2b1eff62d049,Cartersville,Bartow County,0.06
+McDonald's,3b2c4bc9-f613-4aeb-a975-aa69790ba617,Dallas,Paulding County,Taco Bell,500b08db-4005-4ab5-84a7-39d92949f1e4,Dallas,Paulding County,0.06
+Taco Bell,500b08db-4005-4ab5-84a7-39d92949f1e4,Dallas,Paulding County,McDonald's,3b2c4bc9-f613-4aeb-a975-aa69790ba617,Dallas,Paulding County,0.06
+Wendy's,28bc7ea7-1d6b-4f2c-9657-74d9edb2c00b,Canton,Cherokee County,Taco Bell,4918c1a6-cb7f-4174-b15d-6cd129592aaa,Canton,Cherokee County,0.06
+Taco Bell,4918c1a6-cb7f-4174-b15d-6cd129592aaa,Canton,Cherokee County,Wendy's,28bc7ea7-1d6b-4f2c-9657-74d9edb2c00b,Canton,Cherokee County,0.06
+Wendy's,03630e86-dc5b-4862-9af0-22ecaede1b00,Atlanta,Fulton County,McDonald's,aa62c16c-aec7-4e1d-8198-cd769dd6e8aa,Atlanta,Fulton County,0.06
+McDonald's,aa62c16c-aec7-4e1d-8198-cd769dd6e8aa,Atlanta,Fulton County,Wendy's,03630e86-dc5b-4862-9af0-22ecaede1b00,Atlanta,Fulton County,0.06
+Burger King,2bca416f-77b0-43d3-ab56-cb4520f3bb01,Madison,Morgan County,Wendy's,376524f6-6a12-4319-aa34-ecc916b5517c,Madison,Morgan County,0.06
+Wendy's,376524f6-6a12-4319-aa34-ecc916b5517c,Madison,Morgan County,Burger King,2bca416f-77b0-43d3-ab56-cb4520f3bb01,Madison,Morgan County,0.06
+McDonald's,49131e84-21b3-4ff2-93a8-1053e713bcdd,Canton,Cherokee County,Taco Bell,569893b9-6d48-44e7-85bf-1807383c38e1,Canton,Cherokee County,0.06
+Taco Bell,569893b9-6d48-44e7-85bf-1807383c38e1,Canton,Cherokee County,McDonald's,49131e84-21b3-4ff2-93a8-1053e713bcdd,Canton,Cherokee County,0.06
+McDonald's,9525d7ab-bd57-4738-ae6c-5b2d8f4d227e,Winder,Barrow County,Burger King,69ab9907-7f5c-40b0-82a1-c6132c51a6fe,Winder,Barrow County,0.06
+Wendy's,2584e18d-b765-4a01-b974-720655121692,Locust Grove,Henry County,Burger King,bc19add5-0414-43a4-8ce9-e3e65e8d9e92,Locust Grove,Henry County,0.06
+Burger King,bc19add5-0414-43a4-8ce9-e3e65e8d9e92,Locust Grove,Henry County,Wendy's,2584e18d-b765-4a01-b974-720655121692,Locust Grove,Henry County,0.06
+Wendy's,41873fc8-0a9b-40d2-b4e6-b978d7f73421,Acworth,Cobb County,McDonald's,758e8ab9-b70b-49fa-a082-e0a0b8ca7fb3,Acworth,Cobb County,0.06
+McDonald's,758e8ab9-b70b-49fa-a082-e0a0b8ca7fb3,Acworth,Cobb County,Wendy's,41873fc8-0a9b-40d2-b4e6-b978d7f73421,Acworth,Cobb County,0.06
+Burger King,02846fa5-bae8-4575-a376-141b9e020ea8,Lawrenceville,Gwinnett County,Taco Bell,a34fdd9f-ba81-495b-99d1-700df4d6c336,Lawrenceville,Gwinnett County,0.07
+Taco Bell,621501cf-e875-445b-bbaa-b9ea08867a37,Monroe,Walton County,Wendy's,914771d2-d2c4-4bdd-a8c2-c90f0c64126b,Monroe,Walton County,0.07
+Wendy's,914771d2-d2c4-4bdd-a8c2-c90f0c64126b,Monroe,Walton County,Taco Bell,621501cf-e875-445b-bbaa-b9ea08867a37,Monroe,Walton County,0.07
+Taco Bell,4fc02fba-80d1-4b4e-a918-cafc35b3c63a,Cumming,Forsyth County,McDonald's,5c53db4b-55ce-4148-8b4d-bb67184840d4,Cumming,Forsyth County,0.07
+McDonald's,5c53db4b-55ce-4148-8b4d-bb67184840d4,Cumming,Forsyth County,Taco Bell,4fc02fba-80d1-4b4e-a918-cafc35b3c63a,Cumming,Forsyth County,0.07
+Burger King,2090ec15-9e0b-418a-a394-45e9aaa61ed4,Snellville,Gwinnett County,Taco Bell,92c541d4-d3d3-4353-acd6-fec3b2ba748d,Snellville,Gwinnett County,0.07
+Taco Bell,92c541d4-d3d3-4353-acd6-fec3b2ba748d,Snellville,Gwinnett County,Burger King,2090ec15-9e0b-418a-a394-45e9aaa61ed4,Snellville,Gwinnett County,0.07
+Wendy's,6557a874-9e52-44b6-984f-b3b525e3d93f,Mableton,Cobb County,McDonald's,80e8bdc2-02ca-4a90-ba63-2293d466c45e,Mableton,Cobb County,0.07
+McDonald's,80e8bdc2-02ca-4a90-ba63-2293d466c45e,Mableton,Cobb County,Wendy's,6557a874-9e52-44b6-984f-b3b525e3d93f,Mableton,Cobb County,0.07
+Taco Bell,0e9f3e03-b6f2-4988-a95a-326e4b2a4b98,Loganville,Walton County,Wendy's,5d7b507c-0563-41a6-9d0f-b3fb625b2e4a,Loganville,Walton County,0.07
+Wendy's,5d7b507c-0563-41a6-9d0f-b3fb625b2e4a,Loganville,Walton County,Taco Bell,0e9f3e03-b6f2-4988-a95a-326e4b2a4b98,Loganville,Walton County,0.07
+McDonald's,7adcc84e-7f10-481a-a20c-39fb2bd873cb,Dacula,Gwinnett County,Burger King,9715f129-23bd-4705-a001-67c4c7adbf73,Dacula,Gwinnett County,0.07
+Burger King,9715f129-23bd-4705-a001-67c4c7adbf73,Dacula,Gwinnett County,McDonald's,7adcc84e-7f10-481a-a20c-39fb2bd873cb,Dacula,Gwinnett County,0.07
+Taco Bell,184af02c-43fc-4a22-840c-c1f80d7d4746,Kennesaw,Cobb County,McDonald's,c37c282e-8729-4d67-af81-d1ab9609bfd5,Kennesaw,Cobb County,0.07
+McDonald's,c37c282e-8729-4d67-af81-d1ab9609bfd5,Kennesaw,Cobb County,Taco Bell,184af02c-43fc-4a22-840c-c1f80d7d4746,Kennesaw,Cobb County,0.07
+McDonald's,47c7234c-2c7c-4a81-a4cf-550f3cdf524a,Lilburn,Gwinnett County,Burger King,8ec54a24-4365-4db5-b104-a19441c168f3,Lilburn,Gwinnett County,0.07
+Burger King,8ec54a24-4365-4db5-b104-a19441c168f3,Lilburn,Gwinnett County,McDonald's,47c7234c-2c7c-4a81-a4cf-550f3cdf524a,Lilburn,Gwinnett County,0.07
+McDonald's,2ab5e2e2-4d1d-4614-928c-0e096b661b4e,Adairsville,Bartow County,Burger King,db8c797c-7708-4cb5-9051-50ef42fb662f,Adairsville,Bartow County,0.07
+McDonald's,94231711-2672-4b48-93eb-978ea607617e,Griffin,Spalding County,Taco Bell,ef4330ea-d1e5-4242-a825-e7c3d2c7a0db,Griffin,Spalding County,0.07
+Taco Bell,ef4330ea-d1e5-4242-a825-e7c3d2c7a0db,Griffin,Spalding County,McDonald's,94231711-2672-4b48-93eb-978ea607617e,Griffin,Spalding County,0.07
+Taco Bell,6ef6ee02-56ce-41b6-a686-70e6cfc37027,Peachtree Corners,Gwinnett County,Wendy's,f2e2eb07-8d8a-4ffa-a494-ffcfa56dd45c,Peachtree Corners,Gwinnett County,0.07
+Wendy's,f2e2eb07-8d8a-4ffa-a494-ffcfa56dd45c,Peachtree Corners,Gwinnett County,Taco Bell,6ef6ee02-56ce-41b6-a686-70e6cfc37027,Peachtree Corners,Gwinnett County,0.07
+Burger King,27a47d89-274d-421c-8c89-e6f274b26f2e,McDonough,Henry County,McDonald's,319360d1-0ada-407a-9b45-b67ec09da945,McDonough,Henry County,0.07
+McDonald's,319360d1-0ada-407a-9b45-b67ec09da945,McDonough,Henry County,Burger King,27a47d89-274d-421c-8c89-e6f274b26f2e,McDonough,Henry County,0.07
+McDonald's,c749669d-0bf1-4c09-850a-df83d10db38b,Peachtree City,Fayette County,Wendy's,ebf0319f-d6d3-451b-bde3-2ecf7a3c36d8,Peachtree City,Fayette County,0.07
+Wendy's,ebf0319f-d6d3-451b-bde3-2ecf7a3c36d8,Peachtree City,Fayette County,McDonald's,c749669d-0bf1-4c09-850a-df83d10db38b,Peachtree City,Fayette County,0.07
+Wendy's,7f7d85fd-c9c6-4359-8d59-66e96e0aecbc,Jonesboro,Clayton County,Burger King,db3b7080-8835-48c4-b275-45044cb8fa23,Jonesboro,Clayton County,0.07
+Burger King,db3b7080-8835-48c4-b275-45044cb8fa23,Jonesboro,Clayton County,Wendy's,7f7d85fd-c9c6-4359-8d59-66e96e0aecbc,Jonesboro,Clayton County,0.07
+Burger King,e121e1ea-e493-48fb-ad24-8ab234d46c26,Kennesaw,Cobb County,McDonald's,c37c282e-8729-4d67-af81-d1ab9609bfd5,Kennesaw,Cobb County,0.07
+Burger King,009fbb1f-f03a-4c59-9d9e-d7f38ca8a368,Cumming,Forsyth County,Wendy's,dcb876a0-f62a-461e-89f7-564cc69979d5,Cumming,Forsyth County,0.07
+Wendy's,dcb876a0-f62a-461e-89f7-564cc69979d5,Cumming,Forsyth County,Burger King,009fbb1f-f03a-4c59-9d9e-d7f38ca8a368,Cumming,Forsyth County,0.07
+Burger King,c19f3832-ef85-4347-9dbe-77bd1c2e5a2e,Dacula,Gwinnett County,Wendy's,d8dc2e60-8819-43ec-a17c-7198394204ec,Dacula,Gwinnett County,0.08
+Wendy's,d8dc2e60-8819-43ec-a17c-7198394204ec,Dacula,Gwinnett County,Burger King,c19f3832-ef85-4347-9dbe-77bd1c2e5a2e,Dacula,Gwinnett County,0.08
+Wendy's,612e56b5-5a63-470c-9e73-46ea15ea579e,Douglasville,Douglas County,McDonald's,ef9aed58-af51-4c23-8093-7fef90a87aac,Douglasville,Douglas County,0.08
+McDonald's,ef9aed58-af51-4c23-8093-7fef90a87aac,Douglasville,Douglas County,Wendy's,612e56b5-5a63-470c-9e73-46ea15ea579e,Douglasville,Douglas County,0.08
+Taco Bell,82d50824-d7b2-46f2-93bf-4e2f5cf5725c,McDonough,Henry County,Burger King,c55cdf54-76db-4554-a6df-cf164b91f385,McDonough,Henry County,0.08
+Burger King,c55cdf54-76db-4554-a6df-cf164b91f385,McDonough,Henry County,Taco Bell,82d50824-d7b2-46f2-93bf-4e2f5cf5725c,McDonough,Henry County,0.08
+Burger King,9ca2f446-be64-4470-b272-1c53841aee11,Jackson,Butts County,McDonald's,77872674-f1ef-4fe4-ad0d-a8bafea126f6,Jackson,Butts County,0.08
+Taco Bell,a7ef78da-8173-4ae2-aa0c-cac4fa91f548,Woodstock,Cherokee County,Burger King,eeca4911-1cf6-4afa-8006-cb3dbbbca15c,Woodstock,Cherokee County,0.08
+Burger King,eeca4911-1cf6-4afa-8006-cb3dbbbca15c,Woodstock,Cherokee County,Taco Bell,a7ef78da-8173-4ae2-aa0c-cac4fa91f548,Woodstock,Cherokee County,0.08
+McDonald's,6783023e-9849-47a1-bc71-e21398d8aebd,Marietta,Cobb County,Taco Bell,d3faf135-97a6-43cf-9a9e-cb8be6919272,Marietta,Cobb County,0.08
+Taco Bell,d3faf135-97a6-43cf-9a9e-cb8be6919272,Marietta,Cobb County,McDonald's,6783023e-9849-47a1-bc71-e21398d8aebd,Marietta,Cobb County,0.08
+Wendy's,37ac2ed9-4b3d-4992-96f8-cc2920596101,Atlanta,Fulton County,Taco Bell,e0330719-c5aa-4076-9072-68f6cfdff885,Atlanta,Fulton County,0.08
+Taco Bell,e0330719-c5aa-4076-9072-68f6cfdff885,Atlanta,Fulton County,Wendy's,37ac2ed9-4b3d-4992-96f8-cc2920596101,Atlanta,Fulton County,0.08
+McDonald's,54b55e15-2a92-443c-bb33-eab64172983f,Fairburn,Fulton County,Wendy's,abd484ab-4dce-498d-979b-a4828741297a,Fairburn,Fulton County,0.08
+Wendy's,abd484ab-4dce-498d-979b-a4828741297a,Fairburn,Fulton County,McDonald's,54b55e15-2a92-443c-bb33-eab64172983f,Fairburn,Fulton County,0.08
+McDonald's,59ddfd4b-3de6-461b-9562-76d6df59da03,Smyrna,Cobb County,Burger King,a6c62988-f310-49fb-a933-e46ca754f08d,Smyrna,Cobb County,0.08
+Burger King,a6c62988-f310-49fb-a933-e46ca754f08d,Smyrna,Cobb County,McDonald's,59ddfd4b-3de6-461b-9562-76d6df59da03,Smyrna,Cobb County,0.08
+Taco Bell,68fa2a13-8fa0-41d6-8936-ed0567eaef38,Grayson,Gwinnett County,McDonald's,aee61277-6be2-4a45-aec6-131183feb424,Grayson,Gwinnett County,0.08
+McDonald's,aee61277-6be2-4a45-aec6-131183feb424,Grayson,Gwinnett County,Taco Bell,68fa2a13-8fa0-41d6-8936-ed0567eaef38,Grayson,Gwinnett County,0.08
+Burger King,25805ee8-5d12-40b1-bc22-5f62ed6248dc,Hiram,Paulding County,McDonald's,75a99179-543a-41cc-8c67-a74a340a84cb,Hiram,Paulding County,0.08
+McDonald's,75a99179-543a-41cc-8c67-a74a340a84cb,Hiram,Paulding County,Burger King,25805ee8-5d12-40b1-bc22-5f62ed6248dc,Hiram,Paulding County,0.08
+Wendy's,a1a3fd89-b908-4fe3-ab2c-9961b1066e56,Suwanee,Gwinnett County,Burger King,a441a657-8c87-4a5f-a3e0-375b68d46a23,Suwanee,Gwinnett County,0.08
+Burger King,a441a657-8c87-4a5f-a3e0-375b68d46a23,Suwanee,Gwinnett County,Wendy's,a1a3fd89-b908-4fe3-ab2c-9961b1066e56,Suwanee,Gwinnett County,0.08
+Wendy's,492fc7cd-9cab-4de2-847a-1be56792e862,Lawrenceville,Gwinnett County,McDonald's,4f4f1a38-8bc8-4a30-9574-916e1ba8a3af,Lawrenceville,Gwinnett County,0.08
+McDonald's,4f4f1a38-8bc8-4a30-9574-916e1ba8a3af,Lawrenceville,Gwinnett County,Wendy's,492fc7cd-9cab-4de2-847a-1be56792e862,Lawrenceville,Gwinnett County,0.08
+Taco Bell,c3ba8e14-9563-41ee-a5c6-11543b291043,Stockbridge,Henry County,Wendy's,341d2568-b11d-40db-8734-b834d2188f3b,Stockbridge,Henry County,0.09
+Burger King,10e50ab0-ed47-4cde-8a30-662fa09f5649,Decatur,DeKalb County,Wendy's,3f93370c-684d-453e-a00a-eba835844250,Decatur,DeKalb County,0.09
+Wendy's,3f93370c-684d-453e-a00a-eba835844250,Decatur,DeKalb County,Burger King,10e50ab0-ed47-4cde-8a30-662fa09f5649,Decatur,DeKalb County,0.09
+McDonald's,7bb53f66-ad35-4593-90d9-11d3d19dc705,Sandy Springs,Fulton County,Burger King,bd85f687-0722-4228-95e5-d57e6948ccbf,Atlanta,Fulton County,0.09
+Burger King,bd85f687-0722-4228-95e5-d57e6948ccbf,Atlanta,Fulton County,McDonald's,7bb53f66-ad35-4593-90d9-11d3d19dc705,Sandy Springs,Fulton County,0.09
+Taco Bell,9e2e67e3-a30b-4718-a39d-66031cf32450,Lawrenceville,Gwinnett County,McDonald's,dcf39f47-94c1-47d8-88f8-b698f6a23070,Lawrenceville,Gwinnett County,0.09
+McDonald's,dcf39f47-94c1-47d8-88f8-b698f6a23070,Lawrenceville,Gwinnett County,Taco Bell,9e2e67e3-a30b-4718-a39d-66031cf32450,Lawrenceville,Gwinnett County,0.09
+McDonald's,266edf02-8108-4386-84b0-4dddd7e9c1cf,McDonough,Henry County,Wendy's,c5b9ab45-492a-4b22-a73f-797cbae58833,McDonough,Henry County,0.09
+McDonald's,064f29b4-91c9-456c-a8b6-d79d1c9db55c,South Fulton,Fulton County,Taco Bell,772b7c20-9a6c-4939-925a-0db297d82d08,South Fulton,Fulton County,0.09
+Taco Bell,772b7c20-9a6c-4939-925a-0db297d82d08,South Fulton,Fulton County,McDonald's,064f29b4-91c9-456c-a8b6-d79d1c9db55c,South Fulton,Fulton County,0.09
+Taco Bell,8d3baa3c-256f-49d2-9c9a-d72384dce1ee,Smyrna,Cobb County,Wendy's,afb11fb4-361d-42ac-85b3-db9847c96734,Smyrna,Cobb County,0.09
+Wendy's,afb11fb4-361d-42ac-85b3-db9847c96734,Smyrna,Cobb County,Taco Bell,8d3baa3c-256f-49d2-9c9a-d72384dce1ee,Smyrna,Cobb County,0.09
+Burger King,6cbd6b40-66a6-49d4-811d-931864834844,Newnan,Coweta County,Wendy's,db520a98-3d2e-4bfa-9a10-d0ad87fc8ffc,Newnan,Coweta County,0.09
+Wendy's,db520a98-3d2e-4bfa-9a10-d0ad87fc8ffc,Newnan,Coweta County,Burger King,6cbd6b40-66a6-49d4-811d-931864834844,Newnan,Coweta County,0.09
+Wendy's,311d10e2-eddf-49db-bb9e-a8f2368356d3,Riverdale,Clayton County,Taco Bell,e6b19cef-9e34-4849-a8cc-760218683c9a,Riverdale,Clayton County,0.09
+Taco Bell,e6b19cef-9e34-4849-a8cc-760218683c9a,Riverdale,Clayton County,Wendy's,311d10e2-eddf-49db-bb9e-a8f2368356d3,Riverdale,Clayton County,0.09
+Burger King,3ace1e9c-4eae-4aef-a939-4c0f390a7e71,Norcross,Gwinnett County,McDonald's,b26bae9a-4944-4c0a-8e96-e1bd868895fa,Norcross,Gwinnett County,0.09
+McDonald's,b26bae9a-4944-4c0a-8e96-e1bd868895fa,Norcross,Gwinnett County,Burger King,3ace1e9c-4eae-4aef-a939-4c0f390a7e71,Norcross,Gwinnett County,0.09
+Taco Bell,a23e17d9-139d-4d8c-b9fc-7e4739880935,Lawrenceville,Gwinnett County,Wendy's,b35589b1-e470-4031-8b13-7a02de8d22e8,Lawrenceville,Gwinnett County,0.10
+Wendy's,b35589b1-e470-4031-8b13-7a02de8d22e8,Lawrenceville,Gwinnett County,Taco Bell,a23e17d9-139d-4d8c-b9fc-7e4739880935,Lawrenceville,Gwinnett County,0.10
+Burger King,01890b4f-2c18-4ba8-a743-8b200f4d30ff,Decatur,DeKalb County,Taco Bell,66586026-85bf-4790-a130-b1973ba8d71d,Decatur,DeKalb County,0.10
+Taco Bell,66586026-85bf-4790-a130-b1973ba8d71d,Decatur,DeKalb County,Burger King,01890b4f-2c18-4ba8-a743-8b200f4d30ff,Decatur,DeKalb County,0.10
+McDonald's,06aa1c43-7d15-40b5-88f1-1cf804cb74b4,Hapeville,Fulton County,Wendy's,9374819b-3c53-4d68-8f6e-eb8f8c56a365,Hapeville,Fulton County,0.10
+Wendy's,9374819b-3c53-4d68-8f6e-eb8f8c56a365,Hapeville,Fulton County,McDonald's,06aa1c43-7d15-40b5-88f1-1cf804cb74b4,Hapeville,Fulton County,0.10
+McDonald's,e0608a72-1128-4b0b-bed8-2cb1101c5723,Locust Grove,Henry County,Burger King,bc19add5-0414-43a4-8ce9-e3e65e8d9e92,Locust Grove,Henry County,0.10
+Wendy's,37d00f98-5c94-4046-bbbe-599d380fe1bd,Griffin,Spalding County,McDonald's,94231711-2672-4b48-93eb-978ea607617e,Griffin,Spalding County,0.10
+McDonald's,1964d408-e751-41e4-817c-a79be60cba97,Woodstock,Cherokee County,Taco Bell,a7ef78da-8173-4ae2-aa0c-cac4fa91f548,Woodstock,Cherokee County,0.10
+Taco Bell,74be4ddc-07ad-41eb-a0d7-2a1942a9cd11,Kennesaw,Cobb County,Wendy's,f82befa2-a012-49fd-995e-92d176635373,Kennesaw,Cobb County,0.10
+Wendy's,f82befa2-a012-49fd-995e-92d176635373,Kennesaw,Cobb County,Taco Bell,74be4ddc-07ad-41eb-a0d7-2a1942a9cd11,Kennesaw,Cobb County,0.10
+Taco Bell,b6bba880-8226-4391-a8ea-16691c6792f4,Douglasville,Douglas County,McDonald's,c849cff2-ba36-47ed-87e3-f855391ccb15,Lithia Springs,Douglas County,0.10
+Wendy's,021823ba-2e5f-4611-afc5-b7b53d48ae93,Atlanta,DeKalb County,Taco Bell,fb46f89c-e4ba-4e7b-b08f-c45578602fe0,Atlanta,DeKalb County,0.10
+Taco Bell,fb46f89c-e4ba-4e7b-b08f-c45578602fe0,Atlanta,DeKalb County,Wendy's,021823ba-2e5f-4611-afc5-b7b53d48ae93,Atlanta,DeKalb County,0.10
+Burger King,9340fe85-d1c6-49d1-9662-bb2588136e0d,Forest Park,Clayton County,McDonald's,de2e17af-7dc7-4e5d-b9b0-59d71e71b1a0,Forest Park,Clayton County,0.10
+McDonald's,de2e17af-7dc7-4e5d-b9b0-59d71e71b1a0,Forest Park,Clayton County,Burger King,9340fe85-d1c6-49d1-9662-bb2588136e0d,Forest Park,Clayton County,0.10
+Burger King,e6010d3f-28c5-4bb1-92ca-ed8ce2ed4f7d,College Park,Fulton County,McDonald's,49303cb3-aa99-46b2-9605-40b997200a10,College Park,Fulton County,0.10
+Taco Bell,957773a0-1f73-489d-9ea6-baabaac6eb9b,Union City,Fulton County,Burger King,42657ecc-e969-4684-acd6-84e5577775d1,Union City,Fulton County,0.11
+Wendy's,06b1f06d-1cf4-4d4d-95bf-b9c9fc547a5d,Lawrenceville,Gwinnett County,Taco Bell,9e2e67e3-a30b-4718-a39d-66031cf32450,Lawrenceville,Gwinnett County,0.11
+McDonald's,1235645d-fe88-4a19-a986-4a7d52f25142,Villa Rica,Carroll County,Wendy's,7a50041a-3989-4848-879e-d6abc6e1799e,Villa Rica,Carroll County,0.11
+Wendy's,7a50041a-3989-4848-879e-d6abc6e1799e,Villa Rica,Carroll County,McDonald's,1235645d-fe88-4a19-a986-4a7d52f25142,Villa Rica,Carroll County,0.11
+Burger King,8140a7a6-4e87-484b-a751-22dd8951891f,Conyers,Rockdale County,Wendy's,bcdd9acf-faae-42f3-8c3e-d64ab7648cbf,Conyers,Rockdale County,0.11
+Wendy's,bcdd9acf-faae-42f3-8c3e-d64ab7648cbf,Conyers,Rockdale County,Burger King,8140a7a6-4e87-484b-a751-22dd8951891f,Conyers,Rockdale County,0.11
+Wendy's,aefda795-fae3-4c07-bccf-1541fedb4404,Hampton,Henry County,Burger King,e8cf9698-d607-4ab4-a9e8-33e3cc418054,Hampton,Henry County,0.11
+Burger King,e8cf9698-d607-4ab4-a9e8-33e3cc418054,Hampton,Henry County,Wendy's,aefda795-fae3-4c07-bccf-1541fedb4404,Hampton,Henry County,0.11
+Taco Bell,a791d604-09e7-475c-9aac-e4c63d4e09c8,Marietta,Cobb County,McDonald's,f25fb83f-71b5-43a3-90b8-c293ede6c75f,Marietta,Cobb County,0.11
+McDonald's,f25fb83f-71b5-43a3-90b8-c293ede6c75f,Marietta,Cobb County,Taco Bell,a791d604-09e7-475c-9aac-e4c63d4e09c8,Marietta,Cobb County,0.11
+Wendy's,3e43179c-c92b-4de4-8c50-386b4f556c63,Marietta,Cobb County,McDonald's,f25fb83f-71b5-43a3-90b8-c293ede6c75f,Marietta,Cobb County,0.11
+Wendy's,e98d9e5e-0418-498f-9263-577d991e645a,Dallas,Paulding County,Taco Bell,500b08db-4005-4ab5-84a7-39d92949f1e4,Dallas,Paulding County,0.11
+Taco Bell,cf090533-0d7a-4eaf-b080-da6155b0adbc,Ellenwood,DeKalb County,Wendy's,db909e00-c9bc-4049-aa68-5972b0d4b6fc,Ellenwood,DeKalb County,0.11
+Wendy's,db909e00-c9bc-4049-aa68-5972b0d4b6fc,Ellenwood,DeKalb County,Taco Bell,cf090533-0d7a-4eaf-b080-da6155b0adbc,Ellenwood,DeKalb County,0.11
+Burger King,2b463890-82b4-43fb-acf9-25c13ff85479,Atlanta,Fulton County,Taco Bell,e0330719-c5aa-4076-9072-68f6cfdff885,Atlanta,Fulton County,0.12
+Taco Bell,67413d14-5565-4f6b-bf96-b341e97ac99c,Douglasville,Douglas County,Burger King,85f6cf11-7480-4115-b6a7-5028b2df614c,Douglasville,Douglas County,0.12
+Burger King,85f6cf11-7480-4115-b6a7-5028b2df614c,Douglasville,Douglas County,Taco Bell,67413d14-5565-4f6b-bf96-b341e97ac99c,Douglasville,Douglas County,0.12
+Taco Bell,043d9b8d-4ac2-478c-b84b-95744ff3434d,Conyers,Rockdale County,Burger King,faf36836-2781-48db-a018-5b56445ff27a,Conyers,Rockdale County,0.12
+Burger King,faf36836-2781-48db-a018-5b56445ff27a,Conyers,Rockdale County,Taco Bell,043d9b8d-4ac2-478c-b84b-95744ff3434d,Conyers,Rockdale County,0.12
+McDonald's,94b74993-7ec1-4a14-91c1-6d004492366c,Duluth,Gwinnett County,Wendy's,d51e1721-f6b2-4f20-bbd3-450767237de7,Duluth,Gwinnett County,0.12
+Wendy's,d51e1721-f6b2-4f20-bbd3-450767237de7,Duluth,Gwinnett County,McDonald's,94b74993-7ec1-4a14-91c1-6d004492366c,Duluth,Gwinnett County,0.12
+McDonald's,05392007-179b-4429-82a1-d6fc6fc46277,Bremen,Haralson County,Wendy's,b6e6f235-9630-4c6c-b6f0-a0c4089c3cd9,Bremen,Haralson County,0.12
+Wendy's,b6e6f235-9630-4c6c-b6f0-a0c4089c3cd9,Bremen,Haralson County,McDonald's,05392007-179b-4429-82a1-d6fc6fc46277,Bremen,Haralson County,0.12
+McDonald's,4cf59958-d58f-4c59-a599-332d43c55d75,Cumming,Forsyth County,Burger King,009fbb1f-f03a-4c59-9d9e-d7f38ca8a368,Cumming,Forsyth County,0.12
+Wendy's,39e62508-5da8-4589-8856-206815e35307,Atlanta,Fulton County,Burger King,5fd88b1e-24b8-4cd9-bf30-fc81b368031b,Atlanta,Fulton County,0.12
+Burger King,5fd88b1e-24b8-4cd9-bf30-fc81b368031b,Atlanta,Fulton County,Wendy's,39e62508-5da8-4589-8856-206815e35307,Atlanta,Fulton County,0.12
+McDonald's,d3077361-cf9e-4065-84ad-4fa5dea1e6a8,Cartersville,Bartow County,Wendy's,df051096-358a-4df2-991e-b3482aa70d1d,Cartersville,Bartow County,0.12
+Wendy's,df051096-358a-4df2-991e-b3482aa70d1d,Cartersville,Bartow County,McDonald's,d3077361-cf9e-4065-84ad-4fa5dea1e6a8,Cartersville,Bartow County,0.12
+Taco Bell,6de5516f-e875-44bf-a996-e3fbc2908b1a,Alpharetta,Fulton County,McDonald's,ecc4b8f7-4733-4f72-a5f7-d7496f57475a,Alpharetta,Fulton County,0.12
+McDonald's,ecc4b8f7-4733-4f72-a5f7-d7496f57475a,Alpharetta,Fulton County,Taco Bell,6de5516f-e875-44bf-a996-e3fbc2908b1a,Alpharetta,Fulton County,0.12
+Wendy's,4cadf71b-a7ac-4654-9212-2c0f0c1b7172,Atlanta,Fulton County,McDonald's,b5b31302-0377-4d1d-989c-de6a479848c7,Atlanta,Fulton County,0.12
+Taco Bell,210c101f-b91f-4a97-aba4-fd03f53ce92f,Newnan,Coweta County,McDonald's,7d4f8836-9e88-4e3a-9f13-0d0696d5c65c,Newnan,Coweta County,0.12
+McDonald's,7d4f8836-9e88-4e3a-9f13-0d0696d5c65c,Newnan,Coweta County,Taco Bell,210c101f-b91f-4a97-aba4-fd03f53ce92f,Newnan,Coweta County,0.12
+McDonald's,4194d80d-9578-4b54-951d-da7747d553fe,Stone Mountain,DeKalb County,Burger King,5f8d6bd6-6b64-4c45-bafd-28aa2c9b5880,Stone Mountain,DeKalb County,0.12
+Burger King,5f8d6bd6-6b64-4c45-bafd-28aa2c9b5880,Stone Mountain,DeKalb County,McDonald's,4194d80d-9578-4b54-951d-da7747d553fe,Stone Mountain,DeKalb County,0.12
+McDonald's,461bee68-167c-45f6-b437-ae14715ebf5a,Cartersville,Bartow County,Burger King,d0a64222-16f2-43fc-a802-70e4ef66f71a,Cartersville,Bartow County,0.12
+McDonald's,017d886d-6ef8-4006-8235-6233b7515765,Griffin,Spalding County,Taco Bell,e6117dae-3f4c-445a-904c-877db52ea3ab,Griffin,Spalding County,0.12
+Taco Bell,e6117dae-3f4c-445a-904c-877db52ea3ab,Griffin,Spalding County,McDonald's,017d886d-6ef8-4006-8235-6233b7515765,Griffin,Spalding County,0.12
+Taco Bell,03d6d8b1-3d9b-4e2c-9687-1eb4c16a1ce4,Austell,Cobb County,Wendy's,9e6bafb0-2375-4254-991b-e827c000af2e,Marietta,Cobb County,0.13
+Wendy's,9e6bafb0-2375-4254-991b-e827c000af2e,Marietta,Cobb County,Taco Bell,03d6d8b1-3d9b-4e2c-9687-1eb4c16a1ce4,Austell,Cobb County,0.13
+Wendy's,f10696d6-f09b-4f36-bb2d-5ffa710e1ebb,Marietta,Cobb County,Burger King,58a6c3a8-9cc9-4c73-a44d-1e0052dd7879,Marietta,Cobb County,0.13
+Burger King,6c4ef467-33a3-410f-b396-b20ce8b0664d,Riverdale,Clayton County,Taco Bell,e6b19cef-9e34-4849-a8cc-760218683c9a,Riverdale,Clayton County,0.13
+Wendy's,eee72a2f-8528-4c70-a855-81acc8070ee0,Duluth,Gwinnett County,Burger King,19cfe647-fdd7-4eb2-a410-cc77f43257ad,Duluth,Gwinnett County,0.13
+Taco Bell,086013b3-a519-47a0-84dd-2d019c956108,Norcross,Gwinnett County,McDonald's,4a987f2b-b8d5-4deb-a701-2ae44da996a7,Norcross,Gwinnett County,0.13
+McDonald's,4a987f2b-b8d5-4deb-a701-2ae44da996a7,Norcross,Gwinnett County,Taco Bell,086013b3-a519-47a0-84dd-2d019c956108,Norcross,Gwinnett County,0.13
+McDonald's,0c5e21c3-ffee-4ac8-8f3c-dc4e71b289aa,Lawrenceville,Gwinnett County,Wendy's,2ea494c9-e6f6-4706-b50f-54d3336abec9,Lawrenceville,Gwinnett County,0.13
+Wendy's,2ea494c9-e6f6-4706-b50f-54d3336abec9,Lawrenceville,Gwinnett County,McDonald's,0c5e21c3-ffee-4ac8-8f3c-dc4e71b289aa,Lawrenceville,Gwinnett County,0.13
+Burger King,b5603d59-d7e9-447f-aa40-dd16b5d1d130,Alpharetta,Fulton County,McDonald's,d42d9d23-ed78-4817-997c-8aad4e0009c4,Alpharetta,Fulton County,0.13
+McDonald's,d42d9d23-ed78-4817-997c-8aad4e0009c4,Alpharetta,Fulton County,Burger King,b5603d59-d7e9-447f-aa40-dd16b5d1d130,Alpharetta,Fulton County,0.13
+Taco Bell,3bacf939-9aa5-4b89-9619-eb77a1f63893,Dacula,Gwinnett County,McDonald's,7adcc84e-7f10-481a-a20c-39fb2bd873cb,Dacula,Gwinnett County,0.13
+McDonald's,9f657a67-ae6a-4ba2-b192-f5c2a6044440,Cumming,Forsyth County,Wendy's,15fb4d12-04ca-4ef2-b476-e5db4ab0780d,Cumming,Forsyth County,0.13
+Taco Bell,3e62c908-175d-40c3-b45e-b28f26b9b296,Covington,Newton County,Wendy's,b43586e4-97a6-4045-bcb1-1726a62db8cd,Covington,Newton County,0.13
+Wendy's,b43586e4-97a6-4045-bcb1-1726a62db8cd,Covington,Newton County,Taco Bell,3e62c908-175d-40c3-b45e-b28f26b9b296,Covington,Newton County,0.13
+Taco Bell,6eac8690-e7dd-49ce-989b-bba72112651f,Conyers,Rockdale County,Wendy's,8544775d-3465-4546-84b7-769edd4ad4aa,Conyers,Rockdale County,0.13
+McDonald's,c8387adf-a0ff-4e08-be67-fcfd3222c73c,Marietta,Cobb County,Burger King,d4377fa8-fa1c-469c-9e27-338e798e0128,Marietta,Cobb County,0.13
+Burger King,d4377fa8-fa1c-469c-9e27-338e798e0128,Marietta,Cobb County,McDonald's,c8387adf-a0ff-4e08-be67-fcfd3222c73c,Marietta,Cobb County,0.13
+Taco Bell,bc6d76c5-26b6-405a-b3d8-110b5ff8ff39,Cartersville,Bartow County,Burger King,e6536e84-5abc-4db7-a911-3b2db43d922a,Cartersville,Bartow County,0.13
+Burger King,e6536e84-5abc-4db7-a911-3b2db43d922a,Cartersville,Bartow County,Taco Bell,bc6d76c5-26b6-405a-b3d8-110b5ff8ff39,Cartersville,Bartow County,0.13
+Wendy's,b9c2aff4-79ab-4adb-ad95-d24dc5064a09,East Point,Fulton County,Taco Bell,ef9ec7ef-c13a-4d25-952d-dc52cb8e5800,East Point,Fulton County,0.13
+Taco Bell,ef9ec7ef-c13a-4d25-952d-dc52cb8e5800,East Point,Fulton County,Wendy's,b9c2aff4-79ab-4adb-ad95-d24dc5064a09,East Point,Fulton County,0.13
+McDonald's,f8f086f5-d350-44d4-89ab-e4a8b54f278b,Madison,Morgan County,Wendy's,376524f6-6a12-4319-aa34-ecc916b5517c,Madison,Morgan County,0.14
+McDonald's,618d897a-1c84-4f4c-abb0-b300ac193d6c,Covington,Newton County,Taco Bell,3e62c908-175d-40c3-b45e-b28f26b9b296,Covington,Newton County,0.14
+McDonald's,11876cce-53e7-4c20-8216-31fb6fa61736,Buford,Gwinnett County,Taco Bell,d858e86f-dc59-4bce-baaf-5a51887d8624,Buford,Gwinnett County,0.14
+Taco Bell,d858e86f-dc59-4bce-baaf-5a51887d8624,Buford,Gwinnett County,McDonald's,11876cce-53e7-4c20-8216-31fb6fa61736,Buford,Gwinnett County,0.14
+Taco Bell,09766ade-b7cb-4835-b770-e561799ef8a6,Norcross,Gwinnett County,McDonald's,b26bae9a-4944-4c0a-8e96-e1bd868895fa,Norcross,Gwinnett County,0.14
+Wendy's,9a758451-69de-48f0-86ef-3edebb559a03,Cartersville,Bartow County,McDonald's,b343c0ea-7f74-4da5-b5e8-a1f789702c65,Cartersville,Bartow County,0.14
+McDonald's,b343c0ea-7f74-4da5-b5e8-a1f789702c65,Cartersville,Bartow County,Wendy's,9a758451-69de-48f0-86ef-3edebb559a03,Cartersville,Bartow County,0.14
+McDonald's,56bbb8dc-6ef2-4e22-88ed-ba9ecbdcdf50,McDonough,Henry County,Taco Bell,7437c2fb-beea-4ec2-b557-43f74b7bdc70,McDonough,Henry County,0.14
+Taco Bell,7437c2fb-beea-4ec2-b557-43f74b7bdc70,McDonough,Henry County,McDonald's,56bbb8dc-6ef2-4e22-88ed-ba9ecbdcdf50,McDonough,Henry County,0.14
+McDonald's,24818726-6901-4baa-9df5-39b735431eaf,Morrow,Clayton County,Wendy's,cf5a72b2-3d67-44d6-94ed-fd8b65d7363a,Morrow,Clayton County,0.14
+Wendy's,cf5a72b2-3d67-44d6-94ed-fd8b65d7363a,Morrow,Clayton County,McDonald's,24818726-6901-4baa-9df5-39b735431eaf,Morrow,Clayton County,0.14
+Taco Bell,1796cb7d-5c3f-49b4-8744-c3afbea88418,Atlanta,Fulton County,Wendy's,5aff438f-ab73-468d-a474-8041d6c110f0,Atlanta,Fulton County,0.14
+Wendy's,5aff438f-ab73-468d-a474-8041d6c110f0,Atlanta,Fulton County,Taco Bell,1796cb7d-5c3f-49b4-8744-c3afbea88418,Atlanta,Fulton County,0.14
+McDonald's,04b22d2a-bfd9-4def-b7e8-486603ca31bb,Temple,Carroll County,Wendy's,b8f83de6-b5a0-4cb6-bfdf-06d734e446e8,Temple,Carroll County,0.14
+Wendy's,b8f83de6-b5a0-4cb6-bfdf-06d734e446e8,Temple,Carroll County,McDonald's,04b22d2a-bfd9-4def-b7e8-486603ca31bb,Temple,Carroll County,0.14
+Wendy's,b48d6cd9-5865-4587-81a2-423b89c22190,Atlanta,Fulton County,McDonald's,064f29b4-91c9-456c-a8b6-d79d1c9db55c,South Fulton,Fulton County,0.14
+Taco Bell,a7d8a9a7-d379-43ec-8126-ba28c5f1b284,Cumming,Forsyth County,Burger King,009fbb1f-f03a-4c59-9d9e-d7f38ca8a368,Cumming,Forsyth County,0.15
+Burger King,9e1daf99-a748-478e-9842-786983fbbe72,Lithonia,DeKalb County,McDonald's,9f410bbd-de19-4597-a1ad-82a42e509e12,Lithonia,DeKalb County,0.15
+McDonald's,9f410bbd-de19-4597-a1ad-82a42e509e12,Lithonia,DeKalb County,Burger King,9e1daf99-a748-478e-9842-786983fbbe72,Lithonia,DeKalb County,0.15
+Burger King,7903a57e-f33b-49ac-8951-8072e91b59d8,Cumming,Forsyth County,Wendy's,a7dea129-d7cd-4674-a220-7776a118a9d6,Cumming,Forsyth County,0.15
+Wendy's,a7dea129-d7cd-4674-a220-7776a118a9d6,Cumming,Forsyth County,Burger King,7903a57e-f33b-49ac-8951-8072e91b59d8,Cumming,Forsyth County,0.15
+McDonald's,2b559a05-417b-4e82-a879-1de2a4f2797c,Riverdale,Clayton County,Wendy's,311d10e2-eddf-49db-bb9e-a8f2368356d3,Riverdale,Clayton County,0.15
+McDonald's,e0cdf5b4-6053-4864-aac6-7f54c37f2846,Decatur,DeKalb County,Taco Bell,efe41389-27d3-4fd2-9cc9-34e16393e9f8,Decatur,DeKalb County,0.15
+Taco Bell,efe41389-27d3-4fd2-9cc9-34e16393e9f8,Decatur,DeKalb County,McDonald's,e0cdf5b4-6053-4864-aac6-7f54c37f2846,Decatur,DeKalb County,0.15
+McDonald's,196db388-959e-4005-a856-1f1887ebb444,Lilburn,Gwinnett County,Wendy's,bfd8653a-2a11-406d-9f51-90a560647a67,Lilburn,Gwinnett County,0.15
+Wendy's,bfd8653a-2a11-406d-9f51-90a560647a67,Lilburn,Gwinnett County,McDonald's,196db388-959e-4005-a856-1f1887ebb444,Lilburn,Gwinnett County,0.15
+Burger King,a475d126-2bda-4a7d-b79c-df96f158ad73,Alpharetta,Fulton County,Taco Bell,fd7acaa7-f6af-42d6-bb10-92f7b81387d5,Alpharetta,Fulton County,0.15
+Taco Bell,fd7acaa7-f6af-42d6-bb10-92f7b81387d5,Alpharetta,Fulton County,Burger King,a475d126-2bda-4a7d-b79c-df96f158ad73,Alpharetta,Fulton County,0.15
+McDonald's,67565405-ee8b-4980-90db-816651e0c397,Smyrna,Cobb County,Taco Bell,8d3baa3c-256f-49d2-9c9a-d72384dce1ee,Smyrna,Cobb County,0.15
+Burger King,a4896b9e-d66e-49c9-ade8-ee9c3ea3909a,Lawrenceville,Gwinnett County,Taco Bell,9e2e67e3-a30b-4718-a39d-66031cf32450,Lawrenceville,Gwinnett County,0.16
+McDonald's,34f13339-db78-44c0-97a0-683341ab5db7,Stockbridge,Henry County,Burger King,c84cd9c8-36fe-4ee1-9ca6-a9b3d3e7b6a3,Stockbridge,Henry County,0.16
+Burger King,c84cd9c8-36fe-4ee1-9ca6-a9b3d3e7b6a3,Stockbridge,Henry County,McDonald's,34f13339-db78-44c0-97a0-683341ab5db7,Stockbridge,Henry County,0.16
+McDonald's,695fd44f-3b9f-48aa-8f2b-9e1823a1ad68,Lake City,Clayton County,Burger King,6a268f1f-5597-4d73-8fb0-2fb42f2abf0f,Lake City,Clayton County,0.16
+Burger King,6a268f1f-5597-4d73-8fb0-2fb42f2abf0f,Lake City,Clayton County,McDonald's,695fd44f-3b9f-48aa-8f2b-9e1823a1ad68,Lake City,Clayton County,0.16
+Wendy's,2be5743b-8837-422f-8a4b-2d60ec8ff9e5,Powder Springs,Cobb County,McDonald's,8d30573c-91ea-4b01-97ca-f4b53e483ac3,Powder Springs,Cobb County,0.16
+McDonald's,8d30573c-91ea-4b01-97ca-f4b53e483ac3,Powder Springs,Cobb County,Wendy's,2be5743b-8837-422f-8a4b-2d60ec8ff9e5,Powder Springs,Cobb County,0.16
+McDonald's,1d7648e9-1a59-4609-8b35-43f9d580b789,Buford,Gwinnett County,Wendy's,d4fcca40-8f91-4ce9-8849-7b4050afa06d,Buford,Gwinnett County,0.16
+Wendy's,d4fcca40-8f91-4ce9-8849-7b4050afa06d,Buford,Gwinnett County,McDonald's,1d7648e9-1a59-4609-8b35-43f9d580b789,Buford,Gwinnett County,0.16
+Burger King,a27ed627-3f64-42d5-8ef0-ad3d986b61e2,Temple,Carroll County,McDonald's,04b22d2a-bfd9-4def-b7e8-486603ca31bb,Temple,Carroll County,0.16
+McDonald's,0afc6bac-36fc-49c0-ab3e-04af35823c78,Emerson,Bartow County,Wendy's,4b99b296-94de-4e27-a5fc-2b1eff62d049,Cartersville,Bartow County,0.16
+Burger King,0c7c1c2b-67f3-43fa-8ce7-5dff75a34a71,Covington,Newton County,Taco Bell,212fb53b-909a-44b9-a592-0c37220cace0,Covington,Newton County,0.16
+Taco Bell,212fb53b-909a-44b9-a592-0c37220cace0,Covington,Newton County,Burger King,0c7c1c2b-67f3-43fa-8ce7-5dff75a34a71,Covington,Newton County,0.16
+Taco Bell,8b2299b7-abec-4fbc-974b-818bf313c9ef,Marietta,Cobb County,McDonald's,c77f16da-a9ba-461f-90e7-bbb3cbe08673,Marietta,Cobb County,0.16
+McDonald's,c77f16da-a9ba-461f-90e7-bbb3cbe08673,Marietta,Cobb County,Taco Bell,8b2299b7-abec-4fbc-974b-818bf313c9ef,Marietta,Cobb County,0.16
+McDonald's,f6a19224-0142-480a-8d92-73b65c881185,Atlanta,Fulton County,Wendy's,37ac2ed9-4b3d-4992-96f8-cc2920596101,Atlanta,Fulton County,0.16
+Taco Bell,7b885ec5-9d14-41e4-a887-2556248e5128,Atlanta,DeKalb County,Wendy's,ffe5a457-b430-4737-b408-1a37254bac6c,Atlanta,DeKalb County,0.17
+Wendy's,ffe5a457-b430-4737-b408-1a37254bac6c,Atlanta,DeKalb County,Taco Bell,7b885ec5-9d14-41e4-a887-2556248e5128,Atlanta,DeKalb County,0.17
+Wendy's,366b19ca-0c10-4818-844e-0d4f355bb367,Jackson,Butts County,McDonald's,8a211d89-099b-473e-b5c2-097776e1d083,Jackson,Butts County,0.18
+McDonald's,8a211d89-099b-473e-b5c2-097776e1d083,Jackson,Butts County,Wendy's,366b19ca-0c10-4818-844e-0d4f355bb367,Jackson,Butts County,0.18
+McDonald's,057055c1-2a63-4e5c-9dad-03f714f5b5e7,Dunwoody,DeKalb County,Burger King,2aa50752-3cf2-43d4-b3ff-326e0f569c83,Dunwoody,DeKalb County,0.18
+Burger King,2aa50752-3cf2-43d4-b3ff-326e0f569c83,Dunwoody,DeKalb County,McDonald's,057055c1-2a63-4e5c-9dad-03f714f5b5e7,Dunwoody,DeKalb County,0.18
+Burger King,70c59bc0-c49f-454c-acc5-574fb35a0b4e,Monroe,Walton County,McDonald's,b79d9fcf-88ef-4fcb-a34f-2f2a0afba73a,Monroe,Walton County,0.18
+McDonald's,b79d9fcf-88ef-4fcb-a34f-2f2a0afba73a,Monroe,Walton County,Burger King,70c59bc0-c49f-454c-acc5-574fb35a0b4e,Monroe,Walton County,0.18
+McDonald's,13f41885-9ae4-4dfc-ba20-2710fb95e52c,Mableton,Cobb County,Wendy's,7fa52129-9fc3-4fe7-aef1-c85cb07d9911,Mableton,Cobb County,0.18
+Wendy's,7fa52129-9fc3-4fe7-aef1-c85cb07d9911,Mableton,Cobb County,McDonald's,13f41885-9ae4-4dfc-ba20-2710fb95e52c,Mableton,Cobb County,0.18
+McDonald's,e6f1db93-e5e2-41bf-95b5-c71a32ee9ba0,Dawsonville,Dawson County,Burger King,eaf97865-189c-414a-b15c-b38c8f899d62,Dawsonville,Dawson County,0.18
+Burger King,eaf97865-189c-414a-b15c-b38c8f899d62,Dawsonville,Dawson County,McDonald's,e6f1db93-e5e2-41bf-95b5-c71a32ee9ba0,Dawsonville,Dawson County,0.18
+Burger King,05916ebc-9a68-4c7b-a06c-6285d2278a07,Locust Grove,Henry County,McDonald's,d9d10979-2f21-4d54-b240-126cd53f7852,Locust Grove,Henry County,0.18
+McDonald's,d9d10979-2f21-4d54-b240-126cd53f7852,Locust Grove,Henry County,Burger King,05916ebc-9a68-4c7b-a06c-6285d2278a07,Locust Grove,Henry County,0.18
+Taco Bell,22cb0832-d8aa-4f01-89e9-9d49db30777a,Dawsonville,Dawson County,Wendy's,808b971b-07bb-4dfa-bab5-0a33e791f483,Dawsonville,Dawson County,0.18
+Wendy's,808b971b-07bb-4dfa-bab5-0a33e791f483,Dawsonville,Dawson County,Taco Bell,22cb0832-d8aa-4f01-89e9-9d49db30777a,Dawsonville,Dawson County,0.18
+McDonald's,520cbac2-c8f8-4083-be69-b89faca1419c,Covington,Newton County,Taco Bell,f1c4f22a-1890-47c7-a112-c37cfb3cecbf,Covington,Newton County,0.19
+Taco Bell,996fdb51-ffde-4d80-802b-ea9d6342e909,Stone Mountain,DeKalb County,McDonald's,4194d80d-9578-4b54-951d-da7747d553fe,Stone Mountain,DeKalb County,0.19
+Wendy's,3d7f2897-d0d7-406a-810f-061b751007ba,Dahlonega,Lumpkin County,Taco Bell,d6547a8a-7a00-4a3a-a78e-c17fc4ae6176,Dahlonega,Lumpkin County,0.19
+Taco Bell,d6547a8a-7a00-4a3a-a78e-c17fc4ae6176,Dahlonega,Lumpkin County,Wendy's,3d7f2897-d0d7-406a-810f-061b751007ba,Dahlonega,Lumpkin County,0.19
+Burger King,7dbed6f6-85ea-43fa-9574-a509cb305f93,Grayson,Gwinnett County,McDonald's,aee61277-6be2-4a45-aec6-131183feb424,Grayson,Gwinnett County,0.19
+Burger King,19b860df-daad-4925-85c7-9a4afaf1c139,Canton,Cherokee County,Taco Bell,69afc111-e09a-427c-b5fe-7740946afda8,Canton,Cherokee County,0.19
+Taco Bell,69afc111-e09a-427c-b5fe-7740946afda8,Canton,Cherokee County,Burger King,19b860df-daad-4925-85c7-9a4afaf1c139,Canton,Cherokee County,0.19
+Burger King,009f43d4-5253-4150-b114-a6878f0c10f3,Douglasville,Douglas County,Taco Bell,bde529b9-6cff-45ae-b6ff-45fe7a50d76c,Douglasville,Douglas County,0.19
+Taco Bell,bde529b9-6cff-45ae-b6ff-45fe7a50d76c,Douglasville,Douglas County,Burger King,009f43d4-5253-4150-b114-a6878f0c10f3,Douglasville,Douglas County,0.19
+McDonald's,cca78059-6709-487e-8b4b-10ef96459132,Suwanee,Gwinnett County,Wendy's,a1a3fd89-b908-4fe3-ab2c-9961b1066e56,Suwanee,Gwinnett County,0.19
+McDonald's,efc0c212-1c27-456b-a305-63fb6947c976,Lawrenceville,Gwinnett County,Wendy's,b35589b1-e470-4031-8b13-7a02de8d22e8,Lawrenceville,Gwinnett County,0.19
+McDonald's,bf561a7e-b845-45e2-b31a-4ead26815eed,Woodstock,Cherokee County,Wendy's,f48e57c1-41b3-4a18-95b9-59dd2433ab7f,Woodstock,Cherokee County,0.20
+Wendy's,f48e57c1-41b3-4a18-95b9-59dd2433ab7f,Woodstock,Cherokee County,McDonald's,bf561a7e-b845-45e2-b31a-4ead26815eed,Woodstock,Cherokee County,0.20
+Wendy's,4e426a19-ff56-4c6b-b174-8f12e6f41c68,Jasper,Pickens County,Taco Bell,f241f46f-4c03-4cc9-9a56-1efbd9dbf928,Jasper,Pickens County,0.20
+Taco Bell,f241f46f-4c03-4cc9-9a56-1efbd9dbf928,Jasper,Pickens County,Wendy's,4e426a19-ff56-4c6b-b174-8f12e6f41c68,Jasper,Pickens County,0.20
+Taco Bell,4ecd4026-6750-4ac1-ac9a-30201b478945,Stockbridge,Henry County,McDonald's,edfc8ee6-66be-4df7-9299-b30c55f78343,Stockbridge,Henry County,0.20
+McDonald's,edfc8ee6-66be-4df7-9299-b30c55f78343,Stockbridge,Henry County,Taco Bell,4ecd4026-6750-4ac1-ac9a-30201b478945,Stockbridge,Henry County,0.20
+McDonald's,97205fdb-6c0f-46b8-acfa-b01f650ebcbf,Duluth,Gwinnett County,Wendy's,eee72a2f-8528-4c70-a855-81acc8070ee0,Duluth,Gwinnett County,0.20
+McDonald's,ed8a35f1-68b7-47f9-9b2f-283113b8bb2a,Snellville,Gwinnett County,Taco Bell,92c541d4-d3d3-4353-acd6-fec3b2ba748d,Snellville,Gwinnett County,0.20
+McDonald's,dd1adc36-8514-4e6d-bad1-8e40cc672e9b,Lovejoy,Henry County,Burger King,e8cf9698-d607-4ab4-a9e8-33e3cc418054,Hampton,Henry County,0.21
+Taco Bell,4d0108ad-7709-4f59-893e-97ebdc14727d,Carrollton,Carroll County,Burger King,db7b9af7-a35c-4a29-8d89-f1729f50fcc0,Carrollton,Carroll County,0.21
+Burger King,db7b9af7-a35c-4a29-8d89-f1729f50fcc0,Carrollton,Carroll County,Taco Bell,4d0108ad-7709-4f59-893e-97ebdc14727d,Carrollton,Carroll County,0.21
+Wendy's,65f213a9-5cbd-4194-9171-346848b12d04,Snellville,Gwinnett County,McDonald's,ed8a35f1-68b7-47f9-9b2f-283113b8bb2a,Snellville,Gwinnett County,0.21
+Wendy's,30ad3448-35f3-432c-84d6-042053da2f3b,Lithonia,DeKalb County,Taco Bell,6f2b9a54-e25f-49c6-9163-bf8f102390b5,Lithonia,DeKalb County,0.22
+Taco Bell,6f2b9a54-e25f-49c6-9163-bf8f102390b5,Lithonia,DeKalb County,Wendy's,30ad3448-35f3-432c-84d6-042053da2f3b,Lithonia,DeKalb County,0.22
+McDonald's,2d1d5e12-5467-46cb-89df-255b8e5ac134,Austell,Cobb County,Taco Bell,03d6d8b1-3d9b-4e2c-9687-1eb4c16a1ce4,Austell,Cobb County,0.22
+Wendy's,42cfacfa-2dee-4ae0-b087-a28f3e7db74a,Buford,Gwinnett County,Taco Bell,c42dab18-22cf-45ee-bb2e-205cdcd2547d,Buford,Gwinnett County,0.22
+Taco Bell,c42dab18-22cf-45ee-bb2e-205cdcd2547d,Buford,Gwinnett County,Wendy's,42cfacfa-2dee-4ae0-b087-a28f3e7db74a,Buford,Gwinnett County,0.22
+Taco Bell,93fb5af2-697a-4d4e-aa51-4731dd595622,Conyers,Rockdale County,Wendy's,bcdd9acf-faae-42f3-8c3e-d64ab7648cbf,Conyers,Rockdale County,0.22
+Wendy's,0cf3cf1d-d4a6-4f8e-b53a-cf77343a35e5,Fayetteville,Fayette County,McDonald's,ceaa2f7d-c039-4499-8602-7a82dc4b5b16,Fayetteville,Fayette County,0.22
+McDonald's,ceaa2f7d-c039-4499-8602-7a82dc4b5b16,Fayetteville,Fayette County,Wendy's,0cf3cf1d-d4a6-4f8e-b53a-cf77343a35e5,Fayetteville,Fayette County,0.22
+McDonald's,9599c2dd-d184-4f96-a44d-120caecfd9c3,Lithia Springs,Douglas County,Taco Bell,66f0eb58-372d-4c3b-a288-5e391d540f55,Lithia Springs,Douglas County,0.22
+McDonald's,cef60071-d080-4401-9d1b-84c4fa391b8b,Cartersville,Bartow County,Wendy's,72eb11b6-9a1f-4c47-8985-ebc0c441390e,Cartersville,Bartow County,0.22
+Taco Bell,c71ef463-d38a-4977-ac6d-1b976ed6f5d7,Hiram,Paulding County,McDonald's,75a99179-543a-41cc-8c67-a74a340a84cb,Hiram,Paulding County,0.22
+Burger King,378afa19-3135-4490-b873-3074e1cb641b,Marietta,Cobb County,Wendy's,9e6bafb0-2375-4254-991b-e827c000af2e,Marietta,Cobb County,0.22
+Burger King,42267cf5-6def-4f69-ad67-5e0a1aea29d1,Carrollton,Carroll County,Wendy's,442c3f26-eb90-4d35-aa23-7787b83077e2,Carrollton,Carroll County,0.23
+Wendy's,442c3f26-eb90-4d35-aa23-7787b83077e2,Carrollton,Carroll County,Burger King,42267cf5-6def-4f69-ad67-5e0a1aea29d1,Carrollton,Carroll County,0.23
+Wendy's,c8123811-381b-4fa5-af43-00e3cae334bd,Lilburn,Gwinnett County,McDonald's,fab13504-f162-46a3-b956-0b95e40dd97b,Lilburn,Gwinnett County,0.23
+McDonald's,fab13504-f162-46a3-b956-0b95e40dd97b,Lilburn,Gwinnett County,Wendy's,c8123811-381b-4fa5-af43-00e3cae334bd,Lilburn,Gwinnett County,0.23
+Taco Bell,b7e1abf6-7666-42ff-a984-0a8ecf45d0fa,Fairburn,Fulton County,McDonald's,54b55e15-2a92-443c-bb33-eab64172983f,Fairburn,Fulton County,0.23
+Wendy's,71fae213-1428-4c63-bc2c-a9c3f4c6a9c2,Atlanta,Fulton County,Taco Bell,41bba04c-820b-496e-9789-000518323824,College Park,Fulton County,0.23
+Burger King,5e236981-da85-4321-9175-c458ce426c1b,Dallas,Paulding County,McDonald's,7d475aae-a2e0-4157-ad71-93ee1712bbdf,Dallas,Paulding County,0.23
+McDonald's,7d475aae-a2e0-4157-ad71-93ee1712bbdf,Dallas,Paulding County,Burger King,5e236981-da85-4321-9175-c458ce426c1b,Dallas,Paulding County,0.23
+McDonald's,44aeff48-791b-4dd6-bdaa-63727430b7fe,Dacula,Gwinnett County,Burger King,c19f3832-ef85-4347-9dbe-77bd1c2e5a2e,Dacula,Gwinnett County,0.24
+Taco Bell,57386ae5-94b1-4e32-a353-a5e93f54b4a4,Marietta,Cobb County,Wendy's,59029ea1-6ed5-4e7d-9448-17477258bb4a,Marietta,Cobb County,0.24
+Wendy's,59029ea1-6ed5-4e7d-9448-17477258bb4a,Marietta,Cobb County,Taco Bell,57386ae5-94b1-4e32-a353-a5e93f54b4a4,Marietta,Cobb County,0.24
+McDonald's,86ef10b2-dcfa-4be2-959c-b61f1dfacf6e,Douglasville,Douglas County,Wendy's,e6ea1cd1-df9a-4f31-83d6-82b5286ff7f8,Douglasville,Douglas County,0.24
+Wendy's,e6ea1cd1-df9a-4f31-83d6-82b5286ff7f8,Douglasville,Douglas County,McDonald's,86ef10b2-dcfa-4be2-959c-b61f1dfacf6e,Douglasville,Douglas County,0.24
+Wendy's,f8a8c819-d13f-4043-b006-a6662cdcae8b,Atlanta,Cobb County,McDonald's,59ddfd4b-3de6-461b-9562-76d6df59da03,Smyrna,Cobb County,0.24
+Taco Bell,705f8fdf-200b-41cb-90d5-64cbd0b5b756,Marietta,Cobb County,Wendy's,bdbdd1bc-7b71-456a-bfc0-a292853e5e83,Marietta,Cobb County,0.24
+Wendy's,bdbdd1bc-7b71-456a-bfc0-a292853e5e83,Marietta,Cobb County,Taco Bell,705f8fdf-200b-41cb-90d5-64cbd0b5b756,Marietta,Cobb County,0.24
+Wendy's,7c9f75e8-3054-406f-9d99-0333cadac235,Hiram,Paulding County,Taco Bell,c71ef463-d38a-4977-ac6d-1b976ed6f5d7,Hiram,Paulding County,0.24
+McDonald's,1fd12390-aac6-4802-9ee4-eab609809662,Roswell,Fulton County,Burger King,c6f7346e-b691-4365-bc1e-b2f2dca054bd,Roswell,Fulton County,0.24
+Burger King,c6f7346e-b691-4365-bc1e-b2f2dca054bd,Roswell,Fulton County,McDonald's,1fd12390-aac6-4802-9ee4-eab609809662,Roswell,Fulton County,0.24
+Wendy's,4936b5b6-0064-4cff-b0d0-49e536e6798f,Acworth,Cobb County,McDonald's,ec158282-7594-44d1-9eda-9068c381dbb4,Acworth,Cobb County,0.25
+McDonald's,ec158282-7594-44d1-9eda-9068c381dbb4,Acworth,Cobb County,Wendy's,4936b5b6-0064-4cff-b0d0-49e536e6798f,Acworth,Cobb County,0.25
+Wendy's,fe6e7bb4-9237-4887-a53b-7af3d749f44a,McDonough,Henry County,McDonald's,319360d1-0ada-407a-9b45-b67ec09da945,McDonough,Henry County,0.25
+Taco Bell,d35d9a03-5b76-48cc-8896-35a060111a2a,Lawrenceville,Gwinnett County,McDonald's,47c7234c-2c7c-4a81-a4cf-550f3cdf524a,Lilburn,Gwinnett County,0.25
+McDonald's,0dce0aa1-f5a7-46a5-a150-b1f6423affa9,Atlanta,Fulton County,Wendy's,be0033ef-15a2-43cf-9695-0bae30753194,Atlanta,Fulton County,0.26
+Wendy's,be0033ef-15a2-43cf-9695-0bae30753194,Atlanta,Fulton County,McDonald's,0dce0aa1-f5a7-46a5-a150-b1f6423affa9,Atlanta,Fulton County,0.26
+Wendy's,bffd501d-4cd7-474f-9c91-03f7874cb922,Powder Springs,Cobb County,Taco Bell,81ae5518-ea2b-4a0e-b81c-11729ca152db,Powder Springs,Cobb County,0.26
+Wendy's,9d1f877c-1325-44b9-9225-303983e5a139,Fairburn,Fulton County,McDonald's,c1f054b4-bd45-4191-bf21-f615b0e17819,Riverdale,Clayton County,0.26
+McDonald's,c1f054b4-bd45-4191-bf21-f615b0e17819,Riverdale,Clayton County,Wendy's,9d1f877c-1325-44b9-9225-303983e5a139,Fairburn,Fulton County,0.26
+McDonald's,194f400d-9fcc-45b6-bcc3-b71c033dd892,Alpharetta,Fulton County,Burger King,909db6f2-b1cf-451a-9996-aa3e121c4640,Alpharetta,Fulton County,0.26
+Burger King,909db6f2-b1cf-451a-9996-aa3e121c4640,Alpharetta,Fulton County,McDonald's,194f400d-9fcc-45b6-bcc3-b71c033dd892,Alpharetta,Fulton County,0.26
+McDonald's,d83a6627-323e-4ba0-b3c7-7d98aaae3e6d,Jasper,Pickens County,Burger King,eaf28166-a101-44a0-a5cf-d3ef0eff2a07,Jasper,Pickens County,0.27
+Burger King,eaf28166-a101-44a0-a5cf-d3ef0eff2a07,Jasper,Pickens County,McDonald's,d83a6627-323e-4ba0-b3c7-7d98aaae3e6d,Jasper,Pickens County,0.27
+McDonald's,24c8195e-80cf-4cc0-b27d-8300a75dcb5e,Decatur,DeKalb County,Taco Bell,e3f4d78d-7225-443d-a4d9-4819c5317b8f,Decatur,DeKalb County,0.27
+Taco Bell,e3f4d78d-7225-443d-a4d9-4819c5317b8f,Decatur,DeKalb County,McDonald's,24c8195e-80cf-4cc0-b27d-8300a75dcb5e,Decatur,DeKalb County,0.27
+Taco Bell,f3095da9-d4fc-4348-a79d-d736f9e291f1,Smyrna,Cobb County,Wendy's,f8a8c819-d13f-4043-b006-a6662cdcae8b,Atlanta,Cobb County,0.28
+McDonald's,10c6b9f9-d6a9-466d-b782-24072132e832,Carrollton,Carroll County,Burger King,42267cf5-6def-4f69-ad67-5e0a1aea29d1,Carrollton,Carroll County,0.29
+Burger King,7d793fa1-9823-415f-8705-47d7a440e074,Lawrenceville,Gwinnett County,Taco Bell,a23e17d9-139d-4d8c-b9fc-7e4739880935,Lawrenceville,Gwinnett County,0.29
+Wendy's,13dd5826-bd79-44ff-995a-a7cecf6cd877,Duluth,Gwinnett County,McDonald's,e334da8c-e119-4332-bca2-e8e728c54599,Lawrenceville,Gwinnett County,0.29
+McDonald's,e334da8c-e119-4332-bca2-e8e728c54599,Lawrenceville,Gwinnett County,Wendy's,13dd5826-bd79-44ff-995a-a7cecf6cd877,Duluth,Gwinnett County,0.29
+Taco Bell,59c50432-fba3-4bde-991c-e44233735252,Atlanta,DeKalb County,Burger King,9cba3bfa-183e-4f87-9092-859cf0ce555a,Atlanta,DeKalb County,0.29
+Burger King,9cba3bfa-183e-4f87-9092-859cf0ce555a,Atlanta,DeKalb County,Taco Bell,59c50432-fba3-4bde-991c-e44233735252,Atlanta,DeKalb County,0.29
+Burger King,e6d6645e-724c-46de-a1af-cb394aadc260,Conyers,Rockdale County,McDonald's,aef0df1e-8ff0-4cd7-8579-bb1ed39e6f62,Conyers,Rockdale County,0.29
+McDonald's,78dade42-2377-48e7-9a95-69986673e671,Bethlehem,Barrow County,Wendy's,b7a91453-0b09-4d60-9c71-994dfac483d2,Bethlehem,Barrow County,0.30
+Wendy's,b7a91453-0b09-4d60-9c71-994dfac483d2,Bethlehem,Barrow County,McDonald's,78dade42-2377-48e7-9a95-69986673e671,Bethlehem,Barrow County,0.30
+Burger King,4dc87d21-e674-48e8-8a07-4bcc61edbc7f,Doraville,DeKalb County,McDonald's,d34182bb-944f-49ca-85f8-2c8546fb6389,Doraville,DeKalb County,0.30
+McDonald's,d34182bb-944f-49ca-85f8-2c8546fb6389,Doraville,DeKalb County,Burger King,4dc87d21-e674-48e8-8a07-4bcc61edbc7f,Doraville,DeKalb County,0.30
+McDonald's,ae1e0765-a979-48cf-a137-3f99b3311646,Woodstock,Cherokee County,Wendy's,eaba9e0c-9de4-4ab7-9194-2b4f0e30feb5,Woodstock,Cherokee County,0.31
+Wendy's,eaba9e0c-9de4-4ab7-9194-2b4f0e30feb5,Woodstock,Cherokee County,McDonald's,ae1e0765-a979-48cf-a137-3f99b3311646,Woodstock,Cherokee County,0.31
+McDonald's,38f17bf5-51d7-4268-bbba-ac9c027fab8a,Atlanta,DeKalb County,Wendy's,021823ba-2e5f-4611-afc5-b7b53d48ae93,Atlanta,DeKalb County,0.31
+McDonald's,60fa2ac1-4ebd-4b8f-af98-d6031a205511,Roswell,Fulton County,Wendy's,f1f490ba-8b88-4f3f-acd2-bfc63eac959b,Roswell,Fulton County,0.31
+Wendy's,f1f490ba-8b88-4f3f-acd2-bfc63eac959b,Roswell,Fulton County,McDonald's,60fa2ac1-4ebd-4b8f-af98-d6031a205511,Roswell,Fulton County,0.31
+McDonald's,89e40e85-70ba-46be-aa9b-43ba4008db98,Loganville,Walton County,Burger King,efdad9b7-b96e-44d0-88dc-a1dba43fa3d0,Loganville,Walton County,0.31
+Burger King,efdad9b7-b96e-44d0-88dc-a1dba43fa3d0,Loganville,Walton County,McDonald's,89e40e85-70ba-46be-aa9b-43ba4008db98,Loganville,Walton County,0.31
+Burger King,a1de3d2a-3adb-4540-abc4-ecf0ace28ca1,Fayetteville,Fayette County,McDonald's,dfd33b85-55d7-4628-a816-cd3e0e04b23c,Fayetteville,Fayette County,0.32
+McDonald's,dfd33b85-55d7-4628-a816-cd3e0e04b23c,Fayetteville,Fayette County,Burger King,a1de3d2a-3adb-4540-abc4-ecf0ace28ca1,Fayetteville,Fayette County,0.32
+Burger King,75570b4f-cbba-43c3-a751-62b167839f9e,Griffin,Spalding County,Wendy's,37d00f98-5c94-4046-bbbe-599d380fe1bd,Griffin,Spalding County,0.32
+McDonald's,d8441b67-16a9-4b8f-aa24-45ffc9fa5889,Dahlonega,Lumpkin County,Taco Bell,d6547a8a-7a00-4a3a-a78e-c17fc4ae6176,Dahlonega,Lumpkin County,0.32
+Taco Bell,b4ce5ccb-6c29-434f-a0b3-f1bc8b632b00,Acworth,Cobb County,Wendy's,4936b5b6-0064-4cff-b0d0-49e536e6798f,Acworth,Cobb County,0.33
+Taco Bell,0f0a9afc-7024-431a-8b5f-4ad6c2f83db0,Madison,Morgan County,Burger King,2bca416f-77b0-43d3-ab56-cb4520f3bb01,Madison,Morgan County,0.33
+Taco Bell,23bda76e-8d5d-415e-9ae9-72dbd73e7ee6,Cumming,Forsyth County,McDonald's,4817fda2-30a8-4e7b-a7c9-c5912bea6a47,Cumming,Forsyth County,0.33
+McDonald's,4817fda2-30a8-4e7b-a7c9-c5912bea6a47,Cumming,Forsyth County,Taco Bell,23bda76e-8d5d-415e-9ae9-72dbd73e7ee6,Cumming,Forsyth County,0.33
+Burger King,2a41db4d-3cf0-49ea-8570-3bd9bb075d5b,Marietta,Cobb County,McDonald's,5241ec6b-9323-4328-88cd-6dbc806947bd,Kennesaw,Cobb County,0.34
+McDonald's,5241ec6b-9323-4328-88cd-6dbc806947bd,Kennesaw,Cobb County,Burger King,2a41db4d-3cf0-49ea-8570-3bd9bb075d5b,Marietta,Cobb County,0.34
+Taco Bell,1d9a838e-eab9-4f10-8f6d-956e4e2f7211,Peachtree City,Fayette County,Wendy's,ebf0319f-d6d3-451b-bde3-2ecf7a3c36d8,Peachtree City,Fayette County,0.34
+Burger King,af246c36-f830-4101-a6bf-cd04743a50b6,Duluth,Gwinnett County,Wendy's,13dd5826-bd79-44ff-995a-a7cecf6cd877,Duluth,Gwinnett County,0.34
+McDonald's,39a1943d-548b-4322-9f5b-ce8a837804be,Morrow,Clayton County,Wendy's,5b62e063-c131-4517-8cd6-fa93072305c0,Morrow,Clayton County,0.35
+Taco Bell,75bf0016-271a-475b-acfa-68a356b156fe,Buford,Gwinnett County,McDonald's,44aeff48-791b-4dd6-bdaa-63727430b7fe,Dacula,Gwinnett County,0.36
+Taco Bell,e9c9de97-1ed3-4507-9408-6a91053605c0,Kennesaw,Cobb County,McDonald's,5241ec6b-9323-4328-88cd-6dbc806947bd,Kennesaw,Cobb County,0.36
+Taco Bell,2e3a9801-1f41-4ab2-ae6e-3d61c5034136,Suwanee,Gwinnett County,Wendy's,391ce477-0808-49fe-b8ec-f01cf8e537bd,Suwanee,Gwinnett County,0.36
+Wendy's,2e495a0b-76a0-4731-be57-1c4af8fc37ba,Adairsville,Bartow County,Burger King,db8c797c-7708-4cb5-9051-50ef42fb662f,Adairsville,Bartow County,0.37
+McDonald's,9a000610-3258-4f52-a42c-22b194fcf24a,Newnan,Coweta County,Taco Bell,ce6a46b1-6947-4cfa-8c17-005588565870,Sharpsburg,Coweta County,0.37
+Taco Bell,ce6a46b1-6947-4cfa-8c17-005588565870,Sharpsburg,Coweta County,McDonald's,9a000610-3258-4f52-a42c-22b194fcf24a,Newnan,Coweta County,0.37
+Wendy's,5faa0a1d-56b4-45b3-a707-aa3a96ed9226,Chamblee,DeKalb County,McDonald's,f0a81c76-ef67-4b5a-8701-b09b36716af1,Chamblee,DeKalb County,0.37
+McDonald's,f0a81c76-ef67-4b5a-8701-b09b36716af1,Chamblee,DeKalb County,Wendy's,5faa0a1d-56b4-45b3-a707-aa3a96ed9226,Chamblee,DeKalb County,0.37
+McDonald's,f87ac6a4-bb16-49c2-bcd0-26511bdb8ccd,Atlanta,Fulton County,Wendy's,5aff438f-ab73-468d-a474-8041d6c110f0,Atlanta,Fulton County,0.38
+Burger King,41faa0ec-e3db-46f5-91bd-f2e92fa49075,Griffin,Spalding County,McDonald's,017d886d-6ef8-4006-8235-6233b7515765,Griffin,Spalding County,0.38
+McDonald's,0edd2dc5-745a-4895-99cc-32661797a9fb,Newnan,Coweta County,Wendy's,18ff380f-9493-44a9-ac55-689338374768,Newnan,Coweta County,0.38
+Wendy's,18ff380f-9493-44a9-ac55-689338374768,Newnan,Coweta County,McDonald's,0edd2dc5-745a-4895-99cc-32661797a9fb,Newnan,Coweta County,0.38
+McDonald's,88475c12-f569-4f11-85a9-711514733069,East Point,Fulton County,Taco Bell,ef9ec7ef-c13a-4d25-952d-dc52cb8e5800,East Point,Fulton County,0.39
+Burger King,af573b05-0c44-4b26-8bf0-69bd6ba43e85,Cartersville,Bartow County,Wendy's,9a758451-69de-48f0-86ef-3edebb559a03,Cartersville,Bartow County,0.39
+Taco Bell,462b64b3-b3c6-4f16-b6fd-b2294f1cb42f,Ellenwood,DeKalb County,Burger King,dce24459-79b0-4f3b-a08e-1975d5941337,Ellenwood,DeKalb County,0.40
+Wendy's,53fb63f1-f6b9-4635-96d9-a1091a14eea8,Smyrna,Cobb County,Taco Bell,80a29eff-5676-4f35-b10d-ce2164f095ef,Smyrna,Cobb County,0.40
+McDonald's,35aefe84-ab97-4e48-bca4-7abeecae652b,Buford,Gwinnett County,Taco Bell,c42dab18-22cf-45ee-bb2e-205cdcd2547d,Buford,Gwinnett County,0.41
+Wendy's,8b90ee09-224a-4d9b-a255-05b5bee1f94d,Stone Mountain,DeKalb County,Burger King,5f8d6bd6-6b64-4c45-bafd-28aa2c9b5880,Stone Mountain,DeKalb County,0.41
+Taco Bell,69ac9dc7-bfbe-4e8c-983b-27b63ae09523,Woodstock,Cherokee County,Wendy's,eaba9e0c-9de4-4ab7-9194-2b4f0e30feb5,Woodstock,Cherokee County,0.41
+Wendy's,64d6fa74-d533-4344-a2a2-b246f723774c,Snellville,Gwinnett County,McDonald's,75e841e4-f8e5-4d22-affd-6f2f24842b5c,Snellville,Gwinnett County,0.41
+McDonald's,75e841e4-f8e5-4d22-affd-6f2f24842b5c,Snellville,Gwinnett County,Wendy's,64d6fa74-d533-4344-a2a2-b246f723774c,Snellville,Gwinnett County,0.41
+Taco Bell,f62e7ab7-85a0-40d4-8d1e-7d7821ab57ce,Atlanta,Fulton County,Wendy's,be0033ef-15a2-43cf-9695-0bae30753194,Atlanta,Fulton County,0.41
+Wendy's,05b9069e-63f1-4afc-b450-556d35cf1ca8,Conyers,Rockdale County,Burger King,faf36836-2781-48db-a018-5b56445ff27a,Conyers,Rockdale County,0.44
+Burger King,28b14add-2ae1-44d8-a417-d6dbd404f642,Jonesboro,Clayton County,McDonald's,a674319a-9abd-42d4-b289-ebc5a8cfa351,Jonesboro,Clayton County,0.44
+McDonald's,a674319a-9abd-42d4-b289-ebc5a8cfa351,Jonesboro,Clayton County,Burger King,28b14add-2ae1-44d8-a417-d6dbd404f642,Jonesboro,Clayton County,0.44
+McDonald's,db33eff6-f976-474b-8fe8-1ff20bd9fa73,Jonesboro,Clayton County,Taco Bell,f6a5e16e-7faa-423b-90b7-168a72b40462,Jonesboro,Clayton County,0.45
+Taco Bell,f6a5e16e-7faa-423b-90b7-168a72b40462,Jonesboro,Clayton County,McDonald's,db33eff6-f976-474b-8fe8-1ff20bd9fa73,Jonesboro,Clayton County,0.45
+Taco Bell,3278aca2-6d02-4fea-b158-13525c99d723,Alpharetta,Fulton County,Burger King,b5603d59-d7e9-447f-aa40-dd16b5d1d130,Alpharetta,Fulton County,0.45
+Burger King,88a41080-a1c1-4b32-ba12-397dc38b8e93,Atlanta,Cobb County,Wendy's,f8a8c819-d13f-4043-b006-a6662cdcae8b,Atlanta,Cobb County,0.47
+McDonald's,ecefe6f0-f12b-4047-9c9b-e7f2fcb0cdec,East Point,Fulton County,Burger King,f7a9f4a4-0db1-4bb9-89f6-1b61bfe9605d,Atlanta,Fulton County,0.47
+Burger King,f7a9f4a4-0db1-4bb9-89f6-1b61bfe9605d,Atlanta,Fulton County,McDonald's,ecefe6f0-f12b-4047-9c9b-e7f2fcb0cdec,East Point,Fulton County,0.47
+Wendy's,21893a19-5c4d-4463-a0bf-e55771f52cb9,Norcross,Gwinnett County,Taco Bell,09766ade-b7cb-4835-b770-e561799ef8a6,Norcross,Gwinnett County,0.48
+Taco Bell,20220d1c-1f46-4e98-b80d-fdb46a9d08fa,Snellville,Gwinnett County,McDonald's,52fe2cdb-7429-47e0-b5c7-5ff2273a243d,Snellville,Gwinnett County,0.48
+McDonald's,52fe2cdb-7429-47e0-b5c7-5ff2273a243d,Snellville,Gwinnett County,Taco Bell,20220d1c-1f46-4e98-b80d-fdb46a9d08fa,Snellville,Gwinnett County,0.48
+McDonald's,66eb1296-2a95-44fa-a06f-253615dedfcd,Lithonia,DeKalb County,Taco Bell,a83dbb0b-7067-4c2a-b5cc-1b7fd04bcdfa,Lithonia,DeKalb County,0.49
+Taco Bell,a83dbb0b-7067-4c2a-b5cc-1b7fd04bcdfa,Lithonia,DeKalb County,McDonald's,66eb1296-2a95-44fa-a06f-253615dedfcd,Lithonia,DeKalb County,0.49
+Burger King,4602b3ac-b87c-455d-975d-8a5449a8b6af,Snellville,Gwinnett County,Wendy's,64d6fa74-d533-4344-a2a2-b246f723774c,Snellville,Gwinnett County,0.50
+Taco Bell,b8b5662f-f2d2-464b-b261-98ac82df49d9,Douglasville,Douglas County,McDonald's,ea1dc181-a87a-475b-b5ab-841f6ff73c5b,Douglasville,Douglas County,0.51
+McDonald's,ea1dc181-a87a-475b-b5ab-841f6ff73c5b,Douglasville,Douglas County,Taco Bell,b8b5662f-f2d2-464b-b261-98ac82df49d9,Douglasville,Douglas County,0.51
+McDonald's,e478844e-6200-4c75-99be-fb5b48a4989e,Conyers,Rockdale County,Taco Bell,043d9b8d-4ac2-478c-b84b-95744ff3434d,Conyers,Rockdale County,0.51
+Taco Bell,24f15902-e622-422f-ad7a-da1dfa6ee53d,Fayetteville,Fayette County,Burger King,a1de3d2a-3adb-4540-abc4-ecf0ace28ca1,Fayetteville,Fayette County,0.52
+Burger King,6a0f5768-7c4c-4776-a2a9-8edc319bffb9,Villa Rica,Carroll County,McDonald's,1235645d-fe88-4a19-a986-4a7d52f25142,Villa Rica,Carroll County,0.52
+McDonald's,377421a3-5a2c-4605-8682-92c7ba547faa,Brookhaven,DeKalb County,Burger King,9cba3bfa-183e-4f87-9092-859cf0ce555a,Atlanta,DeKalb County,0.53
+McDonald's,368908d6-ad45-42a1-80d6-5b41d04381ab,Peachtree Corners,Gwinnett County,Burger King,bf0c94d7-ce5d-4386-b93f-3beb78f15771,Peachtree Corners,Gwinnett County,0.53
+Burger King,bf0c94d7-ce5d-4386-b93f-3beb78f15771,Peachtree Corners,Gwinnett County,McDonald's,368908d6-ad45-42a1-80d6-5b41d04381ab,Peachtree Corners,Gwinnett County,0.53
+Burger King,ff0bd230-6076-4297-b7f1-c8569fa0ddbd,Covington,Newton County,Taco Bell,212fb53b-909a-44b9-a592-0c37220cace0,Covington,Newton County,0.54
+Wendy's,66c17be6-4af6-4e09-bd6c-9cbaee56e4dc,Stockbridge,Henry County,McDonald's,edfc8ee6-66be-4df7-9299-b30c55f78343,Stockbridge,Henry County,0.54
+Taco Bell,7e8fa1ed-755e-4fd3-8ecc-fe820bfc830c,Bethlehem,Barrow County,Wendy's,b7a91453-0b09-4d60-9c71-994dfac483d2,Bethlehem,Barrow County,0.54
+Wendy's,4610210f-23c4-4889-ae67-777019cdcfb9,Canton,Cherokee County,McDonald's,e66370c6-41e1-48d5-bc9e-a4bda75e7765,Canton,Cherokee County,0.55
+McDonald's,e66370c6-41e1-48d5-bc9e-a4bda75e7765,Canton,Cherokee County,Wendy's,4610210f-23c4-4889-ae67-777019cdcfb9,Canton,Cherokee County,0.55
+Burger King,17f647ba-1310-4872-b16f-5eaddd604d24,Decatur,DeKalb County,Wendy's,74604f91-ee42-4e89-bb57-8956d4bc534b,Decatur,DeKalb County,0.55
+Wendy's,74604f91-ee42-4e89-bb57-8956d4bc534b,Decatur,DeKalb County,Burger King,17f647ba-1310-4872-b16f-5eaddd604d24,Decatur,DeKalb County,0.55
+McDonald's,1e268f21-2ee2-4b88-8992-8d531accb248,Suwanee,Gwinnett County,Wendy's,df6051f3-e565-416e-826a-4551ae59f103,Suwanee,Gwinnett County,0.56
+Wendy's,1102dc97-d727-4a4b-83ce-0bfee1ef86d4,Forest Park,Clayton County,McDonald's,de2e17af-7dc7-4e5d-b9b0-59d71e71b1a0,Forest Park,Clayton County,0.60
+Burger King,243c8810-86d5-42bc-9b6c-a82dcb7a44b9,Buford,Gwinnett County,Taco Bell,d858e86f-dc59-4bce-baaf-5a51887d8624,Buford,Gwinnett County,0.60
+Taco Bell,f4f80795-67b0-4005-aceb-b1d18cf39a5d,Morrow,Clayton County,Wendy's,cf5a72b2-3d67-44d6-94ed-fd8b65d7363a,Morrow,Clayton County,0.60
+Taco Bell,8f80b3c4-3522-41b0-8676-1a26addfdcb2,Newnan,Coweta County,Burger King,9acd9389-71a7-4fb6-b617-835d8ac03f7a,Newnan,Coweta County,0.60
+Burger King,9acd9389-71a7-4fb6-b617-835d8ac03f7a,Newnan,Coweta County,Taco Bell,8f80b3c4-3522-41b0-8676-1a26addfdcb2,Newnan,Coweta County,0.60
+Burger King,77b2e256-9683-475e-a41a-3eb6c3d1fc73,Lawrenceville,Gwinnett County,Wendy's,2ea494c9-e6f6-4706-b50f-54d3336abec9,Lawrenceville,Gwinnett County,0.61
+Taco Bell,3f13b0b9-a6dc-4bb1-8cbe-f662781acd17,Holly Springs,Cherokee County,Wendy's,f8b28c2a-5792-40eb-b301-895867fe2dbe,Woodstock,Cherokee County,0.61
+Wendy's,f8b28c2a-5792-40eb-b301-895867fe2dbe,Woodstock,Cherokee County,Taco Bell,3f13b0b9-a6dc-4bb1-8cbe-f662781acd17,Holly Springs,Cherokee County,0.61
+Taco Bell,a9292eee-3f89-49d2-b9e3-75f3772d961d,Kennesaw,Cobb County,McDonald's,fa83ada7-a10c-40bc-98e4-fda527ff979a,Kennesaw,Cobb County,0.62
+McDonald's,fa83ada7-a10c-40bc-98e4-fda527ff979a,Kennesaw,Cobb County,Taco Bell,a9292eee-3f89-49d2-b9e3-75f3772d961d,Kennesaw,Cobb County,0.62
+Wendy's,7769ee9a-e005-48a9-98a0-ed60310bc6c1,Newnan,Coweta County,Burger King,9acd9389-71a7-4fb6-b617-835d8ac03f7a,Newnan,Coweta County,0.63
+Wendy's,7a988ed4-90a3-40d1-a126-b0d1f3b7a358,Hapeville,Fulton County,McDonald's,de5a2f60-8bc9-4261-b8b9-23c872f09c0a,East Point,Fulton County,0.65
+McDonald's,de5a2f60-8bc9-4261-b8b9-23c872f09c0a,East Point,Fulton County,Wendy's,7a988ed4-90a3-40d1-a126-b0d1f3b7a358,Hapeville,Fulton County,0.65
+McDonald's,4ba11e69-7c40-4222-93cf-d9dea77b725c,Sandy Springs,Fulton County,Wendy's,8c43a4f9-8111-4a79-9908-cd59790fa2ed,Atlanta,Fulton County,0.65
+Wendy's,8c43a4f9-8111-4a79-9908-cd59790fa2ed,Atlanta,Fulton County,McDonald's,4ba11e69-7c40-4222-93cf-d9dea77b725c,Sandy Springs,Fulton County,0.65
+Wendy's,1e70301c-4842-4325-bbd0-c3b117dfb9be,Sandy Springs,DeKalb County,McDonald's,7fbc24b1-2ec9-4283-814d-29d8c4bafcc4,Dunwoody,DeKalb County,0.66
+McDonald's,7fbc24b1-2ec9-4283-814d-29d8c4bafcc4,Dunwoody,DeKalb County,Wendy's,1e70301c-4842-4325-bbd0-c3b117dfb9be,Sandy Springs,DeKalb County,0.66
+Burger King,1f435193-9b97-4d5d-88a8-9fb1577c42cf,Decatur,DeKalb County,Taco Bell,e3f4d78d-7225-443d-a4d9-4819c5317b8f,Decatur,DeKalb County,0.66
+Wendy's,b71cd82a-acc4-48ac-b9fc-f5c74c34db01,Griffin,Spalding County,Taco Bell,e6117dae-3f4c-445a-904c-877db52ea3ab,Griffin,Spalding County,0.71
+Burger King,7d76aa79-ec25-4493-a7ad-2b82580f1b43,Norcross,Gwinnett County,Wendy's,efc1ee26-3517-44bc-b461-f016c3e66642,Norcross,Gwinnett County,0.72
+Wendy's,efc1ee26-3517-44bc-b461-f016c3e66642,Norcross,Gwinnett County,Burger King,7d76aa79-ec25-4493-a7ad-2b82580f1b43,Norcross,Gwinnett County,0.72
+McDonald's,dd6d5670-a33c-4538-bb9a-109efe1d8920,Duluth,Gwinnett County,Taco Bell,eb34b520-61a6-4b24-b5d8-a0a15cf9b62b,Lawrenceville,Gwinnett County,0.72
+Wendy's,571c3f95-f574-4a99-9e79-39c32db37f09,Marietta,Cobb County,Taco Bell,8b2299b7-abec-4fbc-974b-818bf313c9ef,Marietta,Cobb County,0.72
+Wendy's,339baf50-d807-4f98-84b0-e8c2709373ad,Decatur,DeKalb County,McDonald's,24c8195e-80cf-4cc0-b27d-8300a75dcb5e,Decatur,DeKalb County,0.74
+Wendy's,7e3e85b9-f4a1-45f6-99d7-0c808dc6ad2c,Kennesaw,Cobb County,Taco Bell,184af02c-43fc-4a22-840c-c1f80d7d4746,Kennesaw,Cobb County,0.74
+McDonald's,533d9c21-d0c1-4bce-be28-be416bdf45eb,Roswell,Fulton County,Taco Bell,f166f8ca-ae19-4316-91f2-46d23aa83232,Roswell,Fulton County,0.77
+Taco Bell,f166f8ca-ae19-4316-91f2-46d23aa83232,Roswell,Fulton County,McDonald's,533d9c21-d0c1-4bce-be28-be416bdf45eb,Roswell,Fulton County,0.77
+Wendy's,4260b3c0-dd77-47d6-99e1-050d7e5a7a9f,Alpharetta,Fulton County,McDonald's,ecc4b8f7-4733-4f72-a5f7-d7496f57475a,Alpharetta,Fulton County,0.78
+Wendy's,383ed307-c0d6-4c19-a28d-d331241c008a,Alpharetta,Fulton County,Burger King,cf5b72d5-42fb-4964-89d5-2c771baa3ebe,Alpharetta,Fulton County,0.79
+Burger King,cf5b72d5-42fb-4964-89d5-2c771baa3ebe,Alpharetta,Fulton County,Wendy's,383ed307-c0d6-4c19-a28d-d331241c008a,Alpharetta,Fulton County,0.79
+McDonald's,fc6d648d-e1bd-40a1-9a7e-71d559745bee,Kennesaw,Cobb County,Wendy's,7e3e85b9-f4a1-45f6-99d7-0c808dc6ad2c,Kennesaw,Cobb County,0.80
+McDonald's,bd7ac5b7-3c37-47d9-af66-84c18a34fb5e,Marietta,Cobb County,Taco Bell,f3095da9-d4fc-4348-a79d-d736f9e291f1,Smyrna,Cobb County,0.82
+McDonald's,ada9c23d-2a22-4802-99f2-4ce54dba4910,Atlanta,DeKalb County,Taco Bell,ef74fcab-5e0c-4d0b-8f74-26ecfb63269f,Brookhaven,DeKalb County,0.83
+Taco Bell,ef74fcab-5e0c-4d0b-8f74-26ecfb63269f,Brookhaven,DeKalb County,McDonald's,ada9c23d-2a22-4802-99f2-4ce54dba4910,Atlanta,DeKalb County,0.83
+Burger King,9f2adcea-fadc-4d11-9095-bd77c117b728,Acworth,Cobb County,Taco Bell,b4ce5ccb-6c29-434f-a0b3-f1bc8b632b00,Acworth,Cobb County,0.83
+Burger King,4fc436d1-a96e-47ce-a9dc-fc03e0e78e7c,Atlanta,Fulton County,Taco Bell,f62e7ab7-85a0-40d4-8d1e-7d7821ab57ce,Atlanta,Fulton County,0.84
+Wendy's,3218f4b4-9c6b-4ec4-8100-b788645ced12,Canton,Cherokee County,McDonald's,c6dacf9a-d20d-41aa-b939-ca2092fbe496,Canton,Cherokee County,0.84
+McDonald's,c6dacf9a-d20d-41aa-b939-ca2092fbe496,Canton,Cherokee County,Wendy's,3218f4b4-9c6b-4ec4-8100-b788645ced12,Canton,Cherokee County,0.84
+McDonald's,2204855f-fc2f-4730-9e6d-53c9b37dc422,Marietta,Cobb County,Taco Bell,705f8fdf-200b-41cb-90d5-64cbd0b5b756,Marietta,Cobb County,0.86
+McDonald's,4f2a7045-652b-48e7-806a-973c6b36b822,Newnan,Coweta County,Taco Bell,8f80b3c4-3522-41b0-8676-1a26addfdcb2,Newnan,Coweta County,0.90
+Burger King,4627ef24-e2f6-4009-846e-9dfe2044f097,Norcross,Gwinnett County,Wendy's,f2e2eb07-8d8a-4ffa-a494-ffcfa56dd45c,Peachtree Corners,Gwinnett County,0.92
+Burger King,9272e534-8031-4c5b-b528-0f889d454370,Doraville,DeKalb County,Taco Bell,fb46f89c-e4ba-4e7b-b08f-c45578602fe0,Atlanta,DeKalb County,0.92
+McDonald's,51ac5664-b884-4f4b-a196-5132f9e4fac9,Roswell,Fulton County,Wendy's,383ed307-c0d6-4c19-a28d-d331241c008a,Alpharetta,Fulton County,0.92
+Taco Bell,2edbea93-79e0-43d9-ad06-ad108369461a,McDonough,Henry County,Burger King,7c3f0f4f-e38b-4b3c-b7e7-0eec44c20f69,McDonough,Henry County,0.92
+Wendy's,56249521-e67d-4f62-a952-2882eb2217dc,Lithia Springs,Douglas County,McDonald's,9599c2dd-d184-4f96-a44d-120caecfd9c3,Lithia Springs,Douglas County,0.93
+Burger King,7cf04ed1-fb48-44db-a3e3-971cee100490,Cumming,Forsyth County,McDonald's,9f657a67-ae6a-4ba2-b192-f5c2a6044440,Cumming,Forsyth County,0.93
+Burger King,fe13c782-2b21-4b39-8b3a-79fffd878ebc,Marietta,Cobb County,Taco Bell,705f8fdf-200b-41cb-90d5-64cbd0b5b756,Marietta,Cobb County,0.95
+McDonald's,80108c57-8c7e-47bd-a317-fe2b4a3813e5,Carrollton,Carroll County,Wendy's,442c3f26-eb90-4d35-aa23-7787b83077e2,Carrollton,Carroll County,0.97
+Burger King,d3b2e4f6-f1c1-4eda-a9e3-e2f1a58f1049,Lilburn,Gwinnett County,Wendy's,c8123811-381b-4fa5-af43-00e3cae334bd,Lilburn,Gwinnett County,1.00
+Wendy's,2936b851-e5b0-4a05-af9c-7dc51d16e6a7,Fayetteville,Fayette County,Taco Bell,24f15902-e622-422f-ad7a-da1dfa6ee53d,Fayetteville,Fayette County,1.01
+McDonald's,c85b9a2c-3679-4093-99d1-bb774372447d,Decatur,DeKalb County,Wendy's,74604f91-ee42-4e89-bb57-8956d4bc534b,Decatur,DeKalb County,1.02
+Wendy's,689bff82-7129-4fee-9c35-48c86a79d574,Alpharetta,Fulton County,Taco Bell,3278aca2-6d02-4fea-b158-13525c99d723,Alpharetta,Fulton County,1.02
+Taco Bell,94af54d8-3867-43ce-85d6-8d0f211e937b,Atlanta,Fulton County,Burger King,2b463890-82b4-43fb-acf9-25c13ff85479,Atlanta,Fulton County,1.04
+Taco Bell,a17f3bc7-b7e8-4af7-beaa-1fe97abe5c48,Sandy Springs,Fulton County,McDonald's,7bb53f66-ad35-4593-90d9-11d3d19dc705,Sandy Springs,Fulton County,1.05
+Burger King,fa423a02-91a4-4028-a6b3-6d8eb7f098df,Smyrna,Cobb County,Wendy's,afb11fb4-361d-42ac-85b3-db9847c96734,Smyrna,Cobb County,1.06
+McDonald's,2843f678-d2c1-44f2-8911-f74218280810,Atlanta,Fulton County,Wendy's,86c7f98f-c920-4e5f-9a71-a31b35d22b07,Atlanta,Fulton County,1.08
+Wendy's,86c7f98f-c920-4e5f-9a71-a31b35d22b07,Atlanta,Fulton County,McDonald's,2843f678-d2c1-44f2-8911-f74218280810,Atlanta,Fulton County,1.08
+Burger King,1449ee06-6726-4052-a930-4f053c9a7e8f,Newnan,Coweta County,Taco Bell,210c101f-b91f-4a97-aba4-fd03f53ce92f,Newnan,Coweta County,1.09
+Wendy's,37c7bc56-2894-4347-b52d-798edaeca9f3,Marietta,Cobb County,Burger King,fe13c782-2b21-4b39-8b3a-79fffd878ebc,Marietta,Cobb County,1.10
+McDonald's,00898ae3-1542-43c5-9c8b-10750887d9b7,Carrollton,Carroll County,Burger King,db7b9af7-a35c-4a29-8d89-f1729f50fcc0,Carrollton,Carroll County,1.11
+McDonald's,715d999f-0558-4c9b-9c31-40e7aead5262,Forest Park,Clayton County,Taco Bell,e23c95e2-22b8-4366-ab70-cfe90ae3e973,Forest Park,Clayton County,1.13
+Taco Bell,e23c95e2-22b8-4366-ab70-cfe90ae3e973,Forest Park,Clayton County,McDonald's,715d999f-0558-4c9b-9c31-40e7aead5262,Forest Park,Clayton County,1.13
+McDonald's,227bba15-af8a-4614-bf43-ece9a299d4c5,Decatur,DeKalb County,Burger King,10e50ab0-ed47-4cde-8a30-662fa09f5649,Decatur,DeKalb County,1.14
+Taco Bell,bf516868-88fc-4aa5-9f80-7500ead30ccd,Carrollton,Carroll County,McDonald's,10c6b9f9-d6a9-466d-b782-24072132e832,Carrollton,Carroll County,1.15
+Burger King,4ab04c1e-e76b-457e-9740-529605377ed5,Mableton,Cobb County,Wendy's,6557a874-9e52-44b6-984f-b3b525e3d93f,Mableton,Cobb County,1.15
+McDonald's,5bce0b35-a4c2-427f-9127-1729de8a1c05,Lawrenceville,Gwinnett County,Wendy's,dc6b6c2a-9d17-4851-8ee5-aaba91c8f889,Duluth,Fulton County,1.17
+Wendy's,dc6b6c2a-9d17-4851-8ee5-aaba91c8f889,Duluth,Fulton County,McDonald's,5bce0b35-a4c2-427f-9127-1729de8a1c05,Lawrenceville,Gwinnett County,1.17
+Wendy's,5c59779c-b81b-4222-a301-46f9aecaaf74,Monroe,Walton County,Taco Bell,621501cf-e875-445b-bbaa-b9ea08867a37,Monroe,Walton County,1.17
+Wendy's,f2bd0486-96ee-43f5-aa15-4ebc4b68fbd8,Canton,Cherokee County,McDonald's,c6dacf9a-d20d-41aa-b939-ca2092fbe496,Canton,Cherokee County,1.17
+Wendy's,7c43be82-b50c-43fe-8037-31e006ec5d96,Lithonia,DeKalb County,McDonald's,5ce3822b-96f7-457b-b6b8-788b75a6b7e6,Lithonia,DeKalb County,1.20
+Wendy's,241dcb07-5dac-4217-82dc-e88d43ddae9f,Atlanta,DeKalb County,Taco Bell,59c50432-fba3-4bde-991c-e44233735252,Atlanta,DeKalb County,1.21
+McDonald's,ecfbd239-6c1c-4131-8ab5-0f2085058684,Norcross,Gwinnett County,Burger King,4627ef24-e2f6-4009-846e-9dfe2044f097,Norcross,Gwinnett County,1.21
+Wendy's,5aa3157c-bfc3-4ca0-a2f7-013afbd81eea,Atlanta,Fulton County,McDonald's,a99a9739-ce5c-423d-835b-65442bce67f4,Atlanta,Fulton County,1.23
+McDonald's,a99a9739-ce5c-423d-835b-65442bce67f4,Atlanta,Fulton County,Wendy's,5aa3157c-bfc3-4ca0-a2f7-013afbd81eea,Atlanta,Fulton County,1.23
+Burger King,03f2dfb9-9328-4577-af0a-a672d390d945,Alpharetta,Fulton County,McDonald's,ecc4b8f7-4733-4f72-a5f7-d7496f57475a,Alpharetta,Fulton County,1.24
+McDonald's,10cc2ff1-5dae-4c08-91b1-80a5e846b402,Brookhaven,DeKalb County,Taco Bell,ef74fcab-5e0c-4d0b-8f74-26ecfb63269f,Brookhaven,DeKalb County,1.25
+Taco Bell,3cac0b23-1dc0-4fa1-8ab9-63757151e06d,Acworth,Cobb County,McDonald's,758e8ab9-b70b-49fa-a082-e0a0b8ca7fb3,Acworth,Cobb County,1.27
+Burger King,f1f14a16-804d-4e64-a080-b579bab1b92b,Atlanta,DeKalb County,McDonald's,baae0dde-1c5e-4604-b120-2ba7e034e9fa,Atlanta,DeKalb County,1.28
+Wendy's,c002b89a-bf7f-4aaa-b5af-5cc5c3594fd3,Decatur,DeKalb County,McDonald's,227bba15-af8a-4614-bf43-ece9a299d4c5,Decatur,DeKalb County,1.28
+Wendy's,c24e8faa-f181-41e2-80b2-1203eaf4efda,Newnan,Coweta County,Burger King,9acd9389-71a7-4fb6-b617-835d8ac03f7a,Newnan,Coweta County,1.31
+Taco Bell,061cd1e4-9438-4089-9c2d-2508b905f07c,East Point,Fulton County,McDonald's,de5a2f60-8bc9-4261-b8b9-23c872f09c0a,East Point,Fulton County,1.32
+Taco Bell,49d3d0b3-e3a9-4242-a3fb-5c9216e8256e,Alpharetta,Fulton County,Burger King,cf5b72d5-42fb-4964-89d5-2c771baa3ebe,Alpharetta,Fulton County,1.32
+McDonald's,582ddbb4-097f-4ecc-a618-1ca86e9016c0,Decatur,DeKalb County,Wendy's,339baf50-d807-4f98-84b0-e8c2709373ad,Decatur,DeKalb County,1.33
+Taco Bell,3616cda2-aff9-47aa-afc2-15ff44a984f3,Stone Mountain,DeKalb County,Wendy's,3f93370c-684d-453e-a00a-eba835844250,Decatur,DeKalb County,1.36
+Taco Bell,623a3776-6a7a-4ab7-af4d-a06531be4560,Suwanee,Gwinnett County,Burger King,a441a657-8c87-4a5f-a3e0-375b68d46a23,Suwanee,Gwinnett County,1.36
+McDonald's,3c830916-5d96-4cca-a9c3-069868a74fa3,Brookhaven,DeKalb County,Taco Bell,ef74fcab-5e0c-4d0b-8f74-26ecfb63269f,Brookhaven,DeKalb County,1.36
+McDonald's,a584e372-93e3-481d-9764-b1c0f858ce36,Cartersville,Bartow County,Wendy's,df051096-358a-4df2-991e-b3482aa70d1d,Cartersville,Bartow County,1.38
+Wendy's,36d45fd1-abf1-4e56-8643-e5ff5fd7a5e0,Morrow,Clayton County,Taco Bell,f4f80795-67b0-4005-aceb-b1d18cf39a5d,Morrow,Clayton County,1.38
+McDonald's,f1ae44a0-a2fc-42dc-874a-ceee4ecbab6f,Marietta,Cobb County,Wendy's,37c7bc56-2894-4347-b52d-798edaeca9f3,Marietta,Cobb County,1.41
+McDonald's,f6b9945a-9a0f-464f-86d4-563a425692c9,Smyrna,Cobb County,Wendy's,53fb63f1-f6b9-4635-96d9-a1091a14eea8,Smyrna,Cobb County,1.41
+Taco Bell,758f05fa-6cff-454e-962b-d88d90d7e49d,Cartersville,Bartow County,McDonald's,d3077361-cf9e-4065-84ad-4fa5dea1e6a8,Cartersville,Bartow County,1.42
+McDonald's,55af14e2-4c42-47d6-b617-3a1549296c61,Marietta,Cobb County,Wendy's,59029ea1-6ed5-4e7d-9448-17477258bb4a,Marietta,Cobb County,1.45
+McDonald's,bdbae3c9-25f2-4071-90fe-de48a5325e75,Decatur,DeKalb County,Wendy's,74604f91-ee42-4e89-bb57-8956d4bc534b,Decatur,DeKalb County,1.47
+McDonald's,e758867b-4095-467f-9fd7-2e1940f83de3,Atlanta,DeKalb County,Wendy's,021823ba-2e5f-4611-afc5-b7b53d48ae93,Atlanta,DeKalb County,1.49
+Burger King,04cbb183-c4b6-484d-839c-ae501e05bf48,Peachtree Corners,Gwinnett County,McDonald's,d34182bb-944f-49ca-85f8-2c8546fb6389,Doraville,DeKalb County,1.50
+McDonald's,4c1bd3bf-236a-453b-9023-5e9c302c1483,Decatur,DeKalb County,Wendy's,74604f91-ee42-4e89-bb57-8956d4bc534b,Decatur,DeKalb County,1.51
+McDonald's,5eba28e1-8201-4015-b681-56f7c2977238,Carrollton,Carroll County,Taco Bell,4d0108ad-7709-4f59-893e-97ebdc14727d,Carrollton,Carroll County,1.52
+McDonald's,bfbd93ef-8338-4554-ae16-d71ddef647e1,Austell,Cobb County,Taco Bell,03d6d8b1-3d9b-4e2c-9687-1eb4c16a1ce4,Austell,Cobb County,1.54
+McDonald's,451a045d-0609-4b32-9526-01ac64225cd4,Atlanta,Fulton County,Wendy's,1e70301c-4842-4325-bbd0-c3b117dfb9be,Sandy Springs,DeKalb County,1.54
+McDonald's,0ccb44aa-c136-4228-a506-ce8eaf245264,Conyers,Rockdale County,Taco Bell,043d9b8d-4ac2-478c-b84b-95744ff3434d,Conyers,Rockdale County,1.55
+Wendy's,b0f1436a-bde1-47aa-8493-311ba840a94e,Loganville,Walton County,Burger King,7dbed6f6-85ea-43fa-9574-a509cb305f93,Grayson,Gwinnett County,1.59
+McDonald's,68f6a3f3-4779-40a1-85a2-75796080b06d,Ellenwood,DeKalb County,Wendy's,db909e00-c9bc-4049-aa68-5972b0d4b6fc,Ellenwood,DeKalb County,1.61
+McDonald's,671c8c29-b67d-4c1a-94c8-79b1b7ce6ce0,Alpharetta,Fulton County,Wendy's,a6ba66ce-b026-41ce-82c3-0ff640df66c0,Alpharetta,Fulton County,1.65
+Wendy's,a6ba66ce-b026-41ce-82c3-0ff640df66c0,Alpharetta,Fulton County,McDonald's,671c8c29-b67d-4c1a-94c8-79b1b7ce6ce0,Alpharetta,Fulton County,1.65
+McDonald's,be4e4b5b-c463-4709-aa5d-18a9cae41784,Woodstock,Cherokee County,Taco Bell,3f13b0b9-a6dc-4bb1-8cbe-f662781acd17,Holly Springs,Cherokee County,1.69
+McDonald's,8a9dc2cf-86af-4963-8535-39ced4170d3d,McDonough,Henry County,Burger King,c55cdf54-76db-4554-a6df-cf164b91f385,McDonough,Henry County,1.71
+McDonald's,ed162d70-3810-4ab7-9421-603697881c4d,Canton,Cherokee County,Wendy's,3218f4b4-9c6b-4ec4-8100-b788645ced12,Canton,Cherokee County,1.73
+McDonald's,39093b43-e9ae-46ac-aa75-da8d1fbf73f5,Alpharetta,Fulton County,Wendy's,4260b3c0-dd77-47d6-99e1-050d7e5a7a9f,Alpharetta,Fulton County,1.77
+Burger King,e0f97b11-c817-489d-b944-f67578cc806e,Austell,Cobb County,Wendy's,56249521-e67d-4f62-a952-2882eb2217dc,Lithia Springs,Douglas County,1.77
+Taco Bell,577b63d5-7977-4f86-9cd3-5914f7b3faef,Cumming,Forsyth County,McDonald's,d0fbbad6-af10-4d55-be4c-fc1b259b6ca3,Cumming,Forsyth County,1.82
+McDonald's,d0fbbad6-af10-4d55-be4c-fc1b259b6ca3,Cumming,Forsyth County,Taco Bell,577b63d5-7977-4f86-9cd3-5914f7b3faef,Cumming,Forsyth County,1.82
+McDonald's,509240d5-8aa7-46cb-98ff-4233f763c0de,Cartersville,Bartow County,Taco Bell,758f05fa-6cff-454e-962b-d88d90d7e49d,Cartersville,Bartow County,1.89
+McDonald's,df58bed9-b548-4207-9eac-a81b0ba35b53,Lawrenceville,Gwinnett County,Wendy's,42cfacfa-2dee-4ae0-b087-a28f3e7db74a,Buford,Gwinnett County,1.90
+McDonald's,9ed9bf8b-45c8-49df-996c-7c29c47a83fb,Atlanta,Fulton County,Wendy's,86c7f98f-c920-4e5f-9a71-a31b35d22b07,Atlanta,Fulton County,1.90
+Burger King,cbdd6948-5edf-4acd-becf-e8ad1a065bd1,Kennesaw,Cobb County,McDonald's,fa83ada7-a10c-40bc-98e4-fda527ff979a,Kennesaw,Cobb County,1.92
+Burger King,0fd67c9f-e1f0-4aa7-844a-080b9a37b7b2,Atlanta,Fulton County,Wendy's,5aa3157c-bfc3-4ca0-a2f7-013afbd81eea,Atlanta,Fulton County,1.99
+McDonald's,f8afee70-900c-4455-9648-9dad2813d949,Acworth,Cherokee County,Burger King,e121e1ea-e493-48fb-ad24-8ab234d46c26,Kennesaw,Cobb County,2.00
+McDonald's,bf71148f-c521-4dbf-952f-f782bb3efda0,Atlanta,Fulton County,Burger King,e6010d3f-28c5-4bb1-92ca-ed8ce2ed4f7d,College Park,Fulton County,2.01
+Burger King,76ad60bd-4ed4-4719-a941-128e12a6119d,Kennesaw,Cobb County,Taco Bell,184af02c-43fc-4a22-840c-c1f80d7d4746,Kennesaw,Cobb County,2.02
+McDonald's,3d19d859-fde7-4628-8abd-d4e1f39b7dac,Marietta,Cobb County,Wendy's,9dd6ffd8-f54d-4246-b0c6-e9751a7fcf6a,Marietta,Cobb County,2.02
+McDonald's,6786860d-2daa-4c6a-acf2-a13c32872f91,Acworth,Cobb County,Burger King,9f2adcea-fadc-4d11-9095-bd77c117b728,Acworth,Cobb County,2.03
+Burger King,e4dcb88b-e15a-4264-b58f-90a572e44f51,Lithia Springs,Douglas County,Wendy's,56249521-e67d-4f62-a952-2882eb2217dc,Lithia Springs,Douglas County,2.07
+McDonald's,250751ff-149d-4634-850f-44e961a62a3a,Cumming,Forsyth County,Taco Bell,577b63d5-7977-4f86-9cd3-5914f7b3faef,Cumming,Forsyth County,2.14
+Wendy's,ffc3e7c0-98c8-4e3a-9333-42710df7826f,Marietta,Cobb County,McDonald's,6783023e-9849-47a1-bc71-e21398d8aebd,Marietta,Cobb County,2.16
+Wendy's,fc73484a-6f82-42bf-8e68-c15a56ce0001,Decatur,DeKalb County,Burger King,1f435193-9b97-4d5d-88a8-9fb1577c42cf,Decatur,DeKalb County,2.19
+McDonald's,aa82704d-9c2c-4de7-9a2c-0e163c6ef545,Stone Mountain,DeKalb County,Burger King,d40f3663-f3cb-4552-b3f7-79a79b457c24,Stone Mountain,DeKalb County,2.20
+McDonald's,f80aeff4-8685-4c2a-9985-22849b378461,Stockbridge,Henry County,Wendy's,66c17be6-4af6-4e09-bd6c-9cbaee56e4dc,Stockbridge,Henry County,2.21
+McDonald's,dda60042-213b-4a5a-b1d0-dc256e24fd59,Lawrenceville,Gwinnett County,Burger King,a4896b9e-d66e-49c9-ade8-ee9c3ea3909a,Lawrenceville,Gwinnett County,2.22
+McDonald's,0a995059-969a-4556-add7-fbe8c6b8e0dc,Alpharetta,Fulton County,Burger King,c6f7346e-b691-4365-bc1e-b2f2dca054bd,Roswell,Fulton County,2.22
+Taco Bell,148258a2-16b7-4ad7-b09b-2d2da4b3f620,Roswell,Fulton County,Burger King,c6f7346e-b691-4365-bc1e-b2f2dca054bd,Roswell,Fulton County,2.24
+McDonald's,4d5f576b-dde0-45ed-af04-dfccaac97fb2,Covington,Newton County,Wendy's,55945622-dc00-4b0d-b9a7-56db3266228a,Covington,Newton County,2.24
+Wendy's,507531bd-0d30-4a9d-9a7a-30fe594c402c,Atlanta,Fulton County,McDonald's,6e4a23ba-106e-4cbd-b02f-fcca07f55d81,Atlanta,Fulton County,2.26
+McDonald's,6e4a23ba-106e-4cbd-b02f-fcca07f55d81,Atlanta,Fulton County,Wendy's,507531bd-0d30-4a9d-9a7a-30fe594c402c,Atlanta,Fulton County,2.26
+Burger King,dab851d2-d3d6-4491-9a6c-931cb36a60ed,Cartersville,Bartow County,McDonald's,b343c0ea-7f74-4da5-b5e8-a1f789702c65,Cartersville,Bartow County,2.29
+McDonald's,c801b2eb-1733-452a-a5f0-279aba75e1ad,Stone Mountain,DeKalb County,Wendy's,c002b89a-bf7f-4aaa-b5af-5cc5c3594fd3,Decatur,DeKalb County,2.32
+McDonald's,71928f8e-8a3c-42ee-89e2-164a0c887d17,Duluth,Fulton County,Wendy's,dc6b6c2a-9d17-4851-8ee5-aaba91c8f889,Duluth,Fulton County,2.35
+McDonald's,356e84e1-94f2-4b5c-9e43-d0299a7de6d1,Marietta,Cobb County,Taco Bell,abfe918b-e6d2-4efd-8b68-50cd09ac2ddc,Marietta,Cobb County,2.35
+Taco Bell,4fb9e919-f707-466f-96f7-058c885eeecf,Dallas,Paulding County,Burger King,25805ee8-5d12-40b1-bc22-5f62ed6248dc,Hiram,Paulding County,2.41
+McDonald's,c740ea53-4bbf-4cbf-89b5-ff9685e1988e,Atlanta,Cobb County,Wendy's,571c3f95-f574-4a99-9e79-39c32db37f09,Marietta,Cobb County,2.42
+McDonald's,718a389d-42c5-4c7a-aa42-8f692c1a0a39,Peachtree City,Fayette County,Taco Bell,1d9a838e-eab9-4f10-8f6d-956e4e2f7211,Peachtree City,Fayette County,2.42
+McDonald's,59a00260-ca7f-419f-b494-1cc16c2bcf31,Auburn,Barrow County,Taco Bell,cff61e67-1a97-497e-874d-3627f4cc7696,Dacula,Gwinnett County,2.45
+Taco Bell,cff61e67-1a97-497e-874d-3627f4cc7696,Dacula,Gwinnett County,McDonald's,59a00260-ca7f-419f-b494-1cc16c2bcf31,Auburn,Barrow County,2.45
+McDonald's,cc5eb8d9-17d6-44cb-9e94-e972e5b729dd,Dacula,Gwinnett County,Taco Bell,3bacf939-9aa5-4b89-9619-eb77a1f63893,Dacula,Gwinnett County,2.47
+Wendy's,36768b48-7e68-4abe-b22b-bea46ec24c72,Peachtree City,Fayette County,McDonald's,718a389d-42c5-4c7a-aa42-8f692c1a0a39,Peachtree City,Fayette County,2.50
+McDonald's,0f374dfb-73af-4605-9676-e965a72c2794,Canton,Cherokee County,Wendy's,4610210f-23c4-4889-ae67-777019cdcfb9,Canton,Cherokee County,2.52
+McDonald's,9e8434fb-6648-4487-b987-7c39423b9f7e,Tucker,DeKalb County,Burger King,d40f3663-f3cb-4552-b3f7-79a79b457c24,Stone Mountain,DeKalb County,2.62
+Wendy's,c7c543ef-0c6f-4b94-a8fd-b67c85042b89,Atlanta,DeKalb County,McDonald's,24c8195e-80cf-4cc0-b27d-8300a75dcb5e,Decatur,DeKalb County,2.65
+McDonald's,55ca0ab5-2a9c-4f09-810d-2ef092803cd8,Stone Mountain,DeKalb County,Taco Bell,996fdb51-ffde-4d80-802b-ea9d6342e909,Stone Mountain,DeKalb County,2.66
+McDonald's,507a1178-4992-4939-998f-600b75aae0ed,Covington,Newton County,Taco Bell,212fb53b-909a-44b9-a592-0c37220cace0,Covington,Newton County,2.74
+McDonald's,67dcf2c0-501e-4afe-a7e5-91d63abbb240,Cumming,Forsyth County,Taco Bell,2e3a9801-1f41-4ab2-ae6e-3d61c5034136,Suwanee,Gwinnett County,2.77
+McDonald's,48892cdc-7cbb-455c-b000-fa22e67331ce,Acworth,Cobb County,Wendy's,4936b5b6-0064-4cff-b0d0-49e536e6798f,Acworth,Cobb County,2.77
+Wendy's,77bf9d86-3d80-4417-9dff-527f82c47687,Mableton,Cobb County,Burger King,c49ac6ae-eb38-4bf5-8ecd-0691716989a3,Lithia Springs,Douglas County,2.81
+Wendy's,3919097c-8ffb-4f8f-ba88-1e4e47d1806c,Stockbridge,Henry County,Burger King,27a47d89-274d-421c-8c89-e6f274b26f2e,McDonough,Henry County,2.89
+McDonald's,f34d0e48-aa6d-4ef4-ae51-d7b0d51d56d9,Jonesboro,Clayton County,Wendy's,9d1f877c-1325-44b9-9225-303983e5a139,Fairburn,Fulton County,2.96
+McDonald's,28791592-ebd4-4cfd-bae8-b7dde526101c,Alpharetta,Fulton County,Wendy's,f1f490ba-8b88-4f3f-acd2-bfc63eac959b,Roswell,Fulton County,3.00
+McDonald's,bd2fa40c-4e04-4ff9-8dac-a3f27758f318,Norcross,Gwinnett County,Taco Bell,086013b3-a519-47a0-84dd-2d019c956108,Norcross,Gwinnett County,3.02
+McDonald's,146fff82-c71a-4446-8489-3da86f379949,Tucker,DeKalb County,Taco Bell,fb46f89c-e4ba-4e7b-b08f-c45578602fe0,Atlanta,DeKalb County,3.06
+McDonald's,eaee3135-bdc6-4b97-a4d0-4116a5a8fd59,Dallas,Paulding County,Wendy's,9da36585-2290-4911-aaeb-5797f44166b2,Dallas,Paulding County,3.10
+McDonald's,3296574a-1831-4d70-ad17-8f31012db2b4,Atlanta,Fulton County,Burger King,bd85f687-0722-4228-95e5-d57e6948ccbf,Atlanta,Fulton County,3.14
+Wendy's,04993c2d-1b92-4483-9bea-e2ba6b6e650e,Sharpsburg,Coweta County,Taco Bell,ce6a46b1-6947-4cfa-8c17-005588565870,Sharpsburg,Coweta County,3.15
+Taco Bell,972153da-d124-42c2-b6eb-f9cc65fa6a09,Buford,Gwinnett County,Wendy's,d8dc2e60-8819-43ec-a17c-7198394204ec,Dacula,Gwinnett County,3.23
+McDonald's,edf7dd5d-34c4-4983-a5e7-f7156b5b8703,Griffin,Spalding County,Wendy's,b71cd82a-acc4-48ac-b9fc-f5c74c34db01,Griffin,Spalding County,3.48
+McDonald's,2d475769-a296-4bd2-b4c5-873c5aca69d1,Sugar Hill,Gwinnett County,Taco Bell,4fc02fba-80d1-4b4e-a918-cafc35b3c63a,Cumming,Forsyth County,3.72
+Taco Bell,888bf615-319c-4840-b12b-41a1e122b6b6,Douglasville,Douglas County,McDonald's,eaee3135-bdc6-4b97-a4d0-4116a5a8fd59,Dallas,Paulding County,3.90
+Burger King,a989de5f-504d-4a2b-b8a0-ce4b87cac030,Jackson,Butts County,Wendy's,366b19ca-0c10-4818-844e-0d4f355bb367,Jackson,Butts County,4.13
+Wendy's,00f9d511-6949-4735-a9e8-713ec543e925,McDonough,Henry County,McDonald's,56bbb8dc-6ef2-4e22-88ed-ba9ecbdcdf50,McDonough,Henry County,4.64
+Wendy's,458400ec-41e8-4f69-bba3-061ab97650c8,Hampton,Henry County,McDonald's,dd1adc36-8514-4e6d-bad1-8e40cc672e9b,Lovejoy,Henry County,4.79
+McDonald's,9f01ff3d-10fb-48fb-b9b3-b1671513f90e,Palmetto,Fulton County,Wendy's,abd484ab-4dce-498d-979b-a4828741297a,Fairburn,Fulton County,4.84
+McDonald's,11e9b8bc-8ff9-41b5-9a17-d313cb14d3ae,Fairburn,Fulton County,Taco Bell,957773a0-1f73-489d-9ea6-baabaac6eb9b,Union City,Fulton County,5.08
+McDonald's,b843c23e-f36e-411b-bf9a-d8fdd8bf25d7,Dawsonville,Dawson County,Burger King,eaf97865-189c-414a-b15c-b38c8f899d62,Dawsonville,Dawson County,5.51
+McDonald's,2af2af2d-9c73-492a-9d6b-63eeeb689b8d,Senoia,Coweta County,Wendy's,ebf0319f-d6d3-451b-bde3-2ecf7a3c36d8,Peachtree City,Fayette County,5.58
+Taco Bell,cd72d5a1-bc46-4c3c-9655-a1e4be724525,Tallapoosa,Haralson County,McDonald's,05392007-179b-4429-82a1-d6fc6fc46277,Bremen,Haralson County,6.38
+Burger King,aa952b16-f224-4f07-a812-ee60e9cceaf8,Zebulon,Pike County,McDonald's,edf7dd5d-34c4-4983-a5e7-f7156b5b8703,Griffin,Spalding County,6.66
+Wendy's,00b244ae-12ba-407b-8c6b-7cb33d2d799d,Bowdon,Carroll County,Taco Bell,929f05d1-c3d9-4bbe-bd35-9d49b47a1e07,Carrollton,Carroll County,8.23
+McDonald's,93266b4f-5ca0-4a3d-8ea1-71aa359a1590,Manchester,Meriwether County,Burger King,aa952b16-f224-4f07-a812-ee60e9cceaf8,Zebulon,Pike County,24.15

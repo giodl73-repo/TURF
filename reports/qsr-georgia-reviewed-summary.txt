@@ -1,0 +1,249 @@
+review_status,rows
+needs_review,10
+packet_ready,1259
+
+review_reason,rows
+missing_required_field,10
+primary_store_candidate,1259
+
+total_stores,1259
+
+brand,stores
+Burger King,266
+McDonald's,449
+Taco Bell,255
+Wendy's,289
+
+city,state,leader,leader_stores,total_stores,status
+Acworth,GA,McDonald's,5,10,contested
+Adairsville,GA,Burger King,1,4,contested
+Adel,GA,Burger King,1,4,contested
+Albany,GA,Burger King,6,19,contested
+Alma,GA,McDonald's,1,1,dominant
+Alpharetta,GA,McDonald's,7,20,contested
+Americus,GA,McDonald's,2,5,contested
+Ashburn,GA,Burger King,1,2,contested
+Athens,GA,McDonald's,7,19,contested
+Atlanta,GA,Wendy's,19,55,contested
+Auburn,GA,McDonald's,1,1,dominant
+Augusta,GA,McDonald's,13,30,contested
+Austell,GA,McDonald's,2,4,contested
+Bainbridge,GA,McDonald's,1,3,contested
+Barnesville,GA,McDonald's,1,2,contested
+Baxley,GA,Burger King,1,3,contested
+Bethlehem,GA,McDonald's,1,3,contested
+Blackshear,GA,Burger King,1,2,contested
+Blairsville,GA,McDonald's,1,2,contested
+Blakely,GA,McDonald's,1,1,dominant
+Blue Ridge,GA,Burger King,1,4,contested
+Bogart,GA,Burger King,1,1,dominant
+Bonaire,GA,McDonald's,1,2,contested
+Bowdon,GA,Wendy's,1,1,dominant
+Braselton,GA,McDonald's,1,3,contested
+Bremen,GA,McDonald's,1,2,contested
+Brookhaven,GA,McDonald's,3,4,dominant
+Brunswick,GA,McDonald's,5,9,dominant
+Buford,GA,Taco Bell,5,12,contested
+Byron,GA,Burger King,1,4,contested
+Cairo,GA,Burger King,1,3,contested
+Calhoun,GA,Taco Bell,3,10,contested
+Camilla,GA,McDonald's,1,1,dominant
+Canton,GA,McDonald's,6,15,contested
+Carnesville,GA,Wendy's,1,1,dominant
+Carrollton,GA,McDonald's,4,11,contested
+Cartersville,GA,McDonald's,6,19,contested
+Cedartown,GA,McDonald's,2,5,contested
+Chamblee,GA,McDonald's,1,2,contested
+Chatsworth,GA,Burger King,1,4,contested
+Chickamauga,GA,McDonald's,1,3,contested
+Clarkesville,GA,McDonald's,1,3,contested
+Claxton,GA,McDonald's,1,2,contested
+Clayton,GA,Burger King,1,3,contested
+Cleveland,GA,Burger King,1,4,contested
+Cochran,GA,McDonald's,1,2,contested
+College Park,GA,Burger King,1,3,contested
+Colquitt,GA,Burger King,1,1,dominant
+Columbus,GA,Burger King,10,31,contested
+Commerce,GA,Burger King,1,4,contested
+Conyers,GA,Burger King,3,12,contested
+Cordele,GA,Burger King,1,4,contested
+Cornelia,GA,Burger King,1,4,contested
+Covington,GA,McDonald's,5,13,contested
+Cumming,GA,McDonald's,7,18,contested
+Dacula,GA,McDonald's,3,8,contested
+Dahlonega,GA,McDonald's,1,3,contested
+Dallas,GA,McDonald's,3,9,contested
+Dalton,GA,McDonald's,5,15,contested
+Danielsville,GA,Burger King,1,1,dominant
+Darien,GA,Burger King,1,2,contested
+Dawson,GA,McDonald's,1,2,contested
+Dawsonville,GA,McDonald's,2,5,contested
+Decatur,GA,McDonald's,7,19,contested
+Donalsonville,GA,Burger King,1,1,dominant
+Doraville,GA,Burger King,2,3,dominant
+Douglas,GA,Burger King,2,5,contested
+Douglasville,GA,Taco Bell,5,12,contested
+Dublin,GA,Burger King,2,7,contested
+Duluth,GA,McDonald's,4,11,contested
+Dunwoody,GA,McDonald's,2,3,dominant
+East Dublin,GA,McDonald's,1,1,dominant
+East Ellijay,GA,Burger King,1,2,contested
+East Point,GA,McDonald's,3,6,contested
+Eastman,GA,Burger King,1,2,contested
+Eatonton,GA,McDonald's,2,3,dominant
+Elberton,GA,Burger King,1,4,contested
+Ellenwood,GA,McDonald's,2,6,contested
+Ellijay,GA,Taco Bell,1,2,contested
+Emerson,GA,McDonald's,1,1,dominant
+Evans,GA,McDonald's,2,5,contested
+FORT GORDON,GA,Burger King,1,1,dominant
+Fairburn,GA,McDonald's,2,5,contested
+Fayetteville,GA,McDonald's,2,6,contested
+Fitzgerald,GA,Burger King,1,3,contested
+Flowery Branch,GA,McDonald's,3,6,contested
+Folkston,GA,Burger King,1,2,contested
+Forest Park,GA,McDonald's,2,5,contested
+Forsyth,GA,Burger King,1,4,contested
+Fort Gordon,GA,Taco Bell,1,1,dominant
+Fort Moore,GA,Burger King,1,1,dominant
+Fort Oglethorpe,GA,Wendy's,2,5,contested
+Fort Stewart,GA,Burger King,1,1,dominant
+Fort Valley,GA,Burger King,1,4,contested
+Gainesville,GA,McDonald's,5,14,contested
+Garden City,GA,Burger King,1,2,contested
+Glennville,GA,McDonald's,1,1,dominant
+Gray,GA,McDonald's,1,1,dominant
+Grayson,GA,Burger King,1,3,contested
+Greensboro,GA,Burger King,2,5,contested
+Griffin,GA,McDonald's,3,9,contested
+Grovetown,GA,McDonald's,2,3,dominant
+Hahira,GA,Wendy's,1,1,dominant
+Hampton,GA,Wendy's,2,3,dominant
+Hapeville,GA,Wendy's,2,3,dominant
+Hartwell,GA,Burger King,1,4,contested
+Hawkinsville,GA,McDonald's,1,1,dominant
+Hazlehurst,GA,Burger King,1,2,contested
+Helen,GA,Wendy's,1,1,dominant
+Hephzibah,GA,Taco Bell,1,1,dominant
+Hiawassee,GA,McDonald's,1,2,contested
+Hinesville,GA,McDonald's,3,6,contested
+Hiram,GA,Burger King,1,4,contested
+Hogansville,GA,Burger King,1,3,contested
+Holly Springs,GA,Taco Bell,1,1,dominant
+Hoschton,GA,Burger King,2,4,contested
+Jackson,GA,Burger King,2,6,contested
+Jasper,GA,Burger King,1,4,contested
+Jefferson,GA,Taco Bell,2,5,contested
+Jesup,GA,Burger King,1,4,contested
+Jonesboro,GA,McDonald's,3,7,contested
+Kennesaw,GA,McDonald's,4,13,contested
+Kings Bay,GA,McDonald's,1,1,dominant
+Kingsland,GA,Wendy's,2,5,contested
+La Fayette,GA,McDonald's,1,3,contested
+LaGrange,GA,Burger King,3,3,dominant
+Lagrange,GA,McDonald's,4,9,contested
+Lake City,GA,Burger King,1,2,contested
+Lake Park,GA,McDonald's,1,3,contested
+Lakeland,GA,McDonald's,1,1,dominant
+Lavonia,GA,Burger King,1,3,contested
+Lawrenceville,GA,McDonald's,9,23,contested
+Leesburg,GA,McDonald's,1,1,dominant
+Lexington,GA,Burger King,1,1,dominant
+Lilburn,GA,McDonald's,3,7,contested
+Lithia Springs,GA,Burger King,2,7,contested
+Lithonia,GA,McDonald's,3,9,contested
+Lizella,GA,Wendy's,1,1,dominant
+Locust Grove,GA,Burger King,2,5,contested
+Loganville,GA,Wendy's,2,5,contested
+Louisville,GA,McDonald's,1,1,dominant
+Lovejoy,GA,McDonald's,1,1,dominant
+Mableton,GA,Wendy's,3,6,contested
+Macon,GA,McDonald's,9,28,contested
+Madison,GA,Burger King,1,4,contested
+Manchester,GA,McDonald's,1,1,dominant
+Marietta,GA,McDonald's,11,33,contested
+Martinez,GA,Burger King,1,1,dominant
+McDonough,GA,McDonald's,5,15,contested
+McRae-Helena,GA,McDonald's,1,1,dominant
+Metter,GA,Burger King,1,2,contested
+Midland,GA,McDonald's,1,2,contested
+Midway,GA,Burger King,1,2,contested
+Milledgeville,GA,McDonald's,2,5,contested
+Millen,GA,McDonald's,1,1,dominant
+Monroe,GA,Wendy's,2,5,contested
+Montezuma,GA,McDonald's,1,1,dominant
+Moody AFB,GA,Burger King,1,1,dominant
+Morrow,GA,Wendy's,3,7,contested
+Moultrie,GA,Burger King,1,4,contested
+Nahunta,GA,Burger King,1,1,dominant
+Nashville,GA,McDonald's,1,1,dominant
+Newnan,GA,McDonald's,4,13,contested
+Norcross,GA,McDonald's,4,11,contested
+Oakwood,GA,Burger King,1,3,contested
+Palmetto,GA,McDonald's,1,1,dominant
+Peachtree City,GA,McDonald's,2,5,contested
+Peachtree Corners,GA,Burger King,2,5,contested
+Pembroke,GA,McDonald's,1,1,dominant
+Perry,GA,McDonald's,2,7,contested
+Pooler,GA,McDonald's,3,7,contested
+Port Wentworth,GA,Burger King,1,4,contested
+Powder Springs,GA,McDonald's,2,5,contested
+Quitman,GA,Burger King,1,2,contested
+Register,GA,Burger King,1,1,dominant
+Reidsville,GA,McDonald's,1,1,dominant
+Riceboro,GA,McDonald's,1,1,dominant
+Richmond Hill,GA,McDonald's,3,7,contested
+Rincon,GA,McDonald's,2,3,dominant
+Ringgold,GA,McDonald's,2,5,contested
+Riverdale,GA,McDonald's,2,5,contested
+Robins AFB,GA,Burger King,1,1,dominant
+Rockmart,GA,Burger King,1,2,contested
+Rome,GA,McDonald's,3,9,contested
+Roswell,GA,McDonald's,4,8,contested
+Royston,GA,McDonald's,1,2,contested
+Sandersville,GA,McDonald's,1,3,contested
+Sandy Springs,GA,McDonald's,2,4,contested
+Savannah,GA,McDonald's,13,34,contested
+Senoia,GA,McDonald's,1,1,dominant
+Sharpsburg,GA,Taco Bell,1,2,contested
+Smyrna,GA,Burger King,3,11,contested
+Snellville,GA,McDonald's,3,9,contested
+South Fulton,GA,McDonald's,2,3,dominant
+Springfield,GA,Taco Bell,1,2,contested
+St Marys,GA,Wendy's,1,1,dominant
+St Simons Island,GA,Burger King,1,2,contested
+Statesboro,GA,McDonald's,2,6,contested
+Stockbridge,GA,McDonald's,4,10,contested
+Stone Mountain,GA,McDonald's,5,10,contested
+Sugar Hill,GA,McDonald's,1,1,dominant
+Summerville,GA,Burger King,1,3,contested
+Suwanee,GA,McDonald's,3,10,contested
+Swainsboro,GA,Burger King,1,4,contested
+Sylvania,GA,McDonald's,1,1,dominant
+Sylvester,GA,Burger King,1,3,contested
+Tallapoosa,GA,Taco Bell,1,1,dominant
+Temple,GA,Burger King,1,3,contested
+Thomaston,GA,Burger King,1,4,contested
+Thomasville,GA,Burger King,1,3,contested
+Thomson,GA,Burger King,1,4,contested
+Tifton,GA,McDonald's,3,9,contested
+Toccoa,GA,Burger King,1,4,contested
+Trenton,GA,McDonald's,1,3,contested
+Trion,GA,Wendy's,1,1,dominant
+Tucker,GA,McDonald's,2,2,dominant
+Unadilla,GA,Burger King,1,2,contested
+Union City,GA,Burger King,1,4,contested
+Valdosta,GA,McDonald's,6,19,contested
+Varnell,GA,McDonald's,1,2,contested
+Vidalia,GA,Burger King,1,4,contested
+Vienna,GA,McDonald's,1,1,dominant
+Villa Rica,GA,McDonald's,2,6,contested
+Warner Robins,GA,McDonald's,5,15,contested
+Washington,GA,McDonald's,1,1,dominant
+Watkinsville,GA,McDonald's,1,1,dominant
+Waycross,GA,McDonald's,2,5,contested
+Waynesboro,GA,Burger King,1,3,contested
+Winder,GA,Burger King,1,4,contested
+Woodstock,GA,McDonald's,4,10,contested
+Wrens,GA,McDonald's,1,1,dominant
+Zebulon,GA,Burger King,1,1,dominant

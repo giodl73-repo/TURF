@@ -1,0 +1,40 @@
+cbsa_code,cbsa_title,cbsa_type,metro_context_status,leader,leader_stores,total_stores,status
+,Non-CBSA Georgia county,Non-CBSA,non_cbsa,McDonald's,38,87,contested
+10500,Albany GA,Metropolitan Statistical Area,cbsa,McDonald's,8,25,contested
+11140,Americus GA,Micropolitan Statistical Area,cbsa,McDonald's,2,5,contested
+12020,Athens-Clarke County GA,Metropolitan Statistical Area,cbsa,McDonald's,7,22,contested
+12060,Atlanta-Sandy Springs-Roswell GA,Metropolitan Statistical Area,cbsa,McDonald's,229,639,contested
+12260,Augusta-Richmond County GA-SC,Metropolitan Statistical Area,cbsa,McDonald's,19,49,contested
+12460,Bainbridge GA,Micropolitan Statistical Area,cbsa,McDonald's,1,3,contested
+15260,Brunswick-St. Simons GA,Metropolitan Statistical Area,cbsa,McDonald's,7,14,contested
+15660,Calhoun GA,Micropolitan Statistical Area,cbsa,Taco Bell,3,10,contested
+16340,Cedartown GA,Micropolitan Statistical Area,cbsa,McDonald's,3,7,contested
+16860,Chattanooga TN-GA,Metropolitan Statistical Area,cbsa,McDonald's,6,19,contested
+17980,Columbus GA-AL,Metropolitan Statistical Area,cbsa,Burger King,11,34,contested
+18380,Cordele GA,Micropolitan Statistical Area,cbsa,Burger King,1,4,contested
+18460,Cornelia GA,Micropolitan Statistical Area,cbsa,McDonald's,2,7,contested
+19140,Dalton GA,Metropolitan Statistical Area,cbsa,McDonald's,7,21,contested
+20060,Douglas GA,Micropolitan Statistical Area,cbsa,Burger King,2,5,contested
+20140,Dublin GA,Micropolitan Statistical Area,cbsa,Burger King,2,8,contested
+22340,Fitzgerald GA,Micropolitan Statistical Area,cbsa,Burger King,1,3,contested
+23580,Gainesville GA,Metropolitan Statistical Area,cbsa,McDonald's,8,23,contested
+25980,Hinesville GA,Metropolitan Statistical Area,cbsa,McDonald's,5,10,contested
+27600,Jefferson GA,Micropolitan Statistical Area,cbsa,McDonald's,6,17,contested
+27700,Jesup GA,Micropolitan Statistical Area,cbsa,Burger King,1,4,contested
+28680,Kingsland GA,Micropolitan Statistical Area,cbsa,Wendy's,3,7,contested
+29300,LaGrange GA-AL,Micropolitan Statistical Area,cbsa,McDonald's,5,15,contested
+31420,Macon-Bibb County GA,Metropolitan Statistical Area,cbsa,McDonald's,11,34,contested
+33300,Milledgeville GA,Micropolitan Statistical Area,cbsa,McDonald's,2,5,contested
+34220,Moultrie GA,Micropolitan Statistical Area,cbsa,Burger King,1,4,contested
+40660,Rome GA,Metropolitan Statistical Area,cbsa,McDonald's,3,9,contested
+42340,Savannah GA,Metropolitan Statistical Area,cbsa,McDonald's,24,60,contested
+44340,Statesboro GA,Micropolitan Statistical Area,cbsa,McDonald's,3,9,contested
+44900,Summerville GA,Micropolitan Statistical Area,cbsa,Burger King,1,4,contested
+45580,Thomaston GA,Micropolitan Statistical Area,cbsa,Burger King,1,4,contested
+45620,Thomasville GA,Micropolitan Statistical Area,cbsa,Burger King,2,6,contested
+45700,Tifton GA,Micropolitan Statistical Area,cbsa,McDonald's,4,11,contested
+45740,Toccoa GA,Micropolitan Statistical Area,cbsa,Burger King,1,4,contested
+46660,Valdosta GA,Metropolitan Statistical Area,cbsa,McDonald's,9,27,contested
+47080,Vidalia GA,Micropolitan Statistical Area,cbsa,Burger King,1,4,contested
+47580,Warner Robins GA,Metropolitan Statistical Area,cbsa,McDonald's,10,33,contested
+48180,Waycross GA,Micropolitan Statistical Area,cbsa,McDonald's,3,7,contested

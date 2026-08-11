@@ -1,0 +1,128 @@
+county_geoid,county_name,leader,leader_stores,total_stores,status
+13001,Appling County,Burger King,1,3,contested
+13005,Bacon County,McDonald's,1,1,dominant
+13009,Baldwin County,McDonald's,2,5,contested
+13013,Barrow County,McDonald's,3,8,contested
+13015,Bartow County,McDonald's,8,24,contested
+13017,Ben Hill County,Burger King,1,3,contested
+13019,Berrien County,McDonald's,1,1,dominant
+13021,Bibb County,Burger King,7,24,contested
+13023,Bleckley County,McDonald's,1,2,contested
+13025,Brantley County,Burger King,1,1,dominant
+13027,Brooks County,Burger King,1,2,contested
+13029,Bryan County,McDonald's,4,8,contested
+13031,Bulloch County,Burger King,2,7,contested
+13033,Burke County,Burger King,1,3,contested
+13035,Butts County,Burger King,2,6,contested
+13039,Camden County,Wendy's,3,7,contested
+13043,Candler County,Burger King,1,2,contested
+13045,Carroll County,McDonald's,7,21,contested
+13047,Catoosa County,McDonald's,3,10,contested
+13049,Charlton County,Burger King,1,2,contested
+13051,Chatham County,McDonald's,18,47,contested
+13053,Chattahoochee County,Burger King,1,1,dominant
+13055,Chattooga County,Burger King,1,4,contested
+13057,Cherokee County,McDonald's,11,27,contested
+13059,Clarke County,McDonald's,6,18,contested
+13063,Clayton County,McDonald's,10,26,contested
+13067,Cobb County,McDonald's,29,84,contested
+13069,Coffee County,Burger King,2,5,contested
+13071,Colquitt County,Burger King,1,4,contested
+13073,Columbia County,McDonald's,7,17,contested
+13075,Cook County,Burger King,1,4,contested
+13077,Coweta County,McDonald's,5,16,contested
+13081,Crisp County,Burger King,1,4,contested
+13083,Dade County,McDonald's,1,3,contested
+13085,Dawson County,McDonald's,2,5,contested
+13087,Decatur County,McDonald's,1,3,contested
+13089,DeKalb County,McDonald's,30,73,contested
+13091,Dodge County,Burger King,1,2,contested
+13093,Dooly County,Burger King,1,3,contested
+13095,Dougherty County,Burger King,6,19,contested
+13097,Douglas County,Taco Bell,6,19,contested
+13099,Early County,McDonald's,1,1,dominant
+13101,Echols County,McDonald's,1,3,contested
+13103,Effingham County,McDonald's,2,5,contested
+13105,Elbert County,Burger King,1,4,contested
+13107,Emanuel County,Burger King,1,4,contested
+13109,Evans County,McDonald's,1,2,contested
+13111,Fannin County,Burger King,1,4,contested
+13113,Fayette County,McDonald's,4,11,contested
+13115,Floyd County,McDonald's,3,9,contested
+13117,Forsyth County,McDonald's,7,18,contested
+13119,Franklin County,McDonald's,2,6,contested
+13121,Fulton County,McDonald's,38,96,contested
+13123,Gilmer County,Burger King,1,4,contested
+13127,Glynn County,McDonald's,6,11,dominant
+13129,Gordon County,Taco Bell,3,10,contested
+13131,Grady County,Burger King,1,3,contested
+13133,Greene County,Burger King,2,5,contested
+13135,Gwinnett County,McDonald's,34,98,contested
+13137,Habersham County,McDonald's,2,7,contested
+13139,Hall County,McDonald's,8,23,contested
+13143,Haralson County,McDonald's,1,3,contested
+13147,Hart County,Burger King,1,4,contested
+13151,Henry County,McDonald's,12,34,contested
+13153,Houston County,McDonald's,8,25,contested
+13157,Jackson County,McDonald's,6,17,contested
+13161,Jeff Davis County,Burger King,1,2,contested
+13163,Jefferson County,McDonald's,2,2,dominant
+13165,Jenkins County,McDonald's,1,1,dominant
+13169,Jones County,McDonald's,3,6,contested
+13171,Lamar County,McDonald's,1,2,contested
+13173,Lanier County,McDonald's,1,1,dominant
+13175,Laurens County,Burger King,2,8,contested
+13177,Lee County,McDonald's,1,1,dominant
+13179,Liberty County,McDonald's,5,10,contested
+13185,Lowndes County,Wendy's,7,21,contested
+13187,Lumpkin County,McDonald's,1,3,contested
+13189,McDuffie County,Burger King,1,4,contested
+13191,McIntosh County,Burger King,1,2,contested
+13193,Macon County,McDonald's,1,1,dominant
+13195,Madison County,Burger King,1,1,dominant
+13199,Meriwether County,McDonald's,1,1,dominant
+13201,Miller County,Burger King,1,1,dominant
+13205,Mitchell County,McDonald's,1,1,dominant
+13207,Monroe County,Burger King,1,4,contested
+13211,Morgan County,Burger King,1,4,contested
+13213,Murray County,Burger King,1,4,contested
+13215,Muscogee County,Burger King,10,33,contested
+13217,Newton County,McDonald's,5,13,contested
+13219,Oconee County,Burger King,1,2,contested
+13221,Oglethorpe County,Burger King,1,1,dominant
+13223,Paulding County,McDonald's,4,13,contested
+13225,Peach County,Burger King,2,8,contested
+13227,Pickens County,Burger King,1,4,contested
+13229,Pierce County,Burger King,1,2,contested
+13231,Pike County,Burger King,1,1,dominant
+13233,Polk County,McDonald's,3,7,contested
+13235,Pulaski County,McDonald's,1,1,dominant
+13237,Putnam County,McDonald's,2,3,dominant
+13241,Rabun County,Burger King,1,3,contested
+13245,Richmond County,McDonald's,10,25,contested
+13247,Rockdale County,Burger King,3,12,contested
+13251,Screven County,McDonald's,1,1,dominant
+13253,Seminole County,Burger King,1,1,dominant
+13255,Spalding County,McDonald's,3,9,contested
+13257,Stephens County,Burger King,1,4,contested
+13261,Sumter County,McDonald's,2,5,contested
+13267,Tattnall County,McDonald's,2,2,dominant
+13271,Telfair County,McDonald's,1,1,dominant
+13273,Terrell County,McDonald's,1,2,contested
+13275,Thomas County,Burger King,1,3,contested
+13277,Tift County,McDonald's,3,9,contested
+13279,Toombs County,Burger King,1,4,contested
+13281,Towns County,McDonald's,1,2,contested
+13285,Troup County,McDonald's,5,15,contested
+13287,Turner County,Burger King,1,2,contested
+13291,Union County,McDonald's,1,2,contested
+13293,Upson County,Burger King,1,4,contested
+13295,Walker County,McDonald's,2,6,contested
+13297,Walton County,Wendy's,4,10,contested
+13299,Ware County,McDonald's,2,5,contested
+13303,Washington County,McDonald's,1,3,contested
+13305,Wayne County,Burger King,1,4,contested
+13311,White County,Wendy's,2,5,contested
+13313,Whitfield County,McDonald's,6,17,contested
+13317,Wilkes County,McDonald's,1,1,dominant
+13321,Worth County,Burger King,1,3,contested

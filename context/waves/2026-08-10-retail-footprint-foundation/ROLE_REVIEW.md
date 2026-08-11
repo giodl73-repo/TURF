@@ -935,3 +935,38 @@ Status: pass with caveat.
 Rows come from open Overture Places and public Census relationship data. The
 caveat is that all QSR rows are first-pass packet-ready; co-branded, venue, and
 stale-store edge cases need deeper review before national claims.
+
+## Pulse 36 Atlanta QSR Backfill
+
+### Market Analyst
+
+Status: pass.
+
+Atlanta gives TURF the comparable non-ferry QSR baseline. It has 639 Atlanta
+CBSA QSR rows versus Seattle's 274, with McDonald's still the default layer but
+Wendy's, Taco Bell, and Burger King all large enough to keep the metro
+contested.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse correctly avoids reusing the earlier Georgia home-improvement county
+and metro fixtures beyond their coverage. QSR reaches many more counties, so
+the pulse adds QSR-specific ZCTA-county and county-CBSA context files.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The Atlanta ring read shows contested QSR in every straight-line ring. The next
+model step should compare ring structure against place-level RET candidates and
+then add drive-time or road-network impedance for corridor interpretation.
+
+### Source Policy Auditor
+
+Status: pass with caveat.
+
+Rows come from open Overture Places and public Census files. Ten non-ZCTA ZIP
+rows were kept as `needs_review`, preserving raw evidence without forcing an
+unaudited Census join.

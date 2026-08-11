@@ -52,6 +52,7 @@ before broader chain coverage begins.
 | 33 | Restaurant expansion targets | complete | Added QSR-first restaurant sequence and executable chain target contract. |
 | 34 | QSR Overture acquisition gate | complete | Added Washington QSR brand filters, DuckDB query, and review gate for open Overture extraction. |
 | 35 | Washington QSR footprint | complete | Ran Overture QSR extraction, added reviewed Washington QSR layer, and reported Seattle/Kitsap ferry geography. |
+| 36 | Atlanta QSR backfill | complete | Backfilled Georgia QSR, added Atlanta CBSA/ring reports, and compared Atlanta against Seattle. |
 
 ## Success criteria
 
