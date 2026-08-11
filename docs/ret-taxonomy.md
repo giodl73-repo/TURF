@@ -41,6 +41,9 @@ cargo run -p turf-cli -- validate-ret fixtures\geography\ret-washington-examples
 cargo run -p turf-cli -- summarize-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- suggest-ret-metro auto_parts fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- evaluate-ret-metro fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-washington-metro-candidates.csv
+cargo run -p turf-cli -- validate-ret-place-targets fixtures\geography\ret-puget-sound-place-targets.csv
+cargo run -p turf-cli -- suggest-ret-place auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
+cargo run -p turf-cli -- evaluate-ret-place fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-puget-sound-place-candidates.csv
 ```
 
 They are deliberately hand-reviewed examples, not model output. TURF should
@@ -85,3 +88,8 @@ The first metro-level candidate generator is documented in
 
 The first candidate-vs-example evaluation is documented in
 `reports/ret-metro-candidate-evaluation.md`.
+
+The first place-level candidate evaluation is documented in
+`reports/ret-place-candidate-evaluation.md`. It adds a curated place target
+fixture with barrier context and verifies that ferry-side status does not erase
+ordinary multi-brand service patterns.

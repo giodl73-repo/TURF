@@ -666,3 +666,37 @@ Status: pass.
 
 The pulse compares generated labels to already-reviewed fixtures and does not
 introduce new source material.
+
+## Pulse 28 RET Place Candidate Evaluation
+
+### Market Analyst
+
+Status: pass.
+
+The place scorecard adds the missing local grain. Kingston, Bainbridge Island,
+Poulsbo, Silverdale, and Port Orchard now have generated labels that match the
+hand-reviewed examples.
+
+### Market Geographer
+
+Status: pass.
+
+The new target fixture keeps place identity and barrier context explicit. The
+classifier uses ferry-side context as a local modifier, not as a replacement
+for direct row presence or brand mix.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The place labels show where route impedance matters next. Kingston is a good
+candidate for ferry-aware service-area modeling because it has same-side auto
+parts rows and no direct home-improvement anchor.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse reuses checked-in reviewed Overture-derived store rows and adds only
+a hand-curated place target fixture. It does not introduce a new acquisition
+source or claim private company territories.

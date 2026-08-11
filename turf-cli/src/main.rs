@@ -4,17 +4,18 @@ use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
     build_market_packet, classify_metro_rings, enrich_county_store_points_with_metro,
     enrich_postal_store_points_with_county, evaluate_ret_metro_candidates,
-    filter_metro_store_points, inspect_place_contexts, nearest_opposite_brand,
-    packet_ready_postal_store_points, packet_ready_store_points, parse_county_cbsa_contexts,
-    parse_demand_points, parse_place_contexts, parse_ret_examples, parse_ret_metro_candidates,
-    parse_reviewed_store_points, parse_store_points, parse_zcta_county_contexts,
-    render_county_store_points_csv, render_market_packet_json, render_market_packet_markdown,
-    render_metro_store_points_csv, render_place_context_findings_json,
-    render_postal_store_points_csv, render_store_points_csv, suggest_ret_metro_candidates,
-    summarize_counties_in_metro, summarize_county_footprint, summarize_footprint,
-    summarize_metro_footprint, summarize_metro_rings, summarize_postal_footprint,
-    summarize_ret_examples, validate_county_cbsa_contexts, validate_market_packet_json,
-    validate_national_store_points, validate_ret_examples, validate_reviewed_store_points,
+    evaluate_ret_place_candidates, filter_metro_store_points, inspect_place_contexts,
+    nearest_opposite_brand, packet_ready_postal_store_points, packet_ready_store_points,
+    parse_county_cbsa_contexts, parse_demand_points, parse_place_contexts, parse_ret_examples,
+    parse_ret_metro_candidates, parse_ret_place_targets, parse_reviewed_store_points,
+    parse_store_points, parse_zcta_county_contexts, render_county_store_points_csv,
+    render_market_packet_json, render_market_packet_markdown, render_metro_store_points_csv,
+    render_place_context_findings_json, render_postal_store_points_csv, render_store_points_csv,
+    suggest_ret_metro_candidates, suggest_ret_place_candidates, summarize_counties_in_metro,
+    summarize_county_footprint, summarize_footprint, summarize_metro_footprint,
+    summarize_metro_rings, summarize_postal_footprint, summarize_ret_examples,
+    validate_county_cbsa_contexts, validate_market_packet_json, validate_national_store_points,
+    validate_ret_examples, validate_ret_place_targets, validate_reviewed_store_points,
     validate_zcta_county_contexts,
 };
 
@@ -174,6 +175,15 @@ fn run() -> Result<(), String> {
             println!("valid,{},{}", path, rows);
             Ok(())
         }
+        Some("validate-ret-place-targets") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli validate-ret-place-targets <ret-place-targets.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let rows = validate_ret_place_targets(&csv)?;
+            println!("valid,{},{}", path, rows);
+            Ok(())
+        }
         Some("summarize-ret") => {
             let path = args
                 .next()
@@ -203,6 +213,26 @@ fn run() -> Result<(), String> {
             print_ret_metro_candidates(&candidates);
             Ok(())
         }
+        Some("suggest-ret-place") => {
+            let category = args.next().ok_or(
+                "usage: turf-cli suggest-ret-place <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let targets_path = args.next().ok_or(
+                "usage: turf-cli suggest-ret-place <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let reviewed_path = args.next().ok_or(
+                "usage: turf-cli suggest-ret-place <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let targets_csv = fs::read_to_string(&targets_path)
+                .map_err(|error| format!("{targets_path}: {error}"))?;
+            let reviewed_csv = fs::read_to_string(&reviewed_path)
+                .map_err(|error| format!("{reviewed_path}: {error}"))?;
+            let targets = parse_ret_place_targets(&targets_csv)?;
+            let reviewed_points = parse_reviewed_store_points(&reviewed_csv)?;
+            let candidates = suggest_ret_place_candidates(&category, &targets, &reviewed_points);
+            print_ret_metro_candidates(&candidates);
+            Ok(())
+        }
         Some("evaluate-ret-metro") => {
             let examples_path = args.next().ok_or(
                 "usage: turf-cli evaluate-ret-metro <ret-examples.csv> <ret-metro-candidates.csv>",
@@ -217,6 +247,23 @@ fn run() -> Result<(), String> {
             let examples = parse_ret_examples(&examples_csv)?;
             let candidates = parse_ret_metro_candidates(&candidates_csv)?;
             let evaluations = evaluate_ret_metro_candidates(&examples, &candidates);
+            print_ret_candidate_evaluations(&evaluations);
+            Ok(())
+        }
+        Some("evaluate-ret-place") => {
+            let examples_path = args.next().ok_or(
+                "usage: turf-cli evaluate-ret-place <ret-examples.csv> <ret-place-candidates.csv>",
+            )?;
+            let candidates_path = args.next().ok_or(
+                "usage: turf-cli evaluate-ret-place <ret-examples.csv> <ret-place-candidates.csv>",
+            )?;
+            let examples_csv = fs::read_to_string(&examples_path)
+                .map_err(|error| format!("{examples_path}: {error}"))?;
+            let candidates_csv = fs::read_to_string(&candidates_path)
+                .map_err(|error| format!("{candidates_path}: {error}"))?;
+            let examples = parse_ret_examples(&examples_csv)?;
+            let candidates = parse_ret_metro_candidates(&candidates_csv)?;
+            let evaluations = evaluate_ret_place_candidates(&examples, &candidates);
             print_ret_candidate_evaluations(&evaluations);
             Ok(())
         }
@@ -417,11 +464,14 @@ fn print_help() {
     println!("  validate-zcta-county <zcta-county.csv>  Check ZCTA-county context contract");
     println!("  validate-county-cbsa <county-cbsa.csv>  Check county-CBSA context contract");
     println!("  validate-ret <ret-examples.csv>  Check Retail Enclave Typology examples");
+    println!("  validate-ret-place-targets <ret-place-targets.csv>");
     println!("  summarize-ret <ret-examples.csv>  Summarize Retail Enclave Typology examples");
     println!(
         "  suggest-ret-metro <category> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
     );
+    println!("  suggest-ret-place <category> <ret-place-targets.csv> <reviewed-stores.csv>");
     println!("  evaluate-ret-metro <ret-examples.csv> <ret-metro-candidates.csv>");
+    println!("  evaluate-ret-place <ret-examples.csv> <ret-place-candidates.csv>");
     println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
     println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
     println!("  summarize-postal-review <reviewed-stores.csv>  Summarize packet-ready postal ZIPs");

@@ -1,0 +1,6 @@
+category,geography_id,geography_type,label,expected_enclave_type,suggested_enclave_type,evaluation_status
+auto_parts,kingston,place,Kingston WA,ferry_side_enclave,ferry_side_enclave,match
+auto_parts,bainbridge-island,place,Bainbridge Island WA,white_space,white_space,match
+auto_parts,poulsbo,place,Poulsbo WA,service_mesh,service_mesh,match
+auto_parts,silverdale,place,Silverdale WA,brand_led_service_mesh,brand_led_service_mesh,match
+auto_parts,port-orchard,place,Port Orchard WA,contested_service_grid,contested_service_grid,match

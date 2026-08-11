@@ -33,6 +33,9 @@ cargo run -p turf-cli -- validate-ret fixtures\geography\ret-washington-examples
 cargo run -p turf-cli -- summarize-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- suggest-ret-metro auto_parts fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- evaluate-ret-metro fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-washington-metro-candidates.csv
+cargo run -p turf-cli -- validate-ret-place-targets fixtures\geography\ret-puget-sound-place-targets.csv
+cargo run -p turf-cli -- suggest-ret-place auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
+cargo run -p turf-cli -- evaluate-ret-place fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-puget-sound-place-candidates.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -91,6 +94,11 @@ packet-ready metro store features.
 The `evaluate-ret-metro` command compares generated metro RET candidates with
 hand-reviewed RET examples.
 
+The `suggest-ret-place` command derives RET candidate labels for a curated
+place target list, including ferry or barrier context. The `evaluate-ret-place`
+command scores those generated place candidates against hand-reviewed RET
+examples.
+
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
@@ -123,6 +131,9 @@ The first rule-based RET candidate readout is:
 
 The first RET candidate evaluation is:
 `reports\ret-metro-candidate-evaluation.md`.
+
+The first place-level RET candidate evaluation is:
+`reports\ret-place-candidate-evaluation.md`.
 
 ## Product thesis
 

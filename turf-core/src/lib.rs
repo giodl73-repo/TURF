@@ -207,6 +207,15 @@ pub struct RetExample {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RetPlaceTarget {
+    pub geography_id: String,
+    pub label: String,
+    pub city: String,
+    pub state: String,
+    pub barrier_context: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct RetCount {
     pub key: String,
     pub examples: usize,
@@ -752,6 +761,54 @@ pub fn parse_ret_examples(csv: &str) -> Result<Vec<RetExample>, String> {
 
 pub fn validate_ret_examples(csv: &str) -> Result<usize, String> {
     Ok(parse_ret_examples(csv)?.len())
+}
+
+pub fn parse_ret_place_targets(csv: &str) -> Result<Vec<RetPlaceTarget>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = ["geography_id", "label", "city", "state", "barrier_context"];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut targets = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let barrier_context = required(fields[4], line_number, "barrier_context")?;
+        validate_ret_barrier_context(barrier_context, line_number)?;
+
+        targets.push(RetPlaceTarget {
+            geography_id: required(fields[0], line_number, "geography_id")?.to_string(),
+            label: required(fields[1], line_number, "label")?.to_string(),
+            city: required(fields[2], line_number, "city")?.to_string(),
+            state: required(fields[3], line_number, "state")?.to_string(),
+            barrier_context: barrier_context.to_string(),
+        });
+    }
+
+    Ok(targets)
+}
+
+pub fn validate_ret_place_targets(csv: &str) -> Result<usize, String> {
+    Ok(parse_ret_place_targets(csv)?.len())
 }
 
 pub fn parse_ret_metro_candidates(csv: &str) -> Result<Vec<RetMetroCandidate>, String> {
@@ -1497,6 +1554,21 @@ pub fn evaluate_ret_metro_candidates(
     examples: &[RetExample],
     candidates: &[RetMetroCandidate],
 ) -> Vec<RetCandidateEvaluation> {
+    evaluate_ret_candidates_for_geography_types(examples, candidates, &["cbsa", "region"])
+}
+
+pub fn evaluate_ret_place_candidates(
+    examples: &[RetExample],
+    candidates: &[RetMetroCandidate],
+) -> Vec<RetCandidateEvaluation> {
+    evaluate_ret_candidates_for_geography_types(examples, candidates, &["place"])
+}
+
+fn evaluate_ret_candidates_for_geography_types(
+    examples: &[RetExample],
+    candidates: &[RetMetroCandidate],
+    geography_types: &[&str],
+) -> Vec<RetCandidateEvaluation> {
     let mut candidate_by_key: BTreeMap<(String, String, String), &RetMetroCandidate> =
         BTreeMap::new();
     let mut candidate_categories: BTreeSet<String> = BTreeSet::new();
@@ -1517,7 +1589,7 @@ pub fn evaluate_ret_metro_candidates(
         .iter()
         .filter(|example| {
             candidate_categories.contains(&example.category)
-                && (example.geography_type == "cbsa" || example.geography_type == "region")
+                && geography_types.contains(&example.geography_type.as_str())
         })
         .map(|example| {
             let key = (
@@ -1543,6 +1615,67 @@ pub fn evaluate_ret_metro_candidates(
                 expected_enclave_type: example.enclave_type.clone(),
                 suggested_enclave_type,
                 evaluation_status: evaluation_status.to_string(),
+            }
+        })
+        .collect()
+}
+
+pub fn suggest_ret_place_candidates(
+    category: &str,
+    targets: &[RetPlaceTarget],
+    reviewed_points: &[ReviewedStorePoint],
+) -> Vec<RetMetroCandidate> {
+    targets
+        .iter()
+        .map(|target| {
+            let matching_points: Vec<&ReviewedStorePoint> = reviewed_points
+                .iter()
+                .filter(|point| {
+                    point.review_status == "packet_ready"
+                        && point.city.eq_ignore_ascii_case(&target.city)
+                        && point.state.eq_ignore_ascii_case(&target.state)
+                })
+                .collect();
+
+            let mut brand_counts: BTreeMap<String, usize> = BTreeMap::new();
+            for point in &matching_points {
+                *brand_counts.entry(point.brand.clone()).or_insert(0) += 1;
+            }
+            let total_stores = matching_points.len();
+            let brand_count = brand_counts.len();
+            let (primary_brand, leader_stores) = brand_counts
+                .iter()
+                .max_by(|left, right| left.1.cmp(right.1).then_with(|| right.0.cmp(left.0)))
+                .map(|(brand, stores)| (brand.clone(), *stores))
+                .unwrap_or_else(|| ("".to_string(), 0));
+            let leader_share = if total_stores == 0 {
+                0.0
+            } else {
+                leader_stores as f64 / total_stores as f64
+            };
+            let enclave_type = suggest_ret_place_enclave_type(
+                category,
+                &target.barrier_context,
+                total_stores,
+                brand_count,
+                leader_share,
+            );
+
+            RetMetroCandidate {
+                category: category.to_string(),
+                geography_id: target.geography_id.clone(),
+                geography_type: "place".to_string(),
+                label: target.label.clone(),
+                enclave_type,
+                primary_brand,
+                total_stores,
+                brand_count,
+                leader_share,
+                nearest_opposite_brand_miles: None,
+                evidence_summary: format!(
+                    "{total_stores} stores across {brand_count} brands in {}",
+                    target.city
+                ),
             }
         })
         .collect()
@@ -2138,6 +2271,13 @@ fn validate_ret_geography_type(value: &str, line_number: usize) -> Result<(), St
     }
 }
 
+fn validate_ret_barrier_context(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "none" | "ferry_side" | "water_barrier" | "mountain_barrier" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid barrier_context")),
+    }
+}
+
 fn validate_ret_enclave_type(value: &str, line_number: usize) -> Result<(), String> {
     match value {
         "anchor_market"
@@ -2192,6 +2332,40 @@ fn suggest_ret_enclave_type(
 
     if total_stores <= 5 {
         return "anchor_market".to_string();
+    }
+
+    "service_mesh".to_string()
+}
+
+fn suggest_ret_place_enclave_type(
+    category: &str,
+    barrier_context: &str,
+    total_stores: usize,
+    brand_count: usize,
+    leader_share: f64,
+) -> String {
+    if total_stores == 0 {
+        return "white_space".to_string();
+    }
+
+    if category == "home_improvement" {
+        return "anchor_market".to_string();
+    }
+
+    if brand_count >= 3 && leader_share <= 0.5 {
+        return "contested_service_grid".to_string();
+    }
+
+    if brand_count >= 2 && leader_share > 0.5 {
+        return "brand_led_service_mesh".to_string();
+    }
+
+    if brand_count >= 2 {
+        return "service_mesh".to_string();
+    }
+
+    if barrier_context == "ferry_side" && category != "home_improvement" {
+        return "ferry_side_enclave".to_string();
     }
 
     "service_mesh".to_string()
@@ -2497,6 +2671,70 @@ auto_parts,42660,cbsa,Seattle-Tacoma-Bellevue WA,service_mesh,O'Reilly Auto Part
         assert_eq!(evaluations[0].evaluation_status, "match");
         assert_eq!(evaluations[1].evaluation_status, "mismatch");
         assert_eq!(evaluations[1].suggested_enclave_type, "service_mesh");
+    }
+
+    #[test]
+    fn parses_ret_place_targets() {
+        let csv = "\
+geography_id,label,city,state,barrier_context
+kingston,Kingston WA,Kingston,WA,ferry_side
+bellevue,Bellevue WA,Bellevue,WA,none
+";
+        let targets = parse_ret_place_targets(csv).expect("place targets parse");
+
+        assert_eq!(targets.len(), 2);
+        assert_eq!(targets[0].city, "Kingston");
+        assert_eq!(targets[0].barrier_context, "ferry_side");
+    }
+
+    #[test]
+    fn suggests_ret_place_candidates_for_ferry_places() {
+        let targets_csv = "\
+geography_id,label,city,state,barrier_context
+kingston,Kingston WA,Kingston,WA,ferry_side
+bainbridge-island,Bainbridge Island WA,Bainbridge Island,WA,ferry_side
+";
+        let reviewed_csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+NAPA Auto Parts,napa-1,NAPA Kingston,123 Test Ave,Kingston,WA,98346,47.7987,-122.4971,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+NAPA Auto Parts,napa-2,NAPA Kingston North,456 Test Ave,Kingston,WA,98346,47.7990,-122.4975,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+O'Reilly Auto Parts,oreilly-1,O'Reilly Review,789 Test Ave,Kingston,WA,98346,47.7995,-122.4980,user fixture,2026-08-11,user_provided,needs_review,primary_store_candidate
+";
+        let targets = parse_ret_place_targets(targets_csv).expect("targets parse");
+        let reviewed = parse_reviewed_store_points(reviewed_csv).expect("reviewed parse");
+        let candidates = suggest_ret_place_candidates("auto_parts", &targets, &reviewed);
+
+        assert_eq!(candidates.len(), 2);
+        assert_eq!(candidates[0].geography_id, "kingston");
+        assert_eq!(candidates[0].enclave_type, "ferry_side_enclave");
+        assert_eq!(candidates[0].primary_brand, "NAPA Auto Parts");
+        assert_eq!(candidates[1].geography_id, "bainbridge-island");
+        assert_eq!(candidates[1].enclave_type, "white_space");
+    }
+
+    #[test]
+    fn evaluates_ret_place_candidates_against_examples() {
+        let examples_csv = "\
+geography_id,geography_type,label,category,enclave_type,primary_brand,store_count,competing_brand_count,evidence_summary,source_report
+kingston,place,Kingston WA,auto_parts,ferry_side_enclave,NAPA Auto Parts,2,0,NAPA rows appear,reports/example.md
+bainbridge-island,place,Bainbridge Island WA,auto_parts,white_space,,0,0,No rows appear,reports/example.md
+42660,cbsa,Seattle-Tacoma-Bellevue WA,auto_parts,contested_service_grid,O'Reilly Auto Parts,197,3,All brands present,reports/example.md
+";
+        let candidates_csv = "\
+category,geography_id,geography_type,label,enclave_type,primary_brand,total_stores,brand_count,leader_share,nearest_opposite_brand_miles,evidence_summary
+auto_parts,kingston,place,Kingston WA,ferry_side_enclave,NAPA Auto Parts,2,1,1.000,,2 stores across 1 brands in Kingston
+auto_parts,bainbridge-island,place,Bainbridge Island WA,white_space,,0,0,0.000,,0 stores across 0 brands in Bainbridge Island
+";
+        let examples = parse_ret_examples(examples_csv).expect("examples parse");
+        let candidates = parse_ret_metro_candidates(candidates_csv).expect("candidates parse");
+        let evaluations = evaluate_ret_place_candidates(&examples, &candidates);
+
+        assert_eq!(evaluations.len(), 2);
+        assert!(
+            evaluations
+                .iter()
+                .all(|evaluation| evaluation.evaluation_status == "match")
+        );
     }
 
     #[test]

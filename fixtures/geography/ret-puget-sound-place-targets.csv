@@ -1,0 +1,7 @@
+geography_id,label,city,state,barrier_context
+bainbridge-island,Bainbridge Island WA,Bainbridge Island,WA,ferry_side
+kingston,Kingston WA,Kingston,WA,ferry_side
+bremerton,Bremerton WA,Bremerton,WA,ferry_side
+poulsbo,Poulsbo WA,Poulsbo,WA,ferry_side
+silverdale,Silverdale WA,Silverdale,WA,ferry_side
+port-orchard,Port Orchard WA,Port Orchard,WA,ferry_side

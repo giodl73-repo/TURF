@@ -1,0 +1,7 @@
+category,geography_id,geography_type,label,enclave_type,primary_brand,total_stores,brand_count,leader_share,nearest_opposite_brand_miles,evidence_summary
+home_improvement,bainbridge-island,place,Bainbridge Island WA,white_space,,0,0,0.000,,0 stores across 0 brands in Bainbridge Island
+home_improvement,kingston,place,Kingston WA,white_space,,0,0,0.000,,0 stores across 0 brands in Kingston
+home_improvement,bremerton,place,Bremerton WA,white_space,,0,0,0.000,,0 stores across 0 brands in Bremerton
+home_improvement,poulsbo,place,Poulsbo WA,anchor_market,Home Depot,1,1,1.000,,1 stores across 1 brands in Poulsbo
+home_improvement,silverdale,place,Silverdale WA,anchor_market,Home Depot,2,2,0.500,,2 stores across 2 brands in Silverdale
+home_improvement,port-orchard,place,Port Orchard WA,anchor_market,Lowe's,1,1,1.000,,1 stores across 1 brands in Port Orchard
