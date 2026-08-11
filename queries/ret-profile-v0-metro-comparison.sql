@@ -46,6 +46,19 @@ SELECT
 FROM read_csv_auto('fixtures/stores/overture-auto-parts-washington-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
 SELECT
+    'auto_parts',
+    'Georgia',
+    brand,
+    store_id,
+    city,
+    state,
+    regexp_extract(CAST(postal_code AS VARCHAR), '^[0-9]{5}'),
+    latitude,
+    longitude,
+    review_status
+FROM read_csv_auto('fixtures/stores/overture-auto-parts-georgia-review-2026-07-22.csv', all_varchar = true)
+UNION ALL
+SELECT
     'qsr',
     'Washington',
     brand,
@@ -81,6 +94,9 @@ UNION ALL
 SELECT 'auto_parts', 'Washington', *
 FROM read_csv_auto('fixtures/geography/washington-auto-parts-zcta-county-primary-2020.csv', all_varchar = true)
 UNION ALL
+SELECT 'auto_parts', 'Georgia', *
+FROM read_csv_auto('fixtures/geography/georgia-auto-parts-zcta-county-primary-2020.csv', all_varchar = true)
+UNION ALL
 SELECT 'qsr', 'Washington', *
 FROM read_csv_auto('fixtures/geography/washington-qsr-zcta-county-primary-2020.csv', all_varchar = true)
 UNION ALL
@@ -93,6 +109,15 @@ FROM read_csv_auto('fixtures/geography/washington-county-cbsa-2023.csv', all_var
 UNION ALL
 SELECT 'Georgia', *
 FROM read_csv_auto('fixtures/geography/georgia-qsr-county-cbsa-2023.csv', all_varchar = true);
+INSERT INTO county_cbsa
+SELECT 'Georgia' AS state_scope, auto_cbsa.*
+FROM read_csv_auto('fixtures/geography/georgia-auto-parts-county-cbsa-2023.csv', all_varchar = true) AS auto_cbsa
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM county_cbsa AS existing
+    WHERE existing.state_scope = 'Georgia'
+      AND existing.county_geoid = auto_cbsa.county_geoid
+);
 
 CREATE OR REPLACE TEMP TABLE metro_focus AS
 SELECT *

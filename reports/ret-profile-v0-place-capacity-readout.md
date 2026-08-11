@@ -30,13 +30,13 @@ data. That is a useful absence signal, especially because ferry context can make
 same-side capacity more important than straight-line proximity to Seattle.
 
 Atlanta's city row is not the same as the Atlanta metro profile. The city has
-Home Depot and all four QSR brands, but no direct Lowe's row in this release.
-Marietta and Alpharetta show dual home-improvement anchor capacity plus all four
-QSR brands.
+Home Depot, all four QSR brands, and all four auto-parts brands, but no direct
+Lowe's row in this release. Marietta and Alpharetta show dual home-improvement
+anchor capacity plus full QSR and three-plus auto-parts brand capacity.
 
-Georgia auto-parts fields are `source_gate_pending`, not zero. TURF has not yet
-backfilled Georgia auto parts, so the profile must not treat that layer as an
-observed absence.
+Georgia auto-parts fields are now observed capacity fields, not
+`source_gate_pending`. This makes Atlanta comparable to Puget Sound across the
+same three daily-life categories.
 
 ## Next use
 

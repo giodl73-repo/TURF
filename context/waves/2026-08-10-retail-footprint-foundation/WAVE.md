@@ -55,6 +55,7 @@ before broader chain coverage begins.
 | 36 | Atlanta QSR backfill | complete | Backfilled Georgia QSR, added Atlanta CBSA/ring reports, and compared Atlanta against Seattle. |
 | 37 | RET Profile v0 | complete | Added the neutral cross-category metro profile contract and generated Seattle/Bremerton/Atlanta comparison rows. |
 | 38 | RET place capacity matrix | complete | Added selected-place 0/1/2+ store-type capacity rows for Puget Sound and Atlanta comparison. |
+| 39 | Georgia auto parts backfill | complete | Backfilled Georgia auto parts and refreshed RET profiles so Atlanta has all three daily-life category layers. |
 
 ## Success criteria
 

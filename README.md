@@ -43,8 +43,10 @@ cargo run -p turf-cli -- validate-restaurant-targets fixtures\stores\restaurant-
 cargo run -p turf-cli -- summarize-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
 duckdb -c ".read queries/overture-qsr-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-qsr-georgia-2026-07-22.sql"
+duckdb -c ".read queries/overture-auto-parts-georgia-2026-07-22.sql"
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-auto-parts-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-qsr-washington-review-2026-07-22.csv fixtures\geography\washington-qsr-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv fixtures\geography\georgia-qsr-zcta-county-primary-2020.csv fixtures\geography\georgia-qsr-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
@@ -158,6 +160,9 @@ The first Atlanta QSR comparison report is:
 
 The first auto-parts comparison report is:
 `reports\auto-parts-seattle-puget-sound.md`.
+
+The first Atlanta auto-parts comparison report is:
+`reports\auto-parts-atlanta-comparison.md`.
 
 The first cross-category spread comparison is:
 `reports\washington-category-spread-comparison.md`.

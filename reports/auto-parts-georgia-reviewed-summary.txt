@@ -1,0 +1,229 @@
+review_status,rows
+exclude,5
+packet_ready,734
+
+review_reason,rows
+duplicate_candidate,5
+primary_store_candidate,734
+
+total_stores,734
+
+brand,stores
+Advance Auto Parts,246
+AutoZone,222
+NAPA Auto Parts,17
+O'Reilly Auto Parts,249
+
+city,state,leader,leader_stores,total_stores,status
+Acworth,GA,Advance Auto Parts,3,10,contested
+Adairsville,GA,Advance Auto Parts,1,2,contested
+Adel,GA,O'Reilly Auto Parts,1,1,dominant
+Albany,GA,AutoZone,4,10,contested
+Alma,GA,O'Reilly Auto Parts,2,2,dominant
+Alpharetta,GA,Advance Auto Parts,2,4,contested
+Americus,GA,Advance Auto Parts,1,3,contested
+Ashburn,GA,O'Reilly Auto Parts,1,1,dominant
+Athens,GA,Advance Auto Parts,5,14,contested
+Atlanta,GA,AutoZone,12,28,contested
+Auburn,GA,AutoZone,1,2,contested
+Augusta,GA,Advance Auto Parts,7,19,contested
+Austell,GA,O'Reilly Auto Parts,1,1,dominant
+Bainbridge,GA,Advance Auto Parts,1,2,contested
+Ball Ground,GA,O'Reilly Auto Parts,1,1,dominant
+Barnesville,GA,AutoZone,1,2,contested
+Baxley,GA,O'Reilly Auto Parts,1,1,dominant
+Bethlehem,GA,Advance Auto Parts,1,1,dominant
+Blackshear,GA,Advance Auto Parts,1,2,contested
+Blairsville,GA,AutoZone,1,2,contested
+Blakely,GA,Advance Auto Parts,1,1,dominant
+Blue Ridge,GA,O'Reilly Auto Parts,1,1,dominant
+Bonaire,GA,O'Reilly Auto Parts,1,1,dominant
+Bowdon,GA,AutoZone,1,1,dominant
+Braselton,GA,Advance Auto Parts,1,1,dominant
+Bremen,GA,Advance Auto Parts,1,2,contested
+Brookhaven,GA,Advance Auto Parts,1,3,contested
+Brunswick,GA,AutoZone,3,8,contested
+Buford,GA,O'Reilly Auto Parts,3,6,contested
+Byron,GA,Advance Auto Parts,1,2,contested
+Cairo,GA,Advance Auto Parts,1,2,contested
+Calhoun,GA,Advance Auto Parts,1,3,contested
+Camilla,GA,Advance Auto Parts,1,2,contested
+Canton,GA,Advance Auto Parts,4,9,contested
+Carrollton,GA,AutoZone,2,5,contested
+Cartersville,GA,Advance Auto Parts,3,7,contested
+Cedartown,GA,Advance Auto Parts,1,3,contested
+Chamblee,GA,Advance Auto Parts,1,2,contested
+Chatsworth,GA,AutoZone,1,2,contested
+Chickamauga,GA,Advance Auto Parts,1,2,contested
+Clarkesville,GA,AutoZone,1,1,dominant
+Claxton,GA,Advance Auto Parts,1,2,contested
+Clayton,GA,Advance Auto Parts,1,2,contested
+Cleveland,GA,Advance Auto Parts,1,3,contested
+Cochran,GA,Advance Auto Parts,1,2,contested
+Cohutta,GA,AutoZone,1,1,dominant
+Columbus,GA,Advance Auto Parts,8,20,contested
+Commerce,GA,Advance Auto Parts,1,3,contested
+Conyers,GA,O'Reilly Auto Parts,3,7,contested
+Cordele,GA,AutoZone,1,2,contested
+Cornelia,GA,AutoZone,1,2,contested
+Covington,GA,Advance Auto Parts,2,5,contested
+Cumming,GA,Advance Auto Parts,4,11,contested
+Dacula,GA,Advance Auto Parts,1,2,contested
+Dahlonega,GA,Advance Auto Parts,1,2,contested
+Dallas,GA,AutoZone,3,6,contested
+Dalton,GA,Advance Auto Parts,3,8,contested
+Darien,GA,O'Reilly Auto Parts,1,1,dominant
+Dawson,GA,NAPA Auto Parts,1,2,contested
+Dawsonville,GA,AutoZone,2,4,contested
+Decatur,GA,Advance Auto Parts,5,14,contested
+Donalsonville,GA,O'Reilly Auto Parts,1,1,dominant
+Doraville,GA,Advance Auto Parts,1,2,contested
+Douglas,GA,Advance Auto Parts,1,3,contested
+Douglasville,GA,Advance Auto Parts,3,9,contested
+Dublin,GA,O'Reilly Auto Parts,2,4,contested
+Duluth,GA,Advance Auto Parts,1,3,contested
+Dunwoody,GA,AutoZone,1,1,dominant
+East Ellijay,GA,Advance Auto Parts,1,1,dominant
+East Point,GA,AutoZone,1,2,contested
+Eastman,GA,Advance Auto Parts,1,3,contested
+Eatonton,GA,Advance Auto Parts,1,2,contested
+Elberton,GA,AutoZone,1,2,contested
+Ellenwood,GA,Advance Auto Parts,1,2,contested
+Ellijay,GA,AutoZone,1,2,contested
+Evans,GA,Advance Auto Parts,1,2,contested
+Fairburn,GA,Advance Auto Parts,1,2,contested
+Fayetteville,GA,AutoZone,3,5,dominant
+Fitzgerald,GA,AutoZone,1,2,contested
+Flowery Branch,GA,Advance Auto Parts,2,4,contested
+Folkston,GA,O'Reilly Auto Parts,1,1,dominant
+Forest Park,GA,Advance Auto Parts,1,2,contested
+Forsyth,GA,Advance Auto Parts,1,2,contested
+Fort Oglethorpe,GA,Advance Auto Parts,1,3,contested
+Fort Valley,GA,Advance Auto Parts,1,3,contested
+Gainesville,GA,Advance Auto Parts,3,9,contested
+Garden City,GA,O'Reilly Auto Parts,2,4,contested
+Glennville,GA,Advance Auto Parts,1,2,contested
+Gray,GA,Advance Auto Parts,1,2,contested
+Grayson,GA,Advance Auto Parts,1,2,contested
+Greensboro,GA,AutoZone,1,1,dominant
+Greenville,GA,NAPA Auto Parts,1,1,dominant
+Griffin,GA,Advance Auto Parts,2,6,contested
+Grovetown,GA,Advance Auto Parts,1,3,contested
+Hahira,GA,O'Reilly Auto Parts,1,1,dominant
+Hampton,GA,Advance Auto Parts,1,1,dominant
+Hartwell,GA,Advance Auto Parts,1,2,contested
+Hawkinsville,GA,O'Reilly Auto Parts,1,1,dominant
+Hazlehurst,GA,Advance Auto Parts,1,2,contested
+Hephzibah,GA,Advance Auto Parts,1,1,dominant
+Hiawassee,GA,AutoZone,1,1,dominant
+Hinesville,GA,Advance Auto Parts,2,4,contested
+Hiram,GA,Advance Auto Parts,1,3,contested
+Hoschton,GA,O'Reilly Auto Parts,1,1,dominant
+Jackson,GA,Advance Auto Parts,1,3,contested
+Jasper,GA,AutoZone,1,2,contested
+Jefferson,GA,Advance Auto Parts,1,2,contested
+Jesup,GA,Advance Auto Parts,1,3,contested
+Johns Creek,GA,Advance Auto Parts,1,1,dominant
+Jonesboro,GA,Advance Auto Parts,2,5,contested
+Kennesaw,GA,O'Reilly Auto Parts,2,4,contested
+Kingsland,GA,Advance Auto Parts,1,3,contested
+La Fayette,GA,AutoZone,1,2,contested
+Lagrange,GA,Advance Auto Parts,2,4,contested
+Lake Park,GA,O'Reilly Auto Parts,1,1,dominant
+Lakeland,GA,AutoZone,1,1,dominant
+Lavonia,GA,AutoZone,1,2,contested
+Lawrenceville,GA,AutoZone,6,14,contested
+Leesburg,GA,AutoZone,1,2,contested
+Lilburn,GA,Advance Auto Parts,3,6,contested
+Lithia Springs,GA,Advance Auto Parts,1,2,contested
+Lithonia,GA,Advance Auto Parts,2,4,contested
+Locust Grove,GA,Advance Auto Parts,1,3,contested
+Loganville,GA,Advance Auto Parts,1,4,contested
+Lovejoy,GA,AutoZone,1,2,contested
+Ludowici,GA,O'Reilly Auto Parts,1,1,dominant
+Mableton,GA,Advance Auto Parts,1,3,contested
+Macon,GA,Advance Auto Parts,7,16,contested
+Madison,GA,Advance Auto Parts,1,3,contested
+Manchester,GA,Advance Auto Parts,1,1,dominant
+Marietta,GA,Advance Auto Parts,9,25,contested
+McCaysville,GA,O'Reilly Auto Parts,1,1,dominant
+McDonough,GA,Advance Auto Parts,3,10,contested
+McRae-Helena,GA,O'Reilly Auto Parts,1,1,dominant
+Metter,GA,O'Reilly Auto Parts,1,1,dominant
+Midland,GA,O'Reilly Auto Parts,1,1,dominant
+Midway,GA,O'Reilly Auto Parts,1,1,dominant
+Milledgeville,GA,O'Reilly Auto Parts,2,4,contested
+Millen,GA,O'Reilly Auto Parts,1,1,dominant
+Monroe,GA,Advance Auto Parts,1,4,contested
+Montezuma,GA,Advance Auto Parts,1,1,dominant
+Morrow,GA,AutoZone,2,4,contested
+Moultrie,GA,Advance Auto Parts,1,3,contested
+Nashville,GA,Advance Auto Parts,1,2,contested
+Newnan,GA,AutoZone,3,8,contested
+Norcross,GA,Advance Auto Parts,3,7,contested
+Oakwood,GA,AutoZone,1,1,dominant
+Ocilla,GA,O'Reilly Auto Parts,1,1,dominant
+Palmetto,GA,Advance Auto Parts,1,2,contested
+Peachtree City,GA,Advance Auto Parts,1,2,contested
+Peachtree Corners,GA,Advance Auto Parts,1,1,dominant
+Pearson,GA,AutoZone,1,1,dominant
+Pelham,GA,AutoZone,1,1,dominant
+Pembroke,GA,O'Reilly Auto Parts,1,1,dominant
+Perry,GA,Advance Auto Parts,1,2,contested
+Pooler,GA,Advance Auto Parts,1,3,contested
+Port Wentworth,GA,Advance Auto Parts,1,1,dominant
+Powder Springs,GA,Advance Auto Parts,3,6,contested
+Quitman,GA,Advance Auto Parts,1,2,contested
+Reidsville,GA,O'Reilly Auto Parts,1,1,dominant
+Rex,GA,O'Reilly Auto Parts,1,1,dominant
+Reynolds,GA,NAPA Auto Parts,1,1,dominant
+Richmond Hill,GA,Advance Auto Parts,1,3,contested
+Rincon,GA,Advance Auto Parts,1,3,contested
+Ringgold,GA,Advance Auto Parts,1,2,contested
+Riverdale,GA,O'Reilly Auto Parts,2,4,contested
+Rockmart,GA,Advance Auto Parts,1,3,contested
+Rome,GA,O'Reilly Auto Parts,3,7,contested
+Roswell,GA,AutoZone,3,4,dominant
+Royston,GA,Advance Auto Parts,1,1,dominant
+Sandersville,GA,Advance Auto Parts,1,3,contested
+Sandy Springs,GA,O'Reilly Auto Parts,1,1,dominant
+Savannah,GA,Advance Auto Parts,4,12,contested
+Senoia,GA,O'Reilly Auto Parts,1,1,dominant
+Sharpsburg,GA,AutoZone,1,1,dominant
+Smyrna,GA,Advance Auto Parts,2,4,contested
+Snellville,GA,AutoZone,3,6,contested
+St Marys,GA,Advance Auto Parts,1,3,contested
+Statesboro,GA,Advance Auto Parts,2,5,contested
+Stockbridge,GA,AutoZone,2,5,contested
+Stone Mountain,GA,AutoZone,3,7,contested
+Sugar Hill,GA,Advance Auto Parts,1,3,contested
+Summerville,GA,Advance Auto Parts,1,3,contested
+Suwanee,GA,Advance Auto Parts,1,4,contested
+Swainsboro,GA,Advance Auto Parts,1,2,contested
+Sylvania,GA,O'Reilly Auto Parts,1,1,dominant
+Sylvester,GA,Advance Auto Parts,1,2,contested
+Tallapoosa,GA,Advance Auto Parts,1,1,dominant
+Temple,GA,AutoZone,1,1,dominant
+Thomaston,GA,Advance Auto Parts,1,2,contested
+Thomasville,GA,Advance Auto Parts,1,2,contested
+Thomson,GA,Advance Auto Parts,2,4,contested
+Tifton,GA,Advance Auto Parts,1,3,contested
+Toccoa,GA,Advance Auto Parts,1,3,contested
+Trenton,GA,Advance Auto Parts,1,2,contested
+Tucker,GA,Advance Auto Parts,1,3,contested
+Turin,GA,NAPA Auto Parts,1,1,dominant
+Tyrone,GA,O'Reilly Auto Parts,1,1,dominant
+Union City,GA,AutoZone,2,4,contested
+Valdosta,GA,Advance Auto Parts,3,7,contested
+Varnell,GA,O'Reilly Auto Parts,1,1,dominant
+Vidalia,GA,Advance Auto Parts,1,3,contested
+Vienna,GA,O'Reilly Auto Parts,1,1,dominant
+Villa Rica,GA,Advance Auto Parts,1,3,contested
+Warner Robins,GA,Advance Auto Parts,4,11,contested
+Washington,GA,Advance Auto Parts,1,1,dominant
+Watkinsville,GA,AutoZone,1,1,dominant
+Waycross,GA,Advance Auto Parts,2,4,contested
+Waynesboro,GA,Advance Auto Parts,1,2,contested
+Winder,GA,Advance Auto Parts,1,3,contested
+Woodstock,GA,Advance Auto Parts,1,3,contested
+Wrens,GA,O'Reilly Auto Parts,1,1,dominant

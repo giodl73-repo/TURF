@@ -1038,3 +1038,37 @@ Status: pass with next-output request.
 The 0/1/2+ matrix is ready to intersect with spacing and travel impedance.
 Future rivalry claims should require proximity, corridor, or catchment evidence
 beyond co-presence.
+
+## Pulse 39 Georgia Auto Parts Backfill
+
+### Market Analyst
+
+Status: pass.
+
+Atlanta is now comparable to Seattle across home improvement, QSR, and auto
+parts. The Atlanta CBSA auto-parts layer has 363 packet-ready rows with
+AutoZone, Advance Auto Parts, and O'Reilly all large enough to read as a dense
+service grid.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse adds auto-parts-specific Georgia ZCTA/county context instead of
+reusing the QSR ZIP universe. Non-CBSA fallback rows preserve county context
+for packet-ready stores outside Census CBSA coverage.
+
+### Source Policy Auditor
+
+Status: pass with caveat.
+
+Rows come from open Overture Places and public Census relationship files. The
+NAPA layer remains a caveat because the intentionally narrow NAPA filter may
+under-count affiliated or differently named locations.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Atlanta now has enough category density for same-place and corridor spacing
+tests comparable to the Puget Sound auto-parts read.

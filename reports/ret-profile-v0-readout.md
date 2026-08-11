@@ -25,9 +25,10 @@ just a Seattle suburb in the evidence: QSR, home improvement, and auto parts all
 have direct metro rows. Co-presence here reads first as local capacity, then as
 a possible rivalry signal if spacing or corridor evidence supports it.
 
-Atlanta-Sandy Springs-Roswell is a continuous complete service grid. QSR and
-home improvement both produce large inland metro layers, and the QSR ring read
-shows repeated category capacity from the core through exurban bands.
+Atlanta-Sandy Springs-Roswell is a continuous complete service grid. QSR, home
+improvement, and auto parts now all produce large inland metro layers. The
+auto-parts backfill adds 363 Atlanta CBSA rows and turns the prior
+`source_gate_pending` field into an observed service-grid layer.
 
 ## Source gates
 
@@ -36,8 +37,8 @@ but they should enter through an explicit source review rather than ad hoc
 download.
 
 ZCTA income bands are acceptable as area-level context, but they remain gated.
-The first attempted Census ACS API pull required an API key, so this pulse keeps
-income as `source_gate_pending` instead of committing incomplete data.
+The first attempted Census ACS API pull required an API key, so this profile
+keeps income as `source_gate_pending` instead of committing incomplete data.
 
 ## Learning
 

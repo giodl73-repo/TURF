@@ -31,10 +31,10 @@ FROM (
     VALUES
         ('home_depot', 'home_improvement', 'Home Depot', 'WA;GA'),
         ('lowes', 'home_improvement', 'Lowe''s', 'WA;GA'),
-        ('autozone', 'auto_parts', 'AutoZone', 'WA'),
-        ('napa', 'auto_parts', 'NAPA Auto Parts', 'WA'),
-        ('oreilly', 'auto_parts', 'O''Reilly Auto Parts', 'WA'),
-        ('advance_auto', 'auto_parts', 'Advance Auto Parts', 'WA'),
+        ('autozone', 'auto_parts', 'AutoZone', 'WA;GA'),
+        ('napa', 'auto_parts', 'NAPA Auto Parts', 'WA;GA'),
+        ('oreilly', 'auto_parts', 'O''Reilly Auto Parts', 'WA;GA'),
+        ('advance_auto', 'auto_parts', 'Advance Auto Parts', 'WA;GA'),
         ('mcdonalds', 'qsr', 'McDonald''s', 'WA;GA'),
         ('burger_king', 'qsr', 'Burger King', 'WA;GA'),
         ('taco_bell', 'qsr', 'Taco Bell', 'WA;GA'),
@@ -50,6 +50,9 @@ FROM read_csv_auto('fixtures/stores/overture-home-improvement-georgia-review-202
 UNION ALL
 SELECT 'auto_parts', brand, city, state, review_status
 FROM read_csv_auto('fixtures/stores/overture-auto-parts-washington-review-2026-07-22.csv', all_varchar = true)
+UNION ALL
+SELECT 'auto_parts', brand, city, state, review_status
+FROM read_csv_auto('fixtures/stores/overture-auto-parts-georgia-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
 SELECT 'qsr', brand, city, state, review_status
 FROM read_csv_auto('fixtures/stores/overture-qsr-washington-review-2026-07-22.csv', all_varchar = true)

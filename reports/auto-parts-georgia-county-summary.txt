@@ -1,0 +1,126 @@
+county_geoid,county_name,leader,leader_stores,total_stores,status
+13001,Appling County,O'Reilly Auto Parts,1,1,dominant
+13003,Atkinson County,AutoZone,1,1,dominant
+13005,Bacon County,O'Reilly Auto Parts,2,2,dominant
+13009,Baldwin County,O'Reilly Auto Parts,2,4,contested
+13013,Barrow County,Advance Auto Parts,2,6,contested
+13015,Bartow County,Advance Auto Parts,4,9,contested
+13017,Ben Hill County,AutoZone,1,2,contested
+13019,Berrien County,Advance Auto Parts,1,2,contested
+13021,Bibb County,Advance Auto Parts,6,13,contested
+13023,Bleckley County,Advance Auto Parts,1,2,contested
+13027,Brooks County,Advance Auto Parts,1,2,contested
+13029,Bryan County,Advance Auto Parts,1,4,contested
+13031,Bulloch County,Advance Auto Parts,2,5,contested
+13033,Burke County,Advance Auto Parts,1,2,contested
+13035,Butts County,Advance Auto Parts,1,3,contested
+13039,Camden County,Advance Auto Parts,2,6,contested
+13043,Candler County,O'Reilly Auto Parts,1,1,dominant
+13045,Carroll County,AutoZone,5,10,contested
+13047,Catoosa County,Advance Auto Parts,2,5,contested
+13049,Charlton County,O'Reilly Auto Parts,1,1,dominant
+13051,Chatham County,Advance Auto Parts,7,20,contested
+13055,Chattooga County,Advance Auto Parts,1,3,contested
+13057,Cherokee County,Advance Auto Parts,6,16,contested
+13059,Clarke County,AutoZone,5,13,contested
+13063,Clayton County,O'Reilly Auto Parts,7,17,contested
+13067,Cobb County,Advance Auto Parts,18,51,contested
+13069,Coffee County,Advance Auto Parts,1,3,contested
+13071,Colquitt County,Advance Auto Parts,1,3,contested
+13073,Columbia County,Advance Auto Parts,4,11,contested
+13075,Cook County,O'Reilly Auto Parts,1,1,dominant
+13077,Coweta County,AutoZone,4,11,contested
+13081,Crisp County,AutoZone,1,2,contested
+13083,Dade County,Advance Auto Parts,1,2,contested
+13085,Dawson County,AutoZone,2,4,contested
+13087,Decatur County,Advance Auto Parts,1,2,contested
+13089,DeKalb County,AutoZone,17,44,contested
+13091,Dodge County,Advance Auto Parts,1,3,contested
+13093,Dooly County,O'Reilly Auto Parts,1,1,dominant
+13095,Dougherty County,AutoZone,4,10,contested
+13097,Douglas County,Advance Auto Parts,4,11,contested
+13099,Early County,Advance Auto Parts,1,1,dominant
+13101,Echols County,O'Reilly Auto Parts,1,1,dominant
+13103,Effingham County,Advance Auto Parts,1,3,contested
+13105,Elbert County,AutoZone,1,2,contested
+13107,Emanuel County,Advance Auto Parts,1,2,contested
+13109,Evans County,Advance Auto Parts,1,2,contested
+13111,Fannin County,O'Reilly Auto Parts,2,2,dominant
+13113,Fayette County,AutoZone,4,8,contested
+13115,Floyd County,O'Reilly Auto Parts,3,7,contested
+13117,Forsyth County,Advance Auto Parts,4,11,contested
+13119,Franklin County,Advance Auto Parts,1,3,contested
+13121,Fulton County,AutoZone,17,41,contested
+13123,Gilmer County,Advance Auto Parts,1,3,contested
+13127,Glynn County,AutoZone,3,8,contested
+13129,Gordon County,Advance Auto Parts,1,3,contested
+13131,Grady County,Advance Auto Parts,1,2,contested
+13133,Greene County,AutoZone,1,1,dominant
+13135,Gwinnett County,Advance Auto Parts,21,54,contested
+13137,Habersham County,AutoZone,2,3,dominant
+13139,Hall County,Advance Auto Parts,5,14,contested
+13143,Haralson County,Advance Auto Parts,2,3,dominant
+13147,Hart County,Advance Auto Parts,1,2,contested
+13151,Henry County,AutoZone,7,20,contested
+13153,Houston County,O'Reilly Auto Parts,6,14,contested
+13155,Irwin County,O'Reilly Auto Parts,1,1,dominant
+13157,Jackson County,Advance Auto Parts,3,7,contested
+13161,Jeff Davis County,Advance Auto Parts,1,2,contested
+13163,Jefferson County,O'Reilly Auto Parts,1,1,dominant
+13165,Jenkins County,O'Reilly Auto Parts,1,1,dominant
+13169,Jones County,Advance Auto Parts,2,5,contested
+13171,Lamar County,AutoZone,1,2,contested
+13173,Lanier County,AutoZone,1,1,dominant
+13175,Laurens County,O'Reilly Auto Parts,2,4,contested
+13177,Lee County,AutoZone,1,2,contested
+13179,Liberty County,Advance Auto Parts,2,5,contested
+13183,Long County,O'Reilly Auto Parts,1,1,dominant
+13185,Lowndes County,Advance Auto Parts,3,8,contested
+13187,Lumpkin County,Advance Auto Parts,1,2,contested
+13189,McDuffie County,Advance Auto Parts,2,4,contested
+13191,McIntosh County,O'Reilly Auto Parts,1,1,dominant
+13193,Macon County,Advance Auto Parts,1,1,dominant
+13199,Meriwether County,Advance Auto Parts,1,2,contested
+13205,Mitchell County,Advance Auto Parts,1,3,contested
+13207,Monroe County,Advance Auto Parts,1,2,contested
+13211,Morgan County,Advance Auto Parts,1,3,contested
+13213,Murray County,AutoZone,1,2,contested
+13215,Muscogee County,Advance Auto Parts,8,21,contested
+13217,Newton County,Advance Auto Parts,2,5,contested
+13219,Oconee County,Advance Auto Parts,1,2,contested
+13223,Paulding County,AutoZone,4,9,contested
+13225,Peach County,Advance Auto Parts,2,5,contested
+13227,Pickens County,AutoZone,1,2,contested
+13229,Pierce County,Advance Auto Parts,1,2,contested
+13233,Polk County,Advance Auto Parts,2,6,contested
+13235,Pulaski County,O'Reilly Auto Parts,1,1,dominant
+13237,Putnam County,Advance Auto Parts,1,2,contested
+13241,Rabun County,Advance Auto Parts,1,2,contested
+13245,Richmond County,Advance Auto Parts,6,14,contested
+13247,Rockdale County,O'Reilly Auto Parts,3,7,contested
+13251,Screven County,O'Reilly Auto Parts,1,1,dominant
+13253,Seminole County,O'Reilly Auto Parts,1,1,dominant
+13255,Spalding County,Advance Auto Parts,2,6,contested
+13257,Stephens County,Advance Auto Parts,1,3,contested
+13261,Sumter County,Advance Auto Parts,1,3,contested
+13267,Tattnall County,O'Reilly Auto Parts,2,3,dominant
+13269,Taylor County,NAPA Auto Parts,1,1,dominant
+13271,Telfair County,O'Reilly Auto Parts,1,1,dominant
+13273,Terrell County,NAPA Auto Parts,1,2,contested
+13275,Thomas County,Advance Auto Parts,1,2,contested
+13277,Tift County,Advance Auto Parts,1,3,contested
+13279,Toombs County,Advance Auto Parts,1,3,contested
+13281,Towns County,AutoZone,1,1,dominant
+13285,Troup County,Advance Auto Parts,2,4,contested
+13287,Turner County,O'Reilly Auto Parts,1,1,dominant
+13291,Union County,AutoZone,1,2,contested
+13293,Upson County,Advance Auto Parts,1,2,contested
+13295,Walker County,O'Reilly Auto Parts,2,4,contested
+13297,Walton County,Advance Auto Parts,2,8,contested
+13299,Ware County,Advance Auto Parts,2,4,contested
+13303,Washington County,Advance Auto Parts,1,3,contested
+13305,Wayne County,Advance Auto Parts,1,3,contested
+13311,White County,Advance Auto Parts,1,3,contested
+13313,Whitfield County,O'Reilly Auto Parts,4,10,contested
+13317,Wilkes County,Advance Auto Parts,1,1,dominant
+13321,Worth County,Advance Auto Parts,1,2,contested

@@ -1,0 +1,401 @@
+metro,Atlanta-Sandy Springs-Roswell GA
+total_stores,363
+
+brand,stores
+Advance Auto Parts,122
+AutoZone,124
+NAPA Auto Parts,12
+O'Reilly Auto Parts,105
+
+county_geoid,county_name,leader,leader_stores,total_stores,status
+13013,Barrow County,Advance Auto Parts,2,6,contested
+13015,Bartow County,Advance Auto Parts,4,9,contested
+13035,Butts County,Advance Auto Parts,1,3,contested
+13045,Carroll County,AutoZone,5,10,contested
+13057,Cherokee County,Advance Auto Parts,6,16,contested
+13063,Clayton County,O'Reilly Auto Parts,7,17,contested
+13067,Cobb County,Advance Auto Parts,18,51,contested
+13077,Coweta County,AutoZone,4,11,contested
+13085,Dawson County,AutoZone,2,4,contested
+13089,DeKalb County,AutoZone,17,44,contested
+13097,Douglas County,Advance Auto Parts,4,11,contested
+13113,Fayette County,AutoZone,4,8,contested
+13117,Forsyth County,Advance Auto Parts,4,11,contested
+13121,Fulton County,AutoZone,17,41,contested
+13135,Gwinnett County,Advance Auto Parts,21,54,contested
+13143,Haralson County,Advance Auto Parts,2,3,dominant
+13151,Henry County,AutoZone,7,20,contested
+13187,Lumpkin County,Advance Auto Parts,1,2,contested
+13199,Meriwether County,Advance Auto Parts,1,2,contested
+13211,Morgan County,Advance Auto Parts,1,3,contested
+13217,Newton County,Advance Auto Parts,2,5,contested
+13223,Paulding County,AutoZone,4,9,contested
+13227,Pickens County,AutoZone,1,2,contested
+13247,Rockdale County,O'Reilly Auto Parts,3,7,contested
+13255,Spalding County,Advance Auto Parts,2,6,contested
+13297,Walton County,Advance Auto Parts,2,8,contested
+
+brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles
+AutoZone,395a208b-9ac9-43d3-bf90-3a3dad4d65b7,Newnan,Coweta County,O'Reilly Auto Parts,5c8baa39-74c1-475a-a81f-9e07f4f08e98,Newnan,Coweta County,0.02
+O'Reilly Auto Parts,5c8baa39-74c1-475a-a81f-9e07f4f08e98,Newnan,Coweta County,AutoZone,395a208b-9ac9-43d3-bf90-3a3dad4d65b7,Newnan,Coweta County,0.02
+AutoZone,412529d5-61a8-44bd-a7c9-bd60e4ce7f74,Brookhaven,DeKalb County,O'Reilly Auto Parts,98d2e7ec-ce87-4977-9b60-9879af2552c6,Brookhaven,DeKalb County,0.03
+O'Reilly Auto Parts,98d2e7ec-ce87-4977-9b60-9879af2552c6,Brookhaven,DeKalb County,AutoZone,412529d5-61a8-44bd-a7c9-bd60e4ce7f74,Brookhaven,DeKalb County,0.03
+AutoZone,fce4dd88-4c08-499b-a61b-98295094183a,Union City,Fulton County,Advance Auto Parts,ff3bdab6-6688-4d65-b1bd-2af1abc89963,Fairburn,Fulton County,0.04
+Advance Auto Parts,ff3bdab6-6688-4d65-b1bd-2af1abc89963,Fairburn,Fulton County,AutoZone,fce4dd88-4c08-499b-a61b-98295094183a,Union City,Fulton County,0.04
+O'Reilly Auto Parts,23e665e4-c058-4603-8a80-7938f981d7bf,Acworth,Cobb County,AutoZone,fe26e16c-1f29-442d-bba3-e17903fa8f96,Acworth,Cobb County,0.05
+AutoZone,fe26e16c-1f29-442d-bba3-e17903fa8f96,Acworth,Cobb County,O'Reilly Auto Parts,23e665e4-c058-4603-8a80-7938f981d7bf,Acworth,Cobb County,0.05
+O'Reilly Auto Parts,48196d3f-c845-4e61-a6c8-c37d8658c5ec,Kennesaw,Cobb County,AutoZone,c5d5d79f-df3f-4e47-8651-cc4cc109c09b,Kennesaw,Cobb County,0.05
+AutoZone,c5d5d79f-df3f-4e47-8651-cc4cc109c09b,Kennesaw,Cobb County,O'Reilly Auto Parts,48196d3f-c845-4e61-a6c8-c37d8658c5ec,Kennesaw,Cobb County,0.05
+O'Reilly Auto Parts,18280567-8c88-49bf-b34c-cb27ce808113,Carrollton,Carroll County,Advance Auto Parts,7f4a2d8c-3036-44d6-81fd-4bee040fbcff,Carrollton,Carroll County,0.05
+Advance Auto Parts,7f4a2d8c-3036-44d6-81fd-4bee040fbcff,Carrollton,Carroll County,O'Reilly Auto Parts,18280567-8c88-49bf-b34c-cb27ce808113,Carrollton,Carroll County,0.05
+O'Reilly Auto Parts,54f95147-929e-4ef0-801e-e06c4447498c,Cartersville,Bartow County,Advance Auto Parts,b201c2b8-b29f-47b8-ad5a-697567ee9c32,Cartersville,Bartow County,0.05
+Advance Auto Parts,b201c2b8-b29f-47b8-ad5a-697567ee9c32,Cartersville,Bartow County,O'Reilly Auto Parts,54f95147-929e-4ef0-801e-e06c4447498c,Cartersville,Bartow County,0.05
+Advance Auto Parts,81443b42-741d-4d98-a366-22cb1ccc7adf,Douglasville,Douglas County,O'Reilly Auto Parts,a5e68e5a-71c6-4663-8c2c-41f028a31f68,Douglasville,Douglas County,0.05
+O'Reilly Auto Parts,a5e68e5a-71c6-4663-8c2c-41f028a31f68,Douglasville,Douglas County,Advance Auto Parts,81443b42-741d-4d98-a366-22cb1ccc7adf,Douglasville,Douglas County,0.05
+Advance Auto Parts,3cd62d83-b483-4e57-aadf-9aa2775a91d8,Decatur,DeKalb County,O'Reilly Auto Parts,64610e84-38ed-4e4e-ac02-9a82e569020a,Decatur,DeKalb County,0.06
+O'Reilly Auto Parts,64610e84-38ed-4e4e-ac02-9a82e569020a,Decatur,DeKalb County,Advance Auto Parts,3cd62d83-b483-4e57-aadf-9aa2775a91d8,Decatur,DeKalb County,0.06
+O'Reilly Auto Parts,ca45fcf1-5ec5-4880-9035-1ebc9344af44,Lawrenceville,Gwinnett County,AutoZone,d4f83172-c1b3-4e22-bad7-f79840705682,Lawrenceville,Gwinnett County,0.06
+AutoZone,d4f83172-c1b3-4e22-bad7-f79840705682,Lawrenceville,Gwinnett County,O'Reilly Auto Parts,ca45fcf1-5ec5-4880-9035-1ebc9344af44,Lawrenceville,Gwinnett County,0.06
+AutoZone,1476258b-9feb-4489-933e-c54af7831c9a,Marietta,Cobb County,O'Reilly Auto Parts,1f647a67-7bd6-496d-a7d2-12d415132e5c,Marietta,Cobb County,0.06
+O'Reilly Auto Parts,1f647a67-7bd6-496d-a7d2-12d415132e5c,Marietta,Cobb County,AutoZone,1476258b-9feb-4489-933e-c54af7831c9a,Marietta,Cobb County,0.06
+O'Reilly Auto Parts,5fa2f2ae-1691-49da-a4a4-113c7de7ab51,Monroe,Walton County,Advance Auto Parts,72b56d80-341c-4c1d-8392-89ff041323f0,Monroe,Walton County,0.06
+Advance Auto Parts,72b56d80-341c-4c1d-8392-89ff041323f0,Monroe,Walton County,O'Reilly Auto Parts,5fa2f2ae-1691-49da-a4a4-113c7de7ab51,Monroe,Walton County,0.06
+AutoZone,3e8cf781-766a-41c5-8bbd-5f4f642fc265,Riverdale,Clayton County,O'Reilly Auto Parts,911b0183-ba2b-4175-9c3a-dc0ccc7ba50c,Riverdale,Clayton County,0.07
+O'Reilly Auto Parts,911b0183-ba2b-4175-9c3a-dc0ccc7ba50c,Riverdale,Clayton County,AutoZone,3e8cf781-766a-41c5-8bbd-5f4f642fc265,Riverdale,Clayton County,0.07
+AutoZone,38fe61d6-f15b-4825-b02e-1db13f7c9b2c,Jackson,Butts County,Advance Auto Parts,4c3be924-fb8a-4ab4-aff2-c0498a9ae423,Jackson,Butts County,0.07
+Advance Auto Parts,4c3be924-fb8a-4ab4-aff2-c0498a9ae423,Jackson,Butts County,AutoZone,38fe61d6-f15b-4825-b02e-1db13f7c9b2c,Jackson,Butts County,0.07
+AutoZone,2cd05071-9a5d-455a-9a7f-eca72331a2e7,Cartersville,Bartow County,Advance Auto Parts,dd105a28-c0b4-4c1a-a622-680b0aa24718,Cartersville,Bartow County,0.07
+Advance Auto Parts,dd105a28-c0b4-4c1a-a622-680b0aa24718,Cartersville,Bartow County,AutoZone,2cd05071-9a5d-455a-9a7f-eca72331a2e7,Cartersville,Bartow County,0.07
+AutoZone,8e3baaf6-2726-43a5-a4be-359acb5225a8,Decatur,DeKalb County,O'Reilly Auto Parts,d42cdf39-9894-495c-bde3-aa925a986c7a,Decatur,DeKalb County,0.07
+O'Reilly Auto Parts,d42cdf39-9894-495c-bde3-aa925a986c7a,Decatur,DeKalb County,AutoZone,8e3baaf6-2726-43a5-a4be-359acb5225a8,Decatur,DeKalb County,0.07
+Advance Auto Parts,df719af3-4563-4913-bf03-4e06fadeb714,Adairsville,Bartow County,AutoZone,e6246aa6-83f9-4c62-afca-83e53067813c,Adairsville,Bartow County,0.08
+AutoZone,e6246aa6-83f9-4c62-afca-83e53067813c,Adairsville,Bartow County,Advance Auto Parts,df719af3-4563-4913-bf03-4e06fadeb714,Adairsville,Bartow County,0.08
+Advance Auto Parts,64eca453-7ec3-43ea-b7eb-1ed77443f45d,Marietta,Cobb County,AutoZone,99c93eaf-3dcc-4836-97a3-3e16beb3a7e6,Marietta,Cobb County,0.09
+AutoZone,99c93eaf-3dcc-4836-97a3-3e16beb3a7e6,Marietta,Cobb County,Advance Auto Parts,64eca453-7ec3-43ea-b7eb-1ed77443f45d,Marietta,Cobb County,0.09
+AutoZone,41320898-4d76-4145-986e-5a1b9380386f,Marietta,Cobb County,O'Reilly Auto Parts,84ab6bb1-95f6-4bf8-9639-27c11661e4db,Marietta,Cobb County,0.09
+O'Reilly Auto Parts,84ab6bb1-95f6-4bf8-9639-27c11661e4db,Marietta,Cobb County,AutoZone,41320898-4d76-4145-986e-5a1b9380386f,Marietta,Cobb County,0.09
+O'Reilly Auto Parts,67843fea-4fa2-4d90-a1fe-7d0f0d4b9b30,Cumming,Forsyth County,Advance Auto Parts,8322488a-50cb-4dd7-a811-be03870a1f43,Cumming,Forsyth County,0.09
+Advance Auto Parts,8322488a-50cb-4dd7-a811-be03870a1f43,Cumming,Forsyth County,O'Reilly Auto Parts,67843fea-4fa2-4d90-a1fe-7d0f0d4b9b30,Cumming,Forsyth County,0.09
+O'Reilly Auto Parts,480455b5-539e-418e-a8c0-b3dc075d3927,Norcross,Gwinnett County,AutoZone,ad01f506-c3cb-47b0-bec4-f8e34150b4cb,Norcross,Gwinnett County,0.09
+AutoZone,ad01f506-c3cb-47b0-bec4-f8e34150b4cb,Norcross,Gwinnett County,O'Reilly Auto Parts,480455b5-539e-418e-a8c0-b3dc075d3927,Norcross,Gwinnett County,0.09
+O'Reilly Auto Parts,6149833a-811a-42aa-a792-3462a5b4ef79,Buford,Gwinnett County,Advance Auto Parts,e86cf694-0f81-4248-aca5-2ab91d8e4e2c,Buford,Gwinnett County,0.10
+Advance Auto Parts,e86cf694-0f81-4248-aca5-2ab91d8e4e2c,Buford,Gwinnett County,O'Reilly Auto Parts,6149833a-811a-42aa-a792-3462a5b4ef79,Buford,Gwinnett County,0.10
+AutoZone,9dff5c0f-d003-46e2-8583-57b24d7adf14,Newnan,Coweta County,O'Reilly Auto Parts,b0ef64e4-4d0c-41bb-8f17-efdbd27aa2b8,Newnan,Coweta County,0.11
+O'Reilly Auto Parts,b0ef64e4-4d0c-41bb-8f17-efdbd27aa2b8,Newnan,Coweta County,AutoZone,9dff5c0f-d003-46e2-8583-57b24d7adf14,Newnan,Coweta County,0.11
+O'Reilly Auto Parts,34ee17aa-c9df-45ce-8417-63b765531172,Canton,Cherokee County,AutoZone,d098e9fd-58b6-4803-8d80-485c107ccc8f,Canton,Cherokee County,0.11
+AutoZone,d098e9fd-58b6-4803-8d80-485c107ccc8f,Canton,Cherokee County,O'Reilly Auto Parts,34ee17aa-c9df-45ce-8417-63b765531172,Canton,Cherokee County,0.11
+Advance Auto Parts,233db600-a350-4b88-94a1-2dcf84fe6b6a,Alpharetta,Fulton County,AutoZone,fe3a1e04-6c2d-4aab-8405-eb30a7ef3591,Alpharetta,Fulton County,0.11
+AutoZone,fe3a1e04-6c2d-4aab-8405-eb30a7ef3591,Alpharetta,Fulton County,Advance Auto Parts,233db600-a350-4b88-94a1-2dcf84fe6b6a,Alpharetta,Fulton County,0.11
+Advance Auto Parts,7cb3c1b9-60b8-46d6-b7a2-9c905a3ff930,Snellville,Gwinnett County,AutoZone,bc8a2c62-e0c5-4882-88e6-96a677965839,Snellville,Gwinnett County,0.12
+AutoZone,bc8a2c62-e0c5-4882-88e6-96a677965839,Snellville,Gwinnett County,Advance Auto Parts,7cb3c1b9-60b8-46d6-b7a2-9c905a3ff930,Snellville,Gwinnett County,0.12
+O'Reilly Auto Parts,655b8025-0d89-47cf-80a3-40f72f280073,Lithonia,DeKalb County,Advance Auto Parts,a377cc99-98a7-43ed-8536-e30e1c71e60e,Lithonia,DeKalb County,0.12
+Advance Auto Parts,a377cc99-98a7-43ed-8536-e30e1c71e60e,Lithonia,DeKalb County,O'Reilly Auto Parts,655b8025-0d89-47cf-80a3-40f72f280073,Lithonia,DeKalb County,0.12
+AutoZone,1a8cc18b-d782-4f0a-a15b-a970a2255cb0,Dawsonville,Dawson County,O'Reilly Auto Parts,9b12f9e4-4cde-4298-8382-ac682d1c8126,Dawsonville,Dawson County,0.12
+O'Reilly Auto Parts,9b12f9e4-4cde-4298-8382-ac682d1c8126,Dawsonville,Dawson County,AutoZone,1a8cc18b-d782-4f0a-a15b-a970a2255cb0,Dawsonville,Dawson County,0.12
+Advance Auto Parts,8b9e7ce7-e46a-4153-b324-5474774ea692,Newnan,Coweta County,O'Reilly Auto Parts,5c8baa39-74c1-475a-a81f-9e07f4f08e98,Newnan,Coweta County,0.12
+O'Reilly Auto Parts,8304a5f7-6b9e-4348-acd6-a2d67fb673ab,Doraville,DeKalb County,Advance Auto Parts,a0841ed0-66bb-4aa0-ac00-98f6bef10b19,Doraville,DeKalb County,0.13
+Advance Auto Parts,a0841ed0-66bb-4aa0-ac00-98f6bef10b19,Doraville,DeKalb County,O'Reilly Auto Parts,8304a5f7-6b9e-4348-acd6-a2d67fb673ab,Doraville,DeKalb County,0.13
+Advance Auto Parts,381c4fb4-0e71-47a4-a2ba-1c51e9ee9b7c,Decatur,DeKalb County,O'Reilly Auto Parts,5b1687ff-6962-4e17-bbc1-cc0bcb514b3e,Decatur,DeKalb County,0.13
+O'Reilly Auto Parts,5b1687ff-6962-4e17-bbc1-cc0bcb514b3e,Decatur,DeKalb County,Advance Auto Parts,381c4fb4-0e71-47a4-a2ba-1c51e9ee9b7c,Decatur,DeKalb County,0.13
+O'Reilly Auto Parts,0beb196b-ab25-4a33-bf88-89a5d2a5dd35,Covington,Newton County,AutoZone,82b7af1a-312c-4149-8055-fdee3e018f3d,Covington,Newton County,0.13
+AutoZone,82b7af1a-312c-4149-8055-fdee3e018f3d,Covington,Newton County,O'Reilly Auto Parts,0beb196b-ab25-4a33-bf88-89a5d2a5dd35,Covington,Newton County,0.13
+AutoZone,d49c5398-2549-4c9e-8902-c70889a237aa,Powder Springs,Cobb County,Advance Auto Parts,e084e315-b790-4cf9-bbaa-6fbe71593afc,Powder Springs,Cobb County,0.13
+Advance Auto Parts,e084e315-b790-4cf9-bbaa-6fbe71593afc,Powder Springs,Cobb County,AutoZone,d49c5398-2549-4c9e-8902-c70889a237aa,Powder Springs,Cobb County,0.13
+NAPA Auto Parts,dfa7b2c7-e9e3-47c1-8fdd-6f9545c9d02b,Jackson,Butts County,Advance Auto Parts,4c3be924-fb8a-4ab4-aff2-c0498a9ae423,Jackson,Butts County,0.13
+Advance Auto Parts,bf76f96d-4a4d-4454-8ff2-750603bb29f1,Marietta,Cobb County,O'Reilly Auto Parts,d18e358c-c441-45f5-81ea-ceb9a2879ca9,Marietta,Cobb County,0.14
+O'Reilly Auto Parts,d18e358c-c441-45f5-81ea-ceb9a2879ca9,Marietta,Cobb County,Advance Auto Parts,bf76f96d-4a4d-4454-8ff2-750603bb29f1,Marietta,Cobb County,0.14
+Advance Auto Parts,73ce061b-77d8-43b9-be24-0d03077f70f9,Lawrenceville,Gwinnett County,AutoZone,d5b3cd68-e47c-4548-b770-ca0c873bd73b,Lawrenceville,Gwinnett County,0.14
+AutoZone,d5b3cd68-e47c-4548-b770-ca0c873bd73b,Lawrenceville,Gwinnett County,Advance Auto Parts,73ce061b-77d8-43b9-be24-0d03077f70f9,Lawrenceville,Gwinnett County,0.14
+AutoZone,147a9597-0b45-4c9d-b38e-1e18072264e5,Norcross,Gwinnett County,O'Reilly Auto Parts,e8c83d51-ea52-4141-afc7-68777be0dab8,Norcross,Gwinnett County,0.14
+O'Reilly Auto Parts,e8c83d51-ea52-4141-afc7-68777be0dab8,Norcross,Gwinnett County,AutoZone,147a9597-0b45-4c9d-b38e-1e18072264e5,Norcross,Gwinnett County,0.14
+AutoZone,455a4cea-e2db-4b8a-9816-d68eb8f4b2cc,Villa Rica,Carroll County,Advance Auto Parts,6a527c21-7e7f-47a1-992a-f6478139c64a,Villa Rica,Carroll County,0.14
+Advance Auto Parts,6a527c21-7e7f-47a1-992a-f6478139c64a,Villa Rica,Carroll County,AutoZone,455a4cea-e2db-4b8a-9816-d68eb8f4b2cc,Villa Rica,Carroll County,0.14
+AutoZone,acb3797b-a8da-42f3-ac81-68a5ffd6132e,Acworth,Cobb County,O'Reilly Auto Parts,ea7a0b76-5d25-4ee2-a936-6c26bdc79441,Acworth,Cobb County,0.15
+O'Reilly Auto Parts,ea7a0b76-5d25-4ee2-a936-6c26bdc79441,Acworth,Cobb County,AutoZone,acb3797b-a8da-42f3-ac81-68a5ffd6132e,Acworth,Cobb County,0.15
+AutoZone,bdb23c0c-1a7d-414d-95ee-9aac7e754a37,Loganville,Walton County,O'Reilly Auto Parts,e0cd50f0-6185-4682-8347-4aadda231f37,Loganville,Walton County,0.15
+O'Reilly Auto Parts,e0cd50f0-6185-4682-8347-4aadda231f37,Loganville,Walton County,AutoZone,bdb23c0c-1a7d-414d-95ee-9aac7e754a37,Loganville,Walton County,0.15
+AutoZone,1074cdf3-8ee4-4adf-9446-f362670a5eec,Madison,Morgan County,Advance Auto Parts,d20044af-e149-41e4-82e3-8434812dbde4,Madison,Morgan County,0.16
+Advance Auto Parts,d20044af-e149-41e4-82e3-8434812dbde4,Madison,Morgan County,AutoZone,1074cdf3-8ee4-4adf-9446-f362670a5eec,Madison,Morgan County,0.16
+AutoZone,4147a7aa-34ff-4a4d-8715-656f8845c682,Dahlonega,Lumpkin County,Advance Auto Parts,e9cd8031-88d2-4511-8a30-0cb5308137a3,Dahlonega,Lumpkin County,0.16
+Advance Auto Parts,e9cd8031-88d2-4511-8a30-0cb5308137a3,Dahlonega,Lumpkin County,AutoZone,4147a7aa-34ff-4a4d-8715-656f8845c682,Dahlonega,Lumpkin County,0.16
+NAPA Auto Parts,47f837e0-6ba6-43d9-9fcd-96184a31f4c6,Suwanee,Gwinnett County,Advance Auto Parts,731fdd21-1cec-49da-a183-8cc0ea699da4,Suwanee,Gwinnett County,0.16
+Advance Auto Parts,731fdd21-1cec-49da-a183-8cc0ea699da4,Suwanee,Gwinnett County,NAPA Auto Parts,47f837e0-6ba6-43d9-9fcd-96184a31f4c6,Suwanee,Gwinnett County,0.16
+Advance Auto Parts,c05bce5f-caf7-418b-b935-185af8c49556,Palmetto,Fulton County,NAPA Auto Parts,d275ee13-7d0d-4532-a637-4dc9e7b4e8c2,Palmetto,Fulton County,0.17
+NAPA Auto Parts,d275ee13-7d0d-4532-a637-4dc9e7b4e8c2,Palmetto,Fulton County,Advance Auto Parts,c05bce5f-caf7-418b-b935-185af8c49556,Palmetto,Fulton County,0.17
+O'Reilly Auto Parts,6529ecc5-eeca-413e-a461-b30a0ac7dd0b,Woodstock,Cherokee County,Advance Auto Parts,8d60b2df-d87f-4142-9121-021736a286b5,Canton,Cherokee County,0.17
+Advance Auto Parts,8d60b2df-d87f-4142-9121-021736a286b5,Canton,Cherokee County,O'Reilly Auto Parts,6529ecc5-eeca-413e-a461-b30a0ac7dd0b,Woodstock,Cherokee County,0.17
+Advance Auto Parts,3645df4c-75d2-4ac8-b157-3d14a856b2f0,Cumming,Forsyth County,O'Reilly Auto Parts,f5acd8d5-cef2-4974-9f67-9303a8b99b6f,Cumming,Forsyth County,0.20
+O'Reilly Auto Parts,f5acd8d5-cef2-4974-9f67-9303a8b99b6f,Cumming,Forsyth County,Advance Auto Parts,3645df4c-75d2-4ac8-b157-3d14a856b2f0,Cumming,Forsyth County,0.20
+O'Reilly Auto Parts,5332c992-625c-4e27-9367-ad4e88d9fe0a,Marietta,Cobb County,AutoZone,e8859a95-08f6-4141-b3d9-0dfee715c846,Marietta,Cobb County,0.21
+AutoZone,e8859a95-08f6-4141-b3d9-0dfee715c846,Marietta,Cobb County,O'Reilly Auto Parts,5332c992-625c-4e27-9367-ad4e88d9fe0a,Marietta,Cobb County,0.21
+AutoZone,efaa62e3-123c-46d6-817b-867c2743cac3,Tucker,DeKalb County,O'Reilly Auto Parts,fc6bbb53-a662-4683-8da0-73b362083992,Tucker,DeKalb County,0.22
+O'Reilly Auto Parts,fc6bbb53-a662-4683-8da0-73b362083992,Tucker,DeKalb County,AutoZone,efaa62e3-123c-46d6-817b-867c2743cac3,Tucker,DeKalb County,0.22
+AutoZone,a870ffac-677b-4e1a-9e86-553c6bc06692,Atlanta,Fulton County,O'Reilly Auto Parts,a9c0106d-3f79-4f6e-a3ad-0f286588fb44,Atlanta,Fulton County,0.22
+O'Reilly Auto Parts,a9c0106d-3f79-4f6e-a3ad-0f286588fb44,Atlanta,Fulton County,AutoZone,a870ffac-677b-4e1a-9e86-553c6bc06692,Atlanta,Fulton County,0.22
+O'Reilly Auto Parts,00b857c1-6b4a-48d5-9a00-39964d79eb89,Mableton,Cobb County,AutoZone,b5abc7ed-4c7d-4c44-9d7c-38f9387b3564,Mableton,Cobb County,0.22
+AutoZone,b5abc7ed-4c7d-4c44-9d7c-38f9387b3564,Mableton,Cobb County,O'Reilly Auto Parts,00b857c1-6b4a-48d5-9a00-39964d79eb89,Mableton,Cobb County,0.22
+Advance Auto Parts,70ee8501-e3a3-4ac3-a58c-4cff19c0449d,Acworth,Cherokee County,AutoZone,72e53c31-39bd-4a18-99c0-b0ec8ac0a42f,Acworth,Cherokee County,0.22
+AutoZone,72e53c31-39bd-4a18-99c0-b0ec8ac0a42f,Acworth,Cherokee County,Advance Auto Parts,70ee8501-e3a3-4ac3-a58c-4cff19c0449d,Acworth,Cherokee County,0.22
+Advance Auto Parts,65bef35b-ea7b-4120-9ea3-f68fae9bb31b,Decatur,DeKalb County,AutoZone,855644e8-3cf0-4f56-9398-05f5fbe9612f,Decatur,DeKalb County,0.23
+AutoZone,855644e8-3cf0-4f56-9398-05f5fbe9612f,Decatur,DeKalb County,Advance Auto Parts,65bef35b-ea7b-4120-9ea3-f68fae9bb31b,Decatur,DeKalb County,0.23
+O'Reilly Auto Parts,db5939b0-4e57-4238-817c-48636b4e6ea5,McDonough,Henry County,AutoZone,f362e52a-75b1-4aca-858f-5383c5115c3f,McDonough,Henry County,0.23
+AutoZone,f362e52a-75b1-4aca-858f-5383c5115c3f,McDonough,Henry County,O'Reilly Auto Parts,db5939b0-4e57-4238-817c-48636b4e6ea5,McDonough,Henry County,0.23
+O'Reilly Auto Parts,9de8044c-2e7d-4d86-b668-dc5a4501ff1f,Smyrna,Cobb County,Advance Auto Parts,a09dc342-b68b-4e3b-b567-2b0e8981e375,Smyrna,Cobb County,0.23
+Advance Auto Parts,a09dc342-b68b-4e3b-b567-2b0e8981e375,Smyrna,Cobb County,O'Reilly Auto Parts,9de8044c-2e7d-4d86-b668-dc5a4501ff1f,Smyrna,Cobb County,0.23
+AutoZone,02186f8d-1f27-45d3-b3de-d3551262dff3,McDonough,Henry County,NAPA Auto Parts,43c50b4e-e0ca-4e57-9090-32910aeab6b5,McDonough,Henry County,0.24
+NAPA Auto Parts,43c50b4e-e0ca-4e57-9090-32910aeab6b5,McDonough,Henry County,AutoZone,02186f8d-1f27-45d3-b3de-d3551262dff3,McDonough,Henry County,0.24
+O'Reilly Auto Parts,0ae6be22-5bc6-43c3-82e7-142baad7272d,Villa Rica,Carroll County,Advance Auto Parts,6a527c21-7e7f-47a1-992a-f6478139c64a,Villa Rica,Carroll County,0.25
+NAPA Auto Parts,3de3f770-2eb7-4b9e-b773-6f0f3ac07c0a,Griffin,Spalding County,AutoZone,46247fd9-8e02-4b5e-b2c5-3d8dcb0b644f,Griffin,Spalding County,0.26
+AutoZone,46247fd9-8e02-4b5e-b2c5-3d8dcb0b644f,Griffin,Spalding County,NAPA Auto Parts,3de3f770-2eb7-4b9e-b773-6f0f3ac07c0a,Griffin,Spalding County,0.26
+AutoZone,ce69e247-af96-43a8-8da7-b5d08b920d89,Decatur,DeKalb County,O'Reilly Auto Parts,5b1687ff-6962-4e17-bbc1-cc0bcb514b3e,Decatur,DeKalb County,0.26
+AutoZone,04db7607-17a6-4472-ad53-f46a1f6bc8e9,Roswell,Fulton County,O'Reilly Auto Parts,3bcf3233-c31f-4de2-9c2c-37fa16a6cc89,Roswell,Fulton County,0.27
+O'Reilly Auto Parts,3bcf3233-c31f-4de2-9c2c-37fa16a6cc89,Roswell,Fulton County,AutoZone,04db7607-17a6-4472-ad53-f46a1f6bc8e9,Roswell,Fulton County,0.27
+AutoZone,3fd79c33-a8f1-4fb9-91a1-8b8590e3b87c,Marietta,Cobb County,Advance Auto Parts,bf76f96d-4a4d-4454-8ff2-750603bb29f1,Marietta,Cobb County,0.27
+Advance Auto Parts,18e070bd-3f6e-48a9-ab22-48a9af934431,Newnan,Coweta County,AutoZone,9dff5c0f-d003-46e2-8583-57b24d7adf14,Newnan,Coweta County,0.28
+O'Reilly Auto Parts,509e88d2-5b23-4509-9661-355574a35ce8,Bremen,Haralson County,Advance Auto Parts,7b7143e1-d9e7-47eb-9a52-f5f4582ab767,Bremen,Haralson County,0.28
+Advance Auto Parts,7b7143e1-d9e7-47eb-9a52-f5f4582ab767,Bremen,Haralson County,O'Reilly Auto Parts,509e88d2-5b23-4509-9661-355574a35ce8,Bremen,Haralson County,0.28
+AutoZone,6fa1ee7f-8423-4abd-8d77-42dffab8f028,Marietta,Cobb County,O'Reilly Auto Parts,ae990ec4-d453-4827-b213-4f5ba78030ee,Marietta,Cobb County,0.28
+O'Reilly Auto Parts,ae990ec4-d453-4827-b213-4f5ba78030ee,Marietta,Cobb County,AutoZone,6fa1ee7f-8423-4abd-8d77-42dffab8f028,Marietta,Cobb County,0.28
+O'Reilly Auto Parts,088b9bf5-1e95-4f33-840e-7cb8e5e9f7f0,Lilburn,Gwinnett County,Advance Auto Parts,a018a231-c031-418b-a937-c72810bea46d,Lilburn,Gwinnett County,0.29
+Advance Auto Parts,a018a231-c031-418b-a937-c72810bea46d,Lilburn,Gwinnett County,O'Reilly Auto Parts,088b9bf5-1e95-4f33-840e-7cb8e5e9f7f0,Lilburn,Gwinnett County,0.29
+AutoZone,510663bd-ccee-4ae6-a390-dd7382566635,Carrollton,Carroll County,Advance Auto Parts,7f4a2d8c-3036-44d6-81fd-4bee040fbcff,Carrollton,Carroll County,0.30
+O'Reilly Auto Parts,075eb824-7c0b-4dc8-9599-d699c19218ac,Marietta,Cobb County,AutoZone,99c93eaf-3dcc-4836-97a3-3e16beb3a7e6,Marietta,Cobb County,0.31
+Advance Auto Parts,e73da5ce-6cbf-4f62-beee-d9b3897168f1,Norcross,Gwinnett County,O'Reilly Auto Parts,e8c83d51-ea52-4141-afc7-68777be0dab8,Norcross,Gwinnett County,0.32
+O'Reilly Auto Parts,546768cd-c4b1-46f1-8c37-b54fd6c80851,Lovejoy,Henry County,AutoZone,9a694440-454a-48df-b96d-ecc5fd2b29e2,Lovejoy,Henry County,0.33
+AutoZone,9a694440-454a-48df-b96d-ecc5fd2b29e2,Lovejoy,Henry County,O'Reilly Auto Parts,546768cd-c4b1-46f1-8c37-b54fd6c80851,Lovejoy,Henry County,0.33
+AutoZone,97c80bbc-b05f-41a1-825b-83a72750874e,Duluth,Gwinnett County,Advance Auto Parts,fa2b9f62-1d0f-4515-a1aa-500c88dfdf92,Duluth,Gwinnett County,0.33
+Advance Auto Parts,fa2b9f62-1d0f-4515-a1aa-500c88dfdf92,Duluth,Gwinnett County,AutoZone,97c80bbc-b05f-41a1-825b-83a72750874e,Duluth,Gwinnett County,0.33
+AutoZone,a9397f05-0bb6-4f3b-a480-02d3d442bfee,Conyers,Rockdale County,O'Reilly Auto Parts,b5c5c00e-aba3-4308-8a51-7719368bd915,Conyers,Rockdale County,0.34
+O'Reilly Auto Parts,b5c5c00e-aba3-4308-8a51-7719368bd915,Conyers,Rockdale County,AutoZone,a9397f05-0bb6-4f3b-a480-02d3d442bfee,Conyers,Rockdale County,0.34
+AutoZone,aabc9b04-1caf-4877-97d4-550f7640d58f,Stockbridge,Henry County,O'Reilly Auto Parts,f1b6f970-7dc7-4346-a4a6-53ff89d99236,Stockbridge,Henry County,0.34
+O'Reilly Auto Parts,f1b6f970-7dc7-4346-a4a6-53ff89d99236,Stockbridge,Henry County,AutoZone,aabc9b04-1caf-4877-97d4-550f7640d58f,Stockbridge,Henry County,0.34
+AutoZone,24ee6a23-24d8-4ede-bd0d-550f13f7396e,Canton,Cherokee County,Advance Auto Parts,603e2133-0d86-4f77-a862-1c5a4cc54c9a,Canton,Cherokee County,0.35
+Advance Auto Parts,603e2133-0d86-4f77-a862-1c5a4cc54c9a,Canton,Cherokee County,AutoZone,24ee6a23-24d8-4ede-bd0d-550f13f7396e,Canton,Cherokee County,0.35
+AutoZone,7eff6dfd-7562-49eb-a428-911db0c3337f,Locust Grove,Henry County,Advance Auto Parts,e463b957-5aa9-46f3-803d-a0cc1209c171,Locust Grove,Henry County,0.36
+Advance Auto Parts,e463b957-5aa9-46f3-803d-a0cc1209c171,Locust Grove,Henry County,AutoZone,7eff6dfd-7562-49eb-a428-911db0c3337f,Locust Grove,Henry County,0.36
+O'Reilly Auto Parts,8ae827a8-b439-4ff6-a979-6e6b6e915bd3,Douglasville,Douglas County,AutoZone,c9d15b71-f1a6-47e8-ad97-12d2ad45e9f0,Douglasville,Douglas County,0.37
+AutoZone,c9d15b71-f1a6-47e8-ad97-12d2ad45e9f0,Douglasville,Douglas County,O'Reilly Auto Parts,8ae827a8-b439-4ff6-a979-6e6b6e915bd3,Douglasville,Douglas County,0.37
+O'Reilly Auto Parts,73776c3d-15f2-4aeb-a76b-5992d78a9108,Sugar Hill,Gwinnett County,AutoZone,eaf7d6f0-36ce-4495-b8f9-82593358400c,Buford,Gwinnett County,0.39
+AutoZone,eaf7d6f0-36ce-4495-b8f9-82593358400c,Buford,Gwinnett County,O'Reilly Auto Parts,73776c3d-15f2-4aeb-a76b-5992d78a9108,Sugar Hill,Gwinnett County,0.39
+O'Reilly Auto Parts,1af34909-4e0f-447b-a38c-29e925c1cac4,McDonough,Henry County,Advance Auto Parts,9aec18c4-0f07-4291-ac69-be9892c09739,McDonough,Henry County,0.40
+Advance Auto Parts,9aec18c4-0f07-4291-ac69-be9892c09739,McDonough,Henry County,O'Reilly Auto Parts,1af34909-4e0f-447b-a38c-29e925c1cac4,McDonough,Henry County,0.40
+Advance Auto Parts,7f27cad5-b7be-434b-b355-46c827559601,Lawrenceville,Gwinnett County,AutoZone,ee19bff1-af58-4dc9-a117-7f977a4f0b44,Lawrenceville,Gwinnett County,0.40
+AutoZone,ee19bff1-af58-4dc9-a117-7f977a4f0b44,Lawrenceville,Gwinnett County,Advance Auto Parts,7f27cad5-b7be-434b-b355-46c827559601,Lawrenceville,Gwinnett County,0.40
+O'Reilly Auto Parts,dc4d9e3e-fabe-41a6-90fc-77a8a4b26257,McDonough,Henry County,NAPA Auto Parts,43c50b4e-e0ca-4e57-9090-32910aeab6b5,McDonough,Henry County,0.41
+Advance Auto Parts,3163edc8-13a6-4a01-a05a-18162322bb17,Lilburn,Gwinnett County,AutoZone,65a1e7bd-0453-43c2-b83b-9efa33b3bdad,Lilburn,Gwinnett County,0.42
+AutoZone,65a1e7bd-0453-43c2-b83b-9efa33b3bdad,Lilburn,Gwinnett County,Advance Auto Parts,3163edc8-13a6-4a01-a05a-18162322bb17,Lilburn,Gwinnett County,0.42
+NAPA Auto Parts,5e4dae55-be63-43c9-bca7-5b7da752de5f,Cumming,Forsyth County,Advance Auto Parts,bf102742-bdaf-43f0-a9dd-2b9cb7e5a256,Cumming,Forsyth County,0.44
+Advance Auto Parts,bf102742-bdaf-43f0-a9dd-2b9cb7e5a256,Cumming,Forsyth County,NAPA Auto Parts,5e4dae55-be63-43c9-bca7-5b7da752de5f,Cumming,Forsyth County,0.44
+AutoZone,087ec9a9-209a-4822-b9d2-1e1d2f1756d1,Atlanta,Fulton County,O'Reilly Auto Parts,46c21cee-f0f1-4a69-80f6-747464bac54f,Atlanta,Fulton County,0.44
+O'Reilly Auto Parts,46c21cee-f0f1-4a69-80f6-747464bac54f,Atlanta,Fulton County,AutoZone,087ec9a9-209a-4822-b9d2-1e1d2f1756d1,Atlanta,Fulton County,0.44
+AutoZone,54d40e33-1a85-48c3-8163-aede0c579b2d,Winder,Barrow County,O'Reilly Auto Parts,78b8d3b0-9d49-44e1-9b35-deaa9349158c,Winder,Barrow County,0.44
+O'Reilly Auto Parts,78b8d3b0-9d49-44e1-9b35-deaa9349158c,Winder,Barrow County,AutoZone,54d40e33-1a85-48c3-8163-aede0c579b2d,Winder,Barrow County,0.44
+Advance Auto Parts,f26ac21a-7943-4abf-b249-9fab7aee9bd1,Sugar Hill,Gwinnett County,O'Reilly Auto Parts,73776c3d-15f2-4aeb-a76b-5992d78a9108,Sugar Hill,Gwinnett County,0.44
+Advance Auto Parts,88785030-c2ba-4c92-92b6-93e9d8e0231c,Marietta,Cobb County,O'Reilly Auto Parts,976584d1-30cd-4325-b6f6-4e70537d69e7,Marietta,Cobb County,0.45
+O'Reilly Auto Parts,976584d1-30cd-4325-b6f6-4e70537d69e7,Marietta,Cobb County,Advance Auto Parts,88785030-c2ba-4c92-92b6-93e9d8e0231c,Marietta,Cobb County,0.45
+Advance Auto Parts,c1407f4d-6c08-4dda-a89e-4f51dfc7bc87,Norcross,Gwinnett County,O'Reilly Auto Parts,480455b5-539e-418e-a8c0-b3dc075d3927,Norcross,Gwinnett County,0.46
+O'Reilly Auto Parts,111767fc-87ba-484d-b17c-616f70601112,Jonesboro,Clayton County,AutoZone,19cff3e2-429d-41e7-b1e6-090b4456a84e,Jonesboro,Clayton County,0.47
+AutoZone,19cff3e2-429d-41e7-b1e6-090b4456a84e,Jonesboro,Clayton County,O'Reilly Auto Parts,111767fc-87ba-484d-b17c-616f70601112,Jonesboro,Clayton County,0.47
+AutoZone,972def9e-0394-4b42-bee8-21be6179481d,Atlanta,DeKalb County,O'Reilly Auto Parts,c3ab9b3f-3ac2-470d-ada2-11323e32542d,Atlanta,DeKalb County,0.47
+O'Reilly Auto Parts,c3ab9b3f-3ac2-470d-ada2-11323e32542d,Atlanta,DeKalb County,AutoZone,972def9e-0394-4b42-bee8-21be6179481d,Atlanta,DeKalb County,0.47
+O'Reilly Auto Parts,7a5032c4-0720-4282-8c1d-232964f74c33,Hiram,Paulding County,AutoZone,7a91db93-4feb-4a25-a663-14a0e95e2a99,Hiram,Paulding County,0.47
+AutoZone,7a91db93-4feb-4a25-a663-14a0e95e2a99,Hiram,Paulding County,O'Reilly Auto Parts,7a5032c4-0720-4282-8c1d-232964f74c33,Hiram,Paulding County,0.47
+Advance Auto Parts,16fedb60-402f-484f-b594-31e1dfc36410,Marietta,Cobb County,O'Reilly Auto Parts,075eb824-7c0b-4dc8-9599-d699c19218ac,Marietta,Cobb County,0.48
+AutoZone,5b50b958-58a9-4c44-9032-200b69ae2917,Snellville,Gwinnett County,Advance Auto Parts,7862336d-6d37-4c29-874a-a04e7f15f5e7,Snellville,Gwinnett County,0.48
+Advance Auto Parts,7862336d-6d37-4c29-874a-a04e7f15f5e7,Snellville,Gwinnett County,AutoZone,5b50b958-58a9-4c44-9032-200b69ae2917,Snellville,Gwinnett County,0.48
+Advance Auto Parts,2b870512-1eb0-4865-b35f-2c49f0c6ba8c,Hampton,Clayton County,AutoZone,9a694440-454a-48df-b96d-ecc5fd2b29e2,Lovejoy,Henry County,0.49
+Advance Auto Parts,32f15f56-b8a8-4d1f-be73-0ed8cda95a57,Loganville,Walton County,NAPA Auto Parts,a9e611a0-c300-4041-9c6f-cff1d4ad08d8,Loganville,Walton County,0.49
+NAPA Auto Parts,a9e611a0-c300-4041-9c6f-cff1d4ad08d8,Loganville,Walton County,Advance Auto Parts,32f15f56-b8a8-4d1f-be73-0ed8cda95a57,Loganville,Walton County,0.49
+Advance Auto Parts,133a4dcb-cacf-44d2-8128-35c1e2f5c61c,Buford,Gwinnett County,O'Reilly Auto Parts,d4c5555c-9c64-44c0-a16e-acf82963ffa5,Buford,Gwinnett County,0.50
+O'Reilly Auto Parts,d4c5555c-9c64-44c0-a16e-acf82963ffa5,Buford,Gwinnett County,Advance Auto Parts,133a4dcb-cacf-44d2-8128-35c1e2f5c61c,Buford,Gwinnett County,0.50
+O'Reilly Auto Parts,3f009db4-6836-4598-b21e-02a57dbc41a0,Marietta,Cobb County,Advance Auto Parts,8bf1286a-315b-4f1a-b41c-6d9f70611ddf,Marietta,Cobb County,0.51
+Advance Auto Parts,8bf1286a-315b-4f1a-b41c-6d9f70611ddf,Marietta,Cobb County,O'Reilly Auto Parts,3f009db4-6836-4598-b21e-02a57dbc41a0,Marietta,Cobb County,0.51
+Advance Auto Parts,78c4950a-8c19-42ce-ad29-090e44b809b7,Conyers,Rockdale County,O'Reilly Auto Parts,a2b3fe6f-f4ac-4a2a-ad1c-df16cd6a68c9,Conyers,Rockdale County,0.51
+O'Reilly Auto Parts,a2b3fe6f-f4ac-4a2a-ad1c-df16cd6a68c9,Conyers,Rockdale County,Advance Auto Parts,78c4950a-8c19-42ce-ad29-090e44b809b7,Conyers,Rockdale County,0.51
+AutoZone,8188b19d-ccfd-4240-8a29-3b7b464465b8,Monroe,Walton County,NAPA Auto Parts,a62be5bd-36f0-4039-b52a-9b22a086a85d,Monroe,Walton County,0.52
+NAPA Auto Parts,a62be5bd-36f0-4039-b52a-9b22a086a85d,Monroe,Walton County,AutoZone,8188b19d-ccfd-4240-8a29-3b7b464465b8,Monroe,Walton County,0.52
+AutoZone,10e6cb27-7fb8-4bcc-8fdd-672717de4e21,Ellenwood,DeKalb County,Advance Auto Parts,e76902c8-ec0e-446d-bf4c-026d5e6f63c1,Ellenwood,DeKalb County,0.52
+Advance Auto Parts,e76902c8-ec0e-446d-bf4c-026d5e6f63c1,Ellenwood,DeKalb County,AutoZone,10e6cb27-7fb8-4bcc-8fdd-672717de4e21,Ellenwood,DeKalb County,0.52
+O'Reilly Auto Parts,03e90ee8-6e50-4c5f-bd49-68d0bed24cf5,Union City,Fulton County,Advance Auto Parts,8894744c-89ba-4de9-bcd0-401e4a4ab99e,Union City,Fulton County,0.52
+Advance Auto Parts,8894744c-89ba-4de9-bcd0-401e4a4ab99e,Union City,Fulton County,O'Reilly Auto Parts,03e90ee8-6e50-4c5f-bd49-68d0bed24cf5,Union City,Fulton County,0.52
+O'Reilly Auto Parts,0ea6db26-7c4a-4bb7-abed-662b97ab5d2d,Austell,Cobb County,Advance Auto Parts,63dab6a1-d705-4ddd-a632-669fc7fe391c,Lithia Springs,Douglas County,0.52
+Advance Auto Parts,63dab6a1-d705-4ddd-a632-669fc7fe391c,Lithia Springs,Douglas County,O'Reilly Auto Parts,0ea6db26-7c4a-4bb7-abed-662b97ab5d2d,Austell,Cobb County,0.52
+AutoZone,8ab1db0b-d4bf-4015-8b05-d44dc3104ec6,Auburn,Barrow County,O'Reilly Auto Parts,98b06afd-7738-4801-9cc7-9596006ec5e1,Auburn,Barrow County,0.53
+O'Reilly Auto Parts,98b06afd-7738-4801-9cc7-9596006ec5e1,Auburn,Barrow County,AutoZone,8ab1db0b-d4bf-4015-8b05-d44dc3104ec6,Auburn,Barrow County,0.53
+AutoZone,5c1e1c84-0def-45d4-91a4-9f0a44db7a89,Decatur,DeKalb County,O'Reilly Auto Parts,64610e84-38ed-4e4e-ac02-9a82e569020a,Decatur,DeKalb County,0.55
+AutoZone,6a81e455-96e0-49a8-a4b4-ca0955066e41,Morrow,Clayton County,O'Reilly Auto Parts,f645ee7e-57c0-42dd-8d24-5490cf011a69,Forest Park,Clayton County,0.56
+O'Reilly Auto Parts,f645ee7e-57c0-42dd-8d24-5490cf011a69,Forest Park,Clayton County,AutoZone,6a81e455-96e0-49a8-a4b4-ca0955066e41,Morrow,Clayton County,0.56
+O'Reilly Auto Parts,b8c25c67-cbed-4b06-ade5-8155e2766f9e,Marietta,Cobb County,Advance Auto Parts,64eca453-7ec3-43ea-b7eb-1ed77443f45d,Marietta,Cobb County,0.58
+O'Reilly Auto Parts,df0925de-4a1f-41d3-8766-eef92cdab806,Madison,Morgan County,AutoZone,1074cdf3-8ee4-4adf-9446-f362670a5eec,Madison,Morgan County,0.59
+Advance Auto Parts,5f517622-c4be-4845-bfec-453bcaf1eadd,Forest Park,Clayton County,O'Reilly Auto Parts,f645ee7e-57c0-42dd-8d24-5490cf011a69,Forest Park,Clayton County,0.61
+O'Reilly Auto Parts,5be91e0b-3bb9-4e50-bb68-e000a34c33b9,Atlanta,Fulton County,AutoZone,77cb534e-5784-4863-8524-509ba7bc6a8e,Atlanta,Fulton County,0.63
+AutoZone,77cb534e-5784-4863-8524-509ba7bc6a8e,Atlanta,Fulton County,O'Reilly Auto Parts,5be91e0b-3bb9-4e50-bb68-e000a34c33b9,Atlanta,Fulton County,0.63
+AutoZone,0ec5a69c-6e28-4cef-ae8e-d0b3bc08fbb8,Atlanta,Fulton County,Advance Auto Parts,724a1831-ef91-4a0c-811d-ebf340c804e1,Atlanta,Fulton County,0.71
+Advance Auto Parts,724a1831-ef91-4a0c-811d-ebf340c804e1,Atlanta,Fulton County,AutoZone,0ec5a69c-6e28-4cef-ae8e-d0b3bc08fbb8,Atlanta,Fulton County,0.71
+O'Reilly Auto Parts,a4328338-021e-4bf4-9196-ccc02bdc88e0,Griffin,Spalding County,AutoZone,46247fd9-8e02-4b5e-b2c5-3d8dcb0b644f,Griffin,Spalding County,0.73
+AutoZone,afb9e31c-2a8f-419b-a0d1-c2e2f1b1a7fb,Cumming,Forsyth County,NAPA Auto Parts,5e4dae55-be63-43c9-bca7-5b7da752de5f,Cumming,Forsyth County,0.73
+AutoZone,cec5a1f2-34f5-43ba-91bf-2d974aff0de3,Cartersville,Bartow County,O'Reilly Auto Parts,fab5eb3f-c979-4c28-a27a-634aae5f1b0b,Cartersville,Bartow County,0.77
+O'Reilly Auto Parts,fab5eb3f-c979-4c28-a27a-634aae5f1b0b,Cartersville,Bartow County,AutoZone,cec5a1f2-34f5-43ba-91bf-2d974aff0de3,Cartersville,Bartow County,0.77
+Advance Auto Parts,4f48dd55-6259-489f-a03a-e7d4c30f0dc7,Stone Mountain,DeKalb County,O'Reilly Auto Parts,c91bb88e-2aa4-4430-8d6d-1d3f9829440c,Stone Mountain,DeKalb County,0.77
+O'Reilly Auto Parts,c91bb88e-2aa4-4430-8d6d-1d3f9829440c,Stone Mountain,DeKalb County,Advance Auto Parts,4f48dd55-6259-489f-a03a-e7d4c30f0dc7,Stone Mountain,DeKalb County,0.77
+Advance Auto Parts,130368c7-3f49-446d-aa8e-436774dc480e,Winder,Barrow County,AutoZone,54d40e33-1a85-48c3-8163-aede0c579b2d,Winder,Barrow County,0.79
+AutoZone,45f85aa5-851d-4d41-80b5-7415cab5e2d3,Stone Mountain,DeKalb County,Advance Auto Parts,ccd3b68b-0759-4a2f-963e-050b7d9b6393,Decatur,DeKalb County,0.79
+Advance Auto Parts,ccd3b68b-0759-4a2f-963e-050b7d9b6393,Decatur,DeKalb County,AutoZone,45f85aa5-851d-4d41-80b5-7415cab5e2d3,Stone Mountain,DeKalb County,0.79
+O'Reilly Auto Parts,5f6b499a-3cb2-40b0-ab6c-2e7ac6a205ad,Lawrenceville,Gwinnett County,Advance Auto Parts,a656c4a8-f816-4aed-afd4-a9e6cbad626c,Lawrenceville,Gwinnett County,0.79
+Advance Auto Parts,a656c4a8-f816-4aed-afd4-a9e6cbad626c,Lawrenceville,Gwinnett County,O'Reilly Auto Parts,5f6b499a-3cb2-40b0-ab6c-2e7ac6a205ad,Lawrenceville,Gwinnett County,0.79
+Advance Auto Parts,fb87d024-036a-49f2-8a9d-fdbd870c1281,Douglasville,Douglas County,AutoZone,c9d15b71-f1a6-47e8-ad97-12d2ad45e9f0,Douglasville,Douglas County,0.81
+Advance Auto Parts,944e8087-51ee-4b29-83a6-648f3fecf7bd,Tucker,DeKalb County,AutoZone,efaa62e3-123c-46d6-817b-867c2743cac3,Tucker,DeKalb County,0.82
+AutoZone,956a1f44-9639-4e8a-a59a-4a20f68b4c1c,Fayetteville,Fayette County,Advance Auto Parts,e1cff5f7-4b39-4449-8de1-88f50eb7bfef,Fayetteville,Fayette County,0.82
+Advance Auto Parts,e1cff5f7-4b39-4449-8de1-88f50eb7bfef,Fayetteville,Fayette County,AutoZone,956a1f44-9639-4e8a-a59a-4a20f68b4c1c,Fayetteville,Fayette County,0.82
+O'Reilly Auto Parts,17fff6b7-bf89-49d1-a200-d4f668803c9b,Stockbridge,Henry County,AutoZone,7f39914f-5bc9-4bbe-9c25-faa05f89dc41,Stockbridge,Henry County,0.83
+AutoZone,7f39914f-5bc9-4bbe-9c25-faa05f89dc41,Stockbridge,Henry County,O'Reilly Auto Parts,17fff6b7-bf89-49d1-a200-d4f668803c9b,Stockbridge,Henry County,0.83
+Advance Auto Parts,8910a868-4a93-4fa1-b6ab-780a08b3163a,Jonesboro,Clayton County,AutoZone,19cff3e2-429d-41e7-b1e6-090b4456a84e,Jonesboro,Clayton County,0.83
+AutoZone,974ae8ca-6ec5-4a9e-9592-6309bbf9610b,Atlanta,Fulton County,O'Reilly Auto Parts,b01c59f3-510b-42c2-b2be-e3617591b66f,East Point,Fulton County,0.83
+O'Reilly Auto Parts,b01c59f3-510b-42c2-b2be-e3617591b66f,East Point,Fulton County,AutoZone,974ae8ca-6ec5-4a9e-9592-6309bbf9610b,Atlanta,Fulton County,0.83
+Advance Auto Parts,469b77cd-9d5a-4518-bf7d-9eef91b6f47e,Mableton,Cobb County,O'Reilly Auto Parts,00b857c1-6b4a-48d5-9a00-39964d79eb89,Mableton,Cobb County,0.86
+AutoZone,215e082d-7883-437c-9536-4f1879b18307,Cumming,Forsyth County,Advance Auto Parts,8322488a-50cb-4dd7-a811-be03870a1f43,Cumming,Forsyth County,0.86
+Advance Auto Parts,a58d0bfa-df7f-4d1d-9913-7d4aa5251e57,Stockbridge,Henry County,O'Reilly Auto Parts,17fff6b7-bf89-49d1-a200-d4f668803c9b,Stockbridge,Henry County,0.87
+Advance Auto Parts,ec54c479-f00f-4a75-b30d-6b1a6e9eaae4,Covington,Newton County,AutoZone,82b7af1a-312c-4149-8055-fdee3e018f3d,Covington,Newton County,0.87
+O'Reilly Auto Parts,2e1caa1d-5aad-4177-8a9e-a989cc201fd7,Cumming,Forsyth County,Advance Auto Parts,bf102742-bdaf-43f0-a9dd-2b9cb7e5a256,Cumming,Forsyth County,0.88
+Advance Auto Parts,96040c72-f579-43b1-9b8e-139da84a3bae,Atlanta,Fulton County,AutoZone,c1ed2855-cecd-4372-ac26-723100d084c3,Atlanta,Fulton County,0.88
+AutoZone,c1ed2855-cecd-4372-ac26-723100d084c3,Atlanta,Fulton County,Advance Auto Parts,96040c72-f579-43b1-9b8e-139da84a3bae,Atlanta,Fulton County,0.88
+O'Reilly Auto Parts,87889b9a-d385-4614-b184-cc24db5641c3,Atlanta,Fulton County,AutoZone,97f04d0c-c8ab-4ee5-b45d-4a6c4cf32e0c,Atlanta,Fulton County,0.90
+AutoZone,97f04d0c-c8ab-4ee5-b45d-4a6c4cf32e0c,Atlanta,Fulton County,O'Reilly Auto Parts,87889b9a-d385-4614-b184-cc24db5641c3,Atlanta,Fulton County,0.90
+Advance Auto Parts,1596312b-1402-4b4d-a080-ce5582e894bb,Alpharetta,Fulton County,O'Reilly Auto Parts,4440f7ac-fca2-49a0-b212-7d39168a78de,Alpharetta,Fulton County,0.91
+O'Reilly Auto Parts,4440f7ac-fca2-49a0-b212-7d39168a78de,Alpharetta,Fulton County,Advance Auto Parts,1596312b-1402-4b4d-a080-ce5582e894bb,Alpharetta,Fulton County,0.91
+Advance Auto Parts,63abffb1-8c92-4d9a-8fd6-62b3e622a2f6,Acworth,Cobb County,AutoZone,acb3797b-a8da-42f3-ac81-68a5ffd6132e,Acworth,Cobb County,0.92
+AutoZone,497ec05e-615c-463d-9eae-eae4550301f1,Woodstock,Cherokee County,O'Reilly Auto Parts,3f009db4-6836-4598-b21e-02a57dbc41a0,Marietta,Cobb County,0.98
+AutoZone,dd99c486-de52-4058-b59e-0be96f3cfb22,Union City,Fulton County,O'Reilly Auto Parts,03e90ee8-6e50-4c5f-bd49-68d0bed24cf5,Union City,Fulton County,0.99
+Advance Auto Parts,03949e49-c2c6-40be-a008-7e25bdef8739,Riverdale,Clayton County,AutoZone,3e8cf781-766a-41c5-8bbd-5f4f642fc265,Riverdale,Clayton County,1.03
+O'Reilly Auto Parts,6610e96b-2a3f-4589-bb86-e473f0142992,Decatur,DeKalb County,Advance Auto Parts,e295fd53-ef3d-44e3-8806-659e89ab3378,Decatur,DeKalb County,1.04
+Advance Auto Parts,e295fd53-ef3d-44e3-8806-659e89ab3378,Decatur,DeKalb County,O'Reilly Auto Parts,6610e96b-2a3f-4589-bb86-e473f0142992,Decatur,DeKalb County,1.04
+AutoZone,5127b25d-00b3-48fa-9dc3-ca6c761a4c7c,Marietta,Cobb County,O'Reilly Auto Parts,b8c25c67-cbed-4b06-ade5-8155e2766f9e,Marietta,Cobb County,1.05
+Advance Auto Parts,9648687c-c57c-4428-af62-10c375378db7,Atlanta,Fulton County,O'Reilly Auto Parts,a9c0106d-3f79-4f6e-a3ad-0f286588fb44,Atlanta,Fulton County,1.05
+AutoZone,2da947d4-dc4f-4b9d-aeac-ad82fb436a31,Grayson,Gwinnett County,Advance Auto Parts,dc0cbee6-9578-446b-9194-045dfe046254,Grayson,Gwinnett County,1.05
+Advance Auto Parts,dc0cbee6-9578-446b-9194-045dfe046254,Grayson,Gwinnett County,AutoZone,2da947d4-dc4f-4b9d-aeac-ad82fb436a31,Grayson,Gwinnett County,1.05
+O'Reilly Auto Parts,8ea434a6-d125-405f-81df-8ae8900d1e5f,Suwanee,Gwinnett County,NAPA Auto Parts,47f837e0-6ba6-43d9-9fcd-96184a31f4c6,Suwanee,Gwinnett County,1.05
+Advance Auto Parts,295a1d63-ac0a-4f20-aaf5-b1e503373831,Lilburn,Gwinnett County,O'Reilly Auto Parts,c91bb88e-2aa4-4430-8d6d-1d3f9829440c,Stone Mountain,DeKalb County,1.05
+AutoZone,08ff77bf-4769-49d0-9b28-4f3b9d68d42b,Jasper,Pickens County,O'Reilly Auto Parts,341e5b87-fcd5-48a1-9d0c-f0d50bdfcf5f,Jasper,Pickens County,1.06
+O'Reilly Auto Parts,341e5b87-fcd5-48a1-9d0c-f0d50bdfcf5f,Jasper,Pickens County,AutoZone,08ff77bf-4769-49d0-9b28-4f3b9d68d42b,Jasper,Pickens County,1.06
+AutoZone,896ae885-c394-41be-8d72-446191b9412e,Douglasville,Douglas County,Advance Auto Parts,81443b42-741d-4d98-a366-22cb1ccc7adf,Douglasville,Douglas County,1.08
+O'Reilly Auto Parts,38c7f484-0434-4af5-9ce6-545ddeb083a5,Fayetteville,Fayette County,Advance Auto Parts,e1cff5f7-4b39-4449-8de1-88f50eb7bfef,Fayetteville,Fayette County,1.12
+Advance Auto Parts,5a1c8b5a-7114-4b38-be3c-fc2f9816cd22,Morrow,Clayton County,AutoZone,6a81e455-96e0-49a8-a4b4-ca0955066e41,Morrow,Clayton County,1.14
+Advance Auto Parts,bfa5cce7-4eb4-4c2b-96a9-dd895c0ea418,McDonough,Henry County,O'Reilly Auto Parts,dc4d9e3e-fabe-41a6-90fc-77a8a4b26257,McDonough,Henry County,1.16
+Advance Auto Parts,0411ec33-4fa4-41c8-8d0b-929e116e83e5,Atlanta,DeKalb County,AutoZone,2490c354-30e7-473d-9516-262c1323a4aa,Atlanta,DeKalb County,1.16
+AutoZone,2490c354-30e7-473d-9516-262c1323a4aa,Atlanta,DeKalb County,Advance Auto Parts,0411ec33-4fa4-41c8-8d0b-929e116e83e5,Atlanta,DeKalb County,1.16
+O'Reilly Auto Parts,0a8d1e8c-6705-4766-9d8b-b830f6604396,Morrow,Clayton County,AutoZone,73e10adf-621c-447e-a6a7-3468aa62ca6e,Morrow,Clayton County,1.17
+AutoZone,73e10adf-621c-447e-a6a7-3468aa62ca6e,Morrow,Clayton County,O'Reilly Auto Parts,0a8d1e8c-6705-4766-9d8b-b830f6604396,Morrow,Clayton County,1.17
+AutoZone,98f23757-3d92-4404-9cdb-354acc346082,Lawrenceville,Gwinnett County,O'Reilly Auto Parts,5f6b499a-3cb2-40b0-ab6c-2e7ac6a205ad,Lawrenceville,Gwinnett County,1.19
+Advance Auto Parts,2eb9cd48-0f5a-417f-9c54-3c3a93f973e0,Atlanta,Fulton County,AutoZone,529e4e4a-6c41-4063-bb86-7dc79f72f653,Atlanta,Fulton County,1.19
+AutoZone,529e4e4a-6c41-4063-bb86-7dc79f72f653,Atlanta,Fulton County,Advance Auto Parts,2eb9cd48-0f5a-417f-9c54-3c3a93f973e0,Atlanta,Fulton County,1.19
+Advance Auto Parts,006f6846-9c38-4c9e-9fc6-8381f828401c,Chamblee,DeKalb County,AutoZone,cba863a8-e5ea-4a51-841c-0fd1f7d50305,Chamblee,DeKalb County,1.19
+AutoZone,cba863a8-e5ea-4a51-841c-0fd1f7d50305,Chamblee,DeKalb County,Advance Auto Parts,006f6846-9c38-4c9e-9fc6-8381f828401c,Chamblee,DeKalb County,1.19
+O'Reilly Auto Parts,a675c5c0-609a-4a63-961f-07ad18d052b6,Acworth,Cherokee County,Advance Auto Parts,70ee8501-e3a3-4ac3-a58c-4cff19c0449d,Acworth,Cherokee County,1.20
+O'Reilly Auto Parts,65992ff0-e076-44aa-87e1-fdb48f0ba926,Lawrenceville,Gwinnett County,AutoZone,98f23757-3d92-4404-9cdb-354acc346082,Lawrenceville,Gwinnett County,1.21
+AutoZone,5647fdf0-d931-48c5-bfad-50a20b58ca53,Decatur,DeKalb County,O'Reilly Auto Parts,6610e96b-2a3f-4589-bb86-e473f0142992,Decatur,DeKalb County,1.22
+Advance Auto Parts,6ad9364d-733a-4f4c-a99d-8d7aa36c04fb,Covington,Newton County,O'Reilly Auto Parts,7766024b-d336-4900-85bd-84e6295db8e7,Conyers,Rockdale County,1.22
+O'Reilly Auto Parts,7766024b-d336-4900-85bd-84e6295db8e7,Conyers,Rockdale County,Advance Auto Parts,6ad9364d-733a-4f4c-a99d-8d7aa36c04fb,Covington,Newton County,1.22
+Advance Auto Parts,368484c9-10b5-4624-ab1d-12c01208b216,Cartersville,Bartow County,AutoZone,cec5a1f2-34f5-43ba-91bf-2d974aff0de3,Cartersville,Bartow County,1.23
+Advance Auto Parts,07cf9047-d488-40c5-b18e-f0aca76fcdc8,Stone Mountain,DeKalb County,O'Reilly Auto Parts,afdf8fef-104d-4b7b-96a6-1e51a4852781,Stone Mountain,DeKalb County,1.23
+O'Reilly Auto Parts,afdf8fef-104d-4b7b-96a6-1e51a4852781,Stone Mountain,DeKalb County,Advance Auto Parts,07cf9047-d488-40c5-b18e-f0aca76fcdc8,Stone Mountain,DeKalb County,1.23
+Advance Auto Parts,f510bc39-22ff-4f24-b33e-575a0629ce40,Brookhaven,DeKalb County,AutoZone,412529d5-61a8-44bd-a7c9-bd60e4ce7f74,Brookhaven,DeKalb County,1.25
+Advance Auto Parts,29a86adc-ec75-4408-90a3-6ffc9999663c,Lithonia,DeKalb County,AutoZone,c7f88937-3c4c-4ff4-bd6e-de7df33a6c72,Lithonia,DeKalb County,1.26
+AutoZone,c7f88937-3c4c-4ff4-bd6e-de7df33a6c72,Lithonia,DeKalb County,Advance Auto Parts,29a86adc-ec75-4408-90a3-6ffc9999663c,Lithonia,DeKalb County,1.26
+Advance Auto Parts,86c0b43f-5360-49b4-ba65-8a5e601f75a9,Powder Springs,Cobb County,AutoZone,fef5eaef-4162-49ab-af37-75bda7b2b86f,Dallas,Paulding County,1.27
+AutoZone,fef5eaef-4162-49ab-af37-75bda7b2b86f,Dallas,Paulding County,Advance Auto Parts,86c0b43f-5360-49b4-ba65-8a5e601f75a9,Powder Springs,Cobb County,1.27
+Advance Auto Parts,b09450d5-8610-4c48-a3a9-4f5e8cdff8b6,Norcross,Gwinnett County,AutoZone,147a9597-0b45-4c9d-b38e-1e18072264e5,Norcross,Gwinnett County,1.27
+O'Reilly Auto Parts,3d8522da-f8a8-4543-a355-08aab38547f8,Duluth,Gwinnett County,AutoZone,97c80bbc-b05f-41a1-825b-83a72750874e,Duluth,Gwinnett County,1.31
+Advance Auto Parts,6947f67f-a22b-4565-977f-3a3b6a85c2c8,Griffin,Spalding County,AutoZone,46247fd9-8e02-4b5e-b2c5-3d8dcb0b644f,Griffin,Spalding County,1.32
+AutoZone,069bd09f-5a6a-4373-a58f-618cc7e28b9d,Smyrna,Cobb County,Advance Auto Parts,a09dc342-b68b-4e3b-b567-2b0e8981e375,Smyrna,Cobb County,1.33
+O'Reilly Auto Parts,f304b211-385e-4190-bc22-3e110b1d0223,Snellville,Gwinnett County,Advance Auto Parts,7cb3c1b9-60b8-46d6-b7a2-9c905a3ff930,Snellville,Gwinnett County,1.33
+Advance Auto Parts,c9bbb0df-e3de-45c8-8e30-b4afe6aa907a,Jonesboro,Clayton County,O'Reilly Auto Parts,111767fc-87ba-484d-b17c-616f70601112,Jonesboro,Clayton County,1.34
+AutoZone,6748a5be-aac1-46b0-968e-427dad9dd140,Snellville,Gwinnett County,O'Reilly Auto Parts,f304b211-385e-4190-bc22-3e110b1d0223,Snellville,Gwinnett County,1.35
+AutoZone,b8662225-34cd-4127-a175-8f6e058aff2b,East Point,Fulton County,O'Reilly Auto Parts,b01c59f3-510b-42c2-b2be-e3617591b66f,East Point,Fulton County,1.35
+Advance Auto Parts,15d8aa0e-b410-4e01-a154-b80697651e53,Atlanta,Fulton County,AutoZone,974ae8ca-6ec5-4a9e-9592-6309bbf9610b,Atlanta,Fulton County,1.40
+Advance Auto Parts,420343be-ddee-4b3b-89d2-75730347f829,Conyers,Rockdale County,O'Reilly Auto Parts,b5c5c00e-aba3-4308-8a51-7719368bd915,Conyers,Rockdale County,1.43
+AutoZone,fcbe109a-47bd-4336-9f9d-c8947376bb40,Lawrenceville,Gwinnett County,Advance Auto Parts,a656c4a8-f816-4aed-afd4-a9e6cbad626c,Lawrenceville,Gwinnett County,1.45
+AutoZone,a9e8adfe-717c-42a3-88af-eb3cd3a888db,Atlanta,Fulton County,Advance Auto Parts,2eb9cd48-0f5a-417f-9c54-3c3a93f973e0,Atlanta,Fulton County,1.47
+Advance Auto Parts,44c94a1c-b550-4ac6-bf23-7685aace470a,Canton,Cherokee County,AutoZone,d098e9fd-58b6-4803-8d80-485c107ccc8f,Canton,Cherokee County,1.48
+AutoZone,e00c9843-0872-484e-8035-ccb528caf35b,Dacula,Gwinnett County,Advance Auto Parts,e37d07d3-bdf4-47e0-aaef-f43010cf8b06,Dacula,Gwinnett County,1.52
+Advance Auto Parts,e37d07d3-bdf4-47e0-aaef-f43010cf8b06,Dacula,Gwinnett County,AutoZone,e00c9843-0872-484e-8035-ccb528caf35b,Dacula,Gwinnett County,1.52
+AutoZone,d058df88-9858-4aad-8ce3-ca8f7429b577,Lilburn,Gwinnett County,Advance Auto Parts,a018a231-c031-418b-a937-c72810bea46d,Lilburn,Gwinnett County,1.57
+Advance Auto Parts,acb4c15a-aba7-4c59-adb8-e0823a974b81,Dawsonville,Dawson County,AutoZone,1a8cc18b-d782-4f0a-a15b-a970a2255cb0,Dawsonville,Dawson County,1.58
+NAPA Auto Parts,5c4c7d2b-fa9c-4423-849f-8ccca846feab,Acworth,Cobb County,O'Reilly Auto Parts,23e665e4-c058-4603-8a80-7938f981d7bf,Acworth,Cobb County,1.58
+AutoZone,9e5e58f3-94b0-46c3-b429-0af721b33241,Canton,Cherokee County,Advance Auto Parts,44c94a1c-b550-4ac6-bf23-7685aace470a,Canton,Cherokee County,1.60
+Advance Auto Parts,423ebabd-d171-43ac-9926-bd5595499058,Acworth,Cobb County,AutoZone,fe26e16c-1f29-442d-bba3-e17903fa8f96,Acworth,Cobb County,1.61
+AutoZone,7715542e-104e-463c-b2eb-698c90de1532,Lawrenceville,Gwinnett County,Advance Auto Parts,7d1a73ec-bac2-49ac-9e02-9cbefb59c463,Lawrenceville,Gwinnett County,1.62
+Advance Auto Parts,7d1a73ec-bac2-49ac-9e02-9cbefb59c463,Lawrenceville,Gwinnett County,AutoZone,7715542e-104e-463c-b2eb-698c90de1532,Lawrenceville,Gwinnett County,1.62
+O'Reilly Auto Parts,45d95182-f4fe-4860-8c3c-d1e2cf0fedc2,Powder Springs,Cobb County,AutoZone,d49c5398-2549-4c9e-8902-c70889a237aa,Powder Springs,Cobb County,1.62
+AutoZone,7dca80f5-37c8-4402-b584-e9d419dfce1a,Newnan,Coweta County,O'Reilly Auto Parts,ac850698-19ca-41be-bb28-945524608917,Newnan,Coweta County,1.66
+O'Reilly Auto Parts,ac850698-19ca-41be-bb28-945524608917,Newnan,Coweta County,AutoZone,7dca80f5-37c8-4402-b584-e9d419dfce1a,Newnan,Coweta County,1.66
+AutoZone,c4e4a36b-6c3f-47ac-9fd9-ef0a4b2d65ec,Carrollton,Carroll County,O'Reilly Auto Parts,18280567-8c88-49bf-b34c-cb27ce808113,Carrollton,Carroll County,1.66
+Advance Auto Parts,a6e84842-08e2-492f-a7af-6eea9462fd31,Hiram,Paulding County,AutoZone,7a91db93-4feb-4a25-a663-14a0e95e2a99,Hiram,Paulding County,1.66
+Advance Auto Parts,70dd6313-ec46-4439-8eea-cf2fc01b3ad2,Douglasville,Douglas County,O'Reilly Auto Parts,8ae827a8-b439-4ff6-a979-6e6b6e915bd3,Douglasville,Douglas County,1.68
+O'Reilly Auto Parts,63799e32-79d4-4d90-9738-cc41fbed240f,Rex,Clayton County,AutoZone,73e10adf-621c-447e-a6a7-3468aa62ca6e,Morrow,Clayton County,1.70
+Advance Auto Parts,e46e70f0-5c94-41d5-b168-a0933c951f1e,Kennesaw,Cobb County,O'Reilly Auto Parts,48196d3f-c845-4e61-a6c8-c37d8658c5ec,Kennesaw,Cobb County,1.71
+Advance Auto Parts,2b87b7ba-3035-4585-ad57-79305441b762,Atlanta,Fulton County,O'Reilly Auto Parts,911b0183-ba2b-4175-9c3a-dc0ccc7ba50c,Riverdale,Clayton County,1.84
+Advance Auto Parts,35177929-c161-4b8d-9c24-1b490df54699,Peachtree Corners,Gwinnett County,AutoZone,de755b7c-92ac-452e-912f-72edf27cade8,Dunwoody,DeKalb County,1.86
+AutoZone,de755b7c-92ac-452e-912f-72edf27cade8,Dunwoody,DeKalb County,Advance Auto Parts,35177929-c161-4b8d-9c24-1b490df54699,Peachtree Corners,Gwinnett County,1.86
+O'Reilly Auto Parts,6666e424-0b74-4c34-a434-734f8033ce8c,Douglasville,Douglas County,Advance Auto Parts,70dd6313-ec46-4439-8eea-cf2fc01b3ad2,Douglasville,Douglas County,1.88
+Advance Auto Parts,9aee99e0-b5e2-4dab-9e31-de8be4fbaa0b,Marietta,Cobb County,O'Reilly Auto Parts,5332c992-625c-4e27-9367-ad4e88d9fe0a,Marietta,Cobb County,1.91
+AutoZone,2025685f-3a87-4260-8102-ca1227c4ec0e,Stone Mountain,DeKalb County,Advance Auto Parts,07cf9047-d488-40c5-b18e-f0aca76fcdc8,Stone Mountain,DeKalb County,1.92
+Advance Auto Parts,0110eae4-43e7-4d50-a42b-e5f7acd67317,Marietta,Cobb County,O'Reilly Auto Parts,84ab6bb1-95f6-4bf8-9639-27c11661e4db,Marietta,Cobb County,1.94
+NAPA Auto Parts,7cc4b829-0cb3-4bb9-b9e1-bb91a5d78ecd,Atlanta,Cobb County,O'Reilly Auto Parts,d18e358c-c441-45f5-81ea-ceb9a2879ca9,Marietta,Cobb County,2.03
+AutoZone,d848d987-3797-4c34-b259-6e971b7c640a,Atlanta,DeKalb County,O'Reilly Auto Parts,5b1687ff-6962-4e17-bbc1-cc0bcb514b3e,Decatur,DeKalb County,2.03
+O'Reilly Auto Parts,ad17c4ee-8a2e-4160-922a-be9b10ffb7ec,Carrollton,Carroll County,AutoZone,c4e4a36b-6c3f-47ac-9fd9-ef0a4b2d65ec,Carrollton,Carroll County,2.13
+O'Reilly Auto Parts,d9fdb827-b4ee-44ca-82d7-4be053d43a7e,Kennesaw,Cobb County,AutoZone,72e53c31-39bd-4a18-99c0-b0ec8ac0a42f,Acworth,Cherokee County,2.17
+Advance Auto Parts,05a54e7b-9a4d-4b26-8a65-09ae29cc430a,Atlanta,DeKalb County,O'Reilly Auto Parts,8304a5f7-6b9e-4348-acd6-a2d67fb673ab,Doraville,DeKalb County,2.19
+AutoZone,6263eb86-a609-4cb4-81ab-28df22a078a4,Covington,Newton County,O'Reilly Auto Parts,a2b3fe6f-f4ac-4a2a-ad1c-df16cd6a68c9,Conyers,Rockdale County,2.21
+AutoZone,b2bbbfb1-196e-421a-9c96-065a462bd337,Suwanee,Gwinnett County,Advance Auto Parts,731fdd21-1cec-49da-a183-8cc0ea699da4,Suwanee,Gwinnett County,2.21
+Advance Auto Parts,b0f40733-21e7-44f9-9407-e888b2855638,Marietta,Cobb County,O'Reilly Auto Parts,1f647a67-7bd6-496d-a7d2-12d415132e5c,Marietta,Cobb County,2.24
+Advance Auto Parts,6e9a0729-dd33-46ff-b238-739bacabef7c,McDonough,Henry County,AutoZone,f362e52a-75b1-4aca-858f-5383c5115c3f,McDonough,Henry County,2.25
+O'Reilly Auto Parts,3ca40c86-73d3-48e9-b67d-a9dc80740274,Jonesboro,Clayton County,AutoZone,3e8cf781-766a-41c5-8bbd-5f4f642fc265,Riverdale,Clayton County,2.27
+O'Reilly Auto Parts,d3a3b8ef-a916-4580-932a-99a17c9f08d8,Riverdale,Clayton County,AutoZone,dea817be-5e90-4dbd-ac1c-4dbd69a77698,Fayetteville,Fayette County,2.28
+AutoZone,dea817be-5e90-4dbd-ac1c-4dbd69a77698,Fayetteville,Fayette County,O'Reilly Auto Parts,d3a3b8ef-a916-4580-932a-99a17c9f08d8,Riverdale,Clayton County,2.28
+AutoZone,53bb41a2-21b5-4b28-aefb-8399867276ea,Conyers,Rockdale County,Advance Auto Parts,78c4950a-8c19-42ce-ad29-090e44b809b7,Conyers,Rockdale County,2.34
+Advance Auto Parts,8face023-3976-4504-bbc8-309efc00df44,Atlanta,Fulton County,AutoZone,0ec5a69c-6e28-4cef-ae8e-d0b3bc08fbb8,Atlanta,Fulton County,2.38
+AutoZone,d117df3f-89d9-4c63-9bb9-93ef64ffa88b,Roswell,Fulton County,O'Reilly Auto Parts,3bcf3233-c31f-4de2-9c2c-37fa16a6cc89,Roswell,Fulton County,2.39
+O'Reilly Auto Parts,374848fe-b0fb-40fb-a474-d0aefac30c4c,Buford,Gwinnett County,Advance Auto Parts,e86cf694-0f81-4248-aca5-2ab91d8e4e2c,Buford,Gwinnett County,2.40
+AutoZone,78d3f8c3-9001-4fc6-83b2-69308203b590,Roswell,Fulton County,Advance Auto Parts,35177929-c161-4b8d-9c24-1b490df54699,Peachtree Corners,Gwinnett County,2.41
+Advance Auto Parts,a48aeee3-3645-440c-a012-30f652631232,Atlanta,Fulton County,AutoZone,77cb534e-5784-4863-8524-509ba7bc6a8e,Atlanta,Fulton County,2.42
+AutoZone,879d6201-fdea-4b7d-a861-44636c9b952c,Lithia Springs,Douglas County,O'Reilly Auto Parts,0ea6db26-7c4a-4bb7-abed-662b97ab5d2d,Austell,Cobb County,2.44
+Advance Auto Parts,ad9da26f-e9ac-4078-aff4-6039c5d5adcc,Griffin,Spalding County,NAPA Auto Parts,3de3f770-2eb7-4b9e-b773-6f0f3ac07c0a,Griffin,Spalding County,2.45
+Advance Auto Parts,0f928649-0878-4849-9c7f-4bd2ce3d80c7,Lawrenceville,Gwinnett County,AutoZone,65a1e7bd-0453-43c2-b83b-9efa33b3bdad,Lilburn,Gwinnett County,2.59
+AutoZone,cf64567b-7903-43b8-9a0a-91aefb72917a,Stone Mountain,DeKalb County,O'Reilly Auto Parts,c91bb88e-2aa4-4430-8d6d-1d3f9829440c,Stone Mountain,DeKalb County,2.60
+O'Reilly Auto Parts,30b8e358-76e5-4fd6-9a5d-b6a0160239cc,Powder Springs,Cobb County,AutoZone,d49c5398-2549-4c9e-8902-c70889a237aa,Powder Springs,Cobb County,2.73
+AutoZone,c3709e61-7d5e-4d2a-86e9-8ec9f5ebf637,Fayetteville,Fayette County,O'Reilly Auto Parts,d3a3b8ef-a916-4580-932a-99a17c9f08d8,Riverdale,Clayton County,2.87
+AutoZone,aafb6364-80a2-471c-857f-a6637a3df7c3,McDonough,Henry County,O'Reilly Auto Parts,f1b6f970-7dc7-4346-a4a6-53ff89d99236,Stockbridge,Henry County,2.88
+Advance Auto Parts,34c16426-0fd0-4e0f-95a9-1f87d91e0ca1,Smyrna,Cobb County,O'Reilly Auto Parts,9de8044c-2e7d-4d86-b668-dc5a4501ff1f,Smyrna,Cobb County,2.88
+AutoZone,6d1ed9c7-0e30-4a42-bff3-f76126d2db5c,Dallas,Paulding County,O'Reilly Auto Parts,78804b9b-8657-4f96-a12c-f5dbb97d3375,Dallas,Paulding County,3.00
+O'Reilly Auto Parts,78804b9b-8657-4f96-a12c-f5dbb97d3375,Dallas,Paulding County,AutoZone,6d1ed9c7-0e30-4a42-bff3-f76126d2db5c,Dallas,Paulding County,3.00
+Advance Auto Parts,bbd5dc72-3693-4dce-81c0-efd3462bc59f,Woodstock,Cherokee County,AutoZone,497ec05e-615c-463d-9eae-eae4550301f1,Woodstock,Cherokee County,3.05
+O'Reilly Auto Parts,3a9e6637-a225-4938-bce2-9b161a3262d9,Locust Grove,Henry County,AutoZone,7eff6dfd-7562-49eb-a428-911db0c3337f,Locust Grove,Henry County,3.25
+Advance Auto Parts,3c949b96-0a2c-4e9a-82d1-279317941ca1,Powder Springs,Cobb County,AutoZone,8c1143b7-c826-4ac2-ab7a-223f91163cb1,Douglasville,Douglas County,3.33
+AutoZone,8c1143b7-c826-4ac2-ab7a-223f91163cb1,Douglasville,Douglas County,Advance Auto Parts,3c949b96-0a2c-4e9a-82d1-279317941ca1,Powder Springs,Cobb County,3.33
+O'Reilly Auto Parts,937e44ea-e950-4bfa-b482-3f596d75f1fc,Tyrone,Fayette County,AutoZone,c77979a1-86e1-460e-9ce8-52c2cd0b6b64,Fairburn,Fulton County,3.43
+AutoZone,c77979a1-86e1-460e-9ce8-52c2cd0b6b64,Fairburn,Fulton County,O'Reilly Auto Parts,937e44ea-e950-4bfa-b482-3f596d75f1fc,Tyrone,Fayette County,3.43
+Advance Auto Parts,0a2272b8-010d-418f-9f56-9719853e48eb,Marietta,Cobb County,AutoZone,6fa1ee7f-8423-4abd-8d77-42dffab8f028,Marietta,Cobb County,3.44
+AutoZone,7af80366-056d-432f-a456-a6e931607111,Peachtree City,Fayette County,O'Reilly Auto Parts,9827f9b5-0d38-46f5-ae20-2c1b272d45d6,Senoia,Coweta County,3.46
+O'Reilly Auto Parts,9827f9b5-0d38-46f5-ae20-2c1b272d45d6,Senoia,Coweta County,AutoZone,7af80366-056d-432f-a456-a6e931607111,Peachtree City,Fayette County,3.46
+AutoZone,55f0852a-c32e-42cf-b59e-edb160bdc5d2,Cumming,Forsyth County,O'Reilly Auto Parts,2e1caa1d-5aad-4177-8a9e-a989cc201fd7,Cumming,Forsyth County,3.47
+AutoZone,9e3a5ab3-e9dc-495e-bb70-a3e61ac9ec68,Sugar Hill,Gwinnett County,Advance Auto Parts,f26ac21a-7943-4abf-b249-9fab7aee9bd1,Sugar Hill,Gwinnett County,3.55
+AutoZone,ec9f1ffc-5dfa-438e-a722-79eb4c7a6756,Sharpsburg,Coweta County,Advance Auto Parts,18e070bd-3f6e-48a9-ab22-48a9af934431,Newnan,Coweta County,3.56
+O'Reilly Auto Parts,e20557c1-6f6f-432a-a76e-50e5a5eff447,Canton,Cherokee County,Advance Auto Parts,f5f18c83-5d9a-4497-b4bd-716d8919c9ba,Canton,Cherokee County,3.63
+Advance Auto Parts,f5f18c83-5d9a-4497-b4bd-716d8919c9ba,Canton,Cherokee County,O'Reilly Auto Parts,e20557c1-6f6f-432a-a76e-50e5a5eff447,Canton,Cherokee County,3.63
+Advance Auto Parts,5e8c6f56-7a17-4bf2-82cd-051dab0d6a4c,Bethlehem,Barrow County,O'Reilly Auto Parts,78b8d3b0-9d49-44e1-9b35-deaa9349158c,Winder,Barrow County,3.70
+O'Reilly Auto Parts,d508cfbc-4e73-42ec-8f1c-fe16b68df10a,Griffin,Spalding County,Advance Auto Parts,6947f67f-a22b-4565-977f-3a3b6a85c2c8,Griffin,Spalding County,3.80
+O'Reilly Auto Parts,fba26cb8-7f84-43e5-9d0e-110b9ae883a5,Dallas,Paulding County,AutoZone,6d1ed9c7-0e30-4a42-bff3-f76126d2db5c,Dallas,Paulding County,3.89
+Advance Auto Parts,4254f189-adf7-4ba7-aa1e-4a5e8ecf5c13,Peachtree City,Fayette County,O'Reilly Auto Parts,937e44ea-e950-4bfa-b482-3f596d75f1fc,Tyrone,Fayette County,3.93
+AutoZone,afe5b3c4-b91a-4ae7-9050-85e13427d904,Dallas,Paulding County,O'Reilly Auto Parts,ea7a0b76-5d25-4ee2-a936-6c26bdc79441,Acworth,Cobb County,4.02
+O'Reilly Auto Parts,3268c33a-d539-41f3-8f40-094c3d9ec588,Sandy Springs,Fulton County,Advance Auto Parts,0a2272b8-010d-418f-9f56-9719853e48eb,Marietta,Cobb County,4.14
+O'Reilly Auto Parts,8176a8f6-46ba-4d20-8ab0-dc75cc772cc2,Dallas,Paulding County,AutoZone,8c1143b7-c826-4ac2-ab7a-223f91163cb1,Douglasville,Douglas County,4.23
+Advance Auto Parts,d39043b7-e548-417e-9f30-a597a324668b,Cumming,Forsyth County,O'Reilly Auto Parts,f5acd8d5-cef2-4974-9f67-9303a8b99b6f,Cumming,Forsyth County,4.25
+Advance Auto Parts,9ec762c3-4340-443f-b350-a2ffbed9418a,Johns Creek,Fulton County,O'Reilly Auto Parts,3d8522da-f8a8-4543-a355-08aab38547f8,Duluth,Gwinnett County,4.38
+NAPA Auto Parts,dbe56151-90f7-4c62-9ff1-34eead0ee032,Turin,Coweta County,AutoZone,ec9f1ffc-5dfa-438e-a722-79eb4c7a6756,Sharpsburg,Coweta County,5.23
+AutoZone,11fcf8f2-2f80-4183-9c7e-8ed53caab3cf,Temple,Carroll County,Advance Auto Parts,6a527c21-7e7f-47a1-992a-f6478139c64a,Villa Rica,Carroll County,5.45
+O'Reilly Auto Parts,8c1e66ed-4557-499c-bef8-415bf4589c7a,Ball Ground,Cherokee County,Advance Auto Parts,f5f18c83-5d9a-4497-b4bd-716d8919c9ba,Canton,Cherokee County,5.80
+AutoZone,639fe692-adb5-4e7d-8587-17618cdad945,Dawsonville,Dawson County,O'Reilly Auto Parts,9b12f9e4-4cde-4298-8382-ac682d1c8126,Dawsonville,Dawson County,5.83
+Advance Auto Parts,6c53b2a1-63f6-45cd-8256-9e4c66929d4d,Tallapoosa,Haralson County,O'Reilly Auto Parts,509e88d2-5b23-4509-9661-355574a35ce8,Bremen,Haralson County,8.17
+AutoZone,6695c4ec-c234-4b5b-a716-d70c30d4c422,Bowdon,Carroll County,O'Reilly Auto Parts,ad17c4ee-8a2e-4160-922a-be9b10ffb7ec,Carrollton,Carroll County,8.18
+Advance Auto Parts,0b2cbdca-e5cf-46fe-94a6-69835cdb7bf1,Manchester,Meriwether County,NAPA Auto Parts,67b79770-b153-42a4-a7ca-e66b2ea5e8f5,Greenville,Meriwether County,12.88
+NAPA Auto Parts,67b79770-b153-42a4-a7ca-e66b2ea5e8f5,Greenville,Meriwether County,Advance Auto Parts,0b2cbdca-e5cf-46fe-94a6-69835cdb7bf1,Manchester,Meriwether County,12.88
