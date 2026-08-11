@@ -833,3 +833,37 @@ Status: pass.
 The pulse only computes new candidate rows from already-reviewed public
 fixtures. It does not add acquisition sources or imply internal chain
 territories.
+
+## Pulse 33 Restaurant Expansion Targets
+
+### Market Analyst
+
+Status: pass.
+
+QSR is the right next restaurant layer because it gives TURF a dense daily-life
+grid to intersect with home improvement and auto parts. Fast casual and casual
+dining are correctly deferred as more selective layers.
+
+### Market Geographer
+
+Status: pass.
+
+The sequence separates restaurant segments by geography rather than menu type
+alone: QSR grids, fast-casual selective nodes, and casual-dining regional
+anchors.
+
+### Retail Operator
+
+Status: pass.
+
+The target list is actionable. McDonald's, Burger King, Wendy's, and Taco Bell
+are a coherent first QSR comparison set before moving to Chipotle, Five Guys,
+Olive Garden, and Cheesecake Factory.
+
+### Source Policy Auditor
+
+Status: pass with required next gate.
+
+The pulse only adds a target list. The next extraction pulse must use open
+Overture rows for committed data and keep official restaurant locators limited
+to allowed manual validation.

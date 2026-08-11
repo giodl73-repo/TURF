@@ -49,6 +49,7 @@ before broader chain coverage begins.
 | 30 | RET place spacing readout | complete | Added same-place nearest competitor spacing for Puget Sound RET targets. |
 | 31 | RET place spacing summary | complete | Aggregated same-place spacing rows into place-level RET feature summaries. |
 | 32 | RET spacing-aware place candidates | complete | Added spacing-aware place candidate generation and evaluated it against reviewed examples. |
+| 33 | Restaurant expansion targets | complete | Added QSR-first restaurant sequence and executable chain target contract. |
 
 ## Success criteria
 

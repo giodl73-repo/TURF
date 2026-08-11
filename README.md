@@ -39,6 +39,8 @@ cargo run -p turf-cli -- evaluate-ret-place fixtures\geography\ret-washington-ex
 cargo run -p turf-cli -- ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- ret-place-spacing-summary auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- suggest-ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
+cargo run -p turf-cli -- validate-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
+cargo run -p turf-cli -- summarize-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -109,6 +111,10 @@ aggregates those rows into place-level spacing features.
 The `suggest-ret-place-spacing` command generates place RET candidates using
 those spacing features as supporting evidence.
 
+The `validate-restaurant-targets` and `summarize-restaurant-targets` commands
+check the next restaurant expansion sequence: QSR first, then fast casual, then
+casual dining.
+
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
@@ -126,6 +132,9 @@ The first Puget Sound ferry-aware read is:
 
 The first chain expansion decision is:
 `docs\chain-expansion-sequence.md`.
+
+The restaurant expansion sequence is:
+`docs\restaurant-chain-expansion.md`.
 
 The first auto-parts comparison report is:
 `reports\auto-parts-seattle-puget-sound.md`.
@@ -180,8 +189,8 @@ layer before moving to roads, catchments, and retail rivalry.
 6. **National Atlas** - reproducible national reports for selected retail and
    QSR categories.
 
-The next category sequence is auto parts first, then Target/Walmart, then
-Costco as a later regional destination-store contrast.
+The next category sequence is QSR restaurants, then Target/Walmart, then fast
+casual, casual dining, and Costco as later contrast layers.
 
 ## Data policy
 

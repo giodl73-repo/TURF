@@ -244,6 +244,15 @@ pub struct RetPlaceTarget {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RestaurantChainTarget {
+    pub segment: String,
+    pub brand: String,
+    pub comparison_role: String,
+    pub acquisition_priority: usize,
+    pub review_note: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct RetCount {
     pub key: String,
     pub examples: usize,
@@ -837,6 +846,79 @@ pub fn parse_ret_place_targets(csv: &str) -> Result<Vec<RetPlaceTarget>, String>
 
 pub fn validate_ret_place_targets(csv: &str) -> Result<usize, String> {
     Ok(parse_ret_place_targets(csv)?.len())
+}
+
+pub fn parse_restaurant_chain_targets(csv: &str) -> Result<Vec<RestaurantChainTarget>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "segment",
+        "brand",
+        "comparison_role",
+        "acquisition_priority",
+        "review_note",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut targets = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let segment = required(fields[0], line_number, "segment")?;
+        validate_restaurant_segment(segment, line_number)?;
+        let acquisition_priority = fields[3]
+            .parse::<usize>()
+            .map_err(|_| format!("line {line_number}: invalid acquisition_priority"))?;
+        if acquisition_priority == 0 {
+            return Err(format!(
+                "line {line_number}: acquisition_priority must be positive"
+            ));
+        }
+
+        targets.push(RestaurantChainTarget {
+            segment: segment.to_string(),
+            brand: required(fields[1], line_number, "brand")?.to_string(),
+            comparison_role: required(fields[2], line_number, "comparison_role")?.to_string(),
+            acquisition_priority,
+            review_note: required(fields[4], line_number, "review_note")?.to_string(),
+        });
+    }
+
+    Ok(targets)
+}
+
+pub fn validate_restaurant_chain_targets(csv: &str) -> Result<usize, String> {
+    Ok(parse_restaurant_chain_targets(csv)?.len())
+}
+
+pub fn summarize_restaurant_chain_targets(targets: &[RestaurantChainTarget]) -> Vec<RetCount> {
+    let mut counts = BTreeMap::new();
+    for target in targets {
+        *counts.entry(target.segment.clone()).or_insert(0) += 1;
+    }
+    counts
+        .into_iter()
+        .map(|(key, examples)| RetCount { key, examples })
+        .collect()
 }
 
 pub fn parse_ret_metro_candidates(csv: &str) -> Result<Vec<RetMetroCandidate>, String> {
@@ -2516,6 +2598,13 @@ fn validate_ret_barrier_context(value: &str, line_number: usize) -> Result<(), S
     }
 }
 
+fn validate_restaurant_segment(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "qsr" | "fast_casual" | "casual_dining" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid segment")),
+    }
+}
+
 fn validate_ret_enclave_type(value: &str, line_number: usize) -> Result<(), String> {
     match value {
         "anchor_market"
@@ -2917,6 +3006,51 @@ Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.
         let error = parse_reviewed_store_points(csv).expect_err("review reason should fail");
 
         assert!(error.contains("invalid review_reason"));
+    }
+
+    #[test]
+    fn parses_and_summarizes_restaurant_chain_targets() {
+        let csv = "\
+segment,brand,comparison_role,acquisition_priority,review_note
+qsr,McDonald's,default_national_grid,1,baseline dense QSR footprint
+qsr,Taco Bell,late_day_qsr_grid,1,compare different daypart coverage
+fast_casual,Chipotle,selective_fast_casual,2,tests selective nodes
+casual_dining,Olive Garden,regional_casual_anchor,3,tests family dining anchors
+";
+        let targets = parse_restaurant_chain_targets(csv).expect("targets parse");
+        let summary = summarize_restaurant_chain_targets(&targets);
+
+        assert_eq!(targets.len(), 4);
+        assert_eq!(targets[1].brand, "Taco Bell");
+        assert_eq!(targets[3].brand, "Olive Garden");
+        assert_eq!(
+            summary,
+            vec![
+                RetCount {
+                    key: "casual_dining".to_string(),
+                    examples: 1,
+                },
+                RetCount {
+                    key: "fast_casual".to_string(),
+                    examples: 1,
+                },
+                RetCount {
+                    key: "qsr".to_string(),
+                    examples: 2,
+                },
+            ]
+        );
+    }
+
+    #[test]
+    fn rejects_unknown_restaurant_segment() {
+        let csv = "\
+segment,brand,comparison_role,acquisition_priority,review_note
+fine_dining,Test Brand,selective,1,not in current contract
+";
+        let error = parse_restaurant_chain_targets(csv).expect_err("unknown segment should fail");
+
+        assert!(error.contains("invalid segment"));
     }
 
     #[test]

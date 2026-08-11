@@ -1,0 +1,9 @@
+segment,brand,comparison_role,acquisition_priority,review_note
+qsr,McDonald's,default_national_grid,1,baseline dense QSR footprint
+qsr,Burger King,challenger_qsr_grid,1,compare thinner or corridor-biased QSR coverage
+qsr,Wendy's,challenger_qsr_grid,1,compare suburban and highway service coverage
+qsr,Taco Bell,late_day_qsr_grid,1,compare QSR geography with different daypart and co-location patterns
+fast_casual,Chipotle,selective_fast_casual,2,tests higher-selectivity urban and suburban nodes
+fast_casual,Five Guys,selective_fast_casual,2,tests selective burger fast-casual coverage
+casual_dining,Olive Garden,regional_casual_anchor,3,tests family casual-dining destination nodes
+casual_dining,Cheesecake Factory,high_selectivity_casual_anchor,3,tests mall lifestyle and affluent regional nodes
