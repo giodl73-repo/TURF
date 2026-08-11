@@ -978,8 +978,8 @@ unaudited Census join.
 Status: pass.
 
 The profile moves TURF from single-category reports toward enclave profiles.
-Seattle, Bremerton, and Atlanta are now comparable by category mix, brand
-leadership, contested layers, and movement context.
+Seattle, Bremerton, and Atlanta are now comparable by category mix, category
+capacity, brand leadership, co-presence, and movement context.
 
 ### Market Geographer
 
@@ -1001,5 +1001,6 @@ until their acquisition paths are reviewed and reproducible.
 
 Status: pass with next-output request.
 
-The v0 profile is a good structural comparison, but corridor and access
+The v0 profile is a good structural comparison, and the added capacity bands
+avoid treating every co-located brand pair as rivalry. Corridor and access
 interpretation still needs public amenity layers and road/drive-time impedance.

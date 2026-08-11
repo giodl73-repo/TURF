@@ -18,18 +18,25 @@ reports.
 
 ## Output
 
-Seattle-Tacoma-Bellevue is labeled `barrier_split_contested_grid` because the
-metro has three observed category layers, multiple contested daily-life grids,
-and Puget Sound ferry/water barriers that make same-side place evidence
-important.
+Seattle-Tacoma-Bellevue is labeled `barrier_split_complete_service_grid`
+because the metro has three observed category layers and Puget Sound
+ferry/water barriers that make same-side place evidence important.
 
 Bremerton-Silverdale-Port Orchard is labeled `ferry_side_daily_life_grid`
 because all three observed daily-life layers are present directly in the
 ferry-side metro instead of only appearing through Seattle.
 
-Atlanta-Sandy Springs-Roswell is labeled `continuous_contested_ring_grid`
+Atlanta-Sandy Springs-Roswell is labeled `continuous_complete_service_grid`
 because QSR and home improvement form a large inland metro profile, with QSR
-remaining contested across the previously generated ring read.
+capacity repeated across the previously generated ring read.
+
+## Framing update
+
+Co-presence is not automatically rivalry. A Home Depot and a Lowe's in the same
+enclave can mean dual-anchor home-improvement capacity before it means a
+contested boundary. RET Profile v0 now records category capacity bands and
+dual-anchor counts so future profile reads can distinguish absence, one-store
+presence, repeated capacity, and evidence-backed rivalry.
 
 ## Source gates
 

@@ -180,8 +180,15 @@ SELECT
     brand AS leader_brand,
     total_stores,
     brand_count,
+    CASE
+        WHEN total_stores = 0 THEN '0'
+        WHEN total_stores = 1 THEN '1'
+        ELSE '2+'
+    END AS category_capacity_band,
     CAST(brand_stores AS DOUBLE) / CAST(total_stores AS DOUBLE) AS leader_share,
     CASE
+        WHEN category = 'home_improvement' AND brand_count = 2 AND total_stores >= 2
+            THEN 'dual_anchor_capacity'
         WHEN brand_count >= 3 AND CAST(brand_stores AS DOUBLE) / CAST(total_stores AS DOUBLE) < 0.50
             THEN 'contested_service_grid'
         WHEN brand_count >= 2
@@ -201,11 +208,17 @@ COPY (
             string_agg(category, '; ' ORDER BY category) AS observed_categories,
             sum(total_stores) AS total_store_rows,
             sum(CASE WHEN category_ret_hint = 'contested_service_grid' THEN 1 ELSE 0 END) AS contested_category_count,
+            sum(CASE WHEN category_ret_hint = 'dual_anchor_capacity' THEN 1 ELSE 0 END) AS dual_anchor_category_count,
             string_agg(
                 category || ':' || total_stores || ' stores/' || brand_count || ' brands',
                 '; '
                 ORDER BY category
             ) AS category_store_summary,
+            string_agg(
+                category || ':' || category_capacity_band || ' stores/' || brand_count || ' brands',
+                '; '
+                ORDER BY category
+            ) AS category_capacity_summary,
             string_agg(
                 category || ':' || leader_brand || ' ' || round(leader_share * 100, 1) || '% ' || category_ret_hint,
                 '; '
@@ -229,8 +242,10 @@ COPY (
         END AS missing_categories,
         total_store_rows,
         category_store_summary,
+        category_capacity_summary,
         category_leader_summary,
         contested_category_count,
+        dual_anchor_category_count,
         qsr_profile,
         home_improvement_profile,
         coalesce(auto_parts_profile, 'source_gate_pending') AS auto_parts_profile,
@@ -239,17 +254,17 @@ COPY (
         'source_gate_pending' AS income_context_status,
         CASE
             WHEN mobility_context = 'ferry_side_metro' THEN 'ferry_side_daily_life_grid'
-            WHEN mobility_context = 'ferry_barrier_region' THEN 'barrier_split_contested_grid'
-            WHEN mobility_context = 'continuous_inland_rings' THEN 'continuous_contested_ring_grid'
+            WHEN mobility_context = 'ferry_barrier_region' THEN 'barrier_split_complete_service_grid'
+            WHEN mobility_context = 'continuous_inland_rings' THEN 'continuous_complete_service_grid'
             ELSE 'ret_profile_pending'
         END AS ret_profile_v0_label,
         CASE
             WHEN mobility_context = 'ferry_side_metro'
-                THEN 'Ferry-side metro with direct daily-life QSR, home-improvement, and auto-parts evidence; compare place-level nodes before treating it as a Seattle suburb.'
+                THEN 'Ferry-side metro with direct daily-life QSR, home-improvement, and auto-parts evidence; co-presence reads as local capacity before rivalry.'
             WHEN mobility_context = 'ferry_barrier_region'
-                THEN 'Large Puget Sound core with multiple contested daily-life layers; water and ferry routes make same-side place evidence important.'
+                THEN 'Large Puget Sound core with multiple complete daily-life layers; water and ferry routes make same-side place evidence important.'
             WHEN mobility_context = 'continuous_inland_rings'
-                THEN 'Large inland metro where QSR and home-improvement layers remain contested across a continuous suburban/exurban field.'
+                THEN 'Large inland metro where QSR and home-improvement layers show repeated capacity across a continuous suburban/exurban field.'
             ELSE 'Profile pending.'
         END AS evidence_summary
     FROM metro_categories

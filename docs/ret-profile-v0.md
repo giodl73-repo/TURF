@@ -11,6 +11,8 @@ or protected-class inference.
 |---|---|---|
 | Category mix | active | Uses checked-in, reviewed Overture-derived store layers. |
 | Brand leadership | active | Reports the leading public brand count and share per category. |
+| Capacity band | active | Reads each category as `0`, `1`, or `2+` stores before treating brands as rivals. |
+| Dual-anchor capacity | active | Treats Home Depot plus Lowe's co-presence as a completeness signal, not automatically a contested claim. |
 | Contested layers | active | Counts categories where at least three brands are present and the leader is below 50 percent. |
 | Mobility context | active | Uses explicit v0 labels for Puget Sound ferry/barrier geography and Atlanta inland rings. |
 | Public amenities | source gate pending | Parks, trails, libraries, and post offices should be added through public source review before profiles depend on them. |
@@ -22,6 +24,11 @@ RET Profile v0 should avoid profiling protected classes, individual behavior,
 crime, voting, religion, or household-level inference. Area-level economic bands
 can be added later as context, but the profile should keep them descriptive and
 separate from retail labels.
+
+The first read should also avoid over-interpreting co-presence as conflict. A
+place with both Home Depot and Lowe's may be a strong home-improvement service
+node, not necessarily a contested boundary. RET Profile v0 therefore records
+capacity bands and dual-anchor capacity before applying rivalry language.
 
 ## First output
 
