@@ -1,0 +1,7 @@
+category,geography_id,label,city,state,total_stores,brand_count,nearest_opposite_brand_miles,median_nearest_opposite_brand_miles,close_opposite_brand_pairs_under_half_mile
+qsr,bainbridge-island,Bainbridge Island WA,Bainbridge Island,WA,1,1,,,0
+qsr,kingston,Kingston WA,Kingston,WA,1,1,,,0
+qsr,bremerton,Bremerton WA,Bremerton,WA,9,4,0.06,0.11,9
+qsr,poulsbo,Poulsbo WA,Poulsbo,WA,4,4,0.06,0.28,2
+qsr,silverdale,Silverdale WA,Silverdale,WA,6,4,0.16,0.18,4
+qsr,port-orchard,Port Orchard WA,Port Orchard,WA,6,4,0.18,0.54,1

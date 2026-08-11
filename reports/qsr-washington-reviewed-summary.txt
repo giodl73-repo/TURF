@@ -1,0 +1,149 @@
+review_status,rows
+packet_ready,606
+
+review_reason,rows
+primary_store_candidate,606
+
+total_stores,606
+
+brand,stores
+Burger King,116
+McDonald's,260
+Taco Bell,144
+Wendy's,86
+
+city,state,leader,leader_stores,total_stores,status
+Aberdeen,WA,Burger King,1,4,contested
+Airway Heights,WA,McDonald's,1,1,dominant
+Anacortes,WA,McDonald's,1,1,dominant
+Arlington,WA,McDonald's,2,4,contested
+Auburn,WA,McDonald's,5,11,contested
+Bainbridge Island,WA,McDonald's,1,1,dominant
+Battle Ground,WA,Burger King,1,4,contested
+Belfair,WA,McDonald's,1,2,contested
+Bellevue,WA,McDonald's,4,8,contested
+Bellingham,WA,McDonald's,4,9,contested
+Blaine,WA,McDonald's,2,4,contested
+Bonney Lake,WA,Wendy's,2,5,contested
+Bothell,WA,Taco Bell,2,4,contested
+Bremerton,WA,McDonald's,3,9,contested
+Brewster,WA,McDonald's,1,1,dominant
+Buckley,WA,McDonald's,1,1,dominant
+Burien,WA,McDonald's,2,5,contested
+Burlington,WA,McDonald's,2,4,contested
+Camas,WA,McDonald's,1,2,contested
+Castle Rock,WA,Burger King,1,2,contested
+Centralia,WA,McDonald's,1,3,contested
+Chehalis,WA,McDonald's,3,8,contested
+Cheney,WA,McDonald's,1,2,contested
+Clarkston,WA,McDonald's,1,2,contested
+Cle Elum,WA,McDonald's,1,2,contested
+College Place,WA,Burger King,1,1,dominant
+Colville,WA,McDonald's,1,2,contested
+Covington,WA,McDonald's,1,2,contested
+Deer Park,WA,McDonald's,1,2,contested
+Des Moines,WA,Burger King,1,3,contested
+Dupont,WA,McDonald's,1,1,dominant
+East Wenatchee,WA,Burger King,1,4,contested
+Edmonds,WA,McDonald's,2,4,contested
+Ellensburg,WA,Burger King,1,4,contested
+Elma,WA,Burger King,1,1,dominant
+Enumclaw,WA,McDonald's,1,2,contested
+Ephrata,WA,Burger King,1,3,contested
+Everett,WA,McDonald's,5,16,contested
+Fairchild AFB,WA,Burger King,1,1,dominant
+Federal Way,WA,McDonald's,3,7,contested
+Ferndale,WA,McDonald's,1,2,contested
+Fife,WA,Burger King,1,4,contested
+Gig Harbor,WA,McDonald's,2,3,dominant
+Goldendale,WA,McDonald's,1,1,dominant
+Graham,WA,Burger King,1,2,contested
+Grandview,WA,McDonald's,1,1,dominant
+Granite Falls,WA,McDonald's,1,1,dominant
+Hoquiam,WA,McDonald's,1,1,dominant
+Issaquah,WA,McDonald's,2,4,contested
+JBLM,WA,Burger King,1,1,dominant
+Kelso,WA,Burger King,1,3,contested
+Kenmore,WA,McDonald's,1,1,dominant
+Kennewick,WA,McDonald's,5,12,contested
+Kent,WA,McDonald's,4,12,contested
+Kingston,WA,McDonald's,1,1,dominant
+Kirkland,WA,McDonald's,4,6,dominant
+Lacey,WA,McDonald's,4,11,contested
+Lake Forest Park,WA,Taco Bell,1,1,dominant
+Lake Stevens,WA,Burger King,2,5,contested
+Lakewood,WA,McDonald's,6,13,contested
+Leavenworth,WA,McDonald's,1,1,dominant
+Liberty Lake,WA,McDonald's,1,2,contested
+Long Beach,WA,McDonald's,1,1,dominant
+Longview,WA,Burger King,2,7,contested
+Lynden,WA,Burger King,1,3,contested
+Lynnwood,WA,McDonald's,5,8,dominant
+Maple Valley,WA,McDonald's,2,3,dominant
+Marysville,WA,McDonald's,3,9,contested
+Mead,WA,McDonald's,1,1,dominant
+Mercer Island,WA,McDonald's,1,1,dominant
+Mill Creek,WA,McDonald's,2,2,dominant
+Milton,WA,McDonald's,1,2,contested
+Monroe,WA,Burger King,1,4,contested
+Moses Lake,WA,Burger King,2,7,contested
+Mt Vernon,WA,Burger King,1,4,contested
+Mukilteo,WA,McDonald's,1,2,contested
+Newcastle,WA,McDonald's,1,1,dominant
+Newport,WA,McDonald's,1,1,dominant
+North Bend,WA,Burger King,1,2,contested
+Oak Harbor,WA,Wendy's,2,5,contested
+Ocean Shores,WA,McDonald's,1,1,dominant
+Olympia,WA,McDonald's,3,9,contested
+Omak,WA,Burger King,1,3,contested
+Orting,WA,McDonald's,1,1,dominant
+Othello,WA,Burger King,1,3,contested
+Pasco,WA,Burger King,3,9,contested
+Port Angeles,WA,McDonald's,1,2,contested
+Port Orchard,WA,Burger King,2,6,contested
+Port Townsend,WA,McDonald's,1,1,dominant
+Poulsbo,WA,Burger King,1,4,contested
+Prosser,WA,Burger King,1,2,contested
+Pullman,WA,McDonald's,2,3,dominant
+Puyallup,WA,McDonald's,7,17,contested
+Quincy,WA,Burger King,1,2,contested
+Raymond,WA,McDonald's,1,1,dominant
+Redmond,WA,McDonald's,2,5,contested
+Renton,WA,McDonald's,7,13,dominant
+Richland,WA,McDonald's,3,8,contested
+Ridgefield,WA,McDonald's,1,2,contested
+Ritzville,WA,McDonald's,1,1,dominant
+Rochester,WA,Burger King,1,3,contested
+Sammamish,WA,McDonald's,1,1,dominant
+Seatac,WA,Taco Bell,1,1,dominant
+Seattle,WA,McDonald's,15,25,dominant
+Sedro-Woolley,WA,Burger King,1,2,contested
+Selah,WA,McDonald's,1,2,contested
+Sequim,WA,Burger King,1,3,contested
+Shelton,WA,McDonald's,2,5,contested
+Shoreline,WA,McDonald's,3,3,dominant
+Silverdale,WA,McDonald's,2,6,contested
+Snohomish,WA,McDonald's,2,4,contested
+Spanaway,WA,Burger King,2,4,contested
+Spokane,WA,McDonald's,14,27,dominant
+Spokane Valley,WA,McDonald's,4,13,contested
+Stanwood,WA,McDonald's,1,1,dominant
+Sultan,WA,McDonald's,1,1,dominant
+Sumner,WA,McDonald's,1,1,dominant
+Sunnyside,WA,Burger King,1,3,contested
+Tacoma,WA,McDonald's,9,25,contested
+Toppenish,WA,McDonald's,1,1,dominant
+Tukwila,WA,McDonald's,2,6,contested
+Tumwater,WA,McDonald's,2,4,contested
+Union Gap,WA,McDonald's,1,2,contested
+University Place,WA,McDonald's,2,2,dominant
+Vancouver,WA,McDonald's,9,32,contested
+Walla Walla,WA,McDonald's,2,3,dominant
+Wapato,WA,McDonald's,1,1,dominant
+Wauna,WA,Burger King,1,1,dominant
+Wenatchee,WA,McDonald's,1,3,contested
+Woodinville,WA,McDonald's,1,3,contested
+Woodland,WA,McDonald's,1,3,contested
+Yakima,WA,McDonald's,5,14,contested
+Yelm,WA,Burger King,1,3,contested
+Zillah,WA,Burger King,1,2,contested

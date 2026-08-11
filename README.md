@@ -42,6 +42,8 @@ cargo run -p turf-cli -- suggest-ret-place-spacing auto_parts fixtures\geography
 cargo run -p turf-cli -- validate-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
 cargo run -p turf-cli -- summarize-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
 duckdb -c ".read queries/overture-qsr-washington-2026-07-22.sql"
+cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-washington-review-2026-07-22.csv
+cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-qsr-washington-review-2026-07-22.csv fixtures\geography\washington-qsr-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -142,6 +144,9 @@ The restaurant expansion sequence is:
 
 The Washington QSR Overture acquisition gate is:
 `docs\research\overture-qsr-washington-extraction-2026-07-22.md`.
+
+The first Washington QSR Puget Sound report is:
+`reports\qsr-seattle-puget-sound.md`.
 
 The first auto-parts comparison report is:
 `reports\auto-parts-seattle-puget-sound.md`.

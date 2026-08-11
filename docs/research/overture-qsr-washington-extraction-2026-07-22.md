@@ -5,9 +5,8 @@
 Bounded extraction plan for QSR candidate places in Washington from Overture
 Places release `2026-07-22.0`.
 
-This pulse defines the executable acquisition contract. It does not commit a
-QSR candidate output yet because the current shell did not have DuckDB available
-on `PATH`.
+Pulse 35 ran this query with DuckDB `v1.5.5` and committed the raw candidate
+output plus a first reviewed packet-ready layer.
 
 ## Source
 
@@ -63,14 +62,39 @@ duckdb -c ".read queries/overture-qsr-washington-2026-07-22.sql"
 cargo run -p turf-cli -- validate-stores fixtures\stores\overture-qsr-washington-2026-07-22.csv
 ```
 
+## Output
+
+Output file:
+
+```text
+fixtures/stores/overture-qsr-washington-2026-07-22.csv
+```
+
+Validated row count:
+
+| Brand | Rows |
+|---|---:|
+| Burger King | 116 |
+| McDonald's | 260 |
+| Taco Bell | 144 |
+| Wendy's | 86 |
+| Total | 606 |
+
+The extracted layer reaches 217 ZIP-derived ZCTA candidates.
+
 ## Review Gate
 
-The raw candidate output must not feed reports directly. The next pulse should
-create:
+The raw candidate output must not feed reports directly. Pulse 35 created:
 
 ```text
 fixtures/stores/overture-qsr-washington-review-2026-07-22.csv
 ```
+
+First-pass review status:
+
+| Review status | Rows |
+|---|---:|
+| packet_ready | 606 |
 
 Review statuses should follow the existing checked contract:
 

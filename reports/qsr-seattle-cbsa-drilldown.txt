@@ -1,0 +1,289 @@
+metro,Seattle-Tacoma-Bellevue WA
+total_stores,274
+
+brand,stores
+Burger King,49
+McDonald's,126
+Taco Bell,60
+Wendy's,39
+
+county_geoid,county_name,leader,leader_stores,total_stores,status
+53033,King County,McDonald's,64,126,dominant
+53053,Pierce County,McDonald's,34,83,contested
+53061,Snohomish County,McDonald's,28,65,contested
+
+brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles
+Wendy's,8d1e5376-85b8-49ec-8030-131ff86e25e7,Burien,King County,McDonald's,cb13f311-8ac0-4938-859b-2ec269402763,Burien,King County,0.02
+McDonald's,cb13f311-8ac0-4938-859b-2ec269402763,Burien,King County,Wendy's,8d1e5376-85b8-49ec-8030-131ff86e25e7,Burien,King County,0.02
+Taco Bell,62481532-b083-4779-ad84-0ccc907e9f06,Auburn,King County,McDonald's,c5a2b86c-6cbf-417d-b156-60f471ab57a4,Auburn,King County,0.03
+McDonald's,c5a2b86c-6cbf-417d-b156-60f471ab57a4,Auburn,King County,Taco Bell,62481532-b083-4779-ad84-0ccc907e9f06,Auburn,King County,0.03
+Taco Bell,0278d6cb-d11e-49c9-91c4-ca3892db3171,Tacoma,Pierce County,Wendy's,5bef42d5-0f1d-47bb-bce2-7b0566413d42,Tacoma,Pierce County,0.03
+Wendy's,5bef42d5-0f1d-47bb-bce2-7b0566413d42,Tacoma,Pierce County,Taco Bell,0278d6cb-d11e-49c9-91c4-ca3892db3171,Tacoma,Pierce County,0.03
+Burger King,8dc8358e-20ac-49a0-ab9f-9a4e9388e334,Kent,King County,McDonald's,929d0f77-cdfb-4ec7-91fa-b982c2a1bc96,Kent,King County,0.03
+McDonald's,929d0f77-cdfb-4ec7-91fa-b982c2a1bc96,Kent,King County,Burger King,8dc8358e-20ac-49a0-ab9f-9a4e9388e334,Kent,King County,0.03
+Burger King,95272652-b481-4a6a-b5c9-2f8373693510,Bonney Lake,Pierce County,Taco Bell,c1a710d4-2fc3-4a3d-b0bb-7b23c0f03091,Bonney Lake,Pierce County,0.03
+Taco Bell,c1a710d4-2fc3-4a3d-b0bb-7b23c0f03091,Bonney Lake,Pierce County,Burger King,95272652-b481-4a6a-b5c9-2f8373693510,Bonney Lake,Pierce County,0.03
+Taco Bell,4e93dc0a-fdce-4620-bc24-de7f1c25fbd6,Redmond,King County,McDonald's,ffdbe7b2-5e29-4f63-83b7-459a5ef7f462,Redmond,King County,0.03
+McDonald's,ffdbe7b2-5e29-4f63-83b7-459a5ef7f462,Redmond,King County,Taco Bell,4e93dc0a-fdce-4620-bc24-de7f1c25fbd6,Redmond,King County,0.03
+Burger King,0b19814b-2b0f-4e9a-83b4-ae2bec05622f,Tacoma,Pierce County,Taco Bell,3fadbb47-2ddd-4ee8-9ae9-d4313c35922f,Tacoma,Pierce County,0.03
+Taco Bell,3fadbb47-2ddd-4ee8-9ae9-d4313c35922f,Tacoma,Pierce County,Burger King,0b19814b-2b0f-4e9a-83b4-ae2bec05622f,Tacoma,Pierce County,0.03
+Taco Bell,599d4e29-0a22-4fd7-9bb4-0a5d4251f117,Lake Forest Park,King County,McDonald's,cacb5841-312a-4683-bea5-8cf7c25730a5,Shoreline,King County,0.04
+McDonald's,cacb5841-312a-4683-bea5-8cf7c25730a5,Shoreline,King County,Taco Bell,599d4e29-0a22-4fd7-9bb4-0a5d4251f117,Lake Forest Park,King County,0.04
+Burger King,f28b1989-9265-4548-8cce-426ffd2744b8,Tacoma,Pierce County,Taco Bell,0278d6cb-d11e-49c9-91c4-ca3892db3171,Tacoma,Pierce County,0.04
+McDonald's,884c5643-f9b3-41a0-859d-98a2edc6910a,Lynnwood,Snohomish County,Taco Bell,f779ab1a-71c3-414c-9481-886ffafc5162,Lynnwood,Snohomish County,0.05
+Taco Bell,f779ab1a-71c3-414c-9481-886ffafc5162,Lynnwood,Snohomish County,McDonald's,884c5643-f9b3-41a0-859d-98a2edc6910a,Lynnwood,Snohomish County,0.05
+Wendy's,10f0af7c-43cb-4577-abb1-680518952ada,Tukwila,King County,Taco Bell,1ff91ab5-b062-4f6e-9553-e309872342ca,Tukwila,King County,0.05
+Taco Bell,1ff91ab5-b062-4f6e-9553-e309872342ca,Tukwila,King County,Wendy's,10f0af7c-43cb-4577-abb1-680518952ada,Tukwila,King County,0.05
+Wendy's,249acefd-cc44-44f8-b59f-de3b5b1f4eef,Fife,Pierce County,Taco Bell,88e09a4c-a339-44f5-937d-d2c734d2f585,Fife,Pierce County,0.05
+Taco Bell,88e09a4c-a339-44f5-937d-d2c734d2f585,Fife,Pierce County,Wendy's,249acefd-cc44-44f8-b59f-de3b5b1f4eef,Fife,Pierce County,0.05
+Taco Bell,0020c42c-6c72-4926-96a1-53e2416d1d98,Marysville,Snohomish County,Burger King,ca8e0af0-026b-461e-811c-889fddea0b08,Marysville,Snohomish County,0.05
+Burger King,ca8e0af0-026b-461e-811c-889fddea0b08,Marysville,Snohomish County,Taco Bell,0020c42c-6c72-4926-96a1-53e2416d1d98,Marysville,Snohomish County,0.05
+Taco Bell,0b1ee56f-fb78-425a-8b6f-270a715a1ff4,Everett,Snohomish County,McDonald's,6d968fd1-00ea-4083-94dd-8ef465afb57e,Everett,Snohomish County,0.05
+McDonald's,6d968fd1-00ea-4083-94dd-8ef465afb57e,Everett,Snohomish County,Taco Bell,0b1ee56f-fb78-425a-8b6f-270a715a1ff4,Everett,Snohomish County,0.05
+Wendy's,83f7e8b4-dd2b-4567-9e90-612a50217da7,Puyallup,Pierce County,Burger King,e586667a-8fb1-435b-a1b1-ad5f9fffec6a,Puyallup,Pierce County,0.05
+Burger King,e586667a-8fb1-435b-a1b1-ad5f9fffec6a,Puyallup,Pierce County,Wendy's,83f7e8b4-dd2b-4567-9e90-612a50217da7,Puyallup,Pierce County,0.05
+Burger King,57ab1c17-04b8-43a8-8c86-2643101da0e4,Federal Way,King County,McDonald's,876a3999-89ea-4ce4-9902-2b521c3cd5d5,Federal Way,King County,0.06
+McDonald's,876a3999-89ea-4ce4-9902-2b521c3cd5d5,Federal Way,King County,Burger King,57ab1c17-04b8-43a8-8c86-2643101da0e4,Federal Way,King County,0.06
+Burger King,758e1d84-9f4d-41b6-8032-a455d0413a0c,Arlington,Snohomish County,McDonald's,a7503333-8288-4025-b68c-dee77a100540,Arlington,Snohomish County,0.06
+McDonald's,a7503333-8288-4025-b68c-dee77a100540,Arlington,Snohomish County,Burger King,758e1d84-9f4d-41b6-8032-a455d0413a0c,Arlington,Snohomish County,0.06
+Wendy's,4793d396-727e-4311-96c0-5dda295a55f2,Everett,Snohomish County,Burger King,9f8ee532-e4a6-4d50-af0a-44616b252d42,Everett,Snohomish County,0.06
+Burger King,9f8ee532-e4a6-4d50-af0a-44616b252d42,Everett,Snohomish County,Wendy's,4793d396-727e-4311-96c0-5dda295a55f2,Everett,Snohomish County,0.06
+McDonald's,5d611384-cd44-4a7d-ac1f-c5143dd58bf2,Tacoma,Pierce County,Burger King,0b19814b-2b0f-4e9a-83b4-ae2bec05622f,Tacoma,Pierce County,0.06
+Burger King,3ef2466c-6f58-4ca3-b4b5-c49b1e068e0c,North Bend,King County,McDonald's,d1b8d85f-8dbe-4e2d-9fbb-b5db823d57ce,North Bend,King County,0.06
+McDonald's,d1b8d85f-8dbe-4e2d-9fbb-b5db823d57ce,North Bend,King County,Burger King,3ef2466c-6f58-4ca3-b4b5-c49b1e068e0c,North Bend,King County,0.06
+Taco Bell,a31bed0c-78b2-4fd4-8d5c-5c08cba31793,Puyallup,Pierce County,McDonald's,cb5f0e3b-e8c1-4bd4-8a37-aac135236bc1,Puyallup,Pierce County,0.06
+McDonald's,cb5f0e3b-e8c1-4bd4-8a37-aac135236bc1,Puyallup,Pierce County,Taco Bell,a31bed0c-78b2-4fd4-8d5c-5c08cba31793,Puyallup,Pierce County,0.06
+McDonald's,0c43243f-0611-4c70-bb23-d49e68381045,Puyallup,Pierce County,Taco Bell,73e26a02-f3a4-45a5-82d3-14e9963a8632,Tacoma,Pierce County,0.06
+Taco Bell,73e26a02-f3a4-45a5-82d3-14e9963a8632,Tacoma,Pierce County,McDonald's,0c43243f-0611-4c70-bb23-d49e68381045,Puyallup,Pierce County,0.06
+Taco Bell,8b61f03d-1b45-413b-a924-6053bb5298b2,Federal Way,King County,McDonald's,876a3999-89ea-4ce4-9902-2b521c3cd5d5,Federal Way,King County,0.07
+Wendy's,8fadd8ab-daae-48a4-bef0-616c02e433de,Marysville,Snohomish County,McDonald's,edce30a7-4f21-4319-9e51-bbf34839b1cb,Marysville,Snohomish County,0.07
+McDonald's,edce30a7-4f21-4319-9e51-bbf34839b1cb,Marysville,Snohomish County,Wendy's,8fadd8ab-daae-48a4-bef0-616c02e433de,Marysville,Snohomish County,0.07
+Taco Bell,85c695aa-769a-481a-bb81-ccc5a40f2fad,Edmonds,Snohomish County,McDonald's,d2762729-33f5-4633-98d5-f81f0c4792aa,Edmonds,Snohomish County,0.07
+McDonald's,d2762729-33f5-4633-98d5-f81f0c4792aa,Edmonds,Snohomish County,Taco Bell,85c695aa-769a-481a-bb81-ccc5a40f2fad,Edmonds,Snohomish County,0.07
+McDonald's,184c6278-0496-445d-9306-ba10dc172b1e,Puyallup,Pierce County,Wendy's,7029b2d6-e44a-4ac6-8d77-94320fb88323,Puyallup,Pierce County,0.08
+Wendy's,7029b2d6-e44a-4ac6-8d77-94320fb88323,Puyallup,Pierce County,McDonald's,184c6278-0496-445d-9306-ba10dc172b1e,Puyallup,Pierce County,0.08
+Taco Bell,31302bcb-d77f-417f-adf4-5cdf3b41ee00,Auburn,King County,McDonald's,f0fdc236-f8d6-4021-ac60-34ed8d2ca2c6,Auburn,King County,0.08
+McDonald's,f0fdc236-f8d6-4021-ac60-34ed8d2ca2c6,Auburn,King County,Taco Bell,31302bcb-d77f-417f-adf4-5cdf3b41ee00,Auburn,King County,0.08
+McDonald's,5dd7cfb1-ec3e-41a2-87df-daaea43fd5ff,University Place,Pierce County,Taco Bell,a1ce3a51-b6ea-4d2c-b5e3-452d0c80b870,Tacoma,Pierce County,0.08
+Taco Bell,a1ce3a51-b6ea-4d2c-b5e3-452d0c80b870,Tacoma,Pierce County,McDonald's,5dd7cfb1-ec3e-41a2-87df-daaea43fd5ff,University Place,Pierce County,0.08
+Taco Bell,8744ab3b-3753-4ce3-8c36-c3278959e572,Milton,Pierce County,McDonald's,a17f4e76-297e-4671-bc99-d9d12f2c8d90,Milton,Pierce County,0.08
+McDonald's,a17f4e76-297e-4671-bc99-d9d12f2c8d90,Milton,Pierce County,Taco Bell,8744ab3b-3753-4ce3-8c36-c3278959e572,Milton,Pierce County,0.08
+Wendy's,08558ca8-a418-4217-b182-cc0a432eb37b,Everett,Snohomish County,Burger King,f3b5a696-dd7f-40b4-acf5-15ad52fa3324,Everett,Snohomish County,0.09
+Burger King,f3b5a696-dd7f-40b4-acf5-15ad52fa3324,Everett,Snohomish County,Wendy's,08558ca8-a418-4217-b182-cc0a432eb37b,Everett,Snohomish County,0.09
+McDonald's,95e30651-6d2b-47ed-a875-1618884fd802,Fife,Pierce County,Wendy's,249acefd-cc44-44f8-b59f-de3b5b1f4eef,Fife,Pierce County,0.09
+Burger King,2f32e721-13eb-4250-95cd-b23faa481682,Fife,Pierce County,Wendy's,249acefd-cc44-44f8-b59f-de3b5b1f4eef,Fife,Pierce County,0.09
+Wendy's,5d59201a-9aba-40a8-9177-8a0ef13138f8,Lake Stevens,Snohomish County,Burger King,9c846975-d127-4420-b161-060d639dc834,Lake Stevens,Snohomish County,0.09
+Burger King,9c846975-d127-4420-b161-060d639dc834,Lake Stevens,Snohomish County,Wendy's,5d59201a-9aba-40a8-9177-8a0ef13138f8,Lake Stevens,Snohomish County,0.09
+McDonald's,8430f39f-6a1c-405e-a281-be62e82788e0,Bonney Lake,Pierce County,Taco Bell,c1a710d4-2fc3-4a3d-b0bb-7b23c0f03091,Bonney Lake,Pierce County,0.10
+Wendy's,0fdbe534-4a9a-4bf3-8411-f4f8c57246ab,Everett,Snohomish County,Taco Bell,81b9db2a-7e4e-46e1-b9ce-dcb9317049fd,Everett,Snohomish County,0.10
+Taco Bell,81b9db2a-7e4e-46e1-b9ce-dcb9317049fd,Everett,Snohomish County,Wendy's,0fdbe534-4a9a-4bf3-8411-f4f8c57246ab,Everett,Snohomish County,0.10
+McDonald's,73e986da-61ed-4211-87c2-8da8c1472cf6,Renton,King County,Wendy's,ef2d62f3-acee-4c68-87ea-06428d734248,Renton,King County,0.10
+Wendy's,ef2d62f3-acee-4c68-87ea-06428d734248,Renton,King County,McDonald's,73e986da-61ed-4211-87c2-8da8c1472cf6,Renton,King County,0.10
+McDonald's,0614f775-e389-4916-9681-3a599c962eee,Bellevue,King County,Burger King,0ffb9176-600f-459e-8cce-58555d44aab8,Bellevue,King County,0.10
+Burger King,0ffb9176-600f-459e-8cce-58555d44aab8,Bellevue,King County,McDonald's,0614f775-e389-4916-9681-3a599c962eee,Bellevue,King County,0.10
+Taco Bell,42bbe55a-386b-44f1-b016-486d0c0b5911,Renton,King County,Wendy's,941c314b-5ee2-4015-9d7c-85d21fa9a2a8,Renton,King County,0.10
+Wendy's,941c314b-5ee2-4015-9d7c-85d21fa9a2a8,Renton,King County,Taco Bell,42bbe55a-386b-44f1-b016-486d0c0b5911,Renton,King County,0.10
+Taco Bell,147a9da0-17d8-454c-8919-5d5c22855c84,Everett,Snohomish County,McDonald's,791f2967-0d6b-426c-b7a5-70315accb169,Everett,Snohomish County,0.10
+McDonald's,791f2967-0d6b-426c-b7a5-70315accb169,Everett,Snohomish County,Taco Bell,147a9da0-17d8-454c-8919-5d5c22855c84,Everett,Snohomish County,0.10
+Wendy's,8c151239-f075-40cb-9923-8d73b1789f7b,Woodinville,King County,Taco Bell,f5e0542e-e465-4198-8802-ad42be0eb46f,Woodinville,King County,0.11
+Taco Bell,f5e0542e-e465-4198-8802-ad42be0eb46f,Woodinville,King County,Wendy's,8c151239-f075-40cb-9923-8d73b1789f7b,Woodinville,King County,0.11
+Wendy's,f7d29109-cdf9-435d-8e89-e3556545234a,Auburn,King County,Taco Bell,31302bcb-d77f-417f-adf4-5cdf3b41ee00,Auburn,King County,0.11
+Taco Bell,2d1abe9f-51f7-40c8-acee-2723edfa7246,Snohomish,Snohomish County,McDonald's,dff3bb73-28c9-42a9-9856-68327498da9f,Snohomish,Snohomish County,0.12
+McDonald's,dff3bb73-28c9-42a9-9856-68327498da9f,Snohomish,Snohomish County,Taco Bell,2d1abe9f-51f7-40c8-acee-2723edfa7246,Snohomish,Snohomish County,0.12
+McDonald's,66835304-e833-4bdb-8f43-f85252df62d3,Seattle,King County,Wendy's,f39f7bc3-4cf2-4952-90e6-bcaf8f901500,Seattle,King County,0.12
+Wendy's,f39f7bc3-4cf2-4952-90e6-bcaf8f901500,Seattle,King County,McDonald's,66835304-e833-4bdb-8f43-f85252df62d3,Seattle,King County,0.12
+Wendy's,48aa7491-2c38-4e95-94c6-2536d74c40c0,Kirkland,King County,McDonald's,cd9601f1-69f0-4121-8e89-d3f9c432851d,Kirkland,King County,0.13
+McDonald's,cd9601f1-69f0-4121-8e89-d3f9c432851d,Kirkland,King County,Wendy's,48aa7491-2c38-4e95-94c6-2536d74c40c0,Kirkland,King County,0.13
+McDonald's,819bf023-cb52-4bfc-9697-0488b4a61d54,Lake Stevens,Snohomish County,Burger King,9c846975-d127-4420-b161-060d639dc834,Lake Stevens,Snohomish County,0.13
+McDonald's,f1034826-94c4-4631-b271-dbb735262b5c,Arlington,Snohomish County,Wendy's,fabdb264-9020-4dc7-975c-4de6a42e2eac,Arlington,Snohomish County,0.13
+Wendy's,fabdb264-9020-4dc7-975c-4de6a42e2eac,Arlington,Snohomish County,McDonald's,f1034826-94c4-4631-b271-dbb735262b5c,Arlington,Snohomish County,0.13
+Taco Bell,04fc74a2-14c1-4a5d-a8a1-05c9df3f3a01,Puyallup,Pierce County,Burger King,0a0895e0-ddf9-42ab-9f6a-38359a48ce09,Puyallup,Pierce County,0.13
+Burger King,0a0895e0-ddf9-42ab-9f6a-38359a48ce09,Puyallup,Pierce County,Taco Bell,04fc74a2-14c1-4a5d-a8a1-05c9df3f3a01,Puyallup,Pierce County,0.13
+Taco Bell,0be70a30-144a-4c28-b19c-189cf3afaa96,Monroe,Snohomish County,Burger King,c28ec162-61b7-40a6-978c-9f3ad6c386a9,Monroe,Snohomish County,0.13
+Burger King,c28ec162-61b7-40a6-978c-9f3ad6c386a9,Monroe,Snohomish County,Taco Bell,0be70a30-144a-4c28-b19c-189cf3afaa96,Monroe,Snohomish County,0.13
+McDonald's,ad7c5513-9bc3-49e6-81ef-ddbacf6a0e5a,Lakewood,Pierce County,Burger King,f4c77e50-0bf1-4de2-90b0-8ce4fb8c722a,Lakewood,Pierce County,0.13
+Burger King,f4c77e50-0bf1-4de2-90b0-8ce4fb8c722a,Lakewood,Pierce County,McDonald's,ad7c5513-9bc3-49e6-81ef-ddbacf6a0e5a,Lakewood,Pierce County,0.13
+Wendy's,3a2729b1-8371-4369-b9cf-f2cf3dff4ad9,Lynnwood,Snohomish County,Taco Bell,b6b8e735-89c2-47ff-a5a2-92d6c4f824dc,Lynnwood,Snohomish County,0.13
+Taco Bell,b6b8e735-89c2-47ff-a5a2-92d6c4f824dc,Lynnwood,Snohomish County,Wendy's,3a2729b1-8371-4369-b9cf-f2cf3dff4ad9,Lynnwood,Snohomish County,0.13
+Wendy's,702a92d7-2ab9-469d-923a-be9877610a15,Tukwila,King County,McDonald's,8b6c22cf-75f2-43ad-b628-afad3869c7bc,Tukwila,King County,0.15
+McDonald's,8b6c22cf-75f2-43ad-b628-afad3869c7bc,Tukwila,King County,Wendy's,702a92d7-2ab9-469d-923a-be9877610a15,Tukwila,King County,0.15
+McDonald's,9b23453a-6804-419b-958f-786f481903be,Auburn,King County,Burger King,aedede0c-af3b-407f-9402-2d715a6fc350,Auburn,King County,0.15
+Burger King,aedede0c-af3b-407f-9402-2d715a6fc350,Auburn,King County,McDonald's,9b23453a-6804-419b-958f-786f481903be,Auburn,King County,0.15
+Taco Bell,724ab9f3-bb22-4dd0-8370-9f513ecb781c,Kent,King County,McDonald's,929d0f77-cdfb-4ec7-91fa-b982c2a1bc96,Kent,King County,0.15
+Taco Bell,298887d0-feb6-46ed-b4ee-50b3ccd012e0,Bothell,Snohomish County,Wendy's,f28fdb2a-a2d4-40f4-ab07-caaa6abeee72,Bothell,Snohomish County,0.15
+Wendy's,f28fdb2a-a2d4-40f4-ab07-caaa6abeee72,Bothell,Snohomish County,Taco Bell,298887d0-feb6-46ed-b4ee-50b3ccd012e0,Bothell,Snohomish County,0.15
+Taco Bell,38f06008-0338-4e88-95be-6c107bb22bf9,Renton,King County,Wendy's,ef2d62f3-acee-4c68-87ea-06428d734248,Renton,King County,0.15
+Wendy's,46da0c96-1912-49ba-8d2f-085c193a5a24,Seattle,King County,McDonald's,9d237913-b287-4697-b5aa-c9e78eb6d7b1,Seattle,King County,0.17
+McDonald's,9d237913-b287-4697-b5aa-c9e78eb6d7b1,Seattle,King County,Wendy's,46da0c96-1912-49ba-8d2f-085c193a5a24,Seattle,King County,0.17
+McDonald's,6cee6017-d10e-4946-8c5a-c21895b74700,Spanaway,Pierce County,Taco Bell,e1a6e9b5-3b6a-4aed-8971-be56e755fe09,Spanaway,Pierce County,0.17
+Taco Bell,e1a6e9b5-3b6a-4aed-8971-be56e755fe09,Spanaway,Pierce County,McDonald's,6cee6017-d10e-4946-8c5a-c21895b74700,Spanaway,Pierce County,0.17
+Wendy's,b0afb060-3ec0-48e5-8248-bb8ef7958269,Lakewood,Pierce County,McDonald's,bdf4c12e-e571-4cef-adc1-a9d033fd81c2,Lakewood,Pierce County,0.18
+McDonald's,bdf4c12e-e571-4cef-adc1-a9d033fd81c2,Lakewood,Pierce County,Wendy's,b0afb060-3ec0-48e5-8248-bb8ef7958269,Lakewood,Pierce County,0.18
+McDonald's,51801fc0-3548-4e21-b6f1-0aceaf8ac47b,Lakewood,Pierce County,Taco Bell,69d6b28c-73dc-4bd2-83af-9838160221f4,Lakewood,Pierce County,0.18
+Taco Bell,69d6b28c-73dc-4bd2-83af-9838160221f4,Lakewood,Pierce County,McDonald's,51801fc0-3548-4e21-b6f1-0aceaf8ac47b,Lakewood,Pierce County,0.18
+Taco Bell,cfd26b12-b409-4276-b665-8c50b06e5c15,Tacoma,Pierce County,Wendy's,f67f4f8c-74a5-44e5-89a7-40cd26871098,Tacoma,Pierce County,0.19
+Wendy's,f67f4f8c-74a5-44e5-89a7-40cd26871098,Tacoma,Pierce County,Taco Bell,cfd26b12-b409-4276-b665-8c50b06e5c15,Tacoma,Pierce County,0.19
+McDonald's,395527dc-1858-4b96-8813-8feaa72d49de,Kent,King County,Taco Bell,3a32e972-3413-4bd2-a056-988774ea4f74,Kent,King County,0.20
+Taco Bell,3a32e972-3413-4bd2-a056-988774ea4f74,Kent,King County,McDonald's,395527dc-1858-4b96-8813-8feaa72d49de,Kent,King County,0.20
+McDonald's,9172eed6-71de-46d7-8324-64bf632f04ff,Maple Valley,King County,Burger King,9e9ac86d-6d3b-43a4-b748-7c840023c42c,Maple Valley,King County,0.20
+Burger King,9e9ac86d-6d3b-43a4-b748-7c840023c42c,Maple Valley,King County,McDonald's,9172eed6-71de-46d7-8324-64bf632f04ff,Maple Valley,King County,0.20
+Burger King,bf8be122-65be-49c8-881b-e04366dfaa1f,Puyallup,Pierce County,Wendy's,7029b2d6-e44a-4ac6-8d77-94320fb88323,Puyallup,Pierce County,0.20
+Taco Bell,4e416f7c-e016-473b-aea0-2d6bb7cad920,Bellevue,King County,Burger King,0ffb9176-600f-459e-8cce-58555d44aab8,Bellevue,King County,0.20
+Taco Bell,50504983-7d1a-4002-b503-3e6edc71c82c,Marysville,Snohomish County,Burger King,7b6abbd5-45e7-4797-a186-ebfdabec931a,Marysville,Snohomish County,0.21
+Burger King,7b6abbd5-45e7-4797-a186-ebfdabec931a,Marysville,Snohomish County,Taco Bell,50504983-7d1a-4002-b503-3e6edc71c82c,Marysville,Snohomish County,0.21
+Wendy's,88df1000-1490-46f8-8e80-a9c45cc562bb,Monroe,Snohomish County,Taco Bell,0be70a30-144a-4c28-b19c-189cf3afaa96,Monroe,Snohomish County,0.21
+Burger King,b9fd9700-0037-439d-9831-d96e1d48c514,Lakewood,Pierce County,Taco Bell,c77d9c74-37ba-4448-9d10-c25ba8569e2f,Lakewood,Pierce County,0.22
+Taco Bell,c77d9c74-37ba-4448-9d10-c25ba8569e2f,Lakewood,Pierce County,Burger King,b9fd9700-0037-439d-9831-d96e1d48c514,Lakewood,Pierce County,0.22
+Wendy's,0432cd2d-0a7b-4b8f-8809-72bc0103f06d,Federal Way,King County,Taco Bell,8b61f03d-1b45-413b-a924-6053bb5298b2,Federal Way,King County,0.23
+McDonald's,3886cad8-1119-49c9-b19e-0668e3a5f9c0,Monroe,Snohomish County,Burger King,c28ec162-61b7-40a6-978c-9f3ad6c386a9,Monroe,Snohomish County,0.23
+McDonald's,2dc8d619-c6ac-46f7-b8ac-10f1168833a0,Issaquah,King County,Burger King,a75f3597-adcc-45dd-9298-b438b6eb0048,Issaquah,King County,0.23
+Burger King,a75f3597-adcc-45dd-9298-b438b6eb0048,Issaquah,King County,McDonald's,2dc8d619-c6ac-46f7-b8ac-10f1168833a0,Issaquah,King County,0.23
+Taco Bell,1227c51f-2597-4f63-8cc7-608e183dd6e9,Puyallup,Pierce County,McDonald's,7f59e32c-1ce9-4f1d-8201-31b8a23df23b,Puyallup,Pierce County,0.24
+McDonald's,7f59e32c-1ce9-4f1d-8201-31b8a23df23b,Puyallup,Pierce County,Taco Bell,1227c51f-2597-4f63-8cc7-608e183dd6e9,Puyallup,Pierce County,0.24
+Burger King,92df3d45-ec72-4f54-bd08-2d60cbb3be90,Graham,Pierce County,Taco Bell,ee1999f9-b926-4e11-8483-e9451a7f5a5f,Graham,Pierce County,0.25
+Taco Bell,ee1999f9-b926-4e11-8483-e9451a7f5a5f,Graham,Pierce County,Burger King,92df3d45-ec72-4f54-bd08-2d60cbb3be90,Graham,Pierce County,0.25
+McDonald's,489b7685-d870-423c-822a-e730566f7aeb,Kent,King County,Burger King,d59cf3a1-803c-4493-9dbe-a6ce161fb35a,Kent,King County,0.25
+Burger King,d59cf3a1-803c-4493-9dbe-a6ce161fb35a,Kent,King County,McDonald's,489b7685-d870-423c-822a-e730566f7aeb,Kent,King County,0.25
+Burger King,f3e8456a-a1f7-4500-8eb3-e4bd33f780cd,Auburn,King County,McDonald's,c5a2b86c-6cbf-417d-b156-60f471ab57a4,Auburn,King County,0.25
+McDonald's,6e70719c-86a9-43f8-bbd9-c279cb66b285,Renton,King County,Wendy's,941c314b-5ee2-4015-9d7c-85d21fa9a2a8,Renton,King County,0.26
+Taco Bell,23ac1024-fc03-4047-9fd3-42dd4e2cb620,Lakewood,Pierce County,Burger King,f4c77e50-0bf1-4de2-90b0-8ce4fb8c722a,Lakewood,Pierce County,0.26
+Taco Bell,021d3aa3-b000-4ef8-917c-7436d51f2161,Tacoma,Pierce County,McDonald's,a6af7018-6ed6-4eaa-a1e0-e28dba89c0f4,Tacoma,Pierce County,0.27
+McDonald's,a6af7018-6ed6-4eaa-a1e0-e28dba89c0f4,Tacoma,Pierce County,Taco Bell,021d3aa3-b000-4ef8-917c-7436d51f2161,Tacoma,Pierce County,0.27
+McDonald's,95724bd8-39fe-41e7-8818-935308fc4187,Tacoma,Pierce County,Taco Bell,9c1ccbd0-57d8-4733-94b0-e435e5a06b5a,Tacoma,Pierce County,0.27
+Taco Bell,9c1ccbd0-57d8-4733-94b0-e435e5a06b5a,Tacoma,Pierce County,McDonald's,95724bd8-39fe-41e7-8818-935308fc4187,Tacoma,Pierce County,0.27
+McDonald's,479a8124-5fe3-43bd-a191-abe0ec064535,Woodinville,King County,Wendy's,8c151239-f075-40cb-9923-8d73b1789f7b,Woodinville,King County,0.28
+Taco Bell,e8510a28-8c1c-4e7a-be19-035e53e4c9a0,Lake Stevens,Snohomish County,McDonald's,819bf023-cb52-4bfc-9697-0488b4a61d54,Lake Stevens,Snohomish County,0.28
+Taco Bell,aa18a912-21c2-4c2a-9f5a-e07f42fb5fe9,Burien,King County,Burger King,edd31a81-e211-4c21-a864-5cb7ffe1baab,Burien,King County,0.30
+Burger King,edd31a81-e211-4c21-a864-5cb7ffe1baab,Burien,King County,Taco Bell,aa18a912-21c2-4c2a-9f5a-e07f42fb5fe9,Burien,King County,0.30
+Taco Bell,920c2834-d372-4b68-80b7-a74da1300368,Seattle,King County,McDonald's,9d237913-b287-4697-b5aa-c9e78eb6d7b1,Seattle,King County,0.30
+McDonald's,98639f67-6059-42b8-a697-cde6f05cb6b4,Everett,Snohomish County,Wendy's,0fdbe534-4a9a-4bf3-8411-f4f8c57246ab,Everett,Snohomish County,0.30
+McDonald's,1ca7365a-64a2-4cc6-8a36-12d40e512013,Federal Way,King County,Taco Bell,6bbbf0f9-3913-4ee4-a938-5264feacd57c,Des Moines,King County,0.33
+Taco Bell,6bbbf0f9-3913-4ee4-a938-5264feacd57c,Des Moines,King County,McDonald's,1ca7365a-64a2-4cc6-8a36-12d40e512013,Federal Way,King County,0.33
+Wendy's,eb885a6d-fdc0-49d2-ad86-b9b6d8665541,Tacoma,Pierce County,McDonald's,5d611384-cd44-4a7d-ac1f-c5143dd58bf2,Tacoma,Pierce County,0.36
+McDonald's,34070ec8-ea84-4ba2-a824-93a871bddba2,Lynnwood,Snohomish County,Taco Bell,b6b8e735-89c2-47ff-a5a2-92d6c4f824dc,Lynnwood,Snohomish County,0.36
+Burger King,4602a128-b0a4-4768-80f8-0cf254ad9937,Snohomish,Snohomish County,Taco Bell,2d1abe9f-51f7-40c8-acee-2723edfa7246,Snohomish,Snohomish County,0.38
+Burger King,658bc835-34a7-4f16-a69e-49f0bc443eeb,Tukwila,King County,McDonald's,971b528e-a3d9-4b5c-98be-69b348562e83,Tukwila,King County,0.38
+McDonald's,971b528e-a3d9-4b5c-98be-69b348562e83,Tukwila,King County,Burger King,658bc835-34a7-4f16-a69e-49f0bc443eeb,Tukwila,King County,0.38
+Wendy's,2de9ba00-9527-4c22-8cdb-b7aab2dcde4d,Auburn,King County,McDonald's,9b23453a-6804-419b-958f-786f481903be,Auburn,King County,0.39
+McDonald's,bd6e5334-6c04-4836-bf17-0593abe43ed9,Burien,King County,Taco Bell,fc3bd5c9-dd30-4bd9-958a-eaeb8322e535,Seattle,King County,0.39
+Taco Bell,fc3bd5c9-dd30-4bd9-958a-eaeb8322e535,Seattle,King County,McDonald's,bd6e5334-6c04-4836-bf17-0593abe43ed9,Burien,King County,0.39
+Burger King,ccbf3a43-6628-4d37-883a-ec68f287ea41,Edmonds,Snohomish County,McDonald's,f99e980d-a7bc-410b-8a4f-f3ff38bdb233,Edmonds,Snohomish County,0.39
+McDonald's,f99e980d-a7bc-410b-8a4f-f3ff38bdb233,Edmonds,Snohomish County,Burger King,ccbf3a43-6628-4d37-883a-ec68f287ea41,Edmonds,Snohomish County,0.39
+Taco Bell,2b92d226-4908-44e3-be67-ac48b7b21dce,Seattle,King County,McDonald's,b8ea980f-ff31-43bf-a5d6-812680a58603,Seattle,King County,0.40
+McDonald's,b8ea980f-ff31-43bf-a5d6-812680a58603,Seattle,King County,Taco Bell,2b92d226-4908-44e3-be67-ac48b7b21dce,Seattle,King County,0.40
+Taco Bell,a8ca4652-6c27-4673-83d6-637bf19164c1,Enumclaw,King County,McDonald's,b4a3d3e5-48a4-4c6b-a4df-7ee87c6448a1,Enumclaw,King County,0.42
+McDonald's,b4a3d3e5-48a4-4c6b-a4df-7ee87c6448a1,Enumclaw,King County,Taco Bell,a8ca4652-6c27-4673-83d6-637bf19164c1,Enumclaw,King County,0.42
+McDonald's,c72292aa-df4a-4e56-be43-62210001a351,Tacoma,Pierce County,Taco Bell,cfd26b12-b409-4276-b665-8c50b06e5c15,Tacoma,Pierce County,0.42
+Burger King,74dde31e-61cd-43d6-8b77-c65d2eed7035,Everett,Snohomish County,McDonald's,98639f67-6059-42b8-a697-cde6f05cb6b4,Everett,Snohomish County,0.43
+Burger King,d1600ec4-dba5-4e68-818e-2c3cbf919e42,Spanaway,Pierce County,Wendy's,f67f4f8c-74a5-44e5-89a7-40cd26871098,Tacoma,Pierce County,0.47
+Wendy's,d3d33a03-428c-4828-84d4-aa42c7d2b87d,Covington,King County,McDonald's,dfabe80c-0138-4a5e-b73e-ff6e86b2de67,Covington,King County,0.49
+McDonald's,dfabe80c-0138-4a5e-b73e-ff6e86b2de67,Covington,King County,Wendy's,d3d33a03-428c-4828-84d4-aa42c7d2b87d,Covington,King County,0.49
+McDonald's,87624b76-edf6-4f29-928c-27f6385732f7,Seattle,King County,Burger King,ddd011b4-e9c1-4c15-ad28-02677ed33809,Seattle,King County,0.51
+Burger King,ddd011b4-e9c1-4c15-ad28-02677ed33809,Seattle,King County,McDonald's,87624b76-edf6-4f29-928c-27f6385732f7,Seattle,King County,0.51
+Burger King,633f74a4-de4a-43a4-b48e-5b92b245f91c,Des Moines,King County,McDonald's,8ee88447-a46c-4322-b18d-19660dda099b,Des Moines,King County,0.52
+McDonald's,8ee88447-a46c-4322-b18d-19660dda099b,Des Moines,King County,Burger King,633f74a4-de4a-43a4-b48e-5b92b245f91c,Des Moines,King County,0.52
+Taco Bell,1bbb5796-6c65-437c-83d0-7ff8f50524a7,Puyallup,Pierce County,McDonald's,70588e7b-49b3-420f-9019-52508f078d4c,Puyallup,Pierce County,0.55
+McDonald's,70588e7b-49b3-420f-9019-52508f078d4c,Puyallup,Pierce County,Taco Bell,1bbb5796-6c65-437c-83d0-7ff8f50524a7,Puyallup,Pierce County,0.55
+McDonald's,56d63969-5cbb-40cc-888f-b24da2486fd2,Bellevue,King County,Taco Bell,e9015a38-d51f-4945-b516-20b0b2d80629,Redmond,King County,0.56
+Taco Bell,e9015a38-d51f-4945-b516-20b0b2d80629,Redmond,King County,McDonald's,56d63969-5cbb-40cc-888f-b24da2486fd2,Bellevue,King County,0.56
+McDonald's,8778f920-7634-4444-a2d9-7e6449a2361a,Puyallup,Pierce County,Burger King,e586667a-8fb1-435b-a1b1-ad5f9fffec6a,Puyallup,Pierce County,0.56
+McDonald's,6b38d0de-1abd-4484-91e0-47258213197f,Renton,King County,Taco Bell,42bbe55a-386b-44f1-b016-486d0c0b5911,Renton,King County,0.57
+McDonald's,b4136287-b499-469b-bd48-cc503f0f7541,Bellevue,King County,Taco Bell,e9015a38-d51f-4945-b516-20b0b2d80629,Redmond,King County,0.57
+McDonald's,ae32485d-79ce-4f71-a548-7366703ce113,Bothell,Snohomish County,Wendy's,f28fdb2a-a2d4-40f4-ab07-caaa6abeee72,Bothell,Snohomish County,0.62
+Taco Bell,1b79f1a3-f69a-4da9-9781-269f5d8b48cb,Issaquah,King County,McDonald's,2dc8d619-c6ac-46f7-b8ac-10f1168833a0,Issaquah,King County,0.66
+Wendy's,a40d7b56-fff5-48be-9814-0356338f1bf8,Redmond,King County,McDonald's,ffdbe7b2-5e29-4f63-83b7-459a5ef7f462,Redmond,King County,0.67
+McDonald's,c5f404c8-5557-4a93-adc9-d0b0ba21ec6c,Puyallup,Pierce County,Burger King,e586667a-8fb1-435b-a1b1-ad5f9fffec6a,Puyallup,Pierce County,0.67
+Taco Bell,2b5b269a-20db-4f03-a284-9756f2a54b1d,Kirkland,King County,Wendy's,48aa7491-2c38-4e95-94c6-2536d74c40c0,Kirkland,King County,0.69
+Taco Bell,5a967deb-54d5-4ce4-8116-9c4fbb4957dd,Marysville,Snohomish County,McDonald's,a22ddf31-fd2f-4d95-bf1d-27cdd4066edd,Marysville,Snohomish County,0.69
+McDonald's,a22ddf31-fd2f-4d95-bf1d-27cdd4066edd,Marysville,Snohomish County,Taco Bell,5a967deb-54d5-4ce4-8116-9c4fbb4957dd,Marysville,Snohomish County,0.69
+McDonald's,880e4054-f72a-4659-96bd-18f2f245b0ff,Issaquah,King County,Taco Bell,1b79f1a3-f69a-4da9-9781-269f5d8b48cb,Issaquah,King County,0.74
+Taco Bell,bf1dc230-2b2f-4c89-9491-ff1f1ec37399,Seatac,King County,McDonald's,ce727bf2-878d-489c-a025-5f4b9a0298a4,Seattle,King County,0.74
+McDonald's,ce727bf2-878d-489c-a025-5f4b9a0298a4,Seattle,King County,Taco Bell,bf1dc230-2b2f-4c89-9491-ff1f1ec37399,Seatac,King County,0.74
+Wendy's,8752d466-8a9b-4f6c-9f54-7f9591519cd5,Lakewood,Pierce County,Burger King,f4c77e50-0bf1-4de2-90b0-8ce4fb8c722a,Lakewood,Pierce County,0.75
+Burger King,d4d0c114-b737-4b8a-a2f5-f68fc1b4da4a,Puyallup,Pierce County,McDonald's,70588e7b-49b3-420f-9019-52508f078d4c,Puyallup,Pierce County,0.77
+McDonald's,5eb7475c-f2a9-403f-b637-c4dd07ab2b42,Everett,Snohomish County,Burger King,74dde31e-61cd-43d6-8b77-c65d2eed7035,Everett,Snohomish County,0.82
+Burger King,1a0925c1-ecbe-4f28-b930-aaa4c5b592cc,Bellevue,King County,Wendy's,d95e07cb-3759-4181-a96d-b0e7346c11f4,Bellevue,King County,0.85
+Wendy's,d95e07cb-3759-4181-a96d-b0e7346c11f4,Bellevue,King County,Burger King,1a0925c1-ecbe-4f28-b930-aaa4c5b592cc,Bellevue,King County,0.85
+Burger King,8c1ba7b9-3543-4c4b-8b90-d8d9d2278ca1,Kent,King County,McDonald's,c9ecd12b-1226-413f-81b0-4410b82425b7,Kent,King County,0.85
+McDonald's,c9ecd12b-1226-413f-81b0-4410b82425b7,Kent,King County,Burger King,8c1ba7b9-3543-4c4b-8b90-d8d9d2278ca1,Kent,King County,0.85
+McDonald's,50bfac04-cd6d-41cf-af48-6d48293bbcce,Lakewood,Pierce County,Burger King,a3a269fc-5768-48f2-97a7-a77c50130c48,Tacoma,Pierce County,0.89
+Burger King,a3a269fc-5768-48f2-97a7-a77c50130c48,Tacoma,Pierce County,McDonald's,50bfac04-cd6d-41cf-af48-6d48293bbcce,Lakewood,Pierce County,0.89
+Burger King,d539ca6b-1202-4fa3-a148-696ee93fc568,Seattle,King County,McDonald's,cacb5841-312a-4683-bea5-8cf7c25730a5,Shoreline,King County,0.90
+Wendy's,e7c345df-c0e1-4c5e-923d-571ed3b9a77b,Everett,Snohomish County,Taco Bell,0b1ee56f-fb78-425a-8b6f-270a715a1ff4,Everett,Snohomish County,0.92
+McDonald's,a1c46a2f-df69-41d0-935f-42365fbde8cb,Tacoma,Pierce County,Taco Bell,a1ce3a51-b6ea-4d2c-b5e3-452d0c80b870,Tacoma,Pierce County,0.94
+Wendy's,48eff643-b65c-48c0-9553-5a461188217b,Kent,King County,Taco Bell,724ab9f3-bb22-4dd0-8370-9f513ecb781c,Kent,King County,0.95
+Burger King,a4a5409e-6a57-4d00-8f9d-b3a4744bc283,Renton,King County,McDonald's,b4869332-f2d9-407e-9714-74f97c2b7b79,Renton,King County,0.96
+McDonald's,b4869332-f2d9-407e-9714-74f97c2b7b79,Renton,King County,Burger King,a4a5409e-6a57-4d00-8f9d-b3a4744bc283,Renton,King County,0.96
+Burger King,260a972b-93e2-4946-a575-bb9ac9aea323,Seattle,King County,McDonald's,8e521843-9c14-4755-8c01-613777dbf310,Shoreline,King County,0.97
+McDonald's,8e521843-9c14-4755-8c01-613777dbf310,Shoreline,King County,Burger King,260a972b-93e2-4946-a575-bb9ac9aea323,Seattle,King County,0.97
+Burger King,9de8852d-79ab-4da5-a291-809d9daeb48e,Renton,King County,Wendy's,ef2d62f3-acee-4c68-87ea-06428d734248,Renton,King County,0.98
+Wendy's,e68f8e0c-8e3a-40c9-9eb3-3da1df358964,Kent,King County,Taco Bell,6bbbf0f9-3913-4ee4-a938-5264feacd57c,Des Moines,King County,1.00
+Taco Bell,5307a20b-a6e6-4bb7-a136-50b7004b8427,Everett,Snohomish County,McDonald's,a841f3e8-8111-4ac0-954e-84f26a5d95bc,Mill Creek,Snohomish County,1.09
+McDonald's,a841f3e8-8111-4ac0-954e-84f26a5d95bc,Mill Creek,Snohomish County,Taco Bell,5307a20b-a6e6-4bb7-a136-50b7004b8427,Everett,Snohomish County,1.09
+McDonald's,3a6b36ab-6240-4c05-960e-b8f6ee4a1302,Tacoma,Pierce County,Taco Bell,4a347fe6-a779-4312-853f-b87792f48de3,Tacoma,Pierce County,1.11
+Taco Bell,4a347fe6-a779-4312-853f-b87792f48de3,Tacoma,Pierce County,McDonald's,3a6b36ab-6240-4c05-960e-b8f6ee4a1302,Tacoma,Pierce County,1.11
+Burger King,99651997-30ec-4ae6-b24f-bea2b69a75f5,Gig Harbor,Pierce County,McDonald's,f0c4897c-2972-48e5-bbbb-afeb1b198ac7,Gig Harbor,Pierce County,1.11
+McDonald's,f0c4897c-2972-48e5-bbbb-afeb1b198ac7,Gig Harbor,Pierce County,Burger King,99651997-30ec-4ae6-b24f-bea2b69a75f5,Gig Harbor,Pierce County,1.11
+McDonald's,35ae168c-5e56-4710-9806-f910178e2881,Tacoma,Pierce County,Taco Bell,0278d6cb-d11e-49c9-91c4-ca3892db3171,Tacoma,Pierce County,1.12
+Taco Bell,1f135697-9aa7-443d-ad55-8fc9d7623074,Seattle,King County,McDonald's,b8ea980f-ff31-43bf-a5d6-812680a58603,Seattle,King County,1.12
+McDonald's,e675d471-5979-4640-bf74-ab94d82ddf9d,Seattle,King County,Taco Bell,fc3bd5c9-dd30-4bd9-958a-eaeb8322e535,Seattle,King County,1.12
+Taco Bell,443e3506-47c6-4da2-9fc7-f76b1f85870f,Bothell,Snohomish County,McDonald's,a119fcb8-fb1b-4ccd-b130-873b2751be14,Mill Creek,Snohomish County,1.15
+McDonald's,a119fcb8-fb1b-4ccd-b130-873b2751be14,Mill Creek,Snohomish County,Taco Bell,443e3506-47c6-4da2-9fc7-f76b1f85870f,Bothell,Snohomish County,1.15
+McDonald's,c53ca630-ed40-4f23-9525-cb17972b26b1,Marysville,Snohomish County,Taco Bell,5a967deb-54d5-4ce4-8116-9c4fbb4957dd,Marysville,Snohomish County,1.20
+Burger King,bdce436c-21eb-4bf2-85ef-c1322442df9f,Tacoma,Pierce County,Taco Bell,c77d9c74-37ba-4448-9d10-c25ba8569e2f,Lakewood,Pierce County,1.21
+McDonald's,8b52d41e-7597-4d35-a9bb-fba83fc879dd,Everett,Snohomish County,Taco Bell,147a9da0-17d8-454c-8919-5d5c22855c84,Everett,Snohomish County,1.22
+Wendy's,feefa2aa-d88f-4ded-aba1-15160627a9ff,Kent,King County,McDonald's,c9ecd12b-1226-413f-81b0-4410b82425b7,Kent,King County,1.25
+McDonald's,58c35a6c-0098-4295-8ea6-691877ac3deb,Kirkland,King County,Wendy's,48aa7491-2c38-4e95-94c6-2536d74c40c0,Kirkland,King County,1.26
+McDonald's,ceeaa1e0-b462-4e96-bdfb-b30ec9a82234,Lynnwood,Snohomish County,Taco Bell,b6b8e735-89c2-47ff-a5a2-92d6c4f824dc,Lynnwood,Snohomish County,1.26
+McDonald's,a76b5547-8ca8-4db2-8709-983a1d4cbd35,Mukilteo,Snohomish County,Wendy's,e7c345df-c0e1-4c5e-923d-571ed3b9a77b,Everett,Snohomish County,1.29
+McDonald's,984a59e8-05f4-45e8-b1f0-87eaba6210ce,Lakewood,Pierce County,Burger King,b9fd9700-0037-439d-9831-d96e1d48c514,Lakewood,Pierce County,1.30
+McDonald's,75cd24f7-6dc6-4dd5-b8d1-9f8fcb486ffb,Tacoma,Pierce County,Taco Bell,4a347fe6-a779-4312-853f-b87792f48de3,Tacoma,Pierce County,1.33
+Wendy's,850ebbb9-cb47-4c61-80cb-7a4bff1dbf55,Seattle,King County,Taco Bell,599d4e29-0a22-4fd7-9bb4-0a5d4251f117,Lake Forest Park,King County,1.34
+McDonald's,c5b46696-6fcf-4a2c-a2e0-92f55b718b5c,Tacoma,Pierce County,Taco Bell,a1ce3a51-b6ea-4d2c-b5e3-452d0c80b870,Tacoma,Pierce County,1.37
+Burger King,28b05b5e-be0b-4b75-a924-6d83b1634a2c,Spanaway,Pierce County,Taco Bell,e1a6e9b5-3b6a-4aed-8971-be56e755fe09,Spanaway,Pierce County,1.38
+McDonald's,3f555e4e-4cc8-47de-8485-2ee04cb28471,Seattle,King County,Taco Bell,1f135697-9aa7-443d-ad55-8fc9d7623074,Seattle,King County,1.42
+McDonald's,9f860999-91da-4f28-8eb5-75d0ca03caeb,Lynnwood,Snohomish County,Taco Bell,b6b8e735-89c2-47ff-a5a2-92d6c4f824dc,Lynnwood,Snohomish County,1.46
+McDonald's,b442df9e-8aae-49f9-9a37-9b6671b907b3,University Place,Pierce County,Taco Bell,a1ce3a51-b6ea-4d2c-b5e3-452d0c80b870,Tacoma,Pierce County,1.50
+McDonald's,be09b632-e77f-43f1-b6ec-d9958c49f69a,Lakewood,Pierce County,Taco Bell,23ac1024-fc03-4047-9fd3-42dd4e2cb620,Lakewood,Pierce County,1.53
+Burger King,1ee0a1d5-8b64-4aa9-ba2e-5b10cb6e7f2a,Lake Stevens,Snohomish County,Taco Bell,e8510a28-8c1c-4e7a-be19-035e53e4c9a0,Lake Stevens,Snohomish County,1.54
+McDonald's,020b6f9c-d8e6-4446-b3a8-de05d6ecbfa3,Kirkland,King County,Wendy's,48aa7491-2c38-4e95-94c6-2536d74c40c0,Kirkland,King County,1.55
+McDonald's,e06e8dc2-f7cf-405e-80ca-b75e4a9bac20,Bellevue,King County,Taco Bell,4e416f7c-e016-473b-aea0-2d6bb7cad920,Bellevue,King County,1.60
+McDonald's,0ccf47ec-ba92-4d26-89f2-4bce8f8e12c7,Federal Way,King County,Wendy's,0432cd2d-0a7b-4b8f-8809-72bc0103f06d,Federal Way,King County,1.67
+McDonald's,7b31af85-f3c1-48e0-8315-8ad82849e2bb,Auburn,King County,Wendy's,2de9ba00-9527-4c22-8cdb-b7aab2dcde4d,Auburn,King County,1.68
+McDonald's,cac3d2d2-d392-4be5-80a8-67aa14dce07c,Lynnwood,Snohomish County,Taco Bell,f779ab1a-71c3-414c-9481-886ffafc5162,Lynnwood,Snohomish County,1.71
+McDonald's,862817e6-63e5-4ed2-a63c-e297f58fe86a,Kirkland,King County,Taco Bell,2b5b269a-20db-4f03-a284-9756f2a54b1d,Kirkland,King County,1.73
+McDonald's,79870199-ebbc-48a8-a338-6b9ec8e4cfbd,Sumner,Pierce County,Taco Bell,a31bed0c-78b2-4fd4-8d5c-5c08cba31793,Puyallup,Pierce County,1.78
+Wendy's,70ff5868-d812-43d7-bdd6-4a1885bf1cdb,Bonney Lake,Pierce County,McDonald's,8430f39f-6a1c-405e-a281-be62e82788e0,Bonney Lake,Pierce County,1.80
+McDonald's,e15c0bc4-4957-4de9-88bc-bcb5dea4e52b,Seattle,King County,Taco Bell,fc3bd5c9-dd30-4bd9-958a-eaeb8322e535,Seattle,King County,2.02
+Burger King,8c8cb24d-d33b-4654-8843-b25a028b3c87,JBLM,Pierce County,McDonald's,b7b74b62-5c1e-42cc-bea3-6096db8bd9df,Dupont,Pierce County,2.03
+McDonald's,b7b74b62-5c1e-42cc-bea3-6096db8bd9df,Dupont,Pierce County,Burger King,8c8cb24d-d33b-4654-8843-b25a028b3c87,JBLM,Pierce County,2.03
+McDonald's,d7d8e989-2d34-4761-8307-b54290f9641c,Renton,King County,Burger King,a4a5409e-6a57-4d00-8f9d-b3a4744bc283,Renton,King County,2.06
+Taco Bell,088c8204-28f1-47c0-a066-a062fd5ef672,Federal Way,King County,Burger King,57ab1c17-04b8-43a8-8c86-2643101da0e4,Federal Way,King County,2.10
+McDonald's,288b7df0-c7af-46b3-88ec-da2bd69a40a5,Renton,King County,Taco Bell,38f06008-0338-4e88-95be-6c107bb22bf9,Renton,King County,2.16
+Taco Bell,14fe0d43-264f-4ad6-bc7f-347075e2a071,Mukilteo,Snohomish County,McDonald's,a76b5547-8ca8-4db2-8709-983a1d4cbd35,Mukilteo,Snohomish County,2.26
+McDonald's,9f27ce12-d2dc-4cf0-b3bf-62f1d04feaf8,Kenmore,King County,Taco Bell,298887d0-feb6-46ed-b4ee-50b3ccd012e0,Bothell,Snohomish County,2.37
+McDonald's,8f30dd2b-55a3-4e78-b926-b70d5e026990,Maple Valley,King County,Burger King,9e9ac86d-6d3b-43a4-b748-7c840023c42c,Maple Valley,King County,2.42
+McDonald's,fbe1dc2b-1cc3-4b43-9967-2fc8622b6c88,Seattle,King County,Wendy's,f39f7bc3-4cf2-4952-90e6-bcaf8f901500,Seattle,King County,2.44
+McDonald's,90c11f9b-14e1-40d0-bc16-7f5ea6a3624a,Shoreline,King County,Burger King,ccbf3a43-6628-4d37-883a-ec68f287ea41,Edmonds,Snohomish County,2.46
+McDonald's,a806c2fb-521f-40ff-af51-16d24f22bc7f,Seattle,King County,Burger King,ddd011b4-e9c1-4c15-ad28-02677ed33809,Seattle,King County,2.56
+McDonald's,bac6684f-0114-42aa-86c4-ab0dfce9bb54,Newcastle,King County,Burger King,0ffb9176-600f-459e-8cce-58555d44aab8,Bellevue,King County,2.57
+McDonald's,0aca4350-41a7-45ad-be79-1822fa5e4301,Orting,Pierce County,Wendy's,9fdb4948-60be-489c-a937-264cb7dcccbe,Bonney Lake,Pierce County,2.61
+Wendy's,9fdb4948-60be-489c-a937-264cb7dcccbe,Bonney Lake,Pierce County,McDonald's,0aca4350-41a7-45ad-be79-1822fa5e4301,Orting,Pierce County,2.61
+Burger King,d9a3d639-03a1-4d17-8416-4cb8d0d2c5aa,Tacoma,Pierce County,McDonald's,b7b74b62-5c1e-42cc-bea3-6096db8bd9df,Dupont,Pierce County,2.63
+McDonald's,da65f7d3-f664-4eca-8c2c-6877ab06ca5d,Seattle,King County,Burger King,ddd011b4-e9c1-4c15-ad28-02677ed33809,Seattle,King County,2.68
+McDonald's,c32d175d-2abc-4d2b-8ecc-a5c0cffba0a8,Gig Harbor,Pierce County,Burger King,99651997-30ec-4ae6-b24f-bea2b69a75f5,Gig Harbor,Pierce County,2.72
+McDonald's,b761de3f-31eb-4e9f-8d74-b86f5513161e,Seattle,King County,Taco Bell,1f135697-9aa7-443d-ad55-8fc9d7623074,Seattle,King County,2.74
+McDonald's,618c0a31-a6a5-4f5d-a05a-3079d4a9f157,Mercer Island,King County,Wendy's,d95e07cb-3759-4181-a96d-b0e7346c11f4,Bellevue,King County,2.79
+McDonald's,71157439-5355-48ea-b34e-22c5684cb5a3,Seattle,King County,Taco Bell,fc3bd5c9-dd30-4bd9-958a-eaeb8322e535,Seattle,King County,2.91
+McDonald's,0fd8e5ca-8afe-435f-85a2-03fd5957005a,Renton,King County,Burger King,a4a5409e-6a57-4d00-8f9d-b3a4744bc283,Renton,King County,3.11
+Burger King,a770c22f-2c58-4803-8c5b-62e897c8a769,Wauna,Pierce County,McDonald's,c32d175d-2abc-4d2b-8ecc-a5c0cffba0a8,Gig Harbor,Pierce County,3.28
+McDonald's,af5658e8-f1e9-49d9-bd79-1f65afeb49cc,Snohomish,Snohomish County,Taco Bell,5307a20b-a6e6-4bb7-a136-50b7004b8427,Everett,Snohomish County,3.30
+McDonald's,12833fed-1f4b-4cfc-bab2-bbac606df8ff,Seattle,King County,Burger King,ddd011b4-e9c1-4c15-ad28-02677ed33809,Seattle,King County,3.31
+McDonald's,e9038be0-12c0-49c6-b32f-279a8e7eedcc,Seattle,King County,Wendy's,941c314b-5ee2-4015-9d7c-85d21fa9a2a8,Renton,King County,3.60
+McDonald's,91476a3d-4ae6-4693-a684-0f2619746d1b,Buckley,Pierce County,Taco Bell,a8ca4652-6c27-4673-83d6-637bf19164c1,Enumclaw,King County,3.74
+McDonald's,87186fa6-c836-46c3-bae9-d0c12f78f317,Auburn,King County,Wendy's,2de9ba00-9527-4c22-8cdb-b7aab2dcde4d,Auburn,King County,3.87
+McDonald's,a0d958c0-b996-43d5-97f6-17b6bde6df3e,Redmond,King County,Taco Bell,4e93dc0a-fdce-4620-bc24-de7f1c25fbd6,Redmond,King County,4.56
+McDonald's,e6272543-f20b-4671-8493-a6f3f2fe4b6b,Sammamish,King County,Burger King,a75f3597-adcc-45dd-9298-b438b6eb0048,Issaquah,King County,4.98
+McDonald's,0ba78fb1-dd95-432a-92d0-b6584a4b2e27,Granite Falls,Snohomish County,Wendy's,5d59201a-9aba-40a8-9177-8a0ef13138f8,Lake Stevens,Snohomish County,8.17
+McDonald's,7b5b8923-5298-4483-a772-83ae6c578af5,Stanwood,Snohomish County,Burger King,ca8e0af0-026b-461e-811c-889fddea0b08,Marysville,Snohomish County,8.67
+McDonald's,93761f9c-408a-4ca9-9804-a33f3b173953,Sultan,Snohomish County,Burger King,c28ec162-61b7-40a6-978c-9f3ad6c386a9,Monroe,Snohomish County,9.09

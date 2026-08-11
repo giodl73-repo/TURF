@@ -5,10 +5,10 @@ COPY (
     WITH candidates AS (
         SELECT
             CASE
-                WHEN lower(coalesce(brand.names.primary, names.primary)) LIKE 'mcdonald%' THEN 'McDonald''s'
-                WHEN lower(coalesce(brand.names.primary, names.primary)) LIKE 'burger king%' THEN 'Burger King'
-                WHEN lower(coalesce(brand.names.primary, names.primary)) LIKE 'wendy%' THEN 'Wendy''s'
-                WHEN lower(coalesce(brand.names.primary, names.primary)) LIKE 'taco bell%' THEN 'Taco Bell'
+                WHEN lower(brand.names.primary) LIKE 'mcdonald%' THEN 'McDonald''s'
+                WHEN lower(brand.names.primary) LIKE 'burger king%' THEN 'Burger King'
+                WHEN lower(brand.names.primary) LIKE 'wendy%' THEN 'Wendy''s'
+                WHEN lower(brand.names.primary) LIKE 'taco bell%' THEN 'Taco Bell'
             END AS brand,
             id AS store_id,
             replace(coalesce(names.primary, brand.names.primary), ',', '') AS store_name,
@@ -29,11 +29,16 @@ COPY (
           AND bbox.xmin BETWEEN -125.0 AND -116.8
           AND bbox.ymin BETWEEN 45.5 AND 49.1
           AND coalesce(operating_status, 'open') = 'open'
+          AND coalesce(addresses[1].freeform, '') != ''
+          AND coalesce(addresses[1].locality, '') != ''
+          AND coalesce(addresses[1].region, '') != ''
+          AND coalesce(addresses[1].postcode, '') != ''
+          AND coalesce(brand.names.primary, '') != ''
           AND (
-              lower(coalesce(brand.names.primary, names.primary)) LIKE 'mcdonald%'
-              OR lower(coalesce(brand.names.primary, names.primary)) LIKE 'burger king%'
-              OR lower(coalesce(brand.names.primary, names.primary)) LIKE 'wendy%'
-              OR lower(coalesce(brand.names.primary, names.primary)) LIKE 'taco bell%'
+              lower(brand.names.primary) LIKE 'mcdonald%'
+              OR lower(brand.names.primary) LIKE 'burger king%'
+              OR lower(brand.names.primary) LIKE 'wendy%'
+              OR lower(brand.names.primary) LIKE 'taco bell%'
           )
     )
     SELECT

@@ -1,0 +1,25 @@
+cbsa_code,cbsa_title,cbsa_type,metro_context_status,leader,leader_stores,total_stores,status
+,Non-CBSA Washington county,Non-CBSA,non_cbsa,McDonald's,6,8,dominant
+10140,Aberdeen WA,Micropolitan Statistical Area,cbsa,McDonald's,3,7,contested
+13380,Bellingham WA,Metropolitan Statistical Area,cbsa,McDonald's,8,18,contested
+14740,Bremerton-Silverdale-Port Orchard WA,Metropolitan Statistical Area,cbsa,McDonald's,10,27,contested
+16500,Centralia WA,Micropolitan Statistical Area,cbsa,McDonald's,4,11,contested
+21260,Ellensburg WA,Micropolitan Statistical Area,cbsa,McDonald's,2,6,contested
+28420,Kennewick-Richland WA,Metropolitan Statistical Area,cbsa,McDonald's,12,34,contested
+30300,Lewiston ID-WA,Metropolitan Statistical Area,cbsa,McDonald's,1,2,contested
+31020,Longview-Kelso WA,Metropolitan Statistical Area,cbsa,McDonald's,5,15,contested
+34180,Moses Lake WA,Micropolitan Statistical Area,cbsa,Burger King,4,12,contested
+34580,Mount Vernon-Anacortes WA,Metropolitan Statistical Area,cbsa,McDonald's,5,11,contested
+36020,Oak Harbor WA,Micropolitan Statistical Area,cbsa,Wendy's,2,5,contested
+36500,Olympia-Lacey-Tumwater WA,Metropolitan Statistical Area,cbsa,McDonald's,11,30,contested
+36830,Othello WA,Micropolitan Statistical Area,cbsa,McDonald's,2,4,contested
+38820,Port Angeles WA,Micropolitan Statistical Area,cbsa,McDonald's,2,5,contested
+38900,Portland-Vancouver-Hillsboro OR-WA,Metropolitan Statistical Area,cbsa,McDonald's,12,40,contested
+39040,Port Townsend WA,Micropolitan Statistical Area,cbsa,McDonald's,1,1,dominant
+39420,Pullman WA,Micropolitan Statistical Area,cbsa,McDonald's,2,3,dominant
+42660,Seattle-Tacoma-Bellevue WA,Metropolitan Statistical Area,cbsa,McDonald's,126,274,contested
+43220,Shelton WA,Micropolitan Statistical Area,cbsa,McDonald's,3,7,contested
+44060,Spokane-Spokane Valley WA,Metropolitan Statistical Area,cbsa,McDonald's,24,51,contested
+47460,Walla Walla WA,Metropolitan Statistical Area,cbsa,Burger King,2,4,contested
+48300,Wenatchee-East Wenatchee WA,Metropolitan Statistical Area,cbsa,McDonald's,3,8,contested
+49420,Yakima WA,Metropolitan Statistical Area,cbsa,McDonald's,11,23,contested

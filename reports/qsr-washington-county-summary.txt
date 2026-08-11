@@ -1,0 +1,33 @@
+county_geoid,county_name,leader,leader_stores,total_stores,status
+53001,Adams County,McDonald's,2,4,contested
+53003,Asotin County,McDonald's,1,2,contested
+53005,Benton County,McDonald's,10,25,contested
+53007,Chelan County,McDonald's,2,4,contested
+53009,Clallam County,McDonald's,2,5,contested
+53011,Clark County,McDonald's,12,40,contested
+53015,Cowlitz County,McDonald's,5,15,contested
+53017,Douglas County,Burger King,1,4,contested
+53021,Franklin County,Burger King,3,9,contested
+53025,Grant County,Burger King,4,12,contested
+53027,Grays Harbor County,McDonald's,3,7,contested
+53029,Island County,Wendy's,2,5,contested
+53031,Jefferson County,McDonald's,1,1,dominant
+53033,King County,McDonald's,64,126,dominant
+53035,Kitsap County,McDonald's,10,27,contested
+53037,Kittitas County,McDonald's,2,6,contested
+53039,Klickitat County,McDonald's,1,1,dominant
+53041,Lewis County,McDonald's,4,11,contested
+53045,Mason County,McDonald's,3,7,contested
+53047,Okanogan County,McDonald's,2,4,contested
+53049,Pacific County,McDonald's,2,2,dominant
+53051,Pend Oreille County,McDonald's,1,1,dominant
+53053,Pierce County,McDonald's,34,83,contested
+53057,Skagit County,McDonald's,5,11,contested
+53061,Snohomish County,McDonald's,28,65,contested
+53063,Spokane County,McDonald's,23,49,contested
+53065,Stevens County,McDonald's,1,2,contested
+53067,Thurston County,McDonald's,11,30,contested
+53071,Walla Walla County,Burger King,2,4,contested
+53073,Whatcom County,McDonald's,8,18,contested
+53075,Whitman County,McDonald's,2,3,dominant
+53077,Yakima County,McDonald's,11,23,contested

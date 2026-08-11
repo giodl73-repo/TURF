@@ -1,0 +1,26 @@
+category,geography_id,label,city,state,brand,store_id,nearest_brand,nearest_store_id,distance_miles
+qsr,poulsbo,Poulsbo WA,Poulsbo,WA,Taco Bell,0b82d3cd-7cf1-4049-91cc-a143909379fe,Wendy's,5563728e-7ba6-4882-b521-5be2b25bc1f9,0.06
+qsr,poulsbo,Poulsbo WA,Poulsbo,WA,Wendy's,5563728e-7ba6-4882-b521-5be2b25bc1f9,Taco Bell,0b82d3cd-7cf1-4049-91cc-a143909379fe,0.06
+qsr,bremerton,Bremerton WA,Bremerton,WA,Burger King,84015d6a-1780-432b-84f9-2d65253d9516,McDonald's,b4680f46-2e7e-4304-a992-e0b8186fd725,0.06
+qsr,bremerton,Bremerton WA,Bremerton,WA,McDonald's,b4680f46-2e7e-4304-a992-e0b8186fd725,Burger King,84015d6a-1780-432b-84f9-2d65253d9516,0.06
+qsr,bremerton,Bremerton WA,Bremerton,WA,Taco Bell,b36fa00e-8dc6-4d2b-b911-4b11c877bcbd,Burger King,84015d6a-1780-432b-84f9-2d65253d9516,0.09
+qsr,bremerton,Bremerton WA,Bremerton,WA,Taco Bell,08e83c38-c368-4ea6-b24b-b342b6ee840b,McDonald's,b53f6a44-91b0-402d-a111-f9b4c03e6c03,0.11
+qsr,bremerton,Bremerton WA,Bremerton,WA,McDonald's,b53f6a44-91b0-402d-a111-f9b4c03e6c03,Taco Bell,08e83c38-c368-4ea6-b24b-b342b6ee840b,0.11
+qsr,bremerton,Bremerton WA,Bremerton,WA,Wendy's,1146d86e-3839-4a9a-affe-0a4da17dcbb3,Burger King,84015d6a-1780-432b-84f9-2d65253d9516,0.12
+qsr,silverdale,Silverdale WA,Silverdale,WA,Taco Bell,a6b8c209-a372-4506-bc64-a6e28cc6e1be,Burger King,d1b4ce17-3d70-4e54-8bb6-1595abc08119,0.16
+qsr,silverdale,Silverdale WA,Silverdale,WA,Burger King,d1b4ce17-3d70-4e54-8bb6-1595abc08119,Taco Bell,a6b8c209-a372-4506-bc64-a6e28cc6e1be,0.16
+qsr,port-orchard,Port Orchard WA,Port Orchard,WA,Taco Bell,6f6b8875-0ee9-42de-8d9b-9a5bb56dd5f4,Burger King,77a21a10-c402-44c4-b7b8-7dc23daeb386,0.18
+qsr,port-orchard,Port Orchard WA,Port Orchard,WA,Burger King,77a21a10-c402-44c4-b7b8-7dc23daeb386,Taco Bell,6f6b8875-0ee9-42de-8d9b-9a5bb56dd5f4,0.18
+qsr,silverdale,Silverdale WA,Silverdale,WA,Taco Bell,192f6f4c-5eeb-48cd-80e5-78302ad9248f,McDonald's,c215844f-b6a2-4a27-a2b0-92dd4ad403c2,0.18
+qsr,silverdale,Silverdale WA,Silverdale,WA,McDonald's,c215844f-b6a2-4a27-a2b0-92dd4ad403c2,Taco Bell,192f6f4c-5eeb-48cd-80e5-78302ad9248f,0.18
+qsr,bremerton,Bremerton WA,Bremerton,WA,Burger King,54051ef5-3411-43b9-a946-6727ae0330e4,Taco Bell,08e83c38-c368-4ea6-b24b-b342b6ee840b,0.37
+qsr,silverdale,Silverdale WA,Silverdale,WA,McDonald's,484b72b2-bdb8-48ac-a632-7c8e14807873,Burger King,d1b4ce17-3d70-4e54-8bb6-1595abc08119,0.45
+qsr,silverdale,Silverdale WA,Silverdale,WA,Wendy's,26063709-d5b3-4425-ad44-c55b8d3afefd,McDonald's,484b72b2-bdb8-48ac-a632-7c8e14807873,0.46
+qsr,poulsbo,Poulsbo WA,Poulsbo,WA,McDonald's,9e5583c6-4df4-41df-946e-7dfe0083d14b,Wendy's,5563728e-7ba6-4882-b521-5be2b25bc1f9,0.49
+qsr,bremerton,Bremerton WA,Bremerton,WA,McDonald's,07866753-25e7-4b22-baaf-63a4992bf20a,Wendy's,9fd10b21-8ff0-4dde-bf10-e00d7787ae20,0.50
+qsr,bremerton,Bremerton WA,Bremerton,WA,Wendy's,9fd10b21-8ff0-4dde-bf10-e00d7787ae20,McDonald's,07866753-25e7-4b22-baaf-63a4992bf20a,0.50
+qsr,port-orchard,Port Orchard WA,Port Orchard,WA,McDonald's,927621fc-ce0e-4816-aec2-8c1829070f97,Taco Bell,6f6b8875-0ee9-42de-8d9b-9a5bb56dd5f4,0.54
+qsr,port-orchard,Port Orchard WA,Port Orchard,WA,Burger King,2f22556d-1c17-4a32-8298-1bdb55993dcb,McDonald's,f9a35b4a-e472-4eb4-9346-d5f77ab03a31,0.54
+qsr,port-orchard,Port Orchard WA,Port Orchard,WA,McDonald's,f9a35b4a-e472-4eb4-9346-d5f77ab03a31,Burger King,2f22556d-1c17-4a32-8298-1bdb55993dcb,0.54
+qsr,poulsbo,Poulsbo WA,Poulsbo,WA,Burger King,218bb803-2856-41b7-965f-9414b019fc85,McDonald's,9e5583c6-4df4-41df-946e-7dfe0083d14b,0.90
+qsr,port-orchard,Port Orchard WA,Port Orchard,WA,Wendy's,74ab77a1-8052-42b0-8896-80c1e06624e8,McDonald's,f9a35b4a-e472-4eb4-9346-d5f77ab03a31,1.17

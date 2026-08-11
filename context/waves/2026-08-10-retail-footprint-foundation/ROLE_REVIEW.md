@@ -900,3 +900,38 @@ Status: pass.
 
 The query, filter fixture, and review notes give the next agent a direct path
 from open Overture source to TURF's existing reviewed-store contract.
+
+## Pulse 35 Washington QSR Footprint
+
+### Market Analyst
+
+Status: pass.
+
+The QSR layer validates the category choice. It is denser than auto parts in
+the Seattle CBSA and shows McDonald's as a broad default layer while still
+leaving most metros and cities contested.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse adds a QSR-specific ZCTA-county context from Census 2020 relationship
+data instead of reusing an incomplete auto-parts ZIP universe. That keeps the
+postal-to-county join explicit and auditable.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The place spacing output shows dense same-place QSR rivalry in Bremerton,
+Poulsbo, Silverdale, and Port Orchard. The next model step should promote QSR
+place candidates into RET and then compare them against home-improvement and
+auto-parts labels.
+
+### Source Policy Auditor
+
+Status: pass with caveat.
+
+Rows come from open Overture Places and public Census relationship data. The
+caveat is that all QSR rows are first-pass packet-ready; co-branded, venue, and
+stale-store edge cases need deeper review before national claims.

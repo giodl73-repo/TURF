@@ -1,0 +1,40 @@
+metro,Bremerton-Silverdale-Port Orchard WA
+total_stores,27
+
+brand,stores
+Burger King,6
+McDonald's,10
+Taco Bell,6
+Wendy's,5
+
+county_geoid,county_name,leader,leader_stores,total_stores,status
+53035,Kitsap County,McDonald's,10,27,contested
+
+brand,store_id,city,county_name,nearest_brand,nearest_store_id,nearest_city,nearest_county_name,distance_miles
+Taco Bell,0b82d3cd-7cf1-4049-91cc-a143909379fe,Poulsbo,Kitsap County,Wendy's,5563728e-7ba6-4882-b521-5be2b25bc1f9,Poulsbo,Kitsap County,0.06
+Wendy's,5563728e-7ba6-4882-b521-5be2b25bc1f9,Poulsbo,Kitsap County,Taco Bell,0b82d3cd-7cf1-4049-91cc-a143909379fe,Poulsbo,Kitsap County,0.06
+Burger King,84015d6a-1780-432b-84f9-2d65253d9516,Bremerton,Kitsap County,McDonald's,b4680f46-2e7e-4304-a992-e0b8186fd725,Bremerton,Kitsap County,0.06
+McDonald's,b4680f46-2e7e-4304-a992-e0b8186fd725,Bremerton,Kitsap County,Burger King,84015d6a-1780-432b-84f9-2d65253d9516,Bremerton,Kitsap County,0.06
+Taco Bell,b36fa00e-8dc6-4d2b-b911-4b11c877bcbd,Bremerton,Kitsap County,Burger King,84015d6a-1780-432b-84f9-2d65253d9516,Bremerton,Kitsap County,0.09
+Taco Bell,08e83c38-c368-4ea6-b24b-b342b6ee840b,Bremerton,Kitsap County,McDonald's,b53f6a44-91b0-402d-a111-f9b4c03e6c03,Bremerton,Kitsap County,0.11
+McDonald's,b53f6a44-91b0-402d-a111-f9b4c03e6c03,Bremerton,Kitsap County,Taco Bell,08e83c38-c368-4ea6-b24b-b342b6ee840b,Bremerton,Kitsap County,0.11
+Wendy's,1146d86e-3839-4a9a-affe-0a4da17dcbb3,Bremerton,Kitsap County,Burger King,84015d6a-1780-432b-84f9-2d65253d9516,Bremerton,Kitsap County,0.12
+Taco Bell,a6b8c209-a372-4506-bc64-a6e28cc6e1be,Silverdale,Kitsap County,Burger King,d1b4ce17-3d70-4e54-8bb6-1595abc08119,Silverdale,Kitsap County,0.16
+Burger King,d1b4ce17-3d70-4e54-8bb6-1595abc08119,Silverdale,Kitsap County,Taco Bell,a6b8c209-a372-4506-bc64-a6e28cc6e1be,Silverdale,Kitsap County,0.16
+Taco Bell,6f6b8875-0ee9-42de-8d9b-9a5bb56dd5f4,Port Orchard,Kitsap County,Burger King,77a21a10-c402-44c4-b7b8-7dc23daeb386,Port Orchard,Kitsap County,0.18
+Burger King,77a21a10-c402-44c4-b7b8-7dc23daeb386,Port Orchard,Kitsap County,Taco Bell,6f6b8875-0ee9-42de-8d9b-9a5bb56dd5f4,Port Orchard,Kitsap County,0.18
+Taco Bell,192f6f4c-5eeb-48cd-80e5-78302ad9248f,Silverdale,Kitsap County,McDonald's,c215844f-b6a2-4a27-a2b0-92dd4ad403c2,Silverdale,Kitsap County,0.18
+McDonald's,c215844f-b6a2-4a27-a2b0-92dd4ad403c2,Silverdale,Kitsap County,Taco Bell,192f6f4c-5eeb-48cd-80e5-78302ad9248f,Silverdale,Kitsap County,0.18
+Burger King,54051ef5-3411-43b9-a946-6727ae0330e4,Bremerton,Kitsap County,Taco Bell,08e83c38-c368-4ea6-b24b-b342b6ee840b,Bremerton,Kitsap County,0.37
+McDonald's,484b72b2-bdb8-48ac-a632-7c8e14807873,Silverdale,Kitsap County,Burger King,d1b4ce17-3d70-4e54-8bb6-1595abc08119,Silverdale,Kitsap County,0.45
+Wendy's,26063709-d5b3-4425-ad44-c55b8d3afefd,Silverdale,Kitsap County,McDonald's,484b72b2-bdb8-48ac-a632-7c8e14807873,Silverdale,Kitsap County,0.46
+McDonald's,9e5583c6-4df4-41df-946e-7dfe0083d14b,Poulsbo,Kitsap County,Wendy's,5563728e-7ba6-4882-b521-5be2b25bc1f9,Poulsbo,Kitsap County,0.49
+McDonald's,07866753-25e7-4b22-baaf-63a4992bf20a,Bremerton,Kitsap County,Wendy's,9fd10b21-8ff0-4dde-bf10-e00d7787ae20,Bremerton,Kitsap County,0.50
+Wendy's,9fd10b21-8ff0-4dde-bf10-e00d7787ae20,Bremerton,Kitsap County,McDonald's,07866753-25e7-4b22-baaf-63a4992bf20a,Bremerton,Kitsap County,0.50
+McDonald's,927621fc-ce0e-4816-aec2-8c1829070f97,Port Orchard,Kitsap County,Taco Bell,6f6b8875-0ee9-42de-8d9b-9a5bb56dd5f4,Port Orchard,Kitsap County,0.54
+Burger King,2f22556d-1c17-4a32-8298-1bdb55993dcb,Port Orchard,Kitsap County,McDonald's,f9a35b4a-e472-4eb4-9346-d5f77ab03a31,Port Orchard,Kitsap County,0.54
+McDonald's,f9a35b4a-e472-4eb4-9346-d5f77ab03a31,Port Orchard,Kitsap County,Burger King,2f22556d-1c17-4a32-8298-1bdb55993dcb,Port Orchard,Kitsap County,0.54
+Burger King,218bb803-2856-41b7-965f-9414b019fc85,Poulsbo,Kitsap County,McDonald's,9e5583c6-4df4-41df-946e-7dfe0083d14b,Poulsbo,Kitsap County,0.90
+Wendy's,74ab77a1-8052-42b0-8896-80c1e06624e8,Port Orchard,Kitsap County,McDonald's,f9a35b4a-e472-4eb4-9346-d5f77ab03a31,Port Orchard,Kitsap County,1.17
+McDonald's,fc030097-c50f-4942-8b66-cafb3a591727,Bainbridge Island,Kitsap County,Taco Bell,08e83c38-c368-4ea6-b24b-b342b6ee840b,Bremerton,Kitsap County,5.32
+McDonald's,fe1c77af-e672-4fd1-84aa-57c6429e9b20,Kingston,Kitsap County,Burger King,218bb803-2856-41b7-965f-9414b019fc85,Poulsbo,Kitsap County,7.65
