@@ -571,3 +571,34 @@ Status: pass.
 
 RET is framed as an interpretation of already-reviewed public footprint
 evidence, not an assertion of private corporate territories.
+
+## Pulse 25 Executable RET Examples
+
+### Market Analyst
+
+Status: pass.
+
+The CLI summary makes RET inspectable by enclave type, category, and geography
+type, which is enough for early hand-reviewed examples.
+
+### Market Geographer
+
+Status: pass.
+
+The validator keeps geography types explicit and bounded, preserving the
+distinction between place, CBSA, county, ZCTA, and future regional examples.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The parser and summary are a good execution gate. The next model step should
+derive candidate RET features from store density, leader share, competitor
+count, nearest spacing, and ferry/barrier context.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The command validates hand-reviewed RET interpretations over checked-in public
+evidence and does not add new data acquisition or private-territory claims.

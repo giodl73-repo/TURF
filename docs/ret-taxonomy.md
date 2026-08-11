@@ -34,6 +34,13 @@ The first RET examples are stored in:
 fixtures/geography/ret-washington-examples.csv
 ```
 
+Validate and summarize them with:
+
+```powershell
+cargo run -p turf-cli -- validate-ret fixtures\geography\ret-washington-examples.csv
+cargo run -p turf-cli -- summarize-ret fixtures\geography\ret-washington-examples.csv
+```
+
 They are deliberately hand-reviewed examples, not model output. TURF should
 first learn the vocabulary, then automate classification when enough examples
 exist.

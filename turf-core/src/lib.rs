@@ -193,6 +193,34 @@ pub struct MetroRingDominance {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RetExample {
+    pub geography_id: String,
+    pub geography_type: String,
+    pub label: String,
+    pub category: String,
+    pub enclave_type: String,
+    pub primary_brand: String,
+    pub store_count: usize,
+    pub competing_brand_count: usize,
+    pub evidence_summary: String,
+    pub source_report: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RetCount {
+    pub key: String,
+    pub examples: usize,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RetSummary {
+    pub total_examples: usize,
+    pub enclave_type_counts: Vec<RetCount>,
+    pub category_counts: Vec<RetCount>,
+    pub geography_type_counts: Vec<RetCount>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub enum MarketStatus {
     Dominant,
     Contested,
@@ -626,6 +654,78 @@ pub fn parse_reviewed_store_points(csv: &str) -> Result<Vec<ReviewedStorePoint>,
 
 pub fn validate_reviewed_store_points(csv: &str) -> Result<usize, String> {
     Ok(parse_reviewed_store_points(csv)?.len())
+}
+
+pub fn parse_ret_examples(csv: &str) -> Result<Vec<RetExample>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "geography_id",
+        "geography_type",
+        "label",
+        "category",
+        "enclave_type",
+        "primary_brand",
+        "store_count",
+        "competing_brand_count",
+        "evidence_summary",
+        "source_report",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut examples = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let geography_type = required(fields[1], line_number, "geography_type")?;
+        validate_ret_geography_type(geography_type, line_number)?;
+        let enclave_type = required(fields[4], line_number, "enclave_type")?;
+        validate_ret_enclave_type(enclave_type, line_number)?;
+        let store_count = fields[6]
+            .parse::<usize>()
+            .map_err(|_| format!("line {line_number}: invalid store_count"))?;
+        let competing_brand_count = fields[7]
+            .parse::<usize>()
+            .map_err(|_| format!("line {line_number}: invalid competing_brand_count"))?;
+
+        examples.push(RetExample {
+            geography_id: required(fields[0], line_number, "geography_id")?.to_string(),
+            geography_type: geography_type.to_string(),
+            label: required(fields[2], line_number, "label")?.to_string(),
+            category: required(fields[3], line_number, "category")?.to_string(),
+            enclave_type: enclave_type.to_string(),
+            primary_brand: fields[5].to_string(),
+            store_count,
+            competing_brand_count,
+            evidence_summary: required(fields[8], line_number, "evidence_summary")?.to_string(),
+            source_report: required(fields[9], line_number, "source_report")?.to_string(),
+        });
+    }
+
+    Ok(examples)
+}
+
+pub fn validate_ret_examples(csv: &str) -> Result<usize, String> {
+    Ok(parse_ret_examples(csv)?.len())
 }
 
 pub fn parse_zcta_county_contexts(csv: &str) -> Result<Vec<ZctaCountyContext>, String> {
@@ -1277,6 +1377,15 @@ pub fn summarize_metro_rings(points: &[MetroRingStorePoint]) -> Vec<MetroRingDom
     summaries
 }
 
+pub fn summarize_ret_examples(examples: &[RetExample]) -> RetSummary {
+    RetSummary {
+        total_examples: examples.len(),
+        enclave_type_counts: ret_counts(examples.iter().map(|example| &example.enclave_type)),
+        category_counts: ret_counts(examples.iter().map(|example| &example.category)),
+        geography_type_counts: ret_counts(examples.iter().map(|example| &example.geography_type)),
+    }
+}
+
 pub fn parse_demand_points(csv: &str) -> Result<Vec<DemandPoint>, String> {
     let mut lines = csv.lines();
     let header = lines.next().ok_or("missing CSV header")?;
@@ -1782,6 +1891,39 @@ fn validate_metro_context_status(value: &str, line_number: usize) -> Result<(), 
     }
 }
 
+fn validate_ret_geography_type(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "place" | "postal_code" | "zcta" | "county" | "cbsa" | "metro" | "region" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid geography_type")),
+    }
+}
+
+fn validate_ret_enclave_type(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "anchor_market"
+        | "service_mesh"
+        | "contested_service_grid"
+        | "brand_led_service_mesh"
+        | "ferry_side_enclave"
+        | "postal_identity_zone"
+        | "corridor_rivalry"
+        | "county_seat_service_center"
+        | "white_space" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid enclave_type")),
+    }
+}
+
+fn ret_counts<'a>(values: impl Iterator<Item = &'a String>) -> Vec<RetCount> {
+    let mut counts: BTreeMap<String, usize> = BTreeMap::new();
+    for value in values {
+        *counts.entry(value.clone()).or_insert(0) += 1;
+    }
+    counts
+        .into_iter()
+        .map(|(key, examples)| RetCount { key, examples })
+        .collect()
+}
+
 fn normalize_zip5(value: &str) -> String {
     value
         .chars()
@@ -2018,6 +2160,47 @@ Home Depot,hd-0001,Home Depot Atlanta,123 Test Ave,Atlanta,GA,30303,33.7517,-84.
         let error = parse_reviewed_store_points(csv).expect_err("review reason should fail");
 
         assert!(error.contains("invalid review_reason"));
+    }
+
+    #[test]
+    fn parses_and_summarizes_ret_examples() {
+        let csv = "\
+geography_id,geography_type,label,category,enclave_type,primary_brand,store_count,competing_brand_count,evidence_summary,source_report
+kingston,place,Kingston WA,home_improvement,white_space,,0,0,No direct home improvement row,reports/example.md
+kingston,place,Kingston WA,auto_parts,ferry_side_enclave,NAPA Auto Parts,2,0,NAPA rows appear in Kingston,reports/example.md
+42660,cbsa,Seattle-Tacoma-Bellevue WA,auto_parts,contested_service_grid,O'Reilly Auto Parts,197,3,All four brands are present,reports/example.md
+";
+        let examples = parse_ret_examples(csv).expect("RET examples parse");
+        let summary = summarize_ret_examples(&examples);
+
+        assert_eq!(examples.len(), 3);
+        assert_eq!(examples[1].enclave_type, "ferry_side_enclave");
+        assert_eq!(examples[2].store_count, 197);
+        assert_eq!(summary.total_examples, 3);
+        assert_eq!(
+            summary.category_counts,
+            vec![
+                RetCount {
+                    key: "auto_parts".to_string(),
+                    examples: 2,
+                },
+                RetCount {
+                    key: "home_improvement".to_string(),
+                    examples: 1,
+                },
+            ]
+        );
+    }
+
+    #[test]
+    fn rejects_unknown_ret_enclave_type() {
+        let csv = "\
+geography_id,geography_type,label,category,enclave_type,primary_brand,store_count,competing_brand_count,evidence_summary,source_report
+kingston,place,Kingston WA,auto_parts,castle_town,NAPA Auto Parts,2,0,NAPA rows appear in Kingston,reports/example.md
+";
+        let error = parse_ret_examples(csv).expect_err("invalid RET type should fail");
+
+        assert!(error.contains("invalid enclave_type"));
     }
 
     #[test]

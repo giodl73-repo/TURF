@@ -5,15 +5,15 @@ use turf_core::{
     build_market_packet, classify_metro_rings, enrich_county_store_points_with_metro,
     enrich_postal_store_points_with_county, filter_metro_store_points, inspect_place_contexts,
     nearest_opposite_brand, packet_ready_postal_store_points, packet_ready_store_points,
-    parse_county_cbsa_contexts, parse_demand_points, parse_place_contexts,
+    parse_county_cbsa_contexts, parse_demand_points, parse_place_contexts, parse_ret_examples,
     parse_reviewed_store_points, parse_store_points, parse_zcta_county_contexts,
     render_county_store_points_csv, render_market_packet_json, render_market_packet_markdown,
     render_metro_store_points_csv, render_place_context_findings_json,
     render_postal_store_points_csv, render_store_points_csv, summarize_counties_in_metro,
     summarize_county_footprint, summarize_footprint, summarize_metro_footprint,
-    summarize_metro_rings, summarize_postal_footprint, validate_county_cbsa_contexts,
-    validate_market_packet_json, validate_national_store_points, validate_reviewed_store_points,
-    validate_zcta_county_contexts,
+    summarize_metro_rings, summarize_postal_footprint, summarize_ret_examples,
+    validate_county_cbsa_contexts, validate_market_packet_json, validate_national_store_points,
+    validate_ret_examples, validate_reviewed_store_points, validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -161,6 +161,25 @@ fn run() -> Result<(), String> {
             let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
             let rows = validate_county_cbsa_contexts(&csv)?;
             println!("valid,{},{}", path, rows);
+            Ok(())
+        }
+        Some("validate-ret") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli validate-ret <ret-examples.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let rows = validate_ret_examples(&csv)?;
+            println!("valid,{},{}", path, rows);
+            Ok(())
+        }
+        Some("summarize-ret") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli summarize-ret <ret-examples.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let examples = parse_ret_examples(&csv)?;
+            let summary = summarize_ret_examples(&examples);
+            print_ret_summary(&summary);
             Ok(())
         }
         Some("summarize-review") => {
@@ -359,6 +378,8 @@ fn print_help() {
     );
     println!("  validate-zcta-county <zcta-county.csv>  Check ZCTA-county context contract");
     println!("  validate-county-cbsa <county-cbsa.csv>  Check county-CBSA context contract");
+    println!("  validate-ret <ret-examples.csv>  Check Retail Enclave Typology examples");
+    println!("  summarize-ret <ret-examples.csv>  Summarize Retail Enclave Typology examples");
     println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
     println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
     println!("  summarize-postal-review <reviewed-stores.csv>  Summarize packet-ready postal ZIPs");
@@ -503,6 +524,25 @@ fn print_metro_summary(summary: &[turf_core::MetroDominance]) {
             metro.total_stores,
             status
         );
+    }
+}
+
+fn print_ret_summary(summary: &turf_core::RetSummary) {
+    println!("total_examples,{}", summary.total_examples);
+    println!();
+    println!("enclave_type,examples");
+    for count in &summary.enclave_type_counts {
+        println!("{},{}", count.key, count.examples);
+    }
+    println!();
+    println!("category,examples");
+    for count in &summary.category_counts {
+        println!("{},{}", count.key, count.examples);
+    }
+    println!();
+    println!("geography_type,examples");
+    for count in &summary.geography_type_counts {
+        println!("{},{}", count.key, count.examples);
     }
 }
 

@@ -29,6 +29,8 @@ cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-h
 cargo run -p turf-cli -- ring-metro-review 12060 33.7490 -84.3880 fixtures\stores\overture-home-improvement-georgia-review-2026-07-22.csv fixtures\geography\georgia-zcta-county-primary-2020.csv fixtures\geography\georgia-county-cbsa-2023.csv
 cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-home-improvement-washington-review-2026-07-22.csv fixtures\geography\washington-zcta-county-primary-2020.csv fixtures\geography\washington-county-cbsa-2023.csv
 cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv fixtures\geography\washington-auto-parts-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
+cargo run -p turf-cli -- validate-ret fixtures\geography\ret-washington-examples.csv
+cargo run -p turf-cli -- summarize-ret fixtures\geography\ret-washington-examples.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -77,6 +79,9 @@ county dominance, and nearest opposite-brand spacing.
 
 The `ring-metro-review` command classifies one CBSA by distance from an explicit
 core point and reports brand mix by ring.
+
+The `validate-ret` and `summarize-ret` commands check and summarize Retail
+Enclave Typology examples.
 
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.

@@ -41,6 +41,7 @@ before broader chain coverage begins.
 | 22 | Washington auto parts footprint | complete | Added Washington auto-parts extract and showed denser Seattle/Kitsap service geography. |
 | 23 | Washington category spread comparison | complete | Compared home improvement vs auto parts as big-box destination vs local service geography. |
 | 24 | RET taxonomy sketch | complete | Introduced Retail Enclave Typology and seeded Washington enclave examples. |
+| 25 | Executable RET examples | complete | Added RET parser, validator, summary command, CLI wiring, and tests. |
 
 ## Success criteria
 
