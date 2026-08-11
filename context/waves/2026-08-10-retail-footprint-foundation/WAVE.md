@@ -57,6 +57,7 @@ before broader chain coverage begins.
 | 38 | RET place capacity matrix | complete | Added selected-place 0/1/2+ store-type capacity rows for Puget Sound and Atlanta comparison. |
 | 39 | Georgia auto parts backfill | complete | Backfilled Georgia auto parts and refreshed RET profiles so Atlanta has all three daily-life category layers. |
 | 40 | RET capacity synthesis | complete | Added Seattle/Bremerton/Atlanta capacity archetype synthesis and next spacing/access questions. |
+| 41 | RET place spacing profile | complete | Added selected-place same-category opposite-brand spacing to separate capacity from rivalry-supported candidates. |
 
 ## Success criteria
 

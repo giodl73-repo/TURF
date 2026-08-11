@@ -77,3 +77,9 @@ access layer:
 
 That is where TURF can begin distinguishing complete service capacity from
 evidence-backed rivalry.
+
+The first same-place spacing layer is:
+
+```text
+reports/ret-seattle-atlanta-spacing-readout.md
+```

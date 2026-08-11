@@ -52,6 +52,7 @@ cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-q
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 duckdb -c ".read queries/ret-profile-v0-metro-comparison.sql"
 duckdb -c ".read queries/ret-profile-v0-place-capacity-matrix.sql"
+duckdb -c ".read queries/ret-profile-v0-place-spacing-summary.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -196,6 +197,9 @@ The first RET Profile v0 place capacity matrix is:
 
 The first Seattle/Atlanta RET capacity synthesis is:
 `reports\ret-seattle-atlanta-capacity-synthesis.md`.
+
+The first Seattle/Atlanta RET spacing readout is:
+`reports\ret-seattle-atlanta-spacing-readout.md`.
 
 ## Product thesis
 

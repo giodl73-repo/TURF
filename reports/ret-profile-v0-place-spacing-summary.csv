@@ -1,0 +1,42 @@
+place_id,label,city,state,place_context,category,total_stores,brand_count,nearest_opposite_brand_miles,median_nearest_opposite_brand_miles,close_pairs_under_quarter_mile,close_pairs_under_half_mile,spacing_profile_hint,evidence_summary
+seattle,Seattle WA,Seattle,WA,puget_sound_core,home_improvement,5,2,0.47,1.81,0,2,same_place_rivalry_signal,multiple nearest opposite-brand links under 0.5 miles
+seattle,Seattle WA,Seattle,WA,puget_sound_core,qsr,25,4,0.12,1.3,4,7,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+seattle,Seattle WA,Seattle,WA,puget_sound_core,auto_parts,15,4,0.25,1.52,2,2,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+tacoma,Tacoma WA,Tacoma,WA,puget_sound_core,home_improvement,4,2,0.31,1.92,0,2,same_place_rivalry_signal,multiple nearest opposite-brand links under 0.5 miles
+tacoma,Tacoma WA,Tacoma,WA,puget_sound_core,qsr,25,4,0.03,0.36,8,14,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+tacoma,Tacoma WA,Tacoma,WA,puget_sound_core,auto_parts,16,4,0.16,0.67,4,4,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+bellevue,Bellevue WA,Bellevue,WA,puget_sound_core,home_improvement,1,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+bellevue,Bellevue WA,Bellevue,WA,puget_sound_core,qsr,8,4,0.1,0.85,3,3,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+bellevue,Bellevue WA,Bellevue,WA,puget_sound_core,auto_parts,4,3,1.53,1.83,0,0,co_presence_spacing_observed,opposite-brand co-presence exists but close-pair threshold not met
+bainbridge-island,Bainbridge Island WA,Bainbridge Island,WA,ferry_side_place,qsr,1,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+kingston,Kingston WA,Kingston,WA,ferry_side_place,qsr,1,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+kingston,Kingston WA,Kingston,WA,ferry_side_place,auto_parts,2,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+bremerton,Bremerton WA,Bremerton,WA,ferry_side_place,qsr,9,4,0.06,0.11,6,7,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+bremerton,Bremerton WA,Bremerton,WA,ferry_side_place,auto_parts,7,3,0.06,0.27,3,5,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+silverdale,Silverdale WA,Silverdale,WA,kitsap_service_node,home_improvement,2,2,0.44,0.44,0,2,same_place_rivalry_signal,multiple nearest opposite-brand links under 0.5 miles
+silverdale,Silverdale WA,Silverdale,WA,kitsap_service_node,qsr,6,4,0.16,0.18,4,6,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+silverdale,Silverdale WA,Silverdale,WA,kitsap_service_node,auto_parts,3,2,0.2,0.2,2,2,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+poulsbo,Poulsbo WA,Poulsbo,WA,kitsap_service_node,home_improvement,1,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+poulsbo,Poulsbo WA,Poulsbo,WA,kitsap_service_node,qsr,4,4,0.06,0.28,2,3,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+poulsbo,Poulsbo WA,Poulsbo,WA,kitsap_service_node,auto_parts,2,2,0.88,0.88,0,0,co_presence_spacing_observed,opposite-brand co-presence exists but close-pair threshold not met
+port-orchard,Port Orchard WA,Port Orchard,WA,kitsap_service_node,home_improvement,1,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+port-orchard,Port Orchard WA,Port Orchard,WA,kitsap_service_node,qsr,6,4,0.18,0.54,2,2,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+port-orchard,Port Orchard WA,Port Orchard,WA,kitsap_service_node,auto_parts,3,3,0.15,0.15,2,2,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+atlanta,Atlanta GA,Atlanta,GA,atlanta_core,home_improvement,6,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+atlanta,Atlanta GA,Atlanta,GA,atlanta_core,qsr,55,4,0.03,0.41,21,30,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+atlanta,Atlanta GA,Atlanta,GA,atlanta_core,auto_parts,28,4,0.22,0.97,2,6,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+marietta,Marietta GA,Marietta,GA,atlanta_suburban_node,home_improvement,4,2,0.45,5.83,0,2,same_place_rivalry_signal,multiple nearest opposite-brand links under 0.5 miles
+marietta,Marietta GA,Marietta,GA,atlanta_suburban_node,qsr,33,4,0.03,0.22,22,22,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+marietta,Marietta GA,Marietta,GA,atlanta_suburban_node,auto_parts,25,3,0.06,0.28,10,17,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+alpharetta,Alpharetta GA,Alpharetta,GA,atlanta_suburban_node,home_improvement,3,2,0.52,0.52,0,0,co_presence_spacing_observed,opposite-brand co-presence exists but close-pair threshold not met
+alpharetta,Alpharetta GA,Alpharetta,GA,atlanta_suburban_node,qsr,20,4,0.12,0.78,6,9,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+alpharetta,Alpharetta GA,Alpharetta,GA,atlanta_suburban_node,auto_parts,4,3,0.11,0.51,2,2,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+sandy-springs,Sandy Springs GA,Sandy Springs,GA,atlanta_suburban_node,home_improvement,2,2,1.53,1.53,0,0,co_presence_spacing_observed,opposite-brand co-presence exists but close-pair threshold not met
+sandy-springs,Sandy Springs GA,Sandy Springs,GA,atlanta_suburban_node,qsr,4,3,1.05,1.45,0,0,co_presence_spacing_observed,opposite-brand co-presence exists but close-pair threshold not met
+sandy-springs,Sandy Springs GA,Sandy Springs,GA,atlanta_suburban_node,auto_parts,1,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+roswell,Roswell GA,Roswell,GA,atlanta_suburban_node,home_improvement,2,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+roswell,Roswell GA,Roswell,GA,atlanta_suburban_node,qsr,8,4,0.24,0.54,2,4,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+roswell,Roswell GA,Roswell,GA,atlanta_suburban_node,auto_parts,4,2,0.27,1.33,0,2,same_place_rivalry_signal,multiple nearest opposite-brand links under 0.5 miles
+decatur,Decatur GA,Decatur,GA,atlanta_inner_node,home_improvement,3,1,,,0,0,capacity_only_single_brand_or_absent,not enough same-category brands for rivalry spacing
+decatur,Decatur GA,Decatur,GA,atlanta_inner_node,qsr,19,4,0.09,0.55,6,8,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles
+decatur,Decatur GA,Decatur,GA,atlanta_inner_node,auto_parts,14,3,0.06,0.23,8,9,strong_same_place_rivalry_signal,multiple nearest opposite-brand links under 0.25 miles

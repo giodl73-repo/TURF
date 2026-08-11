@@ -1104,3 +1104,36 @@ Status: pass with next-output request.
 
 The next technical step should add spacing and access features so TURF can
 separate complete capacity from evidence-backed rivalry.
+
+## Pulse 41 RET Place Spacing Profile
+
+### Market Analyst
+
+Status: pass.
+
+The spacing profile adds the missing evidence tier between co-presence and
+rivalry. Places can now remain capacity nodes unless same-category brands are
+also near each other.
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The query stays inside selected city/place rows and does not claim corridor,
+parcel, or travel-time access. Puget Sound ferry places still require
+same-side interpretation beyond straight-line distance.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse computes distances from checked-in reviewed public store points and
+does not add new external sources or private-territory claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next layer should replace or supplement straight-line spacing with road,
+drive-time, or corridor context, especially for Atlanta suburban strips and
+Puget Sound ferry-side places.
