@@ -106,7 +106,8 @@ TURF needs to learn first.
 
 ## Next Pulse Shape
 
-The next restaurant pulse should use Overture Places to extract a bounded
-Washington QSR candidate layer for McDonald's, Burger King, Wendy's, and Taco
-Bell, review packet-ready rows, and compare Seattle/Bremerton ferry geography
-against home improvement and auto parts.
+The QSR acquisition pulse now has a DuckDB query and brand-filter fixture. The
+next execution pulse should run that query in an environment with DuckDB,
+validate the raw store contract, create a reviewed packet-ready layer, and
+compare Seattle/Bremerton ferry geography against home improvement and auto
+parts.

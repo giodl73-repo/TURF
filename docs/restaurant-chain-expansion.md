@@ -48,6 +48,12 @@ The first bounded implementation should extract Washington Overture candidate
 rows, review them into packet-ready store rows, and compare QSR against the
 existing home-improvement and auto-parts Puget Sound layers.
 
+The acquisition contract is now staged in:
+
+- `fixtures/stores/qsr-overture-brand-filters.csv`
+- `queries/overture-qsr-washington-2026-07-22.sql`
+- `docs/research/overture-qsr-washington-extraction-2026-07-22.md`
+
 ## Source Policy
 
 Use open Overture Places rows for committed datasets. Official restaurant store

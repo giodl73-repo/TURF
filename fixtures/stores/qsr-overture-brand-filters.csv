@@ -1,0 +1,5 @@
+segment,brand,canonical_brand,match_pattern,review_note
+qsr,McDonald's,McDonald's,mcdonald%,watch punctuation and franchise naming variants
+qsr,Burger King,Burger King,burger king%,watch unrelated offices or non-restaurant facilities
+qsr,Wendy's,Wendy's,wendy%,watch possessive punctuation and stale rows
+qsr,Taco Bell,Taco Bell,taco bell%,watch co-branded KFC Taco Bell rows

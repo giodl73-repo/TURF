@@ -50,6 +50,7 @@ before broader chain coverage begins.
 | 31 | RET place spacing summary | complete | Aggregated same-place spacing rows into place-level RET feature summaries. |
 | 32 | RET spacing-aware place candidates | complete | Added spacing-aware place candidate generation and evaluated it against reviewed examples. |
 | 33 | Restaurant expansion targets | complete | Added QSR-first restaurant sequence and executable chain target contract. |
+| 34 | QSR Overture acquisition gate | complete | Added Washington QSR brand filters, DuckDB query, and review gate for open Overture extraction. |
 
 ## Success criteria
 

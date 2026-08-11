@@ -867,3 +867,36 @@ Status: pass with required next gate.
 The pulse only adds a target list. The next extraction pulse must use open
 Overture rows for committed data and keep official restaurant locators limited
 to allowed manual validation.
+
+## Pulse 34 QSR Overture Acquisition Gate
+
+### Market Analyst
+
+Status: pass.
+
+The pulse turns the restaurant decision into concrete acquisition work:
+McDonald's, Burger King, Wendy's, and Taco Bell now have an explicit Washington
+filter and a first readout queue for Seattle, Bremerton, and ferry-side places.
+
+### Market Geographer
+
+Status: pass.
+
+The query keeps the same Washington bbox and address-region guard used by prior
+Washington extracts. The review plan also keeps CBSA and place reads separate,
+which matters for Kitsap and ferry-linked markets.
+
+### Source Policy Auditor
+
+Status: pass with execution gate.
+
+No unofficial locator rows were committed. The next pulse must run the checked
+DuckDB query against Overture Places, validate the raw store contract, and only
+then create a reviewed packet-ready layer.
+
+### Future Agent
+
+Status: pass.
+
+The query, filter fixture, and review notes give the next agent a direct path
+from open Overture source to TURF's existing reviewed-store contract.

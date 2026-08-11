@@ -41,6 +41,7 @@ cargo run -p turf-cli -- ret-place-spacing-summary auto_parts fixtures\geography
 cargo run -p turf-cli -- suggest-ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
 cargo run -p turf-cli -- summarize-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
+duckdb -c ".read queries/overture-qsr-washington-2026-07-22.sql"
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -115,6 +116,9 @@ The `validate-restaurant-targets` and `summarize-restaurant-targets` commands
 check the next restaurant expansion sequence: QSR first, then fast casual, then
 casual dining.
 
+The first QSR acquisition query is:
+`queries\overture-qsr-washington-2026-07-22.sql`.
+
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
@@ -135,6 +139,9 @@ The first chain expansion decision is:
 
 The restaurant expansion sequence is:
 `docs\restaurant-chain-expansion.md`.
+
+The Washington QSR Overture acquisition gate is:
+`docs\research\overture-qsr-washington-extraction-2026-07-22.md`.
 
 The first auto-parts comparison report is:
 `reports\auto-parts-seattle-puget-sound.md`.
