@@ -194,6 +194,9 @@ The first RET Profile v0 metro comparison is:
 The first RET Profile v0 place capacity matrix is:
 `reports\ret-profile-v0-place-capacity-readout.md`.
 
+The first Seattle/Atlanta RET capacity synthesis is:
+`reports\ret-seattle-atlanta-capacity-synthesis.md`.
+
 ## Product thesis
 
 Retail chains leave a public geography behind. Store locations, roads, cities,

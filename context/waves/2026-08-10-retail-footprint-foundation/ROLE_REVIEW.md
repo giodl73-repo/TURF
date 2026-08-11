@@ -1072,3 +1072,35 @@ Status: pass with next-output request.
 
 Atlanta now has enough category density for same-place and corridor spacing
 tests comparable to the Puget Sound auto-parts read.
+
+## Pulse 40 RET Capacity Synthesis
+
+### Market Analyst
+
+Status: pass.
+
+The synthesis makes the current learning easier to use: capacity archetypes
+come before rivalry claims, and selected Seattle, Kitsap, and Atlanta places are
+now comparable with the same grammar.
+
+### Market Geographer
+
+Status: pass.
+
+The report preserves the key geography distinction. Seattle is a barrier-split
+metro field, Bremerton is a ferry-side metro, and Atlanta is a continuous inland
+field.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report adds interpretation only from checked-in profile outputs. It does not
+add new sources or imply unpublished company territories.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next technical step should add spacing and access features so TURF can
+separate complete capacity from evidence-backed rivalry.
