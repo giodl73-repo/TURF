@@ -59,6 +59,7 @@ before broader chain coverage begins.
 | 40 | RET capacity synthesis | complete | Added Seattle/Bremerton/Atlanta capacity archetype synthesis and next spacing/access questions. |
 | 41 | RET place spacing profile | complete | Added selected-place same-category opposite-brand spacing to separate capacity from rivalry-supported candidates. |
 | 42 | North Seattle enclave profile | complete | Profiled Aurora, Northgate/Lake City, Edmonds, Lynnwood/Alderwood, Bothell/Kenmore, Mill Creek, and Everett as nested RET types. |
+| 43 | Washington mass retail layer | complete | Added Target/Walmart/Costco Washington extract and used it to sharpen North Seattle anchor/corridor types. |
 
 ## Success criteria
 

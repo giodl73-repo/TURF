@@ -26,6 +26,9 @@ UNION ALL
 SELECT 'auto_parts', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-auto-parts-washington-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
+SELECT 'mass_retail', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
+FROM read_csv_auto('fixtures/stores/overture-mass-retail-washington-review-2026-07-22.csv', all_varchar = true)
+UNION ALL
 SELECT 'qsr', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-qsr-washington-review-2026-07-22.csv', all_varchar = true);
 
@@ -111,6 +114,8 @@ COPY (
             coalesce(sum(CASE WHEN category_summary.category = 'home_improvement' THEN category_summary.brands ELSE 0 END), 0) AS home_improvement_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'auto_parts' THEN category_summary.stores ELSE 0 END), 0) AS auto_parts_stores,
             coalesce(sum(CASE WHEN category_summary.category = 'auto_parts' THEN category_summary.brands ELSE 0 END), 0) AS auto_parts_brands,
+            coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.stores ELSE 0 END), 0) AS mass_retail_stores,
+            coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.brands ELSE 0 END), 0) AS mass_retail_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'qsr' THEN category_summary.stores ELSE 0 END), 0) AS qsr_stores,
             coalesce(sum(CASE WHEN category_summary.category = 'qsr' THEN category_summary.brands ELSE 0 END), 0) AS qsr_brands,
             string_agg(
@@ -138,6 +143,8 @@ COPY (
         home_improvement_brands,
         auto_parts_stores,
         auto_parts_brands,
+        mass_retail_stores,
+        mass_retail_brands,
         qsr_stores,
         qsr_brands,
         coalesce(category_summary, '') AS category_summary,
@@ -145,12 +152,14 @@ COPY (
         categories_with_half_mile_spacing,
         round(nearest_spacing_miles, 2) AS nearest_spacing_miles,
         CASE
-            WHEN zone_id = 'lynnwood-alderwood' AND home_improvement_brands >= 2 AND auto_parts_brands >= 3 AND qsr_brands >= 3
+            WHEN zone_id = 'lynnwood-alderwood' AND home_improvement_brands >= 2 AND auto_parts_brands >= 3 AND qsr_brands >= 3 AND mass_retail_brands >= 3
                 THEN 'regional_anchor_absorber'
             WHEN zone_context = 'subcity_corridor' AND total_stores >= 6
                 THEN 'retail_corridor'
             WHEN zone_context = 'ferry_town_edge'
                 THEN 'ferry_town_service_edge'
+            WHEN mass_retail_brands >= 2 AND home_improvement_brands >= 2
+                THEN 'regional_anchor_node'
             WHEN home_improvement_brands >= 2 AND auto_parts_brands >= 2 AND qsr_brands >= 3
                 THEN 'complete_daily_life_node'
             WHEN home_improvement_brands >= 1 AND qsr_brands >= 3

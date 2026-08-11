@@ -1169,3 +1169,36 @@ Status: pass with next-output request.
 
 The profile should eventually be tested against road corridors and drive-time
 links, especially between Aurora, Shoreline, Edmonds, and Lynnwood/Alderwood.
+
+## Pulse 43 Washington Mass Retail Layer
+
+### Market Analyst
+
+Status: pass.
+
+Mass retail sharpens the north-end hierarchy. Lynnwood/Alderwood becomes a
+clearer regional anchor absorber, Everett upgrades to a regional anchor node,
+and Aurora remains a corridor rather than a mass-retail anchor.
+
+### Market Geographer
+
+Status: pass.
+
+The profile keeps Aurora as a subcity slice and Lynnwood/Alderwood as a city
+proxy for the regional anchor. The report does not claim official neighborhood
+or mall catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass with review caveat.
+
+Rows come from open Overture Places. Pharmacy, optical, distribution,
+warehouse, tire, and duplicate rows were excluded in the reviewed layer.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Mass retail creates stronger catchment questions than QSR or auto parts. The
+next model should test whether Lynnwood/Alderwood absorbs nearby thin and mixed
+edge nodes such as Edmonds, Mountlake Terrace, Shoreline, and Kenmore.
