@@ -46,6 +46,7 @@ cargo run -p turf-cli -- suggest-ret-place auto_parts fixtures\geography\ret-pug
 cargo run -p turf-cli -- evaluate-ret-place fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-puget-sound-place-candidates.csv
 cargo run -p turf-cli -- ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- ret-place-spacing-summary auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
+cargo run -p turf-cli -- suggest-ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 ```
 
 They are deliberately hand-reviewed examples, not model output. TURF should
@@ -107,3 +108,6 @@ ordinary multi-brand service patterns.
 
 The first same-place competitor-spacing readout is documented in
 `reports/ret-place-spacing-readout.md`.
+
+The first spacing-aware place candidate evaluation is documented in
+`reports/ret-place-spacing-candidate-evaluation.md`.

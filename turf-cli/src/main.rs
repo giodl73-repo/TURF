@@ -12,12 +12,12 @@ use turf_core::{
     render_county_store_points_csv, render_market_packet_json, render_market_packet_markdown,
     render_metro_store_points_csv, render_place_context_findings_json,
     render_postal_store_points_csv, render_store_points_csv, suggest_ret_metro_candidates,
-    suggest_ret_place_candidates, summarize_counties_in_metro, summarize_county_footprint,
-    summarize_footprint, summarize_metro_footprint, summarize_metro_rings,
-    summarize_postal_footprint, summarize_ret_examples, summarize_ret_place_spacing,
-    validate_county_cbsa_contexts, validate_market_packet_json, validate_national_store_points,
-    validate_ret_examples, validate_ret_place_targets, validate_reviewed_store_points,
-    validate_zcta_county_contexts,
+    suggest_ret_place_candidates, suggest_ret_place_candidates_with_spacing,
+    summarize_counties_in_metro, summarize_county_footprint, summarize_footprint,
+    summarize_metro_footprint, summarize_metro_rings, summarize_postal_footprint,
+    summarize_ret_examples, summarize_ret_place_spacing, validate_county_cbsa_contexts,
+    validate_market_packet_json, validate_national_store_points, validate_ret_examples,
+    validate_ret_place_targets, validate_reviewed_store_points, validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -231,6 +231,27 @@ fn run() -> Result<(), String> {
             let targets = parse_ret_place_targets(&targets_csv)?;
             let reviewed_points = parse_reviewed_store_points(&reviewed_csv)?;
             let candidates = suggest_ret_place_candidates(&category, &targets, &reviewed_points);
+            print_ret_metro_candidates(&candidates);
+            Ok(())
+        }
+        Some("suggest-ret-place-spacing") => {
+            let category = args.next().ok_or(
+                "usage: turf-cli suggest-ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let targets_path = args.next().ok_or(
+                "usage: turf-cli suggest-ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let reviewed_path = args.next().ok_or(
+                "usage: turf-cli suggest-ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let targets_csv = fs::read_to_string(&targets_path)
+                .map_err(|error| format!("{targets_path}: {error}"))?;
+            let reviewed_csv = fs::read_to_string(&reviewed_path)
+                .map_err(|error| format!("{reviewed_path}: {error}"))?;
+            let targets = parse_ret_place_targets(&targets_csv)?;
+            let reviewed_points = parse_reviewed_store_points(&reviewed_csv)?;
+            let candidates =
+                suggest_ret_place_candidates_with_spacing(&category, &targets, &reviewed_points);
             print_ret_metro_candidates(&candidates);
             Ok(())
         }
@@ -511,6 +532,9 @@ fn print_help() {
         "  suggest-ret-metro <category> <reviewed-stores.csv> <zcta-county.csv> <county-cbsa.csv>"
     );
     println!("  suggest-ret-place <category> <ret-place-targets.csv> <reviewed-stores.csv>");
+    println!(
+        "  suggest-ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>"
+    );
     println!("  evaluate-ret-metro <ret-examples.csv> <ret-metro-candidates.csv>");
     println!("  evaluate-ret-place <ret-examples.csv> <ret-place-candidates.csv>");
     println!("  ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>");

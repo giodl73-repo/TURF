@@ -1850,6 +1850,75 @@ pub fn suggest_ret_place_candidates(
         .collect()
 }
 
+pub fn suggest_ret_place_candidates_with_spacing(
+    category: &str,
+    targets: &[RetPlaceTarget],
+    reviewed_points: &[ReviewedStorePoint],
+) -> Vec<RetMetroCandidate> {
+    let spacing_by_geography: BTreeMap<String, RetPlaceSpacingSummary> =
+        summarize_ret_place_spacing(category, targets, reviewed_points)
+            .into_iter()
+            .map(|summary| (summary.geography_id.clone(), summary))
+            .collect();
+
+    targets
+        .iter()
+        .map(|target| {
+            let matching_points: Vec<&ReviewedStorePoint> = reviewed_points
+                .iter()
+                .filter(|point| {
+                    point.review_status == "packet_ready"
+                        && point.city.eq_ignore_ascii_case(&target.city)
+                        && point.state.eq_ignore_ascii_case(&target.state)
+                })
+                .collect();
+
+            let mut brand_counts: BTreeMap<String, usize> = BTreeMap::new();
+            for point in &matching_points {
+                *brand_counts.entry(point.brand.clone()).or_insert(0) += 1;
+            }
+            let total_stores = matching_points.len();
+            let brand_count = brand_counts.len();
+            let (primary_brand, leader_stores) = brand_counts
+                .iter()
+                .max_by(|left, right| left.1.cmp(right.1).then_with(|| right.0.cmp(left.0)))
+                .map(|(brand, stores)| (brand.clone(), *stores))
+                .unwrap_or_else(|| ("".to_string(), 0));
+            let leader_share = if total_stores == 0 {
+                0.0
+            } else {
+                leader_stores as f64 / total_stores as f64
+            };
+            let spacing = spacing_by_geography
+                .get(&target.geography_id)
+                .expect("spacing summary exists for every target");
+            let enclave_type = suggest_ret_place_enclave_type_with_spacing(
+                category,
+                &target.barrier_context,
+                total_stores,
+                brand_count,
+                leader_share,
+                spacing.nearest_opposite_brand_miles,
+                spacing.close_opposite_brand_pairs_under_half_mile,
+            );
+
+            RetMetroCandidate {
+                category: category.to_string(),
+                geography_id: target.geography_id.clone(),
+                geography_type: "place".to_string(),
+                label: target.label.clone(),
+                enclave_type,
+                primary_brand,
+                total_stores,
+                brand_count,
+                leader_share,
+                nearest_opposite_brand_miles: spacing.nearest_opposite_brand_miles,
+                evidence_summary: ret_place_spacing_evidence(target, spacing),
+            }
+        })
+        .collect()
+}
+
 pub fn suggest_ret_metro_candidates(
     category: &str,
     points: &[MetroStorePoint],
@@ -2540,6 +2609,66 @@ fn suggest_ret_place_enclave_type(
     "service_mesh".to_string()
 }
 
+fn suggest_ret_place_enclave_type_with_spacing(
+    category: &str,
+    barrier_context: &str,
+    total_stores: usize,
+    brand_count: usize,
+    leader_share: f64,
+    nearest_opposite_brand_miles: Option<f64>,
+    close_opposite_brand_pairs_under_half_mile: usize,
+) -> String {
+    if total_stores == 0 {
+        return "white_space".to_string();
+    }
+
+    if category == "home_improvement" {
+        return "anchor_market".to_string();
+    }
+
+    if brand_count >= 3
+        && (leader_share <= 0.5
+            || close_opposite_brand_pairs_under_half_mile > 0
+            || nearest_opposite_brand_miles.is_some_and(|distance| distance < 0.5))
+    {
+        return "contested_service_grid".to_string();
+    }
+
+    if brand_count >= 2 && leader_share > 0.5 {
+        return "brand_led_service_mesh".to_string();
+    }
+
+    if brand_count >= 2 {
+        return "service_mesh".to_string();
+    }
+
+    if barrier_context == "ferry_side" && category != "home_improvement" {
+        return "ferry_side_enclave".to_string();
+    }
+
+    "service_mesh".to_string()
+}
+
+fn ret_place_spacing_evidence(target: &RetPlaceTarget, spacing: &RetPlaceSpacingSummary) -> String {
+    let nearest = spacing
+        .nearest_opposite_brand_miles
+        .map(|distance| format!("{distance:.2}"))
+        .unwrap_or_else(|| "none".to_string());
+    let median = spacing
+        .median_nearest_opposite_brand_miles
+        .map(|distance| format!("{distance:.2}"))
+        .unwrap_or_else(|| "none".to_string());
+    format!(
+        "{} stores across {} brands in {}; nearest opposite-brand {} miles; median nearest opposite-brand {} miles; {} close opposite-brand pairs under 0.5 miles",
+        spacing.total_stores,
+        spacing.brand_count,
+        target.city,
+        nearest,
+        median,
+        spacing.close_opposite_brand_pairs_under_half_mile
+    )
+}
+
 fn normalize_zip5(value: &str) -> String {
     value
         .chars()
@@ -2949,6 +3078,40 @@ NAPA Auto Parts,napa-kingston,NAPA Kingston,108 Test Ave,Kingston,WA,98346,47.80
         assert_eq!(summaries[1].brand_count, 1);
         assert_eq!(summaries[1].nearest_opposite_brand_miles, None);
         assert_eq!(summaries[1].close_opposite_brand_pairs_under_half_mile, 0);
+    }
+
+    #[test]
+    fn suggests_ret_place_candidates_with_spacing_features() {
+        let targets_csv = "\
+geography_id,label,city,state,barrier_context
+bremerton,Bremerton WA,Bremerton,WA,ferry_side
+kingston,Kingston WA,Kingston,WA,ferry_side
+";
+        let reviewed_csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+NAPA Auto Parts,napa-1,NAPA Bremerton,123 Test Ave,Bremerton,WA,98311,47.6111,-122.6294,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+O'Reilly Auto Parts,oreilly-1,O'Reilly Bremerton,456 Test Ave,Bremerton,WA,98311,47.6114,-122.6283,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+AutoZone,autozone-1,AutoZone Bremerton,789 Test Ave,Bremerton,WA,98311,47.6120,-122.6300,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+NAPA Auto Parts,napa-kingston,NAPA Kingston,108 Test Ave,Kingston,WA,98346,47.8051,-122.5098,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+NAPA Auto Parts,napa-kingston-2,NAPA Kingston North,109 Test Ave,Kingston,WA,98346,47.8053,-122.5100,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+";
+        let targets = parse_ret_place_targets(targets_csv).expect("targets parse");
+        let reviewed = parse_reviewed_store_points(reviewed_csv).expect("reviewed parse");
+        let candidates =
+            suggest_ret_place_candidates_with_spacing("auto_parts", &targets, &reviewed);
+
+        assert_eq!(candidates.len(), 2);
+        assert_eq!(candidates[0].geography_id, "bremerton");
+        assert_eq!(candidates[0].enclave_type, "contested_service_grid");
+        assert!(candidates[0].nearest_opposite_brand_miles.unwrap() < 0.1);
+        assert!(
+            candidates[0]
+                .evidence_summary
+                .contains("close opposite-brand pairs under 0.5 miles")
+        );
+        assert_eq!(candidates[1].geography_id, "kingston");
+        assert_eq!(candidates[1].enclave_type, "ferry_side_enclave");
+        assert_eq!(candidates[1].nearest_opposite_brand_miles, None);
     }
 
     #[test]

@@ -800,3 +800,36 @@ Status: pass.
 
 The pulse only computes features from existing reviewed rows. It adds no new
 external acquisition and makes no private-territory claim.
+
+## Pulse 32 RET Spacing-Aware Place Candidates
+
+### Market Analyst
+
+Status: pass.
+
+The spacing-aware candidate output improves auditability without forcing label
+changes. That is the right behavior for the current Puget Sound fixture because
+the prior labels already matched all reviewed examples.
+
+### Market Geographer
+
+Status: pass.
+
+The command keeps spacing inside curated place targets. Kingston remains a
+single-brand ferry-side enclave, while Bremerton is a same-place contested grid.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The candidate evidence is now strong enough to support a future threshold test:
+for example, whether three brands plus at least one close pair under 0.5 miles
+should be sufficient for `contested_service_grid`.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse only computes new candidate rows from already-reviewed public
+fixtures. It does not add acquisition sources or imply internal chain
+territories.
