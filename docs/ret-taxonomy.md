@@ -67,6 +67,10 @@ largest brand, but AutoZone, NAPA, and Advance also produce a dense local grid.
 Bremerton-Silverdale-Port Orchard auto parts is `brand_led_service_mesh`: NAPA
 leads with 9 of 17 rows while O'Reilly and AutoZone remain present.
 
+Bremerton as a place is different from its CBSA. It is home-improvement
+`white_space`, but auto parts is `contested_service_grid` with NAPA, AutoZone,
+and O'Reilly all present in the city rows.
+
 ## Automation Direction
 
 RET can become executable after the initial examples stabilize. Candidate

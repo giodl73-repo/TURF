@@ -36,6 +36,7 @@ Home improvement:
 |---|---|---|---|
 | Kingston WA | `white_space` | `white_space` | `match` |
 | Bainbridge Island WA | `white_space` | `white_space` | `match` |
+| Bremerton WA | `white_space` | `white_space` | `match` |
 | Poulsbo WA | `anchor_market` | `anchor_market` | `match` |
 | Silverdale WA | `anchor_market` | `anchor_market` | `match` |
 | Port Orchard WA | `anchor_market` | `anchor_market` | `match` |
@@ -46,6 +47,7 @@ Auto parts:
 |---|---|---|---|
 | Kingston WA | `ferry_side_enclave` | `ferry_side_enclave` | `match` |
 | Bainbridge Island WA | `white_space` | `white_space` | `match` |
+| Bremerton WA | `contested_service_grid` | `contested_service_grid` | `match` |
 | Poulsbo WA | `service_mesh` | `service_mesh` | `match` |
 | Silverdale WA | `brand_led_service_mesh` | `brand_led_service_mesh` | `match` |
 | Port Orchard WA | `contested_service_grid` | `contested_service_grid` | `match` |
@@ -62,8 +64,9 @@ resolve to normal service labels: Poulsbo is a two-brand `service_mesh`,
 Silverdale is `brand_led_service_mesh`, and Port Orchard is a three-brand
 `contested_service_grid`.
 
-Bremerton has no hand-reviewed place example yet. The generated auto-parts
-candidate labels it `contested_service_grid`: seven rows across NAPA,
-O'Reilly, and AutoZone. That is a useful next review item because it differs
-from the larger Bremerton-Silverdale-Port Orchard CBSA, which remains
-NAPA-led.
+Bremerton is now the clearest place-vs-metro contrast. At the place level it is
+home-improvement `white_space` and auto-parts `contested_service_grid`: seven
+rows across NAPA, O'Reilly, and AutoZone. The larger
+Bremerton-Silverdale-Port Orchard CBSA remains NAPA-led because Poulsbo,
+Silverdale, Kingston, and Port Orchard add enough NAPA rows to change the
+regional read.

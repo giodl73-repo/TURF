@@ -1,6 +1,7 @@
 category,geography_id,geography_type,label,expected_enclave_type,suggested_enclave_type,evaluation_status
 home_improvement,kingston,place,Kingston WA,white_space,white_space,match
 home_improvement,bainbridge-island,place,Bainbridge Island WA,white_space,white_space,match
+home_improvement,bremerton,place,Bremerton WA,white_space,white_space,match
 home_improvement,poulsbo,place,Poulsbo WA,anchor_market,anchor_market,match
 home_improvement,silverdale,place,Silverdale WA,anchor_market,anchor_market,match
 home_improvement,port-orchard,place,Port Orchard WA,anchor_market,anchor_market,match

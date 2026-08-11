@@ -22,6 +22,8 @@ different commercial forms by category:
 - Kitsap is denser and NAPA-led for auto parts.
 - Kingston is home-improvement `white_space` but an auto-parts
   `ferry_side_enclave`.
+- Bremerton is home-improvement `white_space` but an auto-parts
+  `contested_service_grid`.
 
 ## Seed Examples
 
@@ -33,6 +35,8 @@ different commercial forms by category:
 | Seattle-Tacoma-Bellevue CBSA | Auto parts | `contested_service_grid` | 197 auto-parts rows; O'Reilly largest but all four brands present. |
 | Bremerton-Silverdale-Port Orchard CBSA | Home improvement | `anchor_market` | Thin regional layer with Home Depot and Lowe's tied 2 to 2. |
 | Bremerton-Silverdale-Port Orchard CBSA | Auto parts | `brand_led_service_mesh` | NAPA leads 9 of 17 while O'Reilly and AutoZone remain present. |
+| Bremerton | Home improvement | `white_space` | No direct packet-ready Home Depot/Lowe's row. |
+| Bremerton | Auto parts | `contested_service_grid` | Seven city rows: 3 NAPA, 2 AutoZone, and 2 O'Reilly. |
 | Port Orchard | Auto parts | `contested_service_grid` | AutoZone, NAPA, and O'Reilly each appear once. |
 | Bainbridge Island | Home improvement and auto parts | `white_space` | Neither category has a direct packet-ready row in this first pass. |
 

@@ -7,6 +7,8 @@ kingston,place,Kingston WA,auto_parts,ferry_side_enclave,NAPA Auto Parts,2,0,Two
 14740,cbsa,Bremerton-Silverdale-Port Orchard WA,auto_parts,brand_led_service_mesh,NAPA Auto Parts,17,2,NAPA leads Kitsap auto parts with 9 rows while O'Reilly and AutoZone remain present,reports/auto-parts-seattle-puget-sound.md
 bainbridge-island,place,Bainbridge Island WA,home_improvement,white_space,,0,0,No direct packet-ready Home Depot or Lowe's row in Bainbridge Island,reports/home-improvement-seattle-puget-sound.md
 bainbridge-island,place,Bainbridge Island WA,auto_parts,white_space,,0,0,No direct packet-ready auto-parts row in Bainbridge Island,reports/auto-parts-seattle-puget-sound.md
+bremerton,place,Bremerton WA,home_improvement,white_space,,0,0,No direct packet-ready Home Depot or Lowe's row in Bremerton although the broader CBSA has four rows,reports/home-improvement-seattle-puget-sound.md
+bremerton,place,Bremerton WA,auto_parts,contested_service_grid,NAPA Auto Parts,7,2,Seven Bremerton rows span AutoZone NAPA and O'Reilly with NAPA largest at three rows,reports/auto-parts-seattle-puget-sound.md
 poulsbo,place,Poulsbo WA,home_improvement,anchor_market,Home Depot,1,0,One Home Depot row anchors the local home-improvement read,reports/washington-category-spread-comparison.md
 poulsbo,place,Poulsbo WA,auto_parts,service_mesh,,2,2,NAPA and O'Reilly both appear in Poulsbo showing local service competition,reports/washington-category-spread-comparison.md
 silverdale,place,Silverdale WA,home_improvement,anchor_market,,2,2,Home Depot and Lowe's both appear as thin big-box anchors,reports/washington-category-spread-comparison.md

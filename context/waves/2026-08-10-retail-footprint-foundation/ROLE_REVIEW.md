@@ -700,3 +700,37 @@ Status: pass.
 The pulse reuses checked-in reviewed Overture-derived store rows and adds only
 a hand-curated place target fixture. It does not introduce a new acquisition
 source or claim private company territories.
+
+## Pulse 29 Bremerton RET Example Review
+
+### Market Analyst
+
+Status: pass.
+
+Bremerton is worth promoting into the reviewed fixture because it shows the
+RET idea cleanly: the city-level read and CBSA-level read can tell different
+truths about the same category.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse keeps Bremerton as a place separate from the
+Bremerton-Silverdale-Port Orchard CBSA. That distinction is exactly why TURF
+tracks multiple geographies instead of collapsing everything into one market
+label.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next model improvement should compare same-place rows with nearest
+opposite-brand spacing inside the place. Bremerton has several close same-city
+competitor pairs that can become a corridor-rivalry or service-grid feature.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse only reclassifies already-reviewed checked-in evidence. It does not
+add new source acquisition or claim access to unpublished company geography.
