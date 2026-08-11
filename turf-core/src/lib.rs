@@ -174,6 +174,20 @@ pub struct NearestCompetitor {
 }
 
 #[derive(Debug, Clone, PartialEq)]
+pub struct RetPlaceCompetitorSpacing {
+    pub category: String,
+    pub geography_id: String,
+    pub label: String,
+    pub city: String,
+    pub state: String,
+    pub brand: String,
+    pub store_id: String,
+    pub nearest_brand: String,
+    pub nearest_store_id: String,
+    pub distance_miles: f64,
+}
+
+#[derive(Debug, Clone, PartialEq)]
 pub struct MetroRingStorePoint {
     pub brand: String,
     pub store_id: String,
@@ -1471,6 +1485,70 @@ pub fn nearest_opposite_brand(points: &[MetroStorePoint]) -> Vec<NearestCompetit
     pairs
 }
 
+pub fn nearest_ret_place_competitors(
+    category: &str,
+    targets: &[RetPlaceTarget],
+    reviewed_points: &[ReviewedStorePoint],
+) -> Vec<RetPlaceCompetitorSpacing> {
+    let mut rows = Vec::new();
+
+    for target in targets {
+        let matching_points: Vec<&ReviewedStorePoint> = reviewed_points
+            .iter()
+            .filter(|point| {
+                point.review_status == "packet_ready"
+                    && point.city.eq_ignore_ascii_case(&target.city)
+                    && point.state.eq_ignore_ascii_case(&target.state)
+            })
+            .collect();
+
+        for point in &matching_points {
+            let nearest = matching_points
+                .iter()
+                .filter(|candidate| candidate.brand != point.brand)
+                .map(|candidate| {
+                    (
+                        *candidate,
+                        haversine_miles(
+                            point.latitude,
+                            point.longitude,
+                            candidate.latitude,
+                            candidate.longitude,
+                        ),
+                    )
+                })
+                .min_by(|left, right| {
+                    left.1
+                        .total_cmp(&right.1)
+                        .then_with(|| left.0.store_id.cmp(&right.0.store_id))
+                });
+
+            if let Some((nearest, distance_miles)) = nearest {
+                rows.push(RetPlaceCompetitorSpacing {
+                    category: category.to_string(),
+                    geography_id: target.geography_id.clone(),
+                    label: target.label.clone(),
+                    city: target.city.clone(),
+                    state: target.state.clone(),
+                    brand: point.brand.clone(),
+                    store_id: point.store_id.clone(),
+                    nearest_brand: nearest.brand.clone(),
+                    nearest_store_id: nearest.store_id.clone(),
+                    distance_miles,
+                });
+            }
+        }
+    }
+
+    rows.sort_by(|left, right| {
+        left.distance_miles
+            .total_cmp(&right.distance_miles)
+            .then_with(|| left.geography_id.cmp(&right.geography_id))
+            .then_with(|| left.store_id.cmp(&right.store_id))
+    });
+    rows
+}
+
 pub fn classify_metro_rings(
     points: &[MetroStorePoint],
     core_latitude: f64,
@@ -2710,6 +2788,32 @@ O'Reilly Auto Parts,oreilly-1,O'Reilly Review,789 Test Ave,Kingston,WA,98346,47.
         assert_eq!(candidates[0].primary_brand, "NAPA Auto Parts");
         assert_eq!(candidates[1].geography_id, "bainbridge-island");
         assert_eq!(candidates[1].enclave_type, "white_space");
+    }
+
+    #[test]
+    fn finds_nearest_ret_place_competitors() {
+        let targets_csv = "\
+geography_id,label,city,state,barrier_context
+bremerton,Bremerton WA,Bremerton,WA,ferry_side
+kingston,Kingston WA,Kingston,WA,ferry_side
+";
+        let reviewed_csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+NAPA Auto Parts,napa-1,NAPA Bremerton,123 Test Ave,Bremerton,WA,98311,47.6111,-122.6294,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+O'Reilly Auto Parts,oreilly-1,O'Reilly Bremerton,456 Test Ave,Bremerton,WA,98311,47.6114,-122.6283,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+AutoZone,autozone-review,AutoZone Review,789 Test Ave,Bremerton,WA,98311,47.6120,-122.6300,user fixture,2026-08-11,user_provided,needs_review,primary_store_candidate
+NAPA Auto Parts,napa-kingston,NAPA Kingston,108 Test Ave,Kingston,WA,98346,47.8051,-122.5098,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+";
+        let targets = parse_ret_place_targets(targets_csv).expect("targets parse");
+        let reviewed = parse_reviewed_store_points(reviewed_csv).expect("reviewed parse");
+        let rows = nearest_ret_place_competitors("auto_parts", &targets, &reviewed);
+
+        assert_eq!(rows.len(), 2);
+        assert_eq!(rows[0].geography_id, "bremerton");
+        assert_eq!(rows[0].brand, "NAPA Auto Parts");
+        assert_eq!(rows[0].nearest_brand, "O'Reilly Auto Parts");
+        assert!(rows[0].distance_miles < 0.1);
+        assert!(rows.iter().all(|row| row.geography_id != "kingston"));
     }
 
     #[test]

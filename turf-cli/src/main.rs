@@ -5,18 +5,18 @@ use turf_core::{
     build_market_packet, classify_metro_rings, enrich_county_store_points_with_metro,
     enrich_postal_store_points_with_county, evaluate_ret_metro_candidates,
     evaluate_ret_place_candidates, filter_metro_store_points, inspect_place_contexts,
-    nearest_opposite_brand, packet_ready_postal_store_points, packet_ready_store_points,
-    parse_county_cbsa_contexts, parse_demand_points, parse_place_contexts, parse_ret_examples,
-    parse_ret_metro_candidates, parse_ret_place_targets, parse_reviewed_store_points,
-    parse_store_points, parse_zcta_county_contexts, render_county_store_points_csv,
-    render_market_packet_json, render_market_packet_markdown, render_metro_store_points_csv,
-    render_place_context_findings_json, render_postal_store_points_csv, render_store_points_csv,
-    suggest_ret_metro_candidates, suggest_ret_place_candidates, summarize_counties_in_metro,
-    summarize_county_footprint, summarize_footprint, summarize_metro_footprint,
-    summarize_metro_rings, summarize_postal_footprint, summarize_ret_examples,
-    validate_county_cbsa_contexts, validate_market_packet_json, validate_national_store_points,
-    validate_ret_examples, validate_ret_place_targets, validate_reviewed_store_points,
-    validate_zcta_county_contexts,
+    nearest_opposite_brand, nearest_ret_place_competitors, packet_ready_postal_store_points,
+    packet_ready_store_points, parse_county_cbsa_contexts, parse_demand_points,
+    parse_place_contexts, parse_ret_examples, parse_ret_metro_candidates, parse_ret_place_targets,
+    parse_reviewed_store_points, parse_store_points, parse_zcta_county_contexts,
+    render_county_store_points_csv, render_market_packet_json, render_market_packet_markdown,
+    render_metro_store_points_csv, render_place_context_findings_json,
+    render_postal_store_points_csv, render_store_points_csv, suggest_ret_metro_candidates,
+    suggest_ret_place_candidates, summarize_counties_in_metro, summarize_county_footprint,
+    summarize_footprint, summarize_metro_footprint, summarize_metro_rings,
+    summarize_postal_footprint, summarize_ret_examples, validate_county_cbsa_contexts,
+    validate_market_packet_json, validate_national_store_points, validate_ret_examples,
+    validate_ret_place_targets, validate_reviewed_store_points, validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -267,6 +267,26 @@ fn run() -> Result<(), String> {
             print_ret_candidate_evaluations(&evaluations);
             Ok(())
         }
+        Some("ret-place-spacing") => {
+            let category = args.next().ok_or(
+                "usage: turf-cli ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let targets_path = args.next().ok_or(
+                "usage: turf-cli ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let reviewed_path = args.next().ok_or(
+                "usage: turf-cli ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let targets_csv = fs::read_to_string(&targets_path)
+                .map_err(|error| format!("{targets_path}: {error}"))?;
+            let reviewed_csv = fs::read_to_string(&reviewed_path)
+                .map_err(|error| format!("{reviewed_path}: {error}"))?;
+            let targets = parse_ret_place_targets(&targets_csv)?;
+            let reviewed_points = parse_reviewed_store_points(&reviewed_csv)?;
+            let rows = nearest_ret_place_competitors(&category, &targets, &reviewed_points);
+            print_ret_place_competitor_spacing(&rows);
+            Ok(())
+        }
         Some("summarize-review") => {
             let path = args
                 .next()
@@ -472,6 +492,7 @@ fn print_help() {
     println!("  suggest-ret-place <category> <ret-place-targets.csv> <reviewed-stores.csv>");
     println!("  evaluate-ret-metro <ret-examples.csv> <ret-metro-candidates.csv>");
     println!("  evaluate-ret-place <ret-examples.csv> <ret-place-candidates.csv>");
+    println!("  ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>");
     println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
     println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
     println!("  summarize-postal-review <reviewed-stores.csv>  Summarize packet-ready postal ZIPs");
@@ -678,6 +699,27 @@ fn print_ret_candidate_evaluations(evaluations: &[turf_core::RetCandidateEvaluat
             evaluation.expected_enclave_type,
             evaluation.suggested_enclave_type,
             evaluation.evaluation_status
+        );
+    }
+}
+
+fn print_ret_place_competitor_spacing(rows: &[turf_core::RetPlaceCompetitorSpacing]) {
+    println!(
+        "category,geography_id,label,city,state,brand,store_id,nearest_brand,nearest_store_id,distance_miles"
+    );
+    for row in rows {
+        println!(
+            "{},{},{},{},{},{},{},{},{},{:.2}",
+            row.category,
+            row.geography_id,
+            row.label,
+            row.city,
+            row.state,
+            row.brand,
+            row.store_id,
+            row.nearest_brand,
+            row.nearest_store_id,
+            row.distance_miles
         );
     }
 }

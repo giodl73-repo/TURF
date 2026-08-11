@@ -734,3 +734,36 @@ Status: pass.
 
 The pulse only reclassifies already-reviewed checked-in evidence. It does not
 add new source acquisition or claim access to unpublished company geography.
+
+## Pulse 30 RET Place Spacing Readout
+
+### Market Analyst
+
+Status: pass.
+
+The spacing output makes the Bremerton contested-grid claim stronger. The
+nearest NAPA/O'Reilly pair is 0.06 miles, which is a clearer local rivalry
+signal than counts alone.
+
+### Market Geographer
+
+Status: pass.
+
+The command stays inside curated place targets and does not treat straight-line
+spacing as a ferry-aware service area. That preserves the distinction between
+same-place competition and cross-water accessibility.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next useful step is to aggregate these rows into place-level spacing
+features: closest pair, median nearest-opposite distance, and count of close
+opposite-brand pairs under a threshold.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse uses existing reviewed Overture-derived rows and computed distances.
+It does not introduce new sources or private territory claims.

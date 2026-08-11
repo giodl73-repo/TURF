@@ -46,6 +46,7 @@ before broader chain coverage begins.
 | 27 | RET candidate evaluation | complete | Added metro candidate-vs-example evaluation command and first Washington scorecard. |
 | 28 | RET place candidate evaluation | complete | Added place target contract, ferry-aware place suggestions, and Puget Sound scorecard. |
 | 29 | Bremerton RET example review | complete | Promoted Bremerton place candidates into reviewed examples and refreshed place scorecards. |
+| 30 | RET place spacing readout | complete | Added same-place nearest competitor spacing for Puget Sound RET targets. |
 
 ## Success criteria
 

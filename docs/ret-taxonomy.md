@@ -44,6 +44,7 @@ cargo run -p turf-cli -- evaluate-ret-metro fixtures\geography\ret-washington-ex
 cargo run -p turf-cli -- validate-ret-place-targets fixtures\geography\ret-puget-sound-place-targets.csv
 cargo run -p turf-cli -- suggest-ret-place auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- evaluate-ret-place fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-puget-sound-place-candidates.csv
+cargo run -p turf-cli -- ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 ```
 
 They are deliberately hand-reviewed examples, not model output. TURF should
@@ -71,6 +72,9 @@ Bremerton as a place is different from its CBSA. It is home-improvement
 `white_space`, but auto parts is `contested_service_grid` with NAPA, AutoZone,
 and O'Reilly all present in the city rows.
 
+Bremerton also has the tightest same-place auto-parts competitor spacing in the
+current Puget Sound target set: a NAPA/O'Reilly pair at 0.06 miles.
+
 ## Automation Direction
 
 RET can become executable after the initial examples stabilize. Candidate
@@ -97,3 +101,6 @@ The first place-level candidate evaluation is documented in
 `reports/ret-place-candidate-evaluation.md`. It adds a curated place target
 fixture with barrier context and verifies that ferry-side status does not erase
 ordinary multi-brand service patterns.
+
+The first same-place competitor-spacing readout is documented in
+`reports/ret-place-spacing-readout.md`.

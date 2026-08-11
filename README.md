@@ -36,6 +36,7 @@ cargo run -p turf-cli -- evaluate-ret-metro fixtures\geography\ret-washington-ex
 cargo run -p turf-cli -- validate-ret-place-targets fixtures\geography\ret-puget-sound-place-targets.csv
 cargo run -p turf-cli -- suggest-ret-place auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- evaluate-ret-place fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-puget-sound-place-candidates.csv
+cargo run -p turf-cli -- ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv
 ```
 
@@ -99,6 +100,9 @@ place target list, including ferry or barrier context. The `evaluate-ret-place`
 command scores those generated place candidates against hand-reviewed RET
 examples.
 
+The `ret-place-spacing` command reports same-place nearest opposite-brand
+spacing for curated RET place targets.
+
 The first approved national acquisition path is Overture Places, documented in
 `docs\overture-home-improvement-acquisition.md`.
 
@@ -134,6 +138,9 @@ The first RET candidate evaluation is:
 
 The first place-level RET candidate evaluation is:
 `reports\ret-place-candidate-evaluation.md`.
+
+The first same-place RET competitor-spacing readout is:
+`reports\ret-place-spacing-readout.md`.
 
 ## Product thesis
 
