@@ -188,6 +188,20 @@ pub struct RetPlaceCompetitorSpacing {
 }
 
 #[derive(Debug, Clone, PartialEq)]
+pub struct RetPlaceSpacingSummary {
+    pub category: String,
+    pub geography_id: String,
+    pub label: String,
+    pub city: String,
+    pub state: String,
+    pub total_stores: usize,
+    pub brand_count: usize,
+    pub nearest_opposite_brand_miles: Option<f64>,
+    pub median_nearest_opposite_brand_miles: Option<f64>,
+    pub close_opposite_brand_pairs_under_half_mile: usize,
+}
+
+#[derive(Debug, Clone, PartialEq)]
 pub struct MetroRingStorePoint {
     pub brand: String,
     pub store_id: String,
@@ -1549,6 +1563,83 @@ pub fn nearest_ret_place_competitors(
     rows
 }
 
+pub fn summarize_ret_place_spacing(
+    category: &str,
+    targets: &[RetPlaceTarget],
+    reviewed_points: &[ReviewedStorePoint],
+) -> Vec<RetPlaceSpacingSummary> {
+    targets
+        .iter()
+        .map(|target| {
+            let matching_points: Vec<&ReviewedStorePoint> = reviewed_points
+                .iter()
+                .filter(|point| {
+                    point.review_status == "packet_ready"
+                        && point.city.eq_ignore_ascii_case(&target.city)
+                        && point.state.eq_ignore_ascii_case(&target.state)
+                })
+                .collect();
+            let mut brands = BTreeSet::new();
+            for point in &matching_points {
+                brands.insert(point.brand.clone());
+            }
+
+            let mut nearest_distances = Vec::new();
+            for point in &matching_points {
+                if let Some(distance) = matching_points
+                    .iter()
+                    .filter(|candidate| candidate.brand != point.brand)
+                    .map(|candidate| {
+                        haversine_miles(
+                            point.latitude,
+                            point.longitude,
+                            candidate.latitude,
+                            candidate.longitude,
+                        )
+                    })
+                    .min_by(|left, right| left.total_cmp(right))
+                {
+                    nearest_distances.push(distance);
+                }
+            }
+            nearest_distances.sort_by(|left, right| left.total_cmp(right));
+
+            let mut close_pairs = 0;
+            for left_index in 0..matching_points.len() {
+                for right_index in left_index + 1..matching_points.len() {
+                    let left = matching_points[left_index];
+                    let right = matching_points[right_index];
+                    if left.brand == right.brand {
+                        continue;
+                    }
+                    let distance = haversine_miles(
+                        left.latitude,
+                        left.longitude,
+                        right.latitude,
+                        right.longitude,
+                    );
+                    if distance < 0.5 {
+                        close_pairs += 1;
+                    }
+                }
+            }
+
+            RetPlaceSpacingSummary {
+                category: category.to_string(),
+                geography_id: target.geography_id.clone(),
+                label: target.label.clone(),
+                city: target.city.clone(),
+                state: target.state.clone(),
+                total_stores: matching_points.len(),
+                brand_count: brands.len(),
+                nearest_opposite_brand_miles: nearest_distances.first().copied(),
+                median_nearest_opposite_brand_miles: median(&nearest_distances),
+                close_opposite_brand_pairs_under_half_mile: close_pairs,
+            }
+        })
+        .collect()
+}
+
 pub fn classify_metro_rings(
     points: &[MetroStorePoint],
     core_latitude: f64,
@@ -2456,6 +2547,18 @@ fn normalize_zip5(value: &str) -> String {
         .collect()
 }
 
+fn median(values: &[f64]) -> Option<f64> {
+    if values.is_empty() {
+        return None;
+    }
+    let middle = values.len() / 2;
+    if values.len() % 2 == 0 {
+        Some((values[middle - 1] + values[middle]) / 2.0)
+    } else {
+        Some(values[middle])
+    }
+}
+
 fn metro_ring_label(distance_miles: f64) -> &'static str {
     if distance_miles < 10.0 {
         "urban_core"
@@ -2814,6 +2917,38 @@ NAPA Auto Parts,napa-kingston,NAPA Kingston,108 Test Ave,Kingston,WA,98346,47.80
         assert_eq!(rows[0].nearest_brand, "O'Reilly Auto Parts");
         assert!(rows[0].distance_miles < 0.1);
         assert!(rows.iter().all(|row| row.geography_id != "kingston"));
+    }
+
+    #[test]
+    fn summarizes_ret_place_spacing_features() {
+        let targets_csv = "\
+geography_id,label,city,state,barrier_context
+bremerton,Bremerton WA,Bremerton,WA,ferry_side
+kingston,Kingston WA,Kingston,WA,ferry_side
+";
+        let reviewed_csv = "\
+brand,store_id,store_name,address,city,state,postal_code,latitude,longitude,source,source_date,license_status,review_status,review_reason
+NAPA Auto Parts,napa-1,NAPA Bremerton,123 Test Ave,Bremerton,WA,98311,47.6111,-122.6294,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+O'Reilly Auto Parts,oreilly-1,O'Reilly Bremerton,456 Test Ave,Bremerton,WA,98311,47.6114,-122.6283,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+AutoZone,autozone-1,AutoZone Bremerton,789 Test Ave,Bremerton,WA,98311,47.6120,-122.6300,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+NAPA Auto Parts,napa-kingston,NAPA Kingston,108 Test Ave,Kingston,WA,98346,47.8051,-122.5098,user fixture,2026-08-11,user_provided,packet_ready,primary_store_candidate
+";
+        let targets = parse_ret_place_targets(targets_csv).expect("targets parse");
+        let reviewed = parse_reviewed_store_points(reviewed_csv).expect("reviewed parse");
+        let summaries = summarize_ret_place_spacing("auto_parts", &targets, &reviewed);
+
+        assert_eq!(summaries.len(), 2);
+        assert_eq!(summaries[0].geography_id, "bremerton");
+        assert_eq!(summaries[0].total_stores, 3);
+        assert_eq!(summaries[0].brand_count, 3);
+        assert!(summaries[0].nearest_opposite_brand_miles.unwrap() < 0.1);
+        assert!(summaries[0].median_nearest_opposite_brand_miles.unwrap() < 0.1);
+        assert_eq!(summaries[0].close_opposite_brand_pairs_under_half_mile, 3);
+        assert_eq!(summaries[1].geography_id, "kingston");
+        assert_eq!(summaries[1].total_stores, 1);
+        assert_eq!(summaries[1].brand_count, 1);
+        assert_eq!(summaries[1].nearest_opposite_brand_miles, None);
+        assert_eq!(summaries[1].close_opposite_brand_pairs_under_half_mile, 0);
     }
 
     #[test]

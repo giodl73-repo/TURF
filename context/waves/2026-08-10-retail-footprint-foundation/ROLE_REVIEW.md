@@ -767,3 +767,36 @@ Status: pass.
 
 The pulse uses existing reviewed Overture-derived rows and computed distances.
 It does not introduce new sources or private territory claims.
+
+## Pulse 31 RET Place Spacing Summary
+
+### Market Analyst
+
+Status: pass.
+
+The summary CSV turns raw pair rows into decision-ready features. Bremerton now
+has a compact read: seven stores, three brands, nearest opposite-brand spacing
+of 0.06 miles, median nearest-opposite spacing of 0.27 miles, and four close
+pairs under 0.5 miles.
+
+### Market Geographer
+
+Status: pass.
+
+The summary preserves one row per curated place target, including white-space
+and single-brand places. That makes absences comparable instead of hiding them.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+These features are now ready to feed RET candidate rules. The next step should
+test whether close-pair counts improve the distinction between
+`contested_service_grid`, `service_mesh`, and `ferry_side_enclave`.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse only computes features from existing reviewed rows. It adds no new
+external acquisition and makes no private-territory claim.

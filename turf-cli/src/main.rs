@@ -14,9 +14,10 @@ use turf_core::{
     render_postal_store_points_csv, render_store_points_csv, suggest_ret_metro_candidates,
     suggest_ret_place_candidates, summarize_counties_in_metro, summarize_county_footprint,
     summarize_footprint, summarize_metro_footprint, summarize_metro_rings,
-    summarize_postal_footprint, summarize_ret_examples, validate_county_cbsa_contexts,
-    validate_market_packet_json, validate_national_store_points, validate_ret_examples,
-    validate_ret_place_targets, validate_reviewed_store_points, validate_zcta_county_contexts,
+    summarize_postal_footprint, summarize_ret_examples, summarize_ret_place_spacing,
+    validate_county_cbsa_contexts, validate_market_packet_json, validate_national_store_points,
+    validate_ret_examples, validate_ret_place_targets, validate_reviewed_store_points,
+    validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -287,6 +288,26 @@ fn run() -> Result<(), String> {
             print_ret_place_competitor_spacing(&rows);
             Ok(())
         }
+        Some("ret-place-spacing-summary") => {
+            let category = args.next().ok_or(
+                "usage: turf-cli ret-place-spacing-summary <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let targets_path = args.next().ok_or(
+                "usage: turf-cli ret-place-spacing-summary <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let reviewed_path = args.next().ok_or(
+                "usage: turf-cli ret-place-spacing-summary <category> <ret-place-targets.csv> <reviewed-stores.csv>",
+            )?;
+            let targets_csv = fs::read_to_string(&targets_path)
+                .map_err(|error| format!("{targets_path}: {error}"))?;
+            let reviewed_csv = fs::read_to_string(&reviewed_path)
+                .map_err(|error| format!("{reviewed_path}: {error}"))?;
+            let targets = parse_ret_place_targets(&targets_csv)?;
+            let reviewed_points = parse_reviewed_store_points(&reviewed_csv)?;
+            let rows = summarize_ret_place_spacing(&category, &targets, &reviewed_points);
+            print_ret_place_spacing_summary(&rows);
+            Ok(())
+        }
         Some("summarize-review") => {
             let path = args
                 .next()
@@ -493,6 +514,9 @@ fn print_help() {
     println!("  evaluate-ret-metro <ret-examples.csv> <ret-metro-candidates.csv>");
     println!("  evaluate-ret-place <ret-examples.csv> <ret-place-candidates.csv>");
     println!("  ret-place-spacing <category> <ret-place-targets.csv> <reviewed-stores.csv>");
+    println!(
+        "  ret-place-spacing-summary <category> <ret-place-targets.csv> <reviewed-stores.csv>"
+    );
     println!("  summarize-review <reviewed-stores.csv>  Summarize reviewed store candidates");
     println!("  export-packet-ready <reviewed-stores.csv>  Print packet-ready store-point CSV");
     println!("  summarize-postal-review <reviewed-stores.csv>  Summarize packet-ready postal ZIPs");
@@ -720,6 +744,35 @@ fn print_ret_place_competitor_spacing(rows: &[turf_core::RetPlaceCompetitorSpaci
             row.nearest_brand,
             row.nearest_store_id,
             row.distance_miles
+        );
+    }
+}
+
+fn print_ret_place_spacing_summary(rows: &[turf_core::RetPlaceSpacingSummary]) {
+    println!(
+        "category,geography_id,label,city,state,total_stores,brand_count,nearest_opposite_brand_miles,median_nearest_opposite_brand_miles,close_opposite_brand_pairs_under_half_mile"
+    );
+    for row in rows {
+        let nearest = row
+            .nearest_opposite_brand_miles
+            .map(|distance| format!("{distance:.2}"))
+            .unwrap_or_default();
+        let median = row
+            .median_nearest_opposite_brand_miles
+            .map(|distance| format!("{distance:.2}"))
+            .unwrap_or_default();
+        println!(
+            "{},{},{},{},{},{},{},{},{},{}",
+            row.category,
+            row.geography_id,
+            row.label,
+            row.city,
+            row.state,
+            row.total_stores,
+            row.brand_count,
+            nearest,
+            median,
+            row.close_opposite_brand_pairs_under_half_mile
         );
     }
 }

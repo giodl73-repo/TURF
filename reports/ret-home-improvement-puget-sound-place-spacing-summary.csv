@@ -1,0 +1,7 @@
+category,geography_id,label,city,state,total_stores,brand_count,nearest_opposite_brand_miles,median_nearest_opposite_brand_miles,close_opposite_brand_pairs_under_half_mile
+home_improvement,bainbridge-island,Bainbridge Island WA,Bainbridge Island,WA,0,0,,,0
+home_improvement,kingston,Kingston WA,Kingston,WA,0,0,,,0
+home_improvement,bremerton,Bremerton WA,Bremerton,WA,0,0,,,0
+home_improvement,poulsbo,Poulsbo WA,Poulsbo,WA,1,1,,,0
+home_improvement,silverdale,Silverdale WA,Silverdale,WA,2,2,0.44,0.44,1
+home_improvement,port-orchard,Port Orchard WA,Port Orchard,WA,1,1,,,0

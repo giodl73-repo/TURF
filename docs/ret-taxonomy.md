@@ -45,6 +45,7 @@ cargo run -p turf-cli -- validate-ret-place-targets fixtures\geography\ret-puget
 cargo run -p turf-cli -- suggest-ret-place auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- evaluate-ret-place fixtures\geography\ret-washington-examples.csv reports\ret-auto-parts-puget-sound-place-candidates.csv
 cargo run -p turf-cli -- ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
+cargo run -p turf-cli -- ret-place-spacing-summary auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 ```
 
 They are deliberately hand-reviewed examples, not model output. TURF should
@@ -73,7 +74,9 @@ Bremerton as a place is different from its CBSA. It is home-improvement
 and O'Reilly all present in the city rows.
 
 Bremerton also has the tightest same-place auto-parts competitor spacing in the
-current Puget Sound target set: a NAPA/O'Reilly pair at 0.06 miles.
+current Puget Sound target set: a NAPA/O'Reilly pair at 0.06 miles, median
+nearest-opposite spacing of 0.27 miles, and four unique close opposite-brand
+pairs under 0.5 miles.
 
 ## Automation Direction
 
