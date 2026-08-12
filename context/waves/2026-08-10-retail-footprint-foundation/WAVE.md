@@ -69,6 +69,7 @@ before broader chain coverage begins.
 | 50 | Georgia grocery and mass retail backfill | complete | Added Georgia grocery and mass retail layers and sharpened Atlanta district mall-grid predictions. |
 | 51 | Georgia drugstore layer | complete | Added Georgia exact-brand drugstores and confirmed service evidence does not over-upgrade Atlanta mall districts. |
 | 52 | Cumberland retail complex review fix | complete | Corrected Cumberland Mall representative point and upgraded Cumberland/Vinings to an urban mall service grid. |
+| 53 | RET anchor prediction audit | complete | Compared Washington and Atlanta anchor modifiers with shared diagnostic classes for active anchors, legacy grids, urban mall/service grids, and rule pressure cases. |
 
 ## Success criteria
 

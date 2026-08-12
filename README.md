@@ -73,6 +73,7 @@ duckdb -c ".read queries/ret-north-seattle-enclave-profile.sql"
 duckdb -c ".read queries/ret-north-seattle-anchor-modifiers.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-modifiers.sql"
 duckdb -c ".read queries/ret-atlanta-district-anchor-profile.sql"
+duckdb -c ".read queries/ret-anchor-prediction-audit.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -217,6 +218,9 @@ The first RET Profile v0 place capacity matrix is:
 
 The first Seattle/Atlanta RET capacity synthesis is:
 `reports\ret-seattle-atlanta-capacity-synthesis.md`.
+
+The first cross-region anchor prediction audit is:
+`reports\ret-anchor-prediction-audit.md`.
 
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.
