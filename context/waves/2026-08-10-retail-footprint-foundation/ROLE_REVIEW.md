@@ -1472,3 +1472,35 @@ Status: pass.
 The profile shows that adding a service layer alone does not mechanically
 upgrade a mall district. Active regional anchor calls still require a broader
 stack.
+
+## Pulse 52 Cumberland Retail Complex Review Fix
+
+### Market Analyst
+
+Status: pass.
+
+Correcting the Cumberland Mall representative point changes the prediction:
+Cumberland/Vinings now reads as an urban mall service grid instead of generic
+mixed capacity.
+
+### Market Geographer
+
+Status: pass.
+
+The fix shows the district box already covered the real Cumberland Mall point.
+The issue was representative point selection in the reviewed layer, not the
+district geometry.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse updates the reviewed Overture-derived layer and keeps the duplicate
+candidate evidence auditable.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Future district profile work should inspect reviewed representative points
+before changing geography or model thresholds.

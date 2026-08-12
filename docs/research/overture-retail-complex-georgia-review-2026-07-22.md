@@ -41,8 +41,15 @@ census.
 | Atlanta | Phipps Plaza |
 | Alpharetta | North Point Mall |
 | East Point | Camp Creek Marketplace |
-| Marietta | Cumberland Mall |
+| Atlanta | Cumberland Mall |
 | Smyrna | Cumberland Marketplace |
+
+## Review Correction
+
+The Cumberland Mall review keeps the in-district Atlanta point at `2860
+Cumberland Mall SE` and excludes the outlying Marietta duplicate. This matters
+for the Atlanta district anchor profile because Cumberland/Vinings should carry
+both Cumberland Mall and Cumberland Marketplace.
 
 ## Validation
 

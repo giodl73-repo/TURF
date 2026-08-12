@@ -17,7 +17,7 @@ reports/ret-atlanta-district-anchor-profile.csv
 
 | District | Stores | Modifier | Evidence |
 |---|---:|---|---|
-| Cumberland / Vinings | 14 | `capacity_profile_mixed` | Cumberland Marketplace, drugstore, grocery, mass retail, one home-improvement row, and four QSR brands; Cumberland Mall itself still needs refined district geometry. |
+| Cumberland / Vinings | 13 | `urban_mall_service_grid` | Cumberland Mall, Cumberland Marketplace, grocery, mass retail, one home-improvement row, and four QSR brands. |
 | Buckhead / Lenox / Phipps | 12 | `urban_mall_grocery_grid` | Buckhead Village, Lenox, Phipps, drugstore, four grocery brands, and one mass-retail row appear without big-box service depth. |
 | Perimeter | 11 | `mall_anchor_needs_category_depth` | Perimeter Mall appears with drugstore, grocery, mass retail, QSR, and one home-improvement brand, but no auto-parts or dual home-improvement depth. |
 | Camp Creek | 7 | `capacity_profile_mixed` | Camp Creek Marketplace appears with grocery, mass retail, one home-improvement row, and three QSR brands. |
@@ -39,6 +39,12 @@ home-improvement and auto-parts stack of an active regional mall anchor.
 Northlake is now a `legacy_mall_grocery_service_grid`: the mall remains visible
 and grocery is strong, but QSR and big-box service depth are thin in the current
 slice.
+
+The Cumberland/Vinings correction shows why reviewed source quality matters
+before changing geography. The district box already covered the real Cumberland
+Mall point, but the reviewed layer had promoted an outlying duplicate. After the
+review fix, Cumberland/Vinings carries both Cumberland Mall and Cumberland
+Marketplace and upgrades to `urban_mall_service_grid`.
 
 Perimeter remains a pressure case. It has Perimeter Mall, grocery, mass retail,
 drugstore, QSR, and one home-improvement brand, but the rule still withholds an
