@@ -252,6 +252,28 @@ pub struct RestaurantChainTarget {
     pub review_note: String,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct RetAnchorProfileRow {
+    pub region: String,
+    pub area_id: String,
+    pub label: String,
+    pub geography_scope: String,
+    pub local_context: String,
+    pub total_stores: usize,
+    pub retail_complexes: usize,
+    pub has_mall_complex: bool,
+    pub home_improvement_brands: usize,
+    pub auto_parts_brands: usize,
+    pub grocery_brands: usize,
+    pub mass_retail_brands: usize,
+    pub drugstore_brands: usize,
+    pub qsr_brands: usize,
+    pub nearest_spacing_miles: Option<f64>,
+    pub source_modifier: String,
+    pub anchor_modifier_v0: String,
+    pub anchor_evidence_summary: String,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct RetCount {
     pub key: String,
@@ -908,6 +930,105 @@ pub fn parse_restaurant_chain_targets(csv: &str) -> Result<Vec<RestaurantChainTa
 
 pub fn validate_restaurant_chain_targets(csv: &str) -> Result<usize, String> {
     Ok(parse_restaurant_chain_targets(csv)?.len())
+}
+
+pub fn parse_ret_anchor_profile(csv: &str) -> Result<Vec<RetAnchorProfileRow>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "region",
+        "area_id",
+        "label",
+        "geography_scope",
+        "local_context",
+        "total_stores",
+        "retail_complexes",
+        "has_mall_complex",
+        "home_improvement_brands",
+        "auto_parts_brands",
+        "grocery_brands",
+        "mass_retail_brands",
+        "drugstore_brands",
+        "qsr_brands",
+        "nearest_spacing_miles",
+        "source_modifier",
+        "anchor_modifier_v0",
+        "anchor_evidence_summary",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut rows = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let geography_scope = required(fields[3], line_number, "geography_scope")?;
+        validate_anchor_geography_scope(geography_scope, line_number)?;
+        let has_mall_complex = parse_flag(fields[7], line_number, "has_mall_complex")?;
+        let nearest_spacing_miles = if fields[14].is_empty() {
+            None
+        } else {
+            Some(
+                fields[14]
+                    .parse::<f64>()
+                    .map_err(|_| format!("line {line_number}: invalid nearest_spacing_miles"))?,
+            )
+        };
+        let source_modifier = required(fields[15], line_number, "source_modifier")?;
+        validate_anchor_modifier(source_modifier, line_number, "source_modifier")?;
+        let anchor_modifier_v0 = required(fields[16], line_number, "anchor_modifier_v0")?;
+        validate_anchor_modifier(anchor_modifier_v0, line_number, "anchor_modifier_v0")?;
+
+        rows.push(RetAnchorProfileRow {
+            region: required(fields[0], line_number, "region")?.to_string(),
+            area_id: required(fields[1], line_number, "area_id")?.to_string(),
+            label: required(fields[2], line_number, "label")?.to_string(),
+            geography_scope: geography_scope.to_string(),
+            local_context: required(fields[4], line_number, "local_context")?.to_string(),
+            total_stores: parse_usize_field(fields[5], line_number, "total_stores")?,
+            retail_complexes: parse_usize_field(fields[6], line_number, "retail_complexes")?,
+            has_mall_complex,
+            home_improvement_brands: parse_usize_field(
+                fields[8],
+                line_number,
+                "home_improvement_brands",
+            )?,
+            auto_parts_brands: parse_usize_field(fields[9], line_number, "auto_parts_brands")?,
+            grocery_brands: parse_usize_field(fields[10], line_number, "grocery_brands")?,
+            mass_retail_brands: parse_usize_field(fields[11], line_number, "mass_retail_brands")?,
+            drugstore_brands: parse_usize_field(fields[12], line_number, "drugstore_brands")?,
+            qsr_brands: parse_usize_field(fields[13], line_number, "qsr_brands")?,
+            nearest_spacing_miles,
+            source_modifier: source_modifier.to_string(),
+            anchor_modifier_v0: anchor_modifier_v0.to_string(),
+            anchor_evidence_summary: required(fields[17], line_number, "anchor_evidence_summary")?
+                .to_string(),
+        });
+    }
+
+    Ok(rows)
+}
+
+pub fn validate_ret_anchor_profile(csv: &str) -> Result<usize, String> {
+    Ok(parse_ret_anchor_profile(csv)?.len())
 }
 
 pub fn summarize_restaurant_chain_targets(targets: &[RestaurantChainTarget]) -> Vec<RetCount> {
@@ -2530,6 +2651,20 @@ fn required<'a>(value: &'a str, line_number: usize, field: &str) -> Result<&'a s
     }
 }
 
+fn parse_usize_field(value: &str, line_number: usize, field: &str) -> Result<usize, String> {
+    value
+        .parse::<usize>()
+        .map_err(|_| format!("line {line_number}: invalid {field}"))
+}
+
+fn parse_flag(value: &str, line_number: usize, field: &str) -> Result<bool, String> {
+    match value {
+        "0" => Ok(false),
+        "1" => Ok(true),
+        _ => Err(format!("line {line_number}: invalid {field}")),
+    }
+}
+
 fn validate_status_values(json: &str) -> Result<(), String> {
     let marker = "\"status\":\"";
     let mut remainder = json;
@@ -2602,6 +2737,34 @@ fn validate_restaurant_segment(value: &str, line_number: usize) -> Result<(), St
     match value {
         "qsr" | "fast_casual" | "casual_dining" => Ok(()),
         _ => Err(format!("line {line_number}: invalid segment")),
+    }
+}
+
+fn validate_anchor_geography_scope(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "reviewed_zone" | "district_core" | "district_wide" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid geography_scope")),
+    }
+}
+
+fn validate_anchor_modifier(
+    value: &str,
+    line_number: usize,
+    field_name: &str,
+) -> Result<(), String> {
+    match value {
+        "active_regional_mall_anchor"
+        | "edge_city_mall_service_grid"
+        | "urban_mall_service_grid"
+        | "urban_mall_grocery_grid"
+        | "legacy_mall_service_grid"
+        | "legacy_mall_grocery_service_grid"
+        | "small_complex_service_edge"
+        | "complex_service_modifier"
+        | "mall_anchor_needs_category_depth"
+        | "capacity_profile_mixed"
+        | "no_complex_signal" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid {field_name}")),
     }
 }
 
@@ -3051,6 +3214,31 @@ fine_dining,Test Brand,selective,1,not in current contract
         let error = parse_restaurant_chain_targets(csv).expect_err("unknown segment should fail");
 
         assert!(error.contains("invalid segment"));
+    }
+
+    #[test]
+    fn validates_ret_anchor_profile_contract() {
+        let csv = "\
+region,area_id,label,geography_scope,local_context,total_stores,retail_complexes,has_mall_complex,home_improvement_brands,auto_parts_brands,grocery_brands,mass_retail_brands,drugstore_brands,qsr_brands,nearest_spacing_miles,source_modifier,anchor_modifier_v0,anchor_evidence_summary
+atlanta_districts,perimeter,Perimeter widened,district_wide,edge_city_mall_field,25,1,1,2,1,4,2,2,4,,urban_mall_service_grid,edge_city_mall_service_grid,widened edge-city mall field with single auto-parts depth
+";
+        let rows = parse_ret_anchor_profile(csv).expect("anchor profile parses");
+
+        assert_eq!(rows.len(), 1);
+        assert_eq!(rows[0].anchor_modifier_v0, "edge_city_mall_service_grid");
+        assert_eq!(rows[0].nearest_spacing_miles, None);
+        assert_eq!(validate_ret_anchor_profile(csv), Ok(1));
+    }
+
+    #[test]
+    fn rejects_unknown_ret_anchor_modifier() {
+        let csv = "\
+region,area_id,label,geography_scope,local_context,total_stores,retail_complexes,has_mall_complex,home_improvement_brands,auto_parts_brands,grocery_brands,mass_retail_brands,drugstore_brands,qsr_brands,nearest_spacing_miles,source_modifier,anchor_modifier_v0,anchor_evidence_summary
+atlanta_districts,perimeter,Perimeter,district_core,edge_city_mall_cluster,11,1,1,1,0,2,2,1,2,0.66,mall_anchor_needs_category_depth,magic_anchor,invalid label
+";
+        let error = validate_ret_anchor_profile(csv).expect_err("invalid modifier should fail");
+
+        assert!(error.contains("invalid anchor_modifier_v0"));
     }
 
     #[test]

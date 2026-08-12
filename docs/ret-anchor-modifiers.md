@@ -61,3 +61,9 @@ The first integrated anchor profile is:
 ```text
 reports/ret-anchor-profile-v0.md
 ```
+
+Validate the anchor-profile contract with:
+
+```powershell
+cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v0.csv
+```

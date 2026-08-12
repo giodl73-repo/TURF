@@ -64,3 +64,9 @@ unfilled source coverage.
 Anchor Profile v0 is separate from the city/place profile. It uses mall fields,
 retail corridors, and district slices as the geography grain so anchor modifiers
 do not get forced into city labels.
+
+Validate the anchor profile with:
+
+```powershell
+cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v0.csv
+```

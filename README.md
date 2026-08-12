@@ -41,6 +41,7 @@ cargo run -p turf-cli -- ret-place-spacing-summary auto_parts fixtures\geography
 cargo run -p turf-cli -- suggest-ret-place-spacing auto_parts fixtures\geography\ret-puget-sound-place-targets.csv fixtures\stores\overture-auto-parts-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
 cargo run -p turf-cli -- summarize-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
+cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v0.csv
 duckdb -c ".read queries/overture-qsr-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-qsr-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-auto-parts-georgia-2026-07-22.sql"
@@ -149,6 +150,9 @@ those spacing features as supporting evidence.
 The `validate-restaurant-targets` and `summarize-restaurant-targets` commands
 check the next restaurant expansion sequence: QSR first, then fast casual, then
 casual dining.
+
+The `validate-anchor-profile` command checks the RET Anchor Profile v0 CSV
+contract before anchor modifiers are consumed by later reports or CLI commands.
 
 The first QSR acquisition query is:
 `queries\overture-qsr-washington-2026-07-22.sql`.

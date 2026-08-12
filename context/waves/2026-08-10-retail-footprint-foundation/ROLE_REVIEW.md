@@ -1633,3 +1633,34 @@ Status: pass with next-output request.
 The next step should move from report-only integration toward either a stable
 schema fixture for anchor profiles or a CLI command that emits the same v0
 contract.
+
+## Pulse 57 Anchor Profile Contract
+
+### Market Analyst
+
+Status: pass.
+
+The v0 profile is now a checked contract, so anchor labels can be consumed
+without silently accepting unknown modifier names or malformed numeric columns.
+
+### Market Geographer
+
+Status: pass.
+
+The validator preserves `reviewed_zone`, `district_core`, and `district_wide`
+as explicit geography scopes. That protects the grain distinction discovered in
+the Atlanta pressure audit.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The command validates existing CSV output and introduces no new source layer.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next implementation step can be a generator command for Anchor Profile v0,
+or a second-metro comparison to test whether `edge_city_mall_service_grid`
+generalizes beyond Atlanta.

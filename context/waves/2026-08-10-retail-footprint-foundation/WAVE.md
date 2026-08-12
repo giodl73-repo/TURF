@@ -73,6 +73,7 @@ before broader chain coverage begins.
 | 54 | Atlanta anchor pressure audit | complete | Widened Perimeter and North Point boxes and found both become urban mall service grids while still staying below active regional-anchor rules. |
 | 55 | Edge-city mall rule candidate | complete | Documented anchor modifiers and tested `edge_city_mall_service_grid` against Washington active-anchor references. |
 | 56 | RET anchor profile v0 | complete | Integrated anchor modifiers, pressure cases, and edge-city candidates into a scoped cross-region anchor profile. |
+| 57 | Anchor profile contract | complete | Added a CLI validator and Rust contract tests for RET Anchor Profile v0 outputs. |
 
 ## Success criteria
 

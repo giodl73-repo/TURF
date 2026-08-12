@@ -18,8 +18,8 @@ use turf_core::{
     summarize_metro_rings, summarize_postal_footprint, summarize_restaurant_chain_targets,
     summarize_ret_examples, summarize_ret_place_spacing, validate_county_cbsa_contexts,
     validate_market_packet_json, validate_national_store_points, validate_restaurant_chain_targets,
-    validate_ret_examples, validate_ret_place_targets, validate_reviewed_store_points,
-    validate_zcta_county_contexts,
+    validate_ret_anchor_profile, validate_ret_examples, validate_ret_place_targets,
+    validate_reviewed_store_points, validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -184,6 +184,15 @@ fn run() -> Result<(), String> {
                 .ok_or("usage: turf-cli validate-ret-place-targets <ret-place-targets.csv>")?;
             let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
             let rows = validate_ret_place_targets(&csv)?;
+            println!("valid,{},{}", path, rows);
+            Ok(())
+        }
+        Some("validate-anchor-profile") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli validate-anchor-profile <ret-anchor-profile.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let rows = validate_ret_anchor_profile(&csv)?;
             println!("valid,{},{}", path, rows);
             Ok(())
         }
@@ -547,6 +556,7 @@ fn print_help() {
     println!("  validate-county-cbsa <county-cbsa.csv>  Check county-CBSA context contract");
     println!("  validate-ret <ret-examples.csv>  Check Retail Enclave Typology examples");
     println!("  validate-ret-place-targets <ret-place-targets.csv>");
+    println!("  validate-anchor-profile <ret-anchor-profile.csv>");
     println!("  validate-restaurant-targets <restaurant-targets.csv>");
     println!("  summarize-restaurant-targets <restaurant-targets.csv>");
     println!("  summarize-ret <ret-examples.csv>  Summarize Retail Enclave Typology examples");
