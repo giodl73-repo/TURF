@@ -78,6 +78,7 @@ before broader chain coverage begins.
 | 59 | Anchor profile summary | complete | Added `summarize-anchor-profile` for counts by anchor modifier, geography scope, and region. |
 | 60 | Washington retail-complex coverage audit | complete | Found the current Washington complex layer only covers North Seattle / South Snohomish, so broader Puget Sound anchor tests need another extraction pass. |
 | 61 | Washington anchor-field targets | complete | Added bounded Bellevue, Factoria, Southcenter, Tacoma Mall, Kitsap Mall, and South Hill extraction targets for the next retail-complex pass. |
+| 62 | Washington anchor-field extraction query | complete | Added the target-bounded Overture retail-complex extraction query and review boundary notes for Washington anchor fields. |
 
 ## Success criteria
 

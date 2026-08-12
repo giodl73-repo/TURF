@@ -55,6 +55,7 @@ duckdb -c ".read queries/overture-drugstore-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-drugstore-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-georgia-2026-07-22.sql"
+duckdb -c ".read queries/overture-retail-complex-washington-anchor-fields-2026-07-22.sql"
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-auto-parts-georgia-review-2026-07-22.csv
@@ -256,6 +257,9 @@ The Washington retail-complex source coverage audit is:
 
 The Washington anchor-field extraction targets are:
 `reports\ret-washington-anchor-field-targets.md`.
+
+The Washington anchor-field retail-complex extraction plan is:
+`docs\research\overture-retail-complex-washington-anchor-fields-extraction-2026-07-22.md`.
 
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.

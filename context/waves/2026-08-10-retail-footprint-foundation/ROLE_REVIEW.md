@@ -1788,3 +1788,34 @@ Status: pass with next-output request.
 
 The next step should run the bounded retail-complex extraction against these
 targets and keep candidate rows separate from reviewed packet-ready rows.
+
+## Pulse 62 Washington Anchor-Field Extraction Query
+
+### Market Analyst
+
+Status: pass.
+
+The query is scoped to the six planned anchor fields and carries target
+metadata into the candidate extract.
+
+### Market Geographer
+
+Status: pass.
+
+The extraction joins Overture candidates to explicit target boxes, preserving
+acquisition scope for later review and profile geography decisions.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse prepares the open Overture query and documentation but does not add
+new extracted source rows. Candidate output remains separate from reviewed
+packet-ready rows.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse can run the bounded query, inspect row counts by target, and
+create the reviewed anchor-field complex layer.
