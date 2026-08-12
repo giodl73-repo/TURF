@@ -65,6 +65,7 @@ before broader chain coverage begins.
 | 46 | Washington retail complex anchor test | complete | Added reviewed mall/shopping-center signals and separated active regional anchors from legacy mall-service grids. |
 | 47 | North Seattle anchor modifiers | complete | Classified active regional mall anchors, legacy mall service grids, and smaller complex service edges from the profile. |
 | 48 | Atlanta retail complex anchor backfill | complete | Backfilled Georgia retail complexes and compared Atlanta multi-mall grids with suburban mall anchors. |
+| 49 | Atlanta district anchor slices | complete | Tested named Atlanta mall districts and found the predictor needs fuller category coverage and refined district geometry. |
 
 ## Success criteria
 

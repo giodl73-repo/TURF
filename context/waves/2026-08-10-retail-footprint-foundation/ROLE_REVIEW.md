@@ -1372,3 +1372,36 @@ Status: pass with next-output request.
 The next Atlanta step should define bounded district zones and compare store
 stack evidence inside those zones before adding drive-time or corridor
 catchments.
+
+## Pulse 49 Atlanta District Anchor Slices
+
+### Market Analyst
+
+Status: pass with caveat.
+
+The district slices make the model more honest. Mall evidence appears in the
+expected districts, but several slices lack enough checked category depth for an
+active-anchor call.
+
+### Market Geographer
+
+Status: pass with next-output request.
+
+The first boxes are deliberately simple. Cumberland/Vinings especially needs a
+refined district boundary because Cumberland Mall and Cumberland Marketplace
+split across locality labels and box edges.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse consumes existing checked-in reviewed Overture-derived layers and adds
+no new external source.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Before drive-time modeling, Georgia should gain the same grocery, mass-retail,
+and drugstore layers used in Washington so district anchor calls compare like
+with like.

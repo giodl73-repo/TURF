@@ -66,6 +66,7 @@ duckdb -c ".read queries/ret-profile-v0-place-spacing-summary.sql"
 duckdb -c ".read queries/ret-north-seattle-enclave-profile.sql"
 duckdb -c ".read queries/ret-north-seattle-anchor-modifiers.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-modifiers.sql"
+duckdb -c ".read queries/ret-atlanta-district-anchor-profile.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -222,6 +223,9 @@ The first North Seattle anchor-modifier readout is:
 
 The first Atlanta anchor-modifier readout is:
 `reports\ret-atlanta-anchor-modifiers.md`.
+
+The first Atlanta district anchor profile is:
+`reports\ret-atlanta-district-anchor-profile.md`.
 
 ## Product thesis
 
