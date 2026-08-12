@@ -1,0 +1,7 @@
+place_id,label,place_context,capacity_profile_hint,present_store_type_count,repeated_store_type_count,home_improvement_brands_present,auto_parts_brands_present,qsr_brands_present,retail_complexes,retail_complex_types,has_mall_complex,complex_names,anchor_modifier,anchor_modifier_reason
+atlanta,Atlanta GA,atlanta_core,partial_anchor_qsr_node,9,8,1,4,4,9,3,1,Ansley Mall; Buckhead Village District - Lot F; East Atlanta Village Farmers Market; Emory Village; Greenbriar Mall; Lenox Mall Buckhead Atlanta; Northlake Mall; Perimeter Mall; Phipps Plaza,urban_multi_mall_service_grid,multiple mall signals inside a broad city service grid
+marietta,Marietta GA,atlanta_suburban_node,complete_daily_life_node,9,8,2,3,4,1,1,1,Cumberland Mall,active_regional_mall_anchor,mall plus dual home-improvement and broad service stack
+alpharetta,Alpharetta GA,atlanta_suburban_node,complete_daily_life_node,9,6,2,3,4,1,1,1,North Point Mall,active_regional_mall_anchor,mall plus dual home-improvement and broad service stack
+sandy-springs,Sandy Springs GA,atlanta_suburban_node,capacity_profile_mixed,6,1,2,1,3,0,0,0,"",no_complex_signal,no reviewed mall or complex row
+roswell,Roswell GA,atlanta_suburban_node,partial_anchor_qsr_node,7,4,1,2,4,0,0,0,"",no_complex_signal,no reviewed mall or complex row
+decatur,Decatur GA,atlanta_inner_node,partial_anchor_qsr_node,8,8,1,3,4,0,0,0,"",no_complex_signal,no reviewed mall or complex row

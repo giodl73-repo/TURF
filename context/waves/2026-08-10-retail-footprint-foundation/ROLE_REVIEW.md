@@ -1338,3 +1338,37 @@ Status: pass with next-output request.
 Anchor modifiers should eventually be tested against drive-time or corridor
 access. The current modifier is a point-and-category stack read, not a travel
 time catchment.
+
+## Pulse 48 Atlanta Retail Complex Anchor Backfill
+
+### Market Analyst
+
+Status: pass.
+
+Atlanta gives RET a useful contrast. The Atlanta city row reads as an
+urban multi-mall service grid, while Marietta/Cumberland and Alpharetta/North
+Point read as active suburban mall anchors.
+
+### Market Geographer
+
+Status: pass with next-output request.
+
+The output is city-label based. Cumberland/Vinings, Buckhead/Lenox/Phipps,
+Perimeter, Camp Creek, and Northlake need district slices because city labels
+are too coarse for Atlanta anchor geography.
+
+### Source Policy Auditor
+
+Status: pass with review caveat.
+
+Rows come from open Overture Places. The raw name-match layer is noisy, and the
+reviewed layer keeps only high-confidence named complexes for the selected
+comparison read.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next Atlanta step should define bounded district zones and compare store
+stack evidence inside those zones before adding drive-time or corridor
+catchments.

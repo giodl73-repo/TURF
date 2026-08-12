@@ -64,6 +64,7 @@ before broader chain coverage begins.
 | 45 | Washington drugstore layer | complete | Added exact-brand drugstore extract and learned that clean Overture brand rows sharpen service evidence but undercount pharmacy access. |
 | 46 | Washington retail complex anchor test | complete | Added reviewed mall/shopping-center signals and separated active regional anchors from legacy mall-service grids. |
 | 47 | North Seattle anchor modifiers | complete | Classified active regional mall anchors, legacy mall service grids, and smaller complex service edges from the profile. |
+| 48 | Atlanta retail complex anchor backfill | complete | Backfilled Georgia retail complexes and compared Atlanta multi-mall grids with suburban mall anchors. |
 
 ## Success criteria
 
