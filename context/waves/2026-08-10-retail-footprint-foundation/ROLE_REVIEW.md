@@ -1758,3 +1758,33 @@ Status: pass with next-output request.
 The next data step should be a bounded Washington retail-complex extraction for
 Bellevue, Southcenter/Tukwila, Tacoma Mall, Kitsap Mall, and South Hill/Puyallup
 before adding those fields to Anchor Profile v0.
+
+## Pulse 61 Washington Anchor-Field Targets
+
+### Market Analyst
+
+Status: pass.
+
+The next retail-complex pass now has explicit target fields and expected tests
+instead of an open-ended statewide request.
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The boxes are acquisition scopes, not final geographies. They should be revised
+after reviewed complex points show where the actual retail fields sit.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse creates target metadata only. It does not add extracted source rows or
+claim reviewed retail-complex coverage.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next step should run the bounded retail-complex extraction against these
+targets and keep candidate rows separate from reviewed packet-ready rows.
