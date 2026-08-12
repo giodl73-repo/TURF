@@ -62,6 +62,7 @@ duckdb -c ".read queries/ret-profile-v0-metro-comparison.sql"
 duckdb -c ".read queries/ret-profile-v0-place-capacity-matrix.sql"
 duckdb -c ".read queries/ret-profile-v0-place-spacing-summary.sql"
 duckdb -c ".read queries/ret-north-seattle-enclave-profile.sql"
+duckdb -c ".read queries/ret-north-seattle-anchor-modifiers.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -212,6 +213,9 @@ The first Seattle/Atlanta RET spacing readout is:
 
 The first North Seattle / South Snohomish enclave profile is:
 `reports\ret-north-seattle-enclave-profile.md`.
+
+The first North Seattle anchor-modifier readout is:
+`reports\ret-north-seattle-anchor-modifiers.md`.
 
 ## Product thesis
 

@@ -1305,3 +1305,36 @@ Status: pass with next-output request.
 Retail complexes should become an anchor modifier, not just another store
 category. Future outputs should separate active mall anchors, legacy/redeveloping
 mall anchors, and smaller plaza or neighborhood-center service nodes.
+
+## Pulse 47 North Seattle Anchor Modifiers
+
+### Market Analyst
+
+Status: pass.
+
+The modifier readout improves the RET vocabulary. Lynnwood/Alderwood and
+Everett become active regional mall anchors, Northgate/Lake City becomes a
+legacy mall service grid, and Edmonds/Mountlake Terrace become smaller complex
+service edges.
+
+### Market Geographer
+
+Status: pass.
+
+The output keeps the underlying enclave type separate from the anchor modifier.
+This avoids treating every mall point as an active regional center.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The query consumes existing checked-in reviewed profile data and adds no new
+external source.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Anchor modifiers should eventually be tested against drive-time or corridor
+access. The current modifier is a point-and-category stack read, not a travel
+time catchment.
