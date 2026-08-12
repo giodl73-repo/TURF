@@ -1439,3 +1439,36 @@ Status: pass with next-output request.
 The next prediction test should compare Atlanta districts against North Seattle
 using the same category families, then isolate whether remaining differences
 come from geometry, category absence, or actual place type.
+
+## Pulse 51 Georgia Drugstore Layer
+
+### Market Analyst
+
+Status: pass.
+
+Drugstores add service-completeness evidence without collapsing the typology.
+Buckhead/Lenox/Phipps remains an urban mall-grocery grid, Northlake remains a
+legacy mall grocery-service grid, and Perimeter remains under active-anchor
+thresholds.
+
+### Market Geographer
+
+Status: pass.
+
+The layer is statewide Georgia exact-brand point evidence and is interpreted as
+a service-completeness signal, not a complete health-access geography.
+
+### Source Policy Auditor
+
+Status: pass with caveat.
+
+Rows come from open Overture Places. The extract initially exceeded the command
+timeout but completed a valid statewide fixture, which was reviewed and used.
+
+### Catchment Modeler
+
+Status: pass.
+
+The profile shows that adding a service layer alone does not mechanically
+upgrade a mall district. Active regional anchor calls still require a broader
+stack.

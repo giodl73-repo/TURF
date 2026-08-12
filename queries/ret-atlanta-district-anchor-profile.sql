@@ -29,6 +29,9 @@ UNION ALL
 SELECT 'mass_retail', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-mass-retail-georgia-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
+SELECT 'drugstore', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
+FROM read_csv_auto('fixtures/stores/overture-drugstore-georgia-review-2026-07-22.csv', all_varchar = true)
+UNION ALL
 SELECT 'retail_complex', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-retail-complex-georgia-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
@@ -116,6 +119,8 @@ COPY (
             coalesce(sum(CASE WHEN category_summary.category = 'grocery' THEN category_summary.brands ELSE 0 END), 0) AS grocery_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.stores ELSE 0 END), 0) AS mass_retail_stores,
             coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.brands ELSE 0 END), 0) AS mass_retail_brands,
+            coalesce(sum(CASE WHEN category_summary.category = 'drugstore' THEN category_summary.stores ELSE 0 END), 0) AS drugstore_stores,
+            coalesce(sum(CASE WHEN category_summary.category = 'drugstore' THEN category_summary.brands ELSE 0 END), 0) AS drugstore_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'retail_complex' THEN category_summary.stores ELSE 0 END), 0) AS retail_complexes,
             coalesce(sum(CASE WHEN category_summary.category = 'retail_complex' THEN category_summary.brands ELSE 0 END), 0) AS retail_complex_types,
             max(CASE WHEN category_summary.category = 'retail_complex' AND category_summary.brand_list LIKE '%Mall%' THEN 1 ELSE 0 END) AS has_mall_complex,
@@ -151,6 +156,8 @@ COPY (
         grocery_brands,
         mass_retail_stores,
         mass_retail_brands,
+        drugstore_stores,
+        drugstore_brands,
         retail_complexes,
         retail_complex_types,
         has_mall_complex,
@@ -164,7 +171,7 @@ COPY (
         CASE
             WHEN has_mall_complex = 1 AND home_improvement_brands >= 2 AND auto_parts_brands >= 2 AND qsr_brands >= 3 AND (grocery_brands >= 2 OR mass_retail_brands >= 2)
                 THEN 'active_regional_mall_anchor'
-            WHEN has_mall_complex = 1 AND retail_complex_types >= 3 AND grocery_brands >= 3 AND mass_retail_brands >= 1
+            WHEN has_mall_complex = 1 AND retail_complex_types >= 3 AND grocery_brands >= 3 AND mass_retail_brands >= 1 AND drugstore_brands >= 1
                 THEN 'urban_mall_grocery_grid'
             WHEN has_mall_complex = 1 AND grocery_brands >= 3 AND qsr_brands = 0
                 THEN 'legacy_mall_grocery_service_grid'

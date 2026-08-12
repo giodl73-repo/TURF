@@ -17,13 +17,13 @@ reports/ret-atlanta-district-anchor-profile.csv
 
 | District | Stores | Modifier | Evidence |
 |---|---:|---|---|
-| Cumberland / Vinings | 12 | `capacity_profile_mixed` | Cumberland Marketplace, grocery, mass retail, one home-improvement row, and four QSR brands; Cumberland Mall itself still needs refined district geometry. |
-| Buckhead / Lenox / Phipps | 11 | `urban_mall_grocery_grid` | Buckhead Village, Lenox, Phipps, four grocery brands, and one mass-retail row appear without big-box service depth. |
-| Perimeter | 10 | `mall_anchor_needs_category_depth` | Perimeter Mall appears with grocery, mass retail, QSR, and one home-improvement brand, but no auto-parts or dual home-improvement depth. |
+| Cumberland / Vinings | 14 | `capacity_profile_mixed` | Cumberland Marketplace, drugstore, grocery, mass retail, one home-improvement row, and four QSR brands; Cumberland Mall itself still needs refined district geometry. |
+| Buckhead / Lenox / Phipps | 12 | `urban_mall_grocery_grid` | Buckhead Village, Lenox, Phipps, drugstore, four grocery brands, and one mass-retail row appear without big-box service depth. |
+| Perimeter | 11 | `mall_anchor_needs_category_depth` | Perimeter Mall appears with drugstore, grocery, mass retail, QSR, and one home-improvement brand, but no auto-parts or dual home-improvement depth. |
 | Camp Creek | 7 | `capacity_profile_mixed` | Camp Creek Marketplace appears with grocery, mass retail, one home-improvement row, and three QSR brands. |
-| Northlake | 7 | `legacy_mall_grocery_service_grid` | Northlake Mall appears with four grocery brands and one mass-retail row, but little QSR or big-box service evidence in this slice. |
+| Northlake | 8 | `legacy_mall_grocery_service_grid` | Northlake Mall appears with drugstore, four grocery brands, and one mass-retail row, but little QSR or big-box service evidence in this slice. |
 | North Point / Alpharetta | 4 | `mall_anchor_needs_category_depth` | North Point Mall appears with mass retail and two QSR brands but no direct home-improvement, grocery, or auto-parts rows in this tight slice. |
-| Decatur / Emory | 8 | `capacity_profile_mixed` | Emory Village appears with four grocery brands, mass retail, and limited QSR evidence. |
+| Decatur / Emory | 10 | `capacity_profile_mixed` | Emory Village appears with drugstore, four grocery brands, mass retail, and limited QSR evidence. |
 
 ## Learning
 
@@ -41,9 +41,13 @@ and grocery is strong, but QSR and big-box service depth are thin in the current
 slice.
 
 Perimeter remains a pressure case. It has Perimeter Mall, grocery, mass retail,
-QSR, and one home-improvement brand, but the rule still withholds an active
-regional-anchor call because auto parts and dual home-improvement depth are
-absent.
+drugstore, QSR, and one home-improvement brand, but the rule still withholds an
+active regional-anchor call because auto parts and dual home-improvement depth
+are absent.
+
+Drugstores improve service-completeness evidence without over-upgrading mall
+districts. This is important: the model does not treat every added service
+layer as proof of an active regional anchor.
 
 This shows that RET predictions depend on:
 
@@ -54,5 +58,5 @@ This shows that RET predictions depend on:
 - edge geometry, because Cumberland Mall and Cumberland Marketplace split across
   locality labels and district edges.
 
-The next Atlanta step should widen or refine district slices and add Georgia
-drugstore coverage before treating a district as active, legacy, or underfilled.
+The next Atlanta step should widen or refine district slices before treating a
+district as active, legacy, or underfilled.

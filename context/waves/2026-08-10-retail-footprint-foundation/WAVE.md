@@ -67,6 +67,7 @@ before broader chain coverage begins.
 | 48 | Atlanta retail complex anchor backfill | complete | Backfilled Georgia retail complexes and compared Atlanta multi-mall grids with suburban mall anchors. |
 | 49 | Atlanta district anchor slices | complete | Tested named Atlanta mall districts and found the predictor needs fuller category coverage and refined district geometry. |
 | 50 | Georgia grocery and mass retail backfill | complete | Added Georgia grocery and mass retail layers and sharpened Atlanta district mall-grid predictions. |
+| 51 | Georgia drugstore layer | complete | Added Georgia exact-brand drugstores and confirmed service evidence does not over-upgrade Atlanta mall districts. |
 
 ## Success criteria
 
