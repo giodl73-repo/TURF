@@ -261,6 +261,9 @@ The Washington anchor-field extraction targets are:
 The Washington anchor-field retail-complex extraction plan is:
 `docs\research\overture-retail-complex-washington-anchor-fields-extraction-2026-07-22.md`.
 
+The first Washington anchor-field extraction attempt is:
+`reports\ret-washington-anchor-field-extraction-attempt.md`.
+
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.
 

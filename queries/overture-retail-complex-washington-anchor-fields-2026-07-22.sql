@@ -14,6 +14,30 @@ COPY (
             TRY_CAST(max_lon AS DOUBLE) AS max_lon
         FROM read_csv_auto('fixtures/geography/ret-washington-anchor-field-targets.csv', all_varchar = true)
     ),
+    target_bounds AS (
+        SELECT
+            min(min_lat) AS min_lat,
+            max(max_lat) AS max_lat,
+            min(min_lon) AS min_lon,
+            max(max_lon) AS max_lon
+        FROM targets
+    ),
+    bounded_places AS (
+        SELECT
+            id,
+            names,
+            addresses,
+            bbox,
+            operating_status
+        FROM read_parquet(
+            'az://overturemapswestus2.blob.core.windows.net/release/2026-07-22.0/theme=places/type=place/*',
+            hive_partitioning = 1
+        ),
+        target_bounds
+        WHERE addresses[1].region = 'WA'
+          AND bbox.ymin BETWEEN target_bounds.min_lat AND target_bounds.max_lat
+          AND bbox.xmin BETWEEN target_bounds.min_lon AND target_bounds.max_lon
+    ),
     candidates AS (
         SELECT
             targets.target_id,
@@ -39,10 +63,7 @@ COPY (
             '2026-07-22' AS source_date,
             'open' AS license_status
         FROM targets
-        JOIN read_parquet(
-            'az://overturemapswestus2.blob.core.windows.net/release/2026-07-22.0/theme=places/type=place/*',
-            hive_partitioning = 1
-        ) AS places
+        JOIN bounded_places AS places
             ON addresses[1].region = 'WA'
             AND bbox.ymin BETWEEN targets.min_lat AND targets.max_lat
             AND bbox.xmin BETWEEN targets.min_lon AND targets.max_lon

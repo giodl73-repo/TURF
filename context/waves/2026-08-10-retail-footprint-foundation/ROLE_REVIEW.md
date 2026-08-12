@@ -1819,3 +1819,33 @@ Status: pass with next-output request.
 
 The next pulse can run the bounded query, inspect row counts by target, and
 create the reviewed anchor-field complex layer.
+
+## Pulse 63 Washington Anchor-Field Extraction Attempt
+
+### Market Analyst
+
+Status: pass with blocker.
+
+The query did not complete, so no new candidate or reviewed anchor-field rows
+should be interpreted.
+
+### Market Geographer
+
+Status: pass.
+
+The optimized query preserves the correct target-envelope approach and
+individual target-box assignment.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Zero-byte partial outputs were removed, and no unreviewed candidate layer was
+kept as evidence.
+
+### Catchment Modeler
+
+Status: blocked on extraction runtime.
+
+The next path needs either a local Overture parquet cache, per-target
+long-running queries, or a prefiltered raw candidate step before review.
