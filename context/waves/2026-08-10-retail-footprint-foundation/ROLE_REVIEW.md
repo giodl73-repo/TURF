@@ -1270,3 +1270,38 @@ Status: pass with next-output request.
 The next pharmacy-related model should combine exact drugstore brands with
 store-name/category pharmacy signals and store-with-pharmacy rows, then keep
 those confidence levels separate in the output.
+
+## Pulse 46 Washington Retail Complex Anchor Test
+
+### Market Analyst
+
+Status: pass.
+
+Mall and shopping-center evidence strengthens the regional-anchor vocabulary.
+Lynnwood/Alderwood and Everett both carry named mall evidence plus broad
+store-category stacks. Northgate/Lake City carries a legacy mall signal without
+the same active regional-anchor store stack.
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The pulse treats retail complexes as point evidence, not parcel boundaries or
+official redevelopment areas. Northgate Mall is interpreted as a legacy anchor
+signal inside the Northgate/Lake City subcity slice.
+
+### Source Policy Auditor
+
+Status: pass with review caveat.
+
+Rows come from open Overture Places. The raw name-match layer is noisy, so the
+reviewed layer keeps only high-confidence named complexes and records excluded
+name-match noise.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Retail complexes should become an anchor modifier, not just another store
+category. Future outputs should separate active mall anchors, legacy/redeveloping
+mall anchors, and smaller plaza or neighborhood-center service nodes.

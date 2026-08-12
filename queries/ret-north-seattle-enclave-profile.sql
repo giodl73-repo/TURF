@@ -32,6 +32,9 @@ UNION ALL
 SELECT 'drugstore', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-drugstore-washington-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
+SELECT 'retail_complex', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
+FROM read_csv_auto('fixtures/stores/overture-retail-complex-washington-review-2026-07-22.csv', all_varchar = true)
+UNION ALL
 SELECT 'mass_retail', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-mass-retail-washington-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
@@ -124,6 +127,9 @@ COPY (
             coalesce(sum(CASE WHEN category_summary.category = 'grocery' THEN category_summary.brands ELSE 0 END), 0) AS grocery_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'drugstore' THEN category_summary.stores ELSE 0 END), 0) AS drugstore_stores,
             coalesce(sum(CASE WHEN category_summary.category = 'drugstore' THEN category_summary.brands ELSE 0 END), 0) AS drugstore_brands,
+            coalesce(sum(CASE WHEN category_summary.category = 'retail_complex' THEN category_summary.stores ELSE 0 END), 0) AS retail_complexes,
+            coalesce(sum(CASE WHEN category_summary.category = 'retail_complex' THEN category_summary.brands ELSE 0 END), 0) AS retail_complex_types,
+            max(CASE WHEN category_summary.category = 'retail_complex' AND category_summary.brand_list LIKE '%Mall%' THEN 1 ELSE 0 END) AS has_mall_complex,
             coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.stores ELSE 0 END), 0) AS mass_retail_stores,
             coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.brands ELSE 0 END), 0) AS mass_retail_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'qsr' THEN category_summary.stores ELSE 0 END), 0) AS qsr_stores,
@@ -157,6 +163,9 @@ COPY (
         grocery_brands,
         drugstore_stores,
         drugstore_brands,
+        retail_complexes,
+        retail_complex_types,
+        has_mall_complex,
         mass_retail_stores,
         mass_retail_brands,
         qsr_stores,
@@ -189,6 +198,7 @@ COPY (
         CASE
             WHEN categories_with_quarter_mile_spacing >= 2 THEN 'strong_rivalry_supported'
             WHEN categories_with_half_mile_spacing >= 2 THEN 'rivalry_supported'
+            WHEN has_mall_complex = 1 AND total_stores >= 8 THEN 'mall_anchor_supported'
             WHEN total_stores >= 4 THEN 'capacity_first'
             ELSE 'thin_capacity'
         END AS evidence_strength_hint

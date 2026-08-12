@@ -47,12 +47,14 @@ duckdb -c ".read queries/overture-auto-parts-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-mass-retail-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-grocery-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-drugstore-washington-2026-07-22.sql"
+duckdb -c ".read queries/overture-retail-complex-washington-2026-07-22.sql"
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-auto-parts-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-mass-retail-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-grocery-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-drugstore-washington-review-2026-07-22.csv
+cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-retail-complex-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- drilldown-metro-review 42660 fixtures\stores\overture-qsr-washington-review-2026-07-22.csv fixtures\geography\washington-qsr-zcta-county-primary-2020.csv fixtures\geography\washington-auto-parts-county-cbsa-2023.csv
 cargo run -p turf-cli -- drilldown-metro-review 12060 fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv fixtures\geography\georgia-qsr-zcta-county-primary-2020.csv fixtures\geography\georgia-qsr-county-cbsa-2023.csv
 cargo run -p turf-cli -- summarize fixtures\brands\home-improvement-georgia-packet-ready.csv

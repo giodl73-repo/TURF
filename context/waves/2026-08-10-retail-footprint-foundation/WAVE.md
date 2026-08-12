@@ -62,6 +62,7 @@ before broader chain coverage begins.
 | 43 | Washington mass retail layer | complete | Added Target/Walmart/Costco Washington extract and used it to sharpen North Seattle anchor/corridor types. |
 | 44 | Washington grocery layer | complete | Added Washington grocery extract and used it to distinguish Northgate/Lake City neighborhood service from Aurora corridor and Alderwood anchor. |
 | 45 | Washington drugstore layer | complete | Added exact-brand drugstore extract and learned that clean Overture brand rows sharpen service evidence but undercount pharmacy access. |
+| 46 | Washington retail complex anchor test | complete | Added reviewed mall/shopping-center signals and separated active regional anchors from legacy mall-service grids. |
 
 ## Success criteria
 
