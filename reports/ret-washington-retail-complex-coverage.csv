@@ -1,0 +1,7 @@
+city,retail_complexes,mall_rows,min_latitude,max_latitude,min_longitude,max_longitude,reviewed_complex_names
+Seattle,1,1,47.708255767822266,47.708255767822266,-122.32372283935547,-122.32372283935547,Northgate Mall
+Lynnwood,4,1,47.82038879394531,47.83042907714844,-122.31671905517578,-122.27689361572266,Alderwood Mall; Alderwood Plaza; Crossroads Shopping Center; James Village Shopping Center
+Mountlake Terrace,3,0,47.787109375,47.80416488647461,-122.31063079833984,-122.30462646484375,Alderwood Plaza; Mountlake Terrace Plaza; West Plaza Marketplace MLT
+Edmonds,2,0,47.784645080566406,47.79081726074219,-122.36819458007812,-122.3445053100586,Aurora Marketplace; The Village at Westgate
+Bothell,1,0,47.7613410949707,47.7613410949707,-122.17613220214844,-122.17613220214844,North Creek Plaza
+Everett,4,1,47.882469177246094,47.92854690551758,-122.23946380615234,-122.21346282958984,Andersons Shopping Center; Cascade Plaza; Everett Mall; Mariner Marketplace

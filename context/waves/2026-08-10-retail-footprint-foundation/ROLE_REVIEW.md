@@ -1725,3 +1725,36 @@ Status: pass with next-output request.
 The next analytical step should use the summary as a regression check while
 adding a second metro or generating the anchor profile from lower-level store
 layers.
+
+## Pulse 60 Washington Retail-Complex Coverage Audit
+
+### Market Analyst
+
+Status: pass.
+
+The audit prevents overreach. The existing Washington complex layer cannot yet
+support Bellevue, Southcenter, Tacoma Mall, Kitsap Mall, or South Hill anchor
+comparisons.
+
+### Market Geographer
+
+Status: pass.
+
+The reviewed complex geography is bounded to North Seattle / South Snohomish.
+The next geography expansion needs explicit target fields before profile rules
+are compared.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse audits existing checked-in reviewed rows and adds no new source
+acquisition.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next data step should be a bounded Washington retail-complex extraction for
+Bellevue, Southcenter/Tukwila, Tacoma Mall, Kitsap Mall, and South Hill/Puyallup
+before adding those fields to Anchor Profile v0.

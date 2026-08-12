@@ -76,6 +76,7 @@ before broader chain coverage begins.
 | 57 | Anchor profile contract | complete | Added a CLI validator and Rust contract tests for RET Anchor Profile v0 outputs. |
 | 58 | Anchor profile generator | complete | Added `anchor-profile-v0` so TURF can emit the scoped anchor profile from checked intermediate reports. |
 | 59 | Anchor profile summary | complete | Added `summarize-anchor-profile` for counts by anchor modifier, geography scope, and region. |
+| 60 | Washington retail-complex coverage audit | complete | Found the current Washington complex layer only covers North Seattle / South Snohomish, so broader Puget Sound anchor tests need another extraction pass. |
 
 ## Success criteria
 
