@@ -1600,3 +1600,36 @@ Status: pass with next-output request.
 The next implementation step should either thread anchor modifiers into a
 single generated profile table or add a small CLI/report command once the
 candidate label has another metro comparison.
+
+## Pulse 56 RET Anchor Profile v0
+
+### Market Analyst
+
+Status: pass.
+
+The profile makes the hierarchy readable in one table: active regional anchors,
+edge-city mall service grids, urban mall grids, legacy mall grids, complex
+edges, pressure cases, and non-complex capacity signals.
+
+### Market Geographer
+
+Status: pass.
+
+The profile keeps geography scope explicit. Perimeter and North Point /
+Alpharetta have both core and wide rows, so the model records the boundary
+effect instead of overwriting it.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse only integrates checked-in reports and does not acquire new source
+data.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next step should move from report-only integration toward either a stable
+schema fixture for anchor profiles or a CLI command that emits the same v0
+contract.

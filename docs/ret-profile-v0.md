@@ -60,3 +60,7 @@ The place capacity matrix adds a lower-grain read. It records selected enclaves
 as `0`, `1`, `2+`, or `source_gate_pending` for each tracked store type so TURF
 can distinguish observed absence, single presence, repeated capacity, and
 unfilled source coverage.
+
+Anchor Profile v0 is separate from the city/place profile. It uses mall fields,
+retail corridors, and district slices as the geography grain so anchor modifiers
+do not get forced into city labels.

@@ -55,3 +55,9 @@ The first candidate rule comparison is:
 ```text
 reports/ret-edge-city-mall-rule-audit.md
 ```
+
+The first integrated anchor profile is:
+
+```text
+reports/ret-anchor-profile-v0.md
+```

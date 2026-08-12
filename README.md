@@ -76,6 +76,7 @@ duckdb -c ".read queries/ret-atlanta-district-anchor-profile.sql"
 duckdb -c ".read queries/ret-anchor-prediction-audit.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-pressure-audit.sql"
 duckdb -c ".read queries/ret-edge-city-mall-rule-audit.sql"
+duckdb -c ".read queries/ret-anchor-profile-v0.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -232,6 +233,9 @@ The first Atlanta anchor pressure audit is:
 
 The first edge-city mall rule audit is:
 `reports\ret-edge-city-mall-rule-audit.md`.
+
+The first integrated anchor profile is:
+`reports\ret-anchor-profile-v0.md`.
 
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.
