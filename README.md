@@ -74,6 +74,7 @@ duckdb -c ".read queries/ret-north-seattle-anchor-modifiers.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-modifiers.sql"
 duckdb -c ".read queries/ret-atlanta-district-anchor-profile.sql"
 duckdb -c ".read queries/ret-anchor-prediction-audit.sql"
+duckdb -c ".read queries/ret-atlanta-anchor-pressure-audit.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -221,6 +222,9 @@ The first Seattle/Atlanta RET capacity synthesis is:
 
 The first cross-region anchor prediction audit is:
 `reports\ret-anchor-prediction-audit.md`.
+
+The first Atlanta anchor pressure audit is:
+`reports\ret-atlanta-anchor-pressure-audit.md`.
 
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.

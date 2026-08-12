@@ -70,6 +70,7 @@ before broader chain coverage begins.
 | 51 | Georgia drugstore layer | complete | Added Georgia exact-brand drugstores and confirmed service evidence does not over-upgrade Atlanta mall districts. |
 | 52 | Cumberland retail complex review fix | complete | Corrected Cumberland Mall representative point and upgraded Cumberland/Vinings to an urban mall service grid. |
 | 53 | RET anchor prediction audit | complete | Compared Washington and Atlanta anchor modifiers with shared diagnostic classes for active anchors, legacy grids, urban mall/service grids, and rule pressure cases. |
+| 54 | Atlanta anchor pressure audit | complete | Widened Perimeter and North Point boxes and found both become urban mall service grids while still staying below active regional-anchor rules. |
 
 ## Success criteria
 

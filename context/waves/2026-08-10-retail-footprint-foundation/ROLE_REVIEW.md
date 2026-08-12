@@ -1536,3 +1536,35 @@ Status: pass with next-output request.
 
 The next anchor test should add pressure-case store exemplars and run widened
 or split district boxes before changing the active-anchor threshold.
+
+## Pulse 54 Atlanta Anchor Pressure Audit
+
+### Market Analyst
+
+Status: pass.
+
+The widened boxes explain the pressure cases. Perimeter and North Point /
+Alpharetta were underfilled by tight geometry, but they still do not match the
+Washington active-anchor pattern.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse confirms that Atlanta edge-city mall geography is a field around the
+mall, not just the mall parcel or immediate core box.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The audit reuses existing checked-in reviewed Overture-derived layers and adds
+no new source acquisition.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Consider a distinct `edge_city_mall_service_grid` rule before relaxing the
+active regional-anchor threshold. The rule should encode the geometry lesson
+instead of making every widened mall district active.
