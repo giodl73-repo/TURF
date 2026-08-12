@@ -71,6 +71,7 @@ before broader chain coverage begins.
 | 52 | Cumberland retail complex review fix | complete | Corrected Cumberland Mall representative point and upgraded Cumberland/Vinings to an urban mall service grid. |
 | 53 | RET anchor prediction audit | complete | Compared Washington and Atlanta anchor modifiers with shared diagnostic classes for active anchors, legacy grids, urban mall/service grids, and rule pressure cases. |
 | 54 | Atlanta anchor pressure audit | complete | Widened Perimeter and North Point boxes and found both become urban mall service grids while still staying below active regional-anchor rules. |
+| 55 | Edge-city mall rule candidate | complete | Documented anchor modifiers and tested `edge_city_mall_service_grid` against Washington active-anchor references. |
 
 ## Success criteria
 

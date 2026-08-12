@@ -75,6 +75,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-modifiers.sql"
 duckdb -c ".read queries/ret-atlanta-district-anchor-profile.sql"
 duckdb -c ".read queries/ret-anchor-prediction-audit.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-pressure-audit.sql"
+duckdb -c ".read queries/ret-edge-city-mall-rule-audit.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -193,6 +194,9 @@ The first cross-category spread comparison is:
 RET, Retail Enclave Typology, is introduced in:
 `docs\ret-taxonomy.md`.
 
+RET anchor modifiers are documented in:
+`docs\ret-anchor-modifiers.md`.
+
 The first rule-based RET candidate readout is:
 `reports\ret-metro-candidate-readout.md`.
 
@@ -225,6 +229,9 @@ The first cross-region anchor prediction audit is:
 
 The first Atlanta anchor pressure audit is:
 `reports\ret-atlanta-anchor-pressure-audit.md`.
+
+The first edge-city mall rule audit is:
+`reports\ret-edge-city-mall-rule-audit.md`.
 
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.

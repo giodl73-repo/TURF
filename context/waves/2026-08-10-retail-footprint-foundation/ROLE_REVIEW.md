@@ -1568,3 +1568,35 @@ Status: pass with next-output request.
 Consider a distinct `edge_city_mall_service_grid` rule before relaxing the
 active regional-anchor threshold. The rule should encode the geometry lesson
 instead of making every widened mall district active.
+
+## Pulse 55 Edge-City Mall Rule Candidate
+
+### Market Analyst
+
+Status: pass.
+
+The candidate label preserves the business distinction: Atlanta edge-city mall
+fields are strong mall/service grids, while Washington active anchors still
+show deeper repeated auto-parts evidence.
+
+### Market Geographer
+
+Status: pass.
+
+The rule is explicitly tied to widened edge-city fields, so it records the
+geometry lesson from Perimeter and North Point / Alpharetta.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse documents a rule candidate and reuses checked-in reports. It adds no
+new source acquisition.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next implementation step should either thread anchor modifiers into a
+single generated profile table or add a small CLI/report command once the
+candidate label has another metro comparison.

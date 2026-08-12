@@ -1,0 +1,5 @@
+audit_group,area_id,label,scope,total_stores,retail_complexes,has_mall_complex,home_improvement_brands,auto_parts_brands,grocery_brands,mass_retail_brands,drugstore_brands,qsr_brands,prior_prediction,candidate_rule_label,rule_boundary_reason
+washington_reference,everett,Everett,anchor_modifier,50,4,1,2,4,5,3,2,4,active_regional_mall_anchor,active_regional_mall_anchor,repeated_auto_parts_depth
+washington_reference,lynnwood-alderwood,Lynnwood / Alderwood,anchor_modifier,36,4,1,2,4,6,3,1,3,active_regional_mall_anchor,active_regional_mall_anchor,repeated_auto_parts_depth
+atlanta_candidate,perimeter,Perimeter widened,wide,25,1,1,2,1,4,2,2,4,urban_mall_service_grid,edge_city_mall_service_grid,single_auto_parts_edge_city_depth
+atlanta_candidate,north-point-alpharetta,North Point widened,wide,21,1,1,2,1,2,3,1,4,urban_mall_service_grid,edge_city_mall_service_grid,single_auto_parts_edge_city_depth

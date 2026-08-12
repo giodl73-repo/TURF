@@ -111,3 +111,7 @@ The first same-place competitor-spacing readout is documented in
 
 The first spacing-aware place candidate evaluation is documented in
 `reports/ret-place-spacing-candidate-evaluation.md`.
+
+Anchor modifiers are documented in `docs/ret-anchor-modifiers.md`. They let TURF
+describe mall, shopping-center, and power-center effects without replacing the
+underlying RET type.
