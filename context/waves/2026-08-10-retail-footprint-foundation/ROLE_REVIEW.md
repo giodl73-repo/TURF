@@ -1849,3 +1849,36 @@ Status: blocked on extraction runtime.
 
 The next path needs either a local Overture parquet cache, per-target
 long-running queries, or a prefiltered raw candidate step before review.
+
+## Pulse 64 Washington Anchor-Field Local Candidates
+
+### Market Analyst
+
+Status: pass.
+
+The local assignment creates a manageable 63-row candidate set for the six
+planned Washington anchor fields.
+
+### Market Geographer
+
+Status: pass.
+
+Candidates retain `target_id`, `target_label`, and `anchor_field`, so review can
+keep acquisition field separate from final anchor geography.
+
+### Source Policy Auditor
+
+Status: pass with review gate.
+
+Rows come from the existing checked-in Overture-derived statewide candidate
+extract. They remain candidates until reviewed with `review_status` and
+`review_reason`. The candidate names include predictable false positives from
+name-token matching, which should be excluded during review rather than fed
+directly into Anchor Profile v0.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should create the reviewed anchor-field complex layer and then
+test how it changes Anchor Profile v0.

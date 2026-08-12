@@ -83,6 +83,8 @@ duckdb -c ".read queries/ret-edge-city-mall-rule-audit.sql"
 duckdb -c ".read queries/ret-anchor-profile-v0.sql"
 duckdb -c ".read queries/ret-washington-retail-complex-coverage.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-targets.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-candidates-from-statewide.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-candidate-summary.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -263,6 +265,9 @@ The Washington anchor-field retail-complex extraction plan is:
 
 The first Washington anchor-field extraction attempt is:
 `reports\ret-washington-anchor-field-extraction-attempt.md`.
+
+The Washington anchor-field local candidate summary is:
+`reports\ret-washington-anchor-field-candidate-summary.md`.
 
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.

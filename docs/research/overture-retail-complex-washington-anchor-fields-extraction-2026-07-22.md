@@ -45,3 +45,17 @@ The output is a candidate layer. It must be copied into a reviewed layer with
 
 Keep `target_id`, `target_label`, and `anchor_field` through review so later
 profile rows can preserve the acquisition field that produced each complex row.
+
+## Local Fallback
+
+The direct remote Overture extraction timed out in the first run attempt. The
+next path uses the existing statewide Washington candidate extract as a local
+source:
+
+```powershell
+duckdb -c ".read queries/ret-washington-anchor-field-candidates-from-statewide.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-candidate-summary.sql"
+```
+
+This writes the same target-assigned candidate fixture without rescanning the
+remote Overture release.

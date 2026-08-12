@@ -80,6 +80,7 @@ before broader chain coverage begins.
 | 61 | Washington anchor-field targets | complete | Added bounded Bellevue, Factoria, Southcenter, Tacoma Mall, Kitsap Mall, and South Hill extraction targets for the next retail-complex pass. |
 | 62 | Washington anchor-field extraction query | complete | Added the target-bounded Overture retail-complex extraction query and review boundary notes for Washington anchor fields. |
 | 63 | Washington anchor-field extraction attempt | complete | Attempted the bounded Overture extraction, optimized the query, and recorded timeout evidence without keeping partial candidate rows. |
+| 64 | Washington anchor-field local candidates | complete | Assigned the existing statewide Washington complex candidates to anchor fields, producing a 63-row review candidate set. |
 
 ## Success criteria
 
