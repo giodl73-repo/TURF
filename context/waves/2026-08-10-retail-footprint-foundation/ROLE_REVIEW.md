@@ -1405,3 +1405,37 @@ Status: pass with next-output request.
 Before drive-time modeling, Georgia should gain the same grocery, mass-retail,
 and drugstore layers used in Washington so district anchor calls compare like
 with like.
+
+## Pulse 50 Georgia Grocery and Mass Retail Backfill
+
+### Market Analyst
+
+Status: pass.
+
+The backfill changes the Atlanta predictions in useful ways. Buckhead/Lenox/
+Phipps becomes an urban mall-grocery grid, and Northlake becomes a legacy mall
+grocery-service grid. Perimeter still needs either refined rules or additional
+nearby category evidence.
+
+### Market Geographer
+
+Status: pass with caveat.
+
+The pulse improves category coverage but does not solve district geometry.
+Cumberland/Vinings still needs a refined slice because Cumberland Mall and
+Cumberland Marketplace are split by locality and the first box.
+
+### Source Policy Auditor
+
+Status: pass with review caveat.
+
+Rows come from open Overture Places and pass the repo's raw and reviewed store
+validators. The review layer excludes duplicate and false-positive rows.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next prediction test should compare Atlanta districts against North Seattle
+using the same category families, then isolate whether remaining differences
+come from geometry, category absence, or actual place type.

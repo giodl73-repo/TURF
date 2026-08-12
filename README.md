@@ -46,6 +46,8 @@ duckdb -c ".read queries/overture-qsr-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-auto-parts-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-mass-retail-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-grocery-washington-2026-07-22.sql"
+duckdb -c ".read queries/overture-mass-retail-georgia-2026-07-22.sql"
+duckdb -c ".read queries/overture-grocery-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-drugstore-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-georgia-2026-07-22.sql"
@@ -54,6 +56,8 @@ cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-geor
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-auto-parts-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-mass-retail-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-grocery-washington-review-2026-07-22.csv
+cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-mass-retail-georgia-review-2026-07-22.csv
+cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-grocery-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-drugstore-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-retail-complex-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-retail-complex-georgia-review-2026-07-22.csv

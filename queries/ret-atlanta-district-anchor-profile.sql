@@ -23,6 +23,12 @@ UNION ALL
 SELECT 'auto_parts', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-auto-parts-georgia-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
+SELECT 'grocery', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
+FROM read_csv_auto('fixtures/stores/overture-grocery-georgia-review-2026-07-22.csv', all_varchar = true)
+UNION ALL
+SELECT 'mass_retail', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
+FROM read_csv_auto('fixtures/stores/overture-mass-retail-georgia-review-2026-07-22.csv', all_varchar = true)
+UNION ALL
 SELECT 'retail_complex', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-retail-complex-georgia-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
@@ -106,6 +112,10 @@ COPY (
             coalesce(sum(CASE WHEN category_summary.category = 'home_improvement' THEN category_summary.brands ELSE 0 END), 0) AS home_improvement_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'auto_parts' THEN category_summary.stores ELSE 0 END), 0) AS auto_parts_stores,
             coalesce(sum(CASE WHEN category_summary.category = 'auto_parts' THEN category_summary.brands ELSE 0 END), 0) AS auto_parts_brands,
+            coalesce(sum(CASE WHEN category_summary.category = 'grocery' THEN category_summary.stores ELSE 0 END), 0) AS grocery_stores,
+            coalesce(sum(CASE WHEN category_summary.category = 'grocery' THEN category_summary.brands ELSE 0 END), 0) AS grocery_brands,
+            coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.stores ELSE 0 END), 0) AS mass_retail_stores,
+            coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.brands ELSE 0 END), 0) AS mass_retail_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'retail_complex' THEN category_summary.stores ELSE 0 END), 0) AS retail_complexes,
             coalesce(sum(CASE WHEN category_summary.category = 'retail_complex' THEN category_summary.brands ELSE 0 END), 0) AS retail_complex_types,
             max(CASE WHEN category_summary.category = 'retail_complex' AND category_summary.brand_list LIKE '%Mall%' THEN 1 ELSE 0 END) AS has_mall_complex,
@@ -137,6 +147,10 @@ COPY (
         home_improvement_brands,
         auto_parts_stores,
         auto_parts_brands,
+        grocery_stores,
+        grocery_brands,
+        mass_retail_stores,
+        mass_retail_brands,
         retail_complexes,
         retail_complex_types,
         has_mall_complex,
@@ -148,14 +162,20 @@ COPY (
         categories_with_half_mile_spacing,
         round(nearest_spacing_miles, 2) AS nearest_spacing_miles,
         CASE
-            WHEN has_mall_complex = 1 AND home_improvement_brands >= 2 AND auto_parts_brands >= 2 AND qsr_brands >= 3
+            WHEN has_mall_complex = 1 AND home_improvement_brands >= 2 AND auto_parts_brands >= 2 AND qsr_brands >= 3 AND (grocery_brands >= 2 OR mass_retail_brands >= 2)
                 THEN 'active_regional_mall_anchor'
-            WHEN has_mall_complex = 1 AND qsr_brands >= 3 AND home_improvement_brands <= 1
+            WHEN has_mall_complex = 1 AND retail_complex_types >= 3 AND grocery_brands >= 3 AND mass_retail_brands >= 1
+                THEN 'urban_mall_grocery_grid'
+            WHEN has_mall_complex = 1 AND grocery_brands >= 3 AND qsr_brands = 0
+                THEN 'legacy_mall_grocery_service_grid'
+            WHEN has_mall_complex = 1 AND qsr_brands >= 3 AND (grocery_brands >= 2 OR mass_retail_brands >= 1)
                 THEN 'urban_mall_service_grid'
             WHEN has_mall_complex = 1
                 THEN 'mall_anchor_needs_category_depth'
-            WHEN retail_complexes >= 2 AND qsr_brands >= 2
+            WHEN retail_complexes >= 2 AND (qsr_brands >= 2 OR grocery_brands >= 2)
                 THEN 'small_complex_service_edge'
+            WHEN grocery_brands >= 3 AND qsr_brands >= 2 AND home_improvement_brands = 0
+                THEN 'neighborhood_grocery_service_grid'
             WHEN total_stores >= 6
                 THEN 'capacity_profile_mixed'
             ELSE 'thin_direct_store_layer'
