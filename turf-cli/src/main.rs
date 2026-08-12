@@ -16,10 +16,11 @@ use turf_core::{
     suggest_ret_place_candidates, suggest_ret_place_candidates_with_spacing,
     summarize_counties_in_metro, summarize_county_footprint, summarize_footprint,
     summarize_metro_footprint, summarize_metro_rings, summarize_postal_footprint,
-    summarize_restaurant_chain_targets, summarize_ret_examples, summarize_ret_place_spacing,
-    validate_county_cbsa_contexts, validate_market_packet_json, validate_national_store_points,
-    validate_restaurant_chain_targets, validate_ret_anchor_profile, validate_ret_examples,
-    validate_ret_place_targets, validate_reviewed_store_points, validate_zcta_county_contexts,
+    summarize_restaurant_chain_targets, summarize_ret_anchor_profile, summarize_ret_examples,
+    summarize_ret_place_spacing, validate_county_cbsa_contexts, validate_market_packet_json,
+    validate_national_store_points, validate_restaurant_chain_targets, validate_ret_anchor_profile,
+    validate_ret_examples, validate_ret_place_targets, validate_reviewed_store_points,
+    validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -224,6 +225,16 @@ fn run() -> Result<(), String> {
                 &atlanta_pressure_csv,
             )?;
             print!("{}", render_ret_anchor_profile_csv(&rows));
+            Ok(())
+        }
+        Some("summarize-anchor-profile") => {
+            let path = args
+                .next()
+                .ok_or("usage: turf-cli summarize-anchor-profile <ret-anchor-profile.csv>")?;
+            let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
+            let rows = turf_core::parse_ret_anchor_profile(&csv)?;
+            let summary = summarize_ret_anchor_profile(&rows);
+            print_anchor_profile_summary(&summary);
             Ok(())
         }
         Some("validate-restaurant-targets") => {
@@ -587,6 +598,7 @@ fn print_help() {
     println!("  validate-ret <ret-examples.csv>  Check Retail Enclave Typology examples");
     println!("  validate-ret-place-targets <ret-place-targets.csv>");
     println!("  validate-anchor-profile <ret-anchor-profile.csv>");
+    println!("  summarize-anchor-profile <ret-anchor-profile.csv>");
     println!(
         "  anchor-profile-v0 <north-anchor-modifiers.csv> <north-enclave-profile.csv> <atlanta-district-anchor-profile.csv> <atlanta-anchor-pressure-audit.csv>"
     );
@@ -768,6 +780,27 @@ fn print_ret_summary(summary: &turf_core::RetSummary) {
     println!();
     println!("geography_type,examples");
     for count in &summary.geography_type_counts {
+        println!("{},{}", count.key, count.examples);
+    }
+}
+
+fn print_anchor_profile_summary(summary: &turf_core::RetAnchorProfileSummary) {
+    println!("total_rows,{}", summary.total_rows);
+    println!("mall_signal_rows,{}", summary.mall_signal_rows);
+    println!("edge_city_rows,{}", summary.edge_city_rows);
+    println!();
+    println!("anchor_modifier_v0,rows");
+    for count in &summary.anchor_modifier_counts {
+        println!("{},{}", count.key, count.examples);
+    }
+    println!();
+    println!("geography_scope,rows");
+    for count in &summary.geography_scope_counts {
+        println!("{},{}", count.key, count.examples);
+    }
+    println!();
+    println!("region,rows");
+    for count in &summary.region_counts {
         println!("{},{}", count.key, count.examples);
     }
 }

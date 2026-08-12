@@ -73,3 +73,9 @@ Generate the profile with:
 ```powershell
 cargo run -p turf-cli -- anchor-profile-v0 reports\ret-north-seattle-anchor-modifiers.csv reports\ret-north-seattle-enclave-profile.csv reports\ret-atlanta-district-anchor-profile.csv reports\ret-atlanta-anchor-pressure-audit.csv
 ```
+
+Summarize the profile with:
+
+```powershell
+cargo run -p turf-cli -- summarize-anchor-profile reports\ret-anchor-profile-v0.csv
+```

@@ -288,6 +288,16 @@ pub struct RetSummary {
     pub geography_type_counts: Vec<RetCount>,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RetAnchorProfileSummary {
+    pub total_rows: usize,
+    pub anchor_modifier_counts: Vec<RetCount>,
+    pub geography_scope_counts: Vec<RetCount>,
+    pub region_counts: Vec<RetCount>,
+    pub mall_signal_rows: usize,
+    pub edge_city_rows: usize,
+}
+
 #[derive(Debug, Clone, PartialEq)]
 pub struct RetMetroCandidate {
     pub category: String,
@@ -2063,6 +2073,20 @@ pub fn summarize_ret_examples(examples: &[RetExample]) -> RetSummary {
     }
 }
 
+pub fn summarize_ret_anchor_profile(rows: &[RetAnchorProfileRow]) -> RetAnchorProfileSummary {
+    RetAnchorProfileSummary {
+        total_rows: rows.len(),
+        anchor_modifier_counts: ret_counts(rows.iter().map(|row| &row.anchor_modifier_v0)),
+        geography_scope_counts: ret_counts(rows.iter().map(|row| &row.geography_scope)),
+        region_counts: ret_counts(rows.iter().map(|row| &row.region)),
+        mall_signal_rows: rows.iter().filter(|row| row.has_mall_complex).count(),
+        edge_city_rows: rows
+            .iter()
+            .filter(|row| row.anchor_modifier_v0 == "edge_city_mall_service_grid")
+            .count(),
+    }
+}
+
 pub fn evaluate_ret_metro_candidates(
     examples: &[RetExample],
     candidates: &[RetMetroCandidate],
@@ -3681,6 +3705,32 @@ perimeter-wide,perimeter,wide,Perimeter widened,25,1,1,2,1,4,2,2,4,urban_mall_se
         assert!(rendered.contains("perimeter,Perimeter widened,district_wide"));
         assert!(rendered.contains("edge_city_mall_service_grid"));
         validate_ret_anchor_profile(&rendered).expect("rendered profile validates");
+    }
+
+    #[test]
+    fn summarizes_ret_anchor_profile() {
+        let rows = parse_ret_anchor_profile(
+            "\
+region,area_id,label,geography_scope,local_context,total_stores,retail_complexes,has_mall_complex,home_improvement_brands,auto_parts_brands,grocery_brands,mass_retail_brands,drugstore_brands,qsr_brands,nearest_spacing_miles,source_modifier,anchor_modifier_v0,anchor_evidence_summary
+north_seattle_south_snohomish,everett,Everett,reviewed_zone,regional_anchor_node,50,4,1,2,4,5,3,2,4,0.05,active_regional_mall_anchor,active_regional_mall_anchor,regional anchor evidence includes repeated auto-parts depth
+atlanta_districts,perimeter,Perimeter widened,district_wide,edge_city_mall_field,25,1,1,2,1,4,2,2,4,,urban_mall_service_grid,edge_city_mall_service_grid,widened edge-city mall field with single auto-parts depth
+",
+        )
+        .expect("profile parses");
+
+        let summary = summarize_ret_anchor_profile(&rows);
+
+        assert_eq!(summary.total_rows, 2);
+        assert_eq!(summary.mall_signal_rows, 2);
+        assert_eq!(summary.edge_city_rows, 1);
+        assert_eq!(
+            summary
+                .anchor_modifier_counts
+                .iter()
+                .map(|count| count.key.as_str())
+                .collect::<Vec<_>>(),
+            vec!["active_regional_mall_anchor", "edge_city_mall_service_grid"]
+        );
     }
 
     #[test]

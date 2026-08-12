@@ -75,6 +75,7 @@ before broader chain coverage begins.
 | 56 | RET anchor profile v0 | complete | Integrated anchor modifiers, pressure cases, and edge-city candidates into a scoped cross-region anchor profile. |
 | 57 | Anchor profile contract | complete | Added a CLI validator and Rust contract tests for RET Anchor Profile v0 outputs. |
 | 58 | Anchor profile generator | complete | Added `anchor-profile-v0` so TURF can emit the scoped anchor profile from checked intermediate reports. |
+| 59 | Anchor profile summary | complete | Added `summarize-anchor-profile` for counts by anchor modifier, geography scope, and region. |
 
 ## Success criteria
 

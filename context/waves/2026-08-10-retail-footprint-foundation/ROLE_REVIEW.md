@@ -1694,3 +1694,34 @@ Status: pass with next-output request.
 
 The next step should compare this generated profile against another metro or
 promote anchor-profile generation from lower-level reviewed store layers.
+
+## Pulse 59 Anchor Profile Summary
+
+### Market Analyst
+
+Status: pass.
+
+The summary exposes the current type distribution directly from the contract:
+19 total rows, 10 mall-signal rows, and 2 edge-city mall rows.
+
+### Market Geographer
+
+Status: pass.
+
+Counts by geography scope make the profile grain visible and help avoid mixing
+district cores, widened fields, and reviewed zones.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The command summarizes an existing validated profile and introduces no new
+source layer.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next analytical step should use the summary as a regression check while
+adding a second metro or generating the anchor profile from lower-level store
+layers.
