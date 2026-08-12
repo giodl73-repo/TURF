@@ -2,24 +2,24 @@ use std::{collections::BTreeMap, env, fs, process};
 
 use turf_core::{
     CatchmentAssignment, MarketStatus, PlaceContextFinding, assign_nearest_store,
-    build_market_packet, classify_metro_rings, enrich_county_store_points_with_metro,
-    enrich_postal_store_points_with_county, evaluate_ret_metro_candidates,
-    evaluate_ret_place_candidates, filter_metro_store_points, inspect_place_contexts,
-    nearest_opposite_brand, nearest_ret_place_competitors, packet_ready_postal_store_points,
-    packet_ready_store_points, parse_county_cbsa_contexts, parse_demand_points,
-    parse_place_contexts, parse_restaurant_chain_targets, parse_ret_examples,
+    build_market_packet, build_ret_anchor_profile_v0, classify_metro_rings,
+    enrich_county_store_points_with_metro, enrich_postal_store_points_with_county,
+    evaluate_ret_metro_candidates, evaluate_ret_place_candidates, filter_metro_store_points,
+    inspect_place_contexts, nearest_opposite_brand, nearest_ret_place_competitors,
+    packet_ready_postal_store_points, packet_ready_store_points, parse_county_cbsa_contexts,
+    parse_demand_points, parse_place_contexts, parse_restaurant_chain_targets, parse_ret_examples,
     parse_ret_metro_candidates, parse_ret_place_targets, parse_reviewed_store_points,
     parse_store_points, parse_zcta_county_contexts, render_county_store_points_csv,
     render_market_packet_json, render_market_packet_markdown, render_metro_store_points_csv,
-    render_place_context_findings_json, render_postal_store_points_csv, render_store_points_csv,
-    suggest_ret_metro_candidates, suggest_ret_place_candidates,
-    suggest_ret_place_candidates_with_spacing, summarize_counties_in_metro,
-    summarize_county_footprint, summarize_footprint, summarize_metro_footprint,
-    summarize_metro_rings, summarize_postal_footprint, summarize_restaurant_chain_targets,
-    summarize_ret_examples, summarize_ret_place_spacing, validate_county_cbsa_contexts,
-    validate_market_packet_json, validate_national_store_points, validate_restaurant_chain_targets,
-    validate_ret_anchor_profile, validate_ret_examples, validate_ret_place_targets,
-    validate_reviewed_store_points, validate_zcta_county_contexts,
+    render_place_context_findings_json, render_postal_store_points_csv,
+    render_ret_anchor_profile_csv, render_store_points_csv, suggest_ret_metro_candidates,
+    suggest_ret_place_candidates, suggest_ret_place_candidates_with_spacing,
+    summarize_counties_in_metro, summarize_county_footprint, summarize_footprint,
+    summarize_metro_footprint, summarize_metro_rings, summarize_postal_footprint,
+    summarize_restaurant_chain_targets, summarize_ret_examples, summarize_ret_place_spacing,
+    validate_county_cbsa_contexts, validate_market_packet_json, validate_national_store_points,
+    validate_restaurant_chain_targets, validate_ret_anchor_profile, validate_ret_examples,
+    validate_ret_place_targets, validate_reviewed_store_points, validate_zcta_county_contexts,
 };
 
 fn main() {
@@ -194,6 +194,36 @@ fn run() -> Result<(), String> {
             let csv = fs::read_to_string(&path).map_err(|error| format!("{path}: {error}"))?;
             let rows = validate_ret_anchor_profile(&csv)?;
             println!("valid,{},{}", path, rows);
+            Ok(())
+        }
+        Some("anchor-profile-v0") => {
+            let north_modifiers_path = args.next().ok_or(
+                "usage: turf-cli anchor-profile-v0 <north-anchor-modifiers.csv> <north-enclave-profile.csv> <atlanta-district-anchor-profile.csv> <atlanta-anchor-pressure-audit.csv>",
+            )?;
+            let north_profile_path = args.next().ok_or(
+                "usage: turf-cli anchor-profile-v0 <north-anchor-modifiers.csv> <north-enclave-profile.csv> <atlanta-district-anchor-profile.csv> <atlanta-anchor-pressure-audit.csv>",
+            )?;
+            let atlanta_district_path = args.next().ok_or(
+                "usage: turf-cli anchor-profile-v0 <north-anchor-modifiers.csv> <north-enclave-profile.csv> <atlanta-district-anchor-profile.csv> <atlanta-anchor-pressure-audit.csv>",
+            )?;
+            let atlanta_pressure_path = args.next().ok_or(
+                "usage: turf-cli anchor-profile-v0 <north-anchor-modifiers.csv> <north-enclave-profile.csv> <atlanta-district-anchor-profile.csv> <atlanta-anchor-pressure-audit.csv>",
+            )?;
+            let north_modifiers_csv = fs::read_to_string(&north_modifiers_path)
+                .map_err(|error| format!("{north_modifiers_path}: {error}"))?;
+            let north_profile_csv = fs::read_to_string(&north_profile_path)
+                .map_err(|error| format!("{north_profile_path}: {error}"))?;
+            let atlanta_district_csv = fs::read_to_string(&atlanta_district_path)
+                .map_err(|error| format!("{atlanta_district_path}: {error}"))?;
+            let atlanta_pressure_csv = fs::read_to_string(&atlanta_pressure_path)
+                .map_err(|error| format!("{atlanta_pressure_path}: {error}"))?;
+            let rows = build_ret_anchor_profile_v0(
+                &north_modifiers_csv,
+                &north_profile_csv,
+                &atlanta_district_csv,
+                &atlanta_pressure_csv,
+            )?;
+            print!("{}", render_ret_anchor_profile_csv(&rows));
             Ok(())
         }
         Some("validate-restaurant-targets") => {
@@ -557,6 +587,9 @@ fn print_help() {
     println!("  validate-ret <ret-examples.csv>  Check Retail Enclave Typology examples");
     println!("  validate-ret-place-targets <ret-place-targets.csv>");
     println!("  validate-anchor-profile <ret-anchor-profile.csv>");
+    println!(
+        "  anchor-profile-v0 <north-anchor-modifiers.csv> <north-enclave-profile.csv> <atlanta-district-anchor-profile.csv> <atlanta-anchor-pressure-audit.csv>"
+    );
     println!("  validate-restaurant-targets <restaurant-targets.csv>");
     println!("  summarize-restaurant-targets <restaurant-targets.csv>");
     println!("  summarize-ret <ret-examples.csv>  Summarize Retail Enclave Typology examples");

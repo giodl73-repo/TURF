@@ -1031,6 +1031,147 @@ pub fn validate_ret_anchor_profile(csv: &str) -> Result<usize, String> {
     Ok(parse_ret_anchor_profile(csv)?.len())
 }
 
+pub fn build_ret_anchor_profile_v0(
+    north_anchor_modifiers_csv: &str,
+    north_enclave_profile_csv: &str,
+    atlanta_district_anchor_profile_csv: &str,
+    atlanta_anchor_pressure_audit_csv: &str,
+) -> Result<Vec<RetAnchorProfileRow>, String> {
+    let north_modifiers = parse_csv_records(north_anchor_modifiers_csv)?;
+    let north_profiles = parse_csv_records(north_enclave_profile_csv)?;
+    let atlanta_districts = parse_csv_records(atlanta_district_anchor_profile_csv)?;
+    let atlanta_pressure = parse_csv_records(atlanta_anchor_pressure_audit_csv)?;
+    let north_profile_by_zone: BTreeMap<&str, &BTreeMap<String, String>> = north_profiles
+        .iter()
+        .map(|row| (csv_value(row, "zone_id").unwrap_or(""), row))
+        .collect();
+
+    let mut rows = Vec::new();
+    for modifier in north_modifiers {
+        let zone_id = csv_value(&modifier, "zone_id")?;
+        let profile = north_profile_by_zone
+            .get(zone_id)
+            .ok_or_else(|| format!("missing North Seattle profile row for zone_id {zone_id}"))?;
+        rows.push(anchor_profile_row_from_values(AnchorProfileValues {
+            region: "north_seattle_south_snohomish",
+            area_id: zone_id,
+            label: csv_value(&modifier, "label")?,
+            geography_scope: "reviewed_zone",
+            local_context: csv_value(&modifier, "enclave_type_hint")?,
+            total_stores: csv_value(&modifier, "total_stores")?,
+            retail_complexes: csv_value(&modifier, "retail_complexes")?,
+            has_mall_complex: csv_value(&modifier, "has_mall_complex")?,
+            home_improvement_brands: csv_value(&modifier, "home_improvement_brands")?,
+            auto_parts_brands: csv_value(profile, "auto_parts_brands")?,
+            grocery_brands: csv_value(&modifier, "grocery_brands")?,
+            mass_retail_brands: csv_value(&modifier, "mass_retail_brands")?,
+            drugstore_brands: csv_value(profile, "drugstore_brands")?,
+            qsr_brands: csv_value(&modifier, "qsr_brands")?,
+            nearest_spacing_miles: csv_value(profile, "nearest_spacing_miles")?,
+            source_modifier: csv_value(&modifier, "anchor_modifier")?,
+        })?);
+    }
+
+    for district in atlanta_districts {
+        rows.push(anchor_profile_row_from_values(AnchorProfileValues {
+            region: "atlanta_districts",
+            area_id: csv_value(&district, "district_id")?,
+            label: csv_value(&district, "label")?,
+            geography_scope: "district_core",
+            local_context: csv_value(&district, "district_context")?,
+            total_stores: csv_value(&district, "total_stores")?,
+            retail_complexes: csv_value(&district, "retail_complexes")?,
+            has_mall_complex: csv_value(&district, "has_mall_complex")?,
+            home_improvement_brands: csv_value(&district, "home_improvement_brands")?,
+            auto_parts_brands: csv_value(&district, "auto_parts_brands")?,
+            grocery_brands: csv_value(&district, "grocery_brands")?,
+            mass_retail_brands: csv_value(&district, "mass_retail_brands")?,
+            drugstore_brands: csv_value(&district, "drugstore_brands")?,
+            qsr_brands: csv_value(&district, "qsr_brands")?,
+            nearest_spacing_miles: csv_value(&district, "nearest_spacing_miles")?,
+            source_modifier: csv_value(&district, "anchor_modifier")?,
+        })?);
+    }
+
+    for pressure in atlanta_pressure {
+        if csv_value(&pressure, "scope")? == "wide"
+            && matches!(
+                csv_value(&pressure, "district_id")?,
+                "perimeter" | "north-point-alpharetta"
+            )
+        {
+            rows.push(anchor_profile_row_from_values(AnchorProfileValues {
+                region: "atlanta_districts",
+                area_id: csv_value(&pressure, "district_id")?,
+                label: csv_value(&pressure, "label")?,
+                geography_scope: "district_wide",
+                local_context: "edge_city_mall_field",
+                total_stores: csv_value(&pressure, "total_stores")?,
+                retail_complexes: csv_value(&pressure, "retail_complexes")?,
+                has_mall_complex: csv_value(&pressure, "has_mall_complex")?,
+                home_improvement_brands: csv_value(&pressure, "home_improvement_brands")?,
+                auto_parts_brands: csv_value(&pressure, "auto_parts_brands")?,
+                grocery_brands: csv_value(&pressure, "grocery_brands")?,
+                mass_retail_brands: csv_value(&pressure, "mass_retail_brands")?,
+                drugstore_brands: csv_value(&pressure, "drugstore_brands")?,
+                qsr_brands: csv_value(&pressure, "qsr_brands")?,
+                nearest_spacing_miles: "",
+                source_modifier: csv_value(&pressure, "pressure_prediction")?,
+            })?);
+        }
+    }
+
+    rows.sort_by_key(anchor_profile_sort_key);
+    Ok(rows)
+}
+
+pub fn render_ret_anchor_profile_csv(rows: &[RetAnchorProfileRow]) -> String {
+    let mut output = String::from(
+        "region,area_id,label,geography_scope,local_context,total_stores,retail_complexes,has_mall_complex,home_improvement_brands,auto_parts_brands,grocery_brands,mass_retail_brands,drugstore_brands,qsr_brands,nearest_spacing_miles,source_modifier,anchor_modifier_v0,anchor_evidence_summary\n",
+    );
+    for row in rows {
+        output.push_str(&row.region);
+        output.push(',');
+        output.push_str(&row.area_id);
+        output.push(',');
+        output.push_str(&row.label);
+        output.push(',');
+        output.push_str(&row.geography_scope);
+        output.push(',');
+        output.push_str(&row.local_context);
+        output.push(',');
+        output.push_str(&row.total_stores.to_string());
+        output.push(',');
+        output.push_str(&row.retail_complexes.to_string());
+        output.push(',');
+        output.push_str(if row.has_mall_complex { "1" } else { "0" });
+        output.push(',');
+        output.push_str(&row.home_improvement_brands.to_string());
+        output.push(',');
+        output.push_str(&row.auto_parts_brands.to_string());
+        output.push(',');
+        output.push_str(&row.grocery_brands.to_string());
+        output.push(',');
+        output.push_str(&row.mass_retail_brands.to_string());
+        output.push(',');
+        output.push_str(&row.drugstore_brands.to_string());
+        output.push(',');
+        output.push_str(&row.qsr_brands.to_string());
+        output.push(',');
+        if let Some(distance) = row.nearest_spacing_miles {
+            output.push_str(&format_number(distance));
+        }
+        output.push(',');
+        output.push_str(&row.source_modifier);
+        output.push(',');
+        output.push_str(&row.anchor_modifier_v0);
+        output.push(',');
+        output.push_str(&row.anchor_evidence_summary);
+        output.push('\n');
+    }
+    output
+}
+
 pub fn summarize_restaurant_chain_targets(targets: &[RestaurantChainTarget]) -> Vec<RetCount> {
     let mut counts = BTreeMap::new();
     for target in targets {
@@ -2768,6 +2909,272 @@ fn validate_anchor_modifier(
     }
 }
 
+struct AnchorProfileValues<'a> {
+    region: &'a str,
+    area_id: &'a str,
+    label: &'a str,
+    geography_scope: &'a str,
+    local_context: &'a str,
+    total_stores: &'a str,
+    retail_complexes: &'a str,
+    has_mall_complex: &'a str,
+    home_improvement_brands: &'a str,
+    auto_parts_brands: &'a str,
+    grocery_brands: &'a str,
+    mass_retail_brands: &'a str,
+    drugstore_brands: &'a str,
+    qsr_brands: &'a str,
+    nearest_spacing_miles: &'a str,
+    source_modifier: &'a str,
+}
+
+fn anchor_profile_row_from_values(
+    values: AnchorProfileValues<'_>,
+) -> Result<RetAnchorProfileRow, String> {
+    let total_stores = values
+        .total_stores
+        .parse::<usize>()
+        .map_err(|_| format!("invalid total_stores for {}", values.area_id))?;
+    let retail_complexes = values
+        .retail_complexes
+        .parse::<usize>()
+        .map_err(|_| format!("invalid retail_complexes for {}", values.area_id))?;
+    let has_mall_complex = match values.has_mall_complex {
+        "0" => false,
+        "1" => true,
+        _ => return Err(format!("invalid has_mall_complex for {}", values.area_id)),
+    };
+    let home_improvement_brands = parse_anchor_usize(
+        values.home_improvement_brands,
+        values.area_id,
+        "home_improvement_brands",
+    )?;
+    let auto_parts_brands = parse_anchor_usize(
+        values.auto_parts_brands,
+        values.area_id,
+        "auto_parts_brands",
+    )?;
+    let grocery_brands =
+        parse_anchor_usize(values.grocery_brands, values.area_id, "grocery_brands")?;
+    let mass_retail_brands = parse_anchor_usize(
+        values.mass_retail_brands,
+        values.area_id,
+        "mass_retail_brands",
+    )?;
+    let drugstore_brands =
+        parse_anchor_usize(values.drugstore_brands, values.area_id, "drugstore_brands")?;
+    let qsr_brands = parse_anchor_usize(values.qsr_brands, values.area_id, "qsr_brands")?;
+    let nearest_spacing_miles = if values.nearest_spacing_miles.is_empty() {
+        None
+    } else {
+        Some(
+            values
+                .nearest_spacing_miles
+                .parse::<f64>()
+                .map_err(|_| format!("invalid nearest_spacing_miles for {}", values.area_id))?,
+        )
+    };
+    let anchor_modifier_v0 = anchor_modifier_v0(
+        values.geography_scope,
+        has_mall_complex,
+        retail_complexes,
+        home_improvement_brands,
+        auto_parts_brands,
+        grocery_brands,
+        mass_retail_brands,
+        qsr_brands,
+        values.source_modifier,
+    );
+    let anchor_evidence_summary = anchor_evidence_summary(
+        values.geography_scope,
+        has_mall_complex,
+        retail_complexes,
+        auto_parts_brands,
+        values.source_modifier,
+    );
+
+    Ok(RetAnchorProfileRow {
+        region: values.region.to_string(),
+        area_id: values.area_id.to_string(),
+        label: values.label.to_string(),
+        geography_scope: values.geography_scope.to_string(),
+        local_context: values.local_context.to_string(),
+        total_stores,
+        retail_complexes,
+        has_mall_complex,
+        home_improvement_brands,
+        auto_parts_brands,
+        grocery_brands,
+        mass_retail_brands,
+        drugstore_brands,
+        qsr_brands,
+        nearest_spacing_miles,
+        source_modifier: values.source_modifier.to_string(),
+        anchor_modifier_v0,
+        anchor_evidence_summary,
+    })
+}
+
+fn anchor_modifier_v0(
+    geography_scope: &str,
+    has_mall_complex: bool,
+    retail_complexes: usize,
+    home_improvement_brands: usize,
+    auto_parts_brands: usize,
+    grocery_brands: usize,
+    mass_retail_brands: usize,
+    qsr_brands: usize,
+    source_modifier: &str,
+) -> String {
+    if has_mall_complex
+        && home_improvement_brands >= 2
+        && auto_parts_brands >= 2
+        && qsr_brands >= 3
+        && (grocery_brands >= 2 || mass_retail_brands >= 2)
+    {
+        return "active_regional_mall_anchor".to_string();
+    }
+    if geography_scope == "district_wide"
+        && has_mall_complex
+        && home_improvement_brands >= 2
+        && auto_parts_brands >= 1
+        && qsr_brands >= 3
+        && grocery_brands >= 2
+        && mass_retail_brands >= 2
+    {
+        return "edge_city_mall_service_grid".to_string();
+    }
+    if matches!(
+        source_modifier,
+        "urban_mall_service_grid"
+            | "urban_mall_grocery_grid"
+            | "legacy_mall_service_grid"
+            | "legacy_mall_grocery_service_grid"
+            | "small_complex_service_edge"
+            | "complex_service_modifier"
+    ) {
+        return source_modifier.to_string();
+    }
+    if has_mall_complex {
+        return "mall_anchor_needs_category_depth".to_string();
+    }
+    if retail_complexes > 0
+        || matches!(
+            source_modifier,
+            "capacity_profile_mixed" | "no_complex_signal"
+        )
+    {
+        return source_modifier.to_string();
+    }
+    source_modifier.to_string()
+}
+
+fn anchor_evidence_summary(
+    geography_scope: &str,
+    has_mall_complex: bool,
+    retail_complexes: usize,
+    auto_parts_brands: usize,
+    source_modifier: &str,
+) -> String {
+    if has_mall_complex && auto_parts_brands >= 2 {
+        "regional anchor evidence includes repeated auto-parts depth".to_string()
+    } else if geography_scope == "district_wide" && has_mall_complex && auto_parts_brands == 1 {
+        "widened edge-city mall field with single auto-parts depth".to_string()
+    } else if matches!(
+        source_modifier,
+        "urban_mall_service_grid" | "urban_mall_grocery_grid"
+    ) {
+        "urban mall district supported by service-category depth".to_string()
+    } else if matches!(
+        source_modifier,
+        "legacy_mall_service_grid" | "legacy_mall_grocery_service_grid"
+    ) {
+        "mall-shaped geography with service-weighted current stack".to_string()
+    } else if has_mall_complex {
+        "mall signal present but category or geometry evidence remains thin".to_string()
+    } else if retail_complexes > 0 {
+        "retail-complex signal modifies local service profile".to_string()
+    } else {
+        "no reviewed mall signal in current checked layers".to_string()
+    }
+}
+
+fn anchor_profile_sort_key(row: &RetAnchorProfileRow) -> (usize, usize, usize) {
+    (
+        match row.region.as_str() {
+            "north_seattle_south_snohomish" => 1,
+            "atlanta_districts" => 2,
+            _ => 99,
+        },
+        match row.area_id.as_str() {
+            "aurora-north-seattle" => 1,
+            "northgate-lake-city" => 2,
+            "shoreline" => 3,
+            "edmonds" => 4,
+            "mountlake-terrace" => 5,
+            "lynnwood-alderwood" => 6,
+            "bothell" => 7,
+            "kenmore" => 8,
+            "mill-creek" => 9,
+            "everett" => 10,
+            "cumberland-vinings" => 21,
+            "buckhead-lenox-phipps" => 22,
+            "perimeter" => 23,
+            "camp-creek" => 24,
+            "northlake" => 25,
+            "north-point-alpharetta" => 26,
+            "decatur-emory" => 27,
+            _ => 99,
+        },
+        match row.geography_scope.as_str() {
+            "district_core" => 1,
+            "district_wide" => 2,
+            _ => 0,
+        },
+    )
+}
+
+fn parse_anchor_usize(value: &str, area_id: &str, field: &str) -> Result<usize, String> {
+    value
+        .parse::<usize>()
+        .map_err(|_| format!("invalid {field} for {area_id}"))
+}
+
+fn parse_csv_records(csv: &str) -> Result<Vec<BTreeMap<String, String>>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<String> = header
+        .split(',')
+        .map(|field| field.trim().to_string())
+        .collect();
+    let mut rows = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        if line.trim().is_empty() {
+            continue;
+        }
+        let line_number = offset + 2;
+        let fields: Vec<String> = line
+            .split(',')
+            .map(|field| field.trim().to_string())
+            .collect();
+        if fields.len() != headers.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                headers.len(),
+                fields.len()
+            ));
+        }
+        rows.push(headers.iter().cloned().zip(fields.into_iter()).collect());
+    }
+    Ok(rows)
+}
+
+fn csv_value<'a>(row: &'a BTreeMap<String, String>, field: &str) -> Result<&'a str, String> {
+    row.get(field)
+        .map(|value| value.as_str())
+        .ok_or_else(|| format!("missing field {field}"))
+}
+
 fn validate_ret_enclave_type(value: &str, line_number: usize) -> Result<(), String> {
     match value {
         "anchor_market"
@@ -3239,6 +3646,41 @@ atlanta_districts,perimeter,Perimeter,district_core,edge_city_mall_cluster,11,1,
         let error = validate_ret_anchor_profile(csv).expect_err("invalid modifier should fail");
 
         assert!(error.contains("invalid anchor_modifier_v0"));
+    }
+
+    #[test]
+    fn builds_ret_anchor_profile_v0_from_intermediate_reports() {
+        let north_modifiers = "\
+zone_id,label,enclave_type_hint,total_stores,retail_complexes,retail_complex_types,has_mall_complex,home_improvement_brands,mass_retail_brands,grocery_brands,qsr_brands,anchor_modifier,anchor_modifier_reason
+everett,Everett,regional_anchor_node,50,4,4,1,2,3,5,4,active_regional_mall_anchor,mall plus broad active category stack
+";
+        let north_profile = "\
+zone_id,label,zone_context,total_stores,home_improvement_stores,home_improvement_brands,auto_parts_stores,auto_parts_brands,grocery_stores,grocery_brands,drugstore_stores,drugstore_brands,retail_complexes,retail_complex_types,has_mall_complex,mass_retail_stores,mass_retail_brands,qsr_stores,qsr_brands,category_summary,categories_with_quarter_mile_spacing,categories_with_half_mile_spacing,nearest_spacing_miles,enclave_type_hint,evidence_strength_hint
+everett,Everett,regional_anchor_node,50,2,2,4,4,5,5,2,2,4,4,1,3,3,4,4,summary,1,1,0.05,regional_anchor_node,strong
+";
+        let atlanta_districts = "\
+district_id,label,district_context,total_stores,home_improvement_stores,home_improvement_brands,auto_parts_stores,auto_parts_brands,grocery_stores,grocery_brands,mass_retail_stores,mass_retail_brands,drugstore_stores,drugstore_brands,retail_complexes,retail_complex_types,has_mall_complex,retail_complex_names,qsr_stores,qsr_brands,category_summary,categories_with_quarter_mile_spacing,categories_with_half_mile_spacing,nearest_spacing_miles,anchor_modifier,evidence_strength_hint
+perimeter,Perimeter,edge_city_mall_cluster,11,1,1,0,0,3,2,2,2,1,1,1,1,1,Perimeter Mall,3,2,summary,0,0,0.66,mall_anchor_needs_category_depth,mall_anchor_supported
+";
+        let atlanta_pressure = "\
+box_id,district_id,scope,label,total_stores,retail_complexes,has_mall_complex,home_improvement_brands,auto_parts_brands,grocery_brands,mass_retail_brands,drugstore_brands,qsr_brands,pressure_prediction,pressure_diagnosis,category_summary,exemplar_stores
+perimeter-wide,perimeter,wide,Perimeter widened,25,1,1,2,1,4,2,2,4,urban_mall_service_grid,tight_box_underfilled_service_grid,summary,examples
+";
+
+        let rows = build_ret_anchor_profile_v0(
+            north_modifiers,
+            north_profile,
+            atlanta_districts,
+            atlanta_pressure,
+        )
+        .expect("profile builds");
+        let rendered = render_ret_anchor_profile_csv(&rows);
+
+        assert_eq!(rows.len(), 3);
+        assert!(rendered.contains("everett,Everett,reviewed_zone"));
+        assert!(rendered.contains("perimeter,Perimeter widened,district_wide"));
+        assert!(rendered.contains("edge_city_mall_service_grid"));
+        validate_ret_anchor_profile(&rendered).expect("rendered profile validates");
     }
 
     #[test]

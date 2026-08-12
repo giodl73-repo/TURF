@@ -1664,3 +1664,33 @@ Status: pass with next-output request.
 The next implementation step can be a generator command for Anchor Profile v0,
 or a second-metro comparison to test whether `edge_city_mall_service_grid`
 generalizes beyond Atlanta.
+
+## Pulse 58 Anchor Profile Generator
+
+### Market Analyst
+
+Status: pass.
+
+The generator makes the anchor profile reproducible from prior checked reports
+instead of depending only on a DuckDB script output.
+
+### Market Geographer
+
+Status: pass.
+
+The command preserves the profile grain by emitting `reviewed_zone`,
+`district_core`, and `district_wide` rows.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The command consumes existing checked reports and introduces no new source
+acquisition.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next step should compare this generated profile against another metro or
+promote anchor-profile generation from lower-level reviewed store layers.

@@ -70,3 +70,9 @@ Validate the anchor profile with:
 ```powershell
 cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v0.csv
 ```
+
+Generate the anchor profile with:
+
+```powershell
+cargo run -p turf-cli -- anchor-profile-v0 reports\ret-north-seattle-anchor-modifiers.csv reports\ret-north-seattle-enclave-profile.csv reports\ret-atlanta-district-anchor-profile.csv reports\ret-atlanta-anchor-pressure-audit.csv
+```

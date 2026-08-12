@@ -42,6 +42,7 @@ cargo run -p turf-cli -- suggest-ret-place-spacing auto_parts fixtures\geography
 cargo run -p turf-cli -- validate-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
 cargo run -p turf-cli -- summarize-restaurant-targets fixtures\stores\restaurant-chain-targets.csv
 cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v0.csv
+cargo run -p turf-cli -- anchor-profile-v0 reports\ret-north-seattle-anchor-modifiers.csv reports\ret-north-seattle-enclave-profile.csv reports\ret-atlanta-district-anchor-profile.csv reports\ret-atlanta-anchor-pressure-audit.csv
 duckdb -c ".read queries/overture-qsr-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-qsr-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-auto-parts-georgia-2026-07-22.sql"
@@ -153,6 +154,9 @@ casual dining.
 
 The `validate-anchor-profile` command checks the RET Anchor Profile v0 CSV
 contract before anchor modifiers are consumed by later reports or CLI commands.
+
+The `anchor-profile-v0` command emits that same profile contract from checked
+intermediate anchor reports.
 
 The first QSR acquisition query is:
 `queries\overture-qsr-washington-2026-07-22.sql`.
