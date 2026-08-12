@@ -17,14 +17,14 @@ reports/ret-north-seattle-enclave-profile.csv
 |---|---:|---|---|
 | Aurora / North Seattle | 9 | `retail_corridor` | Home Depot, Lowe's, three auto-parts brands, one grocery row, and QSR rows along the Aurora/North Seattle strip; no direct mass-retail row in this slice. |
 | Northgate / Lake City | 10 | `neighborhood_grocery_service_grid` | Four grocery brands, four QSR brands, one Target row, and one auto-parts row, but no direct home-improvement anchor in this subcity slice. |
-| Shoreline | 13 | `mixed_edge_node` | Home Depot, Costco, four grocery brands, auto-parts rows, and McDonald's rows; a mixed inner-suburb service edge. |
+| Shoreline | 14 | `mixed_edge_node` | Home Depot, Costco, four grocery brands, one clean drugstore row, auto-parts rows, and McDonald's rows; a mixed inner-suburb service edge. |
 | Edmonds | 6 | `ferry_town_service_edge` | QSR plus Safeway and O'Reilly, no direct home-improvement anchor; ferry/town-edge context matters. |
 | Mountlake Terrace | 4 | `mixed_edge_node` | Grocery rows plus one auto-parts row, still no big-box anchor in the checked categories. |
-| Lynnwood / Alderwood | 31 | `regional_anchor_absorber` | Home Depot + Lowe's, Target, Walmart, Costco, all four auto-parts brands, six grocery brands, three QSR brands, and close same-place spacing. |
-| Bothell | 12 | `partial_anchor_service_node` | Home Depot, three grocery brands, QSR, and O'Reilly presence, but no mass-retail row in this filter. |
+| Lynnwood / Alderwood | 32 | `regional_anchor_absorber` | Home Depot + Lowe's, Target, Walmart, Costco, all four auto-parts brands, six grocery brands, one clean drugstore row, three QSR brands, and close same-place spacing. |
+| Bothell | 13 | `partial_anchor_service_node` | Home Depot, three grocery brands, one clean drugstore row, QSR, and O'Reilly presence, but no mass-retail row in this filter. |
 | Kenmore | 4 | `mixed_edge_node` | Grocery, QSR, and auto-parts rows without a big-box anchor. |
 | Mill Creek | 6 | `mixed_edge_node` | Lowe's, grocery, two auto-parts brands, and McDonald's rows. |
-| Everett | 43 | `regional_anchor_node` | Home Depot + Lowe's, Target, Walmart, Costco, all four auto-parts brands, five grocery brands, all four QSR brands, and strong same-place spacing support. |
+| Everett | 46 | `regional_anchor_node` | Home Depot + Lowe's, Target, Walmart, Costco, all four auto-parts brands, five grocery brands, two clean drugstore brands, all four QSR brands, and strong same-place spacing support. |
 
 ## Learning
 
@@ -51,6 +51,12 @@ Aurora because it has four grocery brands and four QSR brands without a direct
 home-improvement anchor. Lynnwood/Alderwood remains the stronger regional
 absorber because grocery, mass retail, home improvement, auto parts, and QSR all
 stack there.
+
+Drugstores add a service-completeness signal but also expose a source limitation.
+Everett, Lynnwood/Alderwood, Shoreline, and Bothell gain clean exact-brand
+drugstore rows. Aurora, Northgate/Lake City, Edmonds, Mountlake Terrace,
+Kenmore, and Mill Creek do not in this layer. That absence should be read as an
+Overture exact-brand limitation, not proof of no pharmacy access.
 
 ## Caveat
 

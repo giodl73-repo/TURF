@@ -1236,3 +1236,37 @@ Status: pass with next-output request.
 Grocery should be tested with smaller catchment assumptions than mass retail.
 The next model should compare neighborhood grocery access against regional
 anchor absorption.
+
+## Pulse 45 Washington Drugstore Layer
+
+### Market Analyst
+
+Status: pass with caveat.
+
+Drugstores add a service-completeness signal where clean exact-brand rows
+appear. Everett, Lynnwood/Alderwood, Shoreline, and Bothell gain drugstore
+evidence, but the layer does not change the current north-end type labels.
+
+### Market Geographer
+
+Status: pass.
+
+The profile keeps the same city and subcity zone definitions. Drugstore rows
+are interpreted as additional public service evidence, not as official health
+access boundaries.
+
+### Source Policy Auditor
+
+Status: pass with coverage caveat.
+
+Rows come from open Overture Places. The pulse is explicit that exact
+`brand.names.primary` rows undercount pharmacy access in Washington and should
+not be treated as a complete pharmacy census.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pharmacy-related model should combine exact drugstore brands with
+store-name/category pharmacy signals and store-with-pharmacy rows, then keep
+those confidence levels separate in the output.

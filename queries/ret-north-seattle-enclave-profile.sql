@@ -29,6 +29,9 @@ UNION ALL
 SELECT 'grocery', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-grocery-washington-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
+SELECT 'drugstore', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
+FROM read_csv_auto('fixtures/stores/overture-drugstore-washington-review-2026-07-22.csv', all_varchar = true)
+UNION ALL
 SELECT 'mass_retail', brand, store_id, store_name, address, city, state, TRY_CAST(latitude AS DOUBLE), TRY_CAST(longitude AS DOUBLE), review_status
 FROM read_csv_auto('fixtures/stores/overture-mass-retail-washington-review-2026-07-22.csv', all_varchar = true)
 UNION ALL
@@ -119,6 +122,8 @@ COPY (
             coalesce(sum(CASE WHEN category_summary.category = 'auto_parts' THEN category_summary.brands ELSE 0 END), 0) AS auto_parts_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'grocery' THEN category_summary.stores ELSE 0 END), 0) AS grocery_stores,
             coalesce(sum(CASE WHEN category_summary.category = 'grocery' THEN category_summary.brands ELSE 0 END), 0) AS grocery_brands,
+            coalesce(sum(CASE WHEN category_summary.category = 'drugstore' THEN category_summary.stores ELSE 0 END), 0) AS drugstore_stores,
+            coalesce(sum(CASE WHEN category_summary.category = 'drugstore' THEN category_summary.brands ELSE 0 END), 0) AS drugstore_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.stores ELSE 0 END), 0) AS mass_retail_stores,
             coalesce(sum(CASE WHEN category_summary.category = 'mass_retail' THEN category_summary.brands ELSE 0 END), 0) AS mass_retail_brands,
             coalesce(sum(CASE WHEN category_summary.category = 'qsr' THEN category_summary.stores ELSE 0 END), 0) AS qsr_stores,
@@ -150,6 +155,8 @@ COPY (
         auto_parts_brands,
         grocery_stores,
         grocery_brands,
+        drugstore_stores,
+        drugstore_brands,
         mass_retail_stores,
         mass_retail_brands,
         qsr_stores,

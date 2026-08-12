@@ -61,6 +61,7 @@ before broader chain coverage begins.
 | 42 | North Seattle enclave profile | complete | Profiled Aurora, Northgate/Lake City, Edmonds, Lynnwood/Alderwood, Bothell/Kenmore, Mill Creek, and Everett as nested RET types. |
 | 43 | Washington mass retail layer | complete | Added Target/Walmart/Costco Washington extract and used it to sharpen North Seattle anchor/corridor types. |
 | 44 | Washington grocery layer | complete | Added Washington grocery extract and used it to distinguish Northgate/Lake City neighborhood service from Aurora corridor and Alderwood anchor. |
+| 45 | Washington drugstore layer | complete | Added exact-brand drugstore extract and learned that clean Overture brand rows sharpen service evidence but undercount pharmacy access. |
 
 ## Success criteria
 
