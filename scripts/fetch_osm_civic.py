@@ -170,6 +170,8 @@ def review_reason(tags: dict, facility_type: str) -> str:
         or "ups customer center" in operator
         or "fedex" in name
         or "fedex" in operator
+        or "dhl" in name
+        or "dhl" in operator
         or "mail boxes etc" in name
         or "mail boxes etc" in operator
         or "postalannex" in name

@@ -134,6 +134,7 @@ before broader chain coverage begins.
 | 115 | Dallas pre-scale field stack | complete | Combined five Dallas/Fort Worth layers into comparable, retry-gated, and partial field types before adding another metro. |
 | 116 | Dallas type-discovery profile | complete | Synthesized Dallas/Fort Worth field types and added eight rows to the cross-metro type-discovery profile. |
 | 117 | Next scale decision | complete | Used the four-metro profile to choose source-resolution for Atlanta and Chicago before adding a fifth metro. |
+| 118 | Chicago post-office source resolution | complete | Retried Loop / River North, promoted three USPS rows, excluded DHL/private counters, and reduced one Chicago source gate. |
 
 ## Success criteria
 

@@ -75,7 +75,8 @@ Profile basis:
 Washington contributes the complete baseline set. Chicago now contributes five
 type-discovery-comparable fields:
 
-- Loop / River North: `urban_core_everyday_grid`.
+- Loop / River North: `urban_core_everyday_grid` with observed postal signal
+  after the first source-resolution pass.
 - Lincoln Park / Lakeview: `inner_neighborhood_everyday_grid`.
 - Oakbrook widened: `confirmed_postal_big_box_edge_field`.
 - Woodfield / Schaumburg: `confirmed_edge_city_mall_grocery_field`.

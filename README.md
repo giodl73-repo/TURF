@@ -396,6 +396,9 @@ The Chicago anchor-field type-discovery targets are:
 The Chicago anchor-field post-office readout is:
 `reports\ret-chicago-anchor-field-post-office-summary.md`.
 
+The Chicago source-resolution pass is:
+`reports\ret-chicago-source-resolution-pass.md`.
+
 The Chicago anchor-field gym source-gate readout is:
 `reports\ret-chicago-anchor-field-gym-summary.md`.
 

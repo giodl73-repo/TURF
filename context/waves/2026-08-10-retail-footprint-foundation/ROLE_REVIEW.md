@@ -3721,3 +3721,37 @@ Status: pass with next-output request.
 The next execution should reduce Atlanta and Chicago civic/postal gates before
 refreshing the cross-metro profile. That will make later catchment and ranking
 work less dependent on uneven OSM response quality.
+
+## Pulse 118 Chicago Post-Office Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+The pass improves an existing comparison row rather than adding breadth.
+Loop / River North now has four observed layers and only one source gate, which
+makes it a cleaner urban-core comparison against Washington and Dallas fields.
+
+### Market Geographer
+
+Status: pass.
+
+The result confirms that downtown Chicago's postal terrain exists inside the
+selected field. The prior source gate was an acquisition limitation, not an
+absence claim.
+
+### Source Policy Auditor
+
+Status: pass.
+
+DHL is now excluded from the post-office layer as a private shipping counter.
+The reviewed fixture keeps the excluded private-counter rows visible for audit
+while counting only USPS rows as packet-ready.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+This is the first reduction of the Chicago gate load. The next source pass
+should either retry another Chicago post-office/gym field or move to Atlanta's
+heavier civic source gates.

@@ -7,8 +7,8 @@ to another metro or adds another source family.
 
 Included layers:
 
-- Post office: OSM/Overpass, source-gated for six fields and observed for
-  Oakbrook.
+- Post office: OSM/Overpass, observed for Loop / River North and Oakbrook,
+  source-gated for five fields.
 - Gym: OSM/Overpass, source-gated for all seven fields.
 - Pharmacy: reviewed Illinois Overture drugstore layer.
 - Mass retail: reviewed Illinois Overture Target / Walmart / Costco / Sam's
@@ -48,7 +48,7 @@ another metro before this stack is used as the comparison baseline.
 
 | Field | Observed | Source-Gated | Checked Absent | Emerging Type | Readiness |
 |---|---:|---:|---:|---|---|
-| Loop / River North | 3 | 2 | 1 | `urban_core_everyday_grid` | `usable_for_type_discovery_retry_osm_before_ranking` |
+| Loop / River North | 4 | 1 | 1 | `urban_core_everyday_grid` | `usable_for_type_discovery` |
 | Lincoln Park / Lakeview | 3 | 2 | 1 | `inner_neighborhood_everyday_grid` | `usable_for_type_discovery_retry_osm_before_ranking` |
 | Old Orchard / Skokie | 2 | 2 | 2 | `confirmed_single_grocery_mall_field` | `source_limited_retry_or_alternate_source` |
 | Oakbrook widened | 4 | 1 | 1 | `confirmed_postal_big_box_edge_field` | `usable_for_type_discovery` |
@@ -58,9 +58,12 @@ another metro before this stack is used as the comparison baseline.
 
 ## Interpretation
 
-Loop / River North and Lincoln Park / Lakeview are the cleanest current Chicago
-type-discovery fields. They combine pharmacy, Target, and multi-brand grocery
-signal, but both still have OSM post-office and gym source gates.
+Loop / River North is now the cleanest Chicago urban-core comparison field. It
+combines observed post office, pharmacy, Target, and multi-brand grocery
+signal, with only the gym layer still source-gated.
+
+Lincoln Park / Lakeview remains a strong inner-neighborhood type-discovery
+field, but it still has both OSM post-office and gym source gates.
 
 Oakbrook is the cleanest suburban comparison field because it has observed post
 office, multi-brand mass retail, and grocery signal with only one OSM source
