@@ -1,0 +1,6 @@
+target_id,target_label,anchor_field,facility_type,gate_status,gate_reason,source,source_date
+glendale-burbank,Glendale / Burbank field,valley_media_retail_edge_field,post_office,source_gated,overpass_connection_timeout,OSM Overpass,2026-08-13
+west-la-century-city-culver,West LA / Century City / Culver City field,affluent_office_retail_service_field,post_office,source_gated,overpass_connection_timeout,OSM Overpass,2026-08-13
+ontario-rancho-cucamonga,Ontario Mills / Rancho Cucamonga field,inland_freeway_power_center_field,post_office,source_gated,overpass_connection_timeout,OSM Overpass,2026-08-13
+riverside-tyler-corona,Riverside / Tyler / Corona edge field,inland_secondary_core_growth_field,post_office,source_gated,overpass_connection_timeout,OSM Overpass,2026-08-13
+long-beach-lakewood,Long Beach / Lakewood field,port_coastal_grid_mall_service_field,post_office,source_gated,overpass_connection_timeout,OSM Overpass,2026-08-13

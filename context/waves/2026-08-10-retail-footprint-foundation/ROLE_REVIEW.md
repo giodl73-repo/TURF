@@ -4084,3 +4084,35 @@ Status: pass with next-output request.
 The next pulse should acquire or gate the first pre-scale layer, starting with
 post office so the original postal-terrain thesis remains the first civic
 anchor in the fifth metro.
+
+## Pulse 129 Los Angeles Post-Office Layer
+
+### Market Analyst
+
+Status: pass.
+
+The pulse adds a narrow first LA layer before scaling. It provides useful
+signal without prematurely ranking the seven fields.
+
+### Market Geographer
+
+Status: pass.
+
+The observed postal civic rows in Downtown LA / Koreatown / Mid-Wilshire and
+South Bay / Torrance fit the dense urban and coastal-suburban service-grid
+hypotheses.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Private shipping counters are excluded, and Overpass connection timeouts are
+preserved as source gates rather than interpreted as absences.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should either retry the five LA source gates or add a common
+store layer that tests the same bounded fields without depending on the gated
+post-office fetches.

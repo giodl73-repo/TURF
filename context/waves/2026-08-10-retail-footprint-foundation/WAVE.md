@@ -145,6 +145,7 @@ before broader chain coverage begins.
 | 126 | Atlanta Northlake service source resolution | complete | Retried Northlake service layers, promoted finance/gas/hardware rows, checked Decatur hardware absent, and retyped Northlake as a usable legacy mall service field. |
 | 127 | Fifth metro scale decision | complete | Accepted remaining Atlanta gates as explicit type-discovery limits and selected Los Angeles / Inland Empire as the fifth metro. |
 | 128 | Los Angeles anchor-field targets | complete | Added seven bounded Los Angeles / Inland Empire target fields and generated the target-readiness gate. |
+| 129 | Los Angeles post-office layer | complete | Added the first Los Angeles / Inland Empire postal civic layer, promoted observed USPS-like rows in two fields, excluded private counters, and preserved five Overpass source gates. |
 
 ## Success criteria
 

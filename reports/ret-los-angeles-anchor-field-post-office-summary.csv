@@ -1,0 +1,8 @@
+field_id,label,anchor_field,raw_post_office_rows,post_office_rows,operator_count,private_shipping_counter_rows,address_incomplete_rows,post_office_names,post_office_signal,gate_reason
+downtown-koreatown-midwilshire,Downtown LA / Koreatown / Mid-Wilshire field,urban_core_mixed_service_field,27,11,1,16,7,City National Plaza Station Los Angeles Post Office; Del Valle Station Los Angeles Post Office; Foy Station Los Angeles Post Office; Los Angeles Main Post Office; Market Station Los Angeles Post Office; Pico Heights Station Los Angeles Post Office; Rimpau Station Los Angeles Post Office; USPO Terminal Annex; United States Post Office; United States Post Office; United States Post Office,observed,""
+glendale-burbank,Glendale / Burbank field,valley_media_retail_edge_field,0,0,0,0,0,"",source_gated,overpass_connection_timeout
+west-la-century-city-culver,West LA / Century City / Culver City field,affluent_office_retail_service_field,0,0,0,0,0,"",source_gated,overpass_connection_timeout
+south-bay-torrance,South Bay / Torrance field,coastal_suburban_mall_auto_service_field,19,5,1,14,4,Marcelina Station Torrance Post Office; North Redondo Beach Post Office; North Torrance Station Torrance Post Office; Post Office; Torrance Post Office,observed,""
+ontario-rancho-cucamonga,Ontario Mills / Rancho Cucamonga field,inland_freeway_power_center_field,0,0,0,0,0,"",source_gated,overpass_connection_timeout
+riverside-tyler-corona,Riverside / Tyler / Corona edge field,inland_secondary_core_growth_field,0,0,0,0,0,"",source_gated,overpass_connection_timeout
+long-beach-lakewood,Long Beach / Lakewood field,port_coastal_grid_mall_service_field,0,0,0,0,0,"",source_gated,overpass_connection_timeout
