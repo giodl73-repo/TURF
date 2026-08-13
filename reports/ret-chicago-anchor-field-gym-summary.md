@@ -13,15 +13,14 @@ reports/ret-chicago-anchor-field-gym-summary.csv
 
 ## Current Read
 
-All seven Chicago gym fetches timed out across bounded target requests on
-2026-08-13. The Loop / River North fallback against the main Overpass endpoint
-also timed out.
+Old Orchard / Skokie resolved on a targeted retry. The remaining six Chicago
+gym fields stay source-gated from earlier bounded target timeouts.
 
 | Field | Gym Rows | Signal | Gate |
 |---|---:|---|---|
 | Loop / River North | 0 | `source_gated` | `overpass_target_timeout` |
 | Lincoln Park / Lakeview | 0 | `source_gated` | `overpass_target_timeout` |
-| Old Orchard / Skokie | 0 | `source_gated` | `overpass_target_timeout` |
+| Old Orchard / Skokie | 4 | `observed` |  |
 | Oakbrook widened | 0 | `source_gated` | `overpass_target_timeout` |
 | Woodfield / Schaumburg | 0 | `source_gated` | `overpass_target_timeout` |
 | Midway / Ford City | 0 | `source_gated` | `overpass_target_timeout` |
@@ -29,9 +28,10 @@ also timed out.
 
 ## Learning
 
-Chicago's source issue is broader than post office. Gym is a dense category in
-Washington and Atlanta, but the Chicago target pass still fully source-gated.
+Chicago's source issue is broader than post office, but the Old Orchard retry
+shows the category can resolve when bounded requests succeed. The field has
+CorePower Yoga, CycleBar, Life Time, and SoulCycle as named wellness anchors.
 
-That does not prove gym absence in Chicago. It means the Chicago extraction
-strategy should change before TURF spends many pulses attempting every
-remaining OSM category one by one.
+That does not prove gym absence in the remaining Chicago fields. It means the
+remaining gates are source-quality warnings until TURF retries or adopts an
+alternate civic/wellness source strategy.

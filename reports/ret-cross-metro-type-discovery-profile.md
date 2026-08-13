@@ -56,8 +56,7 @@ The current generated profile has 28 rows:
 |---|---|---:|
 | Washington | `baseline_comparable` | 6 |
 | Atlanta | `type_discovery_partial` | 7 |
-| Chicago | `type_discovery_comparable` | 6 |
-| Chicago | `type_discovery_partial` | 1 |
+| Chicago | `type_discovery_comparable` | 7 |
 | Dallas/Fort Worth | `type_discovery_comparable` | 7 |
 | Dallas/Fort Worth | `type_discovery_partial` | 1 |
 
@@ -71,12 +70,14 @@ Profile basis:
 
 ## Current Comparable Types
 
-Washington contributes the complete baseline set. Chicago now contributes six
+Washington contributes the complete baseline set. Chicago now contributes seven
 type-discovery-comparable fields:
 
 - Loop / River North: `urban_core_everyday_grid` with observed postal signal
   after the first source-resolution pass.
 - Lincoln Park / Lakeview: `inner_neighborhood_everyday_grid`.
+- Old Orchard / Skokie: `confirmed_single_grocery_mall_field` with observed
+  postal and wellness signal after the Old Orchard source-resolution pass.
 - Oakbrook widened: `confirmed_postal_big_box_edge_field`.
 - Woodfield / Schaumburg: `confirmed_edge_city_mall_grocery_field`.
 - Midway / Ford City: `confirmed_mall_big_box_grocery_field`.

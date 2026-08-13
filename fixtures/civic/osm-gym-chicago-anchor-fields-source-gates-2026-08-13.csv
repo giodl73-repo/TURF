@@ -1,7 +1,6 @@
 target_id,target_label,anchor_field,facility_type,gate_status,gate_reason,source,source_date
 loop-river-north,Loop / River North field,urban_core_mixed_service_field,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
 lincoln-park-lakeview,Lincoln Park / Lakeview field,inner_neighborhood_service_field,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
-old-orchard-skokie,Old Orchard / Skokie field,north_suburban_mall_field,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
 oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
 woodfield-schaumburg,Woodfield / Schaumburg field,northwest_edge_city_mall_field,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
 ford-city-cicero,Midway / Ford City field,southwest_airport_edge_field,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13

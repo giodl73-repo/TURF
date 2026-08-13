@@ -7,9 +7,9 @@ to another metro or adds another source family.
 
 Included layers:
 
-- Post office: OSM/Overpass, observed for Loop / River North, Oakbrook, and
-  Orland Square, source-gated for four fields.
-- Gym: OSM/Overpass, source-gated for all seven fields.
+- Post office: OSM/Overpass, observed for Loop / River North, Old Orchard,
+  Oakbrook, and Orland Square, source-gated for three fields.
+- Gym: OSM/Overpass, observed for Old Orchard and source-gated for six fields.
 - Pharmacy: reviewed Illinois Overture drugstore layer.
 - Mass retail: reviewed Illinois Overture Target / Walmart / Costco / Sam's
   Club layer.
@@ -26,8 +26,9 @@ reports/ret-chicago-pre-scale-field-stack.csv
 ## Decision
 
 Chicago is ready for type discovery, but not final ranking. The non-Overpass
-stack is strong enough to classify emerging field types, while the OSM civic
-and wellness dimensions still need retry or alternate source strategy.
+stack is strong enough to classify emerging field types, and Old Orchard now
+shows that postal/wellness OSM evidence can resolve mature mall fields when
+bounded requests succeed.
 
 ## Learning
 
@@ -50,7 +51,7 @@ another metro before this stack is used as the comparison baseline.
 |---|---:|---:|---:|---|---|
 | Loop / River North | 4 | 1 | 1 | `urban_core_everyday_grid` | `usable_for_type_discovery` |
 | Lincoln Park / Lakeview | 3 | 2 | 1 | `inner_neighborhood_everyday_grid` | `usable_for_type_discovery_retry_osm_before_ranking` |
-| Old Orchard / Skokie | 2 | 2 | 2 | `confirmed_single_grocery_mall_field` | `source_limited_retry_or_alternate_source` |
+| Old Orchard / Skokie | 4 | 0 | 2 | `confirmed_single_grocery_mall_field` | `usable_for_type_discovery` |
 | Oakbrook widened | 4 | 1 | 1 | `confirmed_postal_big_box_edge_field` | `usable_for_type_discovery` |
 | Woodfield / Schaumburg | 3 | 2 | 1 | `confirmed_edge_city_mall_grocery_field` | `usable_for_type_discovery_retry_osm_before_ranking` |
 | Midway / Ford City | 3 | 2 | 1 | `confirmed_mall_big_box_grocery_field` | `usable_for_type_discovery_retry_osm_before_ranking` |
@@ -73,8 +74,8 @@ Woodfield and Ford City are likely edge/power fields: both combine grocery grid
 signal with big-box signal, but civic/wellness OSM gates remain unresolved.
 
 Retail-complex confirmation resolves the main mall-anchor uncertainty. Old
-Orchard remains a confirmed mall field with thin or source-limited non-core
-service evidence. Orland Square now adds observed postal civic signal to its
-confirmed mall and grocery support, moving it into the usable type-discovery
-set. Woodfield and Ford City now have confirmed mall structure plus grocery and
-big-box signal.
+Orchard now adds observed postal and wellness signal to its confirmed mall and
+single-grocery support, moving it from source-limited to usable type discovery.
+Orland Square has observed postal civic signal plus confirmed mall and grocery
+support. Woodfield and Ford City now have confirmed mall structure plus grocery
+and big-box signal, but still need OSM retry before ranking.

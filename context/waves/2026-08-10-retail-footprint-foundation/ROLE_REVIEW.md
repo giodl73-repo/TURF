@@ -3923,3 +3923,35 @@ Status: pass with next-output request.
 The source-resolution gate has now reduced the biggest Atlanta/Chicago
 imbalance. The next decision can either resolve Old Orchard or Las Colinas, or
 accept those explicit partial rows and choose the fifth metro.
+
+## Pulse 124 Chicago Old Orchard Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+Old Orchard moves from Chicago's only type-discovery partial row to a
+comparable field. Chicago now contributes seven comparable field examples.
+
+### Market Geographer
+
+Status: pass.
+
+The field becomes a clearer mature north-suburban mall field: confirmed mall
+and grocery evidence, observed USPS civic service, observed wellness anchors,
+and checked mass-retail/pharmacy absence inside the bounded field.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Only Old Orchard rows are promoted, and only Old Orchard source-gate rows are
+removed. Remaining Chicago post-office and gym gates stay explicit.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Chicago no longer blocks fifth-metro scale on type-discovery quality. The next
+gate should either reduce Atlanta source-gated dimensions further or resolve
+Dallas Las Colinas before selecting the fifth metro.

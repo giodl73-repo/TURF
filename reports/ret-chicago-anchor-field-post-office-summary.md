@@ -17,7 +17,7 @@ reports/ret-chicago-anchor-field-post-office-summary.csv
 |---|---:|---:|---|---|
 | Loop / River North | 3 | 13 | `observed` |  |
 | Lincoln Park / Lakeview | 0 | 0 | `source_gated` | `overpass_target_timeout` |
-| Old Orchard / Skokie | 0 | 0 | `source_gated` | `overpass_target_timeout` |
+| Old Orchard / Skokie | 1 | 0 | `observed` |  |
 | Oakbrook widened | 1 | 1 | `observed` |  |
 | Woodfield / Schaumburg | 0 | 0 | `source_gated` | `overpass_target_timeout` |
 | Midway / Ford City | 0 | 0 | `source_gated` | `overpass_target_timeout` |
@@ -42,7 +42,10 @@ Orland Park Post Office and Orland Park Retail Post Office are packet-ready
 USPS rows. Shipping Pros is retained in the reviewed fixture as an excluded
 private shipping counter.
 
-The other four fields remain source-gated from Overpass target timeouts.
-Lincoln Park / Lakeview and Old Orchard / Skokie have both timed out against
-the alternate endpoint, so their gates remain source-quality warnings rather
-than post-office absence claims.
+Old Orchard / Skokie now has checked postal civic signal after the next
+targeted retry. Old Orchard Post Office is packet-ready and removes the field's
+postal source gate.
+
+The other three fields remain source-gated from Overpass target timeouts.
+Lincoln Park / Lakeview, Woodfield / Schaumburg, and Midway / Ford City keep
+source-quality warnings rather than post-office absence claims.

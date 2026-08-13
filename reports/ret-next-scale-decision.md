@@ -19,7 +19,7 @@ The current profile has 28 field rows across four metros:
 |---|---|---:|---|
 | Washington | `full_11_dimension_context` | 6 | Clean baseline, zero source gates. |
 | Atlanta | `full_11_dimension_context` | 7 | Useful but source-gated; seven partial comparison fields after postal/library/gym and Camp Creek service resolution. |
-| Chicago | `pre_scale_6_layer_stack` | 7 | Strong type-discovery stack, but OSM post-office/gym gates remain material. |
+| Chicago | `pre_scale_6_layer_stack` | 7 | Strong type-discovery stack; all seven fields are now comparable, though some OSM post-office/gym gates remain for ranking. |
 | Dallas/Fort Worth | `pre_scale_5_layer_stack` | 8 | Strong Sun Belt stack, with seven comparable rows and one partial row. |
 
 ## Decision
@@ -33,7 +33,7 @@ quality across metros:
 - Washington has the full 11-dimension clean baseline.
 - Dallas/Fort Worth has enough common-store signal to compare immediately.
 - Chicago has strong non-OSM store signal but unresolved OSM civic/wellness
-  source gates.
+  source gates in several fields.
 - Atlanta has the biggest source-gate load, despite useful partial fields.
 
 The best next move is therefore a civic/postal source-resolution pass for
@@ -46,6 +46,10 @@ Perimeter has dense gym signal, and Camp Creek now has finance,
 gas/convenience, and wellness signal with several checked civic/service
 absences. Atlanta no longer has a source-limited comparison row, but every
 Atlanta field is still source-gated enough to avoid final ranking.
+
+The Old Orchard source-resolution pass also improves Chicago: Old Orchard now
+has observed USPS and gym/wellness anchors, so Chicago has no remaining
+type-discovery partial row.
 
 ## Why Not Add Another Metro Yet
 
