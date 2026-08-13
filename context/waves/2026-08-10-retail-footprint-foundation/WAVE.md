@@ -149,6 +149,7 @@ before broader chain coverage begins.
 | 130 | Los Angeles mass-retail layer | complete | Added reviewed California Target/Walmart/Costco/Sam's Club rows and found a Target-only dense/affluent split versus multi-brand valley, coastal, inland, and port/coastal fields. |
 | 131 | Los Angeles grocery layer | complete | Added reviewed California grocery rows and found all seven LA / Inland Empire fields carry multi-brand grocery-grid signal. |
 | 132 | Los Angeles pharmacy layer | complete | Added reviewed California drugstore rows and found all seven LA / Inland Empire fields carry exact-brand pharmacy signal, with four multi-brand health-errand fields. |
+| 133 | Los Angeles pre-scale field stack | complete | Combined four LA layers into pre-complex field types, preserving five postal retry gates and identifying two fully comparable fields. |
 
 ## Success criteria
 

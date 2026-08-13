@@ -4215,3 +4215,36 @@ Status: pass with next-output request.
 The next pulse should combine the LA layers into a pre-scale field stack or add
 retail-complex signal first if mall/power-center confirmation is needed before
 typing.
+
+## Pulse 133 Los Angeles Pre-Scale Field Stack
+
+### Market Analyst
+
+Status: pass.
+
+The stack converts individual LA layer reads into a usable pre-complex decision:
+there is enough store signal to propose field types, but not enough structural
+confirmation for cross-metro synthesis.
+
+### Market Geographer
+
+Status: pass.
+
+The current stack exposes distinct LA terrain: dense postal Target/grocery/health,
+affluent Target/grocery/health, big-box grocery CVS service, postal big-box
+grocery CVS, and multi-brand big-box grocery health fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The stack preserves five post-office source gates separately from observed
+store layers. It does not convert Overpass timeouts into postal absence claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add retail-complex confirmation for the same seven fields
+so mall, lifestyle-center, power-center, and shopping-center structure can test
+the proposed pre-complex field types.
