@@ -468,6 +468,9 @@ The post-Los Angeles scale decision is:
 The Los Angeles / Inland Empire QSR sidecar layer is:
 `reports\ret-los-angeles-anchor-field-qsr-summary.md`.
 
+The Los Angeles / Inland Empire auto-parts sidecar layer is:
+`reports\ret-los-angeles-anchor-field-auto-parts-summary.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

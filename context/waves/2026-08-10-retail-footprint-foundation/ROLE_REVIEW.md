@@ -4386,3 +4386,38 @@ Status: pass with next-output request.
 The next pulse should add auto parts as the trade and car-service sidecar layer
 for the same seven LA fields, then compare QSR saturation against auto-service
 corridor signal before changing the core cross-metro profile.
+
+## Pulse 138 Los Angeles Auto-Parts Layer
+
+### Market Analyst
+
+Status: pass.
+
+The auto-parts layer adds a real discriminator after QSR. California validates
+with 1,308 packet-ready rows, but the brand mix is not symmetric: AutoZone and
+O'Reilly dominate, NAPA is sparse, and Advance Auto Parts has no packet-ready
+rows under the current exact filter.
+
+### Market Geographer
+
+Status: pass.
+
+All seven LA fields have multi-brand auto-service corridors, but the depth is
+not evenly distributed. Riverside / Tyler / Corona and Long Beach / Lakewood
+stand out as the strongest trade/car-service fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report avoids official territory claims and documents the California brand
+coverage caveat. The review excludes duplicate and false-positive rows before
+field summaries are interpreted.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should decide whether QSR and auto parts become standard
+pre-scale sidecar dimensions. If yes, backfill Chicago and Dallas sidecars
+before changing the core cross-metro profile or adding a sixth metro.

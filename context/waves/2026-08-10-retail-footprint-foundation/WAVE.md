@@ -154,6 +154,7 @@ before broader chain coverage begins.
 | 135 | Los Angeles type-discovery profile | complete | Added seven confirmed LA / Inland Empire rows to the cross-metro type-discovery profile, bringing the generated profile to 35 rows. |
 | 136 | Next scale decision after Los Angeles | complete | Chose LA postal source resolution plus QSR as the next gate before adding a sixth metro, with auto parts held as the follow-on trade/corridor layer. |
 | 137 | Los Angeles QSR layer | complete | Added reviewed California QSR and seven LA / Inland Empire field summaries, while preserving five post-office gates after Overpass retry failures. |
+| 138 | Los Angeles auto-parts layer | complete | Added reviewed California auto parts, found all seven LA fields have multi-brand auto-service corridors, and separated Riverside/Corona plus Long Beach/Lakewood as deepest trade/car-service fields. |
 
 ## Success criteria
 
