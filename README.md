@@ -474,6 +474,9 @@ The Los Angeles / Inland Empire auto-parts sidecar layer is:
 The sidecar standardization decision is:
 `reports\ret-sidecar-standardization-decision.md`.
 
+The sidecar promotion evidence matrix is:
+`reports\ret-sidecar-promotion-evidence-matrix.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

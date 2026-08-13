@@ -160,6 +160,7 @@ before broader chain coverage begins.
 | 141 | Chicago auto-parts sidecar | complete | Added reviewed Illinois auto parts, found Ford City is Chicago's only multi-brand auto-service corridor, and compared it against QSR signal. |
 | 142 | Dallas/Fort Worth QSR sidecar | complete | Added reviewed Texas QSR and eight Dallas/Fort Worth field summaries, separating Arlington / Grand Prairie as the four-brand dense QSR grid. |
 | 143 | Dallas/Fort Worth auto-parts sidecar | complete | Added reviewed Texas auto parts, found Arlington / Grand Prairie is the only dense multi-brand auto-service grid, and compared it against QSR signal. |
+| 144 | Sidecar promotion evidence matrix | complete | Compared 22 completed LA, Chicago, and Dallas/Fort Worth sidecar fields and kept QSR/auto parts as standard sidecars rather than core profile dimensions. |
 
 ## Success criteria
 

@@ -4594,3 +4594,38 @@ Status: pass with next-output request.
 The next gate should compare completed QSR and auto-parts sidecars against
 civic/postal and common-store layers across the five-metro profile before
 promoting sidecars into the core type-discovery contract.
+
+## Pulse 144 Sidecar Promotion Evidence Matrix
+
+### Market Analyst
+
+Status: pass.
+
+The matrix gives a concrete 22-field evidence base instead of making the
+promotion decision from individual metro narratives. Ten fields confirm
+service-corridor signal, while the Chicago and Dallas splits prove the sidecars
+are useful interpretive layers.
+
+### Market Geographer
+
+Status: pass.
+
+The decision preserves the hierarchy: core field typing still comes from
+postal/civic, grocery, mass retail, pharmacy, and retail-complex evidence, while
+QSR and auto parts refine daily-trip and trade/car-service texture.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report explicitly limits the matrix to completed field-aligned sidecars and
+keeps Washington and Atlanta older sidecar evidence out of promotion proof until
+they are aligned or consciously waived.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next output should be a sidecar readiness note before sixth-metro scale,
+including the decision whether Washington and Atlanta need anchor-field
+retro-alignment or can remain older metro/place-level evidence for now.
