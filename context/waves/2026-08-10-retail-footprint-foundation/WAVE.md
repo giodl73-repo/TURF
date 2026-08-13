@@ -99,6 +99,7 @@ before broader chain coverage begins.
 | 80 | Dollar-store value-errand layer | complete | Added reviewed OSM/Overpass Dollar Tree rows and separated value-errand mall/suburban fields from Bellevue/Factoria absence. |
 | 81 | Laundromat household-service layer | complete | Added reviewed OSM/Overpass laundromat rows and found household-service evidence only in Tacoma Mall and South Hill fields. |
 | 82 | Gym wellness-service layer | complete | Added reviewed OSM/Overpass fitness-center rows and completed all 11 pre-scale context dimensions with Bellevue as the wellness outlier. |
+| 83 | Atlanta context scale targets | complete | Added seven Atlanta field targets and a scale gate for proving the 11-dimension context contract before adding more metros. |
 
 ## Success criteria
 

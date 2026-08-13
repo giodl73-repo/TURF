@@ -2502,3 +2502,38 @@ Status: pass with next-output request.
 The next useful work is no longer another source gate. TURF should scale the
 completed context contract to another urban area, then compare whether the same
 field types recur or new context archetypes appear.
+
+## Pulse 83 Atlanta Context Scale Targets
+
+### Market Analyst
+
+Status: pass.
+
+The proposed next goal is well scoped. Atlanta already has mall, QSR, home
+improvement, grocery, mass retail, drugstore, auto-parts, and retail-complex
+evidence, so adding the same civic/everyday context contract should produce a
+meaningful Washington comparison without changing the theory midstream.
+
+### Market Geographer
+
+Status: pass.
+
+The target set preserves named field geography rather than city labels.
+Perimeter and North Point use the widened pressure-audit boxes, which is the
+right geometry lesson from prior Atlanta pulses.
+
+### Source Policy Auditor
+
+Status: pass with execution note.
+
+The fixture is only a target list. Promotion into context reports should wait
+for checked source rows per dimension, with source dates and rights status
+preserved just as in the Washington OSM/Overpass layers.
+
+### Catchment Modeler
+
+Status: pass.
+
+This is a reasonable self-executing goal: acquire and summarize the same
+11 dimensions for these seven fields, then compare Atlanta archetypes against
+Washington before expanding to Seattle city or a third metro.
