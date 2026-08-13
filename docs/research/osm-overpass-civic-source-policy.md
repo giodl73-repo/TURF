@@ -14,6 +14,8 @@ signals when the fixture preserves source, date, license, and review status.
   https://wiki.openstreetmap.org/wiki/Overpass_API
 - Post-office tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpost_office
+- Library tag:
+  https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dlibrary
 
 ## Rights Boundary
 
@@ -32,8 +34,8 @@ vocabulary, and preserve the more specific ODbL obligations in `rights_status`.
 
 ## Review Boundary
 
-OSM civic facility rows are public POI evidence. A `packet_ready` post-office
-row means the facility has a reviewed civic point inside a TURF target field. It
+OSM civic facility rows are public POI evidence. A `packet_ready` civic row
+means the facility has a reviewed civic point inside a TURF target field. It
 does not mean:
 
 - the row is an official USPS facility list;

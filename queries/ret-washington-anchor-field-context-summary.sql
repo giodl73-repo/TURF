@@ -8,6 +8,8 @@ COPY (
         sum(CASE WHEN field_context_status = 'source_gate_pending' THEN 1 ELSE 0 END) AS source_gated_dimensions,
         sum(CASE WHEN field_context_status = 'observed' THEN 1 ELSE 0 END) AS observed_dimensions,
         sum(CASE WHEN field_context_status = 'observed_absent' THEN 1 ELSE 0 END) AS observed_absent_dimensions,
+        max(CASE WHEN dimension_id = 'library' THEN observed_rows ELSE NULL END) AS library_rows,
+        max(CASE WHEN dimension_id = 'library' THEN observed_names ELSE '' END) AS library_names,
         max(CASE WHEN dimension_id = 'post_office' THEN observed_rows ELSE NULL END) AS post_office_rows,
         max(CASE WHEN dimension_id = 'post_office' THEN observed_names ELSE '' END) AS post_office_names,
         max(CASE WHEN dimension_id = 'pharmacy' THEN observed_rows ELSE NULL END) AS pharmacy_rows,

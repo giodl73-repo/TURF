@@ -89,6 +89,7 @@ before broader chain coverage begins.
 | 70 | RET Anchor Profile v1 examples | complete | Added canonical examples per anchor modifier, with Bellevue retained as a source-limited caution row. |
 | 71 | Anchor Field Context v0 | complete | Started the Civic + Everyday Anchors layer with 11 context dimensions and first checked pharmacy signal across Puget Sound fields. |
 | 72 | Post office civic anchor gate | complete | Added OSM/Overpass post-office civic rows after the Overture timeout, making post office the first active reviewed civic layer. |
+| 73 | Library civic anchor layer | complete | Added reviewed OSM/Overpass library rows and found Bellevue, Southcenter, and Kitsap fields carry a second civic-service signal. |
 
 ## Success criteria
 

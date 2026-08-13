@@ -2150,3 +2150,37 @@ Before scaling to more urban areas, the next useful goal is to repeat the OSM
 civic pattern for another high-signal dimension, likely libraries or transit
 centers, and test whether the same fields split into civic/mobility/service
 types.
+
+## Pulse 73 Library Civic Anchor Layer
+
+### Market Analyst
+
+Status: pass.
+
+The library layer adds a second civic-service signal. Bellevue core and Kitsap
+Mall / Silverdale now have library, post office, and pharmacy; Southcenter /
+Tukwila has both civic anchors but no checked pharmacy row.
+
+### Market Geographer
+
+Status: pass.
+
+The same six district fields now separate into fuller civic-plus-everyday
+fields, civic-heavy fields, postal-only fields, pharmacy-only fields, and empty
+checked-context fields without changing geometry.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The promoted source remains OSM/Overpass with ODbL rights status preserved in
+the fixture. The generic civic fetcher keeps source date, license status,
+review status, and review reason on every row.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next high-signal comparison should be transit centers, because mobility
+anchors may explain why Southcenter and Bellevue behave differently from mall
+fields that lack civic anchors.
