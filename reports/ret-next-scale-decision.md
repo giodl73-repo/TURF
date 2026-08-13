@@ -18,7 +18,7 @@ The current profile has 28 field rows across four metros:
 | Region | Profile Basis | Fields | Current Read |
 |---|---|---:|---|
 | Washington | `full_11_dimension_context` | 6 | Clean baseline, zero source gates. |
-| Atlanta | `full_11_dimension_context` | 7 | Useful but source-gated; five partial and two source-limited fields. |
+| Atlanta | `full_11_dimension_context` | 7 | Useful but source-gated; five partial and two source-limited comparison fields after postal/library resolution. |
 | Chicago | `pre_scale_6_layer_stack` | 7 | Strong type-discovery stack, but OSM post-office/gym gates remain material. |
 | Dallas/Fort Worth | `pre_scale_5_layer_stack` | 8 | Strong Sun Belt stack, with seven comparable rows and one partial row. |
 
@@ -39,6 +39,14 @@ quality across metros:
 The best next move is therefore a civic/postal source-resolution pass for
 Atlanta and Chicago, starting with post offices and one everyday civic/service
 layer that can be checked consistently.
+
+The first Atlanta source-resolution passes support that goal. Post office is no
+longer source-gated in Atlanta, Northlake now has an observed library row, and
+Camp Creek is checked absent for both post office and library. Camp Creek's
+local readiness improved, but the cross-metro comparison tier still keeps it
+source-limited because one observed layer is too sparse for peer comparison.
+The remaining work is to resolve the still-gated civic/service layers rather
+than add another metro immediately.
 
 ## Why Not Add Another Metro Yet
 

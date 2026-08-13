@@ -86,11 +86,18 @@ Atlanta contributes five partial type-discovery fields, but none are baseline
 comparable because every Atlanta field still carries at least five source-gated
 dimensions.
 
-Camp Creek and Northlake remain source-limited after the first Atlanta
-source-resolution pass, but their post-office layers are no longer unknown:
-the retries returned only excluded private shipping counters, so both fields
-now carry checked absence for packet-ready USPS rows instead of post-office
-source gates.
+Camp Creek moved out of the generated `source_limited_field` readiness tier in
+the Atlanta readiness report after the library retry resolved another source
+gate as checked absent. It is still assigned to the `source_limited` comparison
+tier because one observed layer is too sparse for peer comparison, but the
+field is now a clearer wellness-only partial context case rather than an
+unknown civic blank.
+
+Northlake remains source-limited after the Atlanta source-resolution passes,
+but the reason changed: post office is checked absent, library is observed, and
+park/open-space plus transit remain source-gated. That makes Northlake a
+legacy suburban mall node with one public civic-service anchor, not just an
+Overpass timeout artifact.
 
 Dallas/Fort Worth contributes seven type-discovery-comparable fields and one
 partial field:

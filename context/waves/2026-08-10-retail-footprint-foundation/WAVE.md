@@ -136,6 +136,7 @@ before broader chain coverage begins.
 | 117 | Next scale decision | complete | Used the four-metro profile to choose source-resolution for Atlanta and Chicago before adding a fifth metro. |
 | 118 | Chicago post-office source resolution | complete | Retried Loop / River North, promoted three USPS rows, excluded DHL/private counters, and reduced one Chicago source gate. |
 | 119 | Atlanta post-office source resolution | complete | Retried Northlake and Camp Creek post office, resolved both as checked absent, and removed Atlanta post-office source gates. |
+| 120 | Atlanta library source resolution | complete | Retried Northlake and Camp Creek libraries, promoted Northlake-Barbara Loar Branch, and resolved two Atlanta library gates. |
 
 ## Success criteria
 

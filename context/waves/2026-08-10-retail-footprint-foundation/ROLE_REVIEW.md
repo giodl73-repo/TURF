@@ -3790,3 +3790,38 @@ Northlake's source-gated count dropped from 10 to 9, and Camp Creek's dropped
 from 9 to 8. Atlanta post-office gates are now exhausted; the next Atlanta pass
 should target a different civic/service layer likely to reduce multiple source
 gates at once.
+
+## Pulse 120 Atlanta Library Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+Northlake gained observed civic-service signal, while Camp Creek moved from an
+unknown library gate to checked absence. That improves Atlanta's type-discovery
+profile without pretending sparse fields are strong fields.
+
+### Market Geographer
+
+Status: pass.
+
+The pass sharpens two different Atlanta field stories: Northlake is a legacy
+mall node with library service but no USPS anchor, while Camp Creek remains an
+airport-edge power field with resolved civic absences.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The retry promotes only a packet-ready public library row and removes only the
+resolved target ids from the source-gate fixture. Remaining library timeouts
+stay explicit.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Atlanta improves to six partial and one source-limited field in its local
+readiness report, while the cross-metro comparison profile correctly keeps
+Camp Creek source-limited because it has only one observed layer. The next pass
+should target another high-gate civic/service layer before fifth-metro scale.

@@ -459,6 +459,9 @@ The Atlanta anchor-field post-office readout is:
 The Atlanta source-resolution pass is:
 `reports\ret-atlanta-source-resolution-pass.md`.
 
+The Atlanta library source-resolution pass is:
+`reports\ret-atlanta-library-source-resolution-pass.md`.
+
 The Atlanta anchor-field library readout is:
 `reports\ret-atlanta-anchor-field-library-summary.md`.
 

@@ -26,8 +26,8 @@ reports/ret-atlanta-anchor-field-civic-context-summary.csv
 | Cumberland / Vinings | 1 | 3 | `postal_only_civic_field` |
 | Buckhead / Lenox / Phipps | 3 | 1 | `postal_library_open_space_civic_stack` |
 | Perimeter widened | 2 | 2 | `postal_transit_edge_city_field` |
-| Camp Creek | 0 | 3 | `partial_civic_source_gate` |
-| Northlake | 0 | 3 | `partial_civic_source_gate` |
+| Camp Creek | 0 | 2 | `partial_civic_source_gate` |
+| Northlake | 1 | 2 | `partial_civic_source_gate` |
 | North Point / Alpharetta widened | 2 | 2 | `postal_open_space_edge_field` |
 | Decatur / Emory | 1 | 3 | `postal_only_civic_field` |
 
@@ -45,15 +45,16 @@ space rows, but still source-gated on library and transit.
 Cumberland / Vinings and Decatur / Emory currently read as postal-only civic
 fields, but each has three unresolved civic source gates.
 
-Camp Creek is now resolved for the post-office layer but still unresolved for
-library, park/open-space, and transit. Its alternate post-office retry returned
-two private shipping counters and zero packet-ready USPS rows, so the field is
-a partial civic source gate rather than a fully source-gated civic field.
+Camp Creek is now resolved for the post-office and library layers but still
+unresolved for park/open-space and transit. Its alternate post-office retry
+returned two private shipping counters and zero packet-ready USPS rows, and its
+library retry returned no packet-ready rows. That makes it a checked-absent
+civic gap rather than a hidden acquisition failure.
 
-Northlake is now resolved for the post-office layer but still unresolved for
-library, park/open-space, and transit. Its alternate post-office retry returned
-three private shipping counters and zero packet-ready USPS rows, so the field
-is a partial civic source gate rather than a fully source-gated civic field.
+Northlake is now resolved for post office and library: post-office is checked
+absent after the private-counter retry, while Northlake-Barbara Loar Branch is
+observed as a public library row. Park/open-space and transit remain unresolved
+source gates, so the field is still partial but no longer civic-blank.
 
 ## Next Step
 
