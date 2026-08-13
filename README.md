@@ -397,6 +397,9 @@ The Chicago pre-scale field stack readout is:
 The Chicago type-discovery synthesis is:
 `reports\ret-chicago-type-discovery-synthesis.md`.
 
+The cross-metro type-discovery profile is:
+`reports\ret-cross-metro-type-discovery-profile.md`.
+
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.
 

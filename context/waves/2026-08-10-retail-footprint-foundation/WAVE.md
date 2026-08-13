@@ -123,6 +123,7 @@ before broader chain coverage begins.
 | 104 | Chicago pre-scale field stack | complete | Combined Chicago observed, checked-absent, and source-gated layers into emerging field types before another scale move. |
 | 105 | Chicago retail-complex confirmation | complete | Added target-limited Illinois mall/complex evidence and upgraded Chicago mall/edge field labels in the stack. |
 | 106 | Chicago type-discovery synthesis | complete | Interpreted the refreshed Chicago stack as typed enclave fields and set the next scale-versus-resolution gate. |
+| 107 | Cross-metro type-discovery profile | complete | Normalized Washington, Atlanta, and Chicago into one comparable type-discovery table with profile-basis and source-quality tiers. |
 
 ## Success criteria
 

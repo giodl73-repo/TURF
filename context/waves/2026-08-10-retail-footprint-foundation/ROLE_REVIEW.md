@@ -3336,3 +3336,37 @@ Status: pass with next-output request.
 The next reusable step should be an executable synthesis contract across
 Washington, Atlanta, and Chicago. Chicago OSM retry remains useful, but the
 cross-metro contract would better support scaling to more urban areas.
+
+## Pulse 107 Cross-Metro Type-Discovery Profile
+
+### Market Analyst
+
+Status: pass.
+
+The profile gives the project the reusable comparison layer it needed.
+Washington, Atlanta, and Chicago can now be read together without flattening
+their evidence quality.
+
+### Market Geographer
+
+Status: pass.
+
+The contract keeps region, field id, label, anchor field, and profile basis
+visible. It avoids treating Chicago's 6-layer stack as equivalent to the full
+11-dimension Washington and Atlanta contexts.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Observed, source-gated, checked-absent, readiness, and comparison tiers are
+explicit. This prevents source-limited Atlanta or Chicago fields from being
+ranked as if they were complete baselines.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next technical step should validate this profile shape as a contract, then
+use it as the scale gate for the next metro. That is more useful now than
+another one-off narrative synthesis.
