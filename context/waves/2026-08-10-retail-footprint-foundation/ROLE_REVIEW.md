@@ -2807,3 +2807,39 @@ Status: pass with next-output request.
 
 The next layer should add pharmacy or dollar-store texture, then regenerate this
 context summary so the archetypes evolve from the same summary contract.
+
+## Pulse 92 Atlanta Pharmacy Layer
+
+### Market Analyst
+
+Status: pass.
+
+Pharmacy adds stable health-errand signal from a reviewed store layer. It
+strengthens Decatur / Emory into a finance, car-trip, and health service
+village, and it adds health texture to Buckhead, Perimeter, Northlake, and North
+Point.
+
+### Market Geographer
+
+Status: pass.
+
+The context summary remains geography-aware. Perimeter becomes
+`transit_health_edge_city_field`, North Point becomes
+`open_space_health_edge_city_field`, and Northlake receives its first observed
+context signal without overclaiming the six source gates still attached to it.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer uses the reviewed Georgia drugstore fixture rather than a new
+Overpass fetch, so checked-absent pharmacy rows are legitimate bounded-field
+absences in the current source layer.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next layer can be dollar-store or hardware depending on whether the goal is
+value-errand texture or small-trade texture. After one more everyday layer,
+regenerate the context summary again from the same contract.

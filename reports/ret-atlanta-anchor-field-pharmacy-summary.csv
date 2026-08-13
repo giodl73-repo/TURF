@@ -1,0 +1,8 @@
+field_id,label,anchor_field,pharmacy_rows,pharmacy_brands,pharmacy_names,pharmacy_signal
+cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,0,0,"",checked_absent
+buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,1,1,CVS Pharmacy,observed
+perimeter-wide,Perimeter widened field,edge_city_mall_field,2,2,CVS Pharmacy; Community A Walgreens Pharmacy,observed
+camp-creek,Camp Creek field,airport_edge_power_center,0,0,"",checked_absent
+northlake,Northlake field,legacy_suburban_mall_node,1,1,CVS Pharmacy,observed
+north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,1,1,CVS Pharmacy,observed
+decatur-emory,Decatur / Emory field,inner_service_village,1,1,CVS Pharmacy,observed

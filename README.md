@@ -86,6 +86,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-field-park-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-civic-context-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-bank-credit-union-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-bank-credit-union-summary.sql"
+duckdb -c ".read queries/ret-atlanta-anchor-field-pharmacy-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-gas-convenience-summary.sql"
@@ -368,6 +369,9 @@ The Atlanta anchor-field bank / credit union readout is:
 
 The Atlanta anchor-field gas / convenience readout is:
 `reports\ret-atlanta-anchor-field-gas-convenience-summary.md`.
+
+The Atlanta anchor-field pharmacy readout is:
+`reports\ret-atlanta-anchor-field-pharmacy-summary.md`.
 
 The Atlanta anchor-field context summary is:
 `reports\ret-atlanta-anchor-field-context-summary.md`.

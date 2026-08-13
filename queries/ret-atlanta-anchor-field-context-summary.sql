@@ -1,7 +1,7 @@
 -- Atlanta anchor-field context summary.
 --
--- Combine the six Atlanta context dimensions acquired so far:
--- four civic anchors plus bank/credit-union and gas/convenience.
+-- Combine the seven Atlanta context dimensions acquired so far:
+-- four civic anchors, bank/credit-union, gas/convenience, and pharmacy.
 
 COPY (
     WITH targets AS (
@@ -31,6 +31,14 @@ COPY (
             gas_convenience_signal
         FROM read_csv_auto('reports/ret-atlanta-anchor-field-gas-convenience-summary.csv', all_varchar = true)
     ),
+    pharmacy AS (
+        SELECT
+            field_id,
+            pharmacy_rows,
+            pharmacy_brands,
+            pharmacy_signal
+        FROM read_csv_auto('reports/ret-atlanta-anchor-field-pharmacy-summary.csv', all_varchar = true)
+    ),
     joined AS (
         SELECT
             targets.field_id,
@@ -48,7 +56,10 @@ COPY (
             finance.bank_credit_union_signal,
             TRY_CAST(gas.gas_convenience_rows AS INTEGER) AS gas_convenience_rows,
             TRY_CAST(gas.gas_convenience_brands AS INTEGER) AS gas_convenience_brands,
-            gas.gas_convenience_signal
+            gas.gas_convenience_signal,
+            TRY_CAST(pharmacy.pharmacy_rows AS INTEGER) AS pharmacy_rows,
+            TRY_CAST(pharmacy.pharmacy_brands AS INTEGER) AS pharmacy_brands,
+            pharmacy.pharmacy_signal
         FROM targets
         LEFT JOIN civic
             ON targets.field_id = civic.field_id
@@ -56,6 +67,8 @@ COPY (
             ON targets.field_id = finance.field_id
         LEFT JOIN gas
             ON targets.field_id = gas.field_id
+        LEFT JOIN pharmacy
+            ON targets.field_id = pharmacy.field_id
     ),
     scored AS (
         SELECT
@@ -63,6 +76,7 @@ COPY (
             observed_civic_dimensions
                 + CASE WHEN bank_credit_union_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 + CASE WHEN gas_convenience_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
+                + CASE WHEN pharmacy_signal = 'observed' THEN 1 ELSE 0 END
                 AS observed_dimensions,
             source_gated_civic_dimensions
                 + CASE WHEN bank_credit_union_signal = 'source_gated' THEN 1 ELSE 0 END
@@ -74,7 +88,7 @@ COPY (
         field_id,
         label,
         anchor_field,
-        6 AS dimensions,
+        7 AS dimensions,
         observed_dimensions,
         source_gated_dimensions,
         post_office_rows,
@@ -85,9 +99,27 @@ COPY (
         bank_credit_union_brands,
         gas_convenience_rows,
         gas_convenience_brands,
+        pharmacy_rows,
+        pharmacy_brands,
         CASE
-            WHEN observed_dimensions = 0 AND source_gated_dimensions = 6
+            WHEN observed_dimensions = 0 AND source_gated_dimensions >= 6
                 THEN 'fully_source_gated_context_field'
+            WHEN bank_credit_union_signal = 'observed_dense'
+                AND gas_convenience_signal = 'observed_dense'
+                AND pharmacy_signal = 'observed'
+                THEN 'finance_car_trip_health_service_village'
+            WHEN bank_credit_union_signal = 'observed_dense'
+                AND pharmacy_signal = 'observed'
+                THEN 'finance_health_service_field'
+            WHEN atlanta_civic_archetype = 'postal_transit_edge_city_field'
+                AND pharmacy_signal = 'observed'
+                THEN 'transit_health_edge_city_field'
+            WHEN atlanta_civic_archetype = 'postal_open_space_edge_field'
+                AND pharmacy_signal = 'observed'
+                THEN 'open_space_health_edge_city_field'
+            WHEN atlanta_civic_archetype = 'fully_source_gated_civic_field'
+                AND pharmacy_signal = 'observed'
+                THEN 'health_only_partial_context_field'
             WHEN bank_credit_union_signal = 'observed_dense'
                 AND gas_convenience_signal = 'observed_dense'
                 THEN 'finance_and_car_trip_service_village'
@@ -107,7 +139,8 @@ COPY (
             '; ',
             atlanta_civic_archetype,
             'bank_credit_union_' || bank_credit_union_signal,
-            'gas_convenience_' || gas_convenience_signal
+            'gas_convenience_' || gas_convenience_signal,
+            'pharmacy_' || pharmacy_signal
         ) AS context_signal_summary
     FROM scored
     ORDER BY
