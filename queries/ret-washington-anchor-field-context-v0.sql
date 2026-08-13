@@ -2,9 +2,9 @@
 --
 -- Starts the Civic + Everyday Anchors layer with checked dimensions. Post
 -- offices, libraries, parks, and transit centers use reviewed OSM civic
--- layers; bank/credit unions, gas/convenience, and hardware use reviewed OSM
--- everyday-service layers; and pharmacy uses the existing reviewed drugstore
--- layer as a health errand proxy.
+-- layers; bank/credit unions, gas/convenience, hardware, and dollar stores
+-- use reviewed OSM everyday-service layers; and pharmacy uses the existing
+-- reviewed drugstore layer as a health errand proxy.
 
 CREATE OR REPLACE TEMP TABLE fields AS
 SELECT
@@ -71,6 +71,20 @@ SELECT
     string_agg(facilities.facility_name, '; ' ORDER BY facilities.facility_name) AS observed_names
 FROM read_csv_auto(
         'fixtures/civic/osm-gas-convenience-washington-anchor-fields-review-2026-08-13.csv',
+        all_varchar = true
+    ) AS facilities
+WHERE facilities.state = 'WA'
+  AND facilities.review_status = 'packet_ready'
+GROUP BY facilities.target_id;
+
+CREATE OR REPLACE TEMP TABLE dollar_stores AS
+SELECT
+    facilities.target_id AS field_id,
+    count(*) AS observed_rows,
+    count(DISTINCT coalesce(nullif(facilities.operator, ''), facilities.facility_type)) AS observed_brands,
+    string_agg(facilities.facility_name, '; ' ORDER BY facilities.facility_name) AS observed_names
+FROM read_csv_auto(
+        'fixtures/civic/osm-dollar-store-washington-anchor-fields-review-2026-08-13.csv',
         all_varchar = true
     ) AS facilities
 WHERE facilities.state = 'WA'
@@ -145,6 +159,7 @@ COPY (
         dimensions.profile_role,
         CASE
             WHEN dimensions.dimension_id = 'bank_credit_union' THEN coalesce(bank_credit_unions.observed_rows, 0)
+            WHEN dimensions.dimension_id = 'dollar_store' THEN coalesce(dollar_stores.observed_rows, 0)
             WHEN dimensions.dimension_id = 'gas_convenience' THEN coalesce(gas_convenience.observed_rows, 0)
             WHEN dimensions.dimension_id = 'hardware' THEN coalesce(hardware.observed_rows, 0)
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_rows, 0)
@@ -156,6 +171,7 @@ COPY (
         END AS observed_rows,
         CASE
             WHEN dimensions.dimension_id = 'bank_credit_union' THEN coalesce(bank_credit_unions.observed_brands, 0)
+            WHEN dimensions.dimension_id = 'dollar_store' THEN coalesce(dollar_stores.observed_brands, 0)
             WHEN dimensions.dimension_id = 'gas_convenience' THEN coalesce(gas_convenience.observed_brands, 0)
             WHEN dimensions.dimension_id = 'hardware' THEN coalesce(hardware.observed_brands, 0)
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_brands, 0)
@@ -167,6 +183,7 @@ COPY (
         END AS observed_brands,
         CASE
             WHEN dimensions.dimension_id = 'bank_credit_union' THEN coalesce(bank_credit_unions.observed_names, '')
+            WHEN dimensions.dimension_id = 'dollar_store' THEN coalesce(dollar_stores.observed_names, '')
             WHEN dimensions.dimension_id = 'gas_convenience' THEN coalesce(gas_convenience.observed_names, '')
             WHEN dimensions.dimension_id = 'hardware' THEN coalesce(hardware.observed_names, '')
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_names, '')
@@ -180,6 +197,8 @@ COPY (
             WHEN dimensions.source_status = 'source_gate_pending' THEN 'source_gate_pending'
             WHEN dimensions.dimension_id = 'bank_credit_union' AND coalesce(bank_credit_unions.observed_rows, 0) > 0 THEN 'observed'
             WHEN dimensions.dimension_id = 'bank_credit_union' THEN 'observed_absent'
+            WHEN dimensions.dimension_id = 'dollar_store' AND coalesce(dollar_stores.observed_rows, 0) > 0 THEN 'observed'
+            WHEN dimensions.dimension_id = 'dollar_store' THEN 'observed_absent'
             WHEN dimensions.dimension_id = 'gas_convenience' AND coalesce(gas_convenience.observed_rows, 0) > 0 THEN 'observed'
             WHEN dimensions.dimension_id = 'gas_convenience' THEN 'observed_absent'
             WHEN dimensions.dimension_id = 'hardware' AND coalesce(hardware.observed_rows, 0) > 0 THEN 'observed'
@@ -203,6 +222,8 @@ COPY (
         ON fields.field_id = pharmacies.field_id
     LEFT JOIN bank_credit_unions
         ON fields.field_id = bank_credit_unions.field_id
+    LEFT JOIN dollar_stores
+        ON fields.field_id = dollar_stores.field_id
     LEFT JOIN gas_convenience
         ON fields.field_id = gas_convenience.field_id
     LEFT JOIN hardware

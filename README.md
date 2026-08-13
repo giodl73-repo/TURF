@@ -64,6 +64,7 @@ python scripts\fetch_osm_civic.py --facility-type library --targets fixtures\geo
 python scripts\fetch_osm_civic.py --facility-type transit_center --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-transit-center-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type park --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-park-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type bank_credit_union --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-bank-credit-union-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
+python scripts\fetch_osm_civic.py --facility-type dollar_store --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-dollar-store-tacoma-mall.csv --source-date 2026-08-13 --retries 3
 python scripts\fetch_osm_civic.py --facility-type gas_convenience --target-id bellevue-core --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-gas-bellevue.csv --source-date 2026-08-13 --retries 2
 python scripts\fetch_osm_civic.py --facility-type hardware --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-hardware-tacoma-mall.csv --source-date 2026-08-13 --retries 3
 duckdb -c ".read queries/ret-washington-anchor-field-post-office-summary.sql"
@@ -71,6 +72,7 @@ duckdb -c ".read queries/ret-washington-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-transit-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-park-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-bank-credit-union-summary.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-hardware-summary.sql"
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-washington-review-2026-07-22.csv
@@ -302,6 +304,9 @@ The Washington Anchor Field Context archetype report is:
 
 The Washington anchor-field bank / credit union readout is:
 `reports\ret-washington-anchor-field-bank-credit-union-summary.md`.
+
+The Washington anchor-field dollar-store readout is:
+`reports\ret-washington-anchor-field-dollar-store-summary.md`.
 
 The Washington anchor-field gas / convenience readout is:
 `reports\ret-washington-anchor-field-gas-convenience-summary.md`.

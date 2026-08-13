@@ -42,6 +42,7 @@ OSM_TAGS = {
         ("amenity", "bank"),
         ("amenity", "credit_union"),
     ],
+    "dollar_store": [("shop", "variety_store")],
     "gas_convenience": [
         ("amenity", "fuel"),
         ("shop", "convenience"),
@@ -69,7 +70,7 @@ def build_query(target: dict[str, str], facility_type: str) -> str:
     bbox = f"{min_lat},{min_lon},{max_lat},{max_lon}"
     selectors = []
     for key, value in OSM_TAGS[facility_type]:
-        if facility_type in {"hardware", "park"}:
+        if facility_type in {"dollar_store", "hardware", "park"}:
             selectors.extend(
                 [
                     f'  node["{key}"="{value}"]["name"]({bbox});',
@@ -143,6 +144,12 @@ def review_reason(tags: dict, facility_type: str) -> str:
         atm = tag(tags, "atm").lower()
         if name == "atm" or " atm" in name or atm == "only":
             return "atm_only_candidate"
+    if facility_type == "dollar_store":
+        if not name:
+            return "unnamed_value_anchor"
+        value_brands = ("dollar tree", "dollar general", "family dollar")
+        if not any(brand in name or brand in operator for brand in value_brands):
+            return "non_target_variety_store"
     if facility_type == "gas_convenience":
         if not name:
             return "unnamed_trip_anchor"
@@ -187,11 +194,13 @@ def row_from_element(
         "missing_coordinate",
         "atm_only_candidate",
         "ev_charging_candidate",
+        "non_target_variety_store",
         "private_shipping_counter",
         "unnamed_open_space",
         "unnamed_trip_anchor",
         "unnamed_trade_anchor",
         "unnamed_transit_point",
+        "unnamed_value_anchor",
     }:
         status = "exclude"
     return {
@@ -237,11 +246,13 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
             in {
                 "atm_only_candidate",
                 "ev_charging_candidate",
+                "non_target_variety_store",
                 "private_shipping_counter",
                 "unnamed_open_space",
                 "unnamed_trip_anchor",
                 "unnamed_trade_anchor",
                 "unnamed_transit_point",
+                "unnamed_value_anchor",
             }
             else "packet_ready"
         )

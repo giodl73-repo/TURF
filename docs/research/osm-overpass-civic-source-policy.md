@@ -16,6 +16,8 @@ signals when the fixture preserves source, date, license, and review status.
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbank
 - Credit union tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcredit_union
+- Variety store tag:
+  https://wiki.openstreetmap.org/wiki/Tag:shop%3Dvariety_store
 - Fuel tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfuel
 - Convenience shop tag:
@@ -82,6 +84,12 @@ catchments. Unnamed open-space rows remain excluded with
 Bank/credit-union rows use OSM branch-style finance amenities. ATM-only rows
 remain in the audit fixture but are excluded with
 `review_reason = atm_only_candidate`.
+
+Dollar-store rows use named OSM variety-store features as a first value-errand
+proxy, limited to Dollar Tree, Dollar General, and Family Dollar brand/name
+matches. Other variety-store rows remain in the audit fixture but are excluded
+with `review_reason = non_target_variety_store`; unnamed value anchors are
+excluded with `review_reason = unnamed_value_anchor`.
 
 Gas/convenience rows use named OSM fuel amenities and convenience-shop features
 as a first car-trip and quick-errand proxy. Unnamed trip anchors and EV charging

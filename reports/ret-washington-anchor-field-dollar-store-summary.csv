@@ -1,0 +1,5 @@
+field_id,label,anchor_field,dollar_store_rows,operator_count,address_incomplete_rows,dollar_store_names
+southcenter-tukwila,Southcenter / Tukwila mall field,south_king_regional_mall_field,1,1,0,Dollar Tree
+tacoma-mall,Tacoma Mall field,south_sound_regional_mall_field,1,1,0,Dollar Tree
+kitsap-mall,Kitsap Mall / Silverdale field,kitsap_regional_mall_field,1,1,0,Dollar Tree
+south-hill-puyallup,South Hill / Puyallup field,pierce_suburban_mall_field,1,1,1,Dollar Tree

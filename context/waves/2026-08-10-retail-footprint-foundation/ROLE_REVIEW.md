@@ -2398,3 +2398,37 @@ The remaining pre-scale everyday gates are dollar stores, laundromats, and
 gyms. Dollar stores should be next if the goal is value-errand texture;
 laundromats and gyms should follow to test household-service and wellness
 service fields.
+
+## Pulse 80 Dollar-Store Value-Errand Layer
+
+### Market Analyst
+
+Status: pass.
+
+The layer adds a clean value-errand signal even though it is sparse. Dollar Tree
+appears in Southcenter / Tukwila, Tacoma Mall, Kitsap Mall / Silverdale, and
+South Hill / Puyallup, while Bellevue core and Factoria remain absent.
+
+### Market Geographer
+
+Status: pass.
+
+The value-store rows reinforce the emerging split between tight downtown or
+office-adjacent fields and auto-oriented mall/suburban fields. Bellevue can be
+finance-dense without also being a value-errand field.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows use named OSM variety-store features with ODbL rights status preserved.
+The packet-ready layer is limited to target brands; non-target variety stores
+remain visible in the audit fixture and are excluded.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The remaining pre-scale everyday gates are laundromats and gyms. Laundromats
+should be next if the goal is household-service texture; gyms should follow to
+test wellness and routine-service fields.

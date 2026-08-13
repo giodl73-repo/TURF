@@ -14,14 +14,14 @@ reports/ret-washington-anchor-field-context-summary.csv
 
 ## Summary
 
-| Field | Source-gated dimensions | Observed dimensions | Bank / credit union rows | Gas / convenience rows | Hardware rows | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Bellevue core | 3 | 7 | 32 | 3 | 0 | 1 | 7 | 1 | 3 | 2 |
-| Factoria | 3 | 4 | 7 | 6 | 0 | 0 | 4 | 1 | 0 | 0 |
-| Southcenter / Tukwila | 3 | 7 | 11 | 10 | 3 | 1 | 9 | 1 | 1 | 0 |
-| Tacoma Mall | 3 | 4 | 4 | 9 | 3 | 0 | 6 | 0 | 0 | 0 |
-| Kitsap Mall / Silverdale | 3 | 8 | 13 | 10 | 1 | 1 | 2 | 1 | 1 | 1 |
-| South Hill / Puyallup | 3 | 6 | 14 | 14 | 1 | 0 | 4 | 0 | 2 | 1 |
+| Field | Source-gated dimensions | Observed dimensions | Bank / credit union rows | Dollar-store rows | Gas / convenience rows | Hardware rows | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Bellevue core | 2 | 7 | 32 | 0 | 3 | 0 | 1 | 7 | 1 | 3 | 2 |
+| Factoria | 2 | 4 | 7 | 0 | 6 | 0 | 0 | 4 | 1 | 0 | 0 |
+| Southcenter / Tukwila | 2 | 8 | 11 | 1 | 10 | 3 | 1 | 9 | 1 | 1 | 0 |
+| Tacoma Mall | 2 | 5 | 4 | 1 | 9 | 3 | 0 | 6 | 0 | 0 | 0 |
+| Kitsap Mall / Silverdale | 2 | 9 | 13 | 1 | 10 | 1 | 1 | 2 | 1 | 1 | 1 |
+| South Hill / Puyallup | 2 | 7 | 14 | 1 | 14 | 1 | 0 | 4 | 0 | 2 | 1 |
 
 ## First Signal
 
@@ -79,6 +79,16 @@ Banks / credit unions:
 - Tacoma Mall has 4 rows, so it is no longer park-only, but it remains thin
   across the selective checked anchors.
 
+Dollar stores:
+
+- Southcenter / Tukwila, Tacoma Mall, Kitsap Mall / Silverdale, and South Hill
+  / Puyallup each have one checked Dollar Tree row.
+- Bellevue core has an excluded non-target variety-store row but no checked
+  dollar-store row.
+- Factoria has no checked dollar-store row.
+- The value-errand signal lines up with the more auto-oriented mall and
+  suburban fields rather than the tight downtown field.
+
 Pharmacies:
 
 - Bellevue core has Bartell Drugs and CVS Pharmacy.
@@ -109,9 +119,9 @@ Hardware:
 
 ## Source Gates
 
-Gyms, laundromats, and dollar stores are not yet counted. They are present in
-the context contract as source-gated dimensions so later acquisition can fill
-them without changing the profile shape.
+Gyms and laundromats are not yet counted. They are present in the context
+contract as source-gated dimensions so later acquisition can fill them without
+changing the profile shape.
 
 ## Learning
 
@@ -121,8 +131,8 @@ civic-plus-multi-errand fields. Southcenter / Tukwila looks full civic with
 finance and car-trip errands but without the checked pharmacy signal. South
 Hill / Puyallup looks mobility-plus-everyday with the strongest car-trip
 texture. Southcenter / Tukwila and Tacoma Mall now carry the clearest hardware
-small-trade signal. Factoria has parks, postal evidence, finance errands, and
-moderate gas/convenience support but lacks library, transit, pharmacy, and
-hardware. Bellevue core is finance-dense but gas/convenience-light and
-hardware-absent, which makes the downtown versus auto-oriented field split
-clearer.
+small-trade signal and a checked value-store row. Factoria has parks, postal
+evidence, finance errands, and moderate gas/convenience support but lacks
+library, transit, pharmacy, hardware, and dollar-store evidence. Bellevue core
+is finance-dense but gas/convenience-light, hardware-absent, and dollar-store
+absent, which makes the downtown versus auto-oriented field split clearer.
