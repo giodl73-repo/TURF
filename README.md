@@ -255,8 +255,8 @@ The `summarize-anchor-profile` command reads Anchor Profile v0 and reports
 counts by modifier, geography scope, and region.
 
 The `validate-type-discovery-profile` command checks the cross-metro
-type-discovery profile contract used to compare Washington, Atlanta, and
-Chicago while preserving source-depth differences.
+type-discovery profile contract used to compare Washington, Atlanta, Chicago,
+and Dallas/Fort Worth while preserving source-depth differences.
 
 The first QSR acquisition query is:
 `queries\overture-qsr-washington-2026-07-22.sql`.
@@ -443,6 +443,9 @@ The Dallas/Fort Worth anchor-field retail-complex readout is:
 
 The Dallas/Fort Worth pre-scale field stack readout is:
 `reports\ret-dallas-pre-scale-field-stack.md`.
+
+The Dallas/Fort Worth type-discovery synthesis is:
+`reports\ret-dallas-type-discovery-synthesis.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.

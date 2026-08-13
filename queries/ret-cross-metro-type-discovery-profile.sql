@@ -1,6 +1,6 @@
 -- Cross-metro type-discovery profile.
 --
--- Normalizes Washington, Atlanta, and Chicago anchor-field readouts into one
+-- Normalizes Washington, Atlanta, Chicago, and Dallas/Fort Worth anchor-field readouts into one
 -- comparable table while preserving each region's profile basis.
 
 COPY (
@@ -71,12 +71,37 @@ COPY (
             END AS source_quality_note
         FROM read_csv_auto('reports/ret-chicago-pre-scale-field-stack.csv', all_varchar = true)
     ),
+    dallas AS (
+        SELECT
+            'dallas' AS region,
+            field_id,
+            label,
+            anchor_field,
+            'pre_scale_5_layer_stack' AS profile_basis,
+            5 AS dimensions,
+            TRY_CAST(observed_layers AS INTEGER) AS observed_layers,
+            TRY_CAST(source_gated_layers AS INTEGER) AS source_gated_layers,
+            TRY_CAST(checked_absent_layers AS INTEGER) AS checked_absent_layers,
+            readiness_tier,
+            emerging_field_type AS type_discovery_label,
+            CASE
+                WHEN source_gated_layers = '0' THEN 'no_source_gates'
+                WHEN readiness_tier = 'type_discovery_comparable_retry_gated_layer'
+                    THEN 'usable_for_type_discovery_retry_osm_before_ranking'
+                WHEN readiness_tier = 'type_discovery_partial'
+                    THEN 'usable_for_type_discovery_not_final_ranking'
+                ELSE 'source_limited_retry_or_alternate_source'
+            END AS source_quality_note
+        FROM read_csv_auto('reports/ret-dallas-pre-scale-field-stack.csv', all_varchar = true)
+    ),
     combined AS (
         SELECT * FROM washington
         UNION ALL
         SELECT * FROM atlanta
         UNION ALL
         SELECT * FROM chicago
+        UNION ALL
+        SELECT * FROM dallas
     )
     SELECT
         region,
@@ -96,6 +121,10 @@ COPY (
         CASE
             WHEN profile_basis = 'full_11_dimension_context' AND source_gated_layers = 0
                 THEN 'baseline_comparable'
+            WHEN readiness_tier = 'source_limited_field'
+                THEN 'source_limited'
+            WHEN readiness_tier = 'type_discovery_partial'
+                THEN 'type_discovery_partial'
             WHEN observed_layers >= 3 AND source_gated_layers <= 2
                 THEN 'type_discovery_comparable'
             WHEN observed_layers >= 2
@@ -108,6 +137,7 @@ COPY (
             WHEN 'washington' THEN 1
             WHEN 'atlanta' THEN 2
             WHEN 'chicago' THEN 3
+            WHEN 'dallas' THEN 4
             ELSE 99
         END,
         CASE field_id
@@ -131,6 +161,14 @@ COPY (
             WHEN 'woodfield-schaumburg' THEN 25
             WHEN 'ford-city-cicero' THEN 26
             WHEN 'orland-square' THEN 27
+            WHEN 'downtown-uptown-dallas' THEN 31
+            WHEN 'northpark-preston-hollow' THEN 32
+            WHEN 'galleria-addison' THEN 33
+            WHEN 'legacy-frisco-plano' THEN 34
+            WHEN 'las-colinas-irving' THEN 35
+            WHEN 'arlington-grand-prairie' THEN 36
+            WHEN 'southlake-town-square' THEN 37
+            WHEN 'fort-worth-west-7th' THEN 38
             ELSE 99
         END
 ) TO 'reports/ret-cross-metro-type-discovery-profile.csv'

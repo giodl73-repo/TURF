@@ -2,8 +2,8 @@
 
 ## Scope
 
-This report normalizes Washington, Atlanta, and Chicago anchor-field outputs
-into one comparable type-discovery profile.
+This report normalizes Washington, Atlanta, Chicago, and Dallas/Fort Worth
+anchor-field outputs into one comparable type-discovery profile.
 
 Generated output:
 
@@ -27,8 +27,9 @@ Each row exposes:
 - comparison tier.
 
 The profile basis is part of the contract. Washington and Atlanta use a
-full 11-dimension context contract. Chicago uses a pre-scale 6-layer stack. The
-profile is comparable for type discovery, not final atlas ranking.
+full 11-dimension context contract. Chicago uses a pre-scale 6-layer stack.
+Dallas/Fort Worth uses a pre-scale 5-layer stack. The profile is comparable for
+type discovery, not final atlas ranking.
 
 ## Comparison Tiers
 
@@ -43,12 +44,13 @@ profile is comparable for type discovery, not final atlas ranking.
 ## First Read
 
 Washington remains the baseline because it has zero source-gated dimensions.
-Atlanta is useful for type discovery but heavily source-gated. Chicago is not a
-full 11-dimension profile yet, but the pre-scale stack is strong enough to
-compare typed fields such as urban everyday grids, confirmed mall/grocery
-fields, and big-box/grocery power fields.
+Atlanta is useful for type discovery but heavily source-gated. Chicago and
+Dallas/Fort Worth are not full 11-dimension profiles yet, but their pre-scale
+stacks are strong enough to compare typed fields such as urban everyday grids,
+confirmed mall/grocery fields, big-box/grocery power fields, and Sun Belt
+town-center or growth-edge fields.
 
-The current generated profile has 20 rows:
+The current generated profile has 28 rows:
 
 | Region | Tier | Fields |
 |---|---|---:|
@@ -57,6 +59,8 @@ The current generated profile has 20 rows:
 | Atlanta | `source_limited` | 2 |
 | Chicago | `type_discovery_comparable` | 5 |
 | Chicago | `type_discovery_partial` | 2 |
+| Dallas/Fort Worth | `type_discovery_comparable` | 7 |
+| Dallas/Fort Worth | `type_discovery_partial` | 1 |
 
 Profile basis:
 
@@ -64,6 +68,7 @@ Profile basis:
 |---|---:|
 | `full_11_dimension_context` | 13 |
 | `pre_scale_6_layer_stack` | 7 |
+| `pre_scale_5_layer_stack` | 8 |
 
 ## Current Comparable Types
 
@@ -79,6 +84,26 @@ type-discovery-comparable fields:
 Atlanta contributes five partial type-discovery fields, but none are baseline
 comparable because every Atlanta field still carries at least five source-gated
 dimensions.
+
+Dallas/Fort Worth contributes seven type-discovery-comparable fields and one
+partial field:
+
+- Downtown / Uptown Dallas:
+  `urban_postal_grocery_health_big_box_village_field`.
+- NorthPark / Preston Hollow:
+  `affluent_complex_grocery_health_costco_field`.
+- Galleria / Addison: `edge_city_grocery_big_box_complex_field`.
+- Legacy / Frisco / Plano:
+  `growth_edge_mall_grocery_health_big_box_field`.
+- Arlington / Grand Prairie:
+  `midcities_grocery_health_big_box_complex_field`.
+- Southlake Town Square: `town_center_grocery_health_complex_field`.
+- Fort Worth Cultural / West 7th:
+  `secondary_core_grocery_health_big_box_plaza_field`.
+
+Las Colinas / Irving remains partial because it combines observed grocery,
+pharmacy, and retail-complex evidence with a USPS source gate and checked
+mass-retail absence.
 
 ## Validation
 

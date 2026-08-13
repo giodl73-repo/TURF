@@ -3653,3 +3653,37 @@ Status: pass with next-output request.
 Dallas/Fort Worth should now move to synthesis and cross-metro profile rows.
 Do not add a fifth metro until these field types are compared against the
 Washington, Atlanta, and Chicago profile.
+
+## Pulse 116 Dallas Type-Discovery Profile
+
+### Market Analyst
+
+Status: pass.
+
+Dallas/Fort Worth now contributes seven comparable rows and one partial row to
+the cross-metro type-discovery profile. That is enough to compare the fourth
+metro before adding a fifth.
+
+### Market Geographer
+
+Status: pass.
+
+The synthesis keeps Dallas, north Dallas, north growth suburbs, mid-cities,
+Southlake, Irving, and Fort Worth as distinct field reads. This preserves the
+metroplex structure instead of forcing a single Dallas archetype.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The profile keeps the five-layer Dallas basis visible and does not flatten it
+into Washington or Atlanta's 11-dimension context. USPS source gates and
+checked absences remain explicit.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next decision should come from the expanded cross-metro profile: either
+resolve civic/postal source gates, add another common-store intersection, or
+scale to a fifth metro with the current type-discovery contract.

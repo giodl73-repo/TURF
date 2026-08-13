@@ -132,6 +132,7 @@ before broader chain coverage begins.
 | 113 | Texas pharmacy layer | complete | Added reviewed Texas exact-brand drugstore rows and found seven Dallas/Fort Worth fields carry health-errand signal. |
 | 114 | Texas retail-complex layer | complete | Added target-limited Texas retail-complex confirmation and gave Dallas/Fort Worth a fifth pre-scale stack layer. |
 | 115 | Dallas pre-scale field stack | complete | Combined five Dallas/Fort Worth layers into comparable, retry-gated, and partial field types before adding another metro. |
+| 116 | Dallas type-discovery profile | complete | Synthesized Dallas/Fort Worth field types and added eight rows to the cross-metro type-discovery profile. |
 
 ## Success criteria
 

@@ -3016,14 +3016,16 @@ fn validate_metro_context_status(value: &str, line_number: usize) -> Result<(), 
 
 fn validate_type_discovery_region(value: &str, line_number: usize) -> Result<(), String> {
     match value {
-        "washington" | "atlanta" | "chicago" => Ok(()),
+        "washington" | "atlanta" | "chicago" | "dallas" => Ok(()),
         _ => Err(format!("line {line_number}: invalid region")),
     }
 }
 
 fn validate_type_discovery_profile_basis(value: &str, line_number: usize) -> Result<(), String> {
     match value {
-        "full_11_dimension_context" | "pre_scale_6_layer_stack" => Ok(()),
+        "full_11_dimension_context" | "pre_scale_6_layer_stack" | "pre_scale_5_layer_stack" => {
+            Ok(())
+        }
         _ => Err(format!("line {line_number}: invalid profile_basis")),
     }
 }
@@ -3038,7 +3040,11 @@ fn validate_type_discovery_readiness_tier(value: &str, line_number: usize) -> Re
         | "usable_for_type_discovery_retry_osm_before_ranking"
         | "source_limited_retry_or_alternate_source"
         | "usable_for_type_discovery"
-        | "needs_more_layers_before_interpretation" => Ok(()),
+        | "needs_more_layers_before_interpretation"
+        | "type_discovery_comparable"
+        | "type_discovery_comparable_retry_gated_layer"
+        | "type_discovery_partial"
+        | "source_limited_retry_or_add_layers" => Ok(()),
         _ => Err(format!("line {line_number}: invalid readiness_tier")),
     }
 }
@@ -3875,14 +3881,17 @@ atlanta_districts,perimeter,Perimeter,district_core,edge_city_mall_cluster,11,1,
         let csv = "\
 region,field_id,label,anchor_field,profile_basis,dimensions,observed_layers,source_gated_layers,checked_absent_layers,observed_rate,source_gated_rate,type_discovery_label,readiness_tier,source_quality_note,comparison_tier
 chicago,oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,pre_scale_6_layer_stack,6,4,1,1,0.667,0.167,confirmed_postal_big_box_edge_field,usable_for_type_discovery,usable_for_type_discovery,type_discovery_comparable
+dallas,downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,pre_scale_5_layer_stack,5,5,0,0,1.0,0.0,urban_postal_grocery_health_big_box_village_field,type_discovery_comparable,no_source_gates,type_discovery_comparable
 ";
         let rows = parse_cross_metro_type_discovery_profile(csv).expect("profile parses");
 
-        assert_eq!(rows.len(), 1);
+        assert_eq!(rows.len(), 2);
         assert_eq!(rows[0].region, "chicago");
         assert_eq!(rows[0].dimensions, 6);
         assert_eq!(rows[0].comparison_tier, "type_discovery_comparable");
-        assert_eq!(validate_cross_metro_type_discovery_profile(csv), Ok(1));
+        assert_eq!(rows[1].region, "dallas");
+        assert_eq!(rows[1].profile_basis, "pre_scale_5_layer_stack");
+        assert_eq!(validate_cross_metro_type_discovery_profile(csv), Ok(2));
     }
 
     #[test]
