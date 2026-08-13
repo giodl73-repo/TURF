@@ -106,6 +106,7 @@ before broader chain coverage begins.
 | 87 | Atlanta transit civic layer | complete | Added Perimeter MARTA station rows and preserved six unresolved fields as source-gated Overpass timeouts. |
 | 88 | Atlanta civic context summary | complete | Combined four Atlanta civic dimensions into observed/source-gated archetypes before starting everyday-anchor backfill. |
 | 89 | Atlanta bank/credit-union layer | complete | Added dense Cumberland and Decatur finance rows, showing postal-only civic fields can still be everyday-service rich. |
+| 90 | Atlanta gas/convenience layer | complete | Added dense Decatur gas/convenience rows, exposing an inner service-village field with both finance and car-trip texture. |
 
 ## Success criteria
 

@@ -2741,3 +2741,36 @@ Status: pass with next-output request.
 The next everyday layer should be gas/convenience or pharmacy. Gas/convenience
 will test car-trip texture against finance density; pharmacy will test routine
 health errand texture using the already reviewed store layer pattern.
+
+## Pulse 90 Atlanta Gas / Convenience Layer
+
+### Market Analyst
+
+Status: pass.
+
+Decatur / Emory is now the clearest everyday-service correction in Atlanta.
+It has dense finance and dense gas/convenience signal despite a partial civic
+stack.
+
+### Market Geographer
+
+Status: pass.
+
+The result gives the inner service-village field a different profile from
+Cumberland / Vinings. Cumberland is finance-rich; Decatur / Emory is
+finance-rich and car-trip / quick-errand rich.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer keeps unnamed trip anchors in the audit fixture but excludes them
+from counted rows. Six unresolved fields remain explicit source gates.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next useful step is a combined Atlanta civic/everyday summary for the
+dimensions acquired so far, or pharmacy if the goal is to add health-errand
+texture before summarizing.
