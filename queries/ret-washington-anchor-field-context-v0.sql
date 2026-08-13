@@ -2,8 +2,9 @@
 --
 -- Starts the Civic + Everyday Anchors layer with checked dimensions. Post
 -- offices, libraries, parks, and transit centers use reviewed OSM civic
--- layers; bank/credit unions use a reviewed OSM everyday-service layer; and
--- pharmacy uses the existing reviewed drugstore layer as a health errand proxy.
+-- layers; bank/credit unions and gas/convenience use reviewed OSM
+-- everyday-service layers; and pharmacy uses the existing reviewed drugstore
+-- layer as a health errand proxy.
 
 CREATE OR REPLACE TEMP TABLE fields AS
 SELECT
@@ -56,6 +57,20 @@ SELECT
     string_agg(facilities.facility_name, '; ' ORDER BY facilities.facility_name) AS observed_names
 FROM read_csv_auto(
         'fixtures/civic/osm-bank-credit-union-washington-anchor-fields-review-2026-08-13.csv',
+        all_varchar = true
+    ) AS facilities
+WHERE facilities.state = 'WA'
+  AND facilities.review_status = 'packet_ready'
+GROUP BY facilities.target_id;
+
+CREATE OR REPLACE TEMP TABLE gas_convenience AS
+SELECT
+    facilities.target_id AS field_id,
+    count(*) AS observed_rows,
+    count(DISTINCT coalesce(nullif(facilities.operator, ''), facilities.facility_type)) AS observed_brands,
+    string_agg(facilities.facility_name, '; ' ORDER BY facilities.facility_name) AS observed_names
+FROM read_csv_auto(
+        'fixtures/civic/osm-gas-convenience-washington-anchor-fields-review-2026-08-13.csv',
         all_varchar = true
     ) AS facilities
 WHERE facilities.state = 'WA'
@@ -116,6 +131,7 @@ COPY (
         dimensions.profile_role,
         CASE
             WHEN dimensions.dimension_id = 'bank_credit_union' THEN coalesce(bank_credit_unions.observed_rows, 0)
+            WHEN dimensions.dimension_id = 'gas_convenience' THEN coalesce(gas_convenience.observed_rows, 0)
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_rows, 0)
             WHEN dimensions.dimension_id = 'park' THEN coalesce(parks.observed_rows, 0)
             WHEN dimensions.dimension_id = 'post_office' THEN coalesce(post_offices.observed_rows, 0)
@@ -125,6 +141,7 @@ COPY (
         END AS observed_rows,
         CASE
             WHEN dimensions.dimension_id = 'bank_credit_union' THEN coalesce(bank_credit_unions.observed_brands, 0)
+            WHEN dimensions.dimension_id = 'gas_convenience' THEN coalesce(gas_convenience.observed_brands, 0)
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_brands, 0)
             WHEN dimensions.dimension_id = 'park' THEN coalesce(parks.observed_brands, 0)
             WHEN dimensions.dimension_id = 'post_office' THEN coalesce(post_offices.observed_brands, 0)
@@ -134,6 +151,7 @@ COPY (
         END AS observed_brands,
         CASE
             WHEN dimensions.dimension_id = 'bank_credit_union' THEN coalesce(bank_credit_unions.observed_names, '')
+            WHEN dimensions.dimension_id = 'gas_convenience' THEN coalesce(gas_convenience.observed_names, '')
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_names, '')
             WHEN dimensions.dimension_id = 'park' THEN coalesce(parks.observed_names, '')
             WHEN dimensions.dimension_id = 'post_office' THEN coalesce(post_offices.observed_names, '')
@@ -145,6 +163,8 @@ COPY (
             WHEN dimensions.source_status = 'source_gate_pending' THEN 'source_gate_pending'
             WHEN dimensions.dimension_id = 'bank_credit_union' AND coalesce(bank_credit_unions.observed_rows, 0) > 0 THEN 'observed'
             WHEN dimensions.dimension_id = 'bank_credit_union' THEN 'observed_absent'
+            WHEN dimensions.dimension_id = 'gas_convenience' AND coalesce(gas_convenience.observed_rows, 0) > 0 THEN 'observed'
+            WHEN dimensions.dimension_id = 'gas_convenience' THEN 'observed_absent'
             WHEN dimensions.dimension_id = 'library' AND coalesce(libraries.observed_rows, 0) > 0 THEN 'observed'
             WHEN dimensions.dimension_id = 'library' THEN 'observed_absent'
             WHEN dimensions.dimension_id = 'park' AND coalesce(parks.observed_rows, 0) > 0 THEN 'observed'
@@ -164,6 +184,8 @@ COPY (
         ON fields.field_id = pharmacies.field_id
     LEFT JOIN bank_credit_unions
         ON fields.field_id = bank_credit_unions.field_id
+    LEFT JOIN gas_convenience
+        ON fields.field_id = gas_convenience.field_id
     LEFT JOIN post_offices
         ON fields.field_id = post_offices.field_id
     LEFT JOIN libraries

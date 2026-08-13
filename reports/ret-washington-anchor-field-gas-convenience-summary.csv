@@ -1,0 +1,7 @@
+field_id,label,anchor_field,gas_convenience_rows,operator_count,address_incomplete_rows,gas_convenience_names
+bellevue-core,Bellevue core mall field,eastside_urban_mall_field,3,3,1,7-Eleven; Chevron; Tienda La Mexicana
+factoria,Bellevue Factoria field,eastside_power_center_mall_edge,6,5,1,76; 76; Arkay LLC; Chevron; Hungry Bear Market; Mann Petroleum
+southcenter-tukwila,Southcenter / Tukwila mall field,south_king_regional_mall_field,10,8,5,7-Eleven; 7-Eleven; 76; Arco; Chevron; Chevron; ExtraMile; Michael's Mart; My Goods Market; ampm
+tacoma-mall,Tacoma Mall field,south_sound_regional_mall_field,9,5,1,7-Eleven; 7-Eleven; 7-Eleven; 7-Eleven; Costco Gasoline; Peter's Grocery; Safeway Fuel Station; Shell; Shell
+kitsap-mall,Kitsap Mall / Silverdale field,kitsap_regional_mall_field,10,8,5,7-Eleven; 76; 76; Arco; Costco Gasoline; Rocket; Rocket; Safeway Fuel Station; Texaco; ampm
+south-hill-puyallup,South Hill / Puyallup field,pierce_suburban_mall_field,14,10,6,7-Eleven; 7-Eleven; 7-Eleven; Arco; Chevron; Chevron; Costco Gasoline; Handy Corner; Jacksons; Pit Stop Express; Safeway; Shell; Shell; South Hill Mini Mart

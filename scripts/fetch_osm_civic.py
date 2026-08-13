@@ -42,6 +42,10 @@ OSM_TAGS = {
         ("amenity", "bank"),
         ("amenity", "credit_union"),
     ],
+    "gas_convenience": [
+        ("amenity", "fuel"),
+        ("shop", "convenience"),
+    ],
     "library": [("amenity", "library")],
     "park": [
         ("leisure", "park"),
@@ -138,6 +142,11 @@ def review_reason(tags: dict, facility_type: str) -> str:
         atm = tag(tags, "atm").lower()
         if name == "atm" or " atm" in name or atm == "only":
             return "atm_only_candidate"
+    if facility_type == "gas_convenience":
+        if not name:
+            return "unnamed_trip_anchor"
+        if "charging" in name and "station" in name:
+            return "ev_charging_candidate"
     if facility_type == "post_office" and (
         "ups store" in name
         or "ups store" in operator
@@ -174,8 +183,10 @@ def row_from_element(
     if reason in {
         "missing_coordinate",
         "atm_only_candidate",
+        "ev_charging_candidate",
         "private_shipping_counter",
         "unnamed_open_space",
+        "unnamed_trip_anchor",
         "unnamed_transit_point",
     }:
         status = "exclude"
@@ -221,8 +232,10 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
             if reason
             in {
                 "atm_only_candidate",
+                "ev_charging_candidate",
                 "private_shipping_counter",
                 "unnamed_open_space",
+                "unnamed_trip_anchor",
                 "unnamed_transit_point",
             }
             else "packet_ready"
@@ -237,6 +250,12 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--facility-type", required=True, choices=sorted(OSM_TAGS))
     parser.add_argument("--targets", required=True)
+    parser.add_argument(
+        "--target-id",
+        action="append",
+        default=[],
+        help="Restrict fetch to one or more target_id values from the target CSV.",
+    )
     parser.add_argument("--output", required=True)
     parser.add_argument("--source-date", required=True)
     parser.add_argument(
@@ -265,6 +284,13 @@ def main() -> None:
     rows: list[dict[str, str]] = []
     with targets_path.open(newline="", encoding="utf-8") as handle:
         targets = list(csv.DictReader(handle))
+    if args.target_id:
+        requested_targets = set(args.target_id)
+        targets = [target for target in targets if target["target_id"] in requested_targets]
+        found_targets = {target["target_id"] for target in targets}
+        missing_targets = sorted(requested_targets - found_targets)
+        if missing_targets:
+            raise ValueError(f"Unknown target_id values: {', '.join(missing_targets)}")
 
     for index, target in enumerate(targets):
         for attempt in range(1, args.retries + 1):

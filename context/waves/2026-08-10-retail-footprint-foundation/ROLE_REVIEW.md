@@ -2326,3 +2326,40 @@ The next useful dimensions before scaling are car-trip and routine-service
 signals: gas/convenience, dollar stores, hardware, laundromats, and gyms. These
 should show whether the finance signal marks a broad everyday-service field or
 only a commercial-office errand layer.
+
+## Pulse 78 Gas/Convenience Car-Trip Layer
+
+### Market Analyst
+
+Status: pass.
+
+The gas/convenience layer adds a visibly different signal from finance.
+Bellevue core remains the finance-dense outlier, but South Hill / Puyallup,
+Southcenter / Tukwila, Kitsap Mall / Silverdale, and Tacoma Mall carry stronger
+car-trip texture.
+
+### Market Geographer
+
+Status: pass.
+
+The layer keeps the same six bounded fields and adds an everyday-service
+dimension without changing the geography. The resulting contrast is meaningful:
+a tight downtown box can be dense in finance but light in gas/convenience,
+while mall and suburban fields can show the reverse.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows use OSM/Overpass with ODbL rights status preserved. Unnamed trip anchors
+and EV charging candidates are excluded from the packet-ready count rather than
+mixed into the first gas/convenience proxy.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next useful source gates are dollar stores, hardware, laundromats, and gyms.
+Together they can test value errands, small-trade supply, household service,
+and wellness-service texture before the model scales to Seattle city and other
+metros.

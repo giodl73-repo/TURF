@@ -14,14 +14,14 @@ reports/ret-washington-anchor-field-context-summary.csv
 
 ## Summary
 
-| Field | Source-gated dimensions | Observed dimensions | Bank / credit union rows | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Bellevue core | 5 | 6 | 32 | 1 | 7 | 1 | 3 | 2 |
-| Factoria | 5 | 3 | 7 | 0 | 4 | 1 | 0 | 0 |
-| Southcenter / Tukwila | 5 | 5 | 11 | 1 | 9 | 1 | 1 | 0 |
-| Tacoma Mall | 5 | 2 | 4 | 0 | 6 | 0 | 0 | 0 |
-| Kitsap Mall / Silverdale | 5 | 6 | 13 | 1 | 2 | 1 | 1 | 1 |
-| South Hill / Puyallup | 5 | 4 | 14 | 0 | 4 | 0 | 2 | 1 |
+| Field | Source-gated dimensions | Observed dimensions | Bank / credit union rows | Gas / convenience rows | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Bellevue core | 4 | 7 | 32 | 3 | 1 | 7 | 1 | 3 | 2 |
+| Factoria | 4 | 4 | 7 | 6 | 0 | 4 | 1 | 0 | 0 |
+| Southcenter / Tukwila | 4 | 6 | 11 | 10 | 1 | 9 | 1 | 1 | 0 |
+| Tacoma Mall | 4 | 3 | 4 | 9 | 0 | 6 | 0 | 0 | 0 |
+| Kitsap Mall / Silverdale | 4 | 7 | 13 | 10 | 1 | 2 | 1 | 1 | 1 |
+| South Hill / Puyallup | 4 | 5 | 14 | 14 | 0 | 4 | 0 | 2 | 1 |
 
 ## First Signal
 
@@ -63,9 +63,9 @@ Transit centers:
 - Factoria and Tacoma Mall have no checked transit-center row inside the
   current bounded fields.
 
-The checked everyday-anchor proxies are bank/credit-union presence from a
-reviewed OSM/Overpass layer and pharmacy presence from the reviewed Washington
-drugstore layer.
+The checked everyday-anchor proxies are bank/credit-union and gas/convenience
+presence from reviewed OSM/Overpass layers, plus pharmacy presence from the
+reviewed Washington drugstore layer.
 
 Banks / credit unions:
 
@@ -89,18 +89,30 @@ Pharmacies:
 
 ## Source Gates
 
-Gyms, laundromats, gas or convenience stores, dollar stores, and hardware
-stores are not yet counted. They are present in the context contract as
-source-gated dimensions so later acquisition can fill them without changing the
-profile shape.
+Gas / convenience:
+
+- South Hill / Puyallup is the car-trip leader with 14 packet-ready rows.
+- Southcenter / Tukwila and Kitsap Mall / Silverdale each have 10 rows.
+- Tacoma Mall has 9 rows, which gives it a stronger auto-oriented service
+  signal than its civic rows alone suggested.
+- Bellevue core has only 3 rows inside the tight downtown field, despite being
+  the finance-dense outlier.
+
+## Source Gates
+
+Gyms, laundromats, dollar stores, and hardware stores are not yet counted. They
+are present in the context contract as source-gated dimensions so later
+acquisition can fill them without changing the profile shape.
 
 ## Learning
 
 This is the first bridge from retail-anchor profiles toward everyday enclave
 profiles. Bellevue core and Kitsap Mall / Silverdale now look like full
-civic-plus-multi-errand fields. Southcenter / Tukwila looks full civic with a
-finance errand layer but without the checked pharmacy signal. South Hill /
-Puyallup looks mobility-plus-everyday with parks. Factoria has parks, postal
-evidence, and finance errands but lacks library, transit, and pharmacy. Tacoma
-Mall has park and finance evidence but remains thin across selective checked
-context anchors.
+civic-plus-multi-errand fields. Southcenter / Tukwila looks full civic with
+finance and car-trip errands but without the checked pharmacy signal. South
+Hill / Puyallup looks mobility-plus-everyday with the strongest car-trip
+texture. Factoria has parks, postal evidence, finance errands, and moderate
+gas/convenience support but lacks library, transit, and pharmacy. Tacoma Mall
+has park, finance, and gas/convenience evidence but remains thin across
+selective civic anchors. Bellevue core is finance-dense but gas/convenience
+light, which makes the downtown versus auto-oriented field split clearer.

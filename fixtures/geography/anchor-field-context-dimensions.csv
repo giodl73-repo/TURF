@@ -7,6 +7,6 @@ bank_credit_union,everyday_anchor,Bank or credit union,active_reviewed_everyday_
 pharmacy,everyday_anchor,Pharmacy,active_reviewed_store_layer,routine_health_errand_anchor,Use reviewed drugstore layer as first pharmacy proxy
 gym,everyday_anchor,Gym or fitness center,source_gate_pending,routine_service_anchor,Reviewed POI source needed before counting rows
 laundromat,everyday_anchor,Laundromat,source_gate_pending,routine_service_anchor,Reviewed POI source needed before counting rows
-gas_convenience,everyday_anchor,Gas or convenience store,source_gate_pending,routine_trip_anchor,Reviewed POI source needed before counting rows
+gas_convenience,everyday_anchor,Gas or convenience store,active_reviewed_everyday_layer,routine_trip_anchor,Use reviewed OSM/Overpass gas-convenience layer as first car-trip errand proxy
 dollar_store,everyday_anchor,Dollar store,source_gate_pending,value_errand_anchor,Reviewed POI source needed before counting rows
 hardware,everyday_anchor,Hardware store,source_gate_pending,small_trade_anchor,Reviewed POI source needed before counting rows
