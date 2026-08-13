@@ -2987,3 +2987,37 @@ Status: pass with next-output request.
 The Atlanta context contract now has all 11 Washington-equivalent dimensions.
 The next step should be a pre-scale readiness note that separates resolved
 field types from source-limited fields before adding another metro.
+
+## Pulse 97 Atlanta Pre-Scale Readiness
+
+### Market Analyst
+
+Status: pass.
+
+The readiness report makes the right decision: Atlanta is useful for type
+discovery but not for final ranking. Buckhead has the strongest observed count
+at 6 of 11 dimensions, while Camp Creek and Northlake are source-limited.
+
+### Market Geographer
+
+Status: pass.
+
+The report keeps field identity and evidence quality separate. It does not
+collapse source-gated Atlanta fields into weak fields, and it preserves checked
+absences where clean target responses exist.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report derives only from generated context summaries and introduces no new
+source rows. It explicitly recommends retry or alternate source strategy before
+ranking source-limited fields.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next metro can proceed as type discovery, but the model should not compare
+raw context strength across Washington and Atlanta until source-gated Atlanta
+categories are retried or replaced with another reviewed open source.

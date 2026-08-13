@@ -95,6 +95,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-hardware-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-laundromat-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-gym-summary.sql"
+duckdb -c ".read queries/ret-atlanta-pre-scale-readiness.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-gas-convenience-summary.sql"
@@ -395,6 +396,9 @@ The Atlanta anchor-field gym readout is:
 
 The Atlanta anchor-field context summary is:
 `reports\ret-atlanta-anchor-field-context-summary.md`.
+
+The Atlanta pre-scale readiness decision is:
+`reports\ret-atlanta-pre-scale-readiness.md`.
 
 The Washington anchor-field retail-complex extraction plan is:
 `docs\research\overture-retail-complex-washington-anchor-fields-extraction-2026-07-22.md`.
