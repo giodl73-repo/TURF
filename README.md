@@ -474,6 +474,9 @@ The Los Angeles / Inland Empire auto-parts sidecar layer is:
 The sidecar standardization decision is:
 `reports\ret-sidecar-standardization-decision.md`.
 
+The Chicago QSR sidecar layer is:
+`reports\ret-chicago-anchor-field-qsr-summary.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

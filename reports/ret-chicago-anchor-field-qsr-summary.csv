@@ -1,0 +1,8 @@
+field_id,label,anchor_field,qsr_rows,qsr_brands,qsr_brand_list,qsr_names,qsr_signal
+loop-river-north,Loop / River North field,urban_core_mixed_service_field,11,3,Burger King; McDonald's; Taco Bell,Burger King; Burger King; McDonald's; McDonald's; McDonald's; McDonald's; McDonald's; Taco Bell; Taco Bell; Taco Bell; Taco Bell,multi_brand_qsr_corridor
+lincoln-park-lakeview,Lincoln Park / Lakeview field,inner_neighborhood_service_field,12,4,Burger King; McDonald's; Taco Bell; Wendy's,Burger King; Burger King; McDonald's; McDonald's; McDonald's; McDonald's; Taco Bell; Taco Bell; Taco Bell; Taco Bell; Taco Bell; Wendy's,four_brand_dense_qsr_grid
+old-orchard-skokie,Old Orchard / Skokie field,north_suburban_mall_field,1,1,Wendy's,Wendy's,single_qsr_anchor
+oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,3,2,Burger King; McDonald's,Burger King; McDonald's; McDonald's,qsr_service_node
+woodfield-schaumburg,Woodfield / Schaumburg field,northwest_edge_city_mall_field,6,3,Burger King; McDonald's; Wendy's,Burger King; McDonald's; McDonald's; Wendy's; Wendy's; Wendy's,multi_brand_qsr_corridor
+ford-city-cicero,Midway / Ford City field,southwest_airport_edge_field,10,4,Burger King; McDonald's; Taco Bell; Wendy's,Burger King; Burger King; McDonald's; McDonald's; McDonald's; McDonald's; McDonald's; Taco Bell; Wendy's; Wendy's,four_brand_dense_qsr_grid
+orland-square,Orland Square field,south_suburban_mall_field,3,3,Burger King; McDonald's; Taco Bell,Burger King; McDonald's; Taco Bell,qsr_service_node

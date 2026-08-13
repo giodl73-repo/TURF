@@ -4454,3 +4454,37 @@ Status: pass with next-output request.
 The next pulse should backfill Chicago QSR using the existing Chicago anchor
 field targets, then decide whether Chicago auto parts can use the same query
 template before moving to Dallas/Fort Worth.
+
+## Pulse 140 Chicago QSR Sidecar
+
+### Market Analyst
+
+Status: pass.
+
+The Illinois QSR fixture validates with 1,397 packet-ready rows after excluding
+two brand false positives. This satisfies the first standardized sidecar
+backfill gate.
+
+### Market Geographer
+
+Status: pass.
+
+The field read is useful: Lincoln Park / Lakeview and Midway / Ford City are
+four-brand dense QSR grids, Loop / River North and Woodfield / Schaumburg are
+multi-brand corridors, and Old Orchard remains light.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review excludes funeral-home false positives before interpretation and
+keeps the layer as public commercial footprint evidence, not official
+territory.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should backfill Chicago auto parts across the same seven targets
+and compare QSR against trade/car-service signal before moving to Dallas/Fort
+Worth.
