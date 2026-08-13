@@ -1,0 +1,9 @@
+field_id,label,anchor_field,qsr_rows,qsr_brands,qsr_brand_list,qsr_names,qsr_signal
+downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,5,4,Burger King; McDonald's; Taco Bell; Wendy's,Burger King; McDonald's; McDonald's; Taco Bell; Wendy's,multi_brand_qsr_corridor
+northpark-preston-hollow,NorthPark / Preston Hollow field,north_dallas_regional_mall_field,4,2,McDonald's; Taco Bell,McDonald's; McDonald's; McDonald's; Taco Bell,qsr_service_node
+galleria-addison,Galleria / Addison field,north_dallas_edge_city_field,6,4,Burger King; McDonald's; Taco Bell; Wendy's,Burger King; McDonald's; McDonald's; Taco Bell; Taco Bell; Wendy's,multi_brand_qsr_corridor
+legacy-frisco-plano,Legacy / Frisco / Plano field,north_growth_edge_city_field,7,4,Burger King; McDonald's; Taco Bell; Wendy's,Burger King; McDonald's; McDonald's; Taco Bell; Taco Bell; Wendy's; Wendy’s,multi_brand_qsr_corridor
+las-colinas-irving,Las Colinas / Irving field,airport_office_edge_field,7,3,McDonald's; Taco Bell; Wendy's,McDonald's; McDonald's; McDonald's; McDonald's; Taco Bell; Taco Bell; Wendy's,multi_brand_qsr_corridor
+arlington-grand-prairie,Arlington / Grand Prairie field,midcities_power_event_field,16,4,Burger King; McDonald's; Taco Bell; Wendy's,Burger King; Burger King; McDonald's; McDonald's; McDonald's; McDonald's; McDonald's; Taco Bell; Taco Bell; Taco Bell; Taco Bell; Taco Bell; Taco Bell; Wendy's; Wendy's; Wendy's,four_brand_dense_qsr_grid
+southlake-town-square,Southlake Town Square field,affluent_suburban_town_center_field,1,1,Wendy's,Wendy's,single_qsr_anchor
+fort-worth-west-7th,Fort Worth Cultural / West 7th field,secondary_core_service_field,1,1,Taco Bell,Taco Bell,single_qsr_anchor

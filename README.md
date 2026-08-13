@@ -480,6 +480,9 @@ The Chicago QSR sidecar layer is:
 The Chicago auto-parts sidecar layer is:
 `reports\ret-chicago-anchor-field-auto-parts-summary.md`.
 
+The Dallas/Fort Worth QSR sidecar layer is:
+`reports\ret-dallas-anchor-field-qsr-summary.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

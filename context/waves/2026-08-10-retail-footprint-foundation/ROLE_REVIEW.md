@@ -4523,3 +4523,38 @@ Status: pass with next-output request.
 The next pulse should start Dallas/Fort Worth sidecar backfill with QSR across
 the existing Dallas target fields, then add Dallas auto parts before any
 promotion into the core profile.
+
+## Pulse 142 Dallas/Fort Worth QSR Sidecar
+
+### Market Analyst
+
+Status: pass.
+
+The Texas QSR fixture validates with 2,989 packet-ready rows after excluding
+five brand false positives. The sidecar is large enough to support Dallas/Fort
+Worth field comparisons without promoting it into the core profile yet.
+
+### Market Geographer
+
+Status: pass.
+
+Arlington / Grand Prairie is the strongest four-brand dense QSR grid. Downtown
+/ Uptown Dallas, Galleria / Addison, Legacy / Frisco / Plano, and Las Colinas /
+Irving read as multi-brand corridors, while NorthPark / Preston Hollow is a
+service node and Southlake / Fort Worth West 7th are light single-anchor fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review excludes brand false positives, including McDonald Sanders, Taco
+Cabana, Burger Bar, and The Burger Joint rows, before interpretation. The layer
+remains public commercial footprint evidence, not an official territory claim.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should backfill Dallas/Fort Worth auto parts across the same
+eight targets and compare QSR daily-trip signal against trade/car-service
+signal before changing any type-discovery profile contract.
