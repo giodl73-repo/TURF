@@ -462,6 +462,9 @@ The Atlanta source-resolution pass is:
 The Atlanta library source-resolution pass is:
 `reports\ret-atlanta-library-source-resolution-pass.md`.
 
+The Atlanta gym source-resolution pass is:
+`reports\ret-atlanta-gym-source-resolution-pass.md`.
+
 The Atlanta anchor-field library readout is:
 `reports\ret-atlanta-anchor-field-library-summary.md`.
 

@@ -29,9 +29,9 @@ source-gated dimensions.
 |---|---:|---:|---:|---|---|
 | Cumberland / Vinings | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Buckhead / Lenox / Phipps | 6 | 5 | 0 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
-| Perimeter widened | 3 | 7 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
+| Perimeter widened | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Camp Creek | 1 | 7 | 3 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
-| Northlake | 2 | 8 | 1 | `source_limited_field` | `retry_or_alternate_source_before_ranking` |
+| Northlake | 3 | 7 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | North Point / Alpharetta widened | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Decatur / Emory | 4 | 7 | 0 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 
@@ -41,11 +41,11 @@ The Atlanta pass is already strong enough to learn typed enclave shapes:
 
 - Cumberland / Vinings: finance, household-service, and wellness service field.
 - Buckhead / Lenox / Phipps: civic/open-space/small-trade mall field.
-- Perimeter widened: postal/transit/health edge-city field.
+- Perimeter widened: postal/transit/health/wellness edge-city field.
 - Camp Creek: wellness-only partial context field with checked post-office,
   library, and pharmacy absence.
 - Northlake: partial source-gated context field with checked post-office
-  absence plus observed pharmacy and library service signal.
+  absence plus observed library, pharmacy, and gym signal.
 - North Point / Alpharetta widened: open-space/health/wellness edge-city
   field.
 - Decatur / Emory: finance/car-trip/health service village.
@@ -73,10 +73,10 @@ result produced a packet-ready USPS row. Camp Creek's library retry also
 returned no packet-ready rows. Those are useful negative evidence, not observed
 civic-anchor signal.
 
-Northlake did gain observed library signal, so its unresolved question is now
-whether the legacy mall node has hidden park/open-space, transit, and everyday
-service rows behind source gates or is genuinely thinner than Atlanta's stronger
-service fields.
+Northlake gained observed library and gym signal, so it is no longer locally
+source-limited. Its unresolved question is now whether the legacy mall node has
+hidden park/open-space, transit, and everyday service rows behind source gates
+or is genuinely thinner than Atlanta's stronger service fields.
 
 ## Next Step
 

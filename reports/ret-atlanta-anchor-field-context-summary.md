@@ -31,9 +31,9 @@ reports/ret-atlanta-anchor-field-context-summary.csv
 |---|---:|---:|---|
 | Cumberland / Vinings | 4 | 6 | `finance_household_wellness_service_field` |
 | Buckhead / Lenox / Phipps | 6 | 5 | `civic_open_space_small_trade_mall_field` |
-| Perimeter widened | 3 | 7 | `transit_health_edge_city_field` |
-| Camp Creek | 1 | 9 | `wellness_only_partial_context_field` |
-| Northlake | 1 | 10 | `health_only_partial_context_field` |
+| Perimeter widened | 4 | 6 | `transit_health_edge_city_field` |
+| Camp Creek | 1 | 7 | `wellness_only_partial_context_field` |
+| Northlake | 3 | 7 | `partial_context_source_gate` |
 | North Point / Alpharetta widened | 4 | 6 | `open_space_health_wellness_edge_city_field` |
 | Decatur / Emory | 4 | 7 | `finance_car_trip_health_service_village` |
 
@@ -45,28 +45,31 @@ The strongest current typed fields are:
   inner service village.
 - Cumberland / Vinings: finance-dense household-service and wellness field.
 - Buckhead / Lenox / Phipps: civic/open-space/small-trade mall field.
-- Perimeter widened: postal/transit/health edge-city field.
+- Perimeter widened: postal/transit/health/wellness edge-city field.
 - North Point / Alpharetta widened: postal/open-space/health/wellness
   edge-city field.
 - Camp Creek: wellness-only partial context field in the current checked
   layers.
-- Northlake: health-only partial context field in the current checked layers.
+- Northlake: library/health/wellness partial context field in the current
+  checked layers.
 
 The dollar-store layer is source-gated in every Atlanta field. The hardware
 layer adds one checked Buckhead small-trade row but is source-gated in the
 other six fields. The laundromat layer adds dense Cumberland household-service
 signal, checks Perimeter and North Point absent, and source-gates four fields.
-The gym layer adds dense wellness-service signal in Cumberland and North Point,
-single gym anchors in Buckhead and Camp Creek, and source-gates three fields.
+The gym layer adds dense wellness-service signal in Cumberland, Perimeter, and
+North Point, single gym anchors in Buckhead, Camp Creek, and Northlake, and
+leaves only Decatur / Emory source-gated.
 This means the current summary cannot yet compare Atlanta value-errand texture
 against Washington's checked Dollar Tree rows, and it only partially compares
 small-trade texture. Household and wellness texture are now meaningfully
 observed in several fields.
 
-Camp Creek and Northlake are not classified as weak. Camp Creek is fully
-source-gated across nine of eleven acquired dimensions but has one checked
-wellness anchor. Northlake has pharmacy signal but ten source gates. Both need
-another source strategy or later retry before final ranking.
+Camp Creek and Northlake are not classified as weak. Camp Creek still has only
+one observed wellness anchor, but its post-office, library, and pharmacy
+absences are now checked rather than hidden. Northlake has library, pharmacy,
+and gym signal, and has moved below the local source-limited threshold, but it
+still needs another source strategy or later retry before final ranking.
 
 ## Interpretation
 

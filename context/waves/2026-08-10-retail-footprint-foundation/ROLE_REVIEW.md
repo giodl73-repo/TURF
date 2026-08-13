@@ -3825,3 +3825,36 @@ Atlanta improves to six partial and one source-limited field in its local
 readiness report, while the cross-metro comparison profile correctly keeps
 Camp Creek source-limited because it has only one observed layer. The next pass
 should target another high-gate civic/service layer before fifth-metro scale.
+
+## Pulse 121 Atlanta Gym Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+The pass reduces a high-impact Atlanta source gate. Northlake moves out of
+source-limited comparison, and Atlanta now has six partial comparison fields
+with only Camp Creek remaining source-limited.
+
+### Market Geographer
+
+Status: pass.
+
+Perimeter becomes a clearer postal/transit/health/wellness edge-city field.
+Northlake is now a legacy mall node with library, pharmacy, and wellness
+signal rather than a mostly unknown timeout field.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Decatur / Emory remains source-gated because the retry timed out. The pass does
+not convert unresolved Overpass behavior into an absence claim.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next useful gate is either Camp Creek source resolution or Chicago's
+remaining OSM post-office/gym gates. Those would make the fifth-metro decision
+less dependent on uneven source quality.

@@ -55,8 +55,8 @@ The current generated profile has 28 rows:
 | Region | Tier | Fields |
 |---|---|---:|
 | Washington | `baseline_comparable` | 6 |
-| Atlanta | `type_discovery_partial` | 5 |
-| Atlanta | `source_limited` | 2 |
+| Atlanta | `type_discovery_partial` | 6 |
+| Atlanta | `source_limited` | 1 |
 | Chicago | `type_discovery_comparable` | 5 |
 | Chicago | `type_discovery_partial` | 2 |
 | Dallas/Fort Worth | `type_discovery_comparable` | 7 |
@@ -82,7 +82,7 @@ type-discovery-comparable fields:
 - Woodfield / Schaumburg: `confirmed_edge_city_mall_grocery_field`.
 - Midway / Ford City: `confirmed_mall_big_box_grocery_field`.
 
-Atlanta contributes five partial type-discovery fields, but none are baseline
+Atlanta contributes six partial type-discovery fields, but none are baseline
 comparable because every Atlanta field still carries at least five source-gated
 dimensions.
 
@@ -93,10 +93,10 @@ tier because one observed layer is too sparse for peer comparison, but the
 field is now a clearer wellness-only partial context case rather than an
 unknown civic blank.
 
-Northlake remains source-limited after the Atlanta source-resolution passes,
-but the reason changed: post office is checked absent, library is observed, and
-park/open-space plus transit remain source-gated. That makes Northlake a
-legacy suburban mall node with one public civic-service anchor, not just an
+Northlake moved out of the `source_limited` comparison tier after the gym retry:
+post office is checked absent, library is observed, gym is observed, and
+park/open-space plus transit remain source-gated. That makes Northlake a legacy
+suburban mall node with public civic-service and wellness anchors, not just an
 Overpass timeout artifact.
 
 Dallas/Fort Worth contributes seven type-discovery-comparable fields and one
