@@ -1,7 +1,8 @@
 -- Atlanta anchor-field context summary.
 --
--- Combine the seven Atlanta context dimensions acquired so far:
--- four civic anchors, bank/credit-union, gas/convenience, and pharmacy.
+-- Combine the eight Atlanta context dimensions acquired so far:
+-- four civic anchors, bank/credit-union, gas/convenience, pharmacy, and
+-- dollar-store value errands.
 
 COPY (
     WITH targets AS (
@@ -39,6 +40,14 @@ COPY (
             pharmacy_signal
         FROM read_csv_auto('reports/ret-atlanta-anchor-field-pharmacy-summary.csv', all_varchar = true)
     ),
+    dollar_store AS (
+        SELECT
+            field_id,
+            dollar_store_rows,
+            operator_count AS dollar_store_brands,
+            dollar_store_signal
+        FROM read_csv_auto('reports/ret-atlanta-anchor-field-dollar-store-summary.csv', all_varchar = true)
+    ),
     joined AS (
         SELECT
             targets.field_id,
@@ -59,7 +68,10 @@ COPY (
             gas.gas_convenience_signal,
             TRY_CAST(pharmacy.pharmacy_rows AS INTEGER) AS pharmacy_rows,
             TRY_CAST(pharmacy.pharmacy_brands AS INTEGER) AS pharmacy_brands,
-            pharmacy.pharmacy_signal
+            pharmacy.pharmacy_signal,
+            TRY_CAST(dollar_store.dollar_store_rows AS INTEGER) AS dollar_store_rows,
+            TRY_CAST(dollar_store.dollar_store_brands AS INTEGER) AS dollar_store_brands,
+            dollar_store.dollar_store_signal
         FROM targets
         LEFT JOIN civic
             ON targets.field_id = civic.field_id
@@ -69,6 +81,8 @@ COPY (
             ON targets.field_id = gas.field_id
         LEFT JOIN pharmacy
             ON targets.field_id = pharmacy.field_id
+        LEFT JOIN dollar_store
+            ON targets.field_id = dollar_store.field_id
     ),
     scored AS (
         SELECT
@@ -77,10 +91,12 @@ COPY (
                 + CASE WHEN bank_credit_union_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 + CASE WHEN gas_convenience_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 + CASE WHEN pharmacy_signal = 'observed' THEN 1 ELSE 0 END
+                + CASE WHEN dollar_store_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 AS observed_dimensions,
             source_gated_civic_dimensions
                 + CASE WHEN bank_credit_union_signal = 'source_gated' THEN 1 ELSE 0 END
                 + CASE WHEN gas_convenience_signal = 'source_gated' THEN 1 ELSE 0 END
+                + CASE WHEN dollar_store_signal = 'source_gated' THEN 1 ELSE 0 END
                 AS source_gated_dimensions
         FROM joined
     )
@@ -88,7 +104,7 @@ COPY (
         field_id,
         label,
         anchor_field,
-        7 AS dimensions,
+        8 AS dimensions,
         observed_dimensions,
         source_gated_dimensions,
         post_office_rows,
@@ -101,6 +117,8 @@ COPY (
         gas_convenience_brands,
         pharmacy_rows,
         pharmacy_brands,
+        dollar_store_rows,
+        dollar_store_brands,
         CASE
             WHEN observed_dimensions = 0 AND source_gated_dimensions >= 6
                 THEN 'fully_source_gated_context_field'
@@ -140,7 +158,8 @@ COPY (
             atlanta_civic_archetype,
             'bank_credit_union_' || bank_credit_union_signal,
             'gas_convenience_' || gas_convenience_signal,
-            'pharmacy_' || pharmacy_signal
+            'pharmacy_' || pharmacy_signal,
+            'dollar_store_' || dollar_store_signal
         ) AS context_signal_summary
     FROM scored
     ORDER BY

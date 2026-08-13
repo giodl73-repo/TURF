@@ -109,6 +109,7 @@ before broader chain coverage begins.
 | 90 | Atlanta gas/convenience layer | complete | Added dense Decatur gas/convenience rows, exposing an inner service-village field with both finance and car-trip texture. |
 | 91 | Atlanta context summary | complete | Combined six Atlanta civic/everyday dimensions into current typed field archetypes with source gates still explicit. |
 | 92 | Atlanta pharmacy layer | complete | Added checked Georgia drugstore pharmacy signal and refreshed the Atlanta context summary to seven dimensions. |
+| 93 | Atlanta dollar-store source gate | complete | Recorded Atlanta dollar-store Overpass timeouts as source gates and refreshed the context summary to eight dimensions. |
 
 ## Success criteria
 

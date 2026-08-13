@@ -1,0 +1,8 @@
+target_id,target_label,anchor_field,facility_type,gate_status,gate_reason,source,source_date
+cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,dollar_store,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,dollar_store,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+perimeter-wide,Perimeter widened field,edge_city_mall_field,dollar_store,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+camp-creek,Camp Creek field,airport_edge_power_center,dollar_store,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+northlake,Northlake field,legacy_suburban_mall_node,dollar_store,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,dollar_store,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+decatur-emory,Decatur / Emory field,inner_service_village,dollar_store,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13

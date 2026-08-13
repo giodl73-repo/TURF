@@ -70,6 +70,7 @@ python scripts\fetch_osm_civic.py --facility-type park --target-id buckhead-leno
 python scripts\fetch_osm_civic.py --facility-type bank_credit_union --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-bank-credit-union-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type bank_credit_union --target-id cumberland-vinings --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-bank-credit-union-atlanta-cumberland-vinings.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type dollar_store --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-dollar-store-tacoma-mall.csv --source-date 2026-08-13 --retries 3
+python scripts\fetch_osm_civic.py --facility-type dollar_store --target-id camp-creek --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-dollar-store-atlanta-camp-creek.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type gas_convenience --target-id bellevue-core --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-gas-bellevue.csv --source-date 2026-08-13 --retries 2
 python scripts\fetch_osm_civic.py --facility-type gas_convenience --target-id decatur-emory --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\osm-gas-convenience-atlanta-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type gym --target-id bellevue-core --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-gym-bellevue-core.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
@@ -87,6 +88,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-field-civic-context-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-bank-credit-union-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-bank-credit-union-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-pharmacy-summary.sql"
+duckdb -c ".read queries/ret-atlanta-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-gas-convenience-summary.sql"
@@ -372,6 +374,9 @@ The Atlanta anchor-field gas / convenience readout is:
 
 The Atlanta anchor-field pharmacy readout is:
 `reports\ret-atlanta-anchor-field-pharmacy-summary.md`.
+
+The Atlanta anchor-field dollar-store source-gate readout is:
+`reports\ret-atlanta-anchor-field-dollar-store-summary.md`.
 
 The Atlanta anchor-field context summary is:
 `reports\ret-atlanta-anchor-field-context-summary.md`.

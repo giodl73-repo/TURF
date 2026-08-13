@@ -2843,3 +2843,40 @@ Status: pass with next-output request.
 The next layer can be dollar-store or hardware depending on whether the goal is
 value-errand texture or small-trade texture. After one more everyday layer,
 regenerate the context summary again from the same contract.
+
+## Pulse 93 Atlanta Dollar-Store Source Gate
+
+### Market Analyst
+
+Status: pass with comparability warning.
+
+The dollar-store layer does not add Atlanta value-errand observations because
+all seven bounded fetches timed out. The warning is important: Atlanta cannot
+yet be compared to Washington's checked Dollar Tree fields on value texture.
+
+### Market Geographer
+
+Status: pass.
+
+The result keeps geography intact by carrying seven source gates into the
+field-level summary. Camp Creek and Northlake remain unresolved fields, not
+observed weak fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse records failed OSM/Overpass target fetches as source gates and does
+not promote timeout results into absence claims. The empty reviewed fixture
+uses the standard civic review header so future checked rows can be added
+without changing the contract.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The eight-dimension summary is now a better pre-scale diagnostic because it
+shows which archetypes are observed and which are source-limited. The next
+Atlanta layer should be hardware, laundromat, or gym, but source-gated OSM
+layers may need alternate timing or source strategy before Atlanta is as
+resolved as Washington.

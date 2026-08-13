@@ -11,6 +11,7 @@ This report combines the Atlanta context dimensions acquired so far:
 - bank / credit union
 - gas / convenience
 - pharmacy
+- dollar store
 
 It is not yet the full 11-dimension Washington contract. It is a mid-pass
 summary that keeps observed dimensions and source-gated dimensions visible.
@@ -25,13 +26,13 @@ reports/ret-atlanta-anchor-field-context-summary.csv
 
 | Field | Observed Dimensions | Source-Gated Dimensions | Context Archetype |
 |---|---:|---:|---|
-| Cumberland / Vinings | 2 | 4 | `finance_dense_service_field` |
-| Buckhead / Lenox / Phipps | 4 | 3 | `civic_open_space_mall_field` |
-| Perimeter widened | 3 | 4 | `transit_health_edge_city_field` |
-| Camp Creek | 0 | 6 | `fully_source_gated_context_field` |
-| Northlake | 1 | 6 | `health_only_partial_context_field` |
-| North Point / Alpharetta widened | 3 | 4 | `open_space_health_edge_city_field` |
-| Decatur / Emory | 4 | 3 | `finance_car_trip_health_service_village` |
+| Cumberland / Vinings | 2 | 5 | `finance_dense_service_field` |
+| Buckhead / Lenox / Phipps | 4 | 4 | `civic_open_space_mall_field` |
+| Perimeter widened | 3 | 5 | `transit_health_edge_city_field` |
+| Camp Creek | 0 | 7 | `fully_source_gated_context_field` |
+| Northlake | 1 | 7 | `health_only_partial_context_field` |
+| North Point / Alpharetta widened | 3 | 5 | `open_space_health_edge_city_field` |
+| Decatur / Emory | 4 | 4 | `finance_car_trip_health_service_village` |
 
 ## Learning
 
@@ -45,9 +46,14 @@ The strongest current typed fields are:
 - North Point / Alpharetta widened: postal/open-space/health edge-city field.
 - Northlake: health-only partial context field in the current checked layers.
 
-Camp Creek and Northlake are not classified as weak. They are fully source-gated
-across the six acquired dimensions and need another source strategy or later
-retry.
+The dollar-store layer is source-gated in every Atlanta field. This means the
+current summary cannot yet compare Atlanta value-errand texture against
+Washington's checked Dollar Tree rows.
+
+Camp Creek and Northlake are not classified as weak. Camp Creek is fully
+source-gated across seven of eight acquired dimensions, while Northlake has
+pharmacy signal but seven source gates. Both need another source strategy or
+later retry.
 
 ## Interpretation
 
