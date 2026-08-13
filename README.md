@@ -87,6 +87,7 @@ python scripts\fetch_osm_civic.py --facility-type laundromat --target-id cumberl
 duckdb -c ".read queries/ret-washington-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-post-office-summary.sql"
+duckdb -c ".read queries/ret-dallas-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-transit-summary.sql"
@@ -411,6 +412,9 @@ The scale goal before adding more urban areas is:
 
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
+
+The Dallas/Fort Worth anchor-field post-office readout is:
+`reports\ret-dallas-anchor-field-post-office-summary.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.

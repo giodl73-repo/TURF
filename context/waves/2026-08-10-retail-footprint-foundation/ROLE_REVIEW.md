@@ -3441,3 +3441,39 @@ The stopping rule is appropriate: Dallas/Fort Worth should produce a pre-scale
 field stack and cross-metro profile rows before another metro is added. The
 next layer should begin with the least ambiguous public sources: post offices,
 grocery, pharmacy, mass retail, and retail complexes.
+
+## Pulse 110 Dallas Post-Office Layer
+
+### Market Analyst
+
+Status: pass.
+
+The first Dallas/Fort Worth layer already separates field types: Downtown /
+Uptown, NorthPark, Galleria / Addison, and Southlake carry direct postal civic
+signal, while Legacy / Frisco / Plano currently shows only private counters in
+the bounded box.
+
+### Market Geographer
+
+Status: pass.
+
+The report preserves all eight target fields and avoids converting timed-out
+Las Colinas, Arlington, or Fort Worth target fetches into absence claims. That
+is the right geography posture for the first layer in a new metro.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows are sourced from OpenStreetMap Overpass with ODbL rights status visible.
+UPS, FedEx, and Goin' Postal private counters remain in the reviewed fixture
+but are excluded from packet-ready post-office counts.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Postal signal gives Dallas/Fort Worth its first civic/addressability layer.
+The next layer should be a non-Overpass source such as grocery, pharmacy, mass
+retail, or retail complexes so the stack does not depend solely on OSM response
+quality.

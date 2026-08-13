@@ -1,0 +1,4 @@
+target_id,target_label,anchor_field,facility_type,gate_status,gate_reason,source,source_date
+las-colinas-irving,Las Colinas / Irving field,airport_office_edge_field,post_office,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+arlington-grand-prairie,Arlington / Grand Prairie field,midcities_power_event_field,post_office,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+fort-worth-west-7th,Fort Worth Cultural / West 7th field,secondary_core_service_field,post_office,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13

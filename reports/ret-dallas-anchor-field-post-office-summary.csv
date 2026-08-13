@@ -1,0 +1,9 @@
+field_id,label,anchor_field,raw_post_office_rows,post_office_rows,operator_count,private_shipping_counter_rows,address_incomplete_rows,post_office_names,post_office_signal,gate_reason
+downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,5,2,1,3,0,Dallas Post Office - Downtown Station; Dallas Post Office - Oak Lawn Station,observed,""
+northpark-preston-hollow,NorthPark / Preston Hollow field,north_dallas_regional_mall_field,2,1,1,1,0,Dallas Post Office - Preston Station,observed,""
+galleria-addison,Galleria / Addison field,north_dallas_edge_city_field,5,3,1,2,0,Addison Circle Post; Addison Post Office; Dallas Post Office - Spring Valley Station,observed,""
+legacy-frisco-plano,Legacy / Frisco / Plano field,north_growth_edge_city_field,3,0,0,3,0,"",checked_absent,""
+las-colinas-irving,Las Colinas / Irving field,airport_office_edge_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
+arlington-grand-prairie,Arlington / Grand Prairie field,midcities_power_event_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
+southlake-town-square,Southlake Town Square field,affluent_suburban_town_center_field,1,1,1,0,0,Southlake Post Office,observed,""
+fort-worth-west-7th,Fort Worth Cultural / West 7th field,secondary_core_service_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
