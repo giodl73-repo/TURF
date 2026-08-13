@@ -2113,3 +2113,37 @@ Status: pass with next-output request.
 The next pulse should fill one source-gated civic anchor, preferably post
 offices, because postal infrastructure is the original TURF hypothesis and a
 natural test against mall-defined fields.
+
+## Pulse 72 Post Office Civic Anchor Gate
+
+### Market Analyst
+
+Status: pass with blocked-data caveat.
+
+The pulse chose the right next signal for learning before scale: post offices
+would show whether a field has civic/postal identity as well as retail service.
+No rows were promoted, so analysis remains unchanged.
+
+### Market Geographer
+
+Status: pass.
+
+The query is bounded to the same six district fields, preserving the ability to
+compare civic anchors against mall and service-grid geometry without changing
+scope midstream.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The attempted source is Overture Places, already accepted as an open POI
+research layer. The timed-out zero-byte output was not kept, and TURF does not
+claim official USPS delivery territories or redistribute USPS data.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Before scaling to more urban areas, the next useful goal is a reliable civic
+facility acquisition path: local Overture cache, longer per-target runs, or a
+reviewed alternate open source.
