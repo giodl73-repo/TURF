@@ -3021,3 +3021,36 @@ Status: pass with next-output request.
 The next metro can proceed as type discovery, but the model should not compare
 raw context strength across Washington and Atlanta until source-gated Atlanta
 categories are retried or replaced with another reviewed open source.
+
+## Pulse 98 Chicago Context Targets
+
+### Market Analyst
+
+Status: pass.
+
+Chicago is the right next type-discovery metro. The target set tests urban
+core, inner neighborhood service, mature suburban malls, edge-city malls,
+airport-edge retail, and south suburban mall/service fields.
+
+### Market Geographer
+
+Status: pass.
+
+The fixture keeps Chicago targets as bounded district fields rather than
+municipal claims. It also separates Chicago city fields from Skokie, Oak Brook,
+Schaumburg, and Orland Park suburban fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse adds target geometry only. No new source rows are promoted, and the
+readout validates bounds, state, scope, and anchor names before extraction.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next work should start the 11-dimension pass with the least ambiguous
+layers first: post office, pharmacy if a reviewed Illinois layer exists, then
+parks/transit or gyms depending on OSM response quality.

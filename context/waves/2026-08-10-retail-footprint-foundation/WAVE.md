@@ -114,6 +114,7 @@ before broader chain coverage begins.
 | 95 | Atlanta laundromat layer | complete | Added dense Cumberland laundromat rows, checked Perimeter/North Point absent, source-gated four timeout fields, and refreshed the context summary to ten dimensions. |
 | 96 | Atlanta gym layer | complete | Added dense Cumberland/North Point gym rows, observed Buckhead/Camp Creek gym anchors, source-gated three timeout fields, and completed the 11-dimension Atlanta context pass. |
 | 97 | Atlanta pre-scale readiness | complete | Compared observed/source-gated/checked-absent dimensions and concluded Atlanta is ready for type discovery but not final ranking. |
+| 98 | Chicago context targets | complete | Added seven Chicago anchor-field targets for third-metro type discovery after Washington and Atlanta. |
 
 ## Success criteria
 

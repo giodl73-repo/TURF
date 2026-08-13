@@ -138,6 +138,7 @@ duckdb -c ".read queries/ret-washington-anchor-field-context-archetypes.sql"
 duckdb -c ".read queries/ret-washington-retail-complex-coverage.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-targets.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-targets.sql"
+duckdb -c ".read queries/ret-chicago-anchor-field-targets.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-candidates-from-statewide.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-candidate-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-reviewed-complexes.sql"
@@ -357,6 +358,9 @@ The Washington anchor-field extraction targets are:
 
 The Atlanta anchor-field context scale targets are:
 `reports\ret-atlanta-anchor-field-targets.md`.
+
+The Chicago anchor-field type-discovery targets are:
+`reports\ret-chicago-anchor-field-targets.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.
