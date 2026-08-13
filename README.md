@@ -55,6 +55,7 @@ duckdb -c ".read queries/overture-mass-retail-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-grocery-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-drugstore-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-drugstore-washington-2026-07-22.sql"
+duckdb -c ".read queries/overture-drugstore-illinois-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-washington-anchor-fields-2026-07-22.sql"
@@ -98,6 +99,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-field-laundromat-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-gym-summary.sql"
 duckdb -c ".read queries/ret-atlanta-pre-scale-readiness.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-gym-summary.sql"
+duckdb -c ".read queries/ret-chicago-anchor-field-pharmacy-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-gas-convenience-summary.sql"
@@ -369,6 +371,9 @@ The Chicago anchor-field post-office readout is:
 
 The Chicago anchor-field gym source-gate readout is:
 `reports\ret-chicago-anchor-field-gym-summary.md`.
+
+The Chicago anchor-field pharmacy readout is:
+`reports\ret-chicago-anchor-field-pharmacy-summary.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.

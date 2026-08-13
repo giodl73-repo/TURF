@@ -3122,3 +3122,37 @@ Before continuing Chicago's full OSM pass, TURF should either retry during a
 better Overpass window, simplify target queries, or use a non-Overpass reviewed
 source for a layer such as pharmacy. Continuing OSM layers one by one would add
 more source gates without much learning.
+
+## Pulse 101 Chicago Pharmacy Layer
+
+### Market Analyst
+
+Status: pass.
+
+Pharmacy proves Chicago is still viable for type discovery. Loop / River North
+and Lincoln Park / Lakeview produce direct health-errand signal from reviewed
+Overture rows even though the prior OSM layers source-gated.
+
+### Market Geographer
+
+Status: pass.
+
+The result preserves the bounded district fields. It correctly reads Old
+Orchard, Oakbrook, Woodfield, Ford City, and Orland Square as checked absent for
+this exact-brand drugstore layer, not as generally pharmacy-poor places.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer uses Overture Places with open license status and applies a reviewed
+promotion gate. Clinic, beauty, photo, specialty, hospital, provider, and other
+non-primary rows are excluded before field scoring.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next Chicago goal should continue the non-Overpass stack with grocery,
+mass retail, or retail-complex anchors. OSM should move to a retry/simplified
+query track instead of being the main path for near-term Chicago learning.
