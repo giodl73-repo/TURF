@@ -1,0 +1,9 @@
+field_id,label,anchor_field,grocery_rows,grocery_brands,grocery_brand_list,grocery_names,grocery_signal
+downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,4,3,Albertsons; Kroger; Tom Thumb,Albertsons; Kroger; Tom Thumb; Tom Thumb,multi_brand_grocery_grid
+northpark-preston-hollow,NorthPark / Preston Hollow field,north_dallas_regional_mall_field,6,4,Central Market; Tom Thumb; Trader Joe's; Whole Foods Market,Central Market; Tom Thumb; Tom Thumb; Tom Thumb; Trader Joe's; Whole Foods Market,multi_brand_grocery_grid
+galleria-addison,Galleria / Addison field,north_dallas_edge_city_field,2,2,Tom Thumb; Whole Foods Market,Tom Thumb; Whole Foods Market,grocery_service_field
+legacy-frisco-plano,Legacy / Frisco / Plano field,north_growth_edge_city_field,4,4,H-E-B; Market Street; Sprouts Farmers Market; Tom Thumb,HEB; Market Street; Sprouts; Tom Thumb,multi_brand_grocery_grid
+las-colinas-irving,Las Colinas / Irving field,airport_office_edge_field,3,3,Fiesta Mart; Tom Thumb; Whole Foods Market,"Store #73; Tom Thumb; Whole Foods Market",multi_brand_grocery_grid
+arlington-grand-prairie,Arlington / Grand Prairie field,midcities_power_event_field,6,4,Albertsons; Fiesta Mart; Kroger; Sprouts Farmers Market,"Albertsons; Fiesta Mart; Kroger; Kroger; Sprouts; Store #60",multi_brand_grocery_grid
+southlake-town-square,Southlake Town Square field,affluent_suburban_town_center_field,4,4,Central Market; Kroger; Tom Thumb; Trader Joe's,Central Market; Kroger; Tom Thumb; Trader Joe's,multi_brand_grocery_grid
+fort-worth-west-7th,Fort Worth Cultural / West 7th field,secondary_core_service_field,2,2,Kroger; Tom Thumb,Kroger; Tom Thumb,grocery_service_field

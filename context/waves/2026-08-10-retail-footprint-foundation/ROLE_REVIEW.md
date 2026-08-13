@@ -3477,3 +3477,38 @@ Postal signal gives Dallas/Fort Worth its first civic/addressability layer.
 The next layer should be a non-Overpass source such as grocery, pharmacy, mass
 retail, or retail complexes so the stack does not depend solely on OSM response
 quality.
+
+## Pulse 111 Texas Grocery Layer
+
+### Market Analyst
+
+Status: pass.
+
+The grocery layer materially advances the Dallas/Fort Worth stack. All eight
+target fields carry grocery signal, and six fields qualify as multi-brand
+grocery grids.
+
+### Market Geographer
+
+Status: pass.
+
+The layer preserves bounded field interpretation. Legacy / Frisco / Plano
+changes from postal checked-absent to a four-brand grocery grid, which shows
+why TURF should compare multiple everyday layers before naming an enclave type.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows come from Overture Places with open license status. The reviewed layer
+excludes pharmacy, fuel, gas, floral, pickup, delivery, office, division, and
+express-format service rows before field scoring.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Grocery is the first Dallas/Fort Worth layer to cover every target field. The
+next non-Overpass layer should be mass retail or pharmacy, then the stack can
+start separating grocery-supported cores, edge cities, growth edges, and
+mid-cities fields.

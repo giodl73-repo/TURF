@@ -55,6 +55,8 @@ duckdb -c ".read queries/overture-grocery-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-mass-retail-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-grocery-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-grocery-illinois-2026-07-22.sql"
+duckdb -c ".read queries/overture-grocery-texas-2026-07-22.sql"
+duckdb -c ".read queries/overture-grocery-texas-review-2026-07-22.sql"
 duckdb -c ".read queries/overture-drugstore-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-drugstore-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-drugstore-illinois-2026-07-22.sql"
@@ -107,6 +109,7 @@ duckdb -c ".read queries/ret-chicago-anchor-field-gym-summary.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-pharmacy-summary.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-mass-retail-summary.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-grocery-summary.sql"
+duckdb -c ".read queries/ret-dallas-anchor-field-grocery-summary.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-retail-complex-summary.sql"
 duckdb -c ".read queries/ret-chicago-pre-scale-field-stack.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
@@ -415,6 +418,9 @@ The Dallas/Fort Worth anchor-field target gate is:
 
 The Dallas/Fort Worth anchor-field post-office readout is:
 `reports\ret-dallas-anchor-field-post-office-summary.md`.
+
+The Dallas/Fort Worth anchor-field grocery readout is:
+`reports\ret-dallas-anchor-field-grocery-summary.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.
