@@ -86,6 +86,9 @@ duckdb -c ".read queries/ret-anchor-profile-v0.sql"
 duckdb -c ".read queries/ret-anchor-profile-v1.sql"
 duckdb -c ".read queries/ret-anchor-profile-v1-delta.sql"
 duckdb -c ".read queries/ret-anchor-profile-v1-examples.sql"
+duckdb -c ".read queries/ret-anchor-field-context-dimensions.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-context-v0.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-context-summary.sql"
 duckdb -c ".read queries/ret-washington-retail-complex-coverage.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-targets.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-candidates-from-statewide.sql"
@@ -271,6 +274,12 @@ The RET Anchor Profile v1 delta report is:
 
 The RET Anchor Profile v1 examples report is:
 `reports\ret-anchor-profile-v1-examples.md`.
+
+The Anchor Field Context v0 dimension report is:
+`reports\ret-anchor-field-context-dimensions.md`.
+
+The Washington Anchor Field Context v0 report is:
+`reports\ret-washington-anchor-field-context-v0.md`.
 
 The Washington retail-complex source coverage audit is:
 `reports\ret-washington-retail-complex-coverage.md`.

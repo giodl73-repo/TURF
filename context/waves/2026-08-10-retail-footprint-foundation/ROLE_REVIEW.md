@@ -2079,3 +2079,37 @@ Status: pass with next-output request.
 
 The next step can use these examples to create a small classifier fixture or a
 CLI `anchor-profile-v1` generator test.
+
+## Pulse 71 Anchor Field Context v0
+
+### Market Analyst
+
+Status: pass.
+
+The context layer adds the first non-mall everyday signal to the six anchor
+fields. Pharmacy is observed in Bellevue core, Kitsap Mall / Silverdale, and
+South Hill / Puyallup.
+
+### Market Geographer
+
+Status: pass.
+
+The context contract separates civic anchors from everyday anchors and keeps
+postal/civic infrastructure distinct from retail complex evidence.
+
+### Source Policy Auditor
+
+Status: pass with source gates.
+
+Only pharmacy uses an active reviewed store layer. Post offices, libraries,
+parks, transit centers, banks, gyms, laundromats, gas/convenience, dollar
+stores, and hardware stores remain source-gated until reviewed public-source
+rows exist.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should fill one source-gated civic anchor, preferably post
+offices, because postal infrastructure is the original TURF hypothesis and a
+natural test against mall-defined fields.
