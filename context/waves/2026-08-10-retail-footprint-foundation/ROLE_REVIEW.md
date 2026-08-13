@@ -3193,3 +3193,41 @@ Chicago now needs either grocery for neighborhood-service contrast or retail
 complexes for mall-anchor confirmation. Those two layers will decide whether
 Old Orchard and Orland Square are true mass-retail absences in the selected
 boxes or simply need mall-complex evidence to carry their anchor identity.
+
+## Pulse 103 Chicago Grocery Layer
+
+### Market Analyst
+
+Status: pass.
+
+Grocery is the strongest Chicago non-Overpass layer so far. It produces signal
+in all seven fields and upgrades five of them to multi-brand grocery grids. It
+also corrects the mass-retail-only interpretation of Old Orchard and Orland
+Square.
+
+### Market Geographer
+
+Status: pass.
+
+The field geography remains intact. Orland Square can now be read as a
+grocery-supported south suburban mall field, while Old Orchard remains thinner
+but no longer empty. Woodfield and Ford City stack grocery grid signal with
+big-box signal in their bounded fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer uses Overture Places and keeps raw and reviewed fixtures separate.
+The review excludes pharmacy, fuel, money-services, deli, bakery, pickup,
+distribution, and named internal service rows before field scoring.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Chicago now has enough non-Overpass everyday signal to produce a combined
+field-stack readout. Before scaling to another metro, TURF should summarize
+pharmacy, mass retail, grocery, post-office, and gym/source-gate status in one
+Chicago pre-scale report, then decide whether retail complexes are needed to
+confirm mall-anchor labels.
