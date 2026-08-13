@@ -44,6 +44,8 @@ cargo run -p turf-cli -- summarize-restaurant-targets fixtures\stores\restaurant
 cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v0.csv
 cargo run -p turf-cli -- anchor-profile-v0 reports\ret-north-seattle-anchor-modifiers.csv reports\ret-north-seattle-enclave-profile.csv reports\ret-atlanta-district-anchor-profile.csv reports\ret-atlanta-anchor-pressure-audit.csv
 cargo run -p turf-cli -- summarize-anchor-profile reports\ret-anchor-profile-v0.csv
+cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v1.csv
+cargo run -p turf-cli -- summarize-anchor-profile reports\ret-anchor-profile-v1.csv
 duckdb -c ".read queries/overture-qsr-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-qsr-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-auto-parts-georgia-2026-07-22.sql"
@@ -81,6 +83,7 @@ duckdb -c ".read queries/ret-anchor-prediction-audit.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-pressure-audit.sql"
 duckdb -c ".read queries/ret-edge-city-mall-rule-audit.sql"
 duckdb -c ".read queries/ret-anchor-profile-v0.sql"
+duckdb -c ".read queries/ret-anchor-profile-v1.sql"
 duckdb -c ".read queries/ret-washington-retail-complex-coverage.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-targets.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-candidates-from-statewide.sql"
@@ -257,6 +260,9 @@ The first edge-city mall rule audit is:
 
 The first integrated anchor profile is:
 `reports\ret-anchor-profile-v0.md`.
+
+The second integrated anchor profile is:
+`reports\ret-anchor-profile-v1.md`.
 
 The Washington retail-complex source coverage audit is:
 `reports\ret-washington-retail-complex-coverage.md`.

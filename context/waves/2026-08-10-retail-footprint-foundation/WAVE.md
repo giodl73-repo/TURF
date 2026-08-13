@@ -84,6 +84,7 @@ before broader chain coverage begins.
 | 65 | Washington anchor-field review | complete | Reviewed the bounded candidate set into 16 packet-ready retail-complex rows and documented missing Bellevue core mall coverage. |
 | 66 | Washington anchor-field profile impact | complete | Classified the six reviewed Puget Sound anchor fields, finding active anchors in Kitsap and South Hill and acquisition gaps in Bellevue core. |
 | 67 | Bellevue core anchor acquisition attempt | complete | Added a narrow Bellevue Square/Lincoln Square/Bellevue Place Overture query, recorded timeout evidence, and kept the gap unpromoted. |
+| 68 | RET Anchor Profile v1 | complete | Added `district_field` scope and integrated the six Puget Sound anchor fields into a 25-row profile. |
 
 ## Success criteria
 

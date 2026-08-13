@@ -2907,7 +2907,7 @@ fn validate_restaurant_segment(value: &str, line_number: usize) -> Result<(), St
 
 fn validate_anchor_geography_scope(value: &str, line_number: usize) -> Result<(), String> {
     match value {
-        "reviewed_zone" | "district_core" | "district_wide" => Ok(()),
+        "reviewed_zone" | "district_core" | "district_wide" | "district_field" => Ok(()),
         _ => Err(format!("line {line_number}: invalid geography_scope")),
     }
 }
@@ -3659,6 +3659,19 @@ atlanta_districts,perimeter,Perimeter widened,district_wide,edge_city_mall_field
         assert_eq!(rows[0].anchor_modifier_v0, "edge_city_mall_service_grid");
         assert_eq!(rows[0].nearest_spacing_miles, None);
         assert_eq!(validate_ret_anchor_profile(csv), Ok(1));
+    }
+
+    #[test]
+    fn validates_district_field_anchor_profile_scope() {
+        let csv = "\
+region,area_id,label,geography_scope,local_context,total_stores,retail_complexes,has_mall_complex,home_improvement_brands,auto_parts_brands,grocery_brands,mass_retail_brands,drugstore_brands,qsr_brands,nearest_spacing_miles,source_modifier,anchor_modifier_v0,anchor_evidence_summary
+puget_sound_anchor_fields,kitsap-mall,Kitsap Mall / Silverdale,district_field,kitsap_regional_mall_field,18,3,1,2,2,3,2,1,4,0.16,active_regional_mall_anchor,active_regional_mall_anchor,district field has reviewed mall signal plus broad cross-category depth
+";
+        let rows = parse_ret_anchor_profile(csv).expect("district field profile parses");
+
+        assert_eq!(rows.len(), 1);
+        assert_eq!(rows[0].geography_scope, "district_field");
+        assert_eq!(rows[0].anchor_modifier_v0, "active_regional_mall_anchor");
     }
 
     #[test]

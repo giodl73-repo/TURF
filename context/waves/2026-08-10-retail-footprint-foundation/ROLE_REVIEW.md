@@ -1984,3 +1984,35 @@ Status: blocked on acquisition path.
 The next useful path is a local Overture cache, per-name extraction outside the
 current timeout-sensitive scan, or a separate public-source review lane for
 named retail complexes.
+
+## Pulse 68 RET Anchor Profile v1
+
+### Market Analyst
+
+Status: pass.
+
+V1 adds six Puget Sound district-field rows and increases active regional-anchor
+examples to four: Lynnwood / Alderwood, Everett, Kitsap Mall / Silverdale, and
+South Hill / Puyallup.
+
+### Market Geographer
+
+Status: pass.
+
+The new `district_field` geography scope preserves the grain difference between
+reviewed zones, district cores, widened districts, and bounded anchor fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The profile carries Bellevue core as source-limited instead of promoting
+unverified Bellevue Square or Lincoln Square rows. V0 remains stable, and V1 is
+a separate generated artifact.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next profile step should either add a CLI `anchor-profile-v1` generator or
+build a profile-delta report that compares v0 and v1 modifier counts.

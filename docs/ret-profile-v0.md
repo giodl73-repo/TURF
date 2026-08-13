@@ -82,3 +82,12 @@ Summarize the anchor profile with:
 ```powershell
 cargo run -p turf-cli -- summarize-anchor-profile reports\ret-anchor-profile-v0.csv
 ```
+
+Anchor Profile v1 keeps the same CSV contract and adds `district_field` rows for
+bounded Puget Sound anchor fields:
+
+```powershell
+duckdb -c ".read queries/ret-anchor-profile-v1.sql"
+cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v1.csv
+cargo run -p turf-cli -- summarize-anchor-profile reports\ret-anchor-profile-v1.csv
+```
