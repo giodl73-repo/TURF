@@ -19,15 +19,22 @@ reports/ret-cross-metro-type-discovery-profile.csv
 
 ## Work
 
-The pass retried Northlake post-office extraction through the alternate
+The pass retried Northlake and Camp Creek post-office extraction through the alternate
 Overpass endpoint `https://overpass.kumi.systems/api/interpreter`.
 
-Result:
+Northlake result:
 
 - Northlake returned three reviewed post-office-tagged rows.
 - Zero rows are packet-ready USPS post offices.
 - Three rows are excluded private shipping counters.
 - Northlake was removed from the post-office source-gate fixture.
+
+Camp Creek result:
+
+- Camp Creek returned two reviewed post-office-tagged rows.
+- Zero rows are packet-ready USPS post offices.
+- Two rows are excluded private shipping counters.
+- Camp Creek was removed from the post-office source-gate fixture.
 
 ## Result
 
@@ -45,18 +52,32 @@ source_gated_dimensions=9, checked_absent_dimensions=1
 post_office_signal=checked_absent
 ```
 
-This does not make Northlake stronger. It makes the evidence cleaner: the
-post-office layer is no longer unknown for Northlake, but it still does not
-produce a packet-ready USPS anchor inside the selected field.
+Camp Creek moved from:
+
+```text
+source_gated_dimensions=9, checked_absent_dimensions=1
+post_office_signal=source_gated
+```
+
+to:
+
+```text
+source_gated_dimensions=8, checked_absent_dimensions=2
+post_office_signal=checked_absent
+```
+
+This does not make Northlake or Camp Creek stronger. It makes the evidence
+cleaner: the post-office layer is no longer unknown for either field, but it
+still does not produce a packet-ready USPS anchor inside either selected field.
 
 ## Learning
 
-Northlake shows why source resolution is not always promotion. A resolved query
-can produce checked absence, and that is better than preserving a timeout as if
-it were unknowable.
+Northlake and Camp Creek show why source resolution is not always promotion. A
+resolved query can produce checked absence, and that is better than preserving
+a timeout as if it were unknowable.
 
-The field remains source-limited overall because library, park/open-space,
-transit, bank/credit-union, gas/convenience, dollar-store, hardware,
-laundromat, and gym layers are still source-gated. The next Atlanta pass should
-target either Camp Creek post office or a civic/service layer that can reduce
-multiple Atlanta fields.
+Both fields remain source-limited overall because many civic and everyday
+layers are still source-gated. The next Atlanta pass should target a
+civic/service layer that can reduce multiple Atlanta fields rather than another
+post-office retry, because Atlanta post office now has no remaining source-gated
+target fields.

@@ -34,6 +34,9 @@ Post offices appear as a strong civic layer in five fetched Atlanta fields:
   office rows.
 - Perimeter widened has Chamblee, Dunwoody, Perimeter Center, and a Glenridge
   post office row.
+- Camp Creek has two reviewed post-office-tagged rows, but both are excluded
+  private shipping counters, so the field is now checked absent for
+  packet-ready USPS rows rather than source-gated.
 - Northlake has three reviewed post-office-tagged rows, but all are excluded
   private shipping counters, so the field is now checked absent for
   packet-ready USPS rows rather than source-gated.
@@ -42,9 +45,9 @@ Post offices appear as a strong civic layer in five fetched Atlanta fields:
 - Decatur / Emory has Decatur and Druid Hills post office rows after excluding
   PostalAnnex and UPS counters.
 
-Camp Creek remains source-gated because both full-fixture and target-only
-Overpass attempts timed out. It should not be interpreted as a post-office
-absence.
+No Atlanta field remains source-gated for the post-office layer. Camp Creek and
+Northlake are checked absent for packet-ready USPS rows after alternate-endpoint
+retries returned only private shipping counters.
 
 ## Learning
 
@@ -53,10 +56,10 @@ often carry multiple postal civic points inside the retail field, while private
 shipping counters appear in the same commercial fabric and need explicit review
 exclusion.
 
-Northlake is the important source-resolution update: the alternate endpoint
-returned rows, but no packet-ready USPS rows. That shifts Northlake from source
-gate to checked absence for the post-office layer while preserving the private
-counter audit rows.
+Camp Creek and Northlake are the important source-resolution updates: the
+alternate endpoint returned rows, but no packet-ready USPS rows. That shifts
+both fields from source gate to checked absence for the post-office layer while
+preserving the private-counter audit rows.
 
 This supports the TURF theory that postal geography is foundational, but it also
 shows that OSM post-office tagging is not the same thing as an official USPS

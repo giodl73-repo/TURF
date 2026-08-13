@@ -30,7 +30,7 @@ source-gated dimensions.
 | Cumberland / Vinings | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Buckhead / Lenox / Phipps | 6 | 5 | 0 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Perimeter widened | 3 | 7 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
-| Camp Creek | 1 | 9 | 1 | `source_limited_field` | `retry_or_alternate_source_before_ranking` |
+| Camp Creek | 1 | 8 | 2 | `source_limited_field` | `retry_or_alternate_source_before_ranking` |
 | Northlake | 1 | 9 | 1 | `source_limited_field` | `retry_or_alternate_source_before_ranking` |
 | North Point / Alpharetta widened | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Decatur / Emory | 4 | 7 | 0 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
@@ -42,7 +42,8 @@ The Atlanta pass is already strong enough to learn typed enclave shapes:
 - Cumberland / Vinings: finance, household-service, and wellness service field.
 - Buckhead / Lenox / Phipps: civic/open-space/small-trade mall field.
 - Perimeter widened: postal/transit/health edge-city field.
-- Camp Creek: wellness-only partial context field.
+- Camp Creek: wellness-only partial context field with checked post-office and
+  pharmacy absence.
 - Northlake: partial source-gated context field with checked post-office
   absence and observed pharmacy.
 - North Point / Alpharetta widened: open-space/health/wellness edge-city
@@ -67,9 +68,9 @@ timeouts:
 - gas / convenience
 - some civic layers for Camp Creek and Northlake
 
-Northlake's post-office layer is no longer a timeout, but the result did not
-produce a packet-ready USPS row. That is useful negative evidence, not an
-observed civic anchor.
+Camp Creek and Northlake no longer have post-office timeouts, but neither
+result produced a packet-ready USPS row. That is useful negative evidence, not
+observed civic-anchor signal.
 
 ## Next Step
 

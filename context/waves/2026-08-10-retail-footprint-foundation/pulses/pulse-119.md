@@ -1,4 +1,4 @@
-# Pulse 119: Atlanta Northlake Source Resolution
+# Pulse 119: Atlanta Post-Office Source Resolution
 
 ## Goal
 
@@ -7,11 +7,14 @@ source gate without adding another metro or store category.
 
 ## Changes
 
-- Retried Northlake post-office extraction through an alternate Overpass
-  endpoint.
+- Retried Northlake and Camp Creek post-office extraction through an alternate
+  Overpass endpoint.
 - Added three reviewed Northlake post-office-tagged rows.
 - Kept all three Northlake rows excluded as private shipping counters.
 - Removed Northlake from the Atlanta post-office source-gate fixture.
+- Added two reviewed Camp Creek post-office-tagged rows.
+- Kept both Camp Creek rows excluded as private shipping counters.
+- Removed Camp Creek from the Atlanta post-office source-gate fixture.
 - Updated the Atlanta post-office query to use the reviewed fixture schema
   explicitly.
 - Regenerated Atlanta post-office, civic context, context summary, pre-scale
@@ -21,12 +24,15 @@ source gate without adding another metro or store category.
 
 ## Findings
 
-Northlake did not gain postal civic signal. It became better understood:
-post-office moved from source-gated to checked absent, with three private
+Northlake and Camp Creek did not gain postal civic signal. They became better
+understood: post-office moved from source-gated to checked absent, with private
 shipping counters retained in the audit fixture.
 
 Northlake remains source-limited overall, but its source-gated dimensions drop
 from 10 to 9 and its checked-absent dimensions rise from 0 to 1.
+
+Camp Creek remains source-limited overall, but its source-gated dimensions drop
+from 9 to 8 and its checked-absent dimensions rise from 1 to 2.
 
 ## Validation
 
@@ -44,6 +50,6 @@ git diff --check
 
 ## Status
 
-Complete. Atlanta source resolution has started; the next pass should target
-Camp Creek post office or a civic/service layer that can reduce more Atlanta
-source gates.
+Complete. Atlanta post-office source resolution has no remaining source-gated
+target fields; the next pass should target a civic/service layer that can reduce
+more Atlanta source gates.

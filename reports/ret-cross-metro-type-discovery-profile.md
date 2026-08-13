@@ -86,10 +86,11 @@ Atlanta contributes five partial type-discovery fields, but none are baseline
 comparable because every Atlanta field still carries at least five source-gated
 dimensions.
 
-Northlake remains source-limited after the first Atlanta source-resolution
-pass, but its post-office layer is no longer unknown: the retry returned only
-excluded private shipping counters, so Northlake now carries checked absence
-for packet-ready USPS rows instead of a post-office source gate.
+Camp Creek and Northlake remain source-limited after the first Atlanta
+source-resolution pass, but their post-office layers are no longer unknown:
+the retries returned only excluded private shipping counters, so both fields
+now carry checked absence for packet-ready USPS rows instead of post-office
+source gates.
 
 Dallas/Fort Worth contributes seven type-discovery-comparable fields and one
 partial field:

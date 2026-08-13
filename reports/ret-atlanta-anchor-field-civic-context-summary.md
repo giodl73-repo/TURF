@@ -26,7 +26,7 @@ reports/ret-atlanta-anchor-field-civic-context-summary.csv
 | Cumberland / Vinings | 1 | 3 | `postal_only_civic_field` |
 | Buckhead / Lenox / Phipps | 3 | 1 | `postal_library_open_space_civic_stack` |
 | Perimeter widened | 2 | 2 | `postal_transit_edge_city_field` |
-| Camp Creek | 0 | 4 | `fully_source_gated_civic_field` |
+| Camp Creek | 0 | 3 | `partial_civic_source_gate` |
 | Northlake | 0 | 3 | `partial_civic_source_gate` |
 | North Point / Alpharetta widened | 2 | 2 | `postal_open_space_edge_field` |
 | Decatur / Emory | 1 | 3 | `postal_only_civic_field` |
@@ -45,8 +45,10 @@ space rows, but still source-gated on library and transit.
 Cumberland / Vinings and Decatur / Emory currently read as postal-only civic
 fields, but each has three unresolved civic source gates.
 
-Camp Creek is not a civic blank; it is fully source-gated in the current civic
-pass and needs another source strategy or later Overpass retry.
+Camp Creek is now resolved for the post-office layer but still unresolved for
+library, park/open-space, and transit. Its alternate post-office retry returned
+two private shipping counters and zero packet-ready USPS rows, so the field is
+a partial civic source gate rather than a fully source-gated civic field.
 
 Northlake is now resolved for the post-office layer but still unresolved for
 library, park/open-space, and transit. Its alternate post-office retry returned
