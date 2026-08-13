@@ -18,7 +18,7 @@ The current profile has 28 field rows across four metros:
 | Region | Profile Basis | Fields | Current Read |
 |---|---|---:|---|
 | Washington | `full_11_dimension_context` | 6 | Clean baseline, zero source gates. |
-| Atlanta | `full_11_dimension_context` | 7 | Useful but source-gated; seven partial comparison fields after postal/library/gym and Camp Creek service resolution. |
+| Atlanta | `full_11_dimension_context` | 7 | Useful but source-gated; Camp Creek and Northlake are now usable comparison fields, while all seven rows remain type-discovery partial for final atlas ranking. |
 | Chicago | `pre_scale_6_layer_stack` | 7 | Strong type-discovery stack; all seven fields are now comparable, though some OSM post-office/gym gates remain for ranking. |
 | Dallas/Fort Worth | `pre_scale_5_layer_stack` | 8 | Strong Sun Belt stack; all eight fields are now comparable for type discovery. |
 
@@ -41,11 +41,12 @@ Atlanta and Chicago, starting with post offices and one everyday civic/service
 layer that can be checked consistently.
 
 The first Atlanta source-resolution passes support that goal. Post office is no
-longer source-gated in Atlanta, Northlake now has observed library and gym rows,
-Perimeter has dense gym signal, and Camp Creek now has finance,
-gas/convenience, and wellness signal with several checked civic/service
-absences. Atlanta no longer has a source-limited comparison row, but every
-Atlanta field is still source-gated enough to avoid final ranking.
+longer source-gated in Atlanta, Northlake now has observed library, finance,
+gas/convenience, hardware, pharmacy, and gym rows, Perimeter has dense gym
+signal, and Camp Creek now has finance, gas/convenience, and wellness signal
+with several checked civic/service absences. Atlanta no longer has a
+source-limited comparison row, but every Atlanta field is still source-gated
+enough to avoid final ranking.
 
 The Old Orchard source-resolution pass also improves Chicago: Old Orchard now
 has observed USPS and gym/wellness anchors, so Chicago has no remaining

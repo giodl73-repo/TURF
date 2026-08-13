@@ -3988,3 +3988,36 @@ Chicago and Dallas are now fully comparable for type discovery. The remaining
 pre-scale uncertainty is concentrated in Atlanta source gates, so the next
 decision is whether to resolve one more Atlanta layer or accept the gates and
 choose a fifth metro.
+
+## Pulse 126 Atlanta Northlake Service Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+Northlake moves from a weak partial source-gate row to a usable comparison
+field with six observed dimensions.
+
+### Market Geographer
+
+Status: pass.
+
+Northlake now reads as a legacy mall service field with finance, car-trip,
+health, small-trade, and wellness texture, plus a checked post-office absence.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Only returned packet-ready rows are promoted. Decatur / Emory hardware is
+resolved as checked absent from a bounded request, while the laundromat 429 is
+left as an unresolved source gate.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Atlanta's uncertainty is narrower. The next decision can either resolve one
+more high-gate Atlanta layer, probably dollar store or laundromat after the
+429 clears, or accept Atlanta's explicit source limits and choose the fifth
+metro.

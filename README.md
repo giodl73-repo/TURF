@@ -477,6 +477,9 @@ The Atlanta gym source-resolution pass is:
 The Atlanta Camp Creek service source-resolution pass is:
 `reports\ret-atlanta-camp-creek-service-source-resolution-pass.md`.
 
+The Atlanta Northlake service source-resolution pass is:
+`reports\ret-atlanta-northlake-service-source-resolution-pass.md`.
+
 The Atlanta anchor-field library readout is:
 `reports\ret-atlanta-anchor-field-library-summary.md`.
 

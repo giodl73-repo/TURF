@@ -3,6 +3,6 @@ cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,0,0,0,0,0,0,"",
 buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,0,0,0,0,0,0,"",source_gated,overpass_timeout
 perimeter-wide,Perimeter widened field,edge_city_mall_field,0,0,0,0,0,0,"",source_gated,overpass_timeout
 camp-creek,Camp Creek field,airport_edge_power_center,3,2,2,2,1,0,Exxon; RaceTrac,observed,""
-northlake,Northlake field,legacy_suburban_mall_node,0,0,0,0,0,0,"",source_gated,overpass_timeout
+northlake,Northlake field,legacy_suburban_mall_node,12,9,7,7,3,0,BP; Chevron; Chevron; Convenient Food Mart; Exxon; QuikTrip; QuikTrip; RaceTrac; Shell,observed_dense,""
 north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,0,0,0,0,0,0,"",source_gated,overpass_timeout
 decatur-emory,Decatur / Emory field,inner_service_village,10,8,8,7,2,0,Chevron; Circle K; Decatur Station Food Mart; Food Mart; Gulf; Pure Station; Shell; Texaco,observed_dense,""

@@ -93,11 +93,11 @@ gym signal, with post office, library, transit, hardware, and pharmacy checked
 absent. That makes it a finance/car-trip/wellness airport-edge field rather
 than a wellness-only sparse row.
 
-Northlake moved out of the `source_limited` comparison tier after the gym retry:
-post office is checked absent, library is observed, gym is observed, and
-park/open-space plus transit remain source-gated. That makes Northlake a legacy
-suburban mall node with public civic-service and wellness anchors, not just an
-Overpass timeout artifact.
+Northlake moved into a usable comparison tier after the service retry: post
+office is checked absent, library is observed, and bank, gas/convenience,
+pharmacy, hardware, and gym are observed. That makes Northlake a
+finance/car-trip/health/trade/wellness legacy mall field, not just an Overpass
+timeout artifact.
 
 Dallas/Fort Worth contributes eight type-discovery-comparable fields:
 

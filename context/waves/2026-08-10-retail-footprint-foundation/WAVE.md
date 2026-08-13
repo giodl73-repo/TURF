@@ -142,6 +142,7 @@ before broader chain coverage begins.
 | 123 | Atlanta Camp Creek service source resolution | complete | Retried Camp Creek service layers, promoted bank and gas rows, checked transit/hardware absent, and removed Atlanta source-limited rows. |
 | 124 | Chicago Old Orchard source resolution | complete | Retried Old Orchard post office and gym layers, promoted USPS and wellness rows, and moved Chicago to seven comparable fields. |
 | 125 | Dallas Las Colinas source resolution | complete | Retried Las Colinas post office, promoted USPS rows, excluded a private postal counter, and moved Dallas to eight comparable fields. |
+| 126 | Atlanta Northlake service source resolution | complete | Retried Northlake service layers, promoted finance/gas/hardware rows, checked Decatur hardware absent, and retyped Northlake as a usable legacy mall service field. |
 
 ## Success criteria
 

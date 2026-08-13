@@ -33,17 +33,22 @@ Camp Creek has 2 checked gas / convenience rows, Exxon and RaceTrac, after
 excluding one unnamed trip anchor. This stacks with its 5 checked bank rows and
 observed gym row.
 
-Cumberland / Vinings, Buckhead / Lenox / Phipps, Perimeter widened, Northlake,
-and North Point / Alpharetta widened remain source-gated because target-only
-Overpass attempts timed out. They should not be interpreted as gas or
-convenience absences.
+Northlake has 9 checked gas / convenience rows after excluding 3 unnamed trip
+anchors. This stacks with its newly checked finance and hardware rows.
+
+Cumberland / Vinings, Buckhead / Lenox / Phipps, Perimeter widened, and North
+Point / Alpharetta widened remain source-gated because target-only Overpass
+attempts timed out. They should not be interpreted as gas or convenience
+absences.
 
 ## Learning
 
 Decatur / Emory is now the first Atlanta field with both dense finance and dense
 car-trip / quick-errand texture. Camp Creek is the airport-edge counterpart:
 not dense, but clearly finance/car-trip/wellness present after earlier civic
-absences. In civic-only terms both could look thinner than they are.
+absences. Northlake is the legacy-mall counterpart: dense car-trip texture plus
+finance, hardware, health, and wellness service. In civic-only terms all three
+could look thinner than they are.
 
 This is exactly why TURF needs multiple context dimensions before naming an
 enclave type.

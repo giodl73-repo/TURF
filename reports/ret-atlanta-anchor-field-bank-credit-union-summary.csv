@@ -3,6 +3,6 @@ cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,14,14,11,7,0,Am
 buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,0,0,0,0,0,"",source_gated,overpass_timeout
 perimeter-wide,Perimeter widened field,edge_city_mall_field,0,0,0,0,0,"",source_gated,overpass_timeout
 camp-creek,Camp Creek field,airport_edge_power_center,5,5,5,5,0,Bank of America; Regions Bank; SunTrust; Truist; Wells Fargo,observed,""
-northlake,Northlake field,legacy_suburban_mall_node,0,0,0,0,0,"",source_gated,overpass_timeout
+northlake,Northlake field,legacy_suburban_mall_node,8,8,7,8,0,Ameris Bancorp; Bank Credit Union; Bank of America; Chase; South State Bank; Truist; Truist; Wells Fargo,observed,""
 north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,0,0,0,0,0,"",source_gated,overpass_timeout
 decatur-emory,Decatur / Emory field,inner_service_village,12,12,10,10,0,Ameris Bancorp; Ameris Bank; Bank Credit Union; Bank Of America; Bank of America; Credit Union 1; Delta Community Credit Union; SunTrust; SunTrust; Truist; Wells Fargo; Wells Fargo,observed_dense,""

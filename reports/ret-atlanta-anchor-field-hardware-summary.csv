@@ -3,6 +3,6 @@ cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,0,0,0,0,0,"",so
 buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,1,1,1,0,0,Northside Tool Rental,observed,""
 perimeter-wide,Perimeter widened field,edge_city_mall_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
 camp-creek,Camp Creek field,airport_edge_power_center,0,0,0,0,0,"",checked_absent,""
-northlake,Northlake field,legacy_suburban_mall_node,0,0,0,0,0,"",source_gated,overpass_target_timeout
+northlake,Northlake field,legacy_suburban_mall_node,1,1,1,1,0,Imeca Hardware,observed,""
 north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
-decatur-emory,Decatur / Emory field,inner_service_village,0,0,0,0,0,"",source_gated,overpass_target_timeout
+decatur-emory,Decatur / Emory field,inner_service_village,0,0,0,0,0,"",checked_absent,""
