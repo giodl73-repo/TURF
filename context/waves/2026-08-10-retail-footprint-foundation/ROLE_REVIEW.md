@@ -2880,3 +2880,40 @@ shows which archetypes are observed and which are source-limited. The next
 Atlanta layer should be hardware, laundromat, or gym, but source-gated OSM
 layers may need alternate timing or source strategy before Atlanta is as
 resolved as Washington.
+
+## Pulse 94 Atlanta Hardware Layer
+
+### Market Analyst
+
+Status: pass.
+
+Hardware adds a real small-trade correction to Buckhead / Lenox / Phipps:
+Northside Tool Rental appears inside the field. The other six fields remain
+source-gated, so the result should be read as partial texture rather than an
+Atlanta-wide small-trade ranking.
+
+### Market Geographer
+
+Status: pass.
+
+The new archetype keeps the geography specific. Buckhead becomes
+`civic_open_space_small_trade_mall_field`, while Perimeter, North Point,
+Decatur, Cumberland, Camp Creek, and Northlake keep their prior labels with the
+hardware source gate visible.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The promoted row is an OSM/Overpass `shop=hardware` row with ODbL rights status
+preserved. Failed target fetches are recorded as source gates rather than
+converted into absence claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The remaining Washington-equivalent Atlanta context dimensions are laundromat
+and gym. They test household-service and wellness-service texture, but the
+accumulating OSM timeouts suggest source strategy should be part of the
+pre-scale decision, not only layer count.

@@ -1,0 +1,2 @@
+target_id,target_label,anchor_field,facility_type,facility_id,facility_name,operator,street_address,city,state,postal_code,latitude,longitude,source,source_date,license_status,rights_status,review_status,review_reason
+buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,hardware,osm:way:231822722,Northside Tool Rental,,35 irby Avenue Northwest,Atlanta,GA,30305,33.8415552,-84.3799925,OpenStreetMap Overpass API,2026-08-13,open,ODbL; attribution and share-alike required,packet_ready,primary_civic_facility_candidate

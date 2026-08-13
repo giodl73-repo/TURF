@@ -1,8 +1,8 @@
 -- Atlanta anchor-field context summary.
 --
--- Combine the eight Atlanta context dimensions acquired so far:
+-- Combine the nine Atlanta context dimensions acquired so far:
 -- four civic anchors, bank/credit-union, gas/convenience, pharmacy, and
--- dollar-store value errands.
+-- dollar-store value errands, and hardware small-trade errands.
 
 COPY (
     WITH targets AS (
@@ -48,6 +48,14 @@ COPY (
             dollar_store_signal
         FROM read_csv_auto('reports/ret-atlanta-anchor-field-dollar-store-summary.csv', all_varchar = true)
     ),
+    hardware AS (
+        SELECT
+            field_id,
+            hardware_rows,
+            operator_count AS hardware_brands,
+            hardware_signal
+        FROM read_csv_auto('reports/ret-atlanta-anchor-field-hardware-summary.csv', all_varchar = true)
+    ),
     joined AS (
         SELECT
             targets.field_id,
@@ -71,7 +79,10 @@ COPY (
             pharmacy.pharmacy_signal,
             TRY_CAST(dollar_store.dollar_store_rows AS INTEGER) AS dollar_store_rows,
             TRY_CAST(dollar_store.dollar_store_brands AS INTEGER) AS dollar_store_brands,
-            dollar_store.dollar_store_signal
+            dollar_store.dollar_store_signal,
+            TRY_CAST(hardware.hardware_rows AS INTEGER) AS hardware_rows,
+            TRY_CAST(hardware.hardware_brands AS INTEGER) AS hardware_brands,
+            hardware.hardware_signal
         FROM targets
         LEFT JOIN civic
             ON targets.field_id = civic.field_id
@@ -83,6 +94,8 @@ COPY (
             ON targets.field_id = pharmacy.field_id
         LEFT JOIN dollar_store
             ON targets.field_id = dollar_store.field_id
+        LEFT JOIN hardware
+            ON targets.field_id = hardware.field_id
     ),
     scored AS (
         SELECT
@@ -92,11 +105,13 @@ COPY (
                 + CASE WHEN gas_convenience_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 + CASE WHEN pharmacy_signal = 'observed' THEN 1 ELSE 0 END
                 + CASE WHEN dollar_store_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
+                + CASE WHEN hardware_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 AS observed_dimensions,
             source_gated_civic_dimensions
                 + CASE WHEN bank_credit_union_signal = 'source_gated' THEN 1 ELSE 0 END
                 + CASE WHEN gas_convenience_signal = 'source_gated' THEN 1 ELSE 0 END
                 + CASE WHEN dollar_store_signal = 'source_gated' THEN 1 ELSE 0 END
+                + CASE WHEN hardware_signal = 'source_gated' THEN 1 ELSE 0 END
                 AS source_gated_dimensions
         FROM joined
     )
@@ -104,7 +119,7 @@ COPY (
         field_id,
         label,
         anchor_field,
-        8 AS dimensions,
+        9 AS dimensions,
         observed_dimensions,
         source_gated_dimensions,
         post_office_rows,
@@ -119,6 +134,8 @@ COPY (
         pharmacy_brands,
         dollar_store_rows,
         dollar_store_brands,
+        hardware_rows,
+        hardware_brands,
         CASE
             WHEN observed_dimensions = 0 AND source_gated_dimensions >= 6
                 THEN 'fully_source_gated_context_field'
@@ -144,6 +161,9 @@ COPY (
             WHEN bank_credit_union_signal = 'observed_dense'
                 THEN 'finance_dense_service_field'
             WHEN atlanta_civic_archetype = 'postal_library_open_space_civic_stack'
+                AND hardware_signal = 'observed'
+                THEN 'civic_open_space_small_trade_mall_field'
+            WHEN atlanta_civic_archetype = 'postal_library_open_space_civic_stack'
                 THEN 'civic_open_space_mall_field'
             WHEN atlanta_civic_archetype = 'postal_transit_edge_city_field'
                 THEN 'transit_edge_city_field'
@@ -159,7 +179,8 @@ COPY (
             'bank_credit_union_' || bank_credit_union_signal,
             'gas_convenience_' || gas_convenience_signal,
             'pharmacy_' || pharmacy_signal,
-            'dollar_store_' || dollar_store_signal
+            'dollar_store_' || dollar_store_signal,
+            'hardware_' || hardware_signal
         ) AS context_signal_summary
     FROM scored
     ORDER BY
