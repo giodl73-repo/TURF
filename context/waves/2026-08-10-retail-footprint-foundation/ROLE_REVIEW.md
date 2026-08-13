@@ -4052,3 +4052,35 @@ Status: pass with next-output request.
 The next pulse should create bounded Los Angeles / Inland Empire anchor-field
 targets before acquiring layers, so the fifth metro remains comparable to the
 Dallas and Chicago pre-scale stacks.
+
+## Pulse 128 Los Angeles Anchor-Field Targets
+
+### Market Analyst
+
+Status: pass.
+
+The target gate starts metro 5 without acquiring unbounded data. All seven
+fields are ready for context extraction.
+
+### Market Geographer
+
+Status: pass.
+
+The target set covers urban core, valley edge, affluent office-retail, coastal
+suburban mall, inland freeway power center, Inland Empire secondary/growth, and
+port/coastal grid patterns.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse adds only bounded target definitions and a generated readiness
+report. No store/source rows are promoted yet.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should acquire or gate the first pre-scale layer, starting with
+post office so the original postal-terrain thesis remains the first civic
+anchor in the fifth metro.

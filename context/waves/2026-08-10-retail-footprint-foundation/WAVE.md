@@ -144,6 +144,7 @@ before broader chain coverage begins.
 | 125 | Dallas Las Colinas source resolution | complete | Retried Las Colinas post office, promoted USPS rows, excluded a private postal counter, and moved Dallas to eight comparable fields. |
 | 126 | Atlanta Northlake service source resolution | complete | Retried Northlake service layers, promoted finance/gas/hardware rows, checked Decatur hardware absent, and retyped Northlake as a usable legacy mall service field. |
 | 127 | Fifth metro scale decision | complete | Accepted remaining Atlanta gates as explicit type-discovery limits and selected Los Angeles / Inland Empire as the fifth metro. |
+| 128 | Los Angeles anchor-field targets | complete | Added seven bounded Los Angeles / Inland Empire target fields and generated the target-readiness gate. |
 
 ## Success criteria
 

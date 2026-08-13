@@ -438,6 +438,9 @@ The current next-scale decision is:
 The fifth-metro scale decision is:
 `reports\ret-fifth-metro-scale-decision.md`.
 
+The Los Angeles / Inland Empire anchor-field target gate is:
+`reports\ret-los-angeles-anchor-field-targets.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 
