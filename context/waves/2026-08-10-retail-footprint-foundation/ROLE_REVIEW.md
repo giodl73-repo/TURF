@@ -3089,3 +3089,36 @@ Chicago should proceed cautiously. The next layer should either use an already
 reviewed non-Overpass source if available, or try a dense OSM category such as
 gym/park to determine whether Chicago timeouts are category-specific or a
 broader target-response issue.
+
+## Pulse 100 Chicago Gym Source Gate
+
+### Market Analyst
+
+Status: pass with escalation.
+
+Gym should have been a productive dense layer based on Washington and Atlanta,
+but all seven Chicago targets source-gated. That is enough evidence to stop
+treating Chicago timeouts as category-specific.
+
+### Market Geographer
+
+Status: pass.
+
+The layer preserves all seven bounded fields and avoids converting a failed
+target pass into a metro-wide wellness absence claim.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse records timeout gates and an empty reviewed fixture with the standard
+header. No unsupported rows or absence claims are introduced.
+
+### Catchment Modeler
+
+Status: pass with required strategy change.
+
+Before continuing Chicago's full OSM pass, TURF should either retry during a
+better Overpass window, simplify target queries, or use a non-Overpass reviewed
+source for a layer such as pharmacy. Continuing OSM layers one by one would add
+more source gates without much learning.

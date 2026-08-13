@@ -116,6 +116,7 @@ before broader chain coverage begins.
 | 97 | Atlanta pre-scale readiness | complete | Compared observed/source-gated/checked-absent dimensions and concluded Atlanta is ready for type discovery but not final ranking. |
 | 98 | Chicago context targets | complete | Added seven Chicago anchor-field targets for third-metro type discovery after Washington and Atlanta. |
 | 99 | Chicago post-office layer | complete | Added Oakbrook post-office signal, excluded a UPS private counter, and source-gated six Chicago timeout fields. |
+| 100 | Chicago gym source gate | complete | Recorded all seven Chicago gym targets as source-gated, showing the Chicago OSM issue is broader than post office. |
 
 ## Success criteria
 
