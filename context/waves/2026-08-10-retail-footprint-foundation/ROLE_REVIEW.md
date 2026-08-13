@@ -1916,3 +1916,39 @@ Status: pass with next-output request.
 The next profile pulse should compare Anchor Profile v0 before and after adding
 these reviewed anchor-field complexes, while keeping Bellevue core flagged as a
 known acquisition gap.
+
+## Pulse 66 Washington Anchor-Field Profile Impact
+
+### Market Analyst
+
+Status: pass.
+
+Kitsap Mall / Silverdale and South Hill / Puyallup classify as active regional
+mall anchors because the reviewed complex layer intersects with broad
+home-improvement, auto-parts, grocery, mass-retail, drugstore, and QSR depth.
+
+### Market Geographer
+
+Status: pass.
+
+The bounded fields separate different Puget Sound anchor types: Southcenter and
+Tacoma read as urban mall service grids, Kitsap and South Hill read as active
+regional anchors, Factoria reads as a smaller complex modifier, and Bellevue
+core is flagged as under-captured.
+
+### Source Policy Auditor
+
+Status: pass with caveat.
+
+The query uses only checked reviewed fixtures. Bellevue core should not be
+interpreted as truly weak; the result is explicitly documented as a source
+coverage gap because Bellevue Square and Lincoln Square are absent from the
+reviewed candidate source.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next step should either add a better Bellevue complex acquisition path or
+promote this anchor-field profile into Anchor Profile v1 as a separate
+`district_field` geography scope.

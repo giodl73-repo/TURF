@@ -87,6 +87,7 @@ duckdb -c ".read queries/ret-washington-anchor-field-candidates-from-statewide.s
 duckdb -c ".read queries/ret-washington-anchor-field-candidate-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-reviewed-complexes.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-review-summary.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-profile.sql"
 ```
 
 The command reads a CSV with `brand`, `store_id`, `city`, `state`, `latitude`,
@@ -273,6 +274,9 @@ The Washington anchor-field local candidate summary is:
 
 The Washington anchor-field reviewed complex summary is:
 `reports\ret-washington-anchor-field-review-summary.md`.
+
+The Washington anchor-field profile impact readout is:
+`reports\ret-washington-anchor-field-profile.md`.
 
 The first Seattle/Atlanta RET spacing readout is:
 `reports\ret-seattle-atlanta-spacing-readout.md`.
