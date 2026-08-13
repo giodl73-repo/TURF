@@ -2,7 +2,7 @@ dimension_id,dimension_group,dimension_label,source_status,profile_role,review_n
 post_office,civic_anchor,Post office,active_reviewed_civic_layer,postal_identity_anchor,Use reviewed OSM/Overpass post-office layer as first postal civic proxy
 library,civic_anchor,Public library,active_reviewed_civic_layer,civic_service_anchor,Use reviewed OSM/Overpass library layer as first civic service proxy
 park,civic_anchor,Park or public open space,source_gate_pending,everyday_public_amenity,Public parks/open-space source needed before counting rows
-transit_center,civic_anchor,Transit center,source_gate_pending,mobility_anchor,Public transit facility source needed before counting rows
+transit_center,civic_anchor,Transit center,active_reviewed_civic_layer,mobility_anchor,Use reviewed OSM/Overpass transit-center layer as first mobility anchor proxy
 bank_credit_union,everyday_anchor,Bank or credit union,source_gate_pending,routine_errand_finance_anchor,Reviewed POI source needed before counting rows
 pharmacy,everyday_anchor,Pharmacy,active_reviewed_store_layer,routine_health_errand_anchor,Use reviewed drugstore layer as first pharmacy proxy
 gym,everyday_anchor,Gym or fitness center,source_gate_pending,routine_service_anchor,Reviewed POI source needed before counting rows

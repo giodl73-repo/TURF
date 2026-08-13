@@ -1,8 +1,9 @@
 -- Washington Anchor Field Context v0.
 --
 -- Starts the Civic + Everyday Anchors layer with checked dimensions. Post
--- offices and libraries use reviewed OSM civic layers; pharmacy uses the
--- existing reviewed drugstore layer as the first everyday-anchor proxy.
+-- offices, libraries, and transit centers use reviewed OSM civic layers;
+-- pharmacy uses the existing reviewed drugstore layer as the first
+-- everyday-anchor proxy.
 
 CREATE OR REPLACE TEMP TABLE fields AS
 SELECT
@@ -67,6 +68,23 @@ JOIN read_csv_auto(
     AND TRY_CAST(facilities.longitude AS DOUBLE) BETWEEN fields.min_lon AND fields.max_lon
 GROUP BY fields.field_id;
 
+CREATE OR REPLACE TEMP TABLE transit_centers AS
+SELECT
+    fields.field_id,
+    count(*) AS observed_rows,
+    count(DISTINCT coalesce(nullif(facilities.operator, ''), facilities.facility_type)) AS observed_brands,
+    string_agg(facilities.facility_name, '; ' ORDER BY facilities.facility_name) AS observed_names
+FROM fields
+JOIN read_csv_auto(
+        'fixtures/civic/osm-transit-center-washington-anchor-fields-review-2026-08-13.csv',
+        all_varchar = true
+    ) AS facilities
+    ON facilities.state = 'WA'
+    AND facilities.review_status = 'packet_ready'
+    AND TRY_CAST(facilities.latitude AS DOUBLE) BETWEEN fields.min_lat AND fields.max_lat
+    AND TRY_CAST(facilities.longitude AS DOUBLE) BETWEEN fields.min_lon AND fields.max_lon
+GROUP BY fields.field_id;
+
 COPY (
     SELECT
         fields.field_id,
@@ -80,18 +98,21 @@ COPY (
         CASE
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_rows, 0)
             WHEN dimensions.dimension_id = 'post_office' THEN coalesce(post_offices.observed_rows, 0)
+            WHEN dimensions.dimension_id = 'transit_center' THEN coalesce(transit_centers.observed_rows, 0)
             WHEN dimensions.dimension_id = 'pharmacy' THEN coalesce(pharmacies.observed_rows, 0)
             ELSE NULL
         END AS observed_rows,
         CASE
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_brands, 0)
             WHEN dimensions.dimension_id = 'post_office' THEN coalesce(post_offices.observed_brands, 0)
+            WHEN dimensions.dimension_id = 'transit_center' THEN coalesce(transit_centers.observed_brands, 0)
             WHEN dimensions.dimension_id = 'pharmacy' THEN coalesce(pharmacies.observed_brands, 0)
             ELSE NULL
         END AS observed_brands,
         CASE
             WHEN dimensions.dimension_id = 'library' THEN coalesce(libraries.observed_names, '')
             WHEN dimensions.dimension_id = 'post_office' THEN coalesce(post_offices.observed_names, '')
+            WHEN dimensions.dimension_id = 'transit_center' THEN coalesce(transit_centers.observed_names, '')
             WHEN dimensions.dimension_id = 'pharmacy' THEN coalesce(pharmacies.observed_names, '')
             ELSE ''
         END AS observed_names,
@@ -101,6 +122,8 @@ COPY (
             WHEN dimensions.dimension_id = 'library' THEN 'observed_absent'
             WHEN dimensions.dimension_id = 'post_office' AND coalesce(post_offices.observed_rows, 0) > 0 THEN 'observed'
             WHEN dimensions.dimension_id = 'post_office' THEN 'observed_absent'
+            WHEN dimensions.dimension_id = 'transit_center' AND coalesce(transit_centers.observed_rows, 0) > 0 THEN 'observed'
+            WHEN dimensions.dimension_id = 'transit_center' THEN 'observed_absent'
             WHEN dimensions.dimension_id = 'pharmacy' AND coalesce(pharmacies.observed_rows, 0) > 0 THEN 'observed'
             WHEN dimensions.dimension_id = 'pharmacy' THEN 'observed_absent'
             ELSE 'unknown'
@@ -114,6 +137,8 @@ COPY (
         ON fields.field_id = post_offices.field_id
     LEFT JOIN libraries
         ON fields.field_id = libraries.field_id
+    LEFT JOIN transit_centers
+        ON fields.field_id = transit_centers.field_id
     ORDER BY
         CASE fields.field_id
             WHEN 'bellevue-core' THEN 1

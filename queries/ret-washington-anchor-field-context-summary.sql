@@ -12,6 +12,8 @@ COPY (
         max(CASE WHEN dimension_id = 'library' THEN observed_names ELSE '' END) AS library_names,
         max(CASE WHEN dimension_id = 'post_office' THEN observed_rows ELSE NULL END) AS post_office_rows,
         max(CASE WHEN dimension_id = 'post_office' THEN observed_names ELSE '' END) AS post_office_names,
+        max(CASE WHEN dimension_id = 'transit_center' THEN observed_rows ELSE NULL END) AS transit_center_rows,
+        max(CASE WHEN dimension_id = 'transit_center' THEN observed_names ELSE '' END) AS transit_center_names,
         max(CASE WHEN dimension_id = 'pharmacy' THEN observed_rows ELSE NULL END) AS pharmacy_rows,
         max(CASE WHEN dimension_id = 'pharmacy' THEN observed_brands ELSE NULL END) AS pharmacy_brands,
         max(CASE WHEN dimension_id = 'pharmacy' THEN observed_names ELSE '' END) AS pharmacy_names

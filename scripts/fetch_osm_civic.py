@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import socket
 import time
 import urllib.error
 import urllib.parse
@@ -37,24 +38,45 @@ FIELDNAMES = [
 
 
 OSM_TAGS = {
-    "library": ("amenity", "library"),
-    "post_office": ("amenity", "post_office"),
+    "library": [("amenity", "library")],
+    "post_office": [("amenity", "post_office")],
+    "transit_center": [
+        ("amenity", "bus_station"),
+        ("public_transport", "station"),
+        ("railway", "station"),
+    ],
 }
 
 
 def build_query(target: dict[str, str], facility_type: str) -> str:
-    key, value = OSM_TAGS[facility_type]
     min_lat = target["min_lat"]
     min_lon = target["min_lon"]
     max_lat = target["max_lat"]
     max_lon = target["max_lon"]
     bbox = f"{min_lat},{min_lon},{max_lat},{max_lon}"
+    selectors = []
+    for key, value in OSM_TAGS[facility_type]:
+        if facility_type == "transit_center":
+            selectors.extend(
+                [
+                    f'  node["{key}"="{value}"]["name"]({bbox});',
+                    f'  way["{key}"="{value}"]["name"]({bbox});',
+                    f'  relation["{key}"="{value}"]["name"]({bbox});',
+                ]
+            )
+        else:
+            selectors.extend(
+                [
+                    f'  node["{key}"="{value}"]({bbox});',
+                    f'  way["{key}"="{value}"]({bbox});',
+                    f'  relation["{key}"="{value}"]({bbox});',
+                ]
+            )
+    selector_block = "\n".join(selectors)
     return f"""
 [out:json][timeout:60];
 (
-  node["{key}"="{value}"]({bbox});
-  way["{key}"="{value}"]({bbox});
-  relation["{key}"="{value}"]({bbox});
+{selector_block}
 );
 out center tags;
 """
@@ -104,6 +126,11 @@ def review_reason(tags: dict, facility_type: str) -> str:
         or "fedex" in operator
     ):
         return "private_shipping_counter"
+    if facility_type == "transit_center":
+        name = tag(tags, "name")
+        if not name:
+            return "unnamed_transit_point"
+        return "primary_civic_facility_candidate"
     if not street_address(tags) or not tag(tags, "addr:postcode"):
         return "address_tag_incomplete"
     return "primary_civic_facility_candidate"
@@ -120,7 +147,7 @@ def row_from_element(
     name = tag(tags, "name") or tag(tags, "official_name") or facility_type.replace("_", " ").title()
     reason = review_reason(tags, facility_type) if latitude and longitude else "missing_coordinate"
     status = "packet_ready"
-    if reason in {"missing_coordinate", "private_shipping_counter"}:
+    if reason in {"missing_coordinate", "private_shipping_counter", "unnamed_transit_point"}:
         status = "exclude"
     return {
         "target_id": target["target_id"],
@@ -159,7 +186,11 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
         }
         reason = review_reason(synthetic_tags, facility_type)
         row["review_reason"] = reason
-        row["review_status"] = "exclude" if reason == "private_shipping_counter" else "packet_ready"
+        row["review_status"] = (
+            "exclude"
+            if reason in {"private_shipping_counter", "unnamed_transit_point"}
+            else "packet_ready"
+        )
     with output_path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=FIELDNAMES)
         writer.writeheader()
@@ -208,7 +239,7 @@ def main() -> None:
                     args.user_agent,
                 )
                 break
-            except urllib.error.HTTPError:
+            except (TimeoutError, socket.timeout, urllib.error.HTTPError):
                 if attempt == args.retries:
                     raise
                 time.sleep(5 * attempt)

@@ -16,6 +16,12 @@ signals when the fixture preserves source, date, license, and review status.
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpost_office
 - Library tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dlibrary
+- Bus station tag:
+  https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbus_station
+- Public transport station tag:
+  https://wiki.openstreetmap.org/wiki/Tag:public_transport%3Dstation
+- Railway station tag:
+  https://wiki.openstreetmap.org/wiki/Tag:railway%3Dstation
 
 ## Rights Boundary
 
@@ -49,3 +55,7 @@ gap must remain visible in `review_reason`.
 OSM `amenity=post_office` can include private shipping counters. TURF keeps
 those rows in the audit fixture but excludes them from the civic-anchor count
 with `review_reason = private_shipping_counter`.
+
+Transit-center rows use named station or bus-station features. Unnamed transit
+points remain in the audit fixture but are excluded with
+`review_reason = unnamed_transit_point`.

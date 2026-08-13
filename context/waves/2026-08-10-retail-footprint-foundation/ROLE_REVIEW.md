@@ -2184,3 +2184,38 @@ Status: pass with next-output request.
 The next high-signal comparison should be transit centers, because mobility
 anchors may explain why Southcenter and Bellevue behave differently from mall
 fields that lack civic anchors.
+
+## Pulse 74 Transit Center Civic Anchor Layer
+
+### Market Analyst
+
+Status: pass.
+
+Transit adds a mobility signal that changes the read: Bellevue core and Kitsap
+Mall / Silverdale are now fully covered across checked civic/everyday anchors,
+Southcenter / Tukwila is civic-mobility heavy, and South Hill / Puyallup is
+mobility-plus-pharmacy.
+
+### Market Geographer
+
+Status: pass.
+
+The same six boxes now show a clearer hierarchy of field types without changing
+geometry: full civic-plus-everyday, civic-mobility, mobility-commercial,
+postal-only, and empty checked-context fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The transit layer uses named OSM station or bus-station features. The source
+policy now documents bus station, public transport station, and railway station
+tags, and the fetcher excludes unnamed transit points.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Parks are the only remaining civic source gate. After parks, the next modeling
+step should summarize checked context archetypes per field rather than continue
+adding raw columns by hand.

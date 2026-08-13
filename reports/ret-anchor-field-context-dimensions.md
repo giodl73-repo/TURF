@@ -15,8 +15,8 @@ reports/ret-anchor-field-context-dimensions.csv
 
 | Group | Source status | Dimensions |
 |---|---|---|
-| Civic anchors | `active_reviewed_civic_layer` | library; post office |
-| Civic anchors | `source_gate_pending` | park; transit center |
+| Civic anchors | `active_reviewed_civic_layer` | library; post office; transit center |
+| Civic anchors | `source_gate_pending` | park |
 | Everyday anchors | `active_reviewed_store_layer` | pharmacy |
 | Everyday anchors | `source_gate_pending` | bank / credit union; dollar store; gas / convenience; gym; hardware; laundromat |
 
@@ -27,7 +27,7 @@ routine errand stores. That matters for scaling: a mall field, a postal
 identity field, and a daily-life service field may overlap, but they should not
 be collapsed into one signal.
 
-Post office and library now have active checked civic proxies through reviewed
-OSM/Overpass layers. Pharmacy has an active checked everyday proxy through the
-reviewed Washington drugstore layer. Other civic and everyday dimensions remain
-source-gated until TURF adds reviewed public-source rows.
+Post office, library, and transit center now have active checked civic proxies
+through reviewed OSM/Overpass layers. Pharmacy has an active checked everyday
+proxy through the reviewed Washington drugstore layer. Other civic and everyday
+dimensions remain source-gated until TURF adds reviewed public-source rows.

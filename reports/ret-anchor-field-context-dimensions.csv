@@ -1,5 +1,5 @@
 dimension_group,source_status,dimensions,dimension_ids
-civic_anchor,active_reviewed_civic_layer,2,library; post_office
-civic_anchor,source_gate_pending,2,park; transit_center
+civic_anchor,active_reviewed_civic_layer,3,library; post_office; transit_center
+civic_anchor,source_gate_pending,1,park
 everyday_anchor,active_reviewed_store_layer,1,pharmacy
 everyday_anchor,source_gate_pending,6,bank_credit_union; dollar_store; gas_convenience; gym; hardware; laundromat

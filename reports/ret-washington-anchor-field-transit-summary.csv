@@ -1,0 +1,5 @@
+field_id,label,anchor_field,transit_center_rows,operator_count,address_incomplete_rows,transit_center_names
+bellevue-core,Bellevue core mall field,eastside_urban_mall_field,3,1,0,Bellevue Downtown; Bellevue Transit Center; East Main
+southcenter-tukwila,Southcenter / Tukwila mall field,south_king_regional_mall_field,1,1,0,Tukwila
+kitsap-mall,Kitsap Mall / Silverdale field,kitsap_regional_mall_field,1,1,0,Silverdale Transit Center
+south-hill-puyallup,South Hill / Puyallup field,pierce_suburban_mall_field,2,1,0,South Hill Mall Transit Center; South Hill Park and Ride
