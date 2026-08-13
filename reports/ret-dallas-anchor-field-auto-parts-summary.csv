@@ -1,0 +1,9 @@
+field_id,label,anchor_field,auto_parts_rows,auto_parts_brands,auto_parts_brand_list,auto_parts_names,auto_parts_signal
+downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,0,0,"","",checked_absent
+northpark-preston-hollow,NorthPark / Preston Hollow field,north_dallas_regional_mall_field,2,2,AutoZone; O'Reilly Auto Parts,AutoZone; O'Reilly Auto Parts,auto_service_node
+galleria-addison,Galleria / Addison field,north_dallas_edge_city_field,2,2,AutoZone; O'Reilly Auto Parts,AutoZone; O'Reilly Auto Parts,auto_service_node
+legacy-frisco-plano,Legacy / Frisco / Plano field,north_growth_edge_city_field,1,1,AutoZone,AutoZone,single_auto_parts_anchor
+las-colinas-irving,Las Colinas / Irving field,airport_office_edge_field,1,1,AutoZone,AutoZone,single_auto_parts_anchor
+arlington-grand-prairie,Arlington / Grand Prairie field,midcities_power_event_field,13,3,Advance Auto Parts; AutoZone; O'Reilly Auto Parts,Advance Auto Parts; AutoZone; AutoZone; AutoZone; AutoZone; AutoZone; AutoZone; O'Reilly Auto Parts; O'Reilly Auto Parts; O'Reilly Auto Parts; O'Reilly Auto Parts; O'Reilly Auto Parts; O'Reilly Auto Parts,dense_multi_brand_auto_service_grid
+southlake-town-square,Southlake Town Square field,affluent_suburban_town_center_field,0,0,"","",checked_absent
+fort-worth-west-7th,Fort Worth Cultural / West 7th field,secondary_core_service_field,1,1,O'Reilly Auto Parts,O'Reilly Auto Parts,single_auto_parts_anchor

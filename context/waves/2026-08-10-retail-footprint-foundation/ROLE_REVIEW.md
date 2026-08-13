@@ -4558,3 +4558,39 @@ Status: pass with next-output request.
 The next pulse should backfill Dallas/Fort Worth auto parts across the same
 eight targets and compare QSR daily-trip signal against trade/car-service
 signal before changing any type-discovery profile contract.
+
+## Pulse 143 Dallas/Fort Worth Auto-Parts Sidecar
+
+### Market Analyst
+
+Status: pass.
+
+The Texas auto-parts fixture validates with 1,827 packet-ready rows after
+excluding 15 rows. The sidecar completes the Dallas/Fort Worth backfill pair
+and gives a direct contrast with the QSR daily-trip layer.
+
+### Market Geographer
+
+Status: pass.
+
+Arlington / Grand Prairie is the clear convergence field: it is both the only
+four-brand dense QSR grid and the only dense multi-brand auto-service grid.
+Downtown / Uptown Dallas is QSR-rich but auto-parts absent, while Southlake
+Town Square remains light on both sidecars inside the current target box.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review excludes duplicate AutoZone rows, NAPA name mismatches, Tri-C Auto
+Zone, and an O'Reilly warehouse pickup row before interpretation. The report
+stays within public commercial footprint evidence and avoids official territory
+or demographic claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next gate should compare completed QSR and auto-parts sidecars against
+civic/postal and common-store layers across the five-metro profile before
+promoting sidecars into the core type-discovery contract.
