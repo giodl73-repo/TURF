@@ -3547,3 +3547,39 @@ Dallas/Fort Worth now has three stack layers: postal, grocery, and mass retail.
 The next useful non-Overpass layer is pharmacy or retail complexes, because
 either would clarify whether these big-box and grocery patterns sit inside
 health-service grids or mall/lifestyle-center anchor fields.
+
+## Pulse 113 Texas Pharmacy Layer
+
+### Market Analyst
+
+Status: pass.
+
+Pharmacy adds a fourth Dallas/Fort Worth stack layer and finds health-errand
+signal in seven of eight fields. Galleria / Addison becomes the main contrast:
+multi-brand mass retail and grocery, but checked absent for this exact-brand
+drugstore layer.
+
+### Market Geographer
+
+Status: pass.
+
+The report keeps the exact-brand health-errand layer separate from broader
+pharmacy access. That distinction matters because the observed signal is mostly
+CVS-shaped and should not be overread as complete healthcare access.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows come from Overture Places with open license status. The reviewed layer
+excludes clinic, MinuteClinic, photo, optical, beauty, specialty, CarePlus,
+infusion, hospital, provider, and HealthHUB rows before field scoring.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Dallas/Fort Worth now has four layers. The next layer should be retail
+complexes because malls and lifestyle centers will clarify whether the current
+grocery, mass-retail, and pharmacy patterns sit inside anchor districts or
+ordinary service grids.
