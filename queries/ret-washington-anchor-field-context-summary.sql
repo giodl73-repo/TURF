@@ -10,6 +10,8 @@ COPY (
         sum(CASE WHEN field_context_status = 'observed_absent' THEN 1 ELSE 0 END) AS observed_absent_dimensions,
         max(CASE WHEN dimension_id = 'library' THEN observed_rows ELSE NULL END) AS library_rows,
         max(CASE WHEN dimension_id = 'library' THEN observed_names ELSE '' END) AS library_names,
+        max(CASE WHEN dimension_id = 'park' THEN observed_rows ELSE NULL END) AS park_rows,
+        max(CASE WHEN dimension_id = 'park' THEN observed_names ELSE '' END) AS park_names,
         max(CASE WHEN dimension_id = 'post_office' THEN observed_rows ELSE NULL END) AS post_office_rows,
         max(CASE WHEN dimension_id = 'post_office' THEN observed_names ELSE '' END) AS post_office_names,
         max(CASE WHEN dimension_id = 'transit_center' THEN observed_rows ELSE NULL END) AS transit_center_rows,

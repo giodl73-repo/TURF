@@ -1,0 +1,7 @@
+field_id,label,anchor_field,park_rows,named_open_spaces,operator_count,park_names
+bellevue-core,Bellevue core mall field,eastside_urban_mall_field,7,7,1,Bellevue Downtown Park; Georgia Zumdieck Park; Goddard Park; Isan Park; Meydenbauer Bay Park; Surrey Downs Park; Wildwood Park
+factoria,Bellevue Factoria field,eastside_power_center_mall_edge,4,4,1,Norwood Village Neighborhood Park; Southeast 32nd Street Park; Sunset Park; Sunset Ravine Neighborhood Park
+southcenter-tukwila,Southcenter / Tukwila mall field,south_king_regional_mall_field,10,9,1,Bicentennial Park; Black River Riparian Forest and Wetland; Bow Lake Park; Crystal Springs Park; Hazelnut Park; Ikawa Park; Macadam Winter Garden; Tukwila Park; Tukwila Pond Park
+tacoma-mall,Tacoma Mall field,south_sound_regional_mall_field,6,6,1,Edna Travis Park; Irving Park; Lincoln Heights Park; Sawyer Tot Lot; Sheridan Park; Stanley Playfield
+kitsap-mall,Kitsap Mall / Silverdale field,kitsap_regional_mall_field,2,2,1,Silver Leaf Park; Whispering Firs Stormwater Park
+south-hill-puyallup,South Hill / Puyallup field,pierce_suburban_mall_field,4,4,2,Bradley Lake Park; Clark's Creek Park; Heritage Recreation Center; Wildwood Park

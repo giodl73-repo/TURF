@@ -16,6 +16,10 @@ signals when the fixture preserves source, date, license, and review status.
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpost_office
 - Library tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dlibrary
+- Park tag:
+  https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dpark
+- Recreation ground tag:
+  https://wiki.openstreetmap.org/wiki/Tag:leisure%3Drecreation_ground
 - Bus station tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbus_station
 - Public transport station tag:
@@ -59,3 +63,8 @@ with `review_reason = private_shipping_counter`.
 Transit-center rows use named station or bus-station features. Unnamed transit
 points remain in the audit fixture but are excluded with
 `review_reason = unnamed_transit_point`.
+
+Park rows use named park or recreation-ground features. This first pass counts
+named public open-space presence, not acreage, access quality, or park-service
+catchments. Unnamed open-space rows remain excluded with
+`review_reason = unnamed_open_space`.

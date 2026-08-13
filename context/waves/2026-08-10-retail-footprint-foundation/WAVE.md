@@ -91,6 +91,7 @@ before broader chain coverage begins.
 | 72 | Post office civic anchor gate | complete | Added OSM/Overpass post-office civic rows after the Overture timeout, making post office the first active reviewed civic layer. |
 | 73 | Library civic anchor layer | complete | Added reviewed OSM/Overpass library rows and found Bellevue, Southcenter, and Kitsap fields carry a second civic-service signal. |
 | 74 | Transit center civic anchor layer | complete | Added reviewed OSM/Overpass transit-center rows, separating mobility-rich Bellevue, Southcenter, Kitsap, and South Hill fields from Factoria and Tacoma. |
+| 75 | Park civic anchor layer | complete | Added reviewed OSM/Overpass named park/open-space rows, completing the first civic-anchor pass across all six fields. |
 
 ## Success criteria
 

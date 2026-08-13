@@ -14,19 +14,19 @@ reports/ret-washington-anchor-field-context-summary.csv
 
 ## Summary
 
-| Field | Source-gated dimensions | Observed dimensions | Library rows | Post-office rows | Transit rows | Pharmacy rows |
-|---|---:|---:|---:|---:|---:|---:|
-| Bellevue core | 7 | 4 | 1 | 1 | 3 | 2 |
-| Factoria | 7 | 1 | 0 | 1 | 0 | 0 |
-| Southcenter / Tukwila | 7 | 3 | 1 | 1 | 1 | 0 |
-| Tacoma Mall | 7 | 0 | 0 | 0 | 0 | 0 |
-| Kitsap Mall / Silverdale | 7 | 4 | 1 | 1 | 1 | 1 |
-| South Hill / Puyallup | 7 | 2 | 0 | 0 | 2 | 1 |
+| Field | Source-gated dimensions | Observed dimensions | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Bellevue core | 6 | 5 | 1 | 6 | 1 | 3 | 2 |
+| Factoria | 6 | 2 | 0 | 4 | 1 | 0 | 0 |
+| Southcenter / Tukwila | 6 | 4 | 1 | 7 | 1 | 1 | 0 |
+| Tacoma Mall | 6 | 1 | 0 | 6 | 0 | 0 | 0 |
+| Kitsap Mall / Silverdale | 6 | 5 | 1 | 1 | 1 | 1 | 1 |
+| South Hill / Puyallup | 6 | 3 | 0 | 3 | 0 | 2 | 1 |
 
 ## First Signal
 
-The checked civic-anchor proxies are post offices, libraries, and transit
-centers from reviewed OSM/Overpass layers.
+The checked civic-anchor proxies are post offices, libraries, parks/open space,
+and transit centers from reviewed OSM/Overpass layers.
 
 Libraries:
 
@@ -44,6 +44,14 @@ Post offices:
 - Kitsap Mall / Silverdale has Silverdale Post Office.
 - Tacoma Mall and South Hill / Puyallup only showed private shipping counters
   inside the current boxes, so no civic post-office row is counted there.
+
+Parks / open space:
+
+- Every field has at least one named OSM park/open-space row.
+- Southcenter / Tukwila and Bellevue core have the densest named open-space
+  counts.
+- Tacoma Mall has parks but no checked postal, library, transit, or pharmacy
+  anchor.
 
 Transit centers:
 
@@ -66,10 +74,10 @@ Washington drugstore layer:
 
 ## Source Gates
 
-Parks, banks or credit unions, gyms, laundromats, gas or convenience stores,
-dollar stores, and hardware stores are not yet counted. They are present in the
-context contract as source-gated dimensions so later acquisition can fill them
-without changing the profile shape.
+Banks or credit unions, gyms, laundromats, gas or convenience stores, dollar
+stores, and hardware stores are not yet counted. They are present in the context
+contract as source-gated dimensions so later acquisition can fill them without
+changing the profile shape.
 
 ## Learning
 
@@ -77,5 +85,6 @@ This is the first bridge from retail-anchor profiles toward everyday enclave
 profiles. Bellevue core and Kitsap Mall / Silverdale now look like full
 civic-plus-everyday fields. Southcenter / Tukwila looks civic-mobility heavy
 without the checked pharmacy signal. South Hill / Puyallup looks
-mobility-plus-pharmacy. Factoria is postal-only, and Tacoma Mall is empty across
-the checked context anchors.
+mobility-plus-pharmacy with parks. Factoria has parks and postal evidence but
+lacks library, transit, and pharmacy. Tacoma Mall is park-only across checked
+context anchors.

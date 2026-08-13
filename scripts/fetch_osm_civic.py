@@ -39,6 +39,10 @@ FIELDNAMES = [
 
 OSM_TAGS = {
     "library": [("amenity", "library")],
+    "park": [
+        ("leisure", "park"),
+        ("leisure", "recreation_ground"),
+    ],
     "post_office": [("amenity", "post_office")],
     "transit_center": [
         ("amenity", "bus_station"),
@@ -56,7 +60,14 @@ def build_query(target: dict[str, str], facility_type: str) -> str:
     bbox = f"{min_lat},{min_lon},{max_lat},{max_lon}"
     selectors = []
     for key, value in OSM_TAGS[facility_type]:
-        if facility_type == "transit_center":
+        if facility_type == "park":
+            selectors.extend(
+                [
+                    f'  node["{key}"="{value}"]["name"]({bbox});',
+                    f'  way["{key}"="{value}"]["name"]({bbox});',
+                ]
+            )
+        elif facility_type == "transit_center":
             selectors.extend(
                 [
                     f'  node["{key}"="{value}"]["name"]({bbox});',
@@ -131,6 +142,11 @@ def review_reason(tags: dict, facility_type: str) -> str:
         if not name:
             return "unnamed_transit_point"
         return "primary_civic_facility_candidate"
+    if facility_type == "park":
+        name = tag(tags, "name")
+        if not name:
+            return "unnamed_open_space"
+        return "primary_civic_facility_candidate"
     if not street_address(tags) or not tag(tags, "addr:postcode"):
         return "address_tag_incomplete"
     return "primary_civic_facility_candidate"
@@ -147,7 +163,12 @@ def row_from_element(
     name = tag(tags, "name") or tag(tags, "official_name") or facility_type.replace("_", " ").title()
     reason = review_reason(tags, facility_type) if latitude and longitude else "missing_coordinate"
     status = "packet_ready"
-    if reason in {"missing_coordinate", "private_shipping_counter", "unnamed_transit_point"}:
+    if reason in {
+        "missing_coordinate",
+        "private_shipping_counter",
+        "unnamed_open_space",
+        "unnamed_transit_point",
+    }:
         status = "exclude"
     return {
         "target_id": target["target_id"],
@@ -188,7 +209,7 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
         row["review_reason"] = reason
         row["review_status"] = (
             "exclude"
-            if reason in {"private_shipping_counter", "unnamed_transit_point"}
+            if reason in {"private_shipping_counter", "unnamed_open_space", "unnamed_transit_point"}
             else "packet_ready"
         )
     with output_path.open("w", newline="", encoding="utf-8") as handle:
