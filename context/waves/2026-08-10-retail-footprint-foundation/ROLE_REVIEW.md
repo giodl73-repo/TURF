@@ -1952,3 +1952,35 @@ Status: pass with next-output request.
 The next step should either add a better Bellevue complex acquisition path or
 promote this anchor-field profile into Anchor Profile v1 as a separate
 `district_field` geography scope.
+
+## Pulse 67 Bellevue Core Anchor Acquisition Attempt
+
+### Market Analyst
+
+Status: pass with unresolved gap.
+
+Bellevue core remains a known acquisition gap. The pulse does not reinterpret
+the field as weak; it records that the missing regional-mall evidence still
+needs a verified source path.
+
+### Market Geographer
+
+Status: pass.
+
+The query is bounded to the Bellevue core field and targets only Bellevue
+Square, Lincoln Square, and Bellevue Place.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The remote query timed out, the zero-byte partial fixture was removed, and no
+manual or unverified rows were promoted into reviewed evidence.
+
+### Catchment Modeler
+
+Status: blocked on acquisition path.
+
+The next useful path is a local Overture cache, per-name extraction outside the
+current timeout-sensitive scan, or a separate public-source review lane for
+named retail complexes.
