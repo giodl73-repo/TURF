@@ -38,6 +38,10 @@ FIELDNAMES = [
 
 
 OSM_TAGS = {
+    "bank_credit_union": [
+        ("amenity", "bank"),
+        ("amenity", "credit_union"),
+    ],
     "library": [("amenity", "library")],
     "park": [
         ("leisure", "park"),
@@ -130,6 +134,10 @@ def element_point(element: dict) -> tuple[str, str]:
 def review_reason(tags: dict, facility_type: str) -> str:
     name = tag(tags, "name").lower()
     operator = (tag(tags, "operator") or tag(tags, "brand")).lower()
+    if facility_type == "bank_credit_union":
+        atm = tag(tags, "atm").lower()
+        if name == "atm" or " atm" in name or atm == "only":
+            return "atm_only_candidate"
     if facility_type == "post_office" and (
         "ups store" in name
         or "ups store" in operator
@@ -165,6 +173,7 @@ def row_from_element(
     status = "packet_ready"
     if reason in {
         "missing_coordinate",
+        "atm_only_candidate",
         "private_shipping_counter",
         "unnamed_open_space",
         "unnamed_transit_point",
@@ -209,7 +218,13 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
         row["review_reason"] = reason
         row["review_status"] = (
             "exclude"
-            if reason in {"private_shipping_counter", "unnamed_open_space", "unnamed_transit_point"}
+            if reason
+            in {
+                "atm_only_candidate",
+                "private_shipping_counter",
+                "unnamed_open_space",
+                "unnamed_transit_point",
+            }
             else "packet_ready"
         )
     with output_path.open("w", newline="", encoding="utf-8") as handle:

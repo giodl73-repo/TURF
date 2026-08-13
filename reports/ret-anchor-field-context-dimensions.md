@@ -16,8 +16,9 @@ reports/ret-anchor-field-context-dimensions.csv
 | Group | Source status | Dimensions |
 |---|---|---|
 | Civic anchors | `active_reviewed_civic_layer` | library; park; post office; transit center |
+| Everyday anchors | `active_reviewed_everyday_layer` | bank / credit union |
 | Everyday anchors | `active_reviewed_store_layer` | pharmacy |
-| Everyday anchors | `source_gate_pending` | bank / credit union; dollar store; gas / convenience; gym; hardware; laundromat |
+| Everyday anchors | `source_gate_pending` | dollar store; gas / convenience; gym; hardware; laundromat |
 
 ## Learning
 
@@ -27,7 +28,8 @@ identity field, and a daily-life service field may overlap, but they should not
 be collapsed into one signal.
 
 Post office, library, park/open space, and transit center now have active
-checked civic proxies through reviewed OSM/Overpass layers. Pharmacy has an
-active checked everyday proxy through the reviewed Washington drugstore layer.
-Everyday-service dimensions remain source-gated until TURF adds reviewed
-public-source rows.
+checked civic proxies through reviewed OSM/Overpass layers. Bank/credit union
+has an active checked everyday proxy through reviewed OSM/Overpass rows.
+Pharmacy has an active checked everyday proxy through the reviewed Washington
+drugstore layer. The remaining everyday-service dimensions stay source-gated
+until TURF adds reviewed public-source rows.

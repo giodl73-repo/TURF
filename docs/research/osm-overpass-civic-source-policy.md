@@ -12,6 +12,10 @@ signals when the fixture preserves source, date, license, and review status.
   https://www.openstreetmap.org/copyright
 - Overpass API:
   https://wiki.openstreetmap.org/wiki/Overpass_API
+- Bank tag:
+  https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbank
+- Credit union tag:
+  https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcredit_union
 - Post-office tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpost_office
 - Library tag:
@@ -68,3 +72,7 @@ Park rows use named park or recreation-ground features. This first pass counts
 named public open-space presence, not acreage, access quality, or park-service
 catchments. Unnamed open-space rows remain excluded with
 `review_reason = unnamed_open_space`.
+
+Bank/credit-union rows use OSM branch-style finance amenities. ATM-only rows
+remain in the audit fixture but are excluded with
+`review_reason = atm_only_candidate`.

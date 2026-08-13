@@ -63,10 +63,12 @@ python scripts\fetch_osm_post_offices.py --targets fixtures\geography\ret-washin
 python scripts\fetch_osm_civic.py --facility-type library --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-library-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type transit_center --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-transit-center-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type park --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-park-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
+python scripts\fetch_osm_civic.py --facility-type bank_credit_union --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-bank-credit-union-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 duckdb -c ".read queries/ret-washington-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-transit-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-park-summary.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-bank-credit-union-summary.sql"
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-auto-parts-georgia-review-2026-07-22.csv
@@ -290,6 +292,12 @@ The Anchor Field Context v0 dimension report is:
 
 The Washington Anchor Field Context v0 report is:
 `reports\ret-washington-anchor-field-context-v0.md`.
+
+The Washington Anchor Field Context archetype report is:
+`reports\ret-washington-anchor-field-context-archetypes.md`.
+
+The Washington anchor-field bank / credit union readout is:
+`reports\ret-washington-anchor-field-bank-credit-union-summary.md`.
 
 The Washington retail-complex source coverage audit is:
 `reports\ret-washington-retail-complex-coverage.md`.

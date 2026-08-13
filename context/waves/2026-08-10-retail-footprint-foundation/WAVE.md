@@ -93,6 +93,7 @@ before broader chain coverage begins.
 | 74 | Transit center civic anchor layer | complete | Added reviewed OSM/Overpass transit-center rows, separating mobility-rich Bellevue, Southcenter, Kitsap, and South Hill fields from Factoria and Tacoma. |
 | 75 | Park civic anchor layer | complete | Added reviewed OSM/Overpass named park/open-space rows, completing the first civic-anchor pass across all six fields. |
 | 76 | Anchor field context archetypes | complete | Summarized checked civic/everyday dimensions into reusable field archetypes before adding more everyday-service layers. |
+| 77 | Bank/credit union everyday anchor layer | complete | Added reviewed OSM/Overpass finance errand rows and refreshed context archetypes with multi-errand and finance-field labels. |
 
 ## Success criteria
 

@@ -2289,3 +2289,40 @@ Status: pass with next-output request.
 The next useful work is an everyday-service source layer, likely banks/credit
 unions or gas/convenience, to see whether the archetypes hold after routine
 errand anchors are added.
+
+## Pulse 77 Bank/Credit Union Everyday Anchor Layer
+
+### Market Analyst
+
+Status: pass.
+
+The finance layer adds useful separation before scaling. Every field has a
+bank/credit-union signal, but Bellevue core is much denser than the mall and
+suburban fields, while Kitsap and South Hill show stronger routine-service
+depth than their civic rows alone suggested.
+
+### Market Geographer
+
+Status: pass.
+
+The layer remains bounded to the same six anchor fields, so the new signal
+changes interpretation without changing geography. It also keeps finance
+errands distinct from postal, civic-service, mobility, public-space, and
+pharmacy anchors.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The acquisition uses OSM/Overpass, preserves source date and ODbL status, and
+excludes ATM-only candidates instead of treating cash machines as full service
+branches.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next useful dimensions before scaling are car-trip and routine-service
+signals: gas/convenience, dollar stores, hardware, laundromats, and gyms. These
+should show whether the finance signal marks a broad everyday-service field or
+only a commercial-office errand layer.
