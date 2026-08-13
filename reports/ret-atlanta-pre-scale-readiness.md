@@ -30,7 +30,7 @@ source-gated dimensions.
 | Cumberland / Vinings | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Buckhead / Lenox / Phipps | 6 | 5 | 0 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Perimeter widened | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
-| Camp Creek | 1 | 7 | 3 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
+| Camp Creek | 3 | 3 | 5 | `usable_comparison_field` | `usable_for_cross_metro_comparison` |
 | Northlake | 3 | 7 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | North Point / Alpharetta widened | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Decatur / Emory | 4 | 7 | 0 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
@@ -42,8 +42,8 @@ The Atlanta pass is already strong enough to learn typed enclave shapes:
 - Cumberland / Vinings: finance, household-service, and wellness service field.
 - Buckhead / Lenox / Phipps: civic/open-space/small-trade mall field.
 - Perimeter widened: postal/transit/health/wellness edge-city field.
-- Camp Creek: wellness-only partial context field with checked post-office,
-  library, and pharmacy absence.
+- Camp Creek: finance/car-trip/wellness airport-edge field with checked
+  post-office, library, transit, hardware, and pharmacy absence.
 - Northlake: partial source-gated context field with checked post-office
   absence plus observed library, pharmacy, and gym signal.
 - North Point / Alpharetta widened: open-space/health/wellness edge-city
@@ -69,9 +69,13 @@ timeouts:
 - some civic layers for Camp Creek and Northlake
 
 Camp Creek and Northlake no longer have post-office timeouts, but neither
-result produced a packet-ready USPS row. Camp Creek's library retry also
-returned no packet-ready rows. Those are useful negative evidence, not observed
-civic-anchor signal.
+result produced a packet-ready USPS row. Camp Creek's library, transit, and
+hardware retries also returned no packet-ready rows. Those are useful negative
+evidence, not observed civic-anchor signal.
+
+Camp Creek is no longer source-limited. The airport-edge field has finance,
+gas/convenience, and gym signal, but its remaining source-gated layers still
+make it inappropriate for final ranking against Washington.
 
 Northlake gained observed library and gym signal, so it is no longer locally
 source-limited. Its unresolved question is now whether the legacy mall node has

@@ -139,6 +139,7 @@ before broader chain coverage begins.
 | 120 | Atlanta library source resolution | complete | Retried Northlake and Camp Creek libraries, promoted Northlake-Barbara Loar Branch, and resolved two Atlanta library gates. |
 | 121 | Atlanta gym source resolution | complete | Retried Atlanta gym gates, promoted Perimeter and Northlake wellness rows, and moved Northlake out of source-limited comparison. |
 | 122 | Chicago Orland post-office source resolution | complete | Retried Orland Square post office, promoted two USPS rows, excluded Shipping Pros, and moved Orland into comparable type discovery. |
+| 123 | Atlanta Camp Creek service source resolution | complete | Retried Camp Creek service layers, promoted bank and gas rows, checked transit/hardware absent, and removed Atlanta source-limited rows. |
 
 ## Success criteria
 

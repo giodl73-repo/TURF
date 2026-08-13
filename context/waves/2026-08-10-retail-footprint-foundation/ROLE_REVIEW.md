@@ -3890,3 +3890,36 @@ Status: pass with next-output request.
 Old Orchard is now Chicago's only type-discovery partial field. The next
 resolution pass should target Old Orchard post office/gym or decide whether the
 remaining Chicago gates are acceptable before fifth-metro scale.
+
+## Pulse 123 Atlanta Camp Creek Service Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+Camp Creek moves out of source-limited comparison. Atlanta now has seven
+type-discovery partial fields and no source-limited rows.
+
+### Market Geographer
+
+Status: pass.
+
+The field retypes cleanly from wellness-only to finance/car-trip/wellness
+airport-edge. That is a better description of the public terrain around Camp
+Creek.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Transit and hardware are checked absent because the target retries returned no
+packet-ready rows. Park, dollar store, and laundromat remain source-gated after
+timeouts.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The source-resolution gate has now reduced the biggest Atlanta/Chicago
+imbalance. The next decision can either resolve Old Orchard or Las Colinas, or
+accept those explicit partial rows and choose the fifth metro.

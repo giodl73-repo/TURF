@@ -185,6 +185,11 @@ COPY (
             WHEN bank_credit_union_signal = 'observed_dense'
                 AND laundromat_signal = 'observed_dense'
                 THEN 'finance_household_service_field'
+            WHEN bank_credit_union_signal IN ('observed', 'observed_dense')
+                AND gas_convenience_signal IN ('observed', 'observed_dense')
+                AND gym_signal IN ('observed', 'observed_dense')
+                AND pharmacy_signal = 'checked_absent'
+                THEN 'finance_car_trip_wellness_airport_edge_field'
             WHEN pharmacy_signal = 'checked_absent'
                 AND gym_signal = 'observed'
                 THEN 'wellness_only_partial_context_field'

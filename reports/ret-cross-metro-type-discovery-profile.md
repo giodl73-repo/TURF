@@ -55,8 +55,7 @@ The current generated profile has 28 rows:
 | Region | Tier | Fields |
 |---|---|---:|
 | Washington | `baseline_comparable` | 6 |
-| Atlanta | `type_discovery_partial` | 6 |
-| Atlanta | `source_limited` | 1 |
+| Atlanta | `type_discovery_partial` | 7 |
 | Chicago | `type_discovery_comparable` | 6 |
 | Chicago | `type_discovery_partial` | 1 |
 | Dallas/Fort Worth | `type_discovery_comparable` | 7 |
@@ -84,16 +83,15 @@ type-discovery-comparable fields:
 - Orland Square: `confirmed_grocery_supported_mall_field` with observed postal
   civic signal after the second Chicago post-office source-resolution pass.
 
-Atlanta contributes six partial type-discovery fields, but none are baseline
-comparable because every Atlanta field still carries at least five source-gated
-dimensions.
+Atlanta contributes seven partial type-discovery fields, but none are baseline
+comparable because every Atlanta field still carries at least three
+source-gated dimensions.
 
-Camp Creek moved out of the generated `source_limited_field` readiness tier in
-the Atlanta readiness report after the library retry resolved another source
-gate as checked absent. It is still assigned to the `source_limited` comparison
-tier because one observed layer is too sparse for peer comparison, but the
-field is now a clearer wellness-only partial context case rather than an
-unknown civic blank.
+Camp Creek moved out of the `source_limited` comparison tier after the service
+source-resolution pass. The field now has observed bank, gas/convenience, and
+gym signal, with post office, library, transit, hardware, and pharmacy checked
+absent. That makes it a finance/car-trip/wellness airport-edge field rather
+than a wellness-only sparse row.
 
 Northlake moved out of the `source_limited` comparison tier after the gym retry:
 post office is checked absent, library is observed, gym is observed, and

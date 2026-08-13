@@ -26,21 +26,24 @@ fixtures/civic/osm-bank-credit-union-atlanta-anchor-fields-source-gates-2026-08-
 
 ## First Signal
 
-Finance returned dense signal in two fields:
+Finance returned dense signal in two fields and useful airport-edge signal in
+one:
 
 - Cumberland / Vinings has 14 checked bank / credit-union rows.
+- Camp Creek has 5 checked bank rows.
 - Decatur / Emory has 12 checked bank / credit-union rows.
 
-Buckhead / Lenox / Phipps, Perimeter widened, Camp Creek, Northlake, and North
-Point / Alpharetta widened remain source-gated because target-only Overpass
-attempts timed out. They should not be interpreted as finance absences.
+Buckhead / Lenox / Phipps, Perimeter widened, Northlake, and North Point /
+Alpharetta widened remain source-gated because target-only Overpass attempts
+timed out. They should not be interpreted as finance absences.
 
 ## Learning
 
 The first everyday layer changes the Atlanta read immediately. Cumberland /
 Vinings and Decatur / Emory looked like postal-only civic fields because their
 library, park, and transit layers were source-gated. Finance shows both also
-carry strong routine-service density.
+carry strong routine-service density. Camp Creek now shows airport-edge finance
+texture after earlier civic absences.
 
 This is important for the enclave theory: a field can be civic-light in the
 checked layers but still be everyday-service rich. TURF should avoid treating
