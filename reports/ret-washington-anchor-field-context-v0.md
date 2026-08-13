@@ -14,16 +14,26 @@ reports/ret-washington-anchor-field-context-summary.csv
 
 ## Summary
 
-| Field | Source-gated dimensions | Observed dimensions | Pharmacy rows |
-|---|---:|---:|---:|
-| Bellevue core | 10 | 1 | 2 |
-| Factoria | 10 | 0 | 0 |
-| Southcenter / Tukwila | 10 | 0 | 0 |
-| Tacoma Mall | 10 | 0 | 0 |
-| Kitsap Mall / Silverdale | 10 | 1 | 1 |
-| South Hill / Puyallup | 10 | 1 | 1 |
+| Field | Source-gated dimensions | Observed dimensions | Post-office rows | Pharmacy rows |
+|---|---:|---:|---:|---:|
+| Bellevue core | 9 | 2 | 1 | 2 |
+| Factoria | 9 | 1 | 1 | 0 |
+| Southcenter / Tukwila | 9 | 1 | 1 | 0 |
+| Tacoma Mall | 9 | 0 | 0 | 0 |
+| Kitsap Mall / Silverdale | 9 | 2 | 1 | 1 |
+| South Hill / Puyallup | 9 | 1 | 0 | 1 |
 
 ## First Signal
+
+The first checked civic-anchor proxy is post-office presence from a reviewed
+OSM/Overpass layer:
+
+- Bellevue core has Bellevue Post Office.
+- Factoria has one OSM post-office civic point with incomplete address tags.
+- Southcenter / Tukwila has Tukwila Post Office.
+- Kitsap Mall / Silverdale has Silverdale Post Office.
+- Tacoma Mall and South Hill / Puyallup only showed private shipping counters
+  inside the current boxes, so no civic post-office row is counted there.
 
 The first checked everyday-anchor proxy is pharmacy presence from the reviewed
 Washington drugstore layer:
@@ -36,15 +46,14 @@ Washington drugstore layer:
 
 ## Source Gates
 
-Post offices, libraries, parks, transit centers, banks or credit unions, gyms,
-laundromats, gas or convenience stores, dollar stores, and hardware stores are
-not yet counted. They are present in the context contract as source-gated
-dimensions so later acquisition can fill them without changing the profile
-shape.
+Libraries, parks, transit centers, banks or credit unions, gyms, laundromats,
+gas or convenience stores, dollar stores, and hardware stores are not yet
+counted. They are present in the context contract as source-gated dimensions so
+later acquisition can fill them without changing the profile shape.
 
 ## Learning
 
 This is the first bridge from retail-anchor profiles toward everyday enclave
-profiles. The current result is intentionally sparse: it proves the shape and
-shows one reusable everyday signal, while keeping civic and postal claims out
-until reviewed public-source evidence exists.
+profiles. The post-office split is immediately useful: several retail fields
+also have postal civic anchors, while Tacoma Mall and South Hill/Puyallup look
+more like commercial service fields under the current box geometry.

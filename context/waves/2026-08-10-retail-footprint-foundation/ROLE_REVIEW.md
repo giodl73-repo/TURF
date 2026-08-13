@@ -2118,32 +2118,35 @@ natural test against mall-defined fields.
 
 ### Market Analyst
 
-Status: pass with blocked-data caveat.
+Status: pass.
 
 The pulse chose the right next signal for learning before scale: post offices
 would show whether a field has civic/postal identity as well as retail service.
-No rows were promoted, so analysis remains unchanged.
+OSM/Overpass promoted a reviewed civic layer: Bellevue core, Factoria,
+Southcenter/Tukwila, and Kitsap Mall/Silverdale have packet-ready post-office
+rows; Tacoma Mall and South Hill/Puyallup do not.
 
 ### Market Geographer
 
 Status: pass.
 
-The query is bounded to the same six district fields, preserving the ability to
-compare civic anchors against mall and service-grid geometry without changing
-scope midstream.
+The acquisition is bounded to the same six district fields, preserving the
+ability to compare civic anchors against mall and service-grid geometry without
+changing scope midstream.
 
 ### Source Policy Auditor
 
 Status: pass.
 
-The attempted source is Overture Places, already accepted as an open POI
-research layer. The timed-out zero-byte output was not kept, and TURF does not
-claim official USPS delivery territories or redistribute USPS data.
+The timed-out Overture zero-byte output was not kept. The promoted source is
+OSM/Overpass, documented with ODbL rights status, attribution expectations, and
+an explicit boundary against official USPS delivery-territory claims.
 
 ### Catchment Modeler
 
 Status: pass with next-output request.
 
-Before scaling to more urban areas, the next useful goal is a reliable civic
-facility acquisition path: local Overture cache, longer per-target runs, or a
-reviewed alternate open source.
+Before scaling to more urban areas, the next useful goal is to repeat the OSM
+civic pattern for another high-signal dimension, likely libraries or transit
+centers, and test whether the same fields split into civic/mobility/service
+types.

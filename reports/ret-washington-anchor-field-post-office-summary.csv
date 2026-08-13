@@ -1,0 +1,5 @@
+field_id,label,anchor_field,post_office_rows,operator_count,address_incomplete_rows,post_office_names
+bellevue-core,Bellevue core mall field,eastside_urban_mall_field,1,1,0,Bellevue Post Office
+factoria,Bellevue Factoria field,eastside_power_center_mall_edge,1,0,1,Post Office
+southcenter-tukwila,Southcenter / Tukwila mall field,south_king_regional_mall_field,1,1,0,Tukwila Post Office
+kitsap-mall,Kitsap Mall / Silverdale field,kitsap_regional_mall_field,1,1,0,Silverdale Post Office

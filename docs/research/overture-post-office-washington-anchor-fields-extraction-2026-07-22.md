@@ -59,5 +59,6 @@ The next successful civic-anchor pulse should use one of:
 - another redistribution-compatible public facility source with a documented
   vintage and license.
 
-Until then, `post_office` remains `source_gate_pending` in the Anchor Field
-Context contract.
+The follow-up OSM/Overpass path succeeded for the same anchor fields and is now
+the active reviewed civic layer for post-office context. The Overture query
+remains documented as a candidate path, but it is not the promoted source.

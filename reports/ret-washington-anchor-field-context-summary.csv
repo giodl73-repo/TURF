@@ -1,7 +1,7 @@
-field_id,label,dimensions,source_gated_dimensions,observed_dimensions,observed_absent_dimensions,pharmacy_rows,pharmacy_brands,pharmacy_names
-bellevue-core,Bellevue core mall field,11,10,1,0,2,2,Bartell Drugs; CVS Pharmacy
-factoria,Bellevue Factoria field,11,10,0,1,0,0,""
-southcenter-tukwila,Southcenter / Tukwila mall field,11,10,0,1,0,0,""
-tacoma-mall,Tacoma Mall field,11,10,0,1,0,0,""
-kitsap-mall,Kitsap Mall / Silverdale field,11,10,1,0,1,1,CVS Pharmacy
-south-hill-puyallup,South Hill / Puyallup field,11,10,1,0,1,1,CVS Pharmacy
+field_id,label,dimensions,source_gated_dimensions,observed_dimensions,observed_absent_dimensions,post_office_rows,post_office_names,pharmacy_rows,pharmacy_brands,pharmacy_names
+bellevue-core,Bellevue core mall field,11,9,2,0,1,Bellevue Post Office,2,2,Bartell Drugs; CVS Pharmacy
+factoria,Bellevue Factoria field,11,9,1,1,1,Post Office,0,0,""
+southcenter-tukwila,Southcenter / Tukwila mall field,11,9,1,1,1,Tukwila Post Office,0,0,""
+tacoma-mall,Tacoma Mall field,11,9,0,2,0,"",0,0,""
+kitsap-mall,Kitsap Mall / Silverdale field,11,9,2,0,1,Silverdale Post Office,1,1,CVS Pharmacy
+south-hill-puyallup,South Hill / Puyallup field,11,9,1,1,0,"",1,1,CVS Pharmacy
