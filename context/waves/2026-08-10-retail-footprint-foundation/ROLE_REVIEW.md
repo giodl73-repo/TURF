@@ -4629,3 +4629,37 @@ Status: pass with next-output request.
 The next output should be a sidecar readiness note before sixth-metro scale,
 including the decision whether Washington and Atlanta need anchor-field
 retro-alignment or can remain older metro/place-level evidence for now.
+
+## Pulse 145 Sidecar Readiness Before Sixth Metro
+
+### Market Analyst
+
+Status: pass.
+
+The readiness note converts the matrix into an actionable scale rule: the next
+metro should include five core dimensions plus QSR and auto-parts sidecars, but
+the sidecars do not yet alter the 35-row core profile contract.
+
+### Market Geographer
+
+Status: pass.
+
+The candidate criteria correctly ask the sixth metro to add a new terrain shape
+rather than repeat LA, Chicago, Dallas/Fort Worth, Atlanta, or Puget Sound.
+That keeps type discovery focused on geographic contrast.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The Washington/Atlanta status is handled explicitly as a waiver. Their older
+sidecar evidence remains historical comparison evidence, not field-aligned
+promotion proof.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should select the sixth metro and create bounded anchor-field
+targets before acquiring core layers or sidecars, so the new metro starts under
+the standard sidecar contract.

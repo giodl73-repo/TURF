@@ -477,6 +477,9 @@ The sidecar standardization decision is:
 The sidecar promotion evidence matrix is:
 `reports\ret-sidecar-promotion-evidence-matrix.md`.
 
+The sidecar readiness note before sixth-metro scale is:
+`reports\ret-sidecar-readiness-before-sixth-metro.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

@@ -161,6 +161,7 @@ before broader chain coverage begins.
 | 142 | Dallas/Fort Worth QSR sidecar | complete | Added reviewed Texas QSR and eight Dallas/Fort Worth field summaries, separating Arlington / Grand Prairie as the four-brand dense QSR grid. |
 | 143 | Dallas/Fort Worth auto-parts sidecar | complete | Added reviewed Texas auto parts, found Arlington / Grand Prairie is the only dense multi-brand auto-service grid, and compared it against QSR signal. |
 | 144 | Sidecar promotion evidence matrix | complete | Compared 22 completed LA, Chicago, and Dallas/Fort Worth sidecar fields and kept QSR/auto parts as standard sidecars rather than core profile dimensions. |
+| 145 | Sidecar readiness before sixth metro | complete | Set the sixth-metro contract as five core pre-scale dimensions plus QSR and auto-parts sidecars, with Washington/Atlanta older sidecars explicitly waived for scale. |
 
 ## Success criteria
 
