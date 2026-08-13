@@ -84,6 +84,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-pressure-audit.sql"
 duckdb -c ".read queries/ret-edge-city-mall-rule-audit.sql"
 duckdb -c ".read queries/ret-anchor-profile-v0.sql"
 duckdb -c ".read queries/ret-anchor-profile-v1.sql"
+duckdb -c ".read queries/ret-anchor-profile-v1-delta.sql"
 duckdb -c ".read queries/ret-washington-retail-complex-coverage.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-targets.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-candidates-from-statewide.sql"
@@ -263,6 +264,9 @@ The first integrated anchor profile is:
 
 The second integrated anchor profile is:
 `reports\ret-anchor-profile-v1.md`.
+
+The RET Anchor Profile v1 delta report is:
+`reports\ret-anchor-profile-v1-delta.md`.
 
 The Washington retail-complex source coverage audit is:
 `reports\ret-washington-retail-complex-coverage.md`.

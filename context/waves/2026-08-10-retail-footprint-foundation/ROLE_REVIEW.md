@@ -2016,3 +2016,34 @@ Status: pass with next-output request.
 
 The next profile step should either add a CLI `anchor-profile-v1` generator or
 build a profile-delta report that compares v0 and v1 modifier counts.
+
+## Pulse 69 RET Anchor Profile v1 Delta
+
+### Market Analyst
+
+Status: pass.
+
+The delta shows the modeling impact cleanly: active regional-anchor examples
+increase from two to four, and urban mall service-grid examples increase from
+one to three.
+
+### Market Geographer
+
+Status: pass.
+
+All change is isolated to the six new Puget Sound `district_field` rows. The v0
+reviewed-zone, district-core, and district-wide rows remain unchanged.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The delta report compares checked CSV artifacts and adds no source rows or new
+external acquisition claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next useful step is a CLI `anchor-profile-v1` generator or a dedicated
+profile examples report that extracts canonical examples per modifier.
