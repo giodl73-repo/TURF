@@ -22,7 +22,8 @@ COPY (
             review_reason
         FROM read_csv_auto(
             'fixtures/civic/osm-post-office-dallas-anchor-fields-review-2026-08-13.csv',
-            all_varchar = true
+            all_varchar = true,
+            strict_mode = false
         )
     ),
     gates AS (
@@ -32,7 +33,8 @@ COPY (
             gate_reason
         FROM read_csv_auto(
             'fixtures/civic/osm-post-office-dallas-anchor-fields-source-gates-2026-08-13.csv',
-            all_varchar = true
+            all_varchar = true,
+            strict_mode = false
         )
     ),
     summarized AS (

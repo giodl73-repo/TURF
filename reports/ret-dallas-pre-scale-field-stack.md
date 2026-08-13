@@ -7,8 +7,8 @@ TURF adds a fifth metro or expands into another source family.
 
 Included layers:
 
-- Post office: OSM/Overpass, observed for four fields, checked absent for
-  Legacy / Frisco / Plano, and source-gated for three timeout fields.
+- Post office: OSM/Overpass, observed for five fields, checked absent for
+  Legacy / Frisco / Plano, and source-gated for two timeout fields.
 - Grocery: reviewed Texas Overture grocery layer.
 - Mass retail: reviewed Texas Overture Target / Walmart / Costco / Sam's Club
   layer.
@@ -26,8 +26,8 @@ reports/ret-dallas-pre-scale-field-stack.csv
 ## Decision
 
 Dallas/Fort Worth is ready for type-discovery synthesis, but not final ranking.
-The five-layer stack yields five clean comparable fields, two comparable fields
-that need a post-office retry, and one partial field.
+The five-layer stack now yields eight comparable fields. Six have no source
+gates, and two remain comparable with a post-office retry gate preserved.
 
 This satisfies the pre-scale goal for learning. TURF can now compare Dallas
 against Washington, Atlanta, and Chicago before adding another urban area.
@@ -45,8 +45,11 @@ are measuring different kinds of terrain:
   office-edge fields.
 - Pharmacy adds health-errand texture in seven fields, but Galleria / Addison
   stays checked absent for this exact-brand layer.
-- USPS/post-office evidence remains useful where observed, but the Overpass
-  source gates should be treated as source quality, not true absence.
+- USPS/post-office evidence remains useful where observed. Las Colinas now
+  shows that an airport-office edge can carry civic postal service even when
+  mass retail is checked absent inside the bounded field.
+- Remaining Overpass source gates should be treated as source quality, not true
+  absence.
 
 ## Field Stack
 
@@ -56,7 +59,7 @@ are measuring different kinds of terrain:
 | NorthPark / Preston Hollow | 5 | 0 | 0 | `affluent_complex_grocery_health_costco_field` | `type_discovery_comparable` |
 | Galleria / Addison | 4 | 0 | 1 | `edge_city_grocery_big_box_complex_field` | `type_discovery_comparable` |
 | Legacy / Frisco / Plano | 4 | 0 | 1 | `growth_edge_mall_grocery_health_big_box_field` | `type_discovery_comparable` |
-| Las Colinas / Irving | 3 | 1 | 1 | `office_edge_grocery_health_complex_field` | `type_discovery_partial` |
+| Las Colinas / Irving | 4 | 0 | 1 | `office_edge_grocery_health_complex_field` | `type_discovery_comparable` |
 | Arlington / Grand Prairie | 4 | 1 | 0 | `midcities_grocery_health_big_box_complex_field` | `type_discovery_comparable_retry_gated_layer` |
 | Southlake Town Square | 4 | 0 | 1 | `town_center_grocery_health_complex_field` | `type_discovery_comparable` |
 | Fort Worth Cultural / West 7th | 4 | 1 | 0 | `secondary_core_grocery_health_big_box_plaza_field` | `type_discovery_comparable_retry_gated_layer` |
@@ -79,9 +82,10 @@ Southlake is not weak because it lacks mass retail inside the box. The current
 stack reads it as a grocery-health-town-center field rather than a big-box
 power field.
 
-Las Colinas / Irving is the one partial field. It has grocery, pharmacy, and
-retail-complex evidence, while post office is source-gated and mass retail is
-checked absent.
+Las Colinas / Irving is now comparable. It has grocery, pharmacy,
+retail-complex, and postal evidence, while mass retail remains checked absent.
+That makes it a clearer airport-office-edge service field rather than a partial
+row held back by a source timeout.
 
 Arlington / Grand Prairie and Fort Worth Cultural / West 7th are usable
 type-discovery rows after preserving their USPS source gates. They should be
@@ -93,8 +97,8 @@ layer is retried or replaced.
 The next reasonable self-executing goal is:
 
 ```text
-Add Dallas/Fort Worth to the cross-metro type-discovery profile after a
-one-report synthesis pass, without adding a fifth metro yet.
+Use the now-comparable Dallas/Fort Worth and Chicago stacks to decide whether
+Atlanta needs one more source-resolution pass before adding a fifth metro.
 ```
 
 That goal keeps learning local: TURF should first compare the typed Dallas

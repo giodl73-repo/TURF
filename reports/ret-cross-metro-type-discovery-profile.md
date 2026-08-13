@@ -57,8 +57,7 @@ The current generated profile has 28 rows:
 | Washington | `baseline_comparable` | 6 |
 | Atlanta | `type_discovery_partial` | 7 |
 | Chicago | `type_discovery_comparable` | 7 |
-| Dallas/Fort Worth | `type_discovery_comparable` | 7 |
-| Dallas/Fort Worth | `type_discovery_partial` | 1 |
+| Dallas/Fort Worth | `type_discovery_comparable` | 8 |
 
 Profile basis:
 
@@ -100,8 +99,7 @@ park/open-space plus transit remain source-gated. That makes Northlake a legacy
 suburban mall node with public civic-service and wellness anchors, not just an
 Overpass timeout artifact.
 
-Dallas/Fort Worth contributes seven type-discovery-comparable fields and one
-partial field:
+Dallas/Fort Worth contributes eight type-discovery-comparable fields:
 
 - Downtown / Uptown Dallas:
   `urban_postal_grocery_health_big_box_village_field`.
@@ -110,15 +108,17 @@ partial field:
 - Galleria / Addison: `edge_city_grocery_big_box_complex_field`.
 - Legacy / Frisco / Plano:
   `growth_edge_mall_grocery_health_big_box_field`.
+- Las Colinas / Irving: `office_edge_grocery_health_complex_field` with
+  observed postal signal after the Las Colinas source-resolution pass.
 - Arlington / Grand Prairie:
   `midcities_grocery_health_big_box_complex_field`.
 - Southlake Town Square: `town_center_grocery_health_complex_field`.
 - Fort Worth Cultural / West 7th:
   `secondary_core_grocery_health_big_box_plaza_field`.
 
-Las Colinas / Irving remains partial because it combines observed grocery,
-pharmacy, and retail-complex evidence with a USPS source gate and checked
-mass-retail absence.
+Las Colinas / Irving moved out of the partial tier after its USPS retry. It now
+combines observed grocery, pharmacy, retail-complex, and postal evidence with
+checked mass-retail absence.
 
 ## Validation
 

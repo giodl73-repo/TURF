@@ -441,6 +441,9 @@ The Dallas/Fort Worth anchor-field target gate is:
 The Dallas/Fort Worth anchor-field post-office readout is:
 `reports\ret-dallas-anchor-field-post-office-summary.md`.
 
+The Dallas Las Colinas source-resolution pass is:
+`reports\ret-dallas-las-colinas-source-resolution-pass.md`.
+
 The Dallas/Fort Worth anchor-field grocery readout is:
 `reports\ret-dallas-anchor-field-grocery-summary.md`.
 

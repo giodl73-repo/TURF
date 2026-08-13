@@ -20,7 +20,7 @@ The current profile has 28 field rows across four metros:
 | Washington | `full_11_dimension_context` | 6 | Clean baseline, zero source gates. |
 | Atlanta | `full_11_dimension_context` | 7 | Useful but source-gated; seven partial comparison fields after postal/library/gym and Camp Creek service resolution. |
 | Chicago | `pre_scale_6_layer_stack` | 7 | Strong type-discovery stack; all seven fields are now comparable, though some OSM post-office/gym gates remain for ranking. |
-| Dallas/Fort Worth | `pre_scale_5_layer_stack` | 8 | Strong Sun Belt stack, with seven comparable rows and one partial row. |
+| Dallas/Fort Worth | `pre_scale_5_layer_stack` | 8 | Strong Sun Belt stack; all eight fields are now comparable for type discovery. |
 
 ## Decision
 
@@ -31,7 +31,7 @@ enough variety to compare typed retail fields. What it lacks is balanced source
 quality across metros:
 
 - Washington has the full 11-dimension clean baseline.
-- Dallas/Fort Worth has enough common-store signal to compare immediately.
+- Dallas/Fort Worth has enough common-store and postal signal to compare immediately.
 - Chicago has strong non-OSM store signal but unresolved OSM civic/wellness
   source gates in several fields.
 - Atlanta has the biggest source-gate load, despite useful partial fields.
@@ -51,6 +51,10 @@ The Old Orchard source-resolution pass also improves Chicago: Old Orchard now
 has observed USPS and gym/wellness anchors, so Chicago has no remaining
 type-discovery partial row.
 
+The Las Colinas source-resolution pass improves Dallas/Fort Worth in the same
+way: Las Colinas now has postal signal, leaving all eight Dallas/Fort Worth
+fields comparable for type discovery.
+
 ## Why Not Add Another Metro Yet
 
 Adding a fifth metro would add breadth, but not fix the main uncertainty. The
@@ -64,17 +68,17 @@ current profile already proves that common stores can create typed fields:
 - secondary-core fields,
 - airport-edge and office-edge partial fields.
 
-The weaker evidence is not the number of metros. It is that Atlanta and Chicago
-still carry enough Overpass gates to make final ranking or refined archetype
-comparison premature.
+The weaker evidence is not the number of metros. It is now concentrated in
+Atlanta, whose full 11-dimension rows still carry enough Overpass gates to make
+final ranking or refined archetype comparison premature.
 
 ## Near-Term Goal
 
 Set the next self-executing goal as:
 
 ```text
-Run a civic/postal source-resolution pass for Atlanta and Chicago, then refresh
-the cross-metro profile before choosing the fifth metro.
+Run one more Atlanta civic/everyday source-resolution pass, then refresh the
+cross-metro profile before choosing the fifth metro.
 ```
 
 Minimum useful output:
@@ -82,8 +86,8 @@ Minimum useful output:
 - a source-resolution strategy note,
 - refreshed Atlanta post-office and one everyday civic/service layer, or an
   explicit source-gate fixture if the retry fails,
-- refreshed Chicago post-office or gym/civic layer, or an explicit source-gate
-  fixture if the retry fails,
+- a decision note on whether the remaining Atlanta source gates are accepted as
+  source limits for fifth-metro scale,
 - refreshed pre-scale/profile reports,
 - passing `validate-type-discovery-profile`.
 

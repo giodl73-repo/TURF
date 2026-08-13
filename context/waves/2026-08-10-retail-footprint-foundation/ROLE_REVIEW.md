@@ -3955,3 +3955,36 @@ Status: pass with next-output request.
 Chicago no longer blocks fifth-metro scale on type-discovery quality. The next
 gate should either reduce Atlanta source-gated dimensions further or resolve
 Dallas Las Colinas before selecting the fifth metro.
+
+## Pulse 125 Dallas Las Colinas Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+Las Colinas moves from the only Dallas/Fort Worth partial row to a comparable
+field. Dallas/Fort Worth now contributes eight comparable field examples.
+
+### Market Geographer
+
+Status: pass.
+
+The field becomes a clearer airport-office-edge service field with observed
+postal, grocery, pharmacy, and retail-complex evidence plus checked mass-retail
+absence.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Eagle Postal Center is retained but excluded as a private postal counter. Only
+Las Colinas is removed from the Dallas source-gate fixture.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Chicago and Dallas are now fully comparable for type discovery. The remaining
+pre-scale uncertainty is concentrated in Atlanta source gates, so the next
+decision is whether to resolve one more Atlanta layer or accept the gates and
+choose a fifth metro.
