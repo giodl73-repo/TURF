@@ -2707,3 +2707,37 @@ Status: pass with next-output request.
 Everyday anchors can now start, with finance or gas/convenience as the best
 first candidate. The civic summary should stay joined into later Atlanta
 context reports so source gates do not disappear from the analysis.
+
+## Pulse 89 Atlanta Bank / Credit Union Layer
+
+### Market Analyst
+
+Status: pass.
+
+The finance layer adds a meaningful everyday-anchor correction. Cumberland /
+Vinings and Decatur / Emory are not weak fields just because civic acquisition
+was partial; both have dense finance rows.
+
+### Market Geographer
+
+Status: pass.
+
+The observed finance fields are geographically different: Cumberland is a
+suburban mall/office edge, while Decatur / Emory is an inner service village.
+That gives TURF two distinct finance-rich Atlanta field types.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The rows preserve OSM source, date, ODbL rights status, and review status. The
+five unresolved fields are explicit source gates and should not be treated as
+finance absences.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next everyday layer should be gas/convenience or pharmacy. Gas/convenience
+will test car-trip texture against finance density; pharmacy will test routine
+health errand texture using the already reviewed store layer pattern.
