@@ -3512,3 +3512,38 @@ Grocery is the first Dallas/Fort Worth layer to cover every target field. The
 next non-Overpass layer should be mass retail or pharmacy, then the stack can
 start separating grocery-supported cores, edge cities, growth edges, and
 mid-cities fields.
+
+## Pulse 112 Texas Mass-Retail Layer
+
+### Market Analyst
+
+Status: pass.
+
+Mass retail adds a sharper household-trip contrast than grocery. Galleria /
+Addison is the only multi-brand big-box field, while five fields have
+single-brand anchors and two are checked absent.
+
+### Market Geographer
+
+Status: pass.
+
+The field interpretation stays bounded. Las Colinas / Irving and Southlake
+Town Square are not weak fields overall; they are grocery-rich but mass-retail
+absent inside the selected boxes.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows come from Overture Places with open license status. The Texas review rule
+excludes service and false-positive rows, including brand/name mismatches such
+as liquor, repair, pharmacy, optical, and office candidates.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Dallas/Fort Worth now has three stack layers: postal, grocery, and mass retail.
+The next useful non-Overpass layer is pharmacy or retail complexes, because
+either would clarify whether these big-box and grocery patterns sit inside
+health-service grids or mall/lifestyle-center anchor fields.

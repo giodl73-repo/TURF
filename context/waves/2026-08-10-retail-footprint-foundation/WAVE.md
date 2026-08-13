@@ -128,6 +128,7 @@ before broader chain coverage begins.
 | 109 | Dallas scale target gate | complete | Set the before-more-metros scale goal and added Dallas/Fort Worth bounded target fields for fourth-metro type discovery. |
 | 110 | Dallas post-office layer | complete | Added the first Dallas/Fort Worth postal civic layer with observed, checked-absent, and source-gated fields preserved. |
 | 111 | Texas grocery layer | complete | Added reviewed Texas grocery rows and found all eight Dallas/Fort Worth target fields carry grocery service signal. |
+| 112 | Texas mass-retail layer | complete | Added reviewed Texas Target/Walmart/Costco/Sam's Club rows and separated big-box anchors from grocery-rich service fields. |
 
 ## Success criteria
 
