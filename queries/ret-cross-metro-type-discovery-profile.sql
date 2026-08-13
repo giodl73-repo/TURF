@@ -1,6 +1,6 @@
 -- Cross-metro type-discovery profile.
 --
--- Normalizes Washington, Atlanta, Chicago, and Dallas/Fort Worth anchor-field readouts into one
+-- Normalizes Washington, Atlanta, Chicago, Dallas/Fort Worth, and Los Angeles anchor-field readouts into one
 -- comparable table while preserving each region's profile basis.
 
 COPY (
@@ -94,6 +94,33 @@ COPY (
             END AS source_quality_note
         FROM read_csv_auto('reports/ret-dallas-pre-scale-field-stack.csv', all_varchar = true)
     ),
+    los_angeles AS (
+        SELECT
+            'los_angeles' AS region,
+            field_id,
+            label,
+            anchor_field,
+            'pre_scale_5_layer_stack' AS profile_basis,
+            5 AS dimensions,
+            TRY_CAST(observed_layers AS INTEGER) AS observed_layers,
+            TRY_CAST(source_gated_layers AS INTEGER) AS source_gated_layers,
+            TRY_CAST(checked_absent_layers AS INTEGER) AS checked_absent_layers,
+            readiness_tier,
+            emerging_field_type AS type_discovery_label,
+            CASE
+                WHEN source_gated_layers = '0' THEN 'no_source_gates'
+                WHEN readiness_tier = 'type_discovery_comparable_retry_gated_postal'
+                    THEN 'usable_for_type_discovery_retry_osm_before_ranking'
+                WHEN readiness_tier = 'type_discovery_partial'
+                    THEN 'usable_for_type_discovery_not_final_ranking'
+                ELSE 'source_limited_retry_or_alternate_source'
+            END AS source_quality_note
+        FROM read_csv_auto(
+            'reports/ret-los-angeles-pre-scale-field-stack.csv',
+            all_varchar = true,
+            strict_mode = false
+        )
+    ),
     combined AS (
         SELECT * FROM washington
         UNION ALL
@@ -102,6 +129,8 @@ COPY (
         SELECT * FROM chicago
         UNION ALL
         SELECT * FROM dallas
+        UNION ALL
+        SELECT * FROM los_angeles
     )
     SELECT
         region,
@@ -138,6 +167,7 @@ COPY (
             WHEN 'atlanta' THEN 2
             WHEN 'chicago' THEN 3
             WHEN 'dallas' THEN 4
+            WHEN 'los_angeles' THEN 5
             ELSE 99
         END,
         CASE field_id
@@ -169,6 +199,13 @@ COPY (
             WHEN 'arlington-grand-prairie' THEN 36
             WHEN 'southlake-town-square' THEN 37
             WHEN 'fort-worth-west-7th' THEN 38
+            WHEN 'downtown-koreatown-midwilshire' THEN 41
+            WHEN 'glendale-burbank' THEN 42
+            WHEN 'west-la-century-city-culver' THEN 43
+            WHEN 'south-bay-torrance' THEN 44
+            WHEN 'ontario-rancho-cucamonga' THEN 45
+            WHEN 'riverside-tyler-corona' THEN 46
+            WHEN 'long-beach-lakewood' THEN 47
             ELSE 99
         END
 ) TO 'reports/ret-cross-metro-type-discovery-profile.csv'

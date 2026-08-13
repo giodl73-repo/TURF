@@ -4282,3 +4282,38 @@ Status: pass with next-output request.
 The next pulse should add the seven confirmed LA rows to the cross-metro
 type-discovery profile while preserving the five postal retry gates as source
 quality limits.
+
+## Pulse 135 Los Angeles Type-Discovery Profile
+
+### Market Analyst
+
+Status: pass.
+
+The profile update admits LA only after named retail-complex confirmation. The
+generated profile now has 35 rows and keeps LA in type-discovery, not final
+ranking.
+
+### Market Geographer
+
+Status: pass.
+
+LA adds several new comparable textures to the profile: dense confirmed urban
+complex, affluent Target/grocery/health complex, valley and inland mall
+big-box/CVS fields, inland plaza big-box/health field, and port/coastal mall
+big-box/health field.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The five LA post-office timeout fields are preserved with
+`usable_for_type_discovery_retry_osm_before_ranking`, not converted into postal
+absence or final ranking confidence.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should produce a next-scale decision from the 35-row profile:
+either retry LA postal gates, add another common industry layer, or choose the
+next metro based on what the profile still cannot distinguish.

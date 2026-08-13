@@ -2,8 +2,9 @@
 
 ## Scope
 
-This report normalizes Washington, Atlanta, Chicago, and Dallas/Fort Worth
-anchor-field outputs into one comparable type-discovery profile.
+This report normalizes Washington, Atlanta, Chicago, Dallas/Fort Worth, and Los
+Angeles / Inland Empire anchor-field outputs into one comparable type-discovery
+profile.
 
 Generated output:
 
@@ -28,8 +29,8 @@ Each row exposes:
 
 The profile basis is part of the contract. Washington and Atlanta use a
 full 11-dimension context contract. Chicago uses a pre-scale 6-layer stack.
-Dallas/Fort Worth uses a pre-scale 5-layer stack. The profile is comparable for
-type discovery, not final atlas ranking.
+Dallas/Fort Worth and Los Angeles / Inland Empire use pre-scale 5-layer stacks.
+The profile is comparable for type discovery, not final atlas ranking.
 
 ## Comparison Tiers
 
@@ -50,7 +51,7 @@ stacks are strong enough to compare typed fields such as urban everyday grids,
 confirmed mall/grocery fields, big-box/grocery power fields, and Sun Belt
 town-center or growth-edge fields.
 
-The current generated profile has 28 rows:
+The current generated profile has 35 rows:
 
 | Region | Tier | Fields |
 |---|---|---:|
@@ -58,6 +59,7 @@ The current generated profile has 28 rows:
 | Atlanta | `type_discovery_partial` | 7 |
 | Chicago | `type_discovery_comparable` | 7 |
 | Dallas/Fort Worth | `type_discovery_comparable` | 8 |
+| Los Angeles / Inland Empire | `type_discovery_comparable` | 7 |
 
 Profile basis:
 
@@ -65,7 +67,7 @@ Profile basis:
 |---|---:|
 | `full_11_dimension_context` | 13 |
 | `pre_scale_6_layer_stack` | 7 |
-| `pre_scale_5_layer_stack` | 8 |
+| `pre_scale_5_layer_stack` | 15 |
 
 ## Current Comparable Types
 
@@ -119,6 +121,25 @@ Dallas/Fort Worth contributes eight type-discovery-comparable fields:
 Las Colinas / Irving moved out of the partial tier after its USPS retry. It now
 combines observed grocery, pharmacy, retail-complex, and postal evidence with
 checked mass-retail absence.
+
+Los Angeles / Inland Empire contributes seven type-discovery-comparable fields:
+
+- Downtown LA / Koreatown / Mid-Wilshire:
+  `confirmed_dense_postal_target_grocery_health_complex`.
+- Glendale / Burbank: `confirmed_mall_big_box_grocery_cvs_field`.
+- West LA / Century City / Culver City:
+  `confirmed_affluent_target_grocery_health_complex`.
+- South Bay / Torrance: `confirmed_postal_big_box_grocery_cvs_complex`.
+- Ontario Mills / Rancho Cucamonga:
+  `confirmed_mall_big_box_grocery_cvs_field`.
+- Riverside / Tyler / Corona edge:
+  `confirmed_plaza_big_box_grocery_health_field`.
+- Long Beach / Lakewood: `confirmed_mall_big_box_grocery_health_field`.
+
+Downtown LA / Koreatown / Mid-Wilshire and South Bay / Torrance have all five
+layers observed with no source gates. The other five LA fields preserve
+post-office retry gates from Overpass connection timeouts, but their store and
+complex layers are strong enough for type discovery before final ranking.
 
 ## Validation
 

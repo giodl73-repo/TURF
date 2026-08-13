@@ -459,6 +459,9 @@ The Los Angeles / Inland Empire retail-complex anchor-field readout is:
 The Los Angeles / Inland Empire pre-scale field stack is:
 `reports\ret-los-angeles-pre-scale-field-stack.md`.
 
+The Los Angeles / Inland Empire type-discovery synthesis is:
+`reports\ret-los-angeles-type-discovery-synthesis.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

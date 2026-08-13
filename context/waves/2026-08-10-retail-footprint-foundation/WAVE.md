@@ -151,6 +151,7 @@ before broader chain coverage begins.
 | 132 | Los Angeles pharmacy layer | complete | Added reviewed California drugstore rows and found all seven LA / Inland Empire fields carry exact-brand pharmacy signal, with four multi-brand health-errand fields. |
 | 133 | Los Angeles pre-scale field stack | complete | Combined four LA layers into pre-complex field types, preserving five postal retry gates and identifying two fully comparable fields. |
 | 134 | Los Angeles retail-complex confirmation | complete | Added target-limited California retail-complex confirmation, found all seven LA fields have named complex structure, and upgraded the LA stack to type-discovery comparable. |
+| 135 | Los Angeles type-discovery profile | complete | Added seven confirmed LA / Inland Empire rows to the cross-metro type-discovery profile, bringing the generated profile to 35 rows. |
 
 ## Success criteria
 

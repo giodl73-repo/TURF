@@ -3016,7 +3016,7 @@ fn validate_metro_context_status(value: &str, line_number: usize) -> Result<(), 
 
 fn validate_type_discovery_region(value: &str, line_number: usize) -> Result<(), String> {
     match value {
-        "washington" | "atlanta" | "chicago" | "dallas" => Ok(()),
+        "washington" | "atlanta" | "chicago" | "dallas" | "los_angeles" => Ok(()),
         _ => Err(format!("line {line_number}: invalid region")),
     }
 }
@@ -3044,6 +3044,7 @@ fn validate_type_discovery_readiness_tier(value: &str, line_number: usize) -> Re
         | "needs_more_layers_before_interpretation"
         | "type_discovery_comparable"
         | "type_discovery_comparable_retry_gated_layer"
+        | "type_discovery_comparable_retry_gated_postal"
         | "type_discovery_partial"
         | "source_limited_retry_or_add_layers" => Ok(()),
         _ => Err(format!("line {line_number}: invalid readiness_tier")),
@@ -3885,10 +3886,11 @@ region,field_id,label,anchor_field,profile_basis,dimensions,observed_layers,sour
 chicago,oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,pre_scale_6_layer_stack,6,4,1,1,0.667,0.167,confirmed_postal_big_box_edge_field,usable_for_type_discovery,usable_for_type_discovery,type_discovery_comparable
 atlanta,camp-creek,Camp Creek field,airport_edge_power_center,full_11_dimension_context,11,3,3,5,0.273,0.273,finance_car_trip_wellness_airport_edge_field,usable_comparison_field,usable_for_cross_metro_comparison,type_discovery_partial
 dallas,downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,pre_scale_5_layer_stack,5,5,0,0,1.0,0.0,urban_postal_grocery_health_big_box_village_field,type_discovery_comparable,no_source_gates,type_discovery_comparable
+los_angeles,downtown-koreatown-midwilshire,Downtown LA / Koreatown / Mid-Wilshire field,urban_core_mixed_service_field,pre_scale_5_layer_stack,5,5,0,0,1.0,0.0,confirmed_dense_postal_target_grocery_health_complex,type_discovery_comparable,no_source_gates,type_discovery_comparable
 ";
         let rows = parse_cross_metro_type_discovery_profile(csv).expect("profile parses");
 
-        assert_eq!(rows.len(), 3);
+        assert_eq!(rows.len(), 4);
         assert_eq!(rows[0].region, "chicago");
         assert_eq!(rows[0].dimensions, 6);
         assert_eq!(rows[0].comparison_tier, "type_discovery_comparable");
@@ -3896,7 +3898,9 @@ dallas,downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_se
         assert_eq!(rows[1].comparison_tier, "type_discovery_partial");
         assert_eq!(rows[2].region, "dallas");
         assert_eq!(rows[2].profile_basis, "pre_scale_5_layer_stack");
-        assert_eq!(validate_cross_metro_type_discovery_profile(csv), Ok(3));
+        assert_eq!(rows[3].region, "los_angeles");
+        assert_eq!(rows[3].profile_basis, "pre_scale_5_layer_stack");
+        assert_eq!(validate_cross_metro_type_discovery_profile(csv), Ok(4));
     }
 
     #[test]
