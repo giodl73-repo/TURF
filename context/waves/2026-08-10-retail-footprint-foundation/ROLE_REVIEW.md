@@ -4149,3 +4149,35 @@ Status: pass with next-output request.
 
 The next pulse should add grocery or pharmacy for LA so Target-only fields can
 be distinguished from fuller everyday service grids.
+
+## Pulse 131 Los Angeles Grocery Layer
+
+### Market Analyst
+
+Status: pass.
+
+The layer resolves the key ambiguity from mass retail: Target-only LA fields
+are still everyday-service rich because grocery depth is high.
+
+### Market Geographer
+
+Status: pass.
+
+All seven fields show multi-brand grocery grids, but their compositions differ:
+dense/core and coastal fields mix mainline and premium/specialty brands, while
+the inland fields lean more toward Stater Bros., Food 4 Less, Albertsons, ALDI,
+Smart & Final, and Vons.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review layer excludes attached service rows and brand/name mismatches before
+promotion, including the caught Vons-branded `Vermont` false positive.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add pharmacy or retail-complex signal so the three LA
+store layers can start forming pre-scale field-stack types.
