@@ -152,6 +152,7 @@ before broader chain coverage begins.
 | 133 | Los Angeles pre-scale field stack | complete | Combined four LA layers into pre-complex field types, preserving five postal retry gates and identifying two fully comparable fields. |
 | 134 | Los Angeles retail-complex confirmation | complete | Added target-limited California retail-complex confirmation, found all seven LA fields have named complex structure, and upgraded the LA stack to type-discovery comparable. |
 | 135 | Los Angeles type-discovery profile | complete | Added seven confirmed LA / Inland Empire rows to the cross-metro type-discovery profile, bringing the generated profile to 35 rows. |
+| 136 | Next scale decision after Los Angeles | complete | Chose LA postal source resolution plus QSR as the next gate before adding a sixth metro, with auto parts held as the follow-on trade/corridor layer. |
 
 ## Success criteria
 

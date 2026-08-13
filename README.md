@@ -462,6 +462,9 @@ The Los Angeles / Inland Empire pre-scale field stack is:
 The Los Angeles / Inland Empire type-discovery synthesis is:
 `reports\ret-los-angeles-type-discovery-synthesis.md`.
 
+The post-Los Angeles scale decision is:
+`reports\ret-next-scale-decision-after-la.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

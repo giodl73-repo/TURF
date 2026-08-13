@@ -4317,3 +4317,38 @@ Status: pass with next-output request.
 The next pulse should produce a next-scale decision from the 35-row profile:
 either retry LA postal gates, add another common industry layer, or choose the
 next metro based on what the profile still cannot distinguish.
+
+## Pulse 136 Next Scale Decision After Los Angeles
+
+### Market Analyst
+
+Status: pass.
+
+The decision correctly avoids sixth-metro expansion while the newest metro still
+has visible postal retry gates. It keeps the next work bounded to LA and to a
+common, auditable public category.
+
+### Market Geographer
+
+Status: pass.
+
+QSR is the right next spatial test because it can reveal daily-trip corridors
+inside the same LA textures: dense urban, affluent office-retail, valley mall
+service, coastal mall service, inland freeway power center, inland plaza edge,
+and port/coastal mall service.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report does not collapse Overpass timeouts into absence claims. It requires
+retry or documented alternate-source evidence before final postal ranking, and
+keeps QSR and auto parts framed as public commercial access layers.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should run the five LA post-office retries or record alternate
+source status, then add the LA QSR layer across the same seven fields and state
+whether QSR changes any emerging field labels.
