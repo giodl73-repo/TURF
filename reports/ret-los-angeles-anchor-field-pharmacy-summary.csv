@@ -1,0 +1,8 @@
+field_id,label,anchor_field,pharmacy_rows,pharmacy_brands,pharmacy_brand_list,pharmacy_names,pharmacy_signal
+downtown-koreatown-midwilshire,Downtown LA / Koreatown / Mid-Wilshire field,urban_core_mixed_service_field,10,2,CVS Pharmacy; Walgreens,CVS; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy y más; Walgreens,multi_brand_health_errand_field
+glendale-burbank,Glendale / Burbank field,valley_media_retail_edge_field,6,1,CVS Pharmacy,CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy,observed
+west-la-century-city-culver,West LA / Century City / Culver City field,affluent_office_retail_service_field,5,2,CVS Pharmacy; Walgreens,CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; Walgreens,multi_brand_health_errand_field
+south-bay-torrance,South Bay / Torrance field,coastal_suburban_mall_auto_service_field,3,1,CVS Pharmacy,CVS Pharmacy; CVS Pharmacy; CVS Pharmacy,observed
+ontario-rancho-cucamonga,Ontario Mills / Rancho Cucamonga field,inland_freeway_power_center_field,2,1,CVS Pharmacy,CVS Pharmacy; CVS Pharmacy,observed
+riverside-tyler-corona,Riverside / Tyler / Corona edge field,inland_secondary_core_growth_field,6,2,CVS Pharmacy; Walgreens,CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; Walgreens; Walgreens,multi_brand_health_errand_field
+long-beach-lakewood,Long Beach / Lakewood field,port_coastal_grid_mall_service_field,9,2,CVS Pharmacy; Rite Aid,CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; Rite Aid,multi_brand_health_errand_field

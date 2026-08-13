@@ -4181,3 +4181,37 @@ Status: pass with next-output request.
 
 The next pulse should add pharmacy or retail-complex signal so the three LA
 store layers can start forming pre-scale field-stack types.
+
+## Pulse 132 Los Angeles Pharmacy Layer
+
+### Market Analyst
+
+Status: pass.
+
+The layer adds health-errand texture to the LA stack and shows every selected
+field has exact-brand pharmacy signal.
+
+### Market Geographer
+
+Status: pass.
+
+The multi-brand pharmacy fields are not identical to the mass-retail fields.
+West LA is Target-only in mass retail but multi-brand in pharmacy, while
+Glendale/Burbank is multi-brand in mass retail but CVS-only in this exact-brand
+drugstore layer.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review layer excludes clinics, specialty rows, and brand/name mismatches
+before promotion. The caught Walgreens-branded `Victory Community Pharmacy` and
+`Community` rows are excluded.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should combine the LA layers into a pre-scale field stack or add
+retail-complex signal first if mall/power-center confirmation is needed before
+typing.

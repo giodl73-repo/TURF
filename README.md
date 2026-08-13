@@ -450,6 +450,9 @@ The Los Angeles / Inland Empire mass-retail anchor-field readout is:
 The Los Angeles / Inland Empire grocery anchor-field readout is:
 `reports\ret-los-angeles-anchor-field-grocery-summary.md`.
 
+The Los Angeles / Inland Empire pharmacy anchor-field readout is:
+`reports\ret-los-angeles-anchor-field-pharmacy-summary.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

@@ -148,6 +148,7 @@ before broader chain coverage begins.
 | 129 | Los Angeles post-office layer | complete | Added the first Los Angeles / Inland Empire postal civic layer, promoted observed USPS-like rows in two fields, excluded private counters, and preserved five Overpass source gates. |
 | 130 | Los Angeles mass-retail layer | complete | Added reviewed California Target/Walmart/Costco/Sam's Club rows and found a Target-only dense/affluent split versus multi-brand valley, coastal, inland, and port/coastal fields. |
 | 131 | Los Angeles grocery layer | complete | Added reviewed California grocery rows and found all seven LA / Inland Empire fields carry multi-brand grocery-grid signal. |
+| 132 | Los Angeles pharmacy layer | complete | Added reviewed California drugstore rows and found all seven LA / Inland Empire fields carry exact-brand pharmacy signal, with four multi-brand health-errand fields. |
 
 ## Success criteria
 
