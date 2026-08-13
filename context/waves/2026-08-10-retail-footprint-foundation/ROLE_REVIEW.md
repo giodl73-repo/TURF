@@ -3302,3 +3302,37 @@ Status: pass with next-output request.
 The stack is now strong enough for a Chicago type-discovery synthesis. The next
 modeling step should either create that synthesis or retry civic/wellness OSM
 with a simplified strategy before any final cross-metro ranking.
+
+## Pulse 106 Chicago Type-Discovery Synthesis
+
+### Market Analyst
+
+Status: pass.
+
+The synthesis is the right output after the Chicago stack. It names the
+observable typed fields without pretending the source-gated OSM dimensions have
+been resolved.
+
+### Market Geographer
+
+Status: pass.
+
+The field names remain bounded and place-aware. Loop, Lincoln Park, Old
+Orchard, Oakbrook, Woodfield, Ford City, and Orland Square keep distinct
+geographies instead of being reduced to city/suburb labels.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report clearly distinguishes Overture exact-brand layers, target-limited
+retail-complex review, checked absences, and OSM source gates. It does not turn
+partial public evidence into private territory claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next reusable step should be an executable synthesis contract across
+Washington, Atlanta, and Chicago. Chicago OSM retry remains useful, but the
+cross-metro contract would better support scaling to more urban areas.

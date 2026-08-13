@@ -394,6 +394,9 @@ The Chicago anchor-field retail-complex readout is:
 The Chicago pre-scale field stack readout is:
 `reports\ret-chicago-pre-scale-field-stack.md`.
 
+The Chicago type-discovery synthesis is:
+`reports\ret-chicago-type-discovery-synthesis.md`.
+
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.
 
