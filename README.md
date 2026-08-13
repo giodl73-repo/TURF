@@ -64,6 +64,7 @@ python scripts\fetch_osm_post_offices.py --target-id cumberland-vinings --target
 python scripts\fetch_osm_civic.py --facility-type library --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-library-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type library --target-id buckhead-lenox-phipps --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\osm-library-atlanta-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 2 --request-timeout-seconds 30 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type transit_center --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-transit-center-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
+python scripts\fetch_osm_civic.py --facility-type transit_center --target-id perimeter-wide --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\osm-transit-center-atlanta-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type park --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-park-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type park --target-id buckhead-lenox-phipps --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-park-atlanta-buckhead-lenox-phipps.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type bank_credit_union --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-bank-credit-union-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
@@ -77,6 +78,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-transit-summary.sql"
+duckdb -c ".read queries/ret-atlanta-anchor-field-transit-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-park-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-park-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-bank-credit-union-summary.sql"
@@ -348,6 +350,9 @@ The Atlanta anchor-field library readout is:
 
 The Atlanta anchor-field park readout is:
 `reports\ret-atlanta-anchor-field-park-summary.md`.
+
+The Atlanta anchor-field transit readout is:
+`reports\ret-atlanta-anchor-field-transit-summary.md`.
 
 The Washington anchor-field retail-complex extraction plan is:
 `docs\research\overture-retail-complex-washington-anchor-fields-extraction-2026-07-22.md`.

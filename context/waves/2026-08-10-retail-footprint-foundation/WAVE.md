@@ -103,6 +103,7 @@ before broader chain coverage begins.
 | 84 | Atlanta post-office civic layer | complete | Added reviewed Atlanta OSM post-office rows, excluded private shipping counters, and recorded Camp Creek/Northlake as source-gated timeouts. |
 | 85 | Atlanta library civic layer | complete | Added Buckhead Library as the first Atlanta library signal and recorded the remaining fields as source-gated Overpass timeouts. |
 | 86 | Atlanta park civic layer | complete | Added Buckhead and North Point park/open-space rows, preserving five unresolved fields as source-gated Overpass timeouts. |
+| 87 | Atlanta transit civic layer | complete | Added Perimeter MARTA station rows and preserved six unresolved fields as source-gated Overpass timeouts. |
 
 ## Success criteria
 

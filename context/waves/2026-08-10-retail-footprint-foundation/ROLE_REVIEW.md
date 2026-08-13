@@ -2639,3 +2639,37 @@ Status: pass with next-output request.
 Atlanta now needs either transit centers to finish the civic group, or a
 cross-layer Atlanta context summary that makes the partial civic stack visible
 before moving into everyday anchors.
+
+## Pulse 87 Atlanta Transit Civic Layer
+
+### Market Analyst
+
+Status: pass.
+
+Perimeter now has a clear mobility signature. Four MARTA station rows inside
+the widened edge-city field make it different from Buckhead's civic/service
+stack and North Point's postal/open-space stack.
+
+### Market Geographer
+
+Status: pass.
+
+The field-level distinction is useful: Perimeter's transit evidence belongs to
+the widened edge-city geography, not a narrow mall-core box. Six source-gated
+fields remain visible and are not treated as transit absences.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The checked rows preserve OSM source, date, ODbL rights status, and review
+status. The unresolved fields are explicit source gates tied to target-only
+Overpass timeouts.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The four civic dimensions should now be summarized together for Atlanta before
+starting everyday anchors. The summary should expose observed dimensions,
+source-gated dimensions, and emerging civic archetypes per field.
