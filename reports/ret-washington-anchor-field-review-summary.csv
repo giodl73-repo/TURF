@@ -1,0 +1,7 @@
+target_id,target_label,reviewed_rows,packet_ready_rows,duplicate_rows,false_positive_rows,packet_ready_complexes
+bellevue-core,Bellevue core mall field,13,3,0,10,Ashwood Plaza; Bellevue Plaza Shopping Center; Plaza East
+factoria,Bellevue Factoria field,6,1,1,4,The Marketplace at Factoria
+southcenter-tukwila,Southcenter / Tukwila mall field,18,4,3,11,Parkway Plaza; Parkway Square Shopping Center; Southcenter Mall; Southcenter Plaza
+tacoma-mall,Tacoma Mall field,14,3,2,9,Lincoln Plaza Shopping Center; Tacoma Mall Plaza; Tacoma Mall Shopping Ctr
+kitsap-mall,Kitsap Mall / Silverdale field,6,3,2,1,KITSAP MALL; Silverdale Plaza; Silverdale Shopping Center
+south-hill-puyallup,South Hill / Puyallup field,6,2,2,2,Cafaro SOUTH HILL MALL (PUYALLUP WA); SOUTH HILL MALL

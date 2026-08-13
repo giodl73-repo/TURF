@@ -1882,3 +1882,37 @@ Status: pass with next-output request.
 
 The next pulse should create the reviewed anchor-field complex layer and then
 test how it changes Anchor Profile v0.
+
+## Pulse 65 Washington Anchor-Field Review
+
+### Market Analyst
+
+Status: pass.
+
+The review promotes 16 packet-ready complex rows and gives Southcenter, Tacoma,
+Kitsap, and South Hill stronger anchor evidence.
+
+### Market Geographer
+
+Status: pass with source caveat.
+
+The reviewed layer fits TURF's standard store shape, while the target-level
+summary preserves which bounded field produced each reviewed signal. Bellevue
+core is still under-captured because Bellevue Square and Lincoln Square did not
+surface as packet-ready rows in the statewide candidate source.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The raw candidate layer remains unchanged. Review decisions are recorded as
+`packet_ready`, `duplicate_candidate`, or `brand_false_positive` in a separate
+reviewed fixture that passes the existing validator.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next profile pulse should compare Anchor Profile v0 before and after adding
+these reviewed anchor-field complexes, while keeping Bellevue core flagged as a
+known acquisition gap.

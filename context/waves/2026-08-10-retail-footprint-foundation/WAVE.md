@@ -81,6 +81,7 @@ before broader chain coverage begins.
 | 62 | Washington anchor-field extraction query | complete | Added the target-bounded Overture retail-complex extraction query and review boundary notes for Washington anchor fields. |
 | 63 | Washington anchor-field extraction attempt | complete | Attempted the bounded Overture extraction, optimized the query, and recorded timeout evidence without keeping partial candidate rows. |
 | 64 | Washington anchor-field local candidates | complete | Assigned the existing statewide Washington complex candidates to anchor fields, producing a 63-row review candidate set. |
+| 65 | Washington anchor-field review | complete | Reviewed the bounded candidate set into 16 packet-ready retail-complex rows and documented missing Bellevue core mall coverage. |
 
 ## Success criteria
 
