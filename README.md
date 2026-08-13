@@ -456,6 +456,9 @@ The Dallas/Fort Worth type-discovery synthesis is:
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.
 
+The Atlanta source-resolution pass is:
+`reports\ret-atlanta-source-resolution-pass.md`.
+
 The Atlanta anchor-field library readout is:
 `reports\ret-atlanta-anchor-field-library-summary.md`.
 

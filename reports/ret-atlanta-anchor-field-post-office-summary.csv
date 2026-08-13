@@ -3,6 +3,6 @@ cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,7,3,1,4,1,Akers
 buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,4,3,0,1,3,Buckhead Post Office; Lenox Square Post Office; Pharr Road Post Office,observed,""
 perimeter-wide,Perimeter widened field,edge_city_mall_field,4,4,1,0,1,Chamblee Post Office; Dunwoody Post Office; Perimeter Center Post Office; Post Office,observed,""
 camp-creek,Camp Creek field,airport_edge_power_center,0,0,0,0,0,"",source_gated,overpass_timeout
-northlake,Northlake field,legacy_suburban_mall_node,0,0,0,0,0,"",source_gated,overpass_timeout
+northlake,Northlake field,legacy_suburban_mall_node,3,0,0,3,0,"",checked_absent,""
 north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,4,1,1,3,1,Alpharetta Post Office,observed,""
 decatur-emory,Decatur / Emory field,inner_service_village,5,2,1,3,1,Decatur Post Office; Druid Hills Post Office,observed,""

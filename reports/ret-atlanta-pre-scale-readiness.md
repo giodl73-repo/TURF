@@ -31,7 +31,7 @@ source-gated dimensions.
 | Buckhead / Lenox / Phipps | 6 | 5 | 0 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Perimeter widened | 3 | 7 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Camp Creek | 1 | 9 | 1 | `source_limited_field` | `retry_or_alternate_source_before_ranking` |
-| Northlake | 1 | 10 | 0 | `source_limited_field` | `retry_or_alternate_source_before_ranking` |
+| Northlake | 1 | 9 | 1 | `source_limited_field` | `retry_or_alternate_source_before_ranking` |
 | North Point / Alpharetta widened | 4 | 6 | 1 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 | Decatur / Emory | 4 | 7 | 0 | `partial_profile_field` | `usable_for_type_discovery_not_final_ranking` |
 
@@ -43,7 +43,8 @@ The Atlanta pass is already strong enough to learn typed enclave shapes:
 - Buckhead / Lenox / Phipps: civic/open-space/small-trade mall field.
 - Perimeter widened: postal/transit/health edge-city field.
 - Camp Creek: wellness-only partial context field.
-- Northlake: health-only partial context field.
+- Northlake: partial source-gated context field with checked post-office
+  absence and observed pharmacy.
 - North Point / Alpharetta widened: open-space/health/wellness edge-city
   field.
 - Decatur / Emory: finance/car-trip/health service village.
@@ -65,6 +66,10 @@ timeouts:
 - bank / credit union
 - gas / convenience
 - some civic layers for Camp Creek and Northlake
+
+Northlake's post-office layer is no longer a timeout, but the result did not
+produce a packet-ready USPS row. That is useful negative evidence, not an
+observed civic anchor.
 
 ## Next Step
 

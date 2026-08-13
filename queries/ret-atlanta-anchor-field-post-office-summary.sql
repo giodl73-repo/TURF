@@ -20,9 +20,34 @@ COPY (
             operator,
             review_status,
             review_reason
-        FROM read_csv_auto(
+        FROM read_csv(
             'fixtures/civic/osm-post-office-atlanta-anchor-fields-review-2026-08-13.csv',
-            all_varchar = true
+            delim = ',',
+            quote = '"',
+            escape = '"',
+            header = true,
+            auto_detect = false,
+            columns = {
+                'target_id': 'VARCHAR',
+                'target_label': 'VARCHAR',
+                'anchor_field': 'VARCHAR',
+                'facility_type': 'VARCHAR',
+                'facility_id': 'VARCHAR',
+                'facility_name': 'VARCHAR',
+                'operator': 'VARCHAR',
+                'street_address': 'VARCHAR',
+                'city': 'VARCHAR',
+                'state': 'VARCHAR',
+                'postal_code': 'VARCHAR',
+                'latitude': 'VARCHAR',
+                'longitude': 'VARCHAR',
+                'source': 'VARCHAR',
+                'source_date': 'VARCHAR',
+                'license_status': 'VARCHAR',
+                'rights_status': 'VARCHAR',
+                'review_status': 'VARCHAR',
+                'review_reason': 'VARCHAR'
+            }
         )
     ),
     gates AS (

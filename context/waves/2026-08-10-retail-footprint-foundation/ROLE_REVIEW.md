@@ -3755,3 +3755,35 @@ Status: pass with next-output request.
 This is the first reduction of the Chicago gate load. The next source pass
 should either retry another Chicago post-office/gym field or move to Atlanta's
 heavier civic source gates.
+
+## Pulse 119 Atlanta Northlake Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+Northlake did not become stronger, but it became clearer. Moving one layer from
+source-gated to checked-absent improves the reliability of the Atlanta profile.
+
+### Market Geographer
+
+Status: pass.
+
+The Northlake field remains a legacy suburban mall node with weak resolved
+civic evidence. This should be interpreted as field texture, not as a failed
+metro.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass preserves private shipping counters as excluded audit rows and does
+not promote a FedEx-operated post-office-tagged row as USPS evidence.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Northlake's source-gated count dropped from 10 to 9. The next Atlanta pass
+should target Camp Creek post office or a layer likely to reduce multiple
+source gates at once.
