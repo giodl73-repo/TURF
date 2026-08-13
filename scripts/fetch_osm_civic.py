@@ -46,6 +46,7 @@ OSM_TAGS = {
         ("amenity", "fuel"),
         ("shop", "convenience"),
     ],
+    "hardware": [("shop", "hardware")],
     "library": [("amenity", "library")],
     "park": [
         ("leisure", "park"),
@@ -68,7 +69,7 @@ def build_query(target: dict[str, str], facility_type: str) -> str:
     bbox = f"{min_lat},{min_lon},{max_lat},{max_lon}"
     selectors = []
     for key, value in OSM_TAGS[facility_type]:
-        if facility_type == "park":
+        if facility_type in {"hardware", "park"}:
             selectors.extend(
                 [
                     f'  node["{key}"="{value}"]["name"]({bbox});',
@@ -147,6 +148,8 @@ def review_reason(tags: dict, facility_type: str) -> str:
             return "unnamed_trip_anchor"
         if "charging" in name and "station" in name:
             return "ev_charging_candidate"
+    if facility_type == "hardware" and not name:
+        return "unnamed_trade_anchor"
     if facility_type == "post_office" and (
         "ups store" in name
         or "ups store" in operator
@@ -187,6 +190,7 @@ def row_from_element(
         "private_shipping_counter",
         "unnamed_open_space",
         "unnamed_trip_anchor",
+        "unnamed_trade_anchor",
         "unnamed_transit_point",
     }:
         status = "exclude"
@@ -236,6 +240,7 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
                 "private_shipping_counter",
                 "unnamed_open_space",
                 "unnamed_trip_anchor",
+                "unnamed_trade_anchor",
                 "unnamed_transit_point",
             }
             else "packet_ready"

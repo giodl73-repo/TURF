@@ -95,6 +95,7 @@ before broader chain coverage begins.
 | 76 | Anchor field context archetypes | complete | Summarized checked civic/everyday dimensions into reusable field archetypes before adding more everyday-service layers. |
 | 77 | Bank/credit union everyday anchor layer | complete | Added reviewed OSM/Overpass finance errand rows and refreshed context archetypes with multi-errand and finance-field labels. |
 | 78 | Gas/convenience car-trip layer | complete | Added reviewed OSM/Overpass gas-convenience rows and separated downtown finance density from auto-oriented service texture. |
+| 79 | Hardware small-trade layer | complete | Added reviewed OSM/Overpass hardware rows and exposed Southcenter/Tacoma small-trade edges versus Bellevue/Factoria absence. |
 
 ## Success criteria
 

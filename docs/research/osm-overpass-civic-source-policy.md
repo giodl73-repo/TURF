@@ -20,6 +20,8 @@ signals when the fixture preserves source, date, license, and review status.
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfuel
 - Convenience shop tag:
   https://wiki.openstreetmap.org/wiki/Tag:shop%3Dconvenience
+- Hardware shop tag:
+  https://wiki.openstreetmap.org/wiki/Tag:shop%3Dhardware
 - Post-office tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpost_office
 - Library tag:
@@ -86,3 +88,7 @@ as a first car-trip and quick-errand proxy. Unnamed trip anchors and EV charging
 features remain in the audit fixture but are excluded with
 `review_reason = unnamed_trip_anchor` or
 `review_reason = ev_charging_candidate`.
+
+Hardware rows use named OSM hardware-shop features as a first small-trade and
+repair-errand proxy. Unnamed hardware rows remain in the audit fixture but are
+excluded with `review_reason = unnamed_trade_anchor`.

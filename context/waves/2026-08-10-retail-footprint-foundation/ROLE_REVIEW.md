@@ -2363,3 +2363,38 @@ The next useful source gates are dollar stores, hardware, laundromats, and gyms.
 Together they can test value errands, small-trade supply, household service,
 and wellness-service texture before the model scales to Seattle city and other
 metros.
+
+## Pulse 79 Hardware Small-Trade Layer
+
+### Market Analyst
+
+Status: pass.
+
+Hardware is sparse but useful. It adds a small-trade signal to Southcenter /
+Tukwila, Tacoma Mall, Kitsap Mall / Silverdale, and South Hill / Puyallup while
+remaining absent in Bellevue core and Factoria.
+
+### Market Geographer
+
+Status: pass.
+
+The absence in Bellevue core and Factoria is meaningful because the same fields
+have finance and gas/convenience rows. The layer sharpens the distinction
+between office/downtown errand fields and mall/suburban service fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows use named OSM hardware-shop features with ODbL rights status preserved.
+The fetcher excludes unnamed trade anchors and avoids broad relation queries for
+this first reviewed small-trade proxy.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The remaining pre-scale everyday gates are dollar stores, laundromats, and
+gyms. Dollar stores should be next if the goal is value-errand texture;
+laundromats and gyms should follow to test household-service and wellness
+service fields.

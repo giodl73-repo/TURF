@@ -1,0 +1,5 @@
+field_id,label,anchor_field,hardware_rows,operator_count,address_incomplete_rows,hardware_names
+southcenter-tukwila,Southcenter / Tukwila mall field,south_king_regional_mall_field,3,3,2,R&B Building Supply; Rockler Woodworking & Hardware; Tuff Shed
+tacoma-mall,Tacoma Mall field,south_sound_regional_mall_field,3,3,0,Rosen Plumbing Supply Co; Tacoma Electric Supply Inc.; Tacoma Screw Products
+kitsap-mall,Kitsap Mall / Silverdale field,kitsap_regional_mall_field,1,1,0,Harbor Freight Tools
+south-hill-puyallup,South Hill / Puyallup field,pierce_suburban_mall_field,1,1,0,Harbor Freight Tools
