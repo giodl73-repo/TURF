@@ -155,6 +155,7 @@ before broader chain coverage begins.
 | 136 | Next scale decision after Los Angeles | complete | Chose LA postal source resolution plus QSR as the next gate before adding a sixth metro, with auto parts held as the follow-on trade/corridor layer. |
 | 137 | Los Angeles QSR layer | complete | Added reviewed California QSR and seven LA / Inland Empire field summaries, while preserving five post-office gates after Overpass retry failures. |
 | 138 | Los Angeles auto-parts layer | complete | Added reviewed California auto parts, found all seven LA fields have multi-brand auto-service corridors, and separated Riverside/Corona plus Long Beach/Lakewood as deepest trade/car-service fields. |
+| 139 | Sidecar standardization decision | complete | Standardized QSR and auto parts as pre-scale sidecars, kept them out of the core profile for now, and set Chicago/Dallas sidecar backfill as the next gate. |
 
 ## Success criteria
 

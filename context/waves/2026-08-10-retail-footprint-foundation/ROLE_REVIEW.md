@@ -4421,3 +4421,36 @@ Status: pass with next-output request.
 The next pulse should decide whether QSR and auto parts become standard
 pre-scale sidecar dimensions. If yes, backfill Chicago and Dallas sidecars
 before changing the core cross-metro profile or adding a sixth metro.
+
+## Pulse 139 Sidecar Standardization Decision
+
+### Market Analyst
+
+Status: pass.
+
+The decision preserves comparability by standardizing QSR and auto parts as
+sidecars without immediately changing the core 35-row profile contract.
+
+### Market Geographer
+
+Status: pass.
+
+The LA evidence justifies standardization: QSR measures daily-trip saturation,
+while auto parts measures trade and car-service corridor depth. They should be
+available for cross-metro comparison before another metro is added.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The decision keeps sidecars as public commercial footprint evidence and requires
+reviewed fixtures to pass `validate-store-review` before interpretation. It
+does not create official chain-territory or demographic claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should backfill Chicago QSR using the existing Chicago anchor
+field targets, then decide whether Chicago auto parts can use the same query
+template before moving to Dallas/Fort Worth.
