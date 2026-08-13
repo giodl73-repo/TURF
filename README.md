@@ -423,6 +423,9 @@ The cross-metro type-discovery profile is:
 The scale goal before adding more urban areas is:
 `reports\ret-scale-before-more-urban-areas.md`.
 
+The current next-scale decision is:
+`reports\ret-next-scale-decision.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

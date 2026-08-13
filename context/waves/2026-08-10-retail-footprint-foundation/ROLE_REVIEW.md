@@ -3687,3 +3687,37 @@ Status: pass with next-output request.
 The next decision should come from the expanded cross-metro profile: either
 resolve civic/postal source gates, add another common-store intersection, or
 scale to a fifth metro with the current type-discovery contract.
+
+## Pulse 117 Next Scale Decision
+
+### Market Analyst
+
+Status: pass.
+
+The report makes the next goal explicit: fix source quality before buying more
+metro breadth. Four metros already expose enough typed field variation for the
+current research question.
+
+### Market Geographer
+
+Status: pass.
+
+The decision avoids treating all large metros as interchangeable. The next
+fifth-metro candidates are framed by settlement pattern: polycentric freeway,
+Sun Belt growth grid, twin-core, or coastal linear fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The recommended path is source-resolution, not silent interpolation. Atlanta
+and Chicago source gates must be retried, replaced with alternate public
+sources, or preserved as explicit limitations.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next execution should reduce Atlanta and Chicago civic/postal gates before
+refreshing the cross-metro profile. That will make later catchment and ranking
+work less dependent on uneven OSM response quality.
