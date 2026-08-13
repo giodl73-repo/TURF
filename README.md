@@ -435,6 +435,9 @@ The scale goal before adding more urban areas is:
 The current next-scale decision is:
 `reports\ret-next-scale-decision.md`.
 
+The fifth-metro scale decision is:
+`reports\ret-fifth-metro-scale-decision.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

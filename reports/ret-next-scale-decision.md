@@ -24,42 +24,28 @@ The current profile has 28 field rows across four metros:
 
 ## Decision
 
-The next best goal is source-resolution before fifth-metro scale.
+TURF is now ready to add a fifth metro for type discovery.
 
-TURF should not add a fifth metro yet. The four-metro profile already has
-enough variety to compare typed retail fields. What it lacks is balanced source
-quality across metros:
+The earlier decision was source-resolution before fifth-metro scale. That work
+has been done enough to open the gate:
 
 - Washington has the full 11-dimension clean baseline.
-- Dallas/Fort Worth has enough common-store and postal signal to compare immediately.
-- Chicago has strong non-OSM store signal but unresolved OSM civic/wellness
-  source gates in several fields.
-- Atlanta has the biggest source-gate load, despite useful partial fields.
+- Chicago has seven comparable pre-scale fields.
+- Dallas/Fort Worth has eight comparable pre-scale fields.
+- Atlanta has no source-limited rows, and Camp Creek plus Northlake are now
+  usable comparison fields even though Atlanta is not ready for final ranking.
 
-The best next move is therefore a civic/postal source-resolution pass for
-Atlanta and Chicago, starting with post offices and one everyday civic/service
-layer that can be checked consistently.
+The detailed fifth-metro decision is:
 
-The first Atlanta source-resolution passes support that goal. Post office is no
-longer source-gated in Atlanta, Northlake now has observed library, finance,
-gas/convenience, hardware, pharmacy, and gym rows, Perimeter has dense gym
-signal, and Camp Creek now has finance, gas/convenience, and wellness signal
-with several checked civic/service absences. Atlanta no longer has a
-source-limited comparison row, but every Atlanta field is still source-gated
-enough to avoid final ranking.
+```text
+reports/ret-fifth-metro-scale-decision.md
+```
 
-The Old Orchard source-resolution pass also improves Chicago: Old Orchard now
-has observed USPS and gym/wellness anchors, so Chicago has no remaining
-type-discovery partial row.
+## Why Add Another Metro Now
 
-The Las Colinas source-resolution pass improves Dallas/Fort Worth in the same
-way: Las Colinas now has postal signal, leaving all eight Dallas/Fort Worth
-fields comparable for type discovery.
-
-## Why Not Add Another Metro Yet
-
-Adding a fifth metro would add breadth, but not fix the main uncertainty. The
-current profile already proves that common stores can create typed fields:
+Adding a fifth metro now adds needed breadth while preserving the source-quality
+distinction. The current profile already proves that common stores can create
+typed fields:
 
 - urban postal/grocery/health fields,
 - affluent mall and complex fields,
@@ -67,56 +53,48 @@ current profile already proves that common stores can create typed fields:
 - town-center fields,
 - mid-cities fields,
 - secondary-core fields,
-- airport-edge and office-edge partial fields.
+- airport-edge and office-edge fields,
+- legacy mall everyday-service fields.
 
-The weaker evidence is not the number of metros. It is now concentrated in
-Atlanta, whose full 11-dimension rows still carry enough Overpass gates to make
-final ranking or refined archetype comparison premature.
+The weaker evidence is now concentrated in Atlanta, whose full 11-dimension
+rows still carry enough Overpass gates to make final ranking premature. That is
+acceptable for fifth-metro type discovery because the gates are explicit.
 
 ## Near-Term Goal
 
 Set the next self-executing goal as:
 
 ```text
-Run one more Atlanta civic/everyday source-resolution pass, then refresh the
-cross-metro profile before choosing the fifth metro.
+Create Los Angeles / Inland Empire anchor-field targets and start the fifth
+metro pre-scale stack.
 ```
 
 Minimum useful output:
 
-- a source-resolution strategy note,
-- refreshed Atlanta post-office and one everyday civic/service layer, or an
-  explicit source-gate fixture if the retry fails,
-- a decision note on whether the remaining Atlanta source gates are accepted as
-  source limits for fifth-metro scale,
-- refreshed pre-scale/profile reports,
+- a Los Angeles / Inland Empire target fixture,
+- a target-gate report explaining each bounded field,
+- first-layer acquisition path for post office, grocery, mass retail, pharmacy,
+  and retail complex,
+- refreshed cross-metro profile after first comparable layers,
 - passing `validate-type-discovery-profile`.
 
-## Candidate Source Layers
+## Candidate First Layers
 
-The best candidates are common, non-contentious, and territory-revealing:
+The best first layers are common, non-contentious, and already proven in the
+Dallas/Fort Worth pre-scale stack:
 
 | Layer | Why It Helps |
 |---|---|
 | Post office / USPS | Tests the original postal-address terrain thesis directly. |
-| Library | Civic-service signal with stable public locations. |
-| Transit center | Separates mobility-rich cores and edge nodes from car-only fields. |
-| Parks/open space | Distinguishes lived neighborhood fields from retail-only power fields. |
-| Bank / credit union | Everyday errand density without moving into contentious demographics. |
-| Gas / convenience | Car-trip texture for edge, airport, and suburban fields. |
+| Grocery | Gives the strongest everyday-service baseline. |
+| Mass retail | Separates big-box fields from neighborhood/town-center fields. |
+| Pharmacy | Adds health-errand texture without using contentious demographics. |
+| Retail complex | Confirms mall, lifestyle-center, and power-center structure. |
 
 ## Scale Trigger
 
-TURF should add a fifth metro after either:
+The fifth-metro trigger is satisfied for type discovery. The selected next
+metro should add a new settlement pattern, not just another large city.
 
-- Atlanta and Chicago each reduce at least two source-gated dimensions, or
-- alternate source strategy is documented and the remaining gates are accepted
-  as source limits rather than hidden absences.
-
-At that point the next metro should be chosen to add a new settlement pattern,
-not just another large city. Good candidates would be:
-
-- Los Angeles / Inland Empire for polycentric freeway retail fields,
-- Phoenix for Sun Belt grid/growth fields,
-- Minneapolis / St. Paul for twin-core and first-ring mall fields,
-- Miami / Fort Lauderdale for coastal linear and tourist/service fields.
+Recommendation: Los Angeles / Inland Empire for polycentric freeway retail
+fields.

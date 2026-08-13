@@ -143,6 +143,7 @@ before broader chain coverage begins.
 | 124 | Chicago Old Orchard source resolution | complete | Retried Old Orchard post office and gym layers, promoted USPS and wellness rows, and moved Chicago to seven comparable fields. |
 | 125 | Dallas Las Colinas source resolution | complete | Retried Las Colinas post office, promoted USPS rows, excluded a private postal counter, and moved Dallas to eight comparable fields. |
 | 126 | Atlanta Northlake service source resolution | complete | Retried Northlake service layers, promoted finance/gas/hardware rows, checked Decatur hardware absent, and retyped Northlake as a usable legacy mall service field. |
+| 127 | Fifth metro scale decision | complete | Accepted remaining Atlanta gates as explicit type-discovery limits and selected Los Angeles / Inland Empire as the fifth metro. |
 
 ## Success criteria
 

@@ -4021,3 +4021,34 @@ Atlanta's uncertainty is narrower. The next decision can either resolve one
 more high-gate Atlanta layer, probably dollar store or laundromat after the
 429 clears, or accept Atlanta's explicit source limits and choose the fifth
 metro.
+
+## Pulse 127 Fifth Metro Scale Decision
+
+### Market Analyst
+
+Status: pass.
+
+The decision keeps final ranking out of scope while opening fifth-metro scale
+for type discovery. That matches the current evidence quality.
+
+### Market Geographer
+
+Status: pass.
+
+Los Angeles / Inland Empire is the right next contrast because it adds
+polycentric freeway, coastal, valley, and inland-growth field patterns.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Remaining Atlanta gates are accepted as explicit source limits, not converted
+into absence claims. The decision preserves source quality in the profile.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should create bounded Los Angeles / Inland Empire anchor-field
+targets before acquiring layers, so the fifth metro remains comparable to the
+Dallas and Chicago pre-scale stacks.
