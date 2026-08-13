@@ -86,6 +86,7 @@ before broader chain coverage begins.
 | 67 | Bellevue core anchor acquisition attempt | complete | Added a narrow Bellevue Square/Lincoln Square/Bellevue Place Overture query, recorded timeout evidence, and kept the gap unpromoted. |
 | 68 | RET Anchor Profile v1 | complete | Added `district_field` scope and integrated the six Puget Sound anchor fields into a 25-row profile. |
 | 69 | RET Anchor Profile v1 delta | complete | Added a v0-to-v1 delta report showing six additive district-field rows and two new active regional-anchor examples. |
+| 70 | RET Anchor Profile v1 examples | complete | Added canonical examples per anchor modifier, with Bellevue retained as a source-limited caution row. |
 
 ## Success criteria
 

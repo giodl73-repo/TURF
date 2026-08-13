@@ -2047,3 +2047,35 @@ Status: pass with next-output request.
 
 The next useful step is a CLI `anchor-profile-v1` generator or a dedicated
 profile examples report that extracts canonical examples per modifier.
+
+## Pulse 70 RET Anchor Profile v1 Examples
+
+### Market Analyst
+
+Status: pass.
+
+The examples report gives each modifier a compact reference set and shows which
+classes now have cross-region support.
+
+### Market Geographer
+
+Status: pass.
+
+The examples preserve geography scope, region, and local context, so later rule
+tuning can compare district fields, reviewed zones, district cores, and widened
+fields without flattening them.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The query uses only the checked Anchor Profile v1 CSV. Bellevue core remains
+marked as source-limited and is intentionally ranked behind clean small-complex
+examples.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next step can use these examples to create a small classifier fixture or a
+CLI `anchor-profile-v1` generator test.
