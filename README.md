@@ -483,6 +483,9 @@ The sidecar readiness note before sixth-metro scale is:
 The Philadelphia / South Jersey anchor-field target gate is:
 `reports\ret-philadelphia-anchor-field-targets.md`.
 
+The Philadelphia / South Jersey anchor-field post-office readout is:
+`reports\ret-philadelphia-anchor-field-post-office-summary.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

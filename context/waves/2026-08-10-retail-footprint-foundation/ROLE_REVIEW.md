@@ -4698,3 +4698,37 @@ Status: pass with next-output request.
 The next pulse should acquire or source-gate Philadelphia / South Jersey post
 offices first, preserving observed, checked-absent, and source-gated statuses
 before common-store or sidecar layers are added.
+
+## Pulse 147 Philadelphia Post-Office Layer
+
+### Market Analyst
+
+Status: pass.
+
+The sixth metro starts with unusually complete postal signal: all eight
+Philadelphia / South Jersey fields are observed, with Center City / Market East
+and Northeast Philadelphia / Roosevelt Boulevard showing the densest rows.
+
+### Market Geographer
+
+Status: pass.
+
+The postal layer immediately supports the Northeast terrain choice. It shows
+dense rail/civic core signal, older inner-suburban corridor signal, river and
+cross-river civic signal, and South Jersey mall-corridor postal signal.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass uses OpenStreetMap Overpass rows, excludes private FedEx/UPS/shipping
+counters, and keeps an explicit source-gate fixture even though no targets were
+source-gated in this batch.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add Philadelphia / South Jersey grocery across the same
+eight fields so postal civic density can be compared against everyday food
+errand structure before mass retail and pharmacy are added.

@@ -1,0 +1,9 @@
+field_id,label,anchor_field,raw_post_office_rows,post_office_rows,operator_count,private_shipping_counter_rows,address_incomplete_rows,post_office_names,post_office_signal,gate_reason
+center-city-market-east,Center City / Market East field,dense_northeast_rail_civic_retail_field,10,7,2,3,3,B. Free Franklin Post Office; John Wanamaker Post Office; Middle City Station; United States Post Office; United States Post Office; United States Post Office; United States Post Office,observed,""
+university-city-30th-street,University City / 30th Street field,eds_meds_rail_service_field,4,3,1,1,1,United States Post Office; United States Post Office; United States Postal Service,observed,""
+king-of-prussia,King of Prussia field,suburban_edge_city_superregional_mall_field,1,1,1,0,1,King of Prussia Post Office,observed,""
+northeast-roosevelt,Northeast Philadelphia / Roosevelt Boulevard field,inner_suburban_auto_corridor_field,8,8,1,0,5,Boulevard Post Office; Bustleton Post Office; Castor Post Office; Holmesburg Finance Station Post Office; Mayfair Post Office; Roosevelt Mall Post Office; Torresdale Post Office; Welsh Road Post Office,observed,""
+conshohocken-plymouth-meeting,Conshohocken / Plymouth Meeting field,river_office_suburban_edge_field,3,3,1,0,2,Conshohocken Post Office; Lafayette Hill Post Office; Plymouth Meeting Post Office,observed,""
+south-philly-sports-port,South Philadelphia Sports / Port field,event_port_auto_service_field,1,1,1,0,1,United States Post Office,observed,""
+camden-waterfront,Camden Waterfront / Cooper field,older_industrial_river_civic_field,3,2,1,1,0,East Camden Post Office; United States Post Office,observed,""
+cherry-hill-moorestown,Cherry Hill / Moorestown field,south_jersey_mall_edge_field,6,4,1,2,2,Ellisburg Post Office; Mount Laurel Post Office; United States Post Office; United States Post Office,observed,""
