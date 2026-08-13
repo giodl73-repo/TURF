@@ -104,6 +104,7 @@ before broader chain coverage begins.
 | 85 | Atlanta library civic layer | complete | Added Buckhead Library as the first Atlanta library signal and recorded the remaining fields as source-gated Overpass timeouts. |
 | 86 | Atlanta park civic layer | complete | Added Buckhead and North Point park/open-space rows, preserving five unresolved fields as source-gated Overpass timeouts. |
 | 87 | Atlanta transit civic layer | complete | Added Perimeter MARTA station rows and preserved six unresolved fields as source-gated Overpass timeouts. |
+| 88 | Atlanta civic context summary | complete | Combined four Atlanta civic dimensions into observed/source-gated archetypes before starting everyday-anchor backfill. |
 
 ## Success criteria
 

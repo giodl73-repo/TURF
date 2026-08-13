@@ -1,0 +1,8 @@
+field_id,label,anchor_field,observed_civic_dimensions,source_gated_civic_dimensions,post_office_rows,library_rows,park_rows,transit_center_rows,private_shipping_counter_rows,atlanta_civic_archetype,civic_signal_summary
+cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,1,3,3,0,0,0,4,postal_only_civic_field,post_office_observed; library_source_gated; park_source_gated; transit_source_gated
+buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,3,1,3,1,14,0,1,postal_library_open_space_civic_stack,post_office_observed; library_observed; park_observed; transit_source_gated
+perimeter-wide,Perimeter widened field,edge_city_mall_field,2,2,4,0,0,4,0,postal_transit_edge_city_field,post_office_observed; library_source_gated; park_source_gated; transit_observed
+camp-creek,Camp Creek field,airport_edge_power_center,0,4,0,0,0,0,0,fully_source_gated_civic_field,post_office_source_gated; library_source_gated; park_source_gated; transit_source_gated
+northlake,Northlake field,legacy_suburban_mall_node,0,4,0,0,0,0,0,fully_source_gated_civic_field,post_office_source_gated; library_source_gated; park_source_gated; transit_source_gated
+north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,2,2,1,0,16,0,3,postal_open_space_edge_field,post_office_observed; library_source_gated; park_observed; transit_source_gated
+decatur-emory,Decatur / Emory field,inner_service_village,1,3,2,0,0,0,3,postal_only_civic_field,post_office_observed; library_source_gated; park_source_gated; transit_source_gated

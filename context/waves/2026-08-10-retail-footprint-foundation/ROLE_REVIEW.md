@@ -2673,3 +2673,37 @@ Status: pass with next-output request.
 The four civic dimensions should now be summarized together for Atlanta before
 starting everyday anchors. The summary should expose observed dimensions,
 source-gated dimensions, and emerging civic archetypes per field.
+
+## Pulse 88 Atlanta Civic Context Summary
+
+### Market Analyst
+
+Status: pass.
+
+The summary turns the partial Atlanta civic pass into actionable learning.
+Buckhead, Perimeter, and North Point now have distinct observed civic stacks
+instead of a single generic mall-field label.
+
+### Market Geographer
+
+Status: pass.
+
+The archetypes preserve field geometry and do not overclaim Camp Creek or
+Northlake. Those two remain fully source-gated, which is materially different
+from observed civic absence.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report derives from checked summary CSVs and keeps source-gated dimensions
+visible. That is the right evidence standard before moving into everyday-anchor
+layers.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Everyday anchors can now start, with finance or gas/convenience as the best
+first candidate. The civic summary should stay joined into later Atlanta
+context reports so source gates do not disappear from the analysis.

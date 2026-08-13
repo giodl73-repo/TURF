@@ -81,6 +81,7 @@ duckdb -c ".read queries/ret-washington-anchor-field-transit-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-transit-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-park-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-park-summary.sql"
+duckdb -c ".read queries/ret-atlanta-anchor-field-civic-context-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-bank-credit-union-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
@@ -353,6 +354,9 @@ The Atlanta anchor-field park readout is:
 
 The Atlanta anchor-field transit readout is:
 `reports\ret-atlanta-anchor-field-transit-summary.md`.
+
+The Atlanta anchor-field civic context summary is:
+`reports\ret-atlanta-anchor-field-civic-context-summary.md`.
 
 The Washington anchor-field retail-complex extraction plan is:
 `docs\research\overture-retail-complex-washington-anchor-fields-extraction-2026-07-22.md`.
