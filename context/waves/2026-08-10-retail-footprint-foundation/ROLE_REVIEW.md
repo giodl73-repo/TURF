@@ -3619,3 +3619,37 @@ The Dallas/Fort Worth stack now has enough layers for a pre-scale field-stack
 report: postal, grocery, mass retail, pharmacy, and retail complexes. The next
 step should synthesize those layers and decide which fields are
 type-discovery-comparable.
+
+## Pulse 115 Dallas Pre-Scale Field Stack
+
+### Market Analyst
+
+Status: pass.
+
+The stack creates a concrete scale gate: five clean comparable fields, two
+retry-gated comparable fields, and one partial field. That is enough signal to
+learn from Dallas/Fort Worth before adding another metro.
+
+### Market Geographer
+
+Status: pass.
+
+The field labels preserve real differences inside the metroplex. Downtown,
+NorthPark, Galleria, Legacy, Las Colinas, Arlington, Southlake, and Fort Worth
+are not collapsed into one Dallas read.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report distinguishes observed layers from checked absence and source gates.
+USPS timeouts remain source-quality warnings, while mass-retail and pharmacy
+absence is interpreted only inside the selected field boxes.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Dallas/Fort Worth should now move to synthesis and cross-metro profile rows.
+Do not add a fifth metro until these field types are compared against the
+Washington, Atlanta, and Chicago profile.

@@ -120,6 +120,7 @@ duckdb -c ".read queries/ret-chicago-anchor-field-grocery-summary.sql"
 duckdb -c ".read queries/ret-dallas-anchor-field-grocery-summary.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-retail-complex-summary.sql"
 duckdb -c ".read queries/ret-dallas-anchor-field-retail-complex-summary.sql"
+duckdb -c ".read queries/ret-dallas-pre-scale-field-stack.sql"
 duckdb -c ".read queries/ret-chicago-pre-scale-field-stack.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
@@ -439,6 +440,9 @@ The Dallas/Fort Worth anchor-field pharmacy readout is:
 
 The Dallas/Fort Worth anchor-field retail-complex readout is:
 `reports\ret-dallas-anchor-field-retail-complex-summary.md`.
+
+The Dallas/Fort Worth pre-scale field stack readout is:
+`reports\ret-dallas-pre-scale-field-stack.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.
