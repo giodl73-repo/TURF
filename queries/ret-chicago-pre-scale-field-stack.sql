@@ -1,7 +1,7 @@
 -- Chicago pre-scale field stack.
 --
 -- Combines the current Chicago context layers into one field-level readout
--- before adding another metro or another source family.
+-- before adding another metro.
 
 COPY (
     WITH targets AS (
@@ -51,6 +51,15 @@ COPY (
             grocery_signal
         FROM read_csv_auto('reports/ret-chicago-anchor-field-grocery-summary.csv', all_varchar = true)
     ),
+    retail_complex AS (
+        SELECT
+            field_id,
+            TRY_CAST(retail_complex_rows AS INTEGER) AS retail_complex_rows,
+            TRY_CAST(retail_complex_types AS INTEGER) AS retail_complex_types,
+            TRY_CAST(has_mall_complex AS INTEGER) AS has_mall_complex,
+            retail_complex_signal
+        FROM read_csv_auto('reports/ret-chicago-anchor-field-retail-complex-summary.csv', all_varchar = true)
+    ),
     joined AS (
         SELECT
             targets.field_id,
@@ -70,13 +79,18 @@ COPY (
             coalesce(mass_retail.mass_retail_signal, 'missing_layer') AS mass_retail_signal,
             coalesce(grocery.grocery_rows, 0) AS grocery_rows,
             coalesce(grocery.grocery_brands, 0) AS grocery_brands,
-            coalesce(grocery.grocery_signal, 'missing_layer') AS grocery_signal
+            coalesce(grocery.grocery_signal, 'missing_layer') AS grocery_signal,
+            coalesce(retail_complex.retail_complex_rows, 0) AS retail_complex_rows,
+            coalesce(retail_complex.retail_complex_types, 0) AS retail_complex_types,
+            coalesce(retail_complex.has_mall_complex, 0) AS has_mall_complex,
+            coalesce(retail_complex.retail_complex_signal, 'missing_layer') AS retail_complex_signal
         FROM targets
         LEFT JOIN post_office ON targets.field_id = post_office.field_id
         LEFT JOIN gym ON targets.field_id = gym.field_id
         LEFT JOIN pharmacy ON targets.field_id = pharmacy.field_id
         LEFT JOIN mass_retail ON targets.field_id = mass_retail.field_id
         LEFT JOIN grocery ON targets.field_id = grocery.field_id
+        LEFT JOIN retail_complex ON targets.field_id = retail_complex.field_id
     ),
     scored AS (
         SELECT
@@ -86,6 +100,7 @@ COPY (
             + (CASE WHEN pharmacy_signal = 'observed' THEN 1 ELSE 0 END)
             + (CASE WHEN mass_retail_signal != 'checked_absent' THEN 1 ELSE 0 END)
             + (CASE WHEN grocery_signal != 'checked_absent' THEN 1 ELSE 0 END)
+            + (CASE WHEN retail_complex_signal != 'checked_absent' THEN 1 ELSE 0 END)
                 AS observed_layers,
             (CASE WHEN post_office_signal = 'source_gated' THEN 1 ELSE 0 END)
             + (CASE WHEN gym_signal = 'source_gated' THEN 1 ELSE 0 END)
@@ -93,6 +108,7 @@ COPY (
             (CASE WHEN pharmacy_signal = 'checked_absent' THEN 1 ELSE 0 END)
             + (CASE WHEN mass_retail_signal = 'checked_absent' THEN 1 ELSE 0 END)
             + (CASE WHEN grocery_signal = 'checked_absent' THEN 1 ELSE 0 END)
+            + (CASE WHEN retail_complex_signal = 'checked_absent' THEN 1 ELSE 0 END)
                 AS checked_absent_layers
         FROM joined
     )
@@ -118,7 +134,21 @@ COPY (
         grocery_rows,
         grocery_brands,
         grocery_signal,
+        retail_complex_rows,
+        retail_complex_types,
+        has_mall_complex,
+        retail_complex_signal,
         CASE
+            WHEN has_mall_complex = 1 AND grocery_brands >= 3 AND mass_retail_brands >= 2
+                THEN 'confirmed_mall_big_box_grocery_field'
+            WHEN has_mall_complex = 1 AND grocery_brands >= 3 AND mass_retail_rows >= 1
+                THEN 'confirmed_edge_city_mall_grocery_field'
+            WHEN has_mall_complex = 1 AND grocery_brands >= 3
+                THEN 'confirmed_grocery_supported_mall_field'
+            WHEN retail_complex_rows >= 2 AND post_office_signal = 'observed' AND mass_retail_brands >= 2
+                THEN 'confirmed_postal_big_box_edge_field'
+            WHEN has_mall_complex = 1 AND grocery_rows > 0
+                THEN 'confirmed_single_grocery_mall_field'
             WHEN grocery_brands >= 5 AND pharmacy_rows >= 5 AND mass_retail_rows >= 2
                 THEN 'urban_core_everyday_grid'
             WHEN grocery_brands >= 5 AND pharmacy_rows >= 1 AND mass_retail_rows >= 2

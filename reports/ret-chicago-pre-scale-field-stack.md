@@ -14,6 +14,8 @@ Included layers:
 - Mass retail: reviewed Illinois Overture Target / Walmart / Costco / Sam's
   Club layer.
 - Grocery: reviewed Illinois Overture grocery layer.
+- Retail complex: target-limited reviewed Illinois Overture mall and shopping
+  complex layer.
 
 Generated output:
 
@@ -46,13 +48,13 @@ another metro before this stack is used as the comparison baseline.
 
 | Field | Observed | Source-Gated | Checked Absent | Emerging Type | Readiness |
 |---|---:|---:|---:|---|---|
-| Loop / River North | 3 | 2 | 0 | `urban_core_everyday_grid` | `usable_for_type_discovery_retry_osm_before_ranking` |
-| Lincoln Park / Lakeview | 3 | 2 | 0 | `inner_neighborhood_everyday_grid` | `usable_for_type_discovery_retry_osm_before_ranking` |
-| Old Orchard / Skokie | 1 | 2 | 2 | `single_grocery_mall_field` | `source_limited_retry_or_alternate_source` |
-| Oakbrook widened | 3 | 1 | 1 | `postal_big_box_edge_field` | `usable_for_type_discovery` |
-| Woodfield / Schaumburg | 2 | 2 | 1 | `edge_city_grocery_big_box_field` | `source_limited_retry_or_alternate_source` |
-| Midway / Ford City | 2 | 2 | 1 | `big_box_grocery_power_field` | `source_limited_retry_or_alternate_source` |
-| Orland Square | 1 | 2 | 2 | `grocery_supported_mall_field` | `source_limited_retry_or_alternate_source` |
+| Loop / River North | 3 | 2 | 1 | `urban_core_everyday_grid` | `usable_for_type_discovery_retry_osm_before_ranking` |
+| Lincoln Park / Lakeview | 3 | 2 | 1 | `inner_neighborhood_everyday_grid` | `usable_for_type_discovery_retry_osm_before_ranking` |
+| Old Orchard / Skokie | 2 | 2 | 2 | `confirmed_single_grocery_mall_field` | `source_limited_retry_or_alternate_source` |
+| Oakbrook widened | 4 | 1 | 1 | `confirmed_postal_big_box_edge_field` | `usable_for_type_discovery` |
+| Woodfield / Schaumburg | 3 | 2 | 1 | `confirmed_edge_city_mall_grocery_field` | `usable_for_type_discovery_retry_osm_before_ranking` |
+| Midway / Ford City | 3 | 2 | 1 | `confirmed_mall_big_box_grocery_field` | `usable_for_type_discovery_retry_osm_before_ranking` |
+| Orland Square | 2 | 2 | 2 | `confirmed_grocery_supported_mall_field` | `source_limited_retry_or_alternate_source` |
 
 ## Interpretation
 
@@ -67,6 +69,8 @@ gate.
 Woodfield and Ford City are likely edge/power fields: both combine grocery grid
 signal with big-box signal, but civic/wellness OSM gates remain unresolved.
 
-Old Orchard and Orland Square should not be downgraded yet. Their current stack
-needs retail-complex confirmation because grocery shows everyday texture while
-mass retail and pharmacy are checked absent inside the selected boxes.
+Retail-complex confirmation resolves the main mall-anchor uncertainty. Old
+Orchard and Orland Square are no longer merely grocery-supported candidates;
+they are confirmed mall fields with thin or source-limited non-core service
+evidence. Woodfield and Ford City now have confirmed mall structure plus grocery
+and big-box signal.

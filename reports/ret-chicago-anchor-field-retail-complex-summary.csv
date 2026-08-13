@@ -1,0 +1,8 @@
+field_id,label,anchor_field,retail_complex_rows,retail_complex_types,has_mall_complex,retail_complex_type_list,retail_complex_names,retail_complex_signal
+loop-river-north,Loop / River North field,urban_core_mixed_service_field,0,0,0,"","",checked_absent
+lincoln-park-lakeview,Lincoln Park / Lakeview field,inner_neighborhood_service_field,0,0,0,"","",checked_absent
+old-orchard-skokie,Old Orchard / Skokie field,north_suburban_mall_field,1,1,1,Mall,Westfield Old Orchard Mall,confirmed_mall_anchor
+oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,2,2,0,Retail Center; Retail District,Oakbrook Center; The District at Oakbrook Center,confirmed_retail_complex_field
+woodfield-schaumburg,Woodfield / Schaumburg field,northwest_edge_city_mall_field,2,2,1,Mall; Retail Village,Woodfield Mall; Woodfield Village Green,confirmed_mall_complex_field
+ford-city-cicero,Midway / Ford City field,southwest_airport_edge_field,2,2,1,Mall; Shopping Center,Burbank Shopping Center; Ford City Mall,confirmed_mall_complex_field
+orland-square,Orland Square field,south_suburban_mall_field,2,2,1,Mall; Shopping Center,Orland Square Mall; Orland Square Shopping Center,confirmed_mall_complex_field

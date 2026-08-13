@@ -3267,3 +3267,38 @@ Chicago is now ready for type discovery but not final ranking. The next useful
 layer is retail-complex confirmation for Old Orchard, Woodfield, Orland Square,
 and Oakbrook, or an OSM retry strategy if the goal is civic/wellness
 resolution.
+
+## Pulse 105 Chicago Retail-Complex Confirmation
+
+### Market Analyst
+
+Status: pass.
+
+Retail-complex confirmation materially improves the Chicago read. Old Orchard
+and Orland Square are now confirmed mall fields rather than weak grocery-only
+fields, while Woodfield and Ford City stack mall structure with grocery and
+big-box signal.
+
+### Market Geographer
+
+Status: pass.
+
+The review is target-limited and field-aware. It keeps Oakbrook, Old Orchard,
+Woodfield, Ford City, and Orland Square as bounded district fields instead of
+claiming complete municipal mall coverage.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The raw Overture name-match layer is retained separately from the reviewed
+fixture. The review promotes only nine high-confidence named complex rows and
+excludes tenant rows, duplicate aliases, and name-match noise before scoring.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The stack is now strong enough for a Chicago type-discovery synthesis. The next
+modeling step should either create that synthesis or retry civic/wellness OSM
+with a simplified strategy before any final cross-metro ranking.
