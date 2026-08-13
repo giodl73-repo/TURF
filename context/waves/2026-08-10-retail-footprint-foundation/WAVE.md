@@ -120,6 +120,7 @@ before broader chain coverage begins.
 | 101 | Chicago pharmacy layer | complete | Added an Illinois Overture drugstore layer and proved Chicago can still produce non-Overpass everyday anchor signal. |
 | 102 | Chicago mass-retail layer | complete | Added Illinois Target/Walmart/Costco/Sam's Club signal and separated urban Target fields from edge-city big-box anchors. |
 | 103 | Chicago grocery layer | complete | Added Illinois grocery signal and found every Chicago field has food-errand texture, with five multi-brand grocery grids. |
+| 104 | Chicago pre-scale field stack | complete | Combined Chicago observed, checked-absent, and source-gated layers into emerging field types before another scale move. |
 
 ## Success criteria
 

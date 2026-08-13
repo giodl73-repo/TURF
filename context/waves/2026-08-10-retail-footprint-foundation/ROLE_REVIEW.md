@@ -3231,3 +3231,39 @@ field-stack readout. Before scaling to another metro, TURF should summarize
 pharmacy, mass retail, grocery, post-office, and gym/source-gate status in one
 Chicago pre-scale report, then decide whether retail complexes are needed to
 confirm mall-anchor labels.
+
+## Pulse 104 Chicago Pre-Scale Field Stack
+
+### Market Analyst
+
+Status: pass.
+
+The combined stack is the right checkpoint before adding more data. It turns
+the recent Chicago layers into usable field labels: urban everyday grid, inner
+neighborhood everyday grid, postal big-box edge, edge-city grocery/big-box
+field, power field, and grocery-supported mall fields.
+
+### Market Geographer
+
+Status: pass.
+
+The report keeps target geometry, primary city, and expected anchor tests
+visible. It does not collapse Old Orchard, Oakbrook, Woodfield, Ford City, and
+Orland Square into generic suburbs; each keeps its bounded field identity.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Observed, checked-absent, and source-gated layers remain separate. The report
+does not convert OSM timeouts into absences and does not mix reviewed Overture
+absences with source failures.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Chicago is now ready for type discovery but not final ranking. The next useful
+layer is retail-complex confirmation for Old Orchard, Woodfield, Orland Square,
+and Oakbrook, or an OSM retry strategy if the goal is civic/wellness
+resolution.
