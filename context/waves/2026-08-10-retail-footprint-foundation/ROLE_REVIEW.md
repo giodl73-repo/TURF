@@ -2256,3 +2256,36 @@ Status: pass with next-output request.
 The first civic-anchor pass is complete. The next step should produce a compact
 context archetype report from the checked dimensions before adding more
 everyday-service layers.
+
+## Pulse 76 Anchor Field Context Archetypes
+
+### Market Analyst
+
+Status: pass.
+
+The archetype report converts raw checked dimensions into comparable labels:
+full civic/everyday, full civic without pharmacy, park/postal, park-only, and
+mobility/pharmacy/public-space fields.
+
+### Market Geographer
+
+Status: pass.
+
+The report preserves field identity while adding a higher-level read that can
+travel to Atlanta, Seattle city, and later metros without pretending the labels
+are official civic or corporate regions.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The archetype report derives only from checked reports and introduces no new
+source rows. Source gates remain visible through the underlying context summary.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next useful work is an everyday-service source layer, likely banks/credit
+unions or gas/convenience, to see whether the archetypes hold after routine
+errand anchors are added.
