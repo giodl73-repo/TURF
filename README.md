@@ -68,6 +68,8 @@ duckdb -c ".read queries/overture-mass-retail-texas-review-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-illinois-2026-07-22.sql"
+duckdb -c ".read queries/overture-retail-complex-texas-2026-07-22.sql"
+duckdb -c ".read queries/overture-retail-complex-texas-review-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-washington-anchor-fields-2026-07-22.sql"
 duckdb -c ".read queries/overture-post-office-washington-anchor-fields-2026-07-22.sql"
 python scripts\fetch_osm_post_offices.py --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-post-office-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13
@@ -117,6 +119,7 @@ duckdb -c ".read queries/ret-dallas-anchor-field-mass-retail-summary.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-grocery-summary.sql"
 duckdb -c ".read queries/ret-dallas-anchor-field-grocery-summary.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-retail-complex-summary.sql"
+duckdb -c ".read queries/ret-dallas-anchor-field-retail-complex-summary.sql"
 duckdb -c ".read queries/ret-chicago-pre-scale-field-stack.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
@@ -433,6 +436,9 @@ The Dallas/Fort Worth anchor-field mass-retail readout is:
 
 The Dallas/Fort Worth anchor-field pharmacy readout is:
 `reports\ret-dallas-anchor-field-pharmacy-summary.md`.
+
+The Dallas/Fort Worth anchor-field retail-complex readout is:
+`reports\ret-dallas-anchor-field-retail-complex-summary.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.

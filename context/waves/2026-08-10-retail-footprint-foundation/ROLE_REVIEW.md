@@ -3583,3 +3583,39 @@ Dallas/Fort Worth now has four layers. The next layer should be retail
 complexes because malls and lifestyle centers will clarify whether the current
 grocery, mass-retail, and pharmacy patterns sit inside anchor districts or
 ordinary service grids.
+
+## Pulse 114 Texas Retail-Complex Layer
+
+### Market Analyst
+
+Status: pass.
+
+Retail complexes give Dallas/Fort Worth its fifth pre-scale stack layer. Every
+target field now has a confirmed named complex or retail structure, while
+Legacy / Frisco / Plano is the only confirmed mall-complex field.
+
+### Market Geographer
+
+Status: pass.
+
+The review stays target-limited and avoids treating the broad Texas extract as
+a statewide mall census. Southlake is represented by Park Village because the
+current Overture candidate layer did not produce a clean Southlake Town Square
+complex row inside the target box.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows come from Overture Places with open license status. The report keeps the
+raw extraction and reviewed target-limited promotion separate, which is
+necessary because the raw `center`, `plaza`, and `village` patterns are noisy.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The Dallas/Fort Worth stack now has enough layers for a pre-scale field-stack
+report: postal, grocery, mass retail, pharmacy, and retail complexes. The next
+step should synthesize those layers and decide which fields are
+type-discovery-comparable.

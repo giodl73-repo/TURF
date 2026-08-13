@@ -130,6 +130,7 @@ before broader chain coverage begins.
 | 111 | Texas grocery layer | complete | Added reviewed Texas grocery rows and found all eight Dallas/Fort Worth target fields carry grocery service signal. |
 | 112 | Texas mass-retail layer | complete | Added reviewed Texas Target/Walmart/Costco/Sam's Club rows and separated big-box anchors from grocery-rich service fields. |
 | 113 | Texas pharmacy layer | complete | Added reviewed Texas exact-brand drugstore rows and found seven Dallas/Fort Worth fields carry health-errand signal. |
+| 114 | Texas retail-complex layer | complete | Added target-limited Texas retail-complex confirmation and gave Dallas/Fort Worth a fifth pre-scale stack layer. |
 
 ## Success criteria
 

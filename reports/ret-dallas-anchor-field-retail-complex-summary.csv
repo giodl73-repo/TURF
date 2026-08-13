@@ -1,0 +1,9 @@
+field_id,label,anchor_field,retail_complex_rows,retail_complex_types,has_mall_complex,retail_complex_type_list,retail_complex_names,retail_complex_signal
+downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,1,1,0,Retail Village,West Village,confirmed_retail_complex_field
+northpark-preston-hollow,NorthPark / Preston Hollow field,north_dallas_regional_mall_field,2,2,0,Retail Center; Retail Plaza,NorthPark Center; The Plaza At Preston Center,confirmed_retail_complex_field
+galleria-addison,Galleria / Addison field,north_dallas_edge_city_field,1,1,0,Shopping Center,Addison Walk Shopping Center,confirmed_retail_complex_field
+legacy-frisco-plano,Legacy / Frisco / Plano field,north_growth_edge_city_field,2,2,1,Mall; Shopping Center,Legacy West Shopping Center; Stonebriar Mall,confirmed_mall_complex_field
+las-colinas-irving,Las Colinas / Irving field,airport_office_edge_field,1,1,0,Retail Center,Las Colinas Urban Center,confirmed_retail_complex_field
+arlington-grand-prairie,Arlington / Grand Prairie field,midcities_power_event_field,1,1,0,Shopping Center,Lincoln Square Shopping Center,confirmed_retail_complex_field
+southlake-town-square,Southlake Town Square field,affluent_suburban_town_center_field,1,1,0,Retail Village,Park Village,confirmed_retail_complex_field
+fort-worth-west-7th,Fort Worth Cultural / West 7th field,secondary_core_service_field,2,1,0,Retail Plaza,Montgomery Plaza; West 7th Plaza,confirmed_retail_complex_field
