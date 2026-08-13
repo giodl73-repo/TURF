@@ -4248,3 +4248,37 @@ Status: pass with next-output request.
 The next pulse should add retail-complex confirmation for the same seven fields
 so mall, lifestyle-center, power-center, and shopping-center structure can test
 the proposed pre-complex field types.
+
+## Pulse 134 Los Angeles Retail-Complex Confirmation
+
+### Market Analyst
+
+Status: pass.
+
+The pulse closes the main pre-scale gap. LA now has common-store and named
+complex evidence across all seven selected fields.
+
+### Market Geographer
+
+Status: pass.
+
+The complex layer confirms distinct structures: Koreatown/Little Tokyo plazas,
+Burbank/Americana mall-town-center texture, Century City/Culver district
+structure, Del Amo, Ontario Mills/Victoria Gardens, Riverside/Corona plazas,
+and Lakewood/Long Beach towne-center structure.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The raw complex extract is noisy, so the review correctly stays target-limited
+and preserves excluded duplicate/tenant candidates rather than presenting a
+statewide complex census.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add the seven confirmed LA rows to the cross-metro
+type-discovery profile while preserving the five postal retry gates as source
+quality limits.

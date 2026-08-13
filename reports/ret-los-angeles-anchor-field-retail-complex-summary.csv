@@ -1,0 +1,8 @@
+field_id,label,anchor_field,retail_complex_rows,retail_complex_types,has_mall_complex,retail_complex_type_list,retail_complex_names,retail_complex_signal
+downtown-koreatown-midwilshire,Downtown LA / Koreatown / Mid-Wilshire field,urban_core_mixed_service_field,2,2,1,Mall; Retail Plaza,Koreatown Plaza; Little Tokyo Mall,confirmed_mall_complex_field
+glendale-burbank,Glendale / Burbank field,valley_media_retail_edge_field,2,2,1,Mall; Retail Center,Burbank Town Center; Mall,confirmed_mall_complex_field
+west-la-century-city-culver,West LA / Century City / Culver City field,affluent_office_retail_service_field,4,4,1,Mall; Retail Center; Retail District; Shopping Center,CENTURY CITY MALL; Century City Center Shopping Center; Culver Center; Helms Design District,confirmed_mall_complex_field
+south-bay-torrance,South Bay / Torrance field,coastal_suburban_mall_auto_service_field,1,1,0,Retail Center,Del Amo Fashion Center,confirmed_retail_complex_field
+ontario-rancho-cucamonga,Ontario Mills / Rancho Cucamonga field,inland_freeway_power_center_field,2,2,1,Mall; Retail Center,Ontario Gateway Center; Ontario Mills Mall,confirmed_mall_complex_field
+riverside-tyler-corona,Riverside / Tyler / Corona edge field,inland_secondary_core_growth_field,2,1,0,Retail Plaza,Corona Hills Plaza; Regal Riverside Plaza,confirmed_retail_complex_field
+long-beach-lakewood,Long Beach / Lakewood field,port_coastal_grid_mall_service_field,3,2,1,Mall; Retail Center,LAKEWOOD MALL; Lakewood Center; Long Beach Towne Center,confirmed_mall_complex_field

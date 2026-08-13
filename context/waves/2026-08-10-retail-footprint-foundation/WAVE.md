@@ -150,6 +150,7 @@ before broader chain coverage begins.
 | 131 | Los Angeles grocery layer | complete | Added reviewed California grocery rows and found all seven LA / Inland Empire fields carry multi-brand grocery-grid signal. |
 | 132 | Los Angeles pharmacy layer | complete | Added reviewed California drugstore rows and found all seven LA / Inland Empire fields carry exact-brand pharmacy signal, with four multi-brand health-errand fields. |
 | 133 | Los Angeles pre-scale field stack | complete | Combined four LA layers into pre-complex field types, preserving five postal retry gates and identifying two fully comparable fields. |
+| 134 | Los Angeles retail-complex confirmation | complete | Added target-limited California retail-complex confirmation, found all seven LA fields have named complex structure, and upgraded the LA stack to type-discovery comparable. |
 
 ## Success criteria
 
