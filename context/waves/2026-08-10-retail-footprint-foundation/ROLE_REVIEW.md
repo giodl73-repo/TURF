@@ -3054,3 +3054,38 @@ Status: pass with next-output request.
 The next work should start the 11-dimension pass with the least ambiguous
 layers first: post office, pharmacy if a reviewed Illinois layer exists, then
 parks/transit or gyms depending on OSM response quality.
+
+## Pulse 99 Chicago Post-Office Layer
+
+### Market Analyst
+
+Status: pass with source warning.
+
+The first Chicago context layer produces one usable observation: Oakbrook has
+Oak Brook Post Office. Six fields are source-gated, so the layer starts
+Chicago as partial type discovery rather than a metro-wide postal comparison.
+
+### Market Geographer
+
+Status: pass.
+
+The readout preserves each bounded district field and correctly avoids turning
+Loop, Lincoln Park, Old Orchard, Woodfield, Ford City, or Orland Square
+timeouts into post-office absences.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The promoted row is an OSM/Overpass post-office row with ODbL rights status
+preserved. The UPS Store row is retained in the review fixture but excluded as
+a private shipping counter.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Chicago should proceed cautiously. The next layer should either use an already
+reviewed non-Overpass source if available, or try a dense OSM category such as
+gym/park to determine whether Chicago timeouts are category-specific or a
+broader target-response issue.

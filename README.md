@@ -81,6 +81,7 @@ python scripts\fetch_osm_civic.py --facility-type laundromat --target-id tacoma-
 python scripts\fetch_osm_civic.py --facility-type laundromat --target-id cumberland-vinings --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-laundromat-atlanta-cumberland-vinings.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 duckdb -c ".read queries/ret-washington-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-post-office-summary.sql"
+duckdb -c ".read queries/ret-chicago-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-transit-summary.sql"
@@ -361,6 +362,9 @@ The Atlanta anchor-field context scale targets are:
 
 The Chicago anchor-field type-discovery targets are:
 `reports\ret-chicago-anchor-field-targets.md`.
+
+The Chicago anchor-field post-office readout is:
+`reports\ret-chicago-anchor-field-post-office-summary.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.

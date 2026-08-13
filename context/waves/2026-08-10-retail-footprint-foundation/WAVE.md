@@ -115,6 +115,7 @@ before broader chain coverage begins.
 | 96 | Atlanta gym layer | complete | Added dense Cumberland/North Point gym rows, observed Buckhead/Camp Creek gym anchors, source-gated three timeout fields, and completed the 11-dimension Atlanta context pass. |
 | 97 | Atlanta pre-scale readiness | complete | Compared observed/source-gated/checked-absent dimensions and concluded Atlanta is ready for type discovery but not final ranking. |
 | 98 | Chicago context targets | complete | Added seven Chicago anchor-field targets for third-metro type discovery after Washington and Atlanta. |
+| 99 | Chicago post-office layer | complete | Added Oakbrook post-office signal, excluded a UPS private counter, and source-gated six Chicago timeout fields. |
 
 ## Success criteria
 
