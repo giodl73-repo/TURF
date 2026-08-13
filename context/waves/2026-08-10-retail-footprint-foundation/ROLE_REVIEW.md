@@ -2468,3 +2468,37 @@ Status: pass with next-output request.
 The only remaining pre-scale everyday gate is gym. Adding it should test
 wellness and routine-service texture before TURF scales the full context
 contract to Seattle city, Atlanta, and other urban areas.
+
+## Pulse 82 Gym Wellness-Service Layer
+
+### Market Analyst
+
+Status: pass.
+
+Gym is the strongest contrast in the completed context pass. Bellevue core has
+15 checked fitness-center rows, while the other five bounded fields have none.
+That makes Bellevue a wellness-service outlier, not only a finance outlier.
+
+### Market Geographer
+
+Status: pass.
+
+The layer completes the same 11-dimension context contract without changing
+field geometry. The result is now ready for cross-city scaling because all
+source gates in the Washington pre-scale baseline are closed.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Rows use named OSM fitness-centre features with ODbL rights status preserved.
+Alternate Overpass endpoints were used where the main endpoint stalled, and
+the README records a bounded request-timeout command pattern.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next useful work is no longer another source gate. TURF should scale the
+completed context contract to another urban area, then compare whether the same
+field types recur or new context archetypes appear.

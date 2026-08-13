@@ -14,14 +14,14 @@ reports/ret-washington-anchor-field-context-summary.csv
 
 ## Summary
 
-| Field | Source-gated dimensions | Observed dimensions | Bank / credit union rows | Dollar-store rows | Gas / convenience rows | Hardware rows | Laundromat rows | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Bellevue core | 1 | 7 | 32 | 0 | 3 | 0 | 0 | 1 | 7 | 1 | 3 | 2 |
-| Factoria | 1 | 4 | 7 | 0 | 6 | 0 | 0 | 0 | 4 | 1 | 0 | 0 |
-| Southcenter / Tukwila | 1 | 8 | 11 | 1 | 10 | 3 | 0 | 1 | 9 | 1 | 1 | 0 |
-| Tacoma Mall | 1 | 6 | 4 | 1 | 9 | 3 | 1 | 0 | 6 | 0 | 0 | 0 |
-| Kitsap Mall / Silverdale | 1 | 9 | 13 | 1 | 10 | 1 | 0 | 1 | 2 | 1 | 1 | 1 |
-| South Hill / Puyallup | 1 | 8 | 14 | 1 | 14 | 1 | 1 | 0 | 4 | 0 | 2 | 1 |
+| Field | Source-gated dimensions | Observed dimensions | Bank / credit union rows | Dollar-store rows | Gas / convenience rows | Gym rows | Hardware rows | Laundromat rows | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Bellevue core | 0 | 8 | 32 | 0 | 3 | 15 | 0 | 0 | 1 | 7 | 1 | 3 | 2 |
+| Factoria | 0 | 4 | 7 | 0 | 6 | 0 | 0 | 0 | 0 | 4 | 1 | 0 | 0 |
+| Southcenter / Tukwila | 0 | 8 | 11 | 1 | 10 | 0 | 3 | 0 | 1 | 9 | 1 | 1 | 0 |
+| Tacoma Mall | 0 | 6 | 4 | 1 | 9 | 0 | 3 | 1 | 0 | 6 | 0 | 0 | 0 |
+| Kitsap Mall / Silverdale | 0 | 9 | 13 | 1 | 10 | 0 | 1 | 0 | 1 | 2 | 1 | 1 | 1 |
+| South Hill / Puyallup | 0 | 8 | 14 | 1 | 14 | 0 | 1 | 1 | 0 | 4 | 0 | 2 | 1 |
 
 ## First Signal
 
@@ -108,6 +108,15 @@ Gas / convenience:
 - Bellevue core has only 3 rows inside the tight downtown field, despite being
   the finance-dense outlier.
 
+Gyms:
+
+- Bellevue core has 15 checked gym / fitness-center rows.
+- Factoria, Southcenter / Tukwila, Tacoma Mall, Kitsap Mall / Silverdale, and
+  South Hill / Puyallup have no checked gym row inside the current bounded
+  fields.
+- This makes Bellevue a civic-plus-finance-plus-wellness downtown field, not
+  just a finance outlier.
+
 Hardware:
 
 - Southcenter / Tukwila and Tacoma Mall each have 3 checked hardware rows.
@@ -128,9 +137,8 @@ Laundromats:
 
 ## Source Gates
 
-Gyms are not yet counted. The gym dimension remains in the context contract as
-a source-gated dimension so later acquisition can fill it without changing the
-profile shape.
+All 11 checked context dimensions are active. There are no remaining source
+gates in the pre-scale Washington anchor-field context contract.
 
 ## Learning
 
@@ -147,5 +155,6 @@ laundromat evidence. Factoria has parks, postal evidence, finance errands, and
 moderate gas/convenience support but lacks library, transit, pharmacy,
 hardware, dollar-store, and laundromat evidence. Bellevue core is finance-dense
 but gas/convenience-light, hardware-absent, dollar-store absent, and
-laundromat-absent, which makes the downtown versus auto-oriented field split
-clearer.
+laundromat-absent, but gym-dense. That makes the downtown versus auto-oriented
+field split clearer and gives TURF a completed baseline before scaling to
+Seattle city, Atlanta, and other urban areas.

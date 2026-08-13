@@ -98,6 +98,7 @@ before broader chain coverage begins.
 | 79 | Hardware small-trade layer | complete | Added reviewed OSM/Overpass hardware rows and exposed Southcenter/Tacoma small-trade edges versus Bellevue/Factoria absence. |
 | 80 | Dollar-store value-errand layer | complete | Added reviewed OSM/Overpass Dollar Tree rows and separated value-errand mall/suburban fields from Bellevue/Factoria absence. |
 | 81 | Laundromat household-service layer | complete | Added reviewed OSM/Overpass laundromat rows and found household-service evidence only in Tacoma Mall and South Hill fields. |
+| 82 | Gym wellness-service layer | complete | Added reviewed OSM/Overpass fitness-center rows and completed all 11 pre-scale context dimensions with Bellevue as the wellness outlier. |
 
 ## Success criteria
 

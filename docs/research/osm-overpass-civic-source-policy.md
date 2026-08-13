@@ -22,6 +22,8 @@ signals when the fixture preserves source, date, license, and review status.
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfuel
 - Convenience shop tag:
   https://wiki.openstreetmap.org/wiki/Tag:shop%3Dconvenience
+- Fitness centre tag:
+  https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dfitness_centre
 - Hardware shop tag:
   https://wiki.openstreetmap.org/wiki/Tag:shop%3Dhardware
 - Laundry shop tag:
@@ -98,6 +100,10 @@ as a first car-trip and quick-errand proxy. Unnamed trip anchors and EV charging
 features remain in the audit fixture but are excluded with
 `review_reason = unnamed_trip_anchor` or
 `review_reason = ev_charging_candidate`.
+
+Gym rows use named OSM fitness-centre features as a first wellness and routine
+service proxy. Unnamed fitness-centre rows remain in the audit fixture but are
+excluded with `review_reason = unnamed_wellness_anchor`.
 
 Hardware rows use named OSM hardware-shop features as a first small-trade and
 repair-errand proxy. Unnamed hardware rows remain in the audit fixture but are

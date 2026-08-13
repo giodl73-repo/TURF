@@ -15,7 +15,7 @@ reports/ret-washington-anchor-field-context-archetypes.csv
 
 | Field | Archetype | Checked read |
 |---|---|---|
-| Bellevue core | `full_civic_multi_errand_field` | Library, parks, post office, transit, bank/credit union, gas/convenience, and pharmacy; no checked hardware, dollar store, or laundromat. |
+| Bellevue core | `full_civic_multi_errand_field` | Library, parks, post office, transit, bank/credit union, gas/convenience, gym, and pharmacy; no checked hardware, dollar store, or laundromat. |
 | Factoria | `park_postal_finance_field` | Parks, postal evidence, finance errands, and gas/convenience without library, transit, pharmacy, hardware, dollar store, or laundromat. |
 | Southcenter / Tukwila | `full_civic_single_errand_field` | All checked civic anchors plus finance, dollar store, gas/convenience, and hardware errands, but no checked pharmacy or laundromat. |
 | Tacoma Mall | `park_finance_field` | Parks, finance errands, dollar store, gas/convenience, hardware, and laundromat without checked postal, library, transit, or pharmacy. |
@@ -41,4 +41,5 @@ The civic pass gives TURF a typed-context layer before scaling:
   edges, but it remains thin across selective civic anchors.
 
 The next useful expansion is an everyday-service layer, not another civic
-layer: gym is still source-gated.
+layer: all pre-scale context dimensions are now active, so the next expansion
+should scale the completed contract to another urban area.

@@ -5,7 +5,7 @@ park,civic_anchor,Park or public open space,active_reviewed_civic_layer,everyday
 transit_center,civic_anchor,Transit center,active_reviewed_civic_layer,mobility_anchor,Use reviewed OSM/Overpass transit-center layer as first mobility anchor proxy
 bank_credit_union,everyday_anchor,Bank or credit union,active_reviewed_everyday_layer,routine_errand_finance_anchor,Use reviewed OSM/Overpass bank-credit-union layer as first finance errand proxy
 pharmacy,everyday_anchor,Pharmacy,active_reviewed_store_layer,routine_health_errand_anchor,Use reviewed drugstore layer as first pharmacy proxy
-gym,everyday_anchor,Gym or fitness center,source_gate_pending,routine_service_anchor,Reviewed POI source needed before counting rows
+gym,everyday_anchor,Gym or fitness center,active_reviewed_everyday_layer,routine_service_anchor,Use reviewed OSM/Overpass gym layer as first wellness-service proxy
 laundromat,everyday_anchor,Laundromat,active_reviewed_everyday_layer,routine_service_anchor,Use reviewed OSM/Overpass laundromat layer as first household-service proxy
 gas_convenience,everyday_anchor,Gas or convenience store,active_reviewed_everyday_layer,routine_trip_anchor,Use reviewed OSM/Overpass gas-convenience layer as first car-trip errand proxy
 dollar_store,everyday_anchor,Dollar store,active_reviewed_everyday_layer,value_errand_anchor,Use reviewed OSM/Overpass dollar-store layer as first value-errand proxy
