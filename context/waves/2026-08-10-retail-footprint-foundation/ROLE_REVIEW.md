@@ -2606,3 +2606,36 @@ The next layer should probably be parks because parks are likely denser in OSM
 and may resolve more fields than libraries. After parks, Atlanta needs a
 context summary that makes observed, checked-absent, and source-gated dimensions
 visible side by side.
+
+## Pulse 86 Atlanta Park Civic Layer
+
+### Market Analyst
+
+Status: pass.
+
+The park layer gives the first dense Atlanta civic contrast. Buckhead / Lenox /
+Phipps has 14 checked open-space rows and North Point / Alpharetta widened has
+16, making both stronger civic-context fields than library alone suggested.
+
+### Market Geographer
+
+Status: pass.
+
+The result separates urban luxury mall civic texture from north suburban
+edge-city open-space texture. Five fields remain source-gated, so the report
+correctly avoids a metro-wide park ranking.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The rows preserve OSM source, date, ODbL rights status, and review status. The
+five unresolved fields are explicit source gates.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Atlanta now needs either transit centers to finish the civic group, or a
+cross-layer Atlanta context summary that makes the partial civic stack visible
+before moving into everyday anchors.

@@ -1,0 +1,8 @@
+field_id,label,anchor_field,raw_park_rows,park_rows,named_open_spaces,operator_count,park_names,park_signal,gate_reason
+cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,0,0,0,0,"",source_gated,overpass_timeout
+buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,14,14,14,1,Bagley Park; Blue Heron Nature Preserve; Buckhead Triangle Park; Garden Hills Historic District; Indian Creek Park; Little Nancy Creek Park; Marie Sims Park; Peachtree Highlands Historic District; Peachtree Park Nature Trail; Pharr Circle Park; Shady Valley Park; Sunny Brook Park; Tower Place Park; Vermont Road Park,observed,""
+perimeter-wide,Perimeter widened field,edge_city_mall_field,0,0,0,0,"",source_gated,overpass_timeout
+camp-creek,Camp Creek field,airport_edge_power_center,0,0,0,0,"",source_gated,overpass_timeout
+northlake,Northlake field,legacy_suburban_mall_node,0,0,0,0,"",source_gated,overpass_timeout
+north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,16,16,16,1,AMLI Park; Alpharetta Memorial Park; Brooke Street Park; Encore Park; Fitness Park at Westside; Jenni's Courtyard; Mansell Overlook; Newtown Park; North Meadow Park; Rock Mill Park; Town Green at City Center; Veterans Memorial Park; Waters Road Park; Westwood Park; Willow Springs Park; Wills Park,observed,""
+decatur-emory,Decatur / Emory field,inner_service_village,0,0,0,0,"",source_gated,overpass_timeout
