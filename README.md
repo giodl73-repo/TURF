@@ -151,6 +151,7 @@ duckdb -c ".read queries/ret-washington-retail-complex-coverage.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-targets.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-targets.sql"
 duckdb -c ".read queries/ret-chicago-anchor-field-targets.sql"
+duckdb -c ".read queries/ret-dallas-anchor-field-targets.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-candidates-from-statewide.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-candidate-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-reviewed-complexes.sql"
@@ -404,6 +405,12 @@ The Chicago type-discovery synthesis is:
 
 The cross-metro type-discovery profile is:
 `reports\ret-cross-metro-type-discovery-profile.md`.
+
+The scale goal before adding more urban areas is:
+`reports\ret-scale-before-more-urban-areas.md`.
+
+The Dallas/Fort Worth anchor-field target gate is:
+`reports\ret-dallas-anchor-field-targets.md`.
 
 The Atlanta anchor-field post-office readout is:
 `reports\ret-atlanta-anchor-field-post-office-summary.md`.

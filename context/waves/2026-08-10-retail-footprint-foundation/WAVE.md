@@ -125,6 +125,7 @@ before broader chain coverage begins.
 | 106 | Chicago type-discovery synthesis | complete | Interpreted the refreshed Chicago stack as typed enclave fields and set the next scale-versus-resolution gate. |
 | 107 | Cross-metro type-discovery profile | complete | Normalized Washington, Atlanta, and Chicago into one comparable type-discovery table with profile-basis and source-quality tiers. |
 | 108 | Type-discovery profile validator | complete | Added a CLI validator and Rust contract tests for the cross-metro type-discovery profile. |
+| 109 | Dallas scale target gate | complete | Set the before-more-metros scale goal and added Dallas/Fort Worth bounded target fields for fourth-metro type discovery. |
 
 ## Success criteria
 

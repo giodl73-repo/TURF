@@ -3404,3 +3404,40 @@ Status: pass with next-output request.
 The next metro should now start from this validator as the acceptance gate. Any
 new field stack should prove whether its rows are baseline comparable,
 type-discovery comparable, partial, or source-limited.
+
+## Pulse 109 Dallas Scale Target Gate
+
+### Market Analyst
+
+Status: pass.
+
+The new scale goal is concrete enough to execute for a while. Dallas/Fort Worth
+will not be another open-ended data hunt; it must produce at least five
+type-discovery-comparable fields before TURF adds a fifth metro.
+
+### Market Geographer
+
+Status: pass.
+
+The Dallas/Fort Worth targets are bounded district fields, not municipal or
+CBSA-wide claims. The set correctly tests the metroplex form: Dallas core,
+North Dallas mall fields, Irving airport/office edge, Arlington mid-cities
+field, Southlake town center, and Fort Worth secondary core.
+
+### Source Policy Auditor
+
+Status: pass.
+
+This pulse adds target geometry and source strategy only. No new store rows are
+promoted, and the next extraction sequence is limited to open or previously
+approved public layers with observed, checked-absent, and source-gated states
+kept separate.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The stopping rule is appropriate: Dallas/Fort Worth should produce a pre-scale
+field stack and cross-metro profile rows before another metro is added. The
+next layer should begin with the least ambiguous public sources: post offices,
+grocery, pharmacy, mass retail, and retail complexes.
