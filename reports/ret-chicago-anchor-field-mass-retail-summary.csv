@@ -1,0 +1,8 @@
+field_id,label,anchor_field,mass_retail_rows,mass_retail_brands,mass_retail_brand_list,mass_retail_names,mass_retail_signal
+loop-river-north,Loop / River North field,urban_core_mixed_service_field,2,1,Target,Target; Target,single_brand_big_box_anchor
+lincoln-park-lakeview,Lincoln Park / Lakeview field,inner_neighborhood_service_field,3,1,Target,Target; Target; Target,single_brand_big_box_anchor
+old-orchard-skokie,Old Orchard / Skokie field,north_suburban_mall_field,0,0,"","",checked_absent
+oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,2,2,Costco; Walmart,Costco; Walmart,multi_brand_big_box_anchor
+woodfield-schaumburg,Woodfield / Schaumburg field,northwest_edge_city_mall_field,1,1,Costco,Costco,single_brand_big_box_anchor
+ford-city-cicero,Midway / Ford City field,southwest_airport_edge_field,2,2,Costco; Target,Costco; Target,multi_brand_big_box_anchor
+orland-square,Orland Square field,south_suburban_mall_field,0,0,"","",checked_absent

@@ -3156,3 +3156,40 @@ Status: pass with next-output request.
 The next Chicago goal should continue the non-Overpass stack with grocery,
 mass retail, or retail-complex anchors. OSM should move to a retry/simplified
 query track instead of being the main path for near-term Chicago learning.
+
+## Pulse 102 Chicago Mass-Retail Layer
+
+### Market Analyst
+
+Status: pass.
+
+Mass retail adds the clearest Chicago contrast so far. Loop / River North and
+Lincoln Park / Lakeview are Target-only fields, while Oakbrook and Midway /
+Ford City show multi-brand big-box anchor signal. That begins to separate urban
+big-box absorption from edge-city and airport-edge anchor structure.
+
+### Market Geographer
+
+Status: pass with watch item.
+
+The checked-absent Old Orchard and Orland Square rows should be interpreted
+inside the current bounded boxes only. They may reflect field geometry, mall
+parcel placement, or category distribution rather than weak regional-anchor
+status.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer uses Overture Places and keeps raw and reviewed fixtures separate.
+The review excludes embedded optical, pharmacy, garden center, gas station,
+repair, mobile, bakery, and distribution-center rows before scoring fields.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Chicago now needs either grocery for neighborhood-service contrast or retail
+complexes for mall-anchor confirmation. Those two layers will decide whether
+Old Orchard and Orland Square are true mass-retail absences in the selected
+boxes or simply need mall-complex evidence to carry their anchor identity.
