@@ -4663,3 +4663,38 @@ Status: pass with next-output request.
 The next pulse should select the sixth metro and create bounded anchor-field
 targets before acquiring core layers or sidecars, so the new metro starts under
 the standard sidecar contract.
+
+## Pulse 146 Philadelphia Sixth-Metro Targets
+
+### Market Analyst
+
+Status: pass.
+
+Philadelphia / South Jersey adds a materially new comparison surface: dense
+Northeast rail/civic fabric, eds-and-meds service terrain, superregional mall
+edge-city retail, and cross-state South Jersey mall corridors.
+
+### Market Geographer
+
+Status: pass.
+
+The eight targets cover both sides of the Delaware River and keep district
+fields bounded before acquisition. The set adds older industrial river, port,
+rail, and mature auto-corridor terrain not represented cleanly by the prior
+five metros.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pulse adds only target boxes and generated readiness output. No external POI
+rows are promoted yet, and all fields validate to `ready_for_context_extraction`
+before source acquisition begins.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should acquire or source-gate Philadelphia / South Jersey post
+offices first, preserving observed, checked-absent, and source-gated statuses
+before common-store or sidecar layers are added.

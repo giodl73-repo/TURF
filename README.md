@@ -480,6 +480,9 @@ The sidecar promotion evidence matrix is:
 The sidecar readiness note before sixth-metro scale is:
 `reports\ret-sidecar-readiness-before-sixth-metro.md`.
 
+The Philadelphia / South Jersey anchor-field target gate is:
+`reports\ret-philadelphia-anchor-field-targets.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
