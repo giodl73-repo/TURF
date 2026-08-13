@@ -1,9 +1,9 @@
 -- Atlanta anchor-field context summary.
 --
--- Combine the ten Atlanta context dimensions acquired so far:
+-- Combine the eleven Atlanta context dimensions acquired so far:
 -- four civic anchors, bank/credit-union, gas/convenience, pharmacy, and
 -- dollar-store value errands, hardware small-trade errands, and laundromat
--- household-service errands.
+-- household-service errands, and gym wellness-service errands.
 
 COPY (
     WITH targets AS (
@@ -65,6 +65,14 @@ COPY (
             laundromat_signal
         FROM read_csv_auto('reports/ret-atlanta-anchor-field-laundromat-summary.csv', all_varchar = true)
     ),
+    gym AS (
+        SELECT
+            field_id,
+            gym_rows,
+            operator_count AS gym_brands,
+            gym_signal
+        FROM read_csv_auto('reports/ret-atlanta-anchor-field-gym-summary.csv', all_varchar = true)
+    ),
     joined AS (
         SELECT
             targets.field_id,
@@ -94,7 +102,10 @@ COPY (
             hardware.hardware_signal,
             TRY_CAST(laundromat.laundromat_rows AS INTEGER) AS laundromat_rows,
             TRY_CAST(laundromat.laundromat_brands AS INTEGER) AS laundromat_brands,
-            laundromat.laundromat_signal
+            laundromat.laundromat_signal,
+            TRY_CAST(gym.gym_rows AS INTEGER) AS gym_rows,
+            TRY_CAST(gym.gym_brands AS INTEGER) AS gym_brands,
+            gym.gym_signal
         FROM targets
         LEFT JOIN civic
             ON targets.field_id = civic.field_id
@@ -110,6 +121,8 @@ COPY (
             ON targets.field_id = hardware.field_id
         LEFT JOIN laundromat
             ON targets.field_id = laundromat.field_id
+        LEFT JOIN gym
+            ON targets.field_id = gym.field_id
     ),
     scored AS (
         SELECT
@@ -121,6 +134,7 @@ COPY (
                 + CASE WHEN dollar_store_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 + CASE WHEN hardware_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 + CASE WHEN laundromat_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
+                + CASE WHEN gym_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 AS observed_dimensions,
             source_gated_civic_dimensions
                 + CASE WHEN bank_credit_union_signal = 'source_gated' THEN 1 ELSE 0 END
@@ -128,6 +142,7 @@ COPY (
                 + CASE WHEN dollar_store_signal = 'source_gated' THEN 1 ELSE 0 END
                 + CASE WHEN hardware_signal = 'source_gated' THEN 1 ELSE 0 END
                 + CASE WHEN laundromat_signal = 'source_gated' THEN 1 ELSE 0 END
+                + CASE WHEN gym_signal = 'source_gated' THEN 1 ELSE 0 END
                 AS source_gated_dimensions
         FROM joined
     )
@@ -135,7 +150,7 @@ COPY (
         field_id,
         label,
         anchor_field,
-        10 AS dimensions,
+        11 AS dimensions,
         observed_dimensions,
         source_gated_dimensions,
         post_office_rows,
@@ -154,12 +169,25 @@ COPY (
         hardware_brands,
         laundromat_rows,
         laundromat_brands,
+        gym_rows,
+        gym_brands,
         CASE
             WHEN observed_dimensions = 0 AND source_gated_dimensions >= 6
                 THEN 'fully_source_gated_context_field'
             WHEN bank_credit_union_signal = 'observed_dense'
                 AND laundromat_signal = 'observed_dense'
+                AND gym_signal = 'observed_dense'
+                THEN 'finance_household_wellness_service_field'
+            WHEN atlanta_civic_archetype = 'postal_open_space_edge_field'
+                AND pharmacy_signal = 'observed'
+                AND gym_signal = 'observed_dense'
+                THEN 'open_space_health_wellness_edge_city_field'
+            WHEN bank_credit_union_signal = 'observed_dense'
+                AND laundromat_signal = 'observed_dense'
                 THEN 'finance_household_service_field'
+            WHEN pharmacy_signal = 'checked_absent'
+                AND gym_signal = 'observed'
+                THEN 'wellness_only_partial_context_field'
             WHEN bank_credit_union_signal = 'observed_dense'
                 AND gas_convenience_signal = 'observed_dense'
                 AND pharmacy_signal = 'observed'
@@ -202,7 +230,8 @@ COPY (
             'pharmacy_' || pharmacy_signal,
             'dollar_store_' || dollar_store_signal,
             'hardware_' || hardware_signal,
-            'laundromat_' || laundromat_signal
+            'laundromat_' || laundromat_signal,
+            'gym_' || gym_signal
         ) AS context_signal_summary
     FROM scored
     ORDER BY

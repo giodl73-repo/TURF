@@ -74,6 +74,7 @@ python scripts\fetch_osm_civic.py --facility-type dollar_store --target-id camp-
 python scripts\fetch_osm_civic.py --facility-type gas_convenience --target-id bellevue-core --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-gas-bellevue.csv --source-date 2026-08-13 --retries 2
 python scripts\fetch_osm_civic.py --facility-type gas_convenience --target-id decatur-emory --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\osm-gas-convenience-atlanta-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type gym --target-id bellevue-core --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-gym-bellevue-core.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
+python scripts\fetch_osm_civic.py --facility-type gym --target-id north-point-wide --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-gym-atlanta-north-point-wide.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type hardware --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-hardware-tacoma-mall.csv --source-date 2026-08-13 --retries 3
 python scripts\fetch_osm_civic.py --facility-type hardware --target-id buckhead-lenox-phipps --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-hardware-atlanta-buckhead-lenox-phipps.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type laundromat --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-laundromat-tacoma-mall.csv --source-date 2026-08-13 --retries 3 --request-timeout-seconds 30
@@ -93,6 +94,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-field-pharmacy-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-hardware-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-laundromat-summary.sql"
+duckdb -c ".read queries/ret-atlanta-anchor-field-gym-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-gas-convenience-summary.sql"
@@ -387,6 +389,9 @@ The Atlanta anchor-field hardware readout is:
 
 The Atlanta anchor-field laundromat readout is:
 `reports\ret-atlanta-anchor-field-laundromat-summary.md`.
+
+The Atlanta anchor-field gym readout is:
+`reports\ret-atlanta-anchor-field-gym-summary.md`.
 
 The Atlanta anchor-field context summary is:
 `reports\ret-atlanta-anchor-field-context-summary.md`.

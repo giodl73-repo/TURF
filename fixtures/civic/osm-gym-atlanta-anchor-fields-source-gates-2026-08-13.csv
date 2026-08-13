@@ -1,0 +1,4 @@
+target_id,target_label,anchor_field,facility_type,gate_status,gate_reason,source,source_date
+perimeter-wide,Perimeter widened field,edge_city_mall_field,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+northlake,Northlake field,legacy_suburban_mall_node,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+decatur-emory,Decatur / Emory field,inner_service_village,gym,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13

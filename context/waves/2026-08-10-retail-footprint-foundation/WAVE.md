@@ -112,6 +112,7 @@ before broader chain coverage begins.
 | 93 | Atlanta dollar-store source gate | complete | Recorded Atlanta dollar-store Overpass timeouts as source gates and refreshed the context summary to eight dimensions. |
 | 94 | Atlanta hardware layer | complete | Added a checked Buckhead hardware row, source-gated six timeout fields, and refreshed the context summary to nine dimensions. |
 | 95 | Atlanta laundromat layer | complete | Added dense Cumberland laundromat rows, checked Perimeter/North Point absent, source-gated four timeout fields, and refreshed the context summary to ten dimensions. |
+| 96 | Atlanta gym layer | complete | Added dense Cumberland/North Point gym rows, observed Buckhead/Camp Creek gym anchors, source-gated three timeout fields, and completed the 11-dimension Atlanta context pass. |
 
 ## Success criteria
 

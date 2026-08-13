@@ -1,0 +1,8 @@
+field_id,label,anchor_field,raw_gym_rows,gym_rows,operator_count,address_incomplete_rows,unnamed_wellness_anchor_rows,gym_names,gym_signal,gate_reason
+cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,6,6,6,5,0,LA Fitness; Orangetheory Fitness; Pepper Boxing; Planet Fitness; Pure Barre; Windy Hill Athletic Club,observed_dense,""
+buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,1,1,1,0,0,Life Time,observed,""
+perimeter-wide,Perimeter widened field,edge_city_mall_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
+camp-creek,Camp Creek field,airport_edge_power_center,1,1,1,1,0,LA Fitness,observed,""
+northlake,Northlake field,legacy_suburban_mall_node,0,0,0,0,0,"",source_gated,overpass_target_timeout
+north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,17,17,15,15,0,Alloy; Bodybar Pilates; Club Pilates; Club Pilates; Fit 4...; Harris Health and Fitness; Hotworx; Life Time; Omni Fight Club; Omni Fight Club; One Fellowship Fitness; Planet Fitness; Pure Barre; Solidcore; Sport Performance; Workout Anytime; YouFit,observed_dense,""
+decatur-emory,Decatur / Emory field,inner_service_village,0,0,0,0,0,"",source_gated,overpass_target_timeout

@@ -2952,3 +2952,38 @@ The final Washington-equivalent Atlanta dimension is gym. After gym, TURF
 should produce a pre-scale decision note: what is observed, what is checked
 absent, what remains source-gated, and whether Atlanta is comparable enough to
 add another metro.
+
+## Pulse 96 Atlanta Gym Layer
+
+### Market Analyst
+
+Status: pass.
+
+Gym is the clearest Atlanta wellness-service signal. Cumberland / Vinings has
+6 checked rows and North Point / Alpharetta widened has 17, while Buckhead and
+Camp Creek each add one checked gym anchor.
+
+### Market Geographer
+
+Status: pass.
+
+The layer changes field identity without moving the field boundaries.
+Cumberland becomes `finance_household_wellness_service_field`; North Point
+becomes `open_space_health_wellness_edge_city_field`; Camp Creek gets its
+first observed non-pharmacy context signal.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The promoted rows are OSM/Overpass `leisure=fitness_centre` rows with ODbL
+rights status preserved. Perimeter, Northlake, and Decatur remain source-gated
+after bounded target timeouts, including a Perimeter fallback attempt.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The Atlanta context contract now has all 11 Washington-equivalent dimensions.
+The next step should be a pre-scale readiness note that separates resolved
+field types from source-limited fields before adding another metro.
