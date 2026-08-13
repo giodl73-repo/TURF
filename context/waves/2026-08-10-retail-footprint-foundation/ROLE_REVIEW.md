@@ -4116,3 +4116,36 @@ Status: pass with next-output request.
 The next pulse should either retry the five LA source gates or add a common
 store layer that tests the same bounded fields without depending on the gated
 post-office fetches.
+
+## Pulse 130 Los Angeles Mass-Retail Layer
+
+### Market Analyst
+
+Status: pass.
+
+The layer gives LA a second comparable signal without waiting on Overpass
+postal retries. It is directly comparable to the Dallas and Chicago mass-retail
+readouts.
+
+### Market Geographer
+
+Status: pass.
+
+The split is meaningful: dense/affluent LA fields are Target-only, while valley,
+coastal-suburban, inland freeway, secondary inland, and port/coastal fields
+show multi-brand big-box anchor texture.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The California review layer excludes attached service and grocery-format rows
+such as mobile, food court, connection center, Walmart Market, and Neighborhood
+Market entries before anchor-field promotion.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add grocery or pharmacy for LA so Target-only fields can
+be distinguished from fuller everyday service grids.

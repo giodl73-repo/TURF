@@ -1,0 +1,8 @@
+field_id,label,anchor_field,mass_retail_rows,mass_retail_brands,mass_retail_brand_list,mass_retail_names,mass_retail_signal
+downtown-koreatown-midwilshire,Downtown LA / Koreatown / Mid-Wilshire field,urban_core_mixed_service_field,2,1,Target,Target; Target,single_brand_big_box_anchor
+glendale-burbank,Glendale / Burbank field,valley_media_retail_edge_field,4,3,Costco; Target; Walmart,Costco; Target; Target; Walmart,multi_brand_big_box_anchor
+west-la-century-city-culver,West LA / Century City / Culver City field,affluent_office_retail_service_field,1,1,Target,Target,single_brand_big_box_anchor
+south-bay-torrance,South Bay / Torrance field,coastal_suburban_mall_auto_service_field,3,2,Target; Walmart,Target; Walmart; Walmart,multi_brand_big_box_anchor
+ontario-rancho-cucamonga,Ontario Mills / Rancho Cucamonga field,inland_freeway_power_center_field,7,3,Costco; Target; Walmart,Costco; Costco; Costco; Target; Target; Target; Walmart,multi_brand_big_box_anchor
+riverside-tyler-corona,Riverside / Tyler / Corona edge field,inland_secondary_core_growth_field,3,2,Costco; Walmart,Costco; Walmart; Walmart Supercenter,multi_brand_big_box_anchor
+long-beach-lakewood,Long Beach / Lakewood field,port_coastal_grid_mall_service_field,8,3,Costco; Target; Walmart,Costco; Costco; Target; Target; Target; Walmart; Walmart; Walmart,multi_brand_big_box_anchor

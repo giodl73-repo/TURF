@@ -444,6 +444,9 @@ The Los Angeles / Inland Empire anchor-field target gate is:
 The Los Angeles / Inland Empire post-office anchor-field readout is:
 `reports\ret-los-angeles-anchor-field-post-office-summary.md`.
 
+The Los Angeles / Inland Empire mass-retail anchor-field readout is:
+`reports\ret-los-angeles-anchor-field-mass-retail-summary.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

@@ -146,6 +146,7 @@ before broader chain coverage begins.
 | 127 | Fifth metro scale decision | complete | Accepted remaining Atlanta gates as explicit type-discovery limits and selected Los Angeles / Inland Empire as the fifth metro. |
 | 128 | Los Angeles anchor-field targets | complete | Added seven bounded Los Angeles / Inland Empire target fields and generated the target-readiness gate. |
 | 129 | Los Angeles post-office layer | complete | Added the first Los Angeles / Inland Empire postal civic layer, promoted observed USPS-like rows in two fields, excluded private counters, and preserved five Overpass source gates. |
+| 130 | Los Angeles mass-retail layer | complete | Added reviewed California Target/Walmart/Costco/Sam's Club rows and found a Target-only dense/affluent split versus multi-brand valley, coastal, inland, and port/coastal fields. |
 
 ## Success criteria
 
