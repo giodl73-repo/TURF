@@ -74,7 +74,9 @@ gap must remain visible in `review_reason`.
 
 OSM `amenity=post_office` can include private shipping counters. TURF keeps
 those rows in the audit fixture but excludes them from the civic-anchor count
-with `review_reason = private_shipping_counter`.
+with `review_reason = private_shipping_counter`. The private-counter exclusion
+includes UPS Store, UPS Customer Center, FedEx, Mail Boxes Etc., and PostalAnnex
+name/operator matches.
 
 Transit-center rows use named station or bus-station features. Unnamed transit
 points remain in the audit fixture but are excluded with

@@ -1,0 +1,3 @@
+target_id,target_label,anchor_field,facility_type,source,source_date,attempted_endpoints,attempt_count,gate_status,gate_reason,review_note
+camp-creek,Camp Creek field,airport_edge_power_center,post_office,OpenStreetMap Overpass API,2026-08-13,overpass-api.de; overpass.kumi.systems,3,source_gated,overpass_timeout,Camp Creek returned no promoted post-office fixture because both full-fixture and target-only Overpass attempts timed out
+northlake,Northlake field,legacy_suburban_mall_node,post_office,OpenStreetMap Overpass API,2026-08-13,overpass-api.de; overpass.kumi.systems,3,source_gated,overpass_timeout,Northlake returned no promoted post-office fixture because both full-fixture and target-only Overpass attempts timed out

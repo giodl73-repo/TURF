@@ -60,6 +60,7 @@ duckdb -c ".read queries/overture-retail-complex-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-retail-complex-washington-anchor-fields-2026-07-22.sql"
 duckdb -c ".read queries/overture-post-office-washington-anchor-fields-2026-07-22.sql"
 python scripts\fetch_osm_post_offices.py --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-post-office-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13
+python scripts\fetch_osm_post_offices.py --target-id cumberland-vinings --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-post-office-atlanta-cumberland-vinings.csv --source-date 2026-08-13 --retries 2 --request-timeout-seconds 30 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type library --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-library-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type transit_center --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-transit-center-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
 python scripts\fetch_osm_civic.py --facility-type park --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\osm-park-washington-anchor-fields-review-2026-08-13.csv --source-date 2026-08-13 --retries 4
@@ -70,6 +71,7 @@ python scripts\fetch_osm_civic.py --facility-type gym --target-id bellevue-core 
 python scripts\fetch_osm_civic.py --facility-type hardware --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-hardware-tacoma-mall.csv --source-date 2026-08-13 --retries 3
 python scripts\fetch_osm_civic.py --facility-type laundromat --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-laundromat-tacoma-mall.csv --source-date 2026-08-13 --retries 3 --request-timeout-seconds 30
 duckdb -c ".read queries/ret-washington-anchor-field-post-office-summary.sql"
+duckdb -c ".read queries/ret-atlanta-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-transit-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-park-summary.sql"
@@ -333,6 +335,9 @@ The Washington anchor-field extraction targets are:
 
 The Atlanta anchor-field context scale targets are:
 `reports\ret-atlanta-anchor-field-targets.md`.
+
+The Atlanta anchor-field post-office readout is:
+`reports\ret-atlanta-anchor-field-post-office-summary.md`.
 
 The Washington anchor-field retail-complex extraction plan is:
 `docs\research\overture-retail-complex-washington-anchor-fields-extraction-2026-07-22.md`.

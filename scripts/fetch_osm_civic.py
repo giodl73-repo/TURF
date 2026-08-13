@@ -166,8 +166,14 @@ def review_reason(tags: dict, facility_type: str) -> str:
     if facility_type == "post_office" and (
         "ups store" in name
         or "ups store" in operator
+        or "ups customer center" in name
+        or "ups customer center" in operator
         or "fedex" in name
         or "fedex" in operator
+        or "mail boxes etc" in name
+        or "mail boxes etc" in operator
+        or "postalannex" in name
+        or "postalannex" in operator
     ):
         return "private_shipping_counter"
     if facility_type == "transit_center":

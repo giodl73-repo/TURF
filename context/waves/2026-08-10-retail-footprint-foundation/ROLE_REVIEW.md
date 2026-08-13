@@ -2537,3 +2537,38 @@ Status: pass.
 This is a reasonable self-executing goal: acquire and summarize the same
 11 dimensions for these seven fields, then compare Atlanta archetypes against
 Washington before expanding to Seattle city or a third metro.
+
+## Pulse 84 Atlanta Post-Office Civic Layer
+
+### Market Analyst
+
+Status: pass.
+
+Post office is the right first Atlanta backfill because it tests the strongest
+theory directly. The observed Atlanta fields already show civic density inside
+mall and edge-city retail fields, especially Cumberland, Buckhead, and
+Perimeter.
+
+### Market Geographer
+
+Status: pass.
+
+The summary keeps all seven fields in view and correctly distinguishes
+source-gated Camp Creek/Northlake from fetched fields. That preserves geography
+without converting network failure into an absence claim.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review boundary was tightened before promotion. UPS Store, UPS Customer
+Center, FedEx, Mail Boxes Etc., and PostalAnnex rows remain in the audit layer
+but are excluded from the post-office civic count.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next Atlanta civic layer should be library or park. Libraries will test
+formal civic-service overlap; parks will test public open-space texture across
+edge-city, legacy mall, and inner service-village fields.
