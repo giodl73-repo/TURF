@@ -157,6 +157,7 @@ before broader chain coverage begins.
 | 138 | Los Angeles auto-parts layer | complete | Added reviewed California auto parts, found all seven LA fields have multi-brand auto-service corridors, and separated Riverside/Corona plus Long Beach/Lakewood as deepest trade/car-service fields. |
 | 139 | Sidecar standardization decision | complete | Standardized QSR and auto parts as pre-scale sidecars, kept them out of the core profile for now, and set Chicago/Dallas sidecar backfill as the next gate. |
 | 140 | Chicago QSR sidecar | complete | Added reviewed Illinois QSR and seven Chicago field summaries, separating Lincoln Park/Lakeview and Ford City as four-brand dense QSR grids. |
+| 141 | Chicago auto-parts sidecar | complete | Added reviewed Illinois auto parts, found Ford City is Chicago's only multi-brand auto-service corridor, and compared it against QSR signal. |
 
 ## Success criteria
 

@@ -477,6 +477,9 @@ The sidecar standardization decision is:
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
+The Chicago auto-parts sidecar layer is:
+`reports\ret-chicago-anchor-field-auto-parts-summary.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

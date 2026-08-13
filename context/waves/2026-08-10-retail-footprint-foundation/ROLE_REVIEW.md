@@ -4488,3 +4488,38 @@ Status: pass with next-output request.
 The next pulse should backfill Chicago auto parts across the same seven targets
 and compare QSR against trade/car-service signal before moving to Dallas/Fort
 Worth.
+
+## Pulse 141 Chicago Auto-Parts Sidecar
+
+### Market Analyst
+
+Status: pass.
+
+The Illinois auto-parts fixture validates with 616 packet-ready rows after
+excluding six rows. The layer completes the Chicago sidecar pair required by
+the backfill plan.
+
+### Market Geographer
+
+Status: pass.
+
+The sidecar contrast is strong. Ford City is the only multi-brand auto-service
+corridor, Woodfield / Schaumburg is a smaller auto-service node, and Loop /
+River North plus Lincoln Park / Lakeview have QSR density without auto-parts
+signal.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review excludes duplicate and brand-false-positive rows before
+interpretation. The report stays at public commercial footprint evidence and
+does not create official territory claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should start Dallas/Fort Worth sidecar backfill with QSR across
+the existing Dallas target fields, then add Dallas auto parts before any
+promotion into the core profile.

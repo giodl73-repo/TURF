@@ -1,0 +1,8 @@
+field_id,label,anchor_field,auto_parts_rows,auto_parts_brands,auto_parts_brand_list,auto_parts_names,auto_parts_signal
+loop-river-north,Loop / River North field,urban_core_mixed_service_field,0,0,"","",checked_absent
+lincoln-park-lakeview,Lincoln Park / Lakeview field,inner_neighborhood_service_field,0,0,"","",checked_absent
+old-orchard-skokie,Old Orchard / Skokie field,north_suburban_mall_field,1,1,Advance Auto Parts,Advance Auto Parts,single_auto_parts_anchor
+oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,0,0,"","",checked_absent
+woodfield-schaumburg,Woodfield / Schaumburg field,northwest_edge_city_mall_field,2,2,Advance Auto Parts; O'Reilly Auto Parts,Advance Auto Parts; O'Reilly Auto Parts,auto_service_node
+ford-city-cicero,Midway / Ford City field,southwest_airport_edge_field,4,3,Advance Auto Parts; AutoZone; O'Reilly Auto Parts,Advance Auto Parts; AutoZone; O'Reilly Auto Parts; O'Reilly Auto Parts,multi_brand_auto_service_corridor
+orland-square,Orland Square field,south_suburban_mall_field,0,0,"","",checked_absent
