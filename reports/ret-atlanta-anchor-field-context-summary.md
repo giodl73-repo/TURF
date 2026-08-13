@@ -13,6 +13,7 @@ This report combines the Atlanta context dimensions acquired so far:
 - pharmacy
 - dollar store
 - hardware
+- laundromat
 
 It is not yet the full 11-dimension Washington contract. It is a mid-pass
 summary that keeps observed dimensions and source-gated dimensions visible.
@@ -27,13 +28,13 @@ reports/ret-atlanta-anchor-field-context-summary.csv
 
 | Field | Observed Dimensions | Source-Gated Dimensions | Context Archetype |
 |---|---:|---:|---|
-| Cumberland / Vinings | 2 | 6 | `finance_dense_service_field` |
-| Buckhead / Lenox / Phipps | 5 | 4 | `civic_open_space_small_trade_mall_field` |
+| Cumberland / Vinings | 3 | 6 | `finance_household_service_field` |
+| Buckhead / Lenox / Phipps | 5 | 5 | `civic_open_space_small_trade_mall_field` |
 | Perimeter widened | 3 | 6 | `transit_health_edge_city_field` |
-| Camp Creek | 0 | 8 | `fully_source_gated_context_field` |
-| Northlake | 1 | 8 | `health_only_partial_context_field` |
+| Camp Creek | 0 | 9 | `fully_source_gated_context_field` |
+| Northlake | 1 | 9 | `health_only_partial_context_field` |
 | North Point / Alpharetta widened | 3 | 6 | `open_space_health_edge_city_field` |
-| Decatur / Emory | 4 | 5 | `finance_car_trip_health_service_village` |
+| Decatur / Emory | 4 | 6 | `finance_car_trip_health_service_village` |
 
 ## Learning
 
@@ -41,7 +42,7 @@ The strongest current typed fields are:
 
 - Decatur / Emory: finance-dense, gas/convenience-dense, and pharmacy-present
   inner service village.
-- Cumberland / Vinings: finance-dense suburban mall/office edge.
+- Cumberland / Vinings: finance-dense household-service field.
 - Buckhead / Lenox / Phipps: civic/open-space/small-trade mall field.
 - Perimeter widened: postal/transit/health edge-city field.
 - North Point / Alpharetta widened: postal/open-space/health edge-city field.
@@ -49,13 +50,15 @@ The strongest current typed fields are:
 
 The dollar-store layer is source-gated in every Atlanta field. The hardware
 layer adds one checked Buckhead small-trade row but is source-gated in the
-other six fields. This means the current summary cannot yet compare Atlanta
-value-errand texture against Washington's checked Dollar Tree rows, and it only
-partially compares small-trade texture.
+other six fields. The laundromat layer adds dense Cumberland household-service
+signal, checks Perimeter and North Point absent, and source-gates four fields.
+This means the current summary cannot yet compare Atlanta value-errand texture
+against Washington's checked Dollar Tree rows, and it only partially compares
+small-trade and household-service texture.
 
 Camp Creek and Northlake are not classified as weak. Camp Creek is fully
-source-gated across eight of nine acquired dimensions, while Northlake has
-pharmacy signal but eight source gates. Both need another source strategy or
+source-gated across nine of ten acquired dimensions, while Northlake has
+pharmacy signal but nine source gates. Both need another source strategy or
 later retry.
 
 ## Interpretation
@@ -64,7 +67,8 @@ This is the clearest evidence so far for typed enclaves. The same retail-field
 model is separating Atlanta into finance-dense, civic/open-space,
 transit-health-edge-city, open-space-health-edge-city,
 civic/open-space/small-trade mall, and
-finance/car-trip/health service-village patterns.
+finance/household-service and finance/car-trip/health service-village
+patterns.
 
 The caveat is important: source gates are still high. The summary is useful for
 learning, but it should not be used as a final atlas until the remaining

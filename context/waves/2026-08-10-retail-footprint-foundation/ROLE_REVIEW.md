@@ -2917,3 +2917,38 @@ The remaining Washington-equivalent Atlanta context dimensions are laundromat
 and gym. They test household-service and wellness-service texture, but the
 accumulating OSM timeouts suggest source strategy should be part of the
 pre-scale decision, not only layer count.
+
+## Pulse 95 Atlanta Laundromat Layer
+
+### Market Analyst
+
+Status: pass.
+
+Laundromats change Cumberland / Vinings materially. It is no longer only a
+finance-dense mall/office field; Spring Road Laundry and Tiny Bubbles Coin
+Laundry add household-service texture inside the same bounded field.
+
+### Market Geographer
+
+Status: pass.
+
+The pulse correctly distinguishes observed, checked-absent, and source-gated
+fields. Perimeter and North Point have clean checked absences, while Buckhead,
+Camp Creek, Northlake, and Decatur remain source-gated.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The promoted rows are OSM/Overpass `shop=laundry` rows with ODbL rights status
+preserved. Timeout fields remain source gates, and clean empty responses are
+the only laundromat checked absences.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The final Washington-equivalent Atlanta dimension is gym. After gym, TURF
+should produce a pre-scale decision note: what is observed, what is checked
+absent, what remains source-gated, and whether Atlanta is comparable enough to
+add another metro.

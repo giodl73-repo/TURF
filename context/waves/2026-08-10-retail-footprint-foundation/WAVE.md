@@ -111,6 +111,7 @@ before broader chain coverage begins.
 | 92 | Atlanta pharmacy layer | complete | Added checked Georgia drugstore pharmacy signal and refreshed the Atlanta context summary to seven dimensions. |
 | 93 | Atlanta dollar-store source gate | complete | Recorded Atlanta dollar-store Overpass timeouts as source gates and refreshed the context summary to eight dimensions. |
 | 94 | Atlanta hardware layer | complete | Added a checked Buckhead hardware row, source-gated six timeout fields, and refreshed the context summary to nine dimensions. |
+| 95 | Atlanta laundromat layer | complete | Added dense Cumberland laundromat rows, checked Perimeter/North Point absent, source-gated four timeout fields, and refreshed the context summary to ten dimensions. |
 
 ## Success criteria
 

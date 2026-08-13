@@ -1,0 +1,5 @@
+target_id,target_label,anchor_field,facility_type,gate_status,gate_reason,source,source_date
+buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,laundromat,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+camp-creek,Camp Creek field,airport_edge_power_center,laundromat,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+northlake,Northlake field,legacy_suburban_mall_node,laundromat,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13
+decatur-emory,Decatur / Emory field,inner_service_village,laundromat,source_gated,overpass_target_timeout,OSM Overpass,2026-08-13

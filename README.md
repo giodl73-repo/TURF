@@ -77,6 +77,7 @@ python scripts\fetch_osm_civic.py --facility-type gym --target-id bellevue-core 
 python scripts\fetch_osm_civic.py --facility-type hardware --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-hardware-tacoma-mall.csv --source-date 2026-08-13 --retries 3
 python scripts\fetch_osm_civic.py --facility-type hardware --target-id buckhead-lenox-phipps --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-hardware-atlanta-buckhead-lenox-phipps.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 python scripts\fetch_osm_civic.py --facility-type laundromat --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-laundromat-tacoma-mall.csv --source-date 2026-08-13 --retries 3 --request-timeout-seconds 30
+python scripts\fetch_osm_civic.py --facility-type laundromat --target-id cumberland-vinings --targets fixtures\geography\ret-atlanta-anchor-field-targets.csv --output fixtures\civic\tmp-laundromat-atlanta-cumberland-vinings.csv --source-date 2026-08-13 --retries 1 --request-timeout-seconds 25 --endpoint https://overpass.kumi.systems/api/interpreter
 duckdb -c ".read queries/ret-washington-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-library-summary.sql"
@@ -91,6 +92,7 @@ duckdb -c ".read queries/ret-atlanta-anchor-field-bank-credit-union-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-pharmacy-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-hardware-summary.sql"
+duckdb -c ".read queries/ret-atlanta-anchor-field-laundromat-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
 duckdb -c ".read queries/ret-atlanta-anchor-field-gas-convenience-summary.sql"
@@ -382,6 +384,9 @@ The Atlanta anchor-field dollar-store source-gate readout is:
 
 The Atlanta anchor-field hardware readout is:
 `reports\ret-atlanta-anchor-field-hardware-summary.md`.
+
+The Atlanta anchor-field laundromat readout is:
+`reports\ret-atlanta-anchor-field-laundromat-summary.md`.
 
 The Atlanta anchor-field context summary is:
 `reports\ret-atlanta-anchor-field-context-summary.md`.

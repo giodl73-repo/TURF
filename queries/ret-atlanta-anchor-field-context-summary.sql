@@ -1,8 +1,9 @@
 -- Atlanta anchor-field context summary.
 --
--- Combine the nine Atlanta context dimensions acquired so far:
+-- Combine the ten Atlanta context dimensions acquired so far:
 -- four civic anchors, bank/credit-union, gas/convenience, pharmacy, and
--- dollar-store value errands, and hardware small-trade errands.
+-- dollar-store value errands, hardware small-trade errands, and laundromat
+-- household-service errands.
 
 COPY (
     WITH targets AS (
@@ -56,6 +57,14 @@ COPY (
             hardware_signal
         FROM read_csv_auto('reports/ret-atlanta-anchor-field-hardware-summary.csv', all_varchar = true)
     ),
+    laundromat AS (
+        SELECT
+            field_id,
+            laundromat_rows,
+            operator_count AS laundromat_brands,
+            laundromat_signal
+        FROM read_csv_auto('reports/ret-atlanta-anchor-field-laundromat-summary.csv', all_varchar = true)
+    ),
     joined AS (
         SELECT
             targets.field_id,
@@ -82,7 +91,10 @@ COPY (
             dollar_store.dollar_store_signal,
             TRY_CAST(hardware.hardware_rows AS INTEGER) AS hardware_rows,
             TRY_CAST(hardware.hardware_brands AS INTEGER) AS hardware_brands,
-            hardware.hardware_signal
+            hardware.hardware_signal,
+            TRY_CAST(laundromat.laundromat_rows AS INTEGER) AS laundromat_rows,
+            TRY_CAST(laundromat.laundromat_brands AS INTEGER) AS laundromat_brands,
+            laundromat.laundromat_signal
         FROM targets
         LEFT JOIN civic
             ON targets.field_id = civic.field_id
@@ -96,6 +108,8 @@ COPY (
             ON targets.field_id = dollar_store.field_id
         LEFT JOIN hardware
             ON targets.field_id = hardware.field_id
+        LEFT JOIN laundromat
+            ON targets.field_id = laundromat.field_id
     ),
     scored AS (
         SELECT
@@ -106,12 +120,14 @@ COPY (
                 + CASE WHEN pharmacy_signal = 'observed' THEN 1 ELSE 0 END
                 + CASE WHEN dollar_store_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 + CASE WHEN hardware_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
+                + CASE WHEN laundromat_signal IN ('observed', 'observed_dense') THEN 1 ELSE 0 END
                 AS observed_dimensions,
             source_gated_civic_dimensions
                 + CASE WHEN bank_credit_union_signal = 'source_gated' THEN 1 ELSE 0 END
                 + CASE WHEN gas_convenience_signal = 'source_gated' THEN 1 ELSE 0 END
                 + CASE WHEN dollar_store_signal = 'source_gated' THEN 1 ELSE 0 END
                 + CASE WHEN hardware_signal = 'source_gated' THEN 1 ELSE 0 END
+                + CASE WHEN laundromat_signal = 'source_gated' THEN 1 ELSE 0 END
                 AS source_gated_dimensions
         FROM joined
     )
@@ -119,7 +135,7 @@ COPY (
         field_id,
         label,
         anchor_field,
-        9 AS dimensions,
+        10 AS dimensions,
         observed_dimensions,
         source_gated_dimensions,
         post_office_rows,
@@ -136,9 +152,14 @@ COPY (
         dollar_store_brands,
         hardware_rows,
         hardware_brands,
+        laundromat_rows,
+        laundromat_brands,
         CASE
             WHEN observed_dimensions = 0 AND source_gated_dimensions >= 6
                 THEN 'fully_source_gated_context_field'
+            WHEN bank_credit_union_signal = 'observed_dense'
+                AND laundromat_signal = 'observed_dense'
+                THEN 'finance_household_service_field'
             WHEN bank_credit_union_signal = 'observed_dense'
                 AND gas_convenience_signal = 'observed_dense'
                 AND pharmacy_signal = 'observed'
@@ -180,7 +201,8 @@ COPY (
             'gas_convenience_' || gas_convenience_signal,
             'pharmacy_' || pharmacy_signal,
             'dollar_store_' || dollar_store_signal,
-            'hardware_' || hardware_signal
+            'hardware_' || hardware_signal,
+            'laundromat_' || laundromat_signal
         ) AS context_signal_summary
     FROM scored
     ORDER BY
