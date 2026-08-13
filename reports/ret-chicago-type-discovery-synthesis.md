@@ -36,7 +36,7 @@ The useful move is to treat Chicago as a type laboratory:
 | Oakbrook widened | `confirmed_postal_big_box_edge_field` | Oakbrook Center, The District, post office, Costco/Walmart, and grocery make it the cleanest suburban edge comparison field. |
 | Woodfield / Schaumburg | `confirmed_edge_city_mall_grocery_field` | Woodfield Mall and Woodfield Village Green stack with Costco and a four-brand grocery grid. |
 | Midway / Ford City | `confirmed_mall_big_box_grocery_field` | Ford City Mall, Burbank Shopping Center, Costco/Target, and a three-brand grocery grid mark an airport-edge power field. |
-| Orland Square | `confirmed_grocery_supported_mall_field` | Orland Square Mall and shopping center are confirmed, with three-brand grocery support but no direct mass-retail or pharmacy rows in the bounded field. |
+| Orland Square | `confirmed_grocery_supported_mall_field` | Orland Square Mall and shopping center are confirmed, with three-brand grocery support and observed postal civic signal but no direct mass-retail or pharmacy rows in the bounded field. |
 
 ## What This Teaches
 
@@ -61,7 +61,8 @@ they create typed territory fields when their categories intersect.
 The synthesis deliberately avoids final strength ranking. OSM source gates
 remain material:
 
-- Post office is observed only in Oakbrook and source-gated elsewhere.
+- Post office is observed in Loop / River North, Oakbrook, and Orland Square,
+  and source-gated in four fields.
 - Gym is source-gated in all seven fields.
 - Retail complex is target-limited, not a complete Illinois complex census.
 - Grocery, pharmacy, and mass retail are exact-brand Overture layers, not full
@@ -74,8 +75,8 @@ Before scaling to another metro, TURF should do one of two things:
 1. Create a reusable type-discovery synthesis contract so Washington, Atlanta,
    and Chicago can be compared by the same observed/source-gated/checked-absent
    rules.
-2. Run a simplified OSM retry track for Chicago civic/wellness layers to reduce
-   source-gated dimensions before any final ranking.
+2. Continue the simplified OSM retry track for Chicago civic/wellness layers to
+   reduce source-gated dimensions before any final ranking.
 
 The first path helps scale. The second path improves Chicago resolution. The
 current evidence favors the first path if the goal is learning across more

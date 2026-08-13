@@ -5,4 +5,4 @@ old-orchard-skokie,Old Orchard / Skokie field,north_suburban_mall_field,0,0,0,0,
 oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,2,1,1,1,0,Oak Brook Post Office,observed,""
 woodfield-schaumburg,Woodfield / Schaumburg field,northwest_edge_city_mall_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
 ford-city-cicero,Midway / Ford City field,southwest_airport_edge_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
-orland-square,Orland Square field,south_suburban_mall_field,0,0,0,0,0,"",source_gated,overpass_target_timeout
+orland-square,Orland Square field,south_suburban_mall_field,3,2,1,1,0,Orland Park Post Office; Orland Park Retail Post Office,observed,""

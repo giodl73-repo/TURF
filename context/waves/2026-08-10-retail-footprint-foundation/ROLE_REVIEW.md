@@ -3858,3 +3858,35 @@ Status: pass with next-output request.
 The next useful gate is either Camp Creek source resolution or Chicago's
 remaining OSM post-office/gym gates. Those would make the fifth-metro decision
 less dependent on uneven source quality.
+
+## Pulse 122 Chicago Orland Post-Office Source Resolution
+
+### Market Analyst
+
+Status: pass.
+
+Orland Square moves from source-limited partial to usable type discovery. The
+Chicago profile now has six comparable fields and one partial field.
+
+### Market Geographer
+
+Status: pass.
+
+Orland is now a confirmed grocery-supported mall field with postal civic
+signal, not just a mall/grocery field with unresolved civic evidence.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Shipping Pros remains visible but excluded as a private shipping counter. Old
+Orchard stays source-gated after a 504 timeout rather than being treated as
+absent.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Old Orchard is now Chicago's only type-discovery partial field. The next
+resolution pass should target Old Orchard post office/gym or decide whether the
+remaining Chicago gates are acceptable before fifth-metro scale.

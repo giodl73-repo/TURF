@@ -7,8 +7,8 @@ to another metro or adds another source family.
 
 Included layers:
 
-- Post office: OSM/Overpass, observed for Loop / River North and Oakbrook,
-  source-gated for five fields.
+- Post office: OSM/Overpass, observed for Loop / River North, Oakbrook, and
+  Orland Square, source-gated for four fields.
 - Gym: OSM/Overpass, source-gated for all seven fields.
 - Pharmacy: reviewed Illinois Overture drugstore layer.
 - Mass retail: reviewed Illinois Overture Target / Walmart / Costco / Sam's
@@ -54,7 +54,7 @@ another metro before this stack is used as the comparison baseline.
 | Oakbrook widened | 4 | 1 | 1 | `confirmed_postal_big_box_edge_field` | `usable_for_type_discovery` |
 | Woodfield / Schaumburg | 3 | 2 | 1 | `confirmed_edge_city_mall_grocery_field` | `usable_for_type_discovery_retry_osm_before_ranking` |
 | Midway / Ford City | 3 | 2 | 1 | `confirmed_mall_big_box_grocery_field` | `usable_for_type_discovery_retry_osm_before_ranking` |
-| Orland Square | 2 | 2 | 2 | `confirmed_grocery_supported_mall_field` | `source_limited_retry_or_alternate_source` |
+| Orland Square | 3 | 1 | 2 | `confirmed_grocery_supported_mall_field` | `usable_for_type_discovery` |
 
 ## Interpretation
 
@@ -73,7 +73,8 @@ Woodfield and Ford City are likely edge/power fields: both combine grocery grid
 signal with big-box signal, but civic/wellness OSM gates remain unresolved.
 
 Retail-complex confirmation resolves the main mall-anchor uncertainty. Old
-Orchard and Orland Square are no longer merely grocery-supported candidates;
-they are confirmed mall fields with thin or source-limited non-core service
-evidence. Woodfield and Ford City now have confirmed mall structure plus grocery
-and big-box signal.
+Orchard remains a confirmed mall field with thin or source-limited non-core
+service evidence. Orland Square now adds observed postal civic signal to its
+confirmed mall and grocery support, moving it into the usable type-discovery
+set. Woodfield and Ford City now have confirmed mall structure plus grocery and
+big-box signal.

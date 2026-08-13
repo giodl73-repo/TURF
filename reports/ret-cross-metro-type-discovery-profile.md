@@ -57,8 +57,8 @@ The current generated profile has 28 rows:
 | Washington | `baseline_comparable` | 6 |
 | Atlanta | `type_discovery_partial` | 6 |
 | Atlanta | `source_limited` | 1 |
-| Chicago | `type_discovery_comparable` | 5 |
-| Chicago | `type_discovery_partial` | 2 |
+| Chicago | `type_discovery_comparable` | 6 |
+| Chicago | `type_discovery_partial` | 1 |
 | Dallas/Fort Worth | `type_discovery_comparable` | 7 |
 | Dallas/Fort Worth | `type_discovery_partial` | 1 |
 
@@ -72,7 +72,7 @@ Profile basis:
 
 ## Current Comparable Types
 
-Washington contributes the complete baseline set. Chicago now contributes five
+Washington contributes the complete baseline set. Chicago now contributes six
 type-discovery-comparable fields:
 
 - Loop / River North: `urban_core_everyday_grid` with observed postal signal
@@ -81,6 +81,8 @@ type-discovery-comparable fields:
 - Oakbrook widened: `confirmed_postal_big_box_edge_field`.
 - Woodfield / Schaumburg: `confirmed_edge_city_mall_grocery_field`.
 - Midway / Ford City: `confirmed_mall_big_box_grocery_field`.
+- Orland Square: `confirmed_grocery_supported_mall_field` with observed postal
+  civic signal after the second Chicago post-office source-resolution pass.
 
 Atlanta contributes six partial type-discovery fields, but none are baseline
 comparable because every Atlanta field still carries at least five source-gated

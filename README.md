@@ -399,6 +399,9 @@ The Chicago anchor-field post-office readout is:
 The Chicago source-resolution pass is:
 `reports\ret-chicago-source-resolution-pass.md`.
 
+The Chicago Orland post-office source-resolution pass is:
+`reports\ret-chicago-orland-post-office-source-resolution-pass.md`.
+
 The Chicago anchor-field gym source-gate readout is:
 `reports\ret-chicago-anchor-field-gym-summary.md`.
 
