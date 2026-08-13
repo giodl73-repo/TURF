@@ -101,6 +101,7 @@ before broader chain coverage begins.
 | 82 | Gym wellness-service layer | complete | Added reviewed OSM/Overpass fitness-center rows and completed all 11 pre-scale context dimensions with Bellevue as the wellness outlier. |
 | 83 | Atlanta context scale targets | complete | Added seven Atlanta field targets and a scale gate for proving the 11-dimension context contract before adding more metros. |
 | 84 | Atlanta post-office civic layer | complete | Added reviewed Atlanta OSM post-office rows, excluded private shipping counters, and recorded Camp Creek/Northlake as source-gated timeouts. |
+| 85 | Atlanta library civic layer | complete | Added Buckhead Library as the first Atlanta library signal and recorded the remaining fields as source-gated Overpass timeouts. |
 
 ## Success criteria
 

@@ -2572,3 +2572,37 @@ Status: pass with next-output request.
 The next Atlanta civic layer should be library or park. Libraries will test
 formal civic-service overlap; parks will test public open-space texture across
 edge-city, legacy mall, and inner service-village fields.
+
+## Pulse 85 Atlanta Library Civic Layer
+
+### Market Analyst
+
+Status: pass with comparability warning.
+
+Buckhead / Lenox / Phipps is now the first Atlanta field with both postal and
+library civic signal. The other fields are source-gated, so this pulse should
+not be used to rank Atlanta fields by library access yet.
+
+### Market Geographer
+
+Status: pass.
+
+The readout preserves the full seven-field geography and does not collapse
+failed fetches into absences. That is the right behavior for a partial civic
+layer.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The checked row keeps OSM source, date, ODbL rights status, and review status.
+The six unresolved fields are documented in a source-gate fixture.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next layer should probably be parks because parks are likely denser in OSM
+and may resolve more fields than libraries. After parks, Atlanta needs a
+context summary that makes observed, checked-absent, and source-gated dimensions
+visible side by side.
