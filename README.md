@@ -486,6 +486,9 @@ The Philadelphia / South Jersey anchor-field target gate is:
 The Philadelphia / South Jersey anchor-field post-office readout is:
 `reports\ret-philadelphia-anchor-field-post-office-summary.md`.
 
+The Philadelphia / South Jersey anchor-field grocery readout is:
+`reports\ret-philadelphia-anchor-field-grocery-summary.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

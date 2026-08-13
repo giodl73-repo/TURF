@@ -1,0 +1,9 @@
+field_id,label,anchor_field,grocery_rows,grocery_brands,grocery_brand_list,grocery_names,grocery_signal
+center-city-market-east,Center City / Market East field,dense_northeast_rail_civic_retail_field,7,4,ACME; GIANT; Trader Joe's; Whole Foods Market,Acme; Acme; GIANT Philadelphia; Giant Food Stores; Trader Joe's; Trader Joe's; Whole Foods Market,multi_brand_grocery_grid
+university-city-30th-street,University City / 30th Street field,eds_meds_rail_service_field,4,3,ACME; ALDI; GIANT,Acme; Aldi; GIANT Heirloom Market; GIANT Heirloom Market,multi_brand_grocery_grid
+king-of-prussia,King of Prussia field,suburban_edge_city_superregional_mall_field,0,0,"","",checked_absent
+northeast-roosevelt,Northeast Philadelphia / Roosevelt Boulevard field,inner_suburban_auto_corridor_field,13,6,ACME; ALDI; GIANT; Lidl; ShopRite; Sprouts Farmers Market,ACME Markets; Acme Markets; Acme Markets; Acme Markets; Aldi; Aldi; Aldi; Giant Food Stores; Lidl; Philadelphia PA -Roosevelt Blvd; ShopRite; ShopRite of Knorr Street; Sprouts,multi_brand_grocery_grid
+conshohocken-plymouth-meeting,Conshohocken / Plymouth Meeting field,river_office_suburban_edge_field,3,2,ALDI; GIANT,Aldi; GIANT; GIANT Food Stores,grocery_service_field
+south-philly-sports-port,South Philadelphia Sports / Port field,event_port_auto_service_field,6,4,ACME; ALDI; ShopRite; Sprouts Farmers Market,Acme; Acme; Aldi; Aldi; ShopRite of Oregon Ave; Sprouts,multi_brand_grocery_grid
+camden-waterfront,Camden Waterfront / Cooper field,older_industrial_river_civic_field,1,1,ALDI,ALDI,single_grocery_anchor
+cherry-hill-moorestown,Cherry Hill / Moorestown field,south_jersey_mall_edge_field,5,4,ACME; ALDI; Wegmans; Whole Foods Market,Acme Markets; Acme Markets; Aldi; Wegmans; Whole Foods Market,multi_brand_grocery_grid

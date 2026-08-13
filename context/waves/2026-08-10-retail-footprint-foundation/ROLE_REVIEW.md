@@ -4732,3 +4732,38 @@ Status: pass with next-output request.
 The next pulse should add Philadelphia / South Jersey grocery across the same
 eight fields so postal civic density can be compared against everyday food
 errand structure before mass retail and pharmacy are added.
+
+## Pulse 148 Philadelphia Grocery Layer
+
+### Market Analyst
+
+Status: pass.
+
+The Pennsylvania / New Jersey grocery fixture validates with 799 packet-ready
+rows after excluding 33 false positives. It gives the sixth metro a strong
+everyday food-errand layer immediately after postal civic signal.
+
+### Market Geographer
+
+Status: pass.
+
+The grocery layer creates useful separation. Northeast Roosevelt, Center City,
+University City, South Philadelphia, and Cherry Hill / Moorestown are
+multi-brand grocery grids, while King of Prussia is checked absent inside the
+bounded mall/office box and Camden is only a single-anchor grocery field.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review excludes pharmacy, gas, and office false positives. The Lidl rule was
+adjusted because Overture uses location-style store names while preserving Lidl
+as the brand, preventing a systematic undercount.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add mass retail across the same eight fields to test
+whether the grocery-dense fields also carry big-box anchor signal or whether
+King of Prussia only emerges once retail-complex and mass-retail layers arrive.
