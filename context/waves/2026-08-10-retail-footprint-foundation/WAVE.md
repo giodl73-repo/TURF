@@ -107,6 +107,7 @@ before broader chain coverage begins.
 | 88 | Atlanta civic context summary | complete | Combined four Atlanta civic dimensions into observed/source-gated archetypes before starting everyday-anchor backfill. |
 | 89 | Atlanta bank/credit-union layer | complete | Added dense Cumberland and Decatur finance rows, showing postal-only civic fields can still be everyday-service rich. |
 | 90 | Atlanta gas/convenience layer | complete | Added dense Decatur gas/convenience rows, exposing an inner service-village field with both finance and car-trip texture. |
+| 91 | Atlanta context summary | complete | Combined six Atlanta civic/everyday dimensions into current typed field archetypes with source gates still explicit. |
 
 ## Success criteria
 

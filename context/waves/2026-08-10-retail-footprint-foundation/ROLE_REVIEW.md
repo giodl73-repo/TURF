@@ -2774,3 +2774,36 @@ Status: pass with next-output request.
 The next useful step is a combined Atlanta civic/everyday summary for the
 dimensions acquired so far, or pharmacy if the goal is to add health-errand
 texture before summarizing.
+
+## Pulse 91 Atlanta Context Summary
+
+### Market Analyst
+
+Status: pass.
+
+The combined summary is the right checkpoint. It shows typed fields emerging
+without pretending the Atlanta pass is complete: finance-dense Cumberland,
+civic/open-space Buckhead, transit Perimeter, open-space North Point, and
+finance-plus-car-trip Decatur.
+
+### Market Geographer
+
+Status: pass.
+
+The labels remain field-specific and geography-aware. Camp Creek and Northlake
+are correctly held as fully source-gated, not weak or empty fields.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report derives from checked summary CSVs and keeps source-gated dimensions
+visible in the output. It does not promote source-gated fields into absence
+claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next layer should add pharmacy or dollar-store texture, then regenerate this
+context summary so the archetypes evolve from the same summary contract.
