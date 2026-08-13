@@ -465,6 +465,9 @@ The Los Angeles / Inland Empire type-discovery synthesis is:
 The post-Los Angeles scale decision is:
 `reports\ret-next-scale-decision-after-la.md`.
 
+The Los Angeles / Inland Empire QSR sidecar layer is:
+`reports\ret-los-angeles-anchor-field-qsr-summary.md`.
+
 The Dallas/Fort Worth anchor-field target gate is:
 `reports\ret-dallas-anchor-field-targets.md`.
 

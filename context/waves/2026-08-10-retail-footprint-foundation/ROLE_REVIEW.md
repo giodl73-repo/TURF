@@ -4352,3 +4352,37 @@ Status: pass with next-output request.
 The next pulse should run the five LA post-office retries or record alternate
 source status, then add the LA QSR layer across the same seven fields and state
 whether QSR changes any emerging field labels.
+
+## Pulse 137 Los Angeles QSR Layer
+
+### Market Analyst
+
+Status: pass.
+
+The QSR layer is strong enough to keep the next work inside LA rather than
+opening a sixth metro. California has 2,834 packet-ready rows after review, and
+all seven selected LA fields have meaningful QSR signal.
+
+### Market Geographer
+
+Status: pass.
+
+QSR intensifies the existing LA terrain instead of replacing it. Five fields
+read as four-brand dense QSR grids, while Glendale / Burbank and South Bay /
+Torrance read as three-brand multi-brand corridors.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The postal retry result is handled correctly. The batch retry returned HTTP 504
+and split retries timed out, so the five fields remain source-gated rather than
+checked absent. The QSR review also excludes three brand false positives.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add auto parts as the trade and car-service sidecar layer
+for the same seven LA fields, then compare QSR saturation against auto-service
+corridor signal before changing the core cross-metro profile.
