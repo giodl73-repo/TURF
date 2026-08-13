@@ -80,9 +80,12 @@ Atlanta contributes five partial type-discovery fields, but none are baseline
 comparable because every Atlanta field still carries at least five source-gated
 dimensions.
 
-## Next Goal
+## Validation
 
-The next reusable step is to turn this SQL report into a stricter synthesis
-contract with validation. That would let TURF scale new metros while preserving
-the distinction between complete baselines, pre-scale stacks, checked absences,
-and source-gated gaps.
+```powershell
+cargo run -p turf-cli -- validate-type-discovery-profile reports\ret-cross-metro-type-discovery-profile.csv
+```
+
+The validator keeps this report as a stricter synthesis contract, so TURF can
+scale new metros while preserving the distinction between complete baselines,
+pre-scale stacks, checked absences, and source-gated gaps.

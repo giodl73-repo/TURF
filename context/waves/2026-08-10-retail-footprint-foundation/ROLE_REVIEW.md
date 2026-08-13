@@ -3370,3 +3370,37 @@ Status: pass with next-output request.
 The next technical step should validate this profile shape as a contract, then
 use it as the scale gate for the next metro. That is more useful now than
 another one-off narrative synthesis.
+
+## Pulse 108 Type-Discovery Profile Validator
+
+### Market Analyst
+
+Status: pass.
+
+The validator turns the cross-metro profile into a repeatable scale gate. That
+is the right step before adding another metro because it protects the comparison
+tiers from drifting.
+
+### Market Geographer
+
+Status: pass.
+
+The validator requires region, field id, label, anchor field, and profile basis.
+That keeps future rows from collapsing full 11-dimension contexts and pre-scale
+stacks into one indistinct geography layer.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The contract checks observed, source-gated, and checked-absent counts, allowed
+source-quality notes, and comparison tiers. It prevents invalid tier labels and
+impossible layer counts from entering the profile.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next metro should now start from this validator as the acceptance gate. Any
+new field stack should prove whether its rows are baseline comparable,
+type-discovery comparable, partial, or source-limited.

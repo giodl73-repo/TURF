@@ -46,6 +46,7 @@ cargo run -p turf-cli -- anchor-profile-v0 reports\ret-north-seattle-anchor-modi
 cargo run -p turf-cli -- summarize-anchor-profile reports\ret-anchor-profile-v0.csv
 cargo run -p turf-cli -- validate-anchor-profile reports\ret-anchor-profile-v1.csv
 cargo run -p turf-cli -- summarize-anchor-profile reports\ret-anchor-profile-v1.csv
+cargo run -p turf-cli -- validate-type-discovery-profile reports\ret-cross-metro-type-discovery-profile.csv
 duckdb -c ".read queries/overture-qsr-washington-2026-07-22.sql"
 duckdb -c ".read queries/overture-qsr-georgia-2026-07-22.sql"
 duckdb -c ".read queries/overture-auto-parts-georgia-2026-07-22.sql"
@@ -237,6 +238,10 @@ intermediate anchor reports.
 
 The `summarize-anchor-profile` command reads Anchor Profile v0 and reports
 counts by modifier, geography scope, and region.
+
+The `validate-type-discovery-profile` command checks the cross-metro
+type-discovery profile contract used to compare Washington, Atlanta, and
+Chicago while preserving source-depth differences.
 
 The first QSR acquisition query is:
 `queries\overture-qsr-washington-2026-07-22.sql`.

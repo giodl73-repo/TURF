@@ -274,6 +274,25 @@ pub struct RetAnchorProfileRow {
     pub anchor_evidence_summary: String,
 }
 
+#[derive(Debug, Clone, PartialEq)]
+pub struct CrossMetroTypeDiscoveryProfileRow {
+    pub region: String,
+    pub field_id: String,
+    pub label: String,
+    pub anchor_field: String,
+    pub profile_basis: String,
+    pub dimensions: usize,
+    pub observed_layers: usize,
+    pub source_gated_layers: usize,
+    pub checked_absent_layers: usize,
+    pub observed_rate: f64,
+    pub source_gated_rate: f64,
+    pub type_discovery_label: String,
+    pub readiness_tier: String,
+    pub source_quality_note: String,
+    pub comparison_tier: String,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct RetCount {
     pub key: String,
@@ -1039,6 +1058,107 @@ pub fn parse_ret_anchor_profile(csv: &str) -> Result<Vec<RetAnchorProfileRow>, S
 
 pub fn validate_ret_anchor_profile(csv: &str) -> Result<usize, String> {
     Ok(parse_ret_anchor_profile(csv)?.len())
+}
+
+pub fn parse_cross_metro_type_discovery_profile(
+    csv: &str,
+) -> Result<Vec<CrossMetroTypeDiscoveryProfileRow>, String> {
+    let mut lines = csv.lines();
+    let header = lines.next().ok_or("missing CSV header")?;
+    let headers: Vec<&str> = header.split(',').map(str::trim).collect();
+    let expected = [
+        "region",
+        "field_id",
+        "label",
+        "anchor_field",
+        "profile_basis",
+        "dimensions",
+        "observed_layers",
+        "source_gated_layers",
+        "checked_absent_layers",
+        "observed_rate",
+        "source_gated_rate",
+        "type_discovery_label",
+        "readiness_tier",
+        "source_quality_note",
+        "comparison_tier",
+    ];
+    if headers != expected {
+        return Err(format!(
+            "unexpected header: expected {}, got {}",
+            expected.join(","),
+            headers.join(",")
+        ));
+    }
+
+    let mut rows = Vec::new();
+    for (offset, line) in lines.enumerate() {
+        let line_number = offset + 2;
+        if line.trim().is_empty() {
+            continue;
+        }
+
+        let fields: Vec<&str> = line.split(',').map(str::trim).collect();
+        if fields.len() != expected.len() {
+            return Err(format!(
+                "line {line_number}: expected {} fields, got {}",
+                expected.len(),
+                fields.len()
+            ));
+        }
+
+        let region = required(fields[0], line_number, "region")?;
+        validate_type_discovery_region(region, line_number)?;
+        let profile_basis = required(fields[4], line_number, "profile_basis")?;
+        validate_type_discovery_profile_basis(profile_basis, line_number)?;
+        let dimensions = parse_usize_field(fields[5], line_number, "dimensions")?;
+        if dimensions == 0 {
+            return Err(format!("line {line_number}: dimensions must be positive"));
+        }
+        let observed_layers = parse_usize_field(fields[6], line_number, "observed_layers")?;
+        let source_gated_layers = parse_usize_field(fields[7], line_number, "source_gated_layers")?;
+        let checked_absent_layers =
+            parse_usize_field(fields[8], line_number, "checked_absent_layers")?;
+        if observed_layers + source_gated_layers + checked_absent_layers > dimensions {
+            return Err(format!(
+                "line {line_number}: layer counts exceed dimensions"
+            ));
+        }
+
+        let observed_rate = parse_rate_field(fields[9], line_number, "observed_rate")?;
+        let source_gated_rate = parse_rate_field(fields[10], line_number, "source_gated_rate")?;
+        let readiness_tier = required(fields[12], line_number, "readiness_tier")?;
+        validate_type_discovery_readiness_tier(readiness_tier, line_number)?;
+        let source_quality_note = required(fields[13], line_number, "source_quality_note")?;
+        validate_type_discovery_source_quality_note(source_quality_note, line_number)?;
+        let comparison_tier = required(fields[14], line_number, "comparison_tier")?;
+        validate_type_discovery_comparison_tier(comparison_tier, line_number)?;
+
+        rows.push(CrossMetroTypeDiscoveryProfileRow {
+            region: region.to_string(),
+            field_id: required(fields[1], line_number, "field_id")?.to_string(),
+            label: required(fields[2], line_number, "label")?.to_string(),
+            anchor_field: fields[3].to_string(),
+            profile_basis: profile_basis.to_string(),
+            dimensions,
+            observed_layers,
+            source_gated_layers,
+            checked_absent_layers,
+            observed_rate,
+            source_gated_rate,
+            type_discovery_label: required(fields[11], line_number, "type_discovery_label")?
+                .to_string(),
+            readiness_tier: readiness_tier.to_string(),
+            source_quality_note: source_quality_note.to_string(),
+            comparison_tier: comparison_tier.to_string(),
+        });
+    }
+
+    Ok(rows)
+}
+
+pub fn validate_cross_metro_type_discovery_profile(csv: &str) -> Result<usize, String> {
+    Ok(parse_cross_metro_type_discovery_profile(csv)?.len())
 }
 
 pub fn build_ret_anchor_profile_v0(
@@ -2830,6 +2950,16 @@ fn parse_flag(value: &str, line_number: usize, field: &str) -> Result<bool, Stri
     }
 }
 
+fn parse_rate_field(value: &str, line_number: usize, field: &str) -> Result<f64, String> {
+    let rate = value
+        .parse::<f64>()
+        .map_err(|_| format!("line {line_number}: invalid {field}"))?;
+    if !(0.0..=1.0).contains(&rate) {
+        return Err(format!("line {line_number}: {field} out of range"));
+    }
+    Ok(rate)
+}
+
 fn validate_status_values(json: &str) -> Result<(), String> {
     let marker = "\"status\":\"";
     let mut remainder = json;
@@ -2881,6 +3011,61 @@ fn validate_metro_context_status(value: &str, line_number: usize) -> Result<(), 
     match value {
         "cbsa" | "non_cbsa" => Ok(()),
         _ => Err(format!("line {line_number}: invalid metro_context_status")),
+    }
+}
+
+fn validate_type_discovery_region(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "washington" | "atlanta" | "chicago" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid region")),
+    }
+}
+
+fn validate_type_discovery_profile_basis(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "full_11_dimension_context" | "pre_scale_6_layer_stack" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid profile_basis")),
+    }
+}
+
+fn validate_type_discovery_readiness_tier(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "high_context_resolution"
+        | "moderate_context_resolution"
+        | "thin_context_resolution"
+        | "partial_profile_field"
+        | "source_limited_field"
+        | "usable_for_type_discovery_retry_osm_before_ranking"
+        | "source_limited_retry_or_alternate_source"
+        | "usable_for_type_discovery"
+        | "needs_more_layers_before_interpretation" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid readiness_tier")),
+    }
+}
+
+fn validate_type_discovery_source_quality_note(
+    value: &str,
+    line_number: usize,
+) -> Result<(), String> {
+    match value {
+        "zero_source_gates"
+        | "usable_for_type_discovery_not_final_ranking"
+        | "retry_or_alternate_source_before_ranking"
+        | "no_source_gates"
+        | "usable_for_type_discovery"
+        | "usable_for_type_discovery_retry_osm_before_ranking"
+        | "source_limited_retry_or_alternate_source" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid source_quality_note")),
+    }
+}
+
+fn validate_type_discovery_comparison_tier(value: &str, line_number: usize) -> Result<(), String> {
+    match value {
+        "baseline_comparable"
+        | "type_discovery_comparable"
+        | "type_discovery_partial"
+        | "source_limited" => Ok(()),
+        _ => Err(format!("line {line_number}: invalid comparison_tier")),
     }
 }
 
@@ -3683,6 +3868,45 @@ atlanta_districts,perimeter,Perimeter,district_core,edge_city_mall_cluster,11,1,
         let error = validate_ret_anchor_profile(csv).expect_err("invalid modifier should fail");
 
         assert!(error.contains("invalid anchor_modifier_v0"));
+    }
+
+    #[test]
+    fn validates_cross_metro_type_discovery_profile_contract() {
+        let csv = "\
+region,field_id,label,anchor_field,profile_basis,dimensions,observed_layers,source_gated_layers,checked_absent_layers,observed_rate,source_gated_rate,type_discovery_label,readiness_tier,source_quality_note,comparison_tier
+chicago,oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,pre_scale_6_layer_stack,6,4,1,1,0.667,0.167,confirmed_postal_big_box_edge_field,usable_for_type_discovery,usable_for_type_discovery,type_discovery_comparable
+";
+        let rows = parse_cross_metro_type_discovery_profile(csv).expect("profile parses");
+
+        assert_eq!(rows.len(), 1);
+        assert_eq!(rows[0].region, "chicago");
+        assert_eq!(rows[0].dimensions, 6);
+        assert_eq!(rows[0].comparison_tier, "type_discovery_comparable");
+        assert_eq!(validate_cross_metro_type_discovery_profile(csv), Ok(1));
+    }
+
+    #[test]
+    fn rejects_invalid_cross_metro_comparison_tier() {
+        let csv = "\
+region,field_id,label,anchor_field,profile_basis,dimensions,observed_layers,source_gated_layers,checked_absent_layers,observed_rate,source_gated_rate,type_discovery_label,readiness_tier,source_quality_note,comparison_tier
+chicago,oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,pre_scale_6_layer_stack,6,4,1,1,0.667,0.167,confirmed_postal_big_box_edge_field,usable_for_type_discovery,usable_for_type_discovery,magic_tier
+";
+        let error = validate_cross_metro_type_discovery_profile(csv)
+            .expect_err("invalid comparison tier should fail");
+
+        assert!(error.contains("invalid comparison_tier"));
+    }
+
+    #[test]
+    fn rejects_cross_metro_layer_counts_over_dimensions() {
+        let csv = "\
+region,field_id,label,anchor_field,profile_basis,dimensions,observed_layers,source_gated_layers,checked_absent_layers,observed_rate,source_gated_rate,type_discovery_label,readiness_tier,source_quality_note,comparison_tier
+chicago,oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,pre_scale_6_layer_stack,6,4,2,2,0.667,0.333,confirmed_postal_big_box_edge_field,usable_for_type_discovery,usable_for_type_discovery,type_discovery_comparable
+";
+        let error = validate_cross_metro_type_discovery_profile(csv)
+            .expect_err("too many layer counts should fail");
+
+        assert!(error.contains("layer counts exceed dimensions"));
     }
 
     #[test]
