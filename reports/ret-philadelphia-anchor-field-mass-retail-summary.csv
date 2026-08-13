@@ -1,0 +1,9 @@
+field_id,label,anchor_field,mass_retail_rows,mass_retail_brands,mass_retail_brand_list,mass_retail_names,mass_retail_signal
+center-city-market-east,Center City / Market East field,dense_northeast_rail_civic_retail_field,2,1,Target,Target; Target,single_brand_big_box_anchor
+university-city-30th-street,University City / 30th Street field,eds_meds_rail_service_field,0,0,"","",checked_absent
+king-of-prussia,King of Prussia field,suburban_edge_city_superregional_mall_field,1,1,Costco,Costco,single_brand_big_box_anchor
+northeast-roosevelt,Northeast Philadelphia / Roosevelt Boulevard field,inner_suburban_auto_corridor_field,1,1,Walmart,Walmart,single_brand_big_box_anchor
+conshohocken-plymouth-meeting,Conshohocken / Plymouth Meeting field,river_office_suburban_edge_field,0,0,"","",checked_absent
+south-philly-sports-port,South Philadelphia Sports / Port field,event_port_auto_service_field,1,1,Target,Target,single_brand_big_box_anchor
+camden-waterfront,Camden Waterfront / Cooper field,older_industrial_river_civic_field,0,0,"","",checked_absent
+cherry-hill-moorestown,Cherry Hill / Moorestown field,south_jersey_mall_edge_field,2,2,Target; Walmart,Target; Walmart Supercenter Mount Laurel - Route 73,multi_brand_big_box_anchor

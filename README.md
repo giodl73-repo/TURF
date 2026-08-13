@@ -489,6 +489,9 @@ The Philadelphia / South Jersey anchor-field post-office readout is:
 The Philadelphia / South Jersey anchor-field grocery readout is:
 `reports\ret-philadelphia-anchor-field-grocery-summary.md`.
 
+The Philadelphia / South Jersey anchor-field mass-retail readout is:
+`reports\ret-philadelphia-anchor-field-mass-retail-summary.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

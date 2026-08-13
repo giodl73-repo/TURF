@@ -4767,3 +4767,38 @@ Status: pass with next-output request.
 The next pulse should add mass retail across the same eight fields to test
 whether the grocery-dense fields also carry big-box anchor signal or whether
 King of Prussia only emerges once retail-complex and mass-retail layers arrive.
+
+## Pulse 149 Philadelphia Mass-Retail Layer
+
+### Market Analyst
+
+Status: pass.
+
+The Pennsylvania / New Jersey mass-retail fixture validates with 324
+packet-ready rows after excluding 34 false positives. The layer is sparse enough
+to be a real discriminator after the denser grocery layer.
+
+### Market Geographer
+
+Status: pass.
+
+Cherry Hill / Moorestown is the only multi-brand big-box anchor, strengthening
+its South Jersey mall-corridor role. King of Prussia now has Costco signal even
+though grocery was checked absent, pointing to a mall/complex-led rather than
+grocery-led field.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review excludes service, distribution, grocery-format, repair, mobile,
+optical, gas, and bakery rows before interpretation. The report remains public
+commercial footprint evidence.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add pharmacy across the same eight targets, then
+retail-complex confirmation to test whether King of Prussia and Cherry Hill /
+Moorestown are structurally mall-led fields.

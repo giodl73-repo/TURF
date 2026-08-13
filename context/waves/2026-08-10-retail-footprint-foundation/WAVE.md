@@ -165,6 +165,7 @@ before broader chain coverage begins.
 | 146 | Philadelphia sixth-metro targets | complete | Selected Philadelphia / South Jersey and added eight ready anchor-field targets for Northeast rail, river, port, mall, and cross-state retail terrain. |
 | 147 | Philadelphia post-office layer | complete | Added observed post-office signal for all eight Philadelphia / South Jersey fields, excluding private counters and starting the sixth-metro stack without source gates. |
 | 148 | Philadelphia grocery layer | complete | Added reviewed Pennsylvania / New Jersey grocery signal, finding five multi-brand grocery grids plus Camden single-anchor and King of Prussia checked-absent cases. |
+| 149 | Philadelphia mass-retail layer | complete | Added reviewed Pennsylvania / New Jersey mass retail, finding Cherry Hill / Moorestown as the only multi-brand big-box anchor in the eight-field set. |
 
 ## Success criteria
 
