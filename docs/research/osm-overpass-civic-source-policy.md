@@ -24,6 +24,8 @@ signals when the fixture preserves source, date, license, and review status.
   https://wiki.openstreetmap.org/wiki/Tag:shop%3Dconvenience
 - Hardware shop tag:
   https://wiki.openstreetmap.org/wiki/Tag:shop%3Dhardware
+- Laundry shop tag:
+  https://wiki.openstreetmap.org/wiki/Tag:shop%3Dlaundry
 - Post-office tag:
   https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpost_office
 - Library tag:
@@ -100,3 +102,7 @@ features remain in the audit fixture but are excluded with
 Hardware rows use named OSM hardware-shop features as a first small-trade and
 repair-errand proxy. Unnamed hardware rows remain in the audit fixture but are
 excluded with `review_reason = unnamed_trade_anchor`.
+
+Laundromat rows use named OSM laundry-shop features as a first household-service
+proxy. Unnamed laundry rows remain in the audit fixture but are excluded with
+`review_reason = unnamed_household_service_anchor`.

@@ -2432,3 +2432,39 @@ Status: pass with next-output request.
 The remaining pre-scale everyday gates are laundromats and gyms. Laundromats
 should be next if the goal is household-service texture; gyms should follow to
 test wellness and routine-service fields.
+
+## Pulse 81 Laundromat Household-Service Layer
+
+### Market Analyst
+
+Status: pass.
+
+The laundromat layer is sparse but analytically useful. Only Tacoma Mall and
+South Hill / Puyallup have checked rows, adding household-service texture that
+is distinct from finance, gas/convenience, hardware, and dollar-store signals.
+
+### Market Geographer
+
+Status: pass.
+
+The layer preserves the same bounded fields and shows that a field can be
+car-trip or value-store rich without having checked laundromat evidence.
+Southcenter and Kitsap both lack the household-service row that Tacoma and
+South Hill carry.
+
+### Source Policy Auditor
+
+Status: pass with operational note.
+
+Rows use named OSM laundry-shop features with ODbL rights status preserved.
+Alternate Overpass endpoints were needed for Kitsap and South Hill after the
+main endpoint timed out, so the fetcher now supports bounded request timeouts
+and retries `URLError`.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The only remaining pre-scale everyday gate is gym. Adding it should test
+wellness and routine-service texture before TURF scales the full context
+contract to Seattle city, Atlanta, and other urban areas.

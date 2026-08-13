@@ -48,6 +48,7 @@ OSM_TAGS = {
         ("shop", "convenience"),
     ],
     "hardware": [("shop", "hardware")],
+    "laundromat": [("shop", "laundry")],
     "library": [("amenity", "library")],
     "park": [
         ("leisure", "park"),
@@ -70,7 +71,7 @@ def build_query(target: dict[str, str], facility_type: str) -> str:
     bbox = f"{min_lat},{min_lon},{max_lat},{max_lon}"
     selectors = []
     for key, value in OSM_TAGS[facility_type]:
-        if facility_type in {"dollar_store", "hardware", "park"}:
+        if facility_type in {"dollar_store", "hardware", "laundromat", "park"}:
             selectors.extend(
                 [
                     f'  node["{key}"="{value}"]["name"]({bbox});',
@@ -103,7 +104,7 @@ out center tags;
 """
 
 
-def fetch_overpass(endpoint: str, query: str, user_agent: str) -> dict:
+def fetch_overpass(endpoint: str, query: str, user_agent: str, request_timeout_seconds: int) -> dict:
     body = urllib.parse.urlencode({"data": query}).encode("utf-8")
     request = urllib.request.Request(
         endpoint,
@@ -114,7 +115,7 @@ def fetch_overpass(endpoint: str, query: str, user_agent: str) -> dict:
         },
         method="POST",
     )
-    with urllib.request.urlopen(request, timeout=90) as response:
+    with urllib.request.urlopen(request, timeout=request_timeout_seconds) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
@@ -157,6 +158,8 @@ def review_reason(tags: dict, facility_type: str) -> str:
             return "ev_charging_candidate"
     if facility_type == "hardware" and not name:
         return "unnamed_trade_anchor"
+    if facility_type == "laundromat" and not name:
+        return "unnamed_household_service_anchor"
     if facility_type == "post_office" and (
         "ups store" in name
         or "ups store" in operator
@@ -197,6 +200,7 @@ def row_from_element(
         "non_target_variety_store",
         "private_shipping_counter",
         "unnamed_open_space",
+        "unnamed_household_service_anchor",
         "unnamed_trip_anchor",
         "unnamed_trade_anchor",
         "unnamed_transit_point",
@@ -249,6 +253,7 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
                 "non_target_variety_store",
                 "private_shipping_counter",
                 "unnamed_open_space",
+                "unnamed_household_service_anchor",
                 "unnamed_trip_anchor",
                 "unnamed_trade_anchor",
                 "unnamed_transit_point",
@@ -283,6 +288,7 @@ def main() -> None:
         default="TURF civic anchor research (https://github.com/giodl73-repo/TURF)",
     )
     parser.add_argument("--retries", type=int, default=3)
+    parser.add_argument("--request-timeout-seconds", type=int, default=90)
     parser.add_argument(
         "--review-existing",
         action="store_true",
@@ -315,9 +321,10 @@ def main() -> None:
                     args.endpoint,
                     build_query(target, args.facility_type),
                     args.user_agent,
+                    args.request_timeout_seconds,
                 )
                 break
-            except (TimeoutError, socket.timeout, urllib.error.HTTPError):
+            except (TimeoutError, socket.timeout, urllib.error.HTTPError, urllib.error.URLError):
                 if attempt == args.retries:
                     raise
                 time.sleep(5 * attempt)

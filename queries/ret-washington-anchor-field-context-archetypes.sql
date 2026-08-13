@@ -17,6 +17,7 @@ COPY (
             TRY_CAST(dollar_store_rows AS INTEGER) AS dollar_store_rows,
             TRY_CAST(gas_convenience_rows AS INTEGER) AS gas_convenience_rows,
             TRY_CAST(hardware_rows AS INTEGER) AS hardware_rows,
+            TRY_CAST(laundromat_rows AS INTEGER) AS laundromat_rows,
             TRY_CAST(pharmacy_rows AS INTEGER) AS pharmacy_rows,
             library_names,
             park_names,
@@ -26,6 +27,7 @@ COPY (
             dollar_store_names,
             gas_convenience_names,
             hardware_names,
+            laundromat_names,
             pharmacy_names
         FROM read_csv_auto(
             'reports/ret-washington-anchor-field-context-summary.csv',
@@ -43,6 +45,7 @@ COPY (
             dollar_store_rows > 0 AS has_dollar_store,
             gas_convenience_rows > 0 AS has_gas_convenience,
             hardware_rows > 0 AS has_hardware,
+            laundromat_rows > 0 AS has_laundromat,
             pharmacy_rows > 0 AS has_pharmacy,
             (library_rows > 0)::INTEGER
                 + (park_rows > 0)::INTEGER
@@ -63,6 +66,7 @@ COPY (
         has_dollar_store,
         has_gas_convenience,
         has_hardware,
+        has_laundromat,
         has_pharmacy,
         CASE
             WHEN civic_dimensions_observed = 4 AND has_pharmacy AND has_bank_credit_union THEN 'full_civic_multi_errand_field'
@@ -94,6 +98,7 @@ COPY (
         dollar_store_names,
         gas_convenience_names,
         hardware_names,
+        laundromat_names,
         pharmacy_names
     FROM features
     ORDER BY

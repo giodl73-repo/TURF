@@ -67,6 +67,7 @@ python scripts\fetch_osm_civic.py --facility-type bank_credit_union --targets fi
 python scripts\fetch_osm_civic.py --facility-type dollar_store --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-dollar-store-tacoma-mall.csv --source-date 2026-08-13 --retries 3
 python scripts\fetch_osm_civic.py --facility-type gas_convenience --target-id bellevue-core --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-gas-bellevue.csv --source-date 2026-08-13 --retries 2
 python scripts\fetch_osm_civic.py --facility-type hardware --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-hardware-tacoma-mall.csv --source-date 2026-08-13 --retries 3
+python scripts\fetch_osm_civic.py --facility-type laundromat --target-id tacoma-mall --targets fixtures\geography\ret-washington-anchor-field-targets.csv --output fixtures\civic\tmp-laundromat-tacoma-mall.csv --source-date 2026-08-13 --retries 3 --request-timeout-seconds 30
 duckdb -c ".read queries/ret-washington-anchor-field-post-office-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-library-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-transit-summary.sql"
@@ -75,6 +76,7 @@ duckdb -c ".read queries/ret-washington-anchor-field-bank-credit-union-summary.s
 duckdb -c ".read queries/ret-washington-anchor-field-dollar-store-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-gas-convenience-summary.sql"
 duckdb -c ".read queries/ret-washington-anchor-field-hardware-summary.sql"
+duckdb -c ".read queries/ret-washington-anchor-field-laundromat-summary.sql"
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-washington-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-qsr-georgia-review-2026-07-22.csv
 cargo run -p turf-cli -- validate-store-review fixtures\stores\overture-auto-parts-georgia-review-2026-07-22.csv
@@ -313,6 +315,9 @@ The Washington anchor-field gas / convenience readout is:
 
 The Washington anchor-field hardware readout is:
 `reports\ret-washington-anchor-field-hardware-summary.md`.
+
+The Washington anchor-field laundromat readout is:
+`reports\ret-washington-anchor-field-laundromat-summary.md`.
 
 The Washington retail-complex source coverage audit is:
 `reports\ret-washington-retail-complex-coverage.md`.

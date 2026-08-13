@@ -14,14 +14,14 @@ reports/ret-washington-anchor-field-context-summary.csv
 
 ## Summary
 
-| Field | Source-gated dimensions | Observed dimensions | Bank / credit union rows | Dollar-store rows | Gas / convenience rows | Hardware rows | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Bellevue core | 2 | 7 | 32 | 0 | 3 | 0 | 1 | 7 | 1 | 3 | 2 |
-| Factoria | 2 | 4 | 7 | 0 | 6 | 0 | 0 | 4 | 1 | 0 | 0 |
-| Southcenter / Tukwila | 2 | 8 | 11 | 1 | 10 | 3 | 1 | 9 | 1 | 1 | 0 |
-| Tacoma Mall | 2 | 5 | 4 | 1 | 9 | 3 | 0 | 6 | 0 | 0 | 0 |
-| Kitsap Mall / Silverdale | 2 | 9 | 13 | 1 | 10 | 1 | 1 | 2 | 1 | 1 | 1 |
-| South Hill / Puyallup | 2 | 7 | 14 | 1 | 14 | 1 | 0 | 4 | 0 | 2 | 1 |
+| Field | Source-gated dimensions | Observed dimensions | Bank / credit union rows | Dollar-store rows | Gas / convenience rows | Hardware rows | Laundromat rows | Library rows | Park rows | Post-office rows | Transit rows | Pharmacy rows |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Bellevue core | 1 | 7 | 32 | 0 | 3 | 0 | 0 | 1 | 7 | 1 | 3 | 2 |
+| Factoria | 1 | 4 | 7 | 0 | 6 | 0 | 0 | 0 | 4 | 1 | 0 | 0 |
+| Southcenter / Tukwila | 1 | 8 | 11 | 1 | 10 | 3 | 0 | 1 | 9 | 1 | 1 | 0 |
+| Tacoma Mall | 1 | 6 | 4 | 1 | 9 | 3 | 1 | 0 | 6 | 0 | 0 | 0 |
+| Kitsap Mall / Silverdale | 1 | 9 | 13 | 1 | 10 | 1 | 0 | 1 | 2 | 1 | 1 | 1 |
+| South Hill / Puyallup | 1 | 8 | 14 | 1 | 14 | 1 | 1 | 0 | 4 | 0 | 2 | 1 |
 
 ## First Signal
 
@@ -117,11 +117,20 @@ Hardware:
 - Hardware is sparse, but it adds a small-trade signal that distinguishes
   auto-oriented mall/service fields from the tighter downtown Bellevue field.
 
+Laundromats:
+
+- Tacoma Mall has 38th Street Laundromat.
+- South Hill / Puyallup has Puyallup South Hill Laundry.
+- Bellevue core, Factoria, Southcenter / Tukwila, and Kitsap Mall / Silverdale
+  have no checked laundromat row inside the current bounded fields.
+- This is a household-service signal, separate from finance, car-trip,
+  value-store, and small-trade evidence.
+
 ## Source Gates
 
-Gyms and laundromats are not yet counted. They are present in the context
-contract as source-gated dimensions so later acquisition can fill them without
-changing the profile shape.
+Gyms are not yet counted. The gym dimension remains in the context contract as
+a source-gated dimension so later acquisition can fill it without changing the
+profile shape.
 
 ## Learning
 
@@ -131,8 +140,12 @@ civic-plus-multi-errand fields. Southcenter / Tukwila looks full civic with
 finance and car-trip errands but without the checked pharmacy signal. South
 Hill / Puyallup looks mobility-plus-everyday with the strongest car-trip
 texture. Southcenter / Tukwila and Tacoma Mall now carry the clearest hardware
-small-trade signal and a checked value-store row. Factoria has parks, postal
-evidence, finance errands, and moderate gas/convenience support but lacks
-library, transit, pharmacy, hardware, and dollar-store evidence. Bellevue core
-is finance-dense but gas/convenience-light, hardware-absent, and dollar-store
-absent, which makes the downtown versus auto-oriented field split clearer.
+small-trade signal and a checked value-store row, while Tacoma also has the
+household-service laundromat signal. South Hill / Puyallup now combines
+mobility, pharmacy, finance, gas/convenience, dollar-store, hardware, and
+laundromat evidence. Factoria has parks, postal evidence, finance errands, and
+moderate gas/convenience support but lacks library, transit, pharmacy,
+hardware, dollar-store, and laundromat evidence. Bellevue core is finance-dense
+but gas/convenience-light, hardware-absent, dollar-store absent, and
+laundromat-absent, which makes the downtown versus auto-oriented field split
+clearer.
