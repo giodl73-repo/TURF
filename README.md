@@ -534,6 +534,9 @@ The cross-metro car-trip stack comparison is:
 The reusable car-trip stack typing note is:
 `reports\ret-car-trip-stack-typing-note.md`.
 
+The enclave family consolidation is:
+`reports\ret-enclave-family-consolidation.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

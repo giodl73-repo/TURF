@@ -180,6 +180,7 @@ before broader chain coverage begins.
 | 161 | Cross-metro gas / convenience sidecar | complete | Added a national gas / convenience car-trip sidecar across all 43 fields, finding 15 dense grids, 14 corridors, nine service nodes, and five single anchors. |
 | 162 | Car-trip stack comparison | complete | Compared QSR, auto parts, and gas / convenience across 30 field-aligned sidecar fields, separating all-three dense grids, combined enclaves, food-forward fields, gas/highway grids, and light car-trip support. |
 | 163 | Car-trip stack typing note | complete | Converted the 30-field stack comparison into reusable sidecar labels and a next-metro contract while keeping car-trip evidence outside the core profile. |
+| 164 | Enclave family consolidation | complete | Consolidated 42 detailed type-discovery labels into 10 reusable enclave families with car-trip stack modifiers preserved as sidecar interpretation. |
 
 ## Success criteria
 

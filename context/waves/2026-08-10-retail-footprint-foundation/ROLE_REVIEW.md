@@ -5299,3 +5299,53 @@ The next metro can now carry the car-trip stack as a reusable interpretation
 layer after the five core layers and three sidecars are generated. The next
 decision should be whether to backfill Washington / Atlanta to field-aligned
 QSR and auto-parts sidecars or proceed to a seventh metro under this contract.
+
+## Pulse 164 Enclave Family Consolidation
+
+### Market Geographer
+
+Status: pass.
+
+The consolidation reduces 42 detailed labels to 10 terrain families without
+turning them into official municipal, CBSA, or corporate boundaries. The family
+layer is a comparative geography layer; detailed field labels remain attached.
+
+### Catchment Modeler
+
+Status: pass.
+
+The family layer does not claim nearest-store, drive-time, or gravity
+catchments. Car-trip stack signals are kept as modifiers, so sidecar evidence
+refines terrain instead of overwriting the core field family.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report is derived from generated public-footprint summaries and preserves
+source-contract distinctions, including `stack_not_field_aligned` for fields
+whose sidecars are not yet in the current contract.
+
+### Atlas Designer
+
+Status: pass.
+
+The 10-family structure is atlas-friendly and inspectable. It gives a national
+map layer while preserving field-level labels and sidecar modifiers for drill
+down.
+
+### Market Analyst
+
+Status: pass.
+
+The CSV supports spreadsheet and GIS comparison by region, family, detailed
+type, car-trip modifier, profile basis, and comparison tier.
+
+### Report Contract Editor
+
+Status: pass with next-output request.
+
+The family report preserves stable fields and documents meanings. The next
+schema move should add these family labels into the reusable type-discovery
+profile only after deciding whether they are derived report fields or first-
+class profile columns.
