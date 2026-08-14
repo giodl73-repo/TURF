@@ -525,6 +525,9 @@ The cross-metro national insurance sidecar is:
 The cross-metro professional-services sidecar comparison is:
 `reports\ret-cross-metro-professional-services-sidecar-comparison.md`.
 
+The cross-metro national gas / convenience sidecar is:
+`reports\ret-cross-metro-gas-convenience-sidecar.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

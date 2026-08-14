@@ -5183,3 +5183,39 @@ Status: pass with next-output request.
 
 Do not add real estate brokerage yet. The next pulse should move to the
 cross-metro gas / convenience sidecar as the car-trip contrast.
+
+## Pulse 161 Cross-Metro Gas / Convenience Sidecar
+
+### Market Analyst
+
+Status: pass.
+
+The national gas / convenience sidecar validates with 26,002 packet-ready rows
+after review. Across the 43 fields it identifies 15 dense multi-brand car-trip
+grids, 14 multi-brand corridors, nine service nodes, and five single anchors.
+
+### Market Geographer
+
+Status: pass.
+
+Los Angeles / Inland Empire is dense in every selected field. Dallas/Fort Worth
+and Atlanta concentrate car-trip density in edge-city and corridor fields,
+while Washington and Chicago remain more selective in this national-operator
+layer.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review excludes duplicate, office, terminal, aviation, carwash,
+phone-repair, insurance, restaurant/bar, design/build, logistics, and other
+obvious brand/name false positives. The report avoids fuel territory,
+customer, traffic, spending, vehicle-ownership, or behavior claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should compare QSR, auto parts, and gas / convenience as the
+car-service / car-trip stack, then label fields as food-forward, auto-service,
+gas / highway, combined car-oriented, or light car-trip support.

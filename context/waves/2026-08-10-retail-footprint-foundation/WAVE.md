@@ -177,6 +177,7 @@ before broader chain coverage begins.
 | 158 | Cross-metro tax-prep gap fill | complete | Backfilled national tax-prep sidecar coverage across all 43 profile fields, finding 12 multi-brand grids and only one checked-absent field. |
 | 159 | Cross-metro insurance sidecar | complete | Added national insurance agency sidecar coverage across all 43 profile fields, finding 33 dense multi-brand grids and Camden as the only checked-absent field. |
 | 160 | Professional-services sidecar comparison | complete | Compared tax prep and insurance across all 43 fields, identifying 12 confirmed professional-services grids and choosing gas / convenience as the next contrast. |
+| 161 | Cross-metro gas / convenience sidecar | complete | Added a national gas / convenience car-trip sidecar across all 43 fields, finding 15 dense grids, 14 corridors, nine service nodes, and five single anchors. |
 
 ## Success criteria
 
