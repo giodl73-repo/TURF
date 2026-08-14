@@ -5450,3 +5450,52 @@ Status: pass.
 The work follows Pulse 165 sequencing: only `research/README.md`, the
 `A-lineage` index, and `A.1+postal-parish` were scaffolded. Later A, B, and C
 modules remain uncreated until evidence quality justifies them.
+
+## Pulse 167 Postal-Parish Evidence Read
+
+### Market Geographer
+
+Status: pass.
+
+The first evidence read treats postal civic signal as a recurring layer across
+bounded fields, not as an official geography or final enclave boundary. It also
+keeps checked absence and source gates distinct.
+
+### Source Policy Auditor
+
+Status: pass with citation gate.
+
+The read uses repo-generated reports and CSVs only. The stronger national and
+historical postal-parish claim remains blocked until USPS, Census, and
+historical citations are added to the module.
+
+### Catchment Modeler
+
+Status: pass.
+
+The read states that postal evidence reinforces field interpretation but does
+not assign catchments or replace the full terrain profile.
+
+### Atlas Designer
+
+Status: pass.
+
+`post-office-signal-by-region.csv` is compact enough to drive a future atlas
+layer showing observed, checked-absent, and source-gated postal civic signal by
+region.
+
+### Market Analyst
+
+Status: pass.
+
+The 41-field rollup is useful because it shows recurrence and limits together:
+Philadelphia is fully observed, Los Angeles is heavily source-gated, and
+Atlanta contains meaningful checked absences.
+
+### Future Agent
+
+Status: pass.
+
+The next agent should add public citations before broadening the claim. Do not
+promote this first read into a national historical assertion without that
+source pass.

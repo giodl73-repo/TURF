@@ -15,6 +15,7 @@ or Census geographies are interchangeable.
 - `sections/02-lineage.md`
 - `sections/03-modern-evidence.md`
 - `sections/04-claim-boundary.md`
+- `sections/05-first-evidence-read.md`
 
 ## Evidence Basis
 
@@ -47,11 +48,13 @@ Related queries and fixtures:
 
 - `tables/lineage-map.csv` maps historical functions to modern institutions,
   TURF evidence, example fields, and claim boundaries.
+- `tables/post-office-signal-by-region.csv` summarizes the current
+  post-office civic signal across six metro programs.
 - `reviews/ROLE_REVIEW.md` records the `.roles` pass for this scaffold.
 
 ## Status
 
-Status: scaffolded.
+Status: first evidence read drafted.
 
-Next: draft the evidence narrative and add public citations in
-`references.bib` before making stronger historical claims.
+Next: add public USPS, Census, and historical citations in `references.bib`
+before making stronger national or historical claims.

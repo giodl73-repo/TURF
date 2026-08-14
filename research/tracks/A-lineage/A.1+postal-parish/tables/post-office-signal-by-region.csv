@@ -1,0 +1,7 @@
+region,fields,observed_fields,checked_absent_fields,source_gated_fields,post_office_rows
+washington,4,4,0,0,4
+atlanta,7,5,2,0,13
+chicago,7,4,0,3,7
+dallas,8,5,1,2,10
+los_angeles,7,2,0,5,16
+philadelphia,8,8,0,0,29
