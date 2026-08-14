@@ -5739,3 +5739,52 @@ Status: pass.
 The next pulse can now cleanly decide whether to scaffold
 `A.2+market-town-to-mall` using retail-complex, mall, grocery, pharmacy, mass
 retail, and enclave-family evidence.
+
+## Pulse 173 Market-Town-To-Mall Scaffold
+
+### Market Geographer
+
+Status: pass with boundary constraint.
+
+The scaffold treats market town as a functional analogy for concentrated
+exchange and service-center terrain. It does not treat malls, retail complexes,
+or big-box fields as towns, civic boundaries, neighborhoods, or official
+regions.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The evidence basis points to existing TURF reports and reviewed public
+footprint layers. Proprietary mall, landlord, tenant, sales, lease, mobility,
+customer, demographic, spending, and neighborhood-quality claims remain blocked.
+
+### Catchment Modeler
+
+Status: pass.
+
+A.2 is not a trade-area model. It may generate hypotheses for future catchment
+work, but the scaffold itself is descriptive and evidence-bounded.
+
+### Atlas Designer
+
+Status: pass.
+
+The lineage table can become a map legend for market-center functions:
+exchange center, provisioning center, comparison-shopping node, and legacy
+market center.
+
+### Market Analyst
+
+Status: pass.
+
+The scaffold points at the right evidence groups: enclave families, anchor
+modifiers, edge-city mall rule audit, retail-complex layers, grocery, mass
+retail, and pharmacy.
+
+### Future Agent
+
+Status: pass.
+
+The next pulse should add a first evidence read before source notes or
+synthesis. Keep A.2 at scaffold status until that evidence pass exists.

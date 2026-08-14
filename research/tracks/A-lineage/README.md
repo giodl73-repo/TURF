@@ -16,6 +16,9 @@ equivalents. Each module separates:
 
 1. `A.1+postal-parish/` - complete. Postal/address infrastructure as a modern
    parish-style addressability layer.
+2. `A.2+market-town-to-mall/` - scaffolded. Malls, retail complexes,
+   grocery/pharmacy grids, and mass-retail anchors as modern market-center
+   terrain.
 
 Future modules should be created only when the prior module has enough evidence
 quality and role review to justify the next scaffold.
@@ -31,7 +34,6 @@ Machine-readable status:
 
 ## Next Gate
 
-The next module candidate is `A.2+market-town-to-mall`, but it should be
-scaffolded in its own pulse after role review confirms the evidence basis:
-retail-complex layers, malls, grocery, pharmacy, mass retail, and enclave
-families.
+The next A.2 gate is a first evidence read comparing mall-led regional fields,
+edge-city big-box power fields, grocery/pharmacy grids, and neighborhood
+everyday-service fields.

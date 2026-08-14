@@ -20,6 +20,12 @@ it relies on.
 |---|---|---|---:|
 | A-lineage | `A.1+postal-parish/` | complete | 171 |
 
+## Active Modules
+
+| Track | Module | Status | Next Gate |
+|---|---|---|---|
+| A-lineage | `A.2+market-town-to-mall/` | scaffolded | first evidence read |
+
 ## Module Contract
 
 Each module should include:

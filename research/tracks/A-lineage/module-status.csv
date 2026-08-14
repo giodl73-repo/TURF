@@ -1,2 +1,3 @@
 module,status,completed_pulse,claim_level,next_gate
 A.1+postal-parish,complete,171,"Postal/address infrastructure is an addressability and civic-service layer in the field stack, and a historical analogy only at the level of local legibility, service access, administrative routing, and civic presence.","Decide whether to scaffold A.2+market-town-to-mall."
+A.2+market-town-to-mall,scaffolded,,"Malls, retail complexes, grocery/pharmacy grids, and mass-retail anchors may be studied as modern market-center terrain by functional analogy only.","Add first evidence read comparing mall-led, edge-city, everyday-service, and legacy-center fields."
