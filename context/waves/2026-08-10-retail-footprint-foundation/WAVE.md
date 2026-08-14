@@ -168,6 +168,7 @@ before broader chain coverage begins.
 | 149 | Philadelphia mass-retail layer | complete | Added reviewed Pennsylvania / New Jersey mass retail, finding Cherry Hill / Moorestown as the only multi-brand big-box anchor in the eight-field set. |
 | 150 | Philadelphia pharmacy layer | complete | Added reviewed Pennsylvania / New Jersey exact-brand pharmacy signal, finding Center City as the only multi-brand health-errand field and three checked-absent fields. |
 | 151 | Philadelphia retail-complex layer | complete | Added target-limited Pennsylvania / New Jersey mall, plaza, shopping-center, and retail-district confirmation, separating mall-led KOP/Cherry Hill from Camden checked absence. |
+| 152 | Philadelphia QSR sidecar | complete | Added reviewed Pennsylvania / New Jersey QSR rows and found Northeast Roosevelt as the only four-brand dense QSR grid, with South Philly and Cherry Hill as corridors. |
 
 ## Success criteria
 

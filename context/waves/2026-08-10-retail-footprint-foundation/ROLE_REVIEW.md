@@ -4873,3 +4873,37 @@ Status: pass with next-output request.
 The next pulse should add Philadelphia / South Jersey QSR sidecar signal, then
 auto parts, so the sixth metro has the standard pre-scale sidecars before the
 combined field stack is generated.
+
+## Pulse 152 Philadelphia QSR Sidecar
+
+### Market Analyst
+
+Status: pass.
+
+The QSR sidecar validates with 1,814 packet-ready rows and cleanly separates
+Northeast Roosevelt as the only four-brand dense QSR grid. South Philadelphia
+and Cherry Hill / Moorestown are multi-brand QSR corridors.
+
+### Market Geographer
+
+Status: pass.
+
+QSR follows older auto-corridor and suburban retail-corridor structure more
+than dense rail/civic core structure. King of Prussia remains mall-led because
+QSR is present but light inside the bounded field.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer uses exact Overture brand rows for McDonald's, Burger King, Wendy's,
+and Taco Bell, excludes brand/name false positives, and keeps the sidecar out
+of the core profile until the full sidecar standard says otherwise.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add Philadelphia / South Jersey auto-parts sidecar signal
+so QSR daily-trip texture can be compared with car-service corridor texture
+before the combined sixth-metro stack is generated.

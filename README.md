@@ -498,6 +498,9 @@ The Philadelphia / South Jersey anchor-field pharmacy readout is:
 The Philadelphia / South Jersey anchor-field retail-complex readout is:
 `reports\ret-philadelphia-anchor-field-retail-complex-summary.md`.
 
+The Philadelphia / South Jersey QSR sidecar layer is:
+`reports\ret-philadelphia-anchor-field-qsr-summary.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
