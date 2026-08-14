@@ -188,6 +188,7 @@ before broader chain coverage begins.
 | 169 | Postal-parish historical analogy gate | complete | Added historical source notes for parishes, market towns, local records, and settlement forms, upgrading A.1 to a bounded functional analogy while blocking direct-equivalence claims. |
 | 170 | Postal-parish module synthesis | complete | Drafted the A.1 synthesis joining TURF evidence, USPS/Census source boundaries, and historical functional analogy into one bounded research claim. |
 | 171 | Postal-parish completion review | complete | Reviewed the full A.1 module through `.roles` and approved it as TURF's first completed research module, without scaffolding A.2 yet. |
+| 172 | A-lineage completion index | complete | Added research-track completion markers for A.1, including a machine-readable module status ledger and explicit A.2 next gate. |
 
 ## Success criteria
 

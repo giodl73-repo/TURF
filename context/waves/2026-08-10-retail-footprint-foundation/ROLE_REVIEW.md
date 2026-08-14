@@ -5692,3 +5692,50 @@ Status: pass.
 
 Promote A.1 as complete. Do not scaffold A.2 in the same pulse; the next pulse
 should make that decision explicitly.
+
+## Pulse 172 A-Lineage Completion Index
+
+### Market Geographer
+
+Status: pass.
+
+The track index preserves A.1's bounded rule and does not collapse postal,
+historical, civic, or commercial layers into a single geography.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The index records completion status and claim level only. It does not add new
+source claims or broaden the completed A.1 evidence boundary.
+
+### Catchment Modeler
+
+Status: pass.
+
+The status ledger names the A.1 rule without treating postal/addressability as
+a catchment or service-area assignment.
+
+### Atlas Designer
+
+Status: pass.
+
+The machine-readable status file gives future atlas and research tooling a
+stable place to find completed module status, completion pulse, claim level,
+and next gate.
+
+### Market Analyst
+
+Status: pass.
+
+The index makes the research program easier to scan: A.1 is complete, and
+`A.2+market-town-to-mall` remains an explicit next decision rather than an
+implicit scaffold.
+
+### Future Agent
+
+Status: pass.
+
+The next pulse can now cleanly decide whether to scaffold
+`A.2+market-town-to-mall` using retail-complex, mall, grocery, pharmacy, mass
+retail, and enclave-family evidence.

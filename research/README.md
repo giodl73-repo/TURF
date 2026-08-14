@@ -14,6 +14,12 @@ it relies on.
   settlement functions with modern public institutions and retail footprint
   evidence.
 
+## Completed Modules
+
+| Track | Module | Status | Completion Pulse |
+|---|---|---|---:|
+| A-lineage | `A.1+postal-parish/` | complete | 171 |
+
 ## Module Contract
 
 Each module should include:
