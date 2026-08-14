@@ -513,6 +513,9 @@ The next scale decision after Philadelphia / South Jersey is:
 The Philadelphia / South Jersey bank / credit union layer is:
 `reports\ret-philadelphia-anchor-field-bank-credit-union-summary.md`.
 
+The Philadelphia / South Jersey national tax-prep layer is:
+`reports\ret-philadelphia-anchor-field-tax-prep-summary.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

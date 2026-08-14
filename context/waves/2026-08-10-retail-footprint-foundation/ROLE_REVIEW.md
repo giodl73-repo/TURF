@@ -5044,3 +5044,38 @@ Status: pass with next-output request.
 The next pulse should backfill bank / credit union across the remaining
 pre-scale metros or add Philadelphia gas / convenience as the car-trip contrast
 if finance backfill is blocked by source stability.
+
+## Pulse 157 Philadelphia National Tax-Prep Layer
+
+### Market Analyst
+
+Status: pass.
+
+The national tax-prep layer validates with 873 packet-ready rows statewide and
+adds a branded professional-service sidecar. Northeast Roosevelt and Cherry
+Hill / Moorestown are the only multi-brand tax-prep service grids.
+
+### Market Geographer
+
+Status: pass.
+
+Tax prep does not simply mirror bank / credit-union density. Center City is
+finance-dense but only a tax-prep service node, while Northeast Roosevelt and
+Cherry Hill / Moorestown combine finance, corridor retail, and national
+tax-prep signal.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer uses national Overture brand rows for H&R Block, Jackson Hewitt, and
+Liberty Tax. It excludes duplicate and brand false-positive rows and avoids
+income, credit, customer, or individual behavior inference.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should decide whether tax prep becomes a standard professional-
+services sidecar, then test the same layer in another metro before promoting it
+to the cross-metro comparison pattern.

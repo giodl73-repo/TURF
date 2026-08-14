@@ -1,0 +1,9 @@
+field_id,label,anchor_field,tax_prep_rows,tax_prep_brands,tax_prep_brand_list,tax_prep_names,tax_prep_signal
+center-city-market-east,Center City / Market East field,dense_northeast_rail_civic_retail_field,3,1,H&R Block,H&R Block; H&R Block; H&R Block,tax_prep_service_node
+university-city-30th-street,University City / 30th Street field,eds_meds_rail_service_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+king-of-prussia,King of Prussia field,suburban_edge_city_superregional_mall_field,1,1,Jackson Hewitt,Jackson Hewitt Tax Service,single_tax_prep_anchor
+northeast-roosevelt,Northeast Philadelphia / Roosevelt Boulevard field,inner_suburban_auto_corridor_field,8,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service,multi_brand_tax_prep_service_grid
+conshohocken-plymouth-meeting,Conshohocken / Plymouth Meeting field,river_office_suburban_edge_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+south-philly-sports-port,South Philadelphia Sports / Port field,event_port_auto_service_field,4,1,H&R Block,H&R Block; H&R Block; H&R Block; H&R Block,tax_prep_service_node
+camden-waterfront,Camden Waterfront / Cooper field,older_industrial_river_civic_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+cherry-hill-moorestown,Cherry Hill / Moorestown field,south_jersey_mall_edge_field,4,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service,multi_brand_tax_prep_service_grid
