@@ -519,6 +519,9 @@ The Philadelphia / South Jersey national tax-prep layer is:
 The cross-metro national tax-prep sidecar is:
 `reports\ret-cross-metro-tax-prep-sidecar.md`.
 
+The cross-metro national insurance sidecar is:
+`reports\ret-cross-metro-insurance-sidecar.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

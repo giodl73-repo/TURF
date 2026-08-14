@@ -175,6 +175,7 @@ before broader chain coverage begins.
 | 156 | Philadelphia bank / credit union layer | complete | Added reviewed OSM bank / credit-union rows across all eight Philadelphia / South Jersey fields, finding dense finance-service signal in Center City, Northeast Roosevelt, and Cherry Hill / Moorestown. |
 | 157 | Philadelphia national tax-prep layer | complete | Added reviewed H&R Block, Jackson Hewitt, and Liberty Tax rows, finding multi-brand professional-service grids in Northeast Roosevelt and Cherry Hill / Moorestown. |
 | 158 | Cross-metro tax-prep gap fill | complete | Backfilled national tax-prep sidecar coverage across all 43 profile fields, finding 12 multi-brand grids and only one checked-absent field. |
+| 159 | Cross-metro insurance sidecar | complete | Added national insurance agency sidecar coverage across all 43 profile fields, finding 33 dense multi-brand grids and Camden as the only checked-absent field. |
 
 ## Success criteria
 

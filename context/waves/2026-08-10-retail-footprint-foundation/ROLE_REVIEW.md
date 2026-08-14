@@ -5114,3 +5114,39 @@ Status: pass with next-output request.
 The next pulse should decide whether to add another national professional-
 services layer, such as insurance or real estate brokerage, or move to the gas
 / convenience car-trip contrast.
+
+## Pulse 159 Cross-Metro Insurance Sidecar
+
+### Market Analyst
+
+Status: pass.
+
+The national insurance sidecar validates with 21,163 packet-ready rows and
+covers all 43 profile fields. It is much broader than tax prep, with 33 dense
+multi-brand insurance-service grids and only one checked-absent field.
+
+### Market Geographer
+
+Status: pass.
+
+Insurance reads as general local agency/service fabric. Dallas/Fort Worth and
+Los Angeles are dense in every selected field, while Camden is the only checked
+absence, preserving its distinct older river civic/service profile.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The backfill uses exact national Overture brand rows plus name fallback where
+insurance brands are represented as place names. The review excludes duplicate,
+claims, district, operations, recruiting, training, and arena false positives.
+The report avoids insurance customer, risk, income, credit, asset, or
+individual-behavior claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should compare tax prep and insurance as professional-services
+sidecars, then decide whether real estate brokerage is needed or whether the
+program should move to gas / convenience as the car-trip contrast.
