@@ -5219,3 +5219,44 @@ Status: pass with next-output request.
 The next pulse should compare QSR, auto parts, and gas / convenience as the
 car-service / car-trip stack, then label fields as food-forward, auto-service,
 gas / highway, combined car-oriented, or light car-trip support.
+
+## Pulse 162 Car-Trip Stack Comparison
+
+### Market Analyst
+
+Status: pass.
+
+The stack comparison covers the 30 fields where QSR, auto parts, and gas /
+convenience are all field-aligned. It finds one all-three dense grid, nine
+combined car-oriented retail enclaves, two combined corridors, three
+food-forward fields, two gas/highway grids with light auto-service, two gas
+corridors with light food, four light service nodes, three light car-trip
+support fields, and four mixed stacks.
+
+### Market Geographer
+
+Status: pass.
+
+Arlington / Grand Prairie is the only all-three dense grid. LA / Inland Empire
+is uniformly combined car-oriented terrain. Northeast Roosevelt and Cherry Hill
+/ Moorestown are Philadelphia's strongest combined enclaves, while Lincoln Park
+/ Lakeview, Loop / River North, and Downtown / Uptown Dallas are food-forward
+without auto-service depth.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The report uses only already-reviewed public footprint sidecars and explicitly
+excludes Washington and Atlanta from stack proof because their QSR and
+auto-parts evidence is not yet in the current field-aligned sidecar contract.
+It makes no customer, traffic, spending, vehicle-ownership, or behavior claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should convert these findings into a reusable car-trip stack
+typing note before TURF adds another metro. The labels should distinguish
+combined car-oriented enclaves, combined corridors, food-forward fields,
+gas/highway grids, and light car-trip support.

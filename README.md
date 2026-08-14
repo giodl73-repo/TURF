@@ -528,6 +528,9 @@ The cross-metro professional-services sidecar comparison is:
 The cross-metro national gas / convenience sidecar is:
 `reports\ret-cross-metro-gas-convenience-sidecar.md`.
 
+The cross-metro car-trip stack comparison is:
+`reports\ret-cross-metro-car-trip-stack-comparison.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
