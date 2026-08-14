@@ -57,7 +57,7 @@ Related queries and fixtures:
 
 ## Status
 
-Status: synthesis drafted.
+Status: complete.
 
-Next: role-review the full A.1 module and decide whether to promote it as the
-first completed research module before scaffolding `A.2+market-town-to-mall`.
+Next: decide whether to scaffold `A.2+market-town-to-mall` or add an
+index-level completion marker across the research track.

@@ -5644,3 +5644,51 @@ Status: pass with next gate.
 
 The next pulse should role-review the full A.1 module as a candidate completed
 research module before scaffolding `A.2+market-town-to-mall`.
+
+## Pulse 171 Postal-Parish Completion Review
+
+### Market Geographer
+
+Status: pass.
+
+The completed A.1 module keeps postal/addressability, ZCTA statistical context,
+civic post-office points, retail field evidence, and historical analogy as
+separate layers.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The module uses repo-generated TURF outputs, public USPS/Census sources, and
+public historical sources at an appropriate claim level. Direct-equivalence,
+customer, demographic, proprietary-data, and restricted-address-file claims
+remain blocked.
+
+### Catchment Modeler
+
+Status: pass.
+
+A.1 does not assign service areas or corporate territories. Postal evidence is
+kept as addressability and civic-service context inside the field stack.
+
+### Atlas Designer
+
+Status: pass.
+
+The module is ready to serve as the first lineage atlas layer. Its tables and
+synthesis can be reused as legend language for later research modules.
+
+### Market Analyst
+
+Status: pass.
+
+The completion decision preserves the strongest finding: post-office signal
+recurs across multiple field families, but absence and source gates still shape
+interpretation.
+
+### Future Agent
+
+Status: pass.
+
+Promote A.1 as complete. Do not scaffold A.2 in the same pulse; the next pulse
+should make that decision explicitly.

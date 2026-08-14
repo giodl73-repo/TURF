@@ -187,6 +187,7 @@ before broader chain coverage begins.
 | 168 | Postal-parish source gate | complete | Added primary public USPS and Census source notes so A.1 can support the narrow addressability/statistical-context stack claim while keeping historical lineage claims gated. |
 | 169 | Postal-parish historical analogy gate | complete | Added historical source notes for parishes, market towns, local records, and settlement forms, upgrading A.1 to a bounded functional analogy while blocking direct-equivalence claims. |
 | 170 | Postal-parish module synthesis | complete | Drafted the A.1 synthesis joining TURF evidence, USPS/Census source boundaries, and historical functional analogy into one bounded research claim. |
+| 171 | Postal-parish completion review | complete | Reviewed the full A.1 module through `.roles` and approved it as TURF's first completed research module, without scaffolding A.2 yet. |
 
 ## Success criteria
 
