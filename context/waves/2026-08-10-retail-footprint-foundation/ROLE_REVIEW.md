@@ -5349,3 +5349,52 @@ The family report preserves stable fields and documents meanings. The next
 schema move should add these family labels into the reusable type-discovery
 profile only after deciding whether they are derived report fields or first-
 class profile columns.
+
+## Pulse 165 Research Track Plan Role Review
+
+### Market Geographer
+
+Status: pass with constraint.
+
+The historical-lineage plan is useful if modules treat older institutions as
+analogues for settlement functions, not as official boundaries or one-to-one
+equivalents. Each module must separate formal boundary, public infrastructure,
+commercial footprint, and analogy.
+
+### Source Policy Auditor
+
+Status: pass with constraint.
+
+The plan can proceed if modules cite public or repo-generated evidence and keep
+claim boundaries explicit. Each module needs `Source Policy` and `Claim
+Boundary` sections.
+
+### Catchment Modeler
+
+Status: pass.
+
+The plan keeps lineage interpretation separate from catchment assignment.
+Modules should distinguish observed footprint, bounded field, sidecar modifier,
+analogy, and future model hypothesis.
+
+### Atlas Designer
+
+Status: pass.
+
+The plan can become an atlas if each module includes a reusable lineage table:
+historical function, modern institution, TURF evidence, and example fields.
+
+### Market Analyst
+
+Status: pass.
+
+The plan stays useful because modules must link back to exact TURF reports,
+CSVs, and queries rather than becoming detached essays.
+
+### Future Agent
+
+Status: pass with sequencing request.
+
+Create the track index and first module skeleton only. Do not scaffold every
+research module at once. The first module should be
+`research/tracks/A-lineage/A.1+postal-parish/`.

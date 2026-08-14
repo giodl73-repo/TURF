@@ -181,6 +181,7 @@ before broader chain coverage begins.
 | 162 | Car-trip stack comparison | complete | Compared QSR, auto parts, and gas / convenience across 30 field-aligned sidecar fields, separating all-three dense grids, combined enclaves, food-forward fields, gas/highway grids, and light car-trip support. |
 | 163 | Car-trip stack typing note | complete | Converted the 30-field stack comparison into reusable sidecar labels and a next-metro contract while keeping car-trip evidence outside the core profile. |
 | 164 | Enclave family consolidation | complete | Consolidated 42 detailed type-discovery labels into 10 reusable enclave families with car-trip stack modifiers preserved as sidecar interpretation. |
+| 165 | Research track plan role review | complete | Reviewed the historical-lineage research plan through `.roles`, approved the A-lineage sequence, and selected `A.1+postal-parish` as the first module. |
 
 ## Success criteria
 

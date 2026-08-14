@@ -537,6 +537,9 @@ The reusable car-trip stack typing note is:
 The enclave family consolidation is:
 `reports\ret-enclave-family-consolidation.md`.
 
+The research track plan role review is:
+`reports\ret-research-track-plan-role-review.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
