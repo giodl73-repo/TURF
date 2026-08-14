@@ -4941,3 +4941,38 @@ Status: pass with next-output request.
 The next pulse should combine the five core layers plus QSR and auto-parts
 sidecars into a Philadelphia / South Jersey pre-scale field stack, then update
 the cross-metro type-discovery profile.
+
+## Pulse 154 Philadelphia Pre-Scale Synthesis
+
+### Market Analyst
+
+Status: pass.
+
+Philadelphia / South Jersey now has a five-core-layer field stack plus QSR and
+auto-parts sidecars. Six fields are type-discovery comparable, King of Prussia
+is partial but analytically important, and Camden is intentionally thin.
+
+### Market Geographer
+
+Status: pass.
+
+The synthesis captures a Northeast mix not present in the prior five metros:
+dense rail/civic core, eds-and-meds service terrain, specialized mall-led edge
+city, older auto corridor, event/port plaza terrain, industrial river civic
+field, and cross-state South Jersey mall corridor.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The cross-metro profile contract now accepts Philadelphia and the
+`pre_scale_5_layer_stack_with_sidecars` basis. Sidecars remain visible without
+changing the five-core-layer comparison denominator.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next decision should choose between adding a seventh metro and deepening
+all metros with another non-contentious civic/common-store layer such as banks
+/ credit unions or gas / convenience.

@@ -2,9 +2,9 @@
 
 ## Scope
 
-This report normalizes Washington, Atlanta, Chicago, Dallas/Fort Worth, and Los
-Angeles / Inland Empire anchor-field outputs into one comparable type-discovery
-profile.
+This report normalizes Washington, Atlanta, Chicago, Dallas/Fort Worth, Los
+Angeles / Inland Empire, and Philadelphia / South Jersey anchor-field outputs
+into one comparable type-discovery profile.
 
 Generated output:
 
@@ -27,9 +27,11 @@ Each row exposes:
 - readiness tier,
 - comparison tier.
 
-The profile basis is part of the contract. Washington and Atlanta use a
-full 11-dimension context contract. Chicago uses a pre-scale 6-layer stack.
+The profile basis is part of the contract. Washington and Atlanta use a full
+11-dimension context contract. Chicago uses a pre-scale 6-layer stack.
 Dallas/Fort Worth and Los Angeles / Inland Empire use pre-scale 5-layer stacks.
+Philadelphia / South Jersey uses a pre-scale 5-layer stack with QSR and
+auto-parts sidecars preserved in the row source-quality notes and field labels.
 The profile is comparable for type discovery, not final atlas ranking.
 
 ## Comparison Tiers
@@ -51,7 +53,7 @@ stacks are strong enough to compare typed fields such as urban everyday grids,
 confirmed mall/grocery fields, big-box/grocery power fields, and Sun Belt
 town-center or growth-edge fields.
 
-The current generated profile has 35 rows:
+The current generated profile has 43 rows:
 
 | Region | Tier | Fields |
 |---|---|---:|
@@ -60,6 +62,7 @@ The current generated profile has 35 rows:
 | Chicago | `type_discovery_comparable` | 7 |
 | Dallas/Fort Worth | `type_discovery_comparable` | 8 |
 | Los Angeles / Inland Empire | `type_discovery_comparable` | 7 |
+| Philadelphia / South Jersey | `type_discovery_comparable` | 8 |
 
 Profile basis:
 
@@ -68,6 +71,7 @@ Profile basis:
 | `full_11_dimension_context` | 13 |
 | `pre_scale_6_layer_stack` | 7 |
 | `pre_scale_5_layer_stack` | 15 |
+| `pre_scale_5_layer_stack_with_sidecars` | 8 |
 
 ## Current Comparable Types
 
@@ -140,6 +144,35 @@ Downtown LA / Koreatown / Mid-Wilshire and South Bay / Torrance have all five
 layers observed with no source gates. The other five LA fields preserve
 post-office retry gates from Overpass connection timeouts, but their store and
 complex layers are strong enough for type discovery before final ranking.
+
+Philadelphia / South Jersey contributes eight rows from a five-core-layer stack
+with QSR and auto-parts sidecars:
+
+- Center City / Market East:
+  `dense_rail_civic_grocery_health_target_district_field`.
+- University City / 30th Street:
+  `eds_meds_rail_grocery_health_district_field`.
+- King of Prussia: `mall_led_edge_city_costco_town_center_field`.
+- Northeast Philadelphia / Roosevelt Boulevard:
+  `older_auto_corridor_mall_grocery_qsr_auto_service_field`.
+- Conshohocken / Plymouth Meeting:
+  `river_office_mall_grocery_health_service_node`.
+- South Philadelphia Sports / Port:
+  `event_port_plaza_grocery_qsr_auto_service_field`.
+- Camden Waterfront / Cooper:
+  `older_industrial_river_civic_single_grocery_service_field`.
+- Cherry Hill / Moorestown:
+  `south_jersey_mall_big_box_grocery_qsr_auto_corridor`.
+
+Philadelphia adds a useful Northeast contrast. King of Prussia is mall-led and
+specialized, with retail-complex and Costco evidence but grocery, pharmacy, and
+auto-parts checked absent inside the bounded box. Cherry Hill / Moorestown is a
+fuller cross-state mall corridor with big-box, grocery, pharmacy, QSR, and
+auto-parts texture. Northeast Roosevelt is the clearest older auto-corridor
+field, confirmed by both the four-brand QSR grid and auto-parts sidecar.
+Camden remains partial by design: it has postal, grocery, and QSR evidence but
+stays checked absent for the major retail-complex, big-box, pharmacy, and
+auto-parts layers.
 
 ## Validation
 

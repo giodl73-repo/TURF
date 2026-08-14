@@ -170,6 +170,7 @@ before broader chain coverage begins.
 | 151 | Philadelphia retail-complex layer | complete | Added target-limited Pennsylvania / New Jersey mall, plaza, shopping-center, and retail-district confirmation, separating mall-led KOP/Cherry Hill from Camden checked absence. |
 | 152 | Philadelphia QSR sidecar | complete | Added reviewed Pennsylvania / New Jersey QSR rows and found Northeast Roosevelt as the only four-brand dense QSR grid, with South Philly and Cherry Hill as corridors. |
 | 153 | Philadelphia auto-parts sidecar | complete | Added reviewed Pennsylvania / New Jersey auto-parts rows and found corridor signal only in Northeast Roosevelt, South Philly, and Cherry Hill / Moorestown. |
+| 154 | Philadelphia pre-scale synthesis | complete | Combined five core layers plus QSR/auto-parts sidecars and added eight Philadelphia / South Jersey rows to the 43-row cross-metro type-discovery profile. |
 
 ## Success criteria
 

@@ -3016,16 +3016,17 @@ fn validate_metro_context_status(value: &str, line_number: usize) -> Result<(), 
 
 fn validate_type_discovery_region(value: &str, line_number: usize) -> Result<(), String> {
     match value {
-        "washington" | "atlanta" | "chicago" | "dallas" | "los_angeles" => Ok(()),
+        "washington" | "atlanta" | "chicago" | "dallas" | "los_angeles" | "philadelphia" => Ok(()),
         _ => Err(format!("line {line_number}: invalid region")),
     }
 }
 
 fn validate_type_discovery_profile_basis(value: &str, line_number: usize) -> Result<(), String> {
     match value {
-        "full_11_dimension_context" | "pre_scale_6_layer_stack" | "pre_scale_5_layer_stack" => {
-            Ok(())
-        }
+        "full_11_dimension_context"
+        | "pre_scale_6_layer_stack"
+        | "pre_scale_5_layer_stack"
+        | "pre_scale_5_layer_stack_with_sidecars" => Ok(()),
         _ => Err(format!("line {line_number}: invalid profile_basis")),
     }
 }
@@ -3061,6 +3062,7 @@ fn validate_type_discovery_source_quality_note(
         | "retry_or_alternate_source_before_ranking"
         | "usable_for_cross_metro_comparison"
         | "no_source_gates"
+        | "no_source_gates_sidecars_observed"
         | "usable_for_type_discovery"
         | "usable_for_type_discovery_retry_osm_before_ranking"
         | "source_limited_retry_or_alternate_source" => Ok(()),
@@ -3887,10 +3889,11 @@ chicago,oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,pre_s
 atlanta,camp-creek,Camp Creek field,airport_edge_power_center,full_11_dimension_context,11,3,3,5,0.273,0.273,finance_car_trip_wellness_airport_edge_field,usable_comparison_field,usable_for_cross_metro_comparison,type_discovery_partial
 dallas,downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,pre_scale_5_layer_stack,5,5,0,0,1.0,0.0,urban_postal_grocery_health_big_box_village_field,type_discovery_comparable,no_source_gates,type_discovery_comparable
 los_angeles,downtown-koreatown-midwilshire,Downtown LA / Koreatown / Mid-Wilshire field,urban_core_mixed_service_field,pre_scale_5_layer_stack,5,5,0,0,1.0,0.0,confirmed_dense_postal_target_grocery_health_complex,type_discovery_comparable,no_source_gates,type_discovery_comparable
+philadelphia,northeast-roosevelt,Northeast Philadelphia / Roosevelt Boulevard field,inner_suburban_auto_corridor_field,pre_scale_5_layer_stack_with_sidecars,5,5,0,0,1.0,0.0,older_auto_corridor_mall_grocery_qsr_auto_service_field,type_discovery_comparable,no_source_gates_sidecars_observed,type_discovery_comparable
 ";
         let rows = parse_cross_metro_type_discovery_profile(csv).expect("profile parses");
 
-        assert_eq!(rows.len(), 4);
+        assert_eq!(rows.len(), 5);
         assert_eq!(rows[0].region, "chicago");
         assert_eq!(rows[0].dimensions, 6);
         assert_eq!(rows[0].comparison_tier, "type_discovery_comparable");
@@ -3900,7 +3903,12 @@ los_angeles,downtown-koreatown-midwilshire,Downtown LA / Koreatown / Mid-Wilshir
         assert_eq!(rows[2].profile_basis, "pre_scale_5_layer_stack");
         assert_eq!(rows[3].region, "los_angeles");
         assert_eq!(rows[3].profile_basis, "pre_scale_5_layer_stack");
-        assert_eq!(validate_cross_metro_type_discovery_profile(csv), Ok(4));
+        assert_eq!(rows[4].region, "philadelphia");
+        assert_eq!(
+            rows[4].profile_basis,
+            "pre_scale_5_layer_stack_with_sidecars"
+        );
+        assert_eq!(validate_cross_metro_type_discovery_profile(csv), Ok(5));
     }
 
     #[test]

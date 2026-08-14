@@ -504,6 +504,9 @@ The Philadelphia / South Jersey QSR sidecar layer is:
 The Philadelphia / South Jersey auto-parts sidecar layer is:
 `reports\ret-philadelphia-anchor-field-auto-parts-summary.md`.
 
+The Philadelphia / South Jersey pre-scale field stack is:
+`reports\ret-philadelphia-pre-scale-field-stack.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
