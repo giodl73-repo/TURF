@@ -1,0 +1,9 @@
+field_id,label,anchor_field,pharmacy_rows,pharmacy_brands,pharmacy_brand_list,pharmacy_names,pharmacy_signal
+center-city-market-east,Center City / Market East field,dense_northeast_rail_civic_retail_field,6,2,CVS Pharmacy; Walgreens,CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; Walgreens,multi_brand_health_errand_field
+university-city-30th-street,University City / 30th Street field,eds_meds_rail_service_field,2,1,CVS Pharmacy,CVS Pharmacy; CVS Pharmacy,observed
+king-of-prussia,King of Prussia field,suburban_edge_city_superregional_mall_field,0,0,"","",checked_absent
+northeast-roosevelt,Northeast Philadelphia / Roosevelt Boulevard field,inner_suburban_auto_corridor_field,3,1,CVS Pharmacy,CVS Pharmacy; CVS Pharmacy; CVS Pharmacy,observed
+conshohocken-plymouth-meeting,Conshohocken / Plymouth Meeting field,river_office_suburban_edge_field,2,1,CVS Pharmacy,CVS Pharmacy; CVS Pharmacy,observed
+south-philly-sports-port,South Philadelphia Sports / Port field,event_port_auto_service_field,0,0,"","",checked_absent
+camden-waterfront,Camden Waterfront / Cooper field,older_industrial_river_civic_field,0,0,"","",checked_absent
+cherry-hill-moorestown,Cherry Hill / Moorestown field,south_jersey_mall_edge_field,5,1,CVS Pharmacy,CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy; CVS Pharmacy,observed

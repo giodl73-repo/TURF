@@ -4802,3 +4802,38 @@ Status: pass with next-output request.
 The next pulse should add pharmacy across the same eight targets, then
 retail-complex confirmation to test whether King of Prussia and Cherry Hill /
 Moorestown are structurally mall-led fields.
+
+## Pulse 150 Philadelphia Pharmacy Layer
+
+### Market Analyst
+
+Status: pass.
+
+The Pennsylvania / New Jersey drugstore fixture validates with 498 packet-ready
+rows after excluding 111 false positives. The layer is strongly CVS-dominant,
+which is useful evidence rather than a failure of the layer.
+
+### Market Geographer
+
+Status: pass.
+
+Center City / Market East is the only multi-brand health-errand field. Cherry
+Hill / Moorestown, Northeast Roosevelt, University City, and Conshohocken /
+Plymouth Meeting have CVS-only observed signal, while King of Prussia, South
+Philadelphia Sports / Port, and Camden Waterfront are checked absent.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review excludes clinic, specialty, beauty, photo, hospital, provider, and
+brand/name false-positive rows. The report avoids turning exact-brand
+drugstore rows into broad health-access claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add retail-complex confirmation before sidecars, because
+King of Prussia and Cherry Hill / Moorestown likely need structural mall and
+shopping-center evidence to be typed correctly.
