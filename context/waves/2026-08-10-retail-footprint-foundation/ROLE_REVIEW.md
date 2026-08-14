@@ -4976,3 +4976,36 @@ Status: pass with next-output request.
 The next decision should choose between adding a seventh metro and deepening
 all metros with another non-contentious civic/common-store layer such as banks
 / credit unions or gas / convenience.
+
+## Pulse 155 Post-Philadelphia Scale Decision
+
+### Market Analyst
+
+Status: pass.
+
+The 43-row cross-metro profile has enough breadth for type discovery. The next
+move should deepen the profile with a common everyday finance layer before
+adding another urban area.
+
+### Market Geographer
+
+Status: pass.
+
+Bank / credit union signal can test downtown cores, mall fields, office edges,
+older civic fields, and suburban corridors without over-weighting car-trip
+geography. Gas / convenience should follow as the car-oriented contrast.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The decision stays within public civic/commercial footprint evidence. It does
+not introduce demographic, income, customer, credit, or individual-behavior
+claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add Philadelphia / South Jersey bank / credit union rows
+first, then use that source contract to backfill the six-metro comparison set.

@@ -507,6 +507,9 @@ The Philadelphia / South Jersey auto-parts sidecar layer is:
 The Philadelphia / South Jersey pre-scale field stack is:
 `reports\ret-philadelphia-pre-scale-field-stack.md`.
 
+The next scale decision after Philadelphia / South Jersey is:
+`reports\ret-next-scale-decision-after-philadelphia.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
