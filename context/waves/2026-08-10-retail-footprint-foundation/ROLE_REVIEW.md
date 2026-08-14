@@ -5398,3 +5398,55 @@ Status: pass with sequencing request.
 Create the track index and first module skeleton only. Do not scaffold every
 research module at once. The first module should be
 `research/tracks/A-lineage/A.1+postal-parish/`.
+
+## Pulse 166 Postal-Parish Research Scaffold
+
+### Market Geographer
+
+Status: pass with boundary constraint.
+
+The scaffold keeps postal addressability distinct from ZIP/ZCTA approximations,
+municipalities, Census places, counties, CBSAs, retail fields, and historical
+analogy. Future drafting must avoid polygon language unless the geometry source
+is explicit.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The module points to repo-generated reports, checked CSVs, public Census/OSM
+evidence, and future citations. It blocks restricted USPS address files,
+unsupported retailer-locator reuse, proprietary POI data, and customer,
+demographic, income, behavior, or neighborhood-quality claims.
+
+### Catchment Modeler
+
+Status: pass.
+
+Postal evidence is framed as addressability and civic-service context, not a
+nearest-store, drive-time, gravity, franchise, or corporate-territory
+assignment.
+
+### Atlas Designer
+
+Status: pass.
+
+The lineage table maps historical function to modern institution, TURF
+evidence, example fields, and claim boundary. That shape can become a future
+atlas legend or dashboard filter.
+
+### Market Analyst
+
+Status: pass.
+
+The scaffold links exact TURF reports, CSVs, queries, and fixtures, including
+post-office readouts, the cross-metro type-discovery profile, and the enclave
+family consolidation.
+
+### Future Agent
+
+Status: pass.
+
+The work follows Pulse 165 sequencing: only `research/README.md`, the
+`A-lineage` index, and `A.1+postal-parish` were scaffolded. Later A, B, and C
+modules remain uncreated until evidence quality justifies them.

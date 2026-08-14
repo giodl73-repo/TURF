@@ -540,6 +540,9 @@ The enclave family consolidation is:
 The research track plan role review is:
 `reports\ret-research-track-plan-role-review.md`.
 
+The TURF research module index is:
+`research\README.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
