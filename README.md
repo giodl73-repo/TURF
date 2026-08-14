@@ -531,6 +531,9 @@ The cross-metro national gas / convenience sidecar is:
 The cross-metro car-trip stack comparison is:
 `reports\ret-cross-metro-car-trip-stack-comparison.md`.
 
+The reusable car-trip stack typing note is:
+`reports\ret-car-trip-stack-typing-note.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

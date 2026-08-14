@@ -5260,3 +5260,42 @@ The next pulse should convert these findings into a reusable car-trip stack
 typing note before TURF adds another metro. The labels should distinguish
 combined car-oriented enclaves, combined corridors, food-forward fields,
 gas/highway grids, and light car-trip support.
+
+## Pulse 163 Car-Trip Stack Typing Note
+
+### Market Analyst
+
+Status: pass.
+
+The typing note converts Pulse 162's observed stack signals into reusable labels
+with minimum evidence thresholds. It preserves the three sidecars as
+interpretive layers: QSR for daily-trip food, auto parts for repair/service, and
+gas / convenience for car-trip and mobility texture.
+
+### Market Geographer
+
+Status: pass.
+
+The labels are spatially meaningful without overfitting to one region. They
+separate all-three dense grids, combined enclaves, combined corridors,
+food-forward fields, gas/highway grids, gas corridors, light support fields,
+and mixed stacks.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The note requires all three sidecars to be field-aligned before assigning a
+stack type and keeps Washington / Atlanta historical sidecar evidence outside
+current stack proof. It also blocks customer, traffic, spending,
+vehicle-ownership, behavior, territory, public-safety, and neighborhood-quality
+claims.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next metro can now carry the car-trip stack as a reusable interpretation
+layer after the five core layers and three sidecars are generated. The next
+decision should be whether to backfill Washington / Atlanta to field-aligned
+QSR and auto-parts sidecars or proceed to a seventh metro under this contract.
