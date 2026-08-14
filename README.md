@@ -516,6 +516,9 @@ The Philadelphia / South Jersey bank / credit union layer is:
 The Philadelphia / South Jersey national tax-prep layer is:
 `reports\ret-philadelphia-anchor-field-tax-prep-summary.md`.
 
+The cross-metro national tax-prep sidecar is:
+`reports\ret-cross-metro-tax-prep-sidecar.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

@@ -1,0 +1,44 @@
+region,field_id,label,anchor_field,tax_prep_rows,tax_prep_brands,tax_prep_brand_list,tax_prep_names,tax_prep_signal
+washington,bellevue-core,Bellevue core mall field,eastside_urban_mall_field,2,1,H&R Block,H&R Block; H&R Block Tax Preparation Office,tax_prep_service_node
+washington,factoria,Bellevue Factoria field,eastside_power_center_mall_edge,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+washington,kitsap-mall,Kitsap Mall / Silverdale field,kitsap_regional_mall_field,4,3,H&R Block; Jackson Hewitt; Liberty Tax,H&R Block; H&R Block; Jackson Hewitt Tax Service; Liberty Tax,multi_brand_tax_prep_service_grid
+washington,south-hill-puyallup,South Hill / Puyallup field,pierce_suburban_mall_field,3,2,H&R Block; Jackson Hewitt,H&R Block; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service,tax_prep_service_node
+washington,southcenter-tukwila,Southcenter / Tukwila mall field,south_king_regional_mall_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+washington,tacoma-mall,Tacoma Mall field,south_sound_regional_mall_field,1,1,Liberty Tax,Liberty Tax,single_tax_prep_anchor
+atlanta,buckhead-lenox-phipps,Buckhead / Lenox / Phipps field,urban_luxury_mall_cluster,2,1,H&R Block,H&R Block; H&R Block,tax_prep_service_node
+atlanta,camp-creek,Camp Creek field,airport_edge_power_center,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+atlanta,cumberland-vinings,Cumberland / Vinings field,suburban_mall_edge,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+atlanta,decatur-emory,Decatur / Emory field,inner_service_village,2,2,H&R Block; Jackson Hewitt,H&R Block; Jackson Hewitt Tax Service,tax_prep_service_node
+atlanta,north-point-wide,North Point / Alpharetta widened field,edge_city_mall_field,2,1,H&R Block,H&R Block; H&R Block,tax_prep_service_node
+atlanta,northlake,Northlake field,legacy_suburban_mall_node,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+atlanta,perimeter-wide,Perimeter widened field,edge_city_mall_field,2,1,H&R Block,H&R Block; H&R Block,tax_prep_service_node
+chicago,ford-city-cicero,Midway / Ford City field,southwest_airport_edge_field,7,3,H&R Block; Jackson Hewitt; Liberty Tax,H&R Block; H&R Block; H&R Block Tax Preparation Office; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Liberty Tax; Liberty Tax,multi_brand_tax_prep_service_grid
+chicago,lincoln-park-lakeview,Lincoln Park / Lakeview field,inner_neighborhood_service_field,5,1,H&R Block,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block,tax_prep_service_node
+chicago,loop-river-north,Loop / River North field,urban_core_mixed_service_field,4,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block; H&R Block; Jackson Hewitt Tax Service,multi_brand_tax_prep_service_grid
+chicago,oakbrook-wide,Oakbrook widened field,west_suburban_edge_city_field,1,1,Jackson Hewitt,Jackson Hewitt Tax Service,single_tax_prep_anchor
+chicago,old-orchard-skokie,Old Orchard / Skokie field,north_suburban_mall_field,0,0,"","",checked_absent
+chicago,orland-square,Orland Square field,south_suburban_mall_field,1,1,Jackson Hewitt,Jackson Hewitt,single_tax_prep_anchor
+chicago,woodfield-schaumburg,Woodfield / Schaumburg field,northwest_edge_city_mall_field,2,2,H&R Block; Jackson Hewitt,H&R Block; Jackson Hewitt Tax Service,tax_prep_service_node
+dallas,arlington-grand-prairie,Arlington / Grand Prairie field,midcities_power_event_field,12,3,H&R Block; Jackson Hewitt; Liberty Tax,H&R Block; H&R Block; H&R Block; H&R Block Tax Preparation Office; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Liberty Tax; Liberty Tax; Liberty Tax,multi_brand_tax_prep_service_grid
+dallas,downtown-uptown-dallas,Downtown / Uptown Dallas field,urban_core_mixed_service_field,2,1,H&R Block,H&R Block; H&R Block,tax_prep_service_node
+dallas,fort-worth-west-7th,Fort Worth Cultural / West 7th field,secondary_core_service_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+dallas,galleria-addison,Galleria / Addison field,north_dallas_edge_city_field,3,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block Tax Preparation Office; Jackson Hewitt Tax Service,tax_prep_service_node
+dallas,las-colinas-irving,Las Colinas / Irving field,airport_office_edge_field,3,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block Tax Preparation Office; Jackson Hewitt Tax Service,tax_prep_service_node
+dallas,legacy-frisco-plano,Legacy / Frisco / Plano field,north_growth_edge_city_field,2,2,H&R Block; Jackson Hewitt,H&R Block; Jackson Hewitt Tax Service,tax_prep_service_node
+dallas,northpark-preston-hollow,NorthPark / Preston Hollow field,north_dallas_regional_mall_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+dallas,southlake-town-square,Southlake Town Square field,affluent_suburban_town_center_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+los_angeles,downtown-koreatown-midwilshire,Downtown LA / Koreatown / Mid-Wilshire field,urban_core_mixed_service_field,12,2,H&R Block; Liberty Tax,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; Liberty Tax; Liberty Tax; Liberty Tax,multi_brand_tax_prep_service_grid
+los_angeles,glendale-burbank,Glendale / Burbank field,valley_media_retail_edge_field,6,1,H&R Block,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block Tax Preparation Office,tax_prep_service_node
+los_angeles,long-beach-lakewood,Long Beach / Lakewood field,port_coastal_grid_mall_service_field,20,3,H&R Block; Jackson Hewitt; Liberty Tax,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block Tax Preparation Office; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Liberty Tax,multi_brand_tax_prep_service_grid
+los_angeles,ontario-rancho-cucamonga,Ontario Mills / Rancho Cucamonga field,inland_freeway_power_center_field,5,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block; H&R Block; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service,multi_brand_tax_prep_service_grid
+los_angeles,riverside-tyler-corona,Riverside / Tyler / Corona edge field,inland_secondary_core_growth_field,12,3,H&R Block; Jackson Hewitt; Liberty Tax,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service; Liberty Tax; Liberty Tax; Liberty Tax Service,multi_brand_tax_prep_service_grid
+los_angeles,south-bay-torrance,South Bay / Torrance field,coastal_suburban_mall_auto_service_field,8,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block Tax Preparation Office; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service,multi_brand_tax_prep_service_grid
+los_angeles,west-la-century-city-culver,West LA / Century City / Culver City field,affluent_office_retail_service_field,7,2,H&R Block; Liberty Tax,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block Tax Preparation Office; Liberty Tax,multi_brand_tax_prep_service_grid
+philadelphia,camden-waterfront,Camden Waterfront / Cooper field,older_industrial_river_civic_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+philadelphia,center-city-market-east,Center City / Market East field,dense_northeast_rail_civic_retail_field,3,1,H&R Block,H&R Block; H&R Block; H&R Block,tax_prep_service_node
+philadelphia,cherry-hill-moorestown,Cherry Hill / Moorestown field,south_jersey_mall_edge_field,4,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service,multi_brand_tax_prep_service_grid
+philadelphia,conshohocken-plymouth-meeting,Conshohocken / Plymouth Meeting field,river_office_suburban_edge_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor
+philadelphia,king-of-prussia,King of Prussia field,suburban_edge_city_superregional_mall_field,1,1,Jackson Hewitt,Jackson Hewitt Tax Service,single_tax_prep_anchor
+philadelphia,northeast-roosevelt,Northeast Philadelphia / Roosevelt Boulevard field,inner_suburban_auto_corridor_field,8,2,H&R Block; Jackson Hewitt,H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; H&R Block; Jackson Hewitt Tax Service; Jackson Hewitt Tax Service,multi_brand_tax_prep_service_grid
+philadelphia,south-philly-sports-port,South Philadelphia Sports / Port field,event_port_auto_service_field,4,1,H&R Block,H&R Block; H&R Block; H&R Block; H&R Block,tax_prep_service_node
+philadelphia,university-city-30th-street,University City / 30th Street field,eds_meds_rail_service_field,1,1,H&R Block,H&R Block,single_tax_prep_anchor

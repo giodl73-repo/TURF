@@ -5079,3 +5079,38 @@ Status: pass with next-output request.
 The next pulse should decide whether tax prep becomes a standard professional-
 services sidecar, then test the same layer in another metro before promoting it
 to the cross-metro comparison pattern.
+
+## Pulse 158 Cross-Metro Tax-Prep Gap Fill
+
+### Market Analyst
+
+Status: pass.
+
+The national tax-prep sidecar now covers all 43 profile fields. It finds 12
+multi-brand tax-prep service grids, 15 service nodes, 15 single anchors, and
+only one checked-absent field.
+
+### Market Geographer
+
+Status: pass.
+
+Tax prep exposes consumer professional-service texture. Los Angeles is the
+strongest region, while Arlington / Grand Prairie, Northeast Roosevelt, and
+Cherry Hill / Moorestown show useful convergence with QSR, auto-service,
+finance, and retail-corridor layers.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The backfill uses exact national Overture brand rows and conservative review.
+It keeps tax prep outside the core profile and avoids customer, income, credit,
+business-quality, or individual-behavior inference.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should decide whether to add another national professional-
+services layer, such as insurance or real estate brokerage, or move to the gas
+/ convenience car-trip contrast.
