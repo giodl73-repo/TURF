@@ -1,0 +1,21 @@
+city,layers_present,qsr,grocery,pharmacy,mass_retail,auto_parts,home_improvement,current_chain_stack,pilot_reason,post_office_status
+Bingen,1,0,0,0,0,1,0,auto_parts,Columbia Gorge small-city sparse chain signal,needs_fetch
+Buckley,1,1,0,0,0,0,0,qsr,Pierce foothill qsr-only signal,needs_fetch
+Cashmere,1,0,0,0,0,1,0,auto_parts,Wenatchee valley small-city sparse chain signal,needs_fetch
+Cathlamet,1,0,0,0,0,1,0,auto_parts,Lower Columbia county-seat sparse chain signal,needs_fetch
+Clallam Bay,1,0,0,0,0,1,0,auto_parts,Olympic Peninsula remote sparse chain signal,needs_fetch
+Clinton,1,0,1,0,0,0,0,grocery,Whidbey ferry-side grocery-only signal,needs_fetch
+Colfax,1,0,0,0,0,1,0,auto_parts,Palouse county-seat sparse chain signal,needs_fetch
+Connell,1,0,0,0,0,1,0,auto_parts,Columbia Basin agricultural-town sparse chain signal,needs_fetch
+Darrington,1,0,0,0,0,1,0,auto_parts,Cascade foothill remote sparse chain signal,needs_fetch
+Dayton,1,0,0,0,0,1,0,auto_parts,Southeast Washington county-seat sparse chain signal,needs_fetch
+Eastsound,1,0,0,0,0,1,0,auto_parts,San Juan island sparse chain signal,needs_fetch
+Eatonville,1,0,0,0,0,1,0,auto_parts,Mount Rainier gateway sparse chain signal,needs_fetch
+Forks,1,0,0,0,0,1,0,auto_parts,Olympic Peninsula remote town sparse chain signal,needs_fetch
+Friday Harbor,1,0,0,0,0,1,0,auto_parts,San Juan ferry/island sparse chain signal,needs_fetch
+Kettle Falls,1,0,0,0,0,1,0,auto_parts,Northeast Washington small-city sparse chain signal,needs_fetch
+La Conner,1,0,0,0,0,2,0,auto_parts,Skagit delta tourist/small-town sparse chain signal,needs_fetch
+Loon Lake,1,0,0,0,0,0,1,home_improvement,Northeast Washington home-improvement-only signal,needs_fetch
+Lopez Island,1,0,0,0,0,1,0,auto_parts,Island sparse chain signal,needs_fetch
+Mattawa,1,0,0,0,0,1,0,auto_parts,Agricultural-town sparse chain signal,needs_fetch
+Mesa,1,0,0,0,0,1,0,auto_parts,Columbia Basin small-town sparse chain signal,needs_fetch

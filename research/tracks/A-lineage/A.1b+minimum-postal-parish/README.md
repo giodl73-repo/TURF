@@ -27,6 +27,7 @@ a new national or rural/postal-place evidence pass.
 - `sections/02-modern-evidence-gap.md`
 - `sections/03-acquisition-plan.md`
 - `sections/04-claim-boundary.md`
+- `sections/05-washington-pilot-design.md`
 
 ## Evidence Basis
 
@@ -57,11 +58,14 @@ Needed future evidence:
 
 - `tables/minimum-stack-typology.csv` defines the first minimum postal parish
   classes.
+- `tables/washington-chain-sparse-city-candidates.csv` lists the first
+  Washington sparse-chain candidate queue for post-office verification.
 - `reviews/ROLE_REVIEW.md` records the `.roles` pass for this scaffold.
 
 ## Status
 
-Status: scaffolded.
+Status: pilot designed.
 
-Next: build a bounded pilot, probably one state or one rural/urban contrast
-state pair, before making any national smallest-parish claims.
+Next: create a bounded Washington target file and fetch/review post-office,
+gas/convenience, dollar-store, and missing everyday-service evidence for the
+sparse candidate queue.

@@ -5836,3 +5836,51 @@ Status: pass.
 Run a bounded pilot first. Do not claim the smallest postal parishes in the
 country until post-office, ZIP/ZCTA/place, QSR, gas/convenience, dollar-store,
 grocery, and pharmacy evidence has been checked.
+
+## Pulse 175 Minimum Postal Parish Washington Pilot Design
+
+### Market Geographer
+
+Status: pass.
+
+The pilot design uses Washington city labels as a candidate queue only. It does
+not treat city label, postal locality, ZIP, ZCTA, CDP, county, or TURF field as
+interchangeable.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The candidate queue is derived from existing reviewed TURF chain layers. The
+design explicitly requires post-office verification before any minimum postal
+parish claim.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sparse-chain queue does not assign access, service adequacy, trade area, or
+catchment. It only identifies candidates for the next evidence pass.
+
+### Atlas Designer
+
+Status: pass.
+
+The candidate CSV gives a map-ready pilot queue with stack counts, current
+chain stack, pilot reason, and post-office status.
+
+### Market Analyst
+
+Status: pass.
+
+The candidate list captures the bottom-of-stack signal the user asked for:
+small places that are visible in only one current national-chain layer and may
+become post-office-plus-one or post-office-only examples after verification.
+
+### Future Agent
+
+Status: pass.
+
+The next pulse should create bounded Washington target boxes for the candidate
+queue and fetch/review post-office, gas/convenience, dollar-store, and missing
+everyday-service evidence.

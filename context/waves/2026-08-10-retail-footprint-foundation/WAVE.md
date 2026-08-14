@@ -191,6 +191,7 @@ before broader chain coverage begins.
 | 172 | A-lineage completion index | complete | Added research-track completion markers for A.1, including a machine-readable module status ledger and explicit A.2 next gate. |
 | 173 | Market-town-to-mall scaffold | complete | Scaffolded A.2 with thesis, evidence basis, lineage table, claim boundary, and `.roles` review for market-center terrain as functional analogy. |
 | 174 | Minimum postal parish scaffold | complete | Scaffolded A.1b to study sparse postal/addressability nodes as candidate minimum enclaves, with a bounded pilot required before national smallest-parish claims. |
+| 175 | Minimum postal parish Washington pilot design | complete | Designed the first A.1b pilot from existing reviewed Washington chain layers, producing a sparse city candidate queue for post-office verification. |
 
 ## Success criteria
 
