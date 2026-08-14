@@ -5009,3 +5009,38 @@ Status: pass with next-output request.
 
 The next pulse should add Philadelphia / South Jersey bank / credit union rows
 first, then use that source contract to backfill the six-metro comparison set.
+
+## Pulse 156 Philadelphia Bank / Credit Union Layer
+
+### Market Analyst
+
+Status: pass.
+
+The bank / credit union layer reaches all eight Philadelphia / South Jersey
+fields with 161 packet-ready rows. Center City, Northeast Roosevelt, and Cherry
+Hill / Moorestown have dense finance-service signal.
+
+### Market Geographer
+
+Status: pass.
+
+Finance signal is not simply a mall or auto-corridor layer. It confirms Center
+City as the finance-service core, strengthens Northeast Roosevelt and Cherry
+Hill / Moorestown as everyday service corridors, and gives Camden a light but
+real civic/service texture.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer uses OSM/Overpass public facility rows and keeps address-incomplete
+rows visible in the reviewed fixture. The report does not infer income, credit
+behavior, customers, or protected-class attributes.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should backfill bank / credit union across the remaining
+pre-scale metros or add Philadelphia gas / convenience as the car-trip contrast
+if finance backfill is blocked by source stability.

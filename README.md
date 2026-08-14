@@ -510,6 +510,9 @@ The Philadelphia / South Jersey pre-scale field stack is:
 The next scale decision after Philadelphia / South Jersey is:
 `reports\ret-next-scale-decision-after-philadelphia.md`.
 
+The Philadelphia / South Jersey bank / credit union layer is:
+`reports\ret-philadelphia-anchor-field-bank-credit-union-summary.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 

@@ -172,6 +172,7 @@ before broader chain coverage begins.
 | 153 | Philadelphia auto-parts sidecar | complete | Added reviewed Pennsylvania / New Jersey auto-parts rows and found corridor signal only in Northeast Roosevelt, South Philly, and Cherry Hill / Moorestown. |
 | 154 | Philadelphia pre-scale synthesis | complete | Combined five core layers plus QSR/auto-parts sidecars and added eight Philadelphia / South Jersey rows to the 43-row cross-metro type-discovery profile. |
 | 155 | Post-Philadelphia scale decision | complete | Chose bank / credit union as the next shared civic/common-store layer before adding a seventh metro, with gas / convenience held as the follow-on car-trip contrast. |
+| 156 | Philadelphia bank / credit union layer | complete | Added reviewed OSM bank / credit-union rows across all eight Philadelphia / South Jersey fields, finding dense finance-service signal in Center City, Northeast Roosevelt, and Cherry Hill / Moorestown. |
 
 ## Success criteria
 
