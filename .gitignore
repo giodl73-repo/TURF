@@ -4,4 +4,7 @@
 /.claude/agents_state/
 *.log
 *.tmp
+*.pyc
+__pycache__/
+/FIPS
 .cargo/config.toml
