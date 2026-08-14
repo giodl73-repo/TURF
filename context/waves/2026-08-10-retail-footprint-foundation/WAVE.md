@@ -190,6 +190,7 @@ before broader chain coverage begins.
 | 171 | Postal-parish completion review | complete | Reviewed the full A.1 module through `.roles` and approved it as TURF's first completed research module, without scaffolding A.2 yet. |
 | 172 | A-lineage completion index | complete | Added research-track completion markers for A.1, including a machine-readable module status ledger and explicit A.2 next gate. |
 | 173 | Market-town-to-mall scaffold | complete | Scaffolded A.2 with thesis, evidence basis, lineage table, claim boundary, and `.roles` review for market-center terrain as functional analogy. |
+| 174 | Minimum postal parish scaffold | complete | Scaffolded A.1b to study sparse postal/addressability nodes as candidate minimum enclaves, with a bounded pilot required before national smallest-parish claims. |
 
 ## Success criteria
 

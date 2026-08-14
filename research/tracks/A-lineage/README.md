@@ -16,7 +16,9 @@ equivalents. Each module separates:
 
 1. `A.1+postal-parish/` - complete. Postal/address infrastructure as a modern
    parish-style addressability layer.
-2. `A.2+market-town-to-mall/` - scaffolded. Malls, retail complexes,
+2. `A.1b+minimum-postal-parish/` - scaffolded. Sparse postal/addressability
+   nodes as candidate minimum enclaves.
+3. `A.2+market-town-to-mall/` - scaffolded. Malls, retail complexes,
    grocery/pharmacy grids, and mass-retail anchors as modern market-center
    terrain.
 
@@ -34,6 +36,7 @@ Machine-readable status:
 
 ## Next Gate
 
+The next A.1b gate is a bounded pilot for minimum postal parish candidates.
 The next A.2 gate is a first evidence read comparing mall-led regional fields,
 edge-city big-box power fields, grocery/pharmacy grids, and neighborhood
 everyday-service fields.

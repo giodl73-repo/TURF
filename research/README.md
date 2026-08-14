@@ -24,6 +24,7 @@ it relies on.
 
 | Track | Module | Status | Next Gate |
 |---|---|---|---|
+| A-lineage | `A.1b+minimum-postal-parish/` | scaffolded | bounded pilot |
 | A-lineage | `A.2+market-town-to-mall/` | scaffolded | first evidence read |
 
 ## Module Contract

@@ -5788,3 +5788,51 @@ Status: pass.
 
 The next pulse should add a first evidence read before source notes or
 synthesis. Keep A.2 at scaffold status until that evidence pass exists.
+
+## Pulse 174 Minimum Postal Parish Scaffold
+
+### Market Geographer
+
+Status: pass with pilot constraint.
+
+The scaffold captures the user's sharper A.1 insight while preserving geography
+discipline: ZIP, ZCTA, city, CDP, county, postal locality, post-office point,
+and TURF field remain separate.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The scaffold blocks national claims until source policy and checked pilot
+evidence exist. It avoids restricted USPS address files, proprietary POI,
+customer, demographic, income, culture, behavior, and neighborhood-quality
+claims.
+
+### Catchment Modeler
+
+Status: pass.
+
+Minimum postal parish classes are candidate sparse-footprint labels, not
+catchments, trade areas, service adequacy claims, or drive-time models.
+
+### Atlas Designer
+
+Status: pass.
+
+The minimum stack typology gives a map-ready ladder from post-office-only to
+post-office plus everyday-service layers without ranking places socially.
+
+### Market Analyst
+
+Status: pass.
+
+This is a useful bottom-of-stack test. It asks where a place is addressable and
+routable before it becomes strongly visible in national retail-chain evidence.
+
+### Future Agent
+
+Status: pass.
+
+Run a bounded pilot first. Do not claim the smallest postal parishes in the
+country until post-office, ZIP/ZCTA/place, QSR, gas/convenience, dollar-store,
+grocery, and pharmacy evidence has been checked.
