@@ -5150,3 +5150,36 @@ Status: pass with next-output request.
 The next pulse should compare tax prep and insurance as professional-services
 sidecars, then decide whether real estate brokerage is needed or whether the
 program should move to gas / convenience as the car-trip contrast.
+
+## Pulse 160 Professional-Services Sidecar Comparison
+
+### Market Analyst
+
+Status: pass.
+
+The comparison covers all 43 fields and identifies 12 confirmed professional-
+services grids, 21 insurance-broad / tax-prep-light fields, eight light nodes,
+and two asymmetric fields.
+
+### Market Geographer
+
+Status: pass.
+
+Los Angeles is the strongest professional-services region, while Arlington /
+Grand Prairie, Northeast Roosevelt, and Cherry Hill / Moorestown remain key
+convergence fields. Camden is distinctive as tax-prep-without-insurance.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The comparison keeps professional-services sidecars outside the core profile
+and avoids customer, income, credit, risk, asset, business-quality, or
+individual-behavior inference.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+Do not add real estate brokerage yet. The next pulse should move to the
+cross-metro gas / convenience sidecar as the car-trip contrast.

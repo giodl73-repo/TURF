@@ -522,6 +522,9 @@ The cross-metro national tax-prep sidecar is:
 The cross-metro national insurance sidecar is:
 `reports\ret-cross-metro-insurance-sidecar.md`.
 
+The cross-metro professional-services sidecar comparison is:
+`reports\ret-cross-metro-professional-services-sidecar-comparison.md`.
+
 The Chicago QSR sidecar layer is:
 `reports\ret-chicago-anchor-field-qsr-summary.md`.
 
