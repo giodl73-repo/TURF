@@ -186,6 +186,7 @@ before broader chain coverage begins.
 | 167 | Postal-parish evidence read | complete | Added the first repo-evidence read for A.1, aggregating six post-office summary reports into a bounded cross-metro postal civic signal table and working claim. |
 | 168 | Postal-parish source gate | complete | Added primary public USPS and Census source notes so A.1 can support the narrow addressability/statistical-context stack claim while keeping historical lineage claims gated. |
 | 169 | Postal-parish historical analogy gate | complete | Added historical source notes for parishes, market towns, local records, and settlement forms, upgrading A.1 to a bounded functional analogy while blocking direct-equivalence claims. |
+| 170 | Postal-parish module synthesis | complete | Drafted the A.1 synthesis joining TURF evidence, USPS/Census source boundaries, and historical functional analogy into one bounded research claim. |
 
 ## Success criteria
 

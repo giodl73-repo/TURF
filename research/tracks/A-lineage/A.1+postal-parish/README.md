@@ -18,6 +18,7 @@ or Census geographies are interchangeable.
 - `sections/05-first-evidence-read.md`
 - `sections/06-source-notes.md`
 - `sections/07-historical-analogy-source-notes.md`
+- `sections/08-synthesis.md`
 
 ## Evidence Basis
 
@@ -56,7 +57,7 @@ Related queries and fixtures:
 
 ## Status
 
-Status: first evidence read drafted.
+Status: synthesis drafted.
 
-Next: draft the module synthesis, preserving the distinction between modern
-postal/addressability evidence and historical functional analogy.
+Next: role-review the full A.1 module and decide whether to promote it as the
+first completed research module before scaffolding `A.2+market-town-to-mall`.

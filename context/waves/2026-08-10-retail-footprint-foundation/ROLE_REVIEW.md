@@ -5598,3 +5598,49 @@ Status: pass.
 The A.1 module is now ready for a synthesis draft. The draft should preserve
 the distinction between modern postal/addressability evidence and historical
 functional analogy.
+
+## Pulse 170 Postal-Parish Module Synthesis
+
+### Market Geographer
+
+Status: pass.
+
+The synthesis keeps geography layers separate: USPS delivery/address
+infrastructure, Census ZCTA approximations, civic post-office points, retail
+fields, and historical analogy remain distinct.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The claim level matches the evidence. The synthesis relies on repo-generated
+TURF outputs plus public USPS, Census, Historic England, UK Parliament, and
+National Archives sources, and it avoids unsupported direct-equivalence claims.
+
+### Catchment Modeler
+
+Status: pass.
+
+The synthesis does not convert postal signal into a catchment. It frames postal
+evidence as an addressability layer inside the field stack.
+
+### Atlas Designer
+
+Status: pass.
+
+The synthesis provides a reusable atlas grammar: historical function, modern
+translation, and TURF use. It is ready to inform later A-lineage modules.
+
+### Market Analyst
+
+Status: pass.
+
+The synthesis keeps the practical finding visible: postal signal recurs across
+many enclave families, but checked absence and source gates remain meaningful.
+
+### Future Agent
+
+Status: pass with next gate.
+
+The next pulse should role-review the full A.1 module as a candidate completed
+research module before scaffolding `A.2+market-town-to-mall`.
