@@ -17,6 +17,7 @@ or Census geographies are interchangeable.
 - `sections/04-claim-boundary.md`
 - `sections/05-first-evidence-read.md`
 - `sections/06-source-notes.md`
+- `sections/07-historical-analogy-source-notes.md`
 
 ## Evidence Basis
 
@@ -57,5 +58,5 @@ Related queries and fixtures:
 
 Status: first evidence read drafted.
 
-Next: add historical citations before making stronger lineage claims about
-older parish, ward, market-town, or record-office functions.
+Next: draft the module synthesis, preserving the distinction between modern
+postal/addressability evidence and historical functional analogy.

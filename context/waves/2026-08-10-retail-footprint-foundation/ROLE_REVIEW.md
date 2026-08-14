@@ -5548,3 +5548,53 @@ Status: pass with next gate.
 The next gate is historical sourcing. Add parish, ward, market-town, or
 record-office citations before expanding the lineage argument beyond modern
 postal/addressability evidence.
+
+## Pulse 169 Postal-Parish Historical Analogy Gate
+
+### Market Geographer
+
+Status: pass.
+
+The historical notes support layered settlement and civic-function analogy
+without turning historical institutions into modern boundaries. Differences
+between historical settlement evidence, public infrastructure, and retail
+footprint evidence remain explicit.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The added sources are public Historic England, UK Parliament, legislation.gov.uk,
+and National Archives materials. The module still blocks direct-equivalence
+claims and customer/demographic inference.
+
+### Catchment Modeler
+
+Status: pass.
+
+The analogy remains descriptive. It does not create catchments, travel sheds,
+service areas, or corporate territories.
+
+### Atlas Designer
+
+Status: pass.
+
+The source notes give future atlas modules a stable language for historical
+functions: settlement legibility, service-center access, local records, market
+center, and modern addressability.
+
+### Market Analyst
+
+Status: pass.
+
+The upgrade helps explain why postal and post-office evidence matters in the
+field stack while preserving the practical read: modern field labels still come
+from TURF's observed public footprint evidence.
+
+### Future Agent
+
+Status: pass.
+
+The A.1 module is now ready for a synthesis draft. The draft should preserve
+the distinction between modern postal/addressability evidence and historical
+functional analogy.

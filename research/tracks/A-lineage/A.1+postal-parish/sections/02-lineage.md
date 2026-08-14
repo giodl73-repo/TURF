@@ -30,3 +30,14 @@ The modern institution is not a parish. It is a stack:
 
 TURF treats this stack as public infrastructure and analysis context. It does
 not turn postal geography into a final market boundary.
+
+## Historical Analogy
+
+The historical analogy is now source-gated in
+`sections/07-historical-analogy-source-notes.md`.
+
+Older parishes, market towns, record institutions, and settlement forms are
+useful to TURF because they show recurring functions: local legibility,
+service-center access, administrative records, and settlement identity. The
+analogy stops there. TURF does not claim that USPS, ZIP Codes, ZCTAs, or
+retail fields are direct descendants or equivalents of those institutions.

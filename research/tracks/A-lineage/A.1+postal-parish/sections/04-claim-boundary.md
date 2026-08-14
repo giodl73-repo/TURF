@@ -30,6 +30,9 @@ This module may claim:
 - ZIP/ZCTA-derived keys are useful analysis context when their limits are
   stated,
 - postal civic evidence can reinforce or qualify a TURF field type.
+- older local institutions can be used as functional analogies for local
+  legibility, service-center access, administrative records, and settlement
+  identity when cited and bounded.
 
 This module may not claim:
 
@@ -38,6 +41,8 @@ This module may not claim:
 - retail chains intentionally reproduce historical parish systems,
 - commercial footprints are official corporate territories,
 - field families are legal, municipal, Census, or USPS boundaries.
+- USPS, ZIP Codes, ZCTAs, or TURF fields are direct descendants or equivalents
+  of parishes, wards, market towns, or local record institutions.
 
 ## Modeling Boundary
 
