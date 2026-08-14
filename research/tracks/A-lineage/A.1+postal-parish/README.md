@@ -16,6 +16,7 @@ or Census geographies are interchangeable.
 - `sections/03-modern-evidence.md`
 - `sections/04-claim-boundary.md`
 - `sections/05-first-evidence-read.md`
+- `sections/06-source-notes.md`
 
 ## Evidence Basis
 
@@ -56,5 +57,5 @@ Related queries and fixtures:
 
 Status: first evidence read drafted.
 
-Next: add public USPS, Census, and historical citations in `references.bib`
-before making stronger national or historical claims.
+Next: add historical citations before making stronger lineage claims about
+older parish, ward, market-town, or record-office functions.

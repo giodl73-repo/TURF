@@ -25,6 +25,8 @@ This module may claim:
 
 - postal/address infrastructure is a public addressability layer,
 - post offices can be observed as civic service points in selected TURF fields,
+- USPS delivery infrastructure and Census ZCTA approximations are different
+  public layers in the addressability/statistical-context stack,
 - ZIP/ZCTA-derived keys are useful analysis context when their limits are
   stated,
 - postal civic evidence can reinforce or qualify a TURF field type.

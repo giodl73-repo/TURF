@@ -184,6 +184,7 @@ before broader chain coverage begins.
 | 165 | Research track plan role review | complete | Reviewed the historical-lineage research plan through `.roles`, approved the A-lineage sequence, and selected `A.1+postal-parish` as the first module. |
 | 166 | Postal-parish research scaffold | complete | Created the minimal research track scaffold and first A-lineage module for postal/address infrastructure as a modern parish-style addressability layer, with source and claim-boundary constraints. |
 | 167 | Postal-parish evidence read | complete | Added the first repo-evidence read for A.1, aggregating six post-office summary reports into a bounded cross-metro postal civic signal table and working claim. |
+| 168 | Postal-parish source gate | complete | Added primary public USPS and Census source notes so A.1 can support the narrow addressability/statistical-context stack claim while keeping historical lineage claims gated. |
 
 ## Success criteria
 

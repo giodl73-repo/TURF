@@ -5499,3 +5499,52 @@ Status: pass.
 The next agent should add public citations before broadening the claim. Do not
 promote this first read into a national historical assertion without that
 source pass.
+
+## Pulse 168 Postal-Parish Source Gate
+
+### Market Geographer
+
+Status: pass.
+
+The source notes strengthen the ZIP/ZCTA boundary. USPS delivery infrastructure,
+local-government address creation, and Census ZCTA statistical approximations
+are treated as separate layers.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The citations are primary public USPS and Census sources. The module still
+blocks restricted USPS address files, proprietary POI data, customer claims,
+and unsourced historical claims.
+
+### Catchment Modeler
+
+Status: pass.
+
+The source gate does not convert postal or ZCTA context into a catchment model.
+It only supports addressability and statistical-context language.
+
+### Atlas Designer
+
+Status: pass.
+
+The source notes make future atlas labels safer: observed post-office signal,
+ZIP-derived source fields, and ZCTA statistical joins should appear as distinct
+legend layers.
+
+### Market Analyst
+
+Status: pass.
+
+The module can now explain why ZIP/ZCTA-derived keys are useful but limited in
+business analysis. It does not overstate them as official neighborhoods or
+retail territories.
+
+### Future Agent
+
+Status: pass with next gate.
+
+The next gate is historical sourcing. Add parish, ward, market-town, or
+record-office citations before expanding the lineage argument beyond modern
+postal/addressability evidence.
