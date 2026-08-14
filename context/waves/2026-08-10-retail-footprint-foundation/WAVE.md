@@ -167,6 +167,7 @@ before broader chain coverage begins.
 | 148 | Philadelphia grocery layer | complete | Added reviewed Pennsylvania / New Jersey grocery signal, finding five multi-brand grocery grids plus Camden single-anchor and King of Prussia checked-absent cases. |
 | 149 | Philadelphia mass-retail layer | complete | Added reviewed Pennsylvania / New Jersey mass retail, finding Cherry Hill / Moorestown as the only multi-brand big-box anchor in the eight-field set. |
 | 150 | Philadelphia pharmacy layer | complete | Added reviewed Pennsylvania / New Jersey exact-brand pharmacy signal, finding Center City as the only multi-brand health-errand field and three checked-absent fields. |
+| 151 | Philadelphia retail-complex layer | complete | Added target-limited Pennsylvania / New Jersey mall, plaza, shopping-center, and retail-district confirmation, separating mall-led KOP/Cherry Hill from Camden checked absence. |
 
 ## Success criteria
 

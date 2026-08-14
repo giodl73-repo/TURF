@@ -1,0 +1,9 @@
+field_id,label,anchor_field,retail_complex_rows,retail_complex_types,has_mall_complex,retail_complex_type_list,retail_complex_names,retail_complex_signal
+center-city-market-east,Center City / Market East field,dense_northeast_rail_civic_retail_field,2,2,0,Retail Center; Retail District,AMC DINE-IN Fashion District 8; Reading Center,confirmed_retail_complex_field
+university-city-30th-street,University City / 30th Street field,eds_meds_rail_service_field,3,2,0,Retail District; Retail Plaza,First District Plaza; One Drexel Plaza; University City District,confirmed_retail_complex_field
+king-of-prussia,King of Prussia field,suburban_edge_city_superregional_mall_field,2,2,1,Mall; Retail Center,King Of Prussia Town Center; Simon King of Prussia Mall (King of Prussia PA),confirmed_mall_complex_field
+northeast-roosevelt,Northeast Philadelphia / Roosevelt Boulevard field,inner_suburban_auto_corridor_field,2,2,1,Mall; Shopping Center,Roosevelt Mall; Whitman Square Shopping Center,confirmed_mall_complex_field
+conshohocken-plymouth-meeting,Conshohocken / Plymouth Meeting field,river_office_suburban_edge_field,1,1,1,Mall,Plymouth Meeting Mall,confirmed_mall_anchor
+south-philly-sports-port,South Philadelphia Sports / Port field,event_port_auto_service_field,4,2,0,Retail Plaza; Shopping Center,Cedar Realty Quartermaster Plaza (Philadelphia PA); Packer Park Shopping Center; SNYDER PLAZA; Whitman Plaza,confirmed_retail_complex_field
+camden-waterfront,Camden Waterfront / Cooper field,older_industrial_river_civic_field,0,0,0,"","",checked_absent
+cherry-hill-moorestown,Cherry Hill / Moorestown field,south_jersey_mall_edge_field,4,3,1,Mall; Retail Center; Shopping Center,Cherry Hill Mall; East Gate Center; Ellisburg Circle Shopping Center; Moorestown Mall,confirmed_mall_complex_field

@@ -4837,3 +4837,39 @@ Status: pass with next-output request.
 The next pulse should add retail-complex confirmation before sidecars, because
 King of Prussia and Cherry Hill / Moorestown likely need structural mall and
 shopping-center evidence to be typed correctly.
+
+## Pulse 151 Philadelphia Retail-Complex Layer
+
+### Market Analyst
+
+Status: pass.
+
+The retail-complex layer confirms the expected split: King of Prussia and
+Cherry Hill / Moorestown are mall-led fields, Northeast Roosevelt is an older
+mall/shopping-center field, South Philadelphia is a plaza/service field, and
+Camden remains checked absent for retail-complex structure.
+
+### Market Geographer
+
+Status: pass.
+
+The layer adds useful urban/suburban separation. Center City and University
+City carry district/plaza signal, while King of Prussia, Plymouth Meeting,
+Northeast Roosevelt, and Cherry Hill / Moorestown carry edge-city or corridor
+complex signal.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The review is target-limited and conservative. It promotes named retail
+structures, preserves duplicate and non-retail candidate rows as excludes, and
+does not claim a full Pennsylvania / New Jersey mall census.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should add Philadelphia / South Jersey QSR sidecar signal, then
+auto parts, so the sixth metro has the standard pre-scale sidecars before the
+combined field stack is generated.
