@@ -4907,3 +4907,37 @@ Status: pass with next-output request.
 The next pulse should add Philadelphia / South Jersey auto-parts sidecar signal
 so QSR daily-trip texture can be compared with car-service corridor texture
 before the combined sixth-metro stack is generated.
+
+## Pulse 153 Philadelphia Auto-Parts Sidecar
+
+### Market Analyst
+
+Status: pass.
+
+The auto-parts sidecar validates with 759 packet-ready rows and is more
+selective than QSR. Only Northeast Roosevelt, South Philadelphia, and Cherry
+Hill / Moorestown show multi-brand auto-service corridor signal.
+
+### Market Geographer
+
+Status: pass.
+
+The sidecar reinforces corridor fields rather than mall or rail/civic fields.
+King of Prussia remains mall-led inside the bounded box, while Center City and
+University City remain checked absent for this car-service layer.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The layer uses exact Overture brand rows for AutoZone, O'Reilly Auto Parts,
+NAPA Auto Parts, and Advance Auto Parts, excludes duplicate and brand false
+positive rows, and treats the result as public footprint evidence.
+
+### Catchment Modeler
+
+Status: pass with next-output request.
+
+The next pulse should combine the five core layers plus QSR and auto-parts
+sidecars into a Philadelphia / South Jersey pre-scale field stack, then update
+the cross-metro type-discovery profile.
