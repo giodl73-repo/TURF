@@ -715,6 +715,20 @@ not scrape private APIs or imply it has access to unpublished corporate region
 boundaries. The Home Depot / Lowe's acquisition gate is documented in
 `docs\research\home-improvement-source-policy.md`.
 
+## Portfolio reuse posture
+
+TURF is intentionally a specialist public-retail evidence product, not a shared
+portfolio dependency. `turf-core` 0.1.0 and the current CSV, RET profile,
+source-review, and report shapes support this repository's research workflow;
+no downstream manifest consumes them as versioned contracts.
+
+Other repositories may cite published TURF findings with their source and
+caveat context, but should not import its retail classifications, profile
+weights, source decisions, fixtures, or CLI output schemas as stable APIs.
+Operational territory planning belongs in TERRAIN. Direct TURF reuse requires a
+versioned evidence/schema boundary, a pinned downstream manifest, and
+consumer-owned source-custody and compatibility tests.
+
 ## Non-goals
 
 - TURF does not claim to know a chain's internal districts unless they are
