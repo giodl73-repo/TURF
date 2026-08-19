@@ -1,0 +1,7 @@
+"target_id","sidecar_layer","endpoint","fetch_status","raw_row_count","error"
+"arlington-grand-prairie-tx","truck_stop","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 504 (Gateway Timeout)."
+"arlington-grand-prairie-tx","motel_lodging","https://overpass-api.de/api/interpreter","fetched","40",""
+"northeast-roosevelt","truck_stop","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 504 (Gateway Timeout)."
+"northeast-roosevelt","motel_lodging","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 504 (Gateway Timeout)."
+"cherry-hill-moorestown","truck_stop","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 504 (Gateway Timeout)."
+"cherry-hill-moorestown","motel_lodging","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 504 (Gateway Timeout)."

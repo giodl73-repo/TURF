@@ -1,0 +1,21 @@
+target_id,primary_city,post_office_status,post_office_rows,primary_ready_rows,address_incomplete_rows,review_note
+wa-min-postal-bingen,Bingen,observed,2,0,2,Two OSM post-office ways returned inside the target box but both lack complete address tags.
+wa-min-postal-buckley,Buckley,observed,1,1,0,USPS post office returned with street address and postal code.
+wa-min-postal-cashmere,Cashmere,observed,1,1,0,USPS post office returned with street address and postal code.
+wa-min-postal-cathlamet,Cathlamet,observed,1,0,1,Post office returned inside the target box but address tags are incomplete.
+wa-min-postal-clallam-bay,Clallam Bay,observed,1,0,1,Post office returned inside the target box but address tags are incomplete.
+wa-min-postal-clinton,Clinton,observed,1,0,1,Post office returned inside the target box but address tags are incomplete.
+wa-min-postal-colfax,Colfax,observed,1,0,1,Post office returned with street address but no postal code tag.
+wa-min-postal-connell,Connell,observed,1,0,1,Post office returned inside the target box but address tags are incomplete.
+wa-min-postal-darrington,Darrington,checked_absent,0,0,0,Clean single-target OSM/Overpass retry returned no post-office elements inside the target box.
+wa-min-postal-dayton,Dayton,observed,1,1,0,USPS post office returned with street address and postal code.
+wa-min-postal-eastsound,Eastsound,observed,1,0,1,Post office returned with postal code but no street address tags.
+wa-min-postal-eatonville,Eatonville,observed,1,1,0,USPS post office returned with street address and postal code.
+wa-min-postal-forks,Forks,observed,1,0,1,Post office returned with street address but no postal code tag.
+wa-min-postal-friday-harbor,Friday Harbor,observed,2,1,1,Two OSM post-office points returned; one USPS row has street address and postal code.
+wa-min-postal-kettle-falls,Kettle Falls,observed,1,0,1,Post office returned with street address but no postal code tag.
+wa-min-postal-la-conner,La Conner,observed,1,1,0,USPS post office returned with street address and postal code.
+wa-min-postal-loon-lake,Loon Lake,observed,1,1,0,USPS post office returned with street address and postal code.
+wa-min-postal-lopez-island,Lopez Island,observed,1,0,1,Post office returned inside the target box but address tags are incomplete.
+wa-min-postal-mattawa,Mattawa,observed,1,0,1,Post office returned inside the target box but address tags are incomplete.
+wa-min-postal-mesa,Mesa,checked_absent,0,0,0,Clean single-target OSM/Overpass retry returned no post-office elements inside the target box.

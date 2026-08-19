@@ -1,0 +1,6 @@
+"target_id","sidecar_layer","endpoint","fetch_status","raw_row_count","error","query_profile"
+"south-philly-sports-port","logistics_industrial","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 406 (Not Acceptable).","short_explicit_logistics_industrial_tags_or_names"
+"long-beach-lakewood","logistics_industrial","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 406 (Not Acceptable).","short_explicit_logistics_industrial_tags_or_names"
+"camp-creek","logistics_industrial","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 406 (Not Acceptable).","short_explicit_logistics_industrial_tags_or_names"
+"arlington-grand-prairie-tx","logistics_industrial","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 406 (Not Acceptable).","short_explicit_logistics_industrial_tags_or_names"
+"cherry-hill-moorestown","logistics_industrial","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 406 (Not Acceptable).","short_explicit_logistics_industrial_tags_or_names"

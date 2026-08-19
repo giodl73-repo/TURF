@@ -1,0 +1,21 @@
+target_id,primary_city,post_office_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+il-third-pilot-brookfield,Brookfield,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-fairbury,Fairbury,observed,1,1,0,Fairbury Post Office,OSM map API fallback returned packet-ready post-office rows inside bounded target box.
+il-third-pilot-greenup,Greenup,observed,1,1,0,Greenup Post Office,OSM map API fallback returned packet-ready post-office rows inside bounded target box.
+il-third-pilot-hodgkins,Hodgkins,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-mount-carmel,Mount Carmel,observed,1,1,0,Mount Carmel Post Office,OSM map API fallback returned packet-ready post-office rows inside bounded target box.
+il-third-pilot-petersburg,Petersburg,checked_absent,0,0,0,,OSM map API fallback completed and returned no packet-ready post-office rows inside bounded target box.
+il-third-pilot-riverside,Riverside,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-sleepy-hollow,Sleepy Hollow,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-virden,Virden,observed,2,2,0,U.S. Post Office; Virden Post Office,OSM map API fallback returned packet-ready post-office rows inside bounded target box.
+il-third-pilot-winthrop-harbor,Winthrop Harbor,observed,2,2,0,Winthrop Harbor Post Office; Zion Post Office,OSM map API fallback returned packet-ready post-office rows inside bounded target box.
+il-third-pilot-clarendon-hills,Clarendon Hills,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-dixmoor,Dixmoor,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-glen-carbon,Glen Carbon,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-la-grange-park,La Grange Park,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-albion,Albion,observed,1,1,0,Albion Post Office,OSM map API fallback returned packet-ready post-office rows inside bounded target box.
+il-third-pilot-altamont,Altamont,observed,1,1,0,Altamont Post Office,OSM map API fallback returned packet-ready post-office rows inside bounded target box.
+il-third-pilot-arcola,Arcola,observed,1,1,0,Arcola Post Office,OSM map API fallback returned packet-ready post-office rows inside bounded target box.
+il-third-pilot-bannockburn,Bannockburn,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.
+il-third-pilot-henry,Henry,checked_absent,0,0,0,,OSM map API fallback completed and returned no packet-ready post-office rows inside bounded target box.
+il-third-pilot-lincolnwood,Lincolnwood,source_gated,0,0,0,,OSM map API fallback hit dense-box/API limit after alternate Overpass returned zero rows; post-office absence not checked.

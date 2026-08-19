@@ -1,0 +1,21 @@
+target_id,primary_city,hardware_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+wa-min-postal-bingen,Bingen,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-buckley,Buckley,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-cashmere,Cashmere,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-cathlamet,Cathlamet,observed,1,1,0,Cathlamet Building Materials,Named OSM hardware rows observed in completed target-box pass.
+wa-min-postal-clallam-bay,Clallam Bay,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-clinton,Clinton,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-colfax,Colfax,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-connell,Connell,observed,1,1,0,Connell Grange Supply,Named OSM hardware rows observed in completed target-box pass.
+wa-min-postal-darrington,Darrington,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-dayton,Dayton,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-eastsound,Eastsound,observed,2,2,0,Island Hardware & Supply; Orcas Island Hardware,Named OSM hardware rows observed in completed target-box pass.
+wa-min-postal-eatonville,Eatonville,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-forks,Forks,observed,1,1,0,Decker City Hardware,Named OSM hardware rows observed in completed target-box pass.
+wa-min-postal-friday-harbor,Friday Harbor,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-kettle-falls,Kettle Falls,observed,2,2,0,Mc Intosh Hardware; True Value,Named OSM hardware rows observed in completed target-box pass.
+wa-min-postal-la-conner,La Conner,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-loon-lake,Loon Lake,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-lopez-island,Lopez Island,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-mattawa,Mattawa,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.
+wa-min-postal-mesa,Mesa,checked_absent,0,0,0,,Completed OSM hardware target-box pass returned no named rows.

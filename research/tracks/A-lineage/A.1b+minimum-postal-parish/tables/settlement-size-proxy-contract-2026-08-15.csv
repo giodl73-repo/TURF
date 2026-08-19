@@ -1,0 +1,8 @@
+proxy_field,required_value,source_status,reason,claim_boundary
+settlement_size_proxy,required_before_frequency_claim,not_joined_in_current_smoke,The sample needs a size stratum before interpreting minimum-stack frequency.,"A size proxy is an analytic stratum, not a claim about lived identity or service adequacy."
+preferred_proxy,census_place_or_equivalent_population_bucket,gated,Best direct approximation for settlement scale when a post-office seed can be joined to a Census place or equivalent polygon.,"Census place is not the same as postal locality, ZIP, ZCTA, city label, trade area, or catchment."
+fallback_proxy,zcta_or_zip_candidate_population_bucket,gated,Useful when a postal seed has a ZIP or can be spatially associated with a ZCTA candidate.,"ZIP/ZCTA context is a statistical or postal proxy, not a facility catchment."
+coarse_proxy,county_cbsa_micro_noncbsa_bucket,gated,Useful when place/ZCTA joins are unavailable but county and CBSA context exists.,"County/CBSA class is too coarse for smallest-parish claims by itself."
+minimum_buckets,under_2500; 2500_to_9999; 10000_to_49999; 50000_plus; unknown,required_for_version_1,Simple buckets prevent false precision in the first national sample.,"Buckets do not rank community quality, demand, income, or access."
+unknown_handling,unknown_allowed_but_reported,required,Unjoined rows should remain usable for source QA but not for size-stratified frequency claims.,"Unknown size rows cannot support settlement-size conclusions."
+join_versioning,versioned_join_table_required,required,The same seed frame can produce different strata if the population join changes.,"Changing the join requires a new output version and method note."

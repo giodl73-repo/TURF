@@ -1,0 +1,2 @@
+brand,store_name,address,city,state,postal_code,source,source_url,source_access_date,license_status,review_status,review_reason,pilot_note
+Domino's,Domino's Pizza,8208 NE State Hwy 104 Suite 107,Kingston,WA,98346,Domino's official store page,https://pizza.dominos.com/washington/kingston/8208-ne-state-hwy-104-suite-107,2026-08-15,public_brand_locator,packet_ready,official_store_locator_seed,"Seed example only; demonstrates omitted pizza/delivery signal outside the current four-brand QSR layer."

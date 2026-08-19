@@ -1,0 +1,9 @@
+target_id,primary_city,food_service_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+il-third-pilot-fairbury,Fairbury,observed,9,9,0,China Kitchen; DQ Grill & Chill; Dos Fuentes; Dream Cabin Coffee; Lost in Time,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-greenup,Greenup,observed,1,1,0,Naf Naf Grill,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-mount-carmel,Mount Carmel,observed,1,1,0,McDonald's,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-virden,Virden,observed,3,3,0,DQ Grill & Chill; Hardee's; Pudock's Hideout,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-winthrop-harbor,Winthrop Harbor,observed,20,20,0,Burger King; CJ's Donuts; CoCo's Cafe; Domino's; Droopy Dogs,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-albion,Albion,observed,1,1,0,McDonald's,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-altamont,Altamont,observed,4,4,0,Deb's Catering and Custard Stand; Joe's Pizza; McDonald's; Subway,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-arcola,Arcola,observed,3,3,0,Broomtown Cafe; DQ Grill & Chill; McDonald's,OSM map API sidecar pass returned packet-ready rows inside bounded target box.

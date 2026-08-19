@@ -5884,3 +5884,2170 @@ Status: pass.
 The next pulse should create bounded Washington target boxes for the candidate
 queue and fetch/review post-office, gas/convenience, dollar-store, and missing
 everyday-service evidence.
+
+## Pulse 176 Minimum Postal Parish Washington Target Gate
+
+### Market Geographer
+
+Status: pass.
+
+The target CSV keeps the probe boxes separate from city, postal locality, ZIP,
+ZCTA, CDP, county, TURF field, and catchment boundaries. The boxes are only
+fetch gates derived from existing reviewed chain coordinates.
+
+### Source Policy Auditor
+
+Status: pass with source gate.
+
+The pulse records OSM/Overpass attempts and preserves timeout outcomes as
+`source_gated`. It does not convert timeout into checked absence or claim
+post-office evidence.
+
+### Catchment Modeler
+
+Status: pass.
+
+The target boxes are acquisition windows, not service areas, trade areas,
+drive-time zones, or access claims.
+
+### Atlas Designer
+
+Status: pass.
+
+The new target contract is map-ready and the source-gate table gives every
+candidate an explicit unresolved state for atlas QA.
+
+### Market Analyst
+
+Status: pass.
+
+This is the right next increment: the sparse-chain queue can now be fetched
+and audited consistently, while classification remains blocked until postal
+evidence returns.
+
+### Future Agent
+
+Status: pass.
+
+Retry post-office evidence one target at a time or add another open
+post-office source before fetching gas/convenience, dollar-store, and other
+everyday-service sidecars.
+
+## Pulse 177 Minimum Postal Parish Washington Post-Office Resolution
+
+### Market Geographer
+
+Status: pass.
+
+The pass resolves post-office evidence inside bounded target boxes only. It
+does not equate those boxes with city limits, ZIPs, ZCTAs, CDPs, counties,
+postal localities, or TURF catchments.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The checked layer uses OSM/Overpass with ODbL rights status recorded per row.
+Darrington and Mesa are marked checked absent only for this bounded OSM pass,
+not globally absent.
+
+### Catchment Modeler
+
+Status: pass.
+
+Observed post-office geometry is not used as a service area, access measure,
+trade area, or drive-time claim.
+
+### Atlas Designer
+
+Status: pass.
+
+The post-office status table is ready for map QA because it separates observed,
+checked-absent, complete-address, and address-incomplete outcomes.
+
+### Market Analyst
+
+Status: pass.
+
+The evidence now supports a first filtered queue: 18 sparse-chain targets have
+postal civic signal and can proceed to everyday-service sidecar checks.
+
+### Future Agent
+
+Status: pass.
+
+Next fetch gas/convenience and dollar-store layers against the same target
+boxes, then produce the first minimum-stack classification only after those
+sidecars are reviewed.
+
+## Pulse 178 Minimum Postal Parish QSR Scope Gap
+
+### Market Geographer
+
+Status: pass.
+
+The Kingston example is used as a scope warning, not as a new A.1b sparse
+target. Kingston already has multiple checked TURF layers and does not belong
+in the one-layer sparse queue.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The Domino's source is an official public store page and is used only to prove
+that the current QSR contract omits relevant chain signal. It does not replace
+the reviewed Overture layer or authorize a national QSR claim.
+
+### Catchment Modeler
+
+Status: pass.
+
+The pulse does not infer delivery area, customer access, food access, or
+service adequacy from the Domino's row.
+
+### Atlas Designer
+
+Status: pass.
+
+The scope gap prevents false negative map labels. A map should distinguish
+`four_brand_qsr_absent` from checked QSR absence.
+
+### Market Analyst
+
+Status: pass.
+
+The user's Kingston example exposes a real small-place problem: pizza/delivery
+chains can be the everyday food-service signal even when the four-brand QSR
+layer is empty.
+
+### Future Agent
+
+Status: pass.
+
+Before minimum-stack classification, add a broadened QSR or `pizza_delivery`
+sidecar and rerun the candidate queue against that evidence.
+
+## Pulse 179 Minimum Postal Parish Pizza Delivery Sidecar
+
+### Market Geographer
+
+Status: pass.
+
+The sidecar is an evidence layer, not a delivery territory, trade area, postal
+locality, or municipal boundary. Kingston remains a scope example rather than a
+new sparse candidate.
+
+### Source Policy Auditor
+
+Status: pass with scale constraint.
+
+The Domino's row is sourced from an official public brand locator page and is
+used as seed evidence only. A scalable statewide brand-locator pass needs
+source-policy approval before bulk use.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sidecar records store presence only. It does not infer delivery range,
+drive time, access, service adequacy, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+Keeping pizza delivery separate from four-brand QSR will make maps more honest:
+small places can show `pizza_delivery_observed` without pretending they have a
+full QSR grid.
+
+### Market Analyst
+
+Status: pass.
+
+The category belongs in A.1b because it may be a common small-place food-service
+signal, especially in ferry towns, county seats, and highway-oriented postal
+places.
+
+### Future Agent
+
+Status: pass.
+
+Run the pizza sidecar across the 20 Washington target boxes before producing
+minimum-stack classes.
+
+## Pulse 180 Minimum Postal Parish Washington Pizza Partial Pass
+
+### Market Geographer
+
+Status: pass.
+
+The sidecar pass is bounded to target boxes and preserves source-gated targets.
+It does not convert target boxes into places, postal localities, ZIPs, ZCTAs,
+or catchments.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The OSM rows carry ODbL rights status and the pass excludes non-target brands
+and explicit out-of-state rows. The 11 failed fetches remain source-gated.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sidecar records store presence only. It does not infer delivery range,
+access, adequacy, drive time, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The status table is map-ready because it distinguishes observed, checked
+absent, and source-gated outcomes instead of painting unknowns as absence.
+
+### Market Analyst
+
+Status: pass.
+
+The completed subset is useful: nine sparse targets appear to lack target-brand
+pizza delivery/carryout in OSM, while the rest need retries before
+classification.
+
+### Future Agent
+
+Status: pass.
+
+Retry the 11 source-gated pizza targets before minimum-stack classification.
+
+## Pulse 181 Minimum Postal Parish Washington Pizza Retry
+
+### Market Geographer
+
+Status: pass.
+
+The retry increases checked target-box coverage but still preserves five
+source-gated places. It does not convert target boxes into place or postal
+boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The OSM/ODbL source remains explicit, target-brand filtering remains narrow,
+and timed-out targets are still unknown rather than checked absent.
+
+### Catchment Modeler
+
+Status: pass.
+
+The retry does not introduce delivery areas, drive-time assumptions, access
+claims, or service adequacy claims.
+
+### Atlas Designer
+
+Status: pass.
+
+The status table now gives a cleaner map layer: 15 checked-absent pizza sidecar
+targets and five source-gated targets.
+
+### Market Analyst
+
+Status: pass.
+
+No target-brand pizza rows were found across 114 reviewed OSM food-service
+candidates in the completed subset, which helps narrow the minimum-stack
+classifier while keeping five places unresolved.
+
+### Future Agent
+
+Status: pass.
+
+Retry Connell, Dayton, Forks, Mattawa, and Mesa later, or use another approved
+open source before final classification.
+
+## Pulse 182 Minimum Postal Parish Washington Pizza Final Retry
+
+### Market Geographer
+
+Status: pass.
+
+The final retry improves sidecar coverage without changing the target-box
+geography contract. Forks remains source-gated and cannot be mapped as absent.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The query was narrowed to target brands, reducing broad restaurant collection.
+Completed zero-row target fetches are checked absent only for this OSM
+target-brand sidecar pass.
+
+### Catchment Modeler
+
+Status: pass.
+
+The pass still records store presence only and does not infer delivery areas,
+drive time, access, adequacy, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The layer is now nearly complete for atlas QA: 19 checked-absent targets and
+one source-gated target.
+
+### Market Analyst
+
+Status: pass.
+
+Pizza delivery no longer blocks most of the Washington A.1b pilot. Forks is the
+only unresolved pizza sidecar target before classification.
+
+### Future Agent
+
+Status: pass.
+
+Retry Forks later or use another approved open source, then proceed to
+gas/convenience and dollar-store sidecars.
+
+## Pulse 183 Minimum Postal Parish Washington Pizza Completion
+
+### Market Geographer
+
+Status: pass.
+
+The completed pizza sidecar remains target-box evidence only. It does not
+change the distinction between target box, postal locality, city, ZIP, ZCTA,
+CDP, county, or catchment.
+
+### Source Policy Auditor
+
+Status: pass.
+
+Forks completed as a zero-row targeted OSM retry. Checked absence is limited to
+target-brand pizza delivery/carryout in this OSM sidecar pass.
+
+### Catchment Modeler
+
+Status: pass.
+
+The pulse makes no delivery-range, food-access, service-adequacy, drive-time,
+or customer-behavior claim.
+
+### Atlas Designer
+
+Status: pass.
+
+The status table is now complete for the target-brand pizza sidecar: 20 checked
+absent targets and no source gates.
+
+### Market Analyst
+
+Status: pass.
+
+Pizza delivery no longer blocks the A.1b Washington classifier. The next
+sidecars should test gas/convenience and dollar-store signal.
+
+### Future Agent
+
+Status: pass.
+
+Proceed to gas/convenience and dollar-store sidecars before producing
+minimum-stack classes.
+
+## Pulse 184 Minimum Postal Parish Washington Gas Convenience Pass
+
+### Market Geographer
+
+Status: pass.
+
+The gas/convenience sidecar is target-box evidence and does not redefine city,
+postal locality, ZIP, ZCTA, CDP, county, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass reuses an existing reviewed Overture layer with open license status
+recorded per row. No new restricted source is introduced.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sidecar does not infer traffic volume, car ownership, drive time, service
+adequacy, access, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The status table is map-ready because it separates observed and checked-absent
+target boxes with no source gates.
+
+### Market Analyst
+
+Status: pass.
+
+Gas/convenience is a strong sparse-place sidecar in the Washington queue:
+observed in 15 of 20 targets, including several remote, ferry, island, and
+agricultural candidates.
+
+### Future Agent
+
+Status: pass.
+
+Add dollar-store and remaining everyday-service checks before producing the
+first minimum-stack classification.
+
+## Pulse 185 Minimum Postal Parish Washington Dollar Store Partial Pass
+
+### Market Geographer
+
+Status: pass.
+
+The dollar-store sidecar is target-box evidence only and does not redefine
+postal locality, city, ZIP, ZCTA, CDP, county, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass uses OSM/Overpass with ODbL rights status in the reviewed rows. The
+query is brand-targeted and preserves Buckley, Mattawa, and Mesa as source
+gates.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sidecar does not infer spending, access, service adequacy, drive time,
+trade area, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The status table is map-ready because it separates observed, checked-absent,
+and source-gated dollar-store outcomes.
+
+### Market Analyst
+
+Status: pass.
+
+Dollar-store signal appears in five sparse targets, including several places
+that entered the queue through one chain layer. This is important before
+classifying postal-only or everyday-service minimum stacks.
+
+### Future Agent
+
+Status: pass.
+
+Retry Buckley, Mattawa, and Mesa or use another approved open source before the
+first minimum-stack classification.
+
+## Pulse 186 Minimum Postal Parish Washington Dollar Completion and Classifier
+
+### Market Geographer
+
+Status: pass.
+
+The classifier is scoped to bounded target boxes and does not redefine postal
+locality, city, ZIP, ZCTA, CDP, county, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The dollar-store completion uses OSM/Overpass with ODbL rights preserved in the
+review table. The classifier uses already reviewed pilot sidecars and keeps
+post-office checked absence separate from everyday-service observations.
+
+### Catchment Modeler
+
+Status: pass.
+
+The classifier does not infer service adequacy, access, drive time, trade area,
+customer behavior, income, or spending.
+
+### Atlas Designer
+
+Status: pass.
+
+The output table is map-ready because it has one row per target, explicit
+status fields, and a single minimum-stack class.
+
+### Market Analyst
+
+Status: pass.
+
+The first pilot split is useful: five everyday-service minimums, eight gas
+minimums, two dollar-store minimums, three postal-only candidates, and two
+post-office-absent/source-gated rows.
+
+### Future Agent
+
+Status: pass.
+
+Review whether laundromat, hardware, or broader small-place QSR evidence is
+needed before national sampling.
+
+## Pulse 187 Minimum Postal Parish Washington Food Service Sidecar
+
+### Market Geographer
+
+Status: pass.
+
+The food-service sidecar is bounded target-box evidence and does not redefine
+city, postal locality, ZIP, ZCTA, CDP, county, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass uses OSM/Overpass with ODbL rights preserved in the reviewed rows. It
+uses narrow one-selector retries for Clinton and Colfax rather than treating
+timeout as absence.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sidecar does not infer delivery range, drive time, service adequacy,
+restaurant quality, trade area, spending, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The updated classifier is clearer because it includes `food_service_status`
+and no longer presents local-food-service places as postal-only candidates.
+
+### Market Analyst
+
+Status: pass.
+
+The broad sidecar materially changes the pilot read: food-service signal is
+observed in most target boxes, showing that four-brand QSR absence is not a
+good proxy for everyday food-service absence in small places.
+
+### Future Agent
+
+Status: pass.
+
+Laundromat or hardware can follow if the pilot needs more everyday-service
+texture before national sampling.
+
+## Pulse 188 Minimum Postal Parish Food Service Gate Resolution
+
+### Market Geographer
+
+Status: pass.
+
+The retry remains bounded to the same Washington target boxes and does not
+redefine city, postal locality, ZIP, ZCTA, CDP, county, or catchment
+boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The retry uses OSM/Overpass with ODbL rights preserved and converts source
+gates only after completed narrower requests return evidence.
+
+### Catchment Modeler
+
+Status: pass.
+
+The retry does not infer delivery range, drive time, service adequacy, trade
+area, spending, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The classifier is cleaner because no food-service source gates remain. Only
+post-office checked absence keeps Darrington and Mesa outside postal stack
+classes.
+
+### Market Analyst
+
+Status: pass.
+
+Colfax shifts into `postal_everyday_service_minimum`; Clinton remains there
+with confirmed food-service rows in addition to grocery and gas/convenience.
+
+### Future Agent
+
+Status: pass.
+
+Decide whether laundromat or hardware sidecars are worth adding before moving
+from the Washington pilot to national sampling.
+
+## Pulse 189 Minimum Postal Parish Washington Hardware Sidecar
+
+### Market Geographer
+
+Status: pass.
+
+The hardware sidecar is bounded target-box evidence and does not redefine
+postal locality, city, ZIP, ZCTA, CDP, county, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass uses OSM/Overpass with ODbL rights preserved in the reviewed rows. It
+keeps Colfax source-gated after repeated Overpass errors rather than treating
+timeout as absence.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sidecar does not infer contractor demand, construction activity, repair
+demand, drive time, trade area, service adequacy, spending, or customer
+behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The classifier now includes `hardware_status`, and the hardware sidecar has a
+separate status table with observed, checked-absent, and source-gated outcomes.
+
+### Market Analyst
+
+Status: pass.
+
+Hardware adds trade-service texture in five targets but does not change the
+top-level minimum-stack split because those targets already had other
+everyday-service signals.
+
+### Future Agent
+
+Status: pass.
+
+Move to laundromat if the pilot needs another everyday-service sidecar before
+national sampling.
+
+## Pulse 190 Minimum Postal Parish Hardware Gate Resolution
+
+### Market Geographer
+
+Status: pass.
+
+The Colfax retry stays inside the existing bounded target box and does not
+redefine postal locality, city, ZIP, ZCTA, CDP, county, or catchment
+boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The retry uses OSM/Overpass with ODbL rights preserved. Colfax is converted to
+checked absent only after completed node and way selectors return zero rows.
+
+### Catchment Modeler
+
+Status: pass.
+
+The retry does not infer contractor demand, repair demand, construction
+activity, drive time, trade area, service adequacy, spending, or customer
+behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The hardware status table now has no source gates, and the classifier remains
+stable with `hardware_status` included.
+
+### Market Analyst
+
+Status: pass.
+
+Hardware adds trade-service texture but does not change the Washington minimum
+stack split.
+
+### Future Agent
+
+Status: pass.
+
+Decide whether laundromat evidence is useful enough to add before national
+sampling.
+
+## Pulse 191 Minimum Postal Parish Washington Laundromat Sidecar
+
+### Market Geographer
+
+Status: pass.
+
+The laundromat sidecar is bounded target-box evidence and does not redefine
+postal locality, city, ZIP, ZCTA, CDP, county, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass uses OSM/Overpass with ODbL rights preserved. Completed target fetches
+returned no named `shop=laundry` rows, so all 20 targets are checked absent.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sidecar does not infer housing tenure, income, appliance ownership, drive
+time, trade area, service adequacy, spending, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The classifier now includes `laundromat_status`, and the laundromat status
+table has no source gates.
+
+### Market Analyst
+
+Status: pass.
+
+Laundromat does not change the Washington minimum stack split. The pilot remains
+driven by postal evidence plus food-service, gas/convenience, dollar-store, and
+hardware sidecars.
+
+### Future Agent
+
+Status: pass.
+
+Prepare the Washington pilot synthesis and decide whether the next move is
+national sampling or a second state pilot.
+
+## Pulse 192 Minimum Postal Parish Washington Pilot Synthesis
+
+### Market Geographer
+
+Status: pass.
+
+The synthesis stays bounded to the 20 Washington target boxes and does not
+redefine city, postal locality, ZIP, ZCTA, CDP, county, or catchment
+boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The synthesis uses reviewed sidecar tables with checked absence and source
+gates already resolved. It does not introduce restricted or proprietary data.
+
+### Catchment Modeler
+
+Status: pass.
+
+The synthesis does not infer drive time, service adequacy, trade area, customer
+behavior, income, spending, or access.
+
+### Atlas Designer
+
+Status: pass.
+
+The synthesis table and classifier are map-ready because each target has a
+single class and explicit sidecar status fields.
+
+### Market Analyst
+
+Status: pass.
+
+The core finding is useful: four-brand QSR absence was misleading, and broad
+food-service evidence removes the postal-only bucket in this Washington pilot.
+The sparsest survivors are Clallam Bay, La Conner, and Lopez Island.
+
+### Future Agent
+
+Status: pass.
+
+Choose between national sampling and a second state pilot. Do not turn this
+Washington result into a national smallest-parish claim.
+
+## Pulse 193 Minimum Postal Parish Scale-Out Decision Gate
+
+### Market Geographer
+
+Status: pass.
+
+The scale-out gate keeps Washington bounded and requires another geography
+before national claims.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The gate does not introduce new data. It requires any second pilot or national
+sample to reuse open, reviewed, source-attributed evidence.
+
+### Catchment Modeler
+
+Status: pass.
+
+The gate does not infer catchments, service adequacy, trade area, drive time,
+customer behavior, income, or spending.
+
+### Atlas Designer
+
+Status: pass.
+
+The decision table is reusable and separates recommended, gated, and
+not-recommended options.
+
+### Market Analyst
+
+Status: pass.
+
+The recommendation follows the evidence: Washington's postal-only bucket
+collapsed after broad food-service checks, so the next useful test is whether
+that happens in another state.
+
+### Future Agent
+
+Status: pass.
+
+Select a second state pilot or define a national open-source extraction
+contract before any national sampling claim.
+
+## Pulse 194 Minimum Postal Parish Georgia Second Pilot Selection
+
+### Market Geographer
+
+Status: pass.
+
+Georgia is regionally distinct from Washington and has enough reviewed statewide
+chain layers for a comparable second pilot. The target boxes remain probes, not
+city, postal locality, ZIP, ZCTA, CDP, county, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The selection uses existing reviewed Overture-derived fixtures with open license
+status. It does not introduce restricted or proprietary data.
+
+### Catchment Modeler
+
+Status: pass.
+
+The target queue does not infer service adequacy, drive time, trade area,
+customer behavior, income, or spending.
+
+### Atlas Designer
+
+Status: pass.
+
+The Georgia queue and target-box table reuse the Washington pilot structure, so
+post-office verification can run with the same fetcher contract.
+
+### Market Analyst
+
+Status: pass.
+
+The scan finds enough sparse candidates for a second pilot: 46 one-layer city
+labels and a diversified 20-target queue.
+
+### Future Agent
+
+Status: pass.
+
+Run Georgia post-office verification before assigning any Georgia minimum-stack
+classification.
+
+## Pulse 195 Minimum Postal Parish Georgia Post-Office Gate
+
+### Market Geographer
+
+Status: pass.
+
+The Georgia post-office gate remains bounded to target boxes and does not
+redefine city, postal locality, ZIP, ZCTA, CDP, county, trade-area, or
+catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The gate uses OSM/Overpass with ODbL rights preserved in the reviewed rows. It
+keeps checked absence bounded to the target boxes rather than claiming citywide
+post-office absence.
+
+### Catchment Modeler
+
+Status: pass.
+
+The gate does not infer service adequacy, drive time, trade area, customer
+behavior, income, or spending.
+
+### Atlas Designer
+
+Status: pass.
+
+The status table is map-ready because each target has observed or
+checked-absent post-office status and no source gates.
+
+### Market Analyst
+
+Status: pass.
+
+The gate sharply narrows the Georgia comparison: only Ball Ground and Cohutta
+are eligible for minimum postal-stack classification under current bounded
+post-office evidence.
+
+### Future Agent
+
+Status: pass.
+
+Run everyday-service sidecars for Ball Ground and Cohutta before comparing
+Georgia to the Washington pilot.
+
+## Pulse 196 Minimum Postal Parish Georgia Everyday-Service Gate
+
+### Market Geographer
+
+Status: pass.
+
+The Georgia everyday-service gate remains bounded to the two post-office
+observed target boxes and does not redefine city, postal locality, ZIP, ZCTA,
+CDP, county, trade-area, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The gate uses OSM/Overpass sidecar evidence and preserves source-gated status
+where endpoint behavior was not reliable enough to support checked absence.
+
+### Catchment Modeler
+
+Status: pass.
+
+The gate does not infer service adequacy, drive time, trade area, customer
+behavior, income, spending, or replacement demand.
+
+### Atlas Designer
+
+Status: pass.
+
+The classifier is map-ready because both Georgia postal-observed targets have a
+bounded class, and the class explicitly distinguishes unresolved food-service
+evidence from postal-only absence.
+
+### Market Analyst
+
+Status: pass.
+
+The Georgia second pilot does not currently confirm postal-only candidates.
+Ball Ground and Cohutta remain analytically useful as low-stack targets, but
+they are source-gated until food-service can be retried cleanly.
+
+### Future Agent
+
+Status: pass.
+
+Retry Georgia food-service for Ball Ground and Cohutta before making a Georgia
+postal-only or national sampling claim.
+
+## Pulse 197 Minimum Postal Parish Georgia Food-Service Resolution
+
+### Market Geographer
+
+Status: pass.
+
+The resolved Georgia classifier remains bounded to the two post-office observed
+target boxes and does not redefine any city, postal locality, ZIP, ZCTA, CDP,
+county, trade-area, or catchment boundary.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The resolving evidence uses the OSM API 0.6 map endpoint with ODbL rights
+preserved. The record explicitly notes that this was a retry after Overpass
+endpoint timeouts, not a proprietary POI substitution.
+
+### Catchment Modeler
+
+Status: pass.
+
+The resolution does not infer service adequacy, restaurant inventory
+completeness, drive time, trade area, customer behavior, income, or spending.
+
+### Atlas Designer
+
+Status: pass.
+
+The Georgia classifier is now cleaner for mapping because both postal-observed
+targets have an observed food-service sidecar and no remaining source gate.
+
+### Market Analyst
+
+Status: pass.
+
+Georgia now supports the same broad read as Washington: the sparsest bounded
+postal stacks found so far are not postal-only; they retain food-service as the
+minimal everyday sidecar.
+
+### Future Agent
+
+Status: pass.
+
+Compare Washington and Georgia pilot outcomes before moving to national
+sampling.
+
+## Pulse 198 Minimum Postal Parish Two-State Synthesis
+
+### Market Geographer
+
+Status: pass.
+
+The synthesis compares bounded target boxes across Washington and Georgia
+without converting them into city, ZIP, ZCTA, CDP, county, postal-locality,
+trade-area, or catchment claims.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The synthesis relies on reviewed pilot tables with explicit OSM/Overpass and
+OSM API source handling. It preserves checked-absent and source-gated
+distinctions and avoids proprietary POI substitution.
+
+### Catchment Modeler
+
+Status: pass.
+
+The synthesis does not infer service adequacy, drive time, replacement demand,
+customer behavior, income, spending, or market catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The two-state summary is atlas-ready because it reduces each pilot to the same
+classification fields and keeps postal-only as a zero-count class rather than a
+visual implication.
+
+### Market Analyst
+
+Status: pass.
+
+The two-state result refines the hypothesis: the current minimum confirmed
+postal stack is post office plus food-service. No postal-only candidate has
+survived among the postal-observed boxes.
+
+### Future Agent
+
+Status: pass.
+
+Choose either a third-state pilot or a national sampled post-office frame with
+explicit food-service fallback rules before making national smallest-parish
+claims.
+
+## Pulse 199 Minimum Postal Parish Illinois Third Pilot Selection
+
+### Market Geographer
+
+Status: pass.
+
+Illinois adds a single-state Great Lakes/Midwest pilot after Washington and
+Georgia. The selected target boxes remain probes and do not define city, postal
+locality, ZIP, ZCTA, CDP, county, trade-area, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The selection uses existing reviewed Overture-derived packet-ready chain rows
+with open license status. It does not introduce restricted, proprietary, or
+personal data.
+
+### Catchment Modeler
+
+Status: pass.
+
+The queue does not infer service adequacy, drive time, customer behavior,
+income, spending, replacement demand, or trade areas.
+
+### Atlas Designer
+
+Status: pass.
+
+The Illinois queue reuses the same candidate and target-box structure as
+Washington and Georgia, so the next post-office gate can be compared cleanly.
+
+### Market Analyst
+
+Status: pass.
+
+The scan finds enough sparse labels for a third pilot: 113 one-layer city
+labels and a balanced 20-target queue across auto parts, grocery, QSR, and
+pharmacy.
+
+### Future Agent
+
+Status: pass.
+
+Run Illinois post-office verification before assigning any Illinois
+minimum-stack class.
+
+## Pulse 200 Minimum Postal Parish Illinois Post-Office Gate
+
+### Market Geographer
+
+Status: pass.
+
+The Illinois post-office gate remains bounded to target boxes and does not
+redefine city, postal locality, ZIP, ZCTA, CDP, county, trade-area, or
+catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The gate correctly rejects the initial all-zero alternate Overpass result after
+the OSM map API fallback found post offices. Dense fallback failures are marked
+source-gated rather than checked absent.
+
+### Catchment Modeler
+
+Status: pass.
+
+The gate does not infer service adequacy, drive time, customer behavior,
+income, spending, replacement demand, or trade areas.
+
+### Atlas Designer
+
+Status: pass.
+
+The status table is map-ready because each target has an explicit observed,
+checked-absent, or source-gated post-office status.
+
+### Market Analyst
+
+Status: pass.
+
+Illinois is still viable as a third pilot, but only eight targets are currently
+eligible for everyday-service sidecars. The ten source-gated boxes should not
+enter the classifier until post-office evidence is resolved.
+
+### Future Agent
+
+Status: pass.
+
+Run everyday-service sidecars only for the eight post-office-observed Illinois
+targets before assigning Illinois minimum-stack classes.
+
+## Pulse 201 Minimum Postal Parish Illinois Everyday-Service Gate
+
+### Market Geographer
+
+Status: pass.
+
+The Illinois classifier remains bounded to target boxes and only classifies the
+eight targets with observed post-office evidence. It does not redefine city,
+postal locality, ZIP, ZCTA, CDP, county, trade-area, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The sidecars use OSM API evidence with ODbL rights preserved. Post-office
+checked-absent and source-gated targets remain out of the eligible sidecar set.
+
+### Catchment Modeler
+
+Status: pass.
+
+The gate does not infer service adequacy, drive time, customer behavior,
+income, spending, replacement demand, or trade areas.
+
+### Atlas Designer
+
+Status: pass.
+
+The classifier is map-ready because the eight eligible targets receive explicit
+minimum-stack classes and the remaining twelve retain signal-absent or
+source-gated status.
+
+### Market Analyst
+
+Status: pass.
+
+Illinois reinforces the emerging pattern: every post-office-observed target has
+food-service, and no postal-only target survives among the classified set.
+
+### Future Agent
+
+Status: pass.
+
+Synthesize Washington, Georgia, and Illinois before making any national
+minimum-parish claim.
+
+## Pulse 202 Minimum Postal Parish Three-State Synthesis
+
+### Market Geographer
+
+Status: pass.
+
+The synthesis compares bounded target boxes across Washington, Georgia, and
+Illinois without converting them into city, ZIP, ZCTA, CDP, county,
+postal-locality, trade-area, or catchment claims.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The synthesis preserves the Illinois post-office source gates and does not
+convert contradictory OSM/API behavior into checked absence.
+
+### Catchment Modeler
+
+Status: pass.
+
+The synthesis does not infer service adequacy, drive time, customer behavior,
+income, spending, replacement demand, or market catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The three-state table is atlas-ready because it uses the same classification
+columns across the three pilots and keeps unresolved boxes visible.
+
+### Market Analyst
+
+Status: pass.
+
+The three-state result strengthens the refined hypothesis: the observed minimum
+postal stack is post office plus food-service, while postal-only remains
+unobserved in the bounded pilots.
+
+### Future Agent
+
+Status: pass.
+
+Design a reproducible national sampled post-office frame with explicit
+food-service fallback rules before making any national minimum claim.
+
+## Pulse 203 Minimum Postal Parish National Sample Frame Design
+
+### Market Geographer
+
+Status: pass.
+
+The design shifts the next scale-out step to post-office-centered target boxes
+and keeps target boxes separate from city, ZIP, ZCTA, CDP, county,
+postal-locality, trade-area, and catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The contract requires open, license-compatible seed points and blocks restricted
+USPS address files or proprietary POI substitution without a new source-policy
+review.
+
+### Catchment Modeler
+
+Status: pass.
+
+The design does not infer service adequacy, drive time, customer behavior,
+income, spending, replacement demand, or market catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The sample-frame and fallback-rule tables are reusable because they specify the
+unit of analysis, sidecars, status states, and source-gate behavior.
+
+### Market Analyst
+
+Status: pass.
+
+The design responds to the three-state finding without overclaiming: food-service
+is the observed minimum sidecar so far, and a national sample should be designed
+to test that pattern.
+
+### Future Agent
+
+Status: pass.
+
+Implement or source an open national post-office seed frame before any national
+minimum-parish claim.
+
+## Pulse 204 Minimum Postal Parish Post-Office Sample Builder
+
+### Market Geographer
+
+Status: pass.
+
+The builder creates bounded post-office-centered target boxes and keeps them
+separate from city, ZIP, ZCTA, CDP, county, postal-locality, trade-area, and
+catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The builder requires reviewed packet-ready open post-office seed rows and
+preserves seed source provenance in the output.
+
+### Catchment Modeler
+
+Status: pass.
+
+The builder only creates target geometry. It does not infer service adequacy,
+drive time, customer behavior, income, spending, replacement demand, or market
+catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The output schema is compatible with the existing civic fetcher and adds
+seed-provenance, stratum, and settlement-size proxy fields needed for scale-out.
+
+### Market Analyst
+
+Status: pass.
+
+The smoke output proves the sampling contract mechanically while avoiding a
+national frequency claim.
+
+### Future Agent
+
+Status: pass.
+
+Source an open national post-office seed file and join a settlement-size proxy
+before running a national sampled classification.
+
+## Pulse 205 Minimum Postal Parish Seed Source And Settlement Proxy
+
+### Market Geographer
+
+Status: pass.
+
+The contract keeps seed sources and settlement proxies separate from city, ZIP,
+ZCTA, CDP, county, postal-locality, trade-area, and catchment claims.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The contract recommends reviewed OSM extracts and blocks restricted USPS or
+proprietary POI files under the current open evidence boundary.
+
+### Catchment Modeler
+
+Status: pass.
+
+The settlement proxy is a sampling stratum only. It does not infer service
+adequacy, drive time, income, spending, customer behavior, or catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The source-option and settlement-proxy tables make the next national frame
+auditable before any sampled sidecar pass runs.
+
+### Market Analyst
+
+Status: pass.
+
+The contract prevents the smoke builder output from being overread as a
+national sample and specifies the missing population/settlement join.
+
+### Future Agent
+
+Status: pass.
+
+Build or import a reviewed OSM post-office seed extract and a versioned
+settlement-size join table before national classification.
+
+## Pulse 206 Minimum Postal Parish Settlement Proxy Enrichment
+
+### Market Geographer
+
+Status: pass.
+
+The enrichment keeps settlement-size proxy fields as sampling strata attached
+to post-office target boxes, not as city, ZIP, ZCTA, CDP, county, trade-area,
+or catchment definitions.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The smoke join is explicitly marked as a manual fixture for contract validation
+only. A real national or regional join still needs a versioned open source.
+
+### Catchment Modeler
+
+Status: pass.
+
+The script joins coarse settlement buckets and source provenance only. It does
+not infer service adequacy, drive time, customer behavior, income, spending, or
+catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The enriched output preserves the target-box schema and adds auditable proxy
+source, source-date, join-key, and note fields.
+
+### Market Analyst
+
+Status: pass.
+
+The three-row smoke output validates the join contract without making a
+national settlement distribution, post-office inventory, or frequency claim.
+
+### Future Agent
+
+Status: pass.
+
+Replace the smoke fixture with a versioned open settlement-size join table
+before national sidecar classification.
+
+## Pulse 207 Minimum Postal Parish Settlement Proxy Join Validator
+
+### Market Geographer
+
+Status: pass.
+
+The validator treats settlement size as a coarse sample stratum and keeps it
+separate from city, ZIP, ZCTA, CDP, county, trade-area, and catchment claims.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The validator requires declared proxy source and source date fields before a
+join table can pass the contract.
+
+### Catchment Modeler
+
+Status: pass.
+
+The validator checks only join-table shape and declared strata. It does not
+infer service adequacy, drive time, income, spending, customer behavior, or
+catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The join validator provides a reusable pre-enrichment gate for national or
+regional post-office sample work.
+
+### Market Analyst
+
+Status: pass.
+
+The smoke fixture validates cleanly, but the pulse explicitly blocks reading
+that fixture as a national settlement distribution or frequency estimate.
+
+### Future Agent
+
+Status: pass.
+
+Run the validator against the first real open settlement-size join table before
+enriching a national or regional post-office sample.
+
+## Pulse 208 Minimum Postal Parish Post-Office Seed Validator
+
+### Market Geographer
+
+Status: pass.
+
+The validator gates post-office points as sample seeds only. It does not
+convert seed rows into city, ZIP, ZCTA, CDP, county, trade-area, or catchment
+boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The validator requires open license status plus source, source-date, and rights
+provenance on packet-ready post-office rows.
+
+### Catchment Modeler
+
+Status: pass.
+
+The validator checks coordinates and reviewed facility status only. It does not
+infer service areas, drive time, customer behavior, income, spending, or
+catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The seed validator gives the sample builder an explicit preflight gate and
+reports packet-ready row counts by state and source.
+
+### Market Analyst
+
+Status: pass.
+
+The Washington smoke seed validates as four packet-ready open post-office rows,
+but the pulse does not read that as a national inventory or frequency estimate.
+
+### Future Agent
+
+Status: pass.
+
+Run this validator before building target boxes from any national or regional
+post-office seed extract.
+
+## Pulse 209 Minimum Postal Parish Sample Preflight
+
+### Market Geographer
+
+Status: pass.
+
+The preflight keeps the target boxes as post-office-centered sample probes and
+preserves settlement-size proxy fields as strata, not place or catchment
+definitions.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The preflight invokes both source gates: reviewed open post-office seed
+validation and settlement-proxy join validation before enrichment.
+
+### Catchment Modeler
+
+Status: pass.
+
+The preflight creates bounded probe boxes and proxy strata only. It does not
+infer service areas, drive time, spending, customer behavior, or catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The script emits explicit target, enriched target, and report artifacts, making
+future national or regional runs auditable.
+
+### Market Analyst
+
+Status: pass.
+
+The smoke report confirms three sampled target boxes and three enriched rows,
+but the pulse blocks national inventory and frequency readings.
+
+### Future Agent
+
+Status: pass.
+
+Use the preflight as the first command after obtaining a real reviewed open
+post-office seed extract and versioned settlement-size join table.
+
+## Pulse 210 Minimum Postal Parish Preflight Manifest Contract
+
+### Market Geographer
+
+Status: pass.
+
+The manifest keeps seed rows, sample probes, settlement strata, and later
+sidecar classifications as separate artifacts and does not collapse them into
+place or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The contract requires reviewed open post-office seeds, settlement join
+validation, and explicit source-gate reporting before claims can advance.
+
+### Catchment Modeler
+
+Status: pass.
+
+The manifest does not allow service adequacy, drive time, income, spending,
+customer behavior, or catchment claims from the preflight artifacts.
+
+### Atlas Designer
+
+Status: pass.
+
+The manifest gives future runs a compact checklist of inputs, commands, outputs,
+and blocked claims.
+
+### Market Analyst
+
+Status: pass.
+
+The manifest explicitly blocks national frequency and smallest-place claims
+until a real reviewed sample and acceptable source-gated share exist.
+
+### Future Agent
+
+Status: pass.
+
+Fill the manifest with real artifact paths only after obtaining a reviewed open
+post-office seed extract and a versioned open settlement-size join table.
+
+## Pulse 211 Minimum Postal Parish Research Closeout
+
+### Market Geographer
+
+Status: pass.
+
+The closeout states the bounded three-state finding without turning pilot
+target boxes into national place, ZIP, ZCTA, county, trade-area, or catchment
+claims.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The closeout preserves the real-input gate: a reviewed open post-office seed
+extract and versioned settlement-size join are still required before the next
+sampled pass.
+
+### Catchment Modeler
+
+Status: pass.
+
+The closeout blocks service adequacy, drive time, income, spending, customer
+behavior, and catchment claims.
+
+### Atlas Designer
+
+Status: pass.
+
+The closeout gives the module a clear handoff from pilot evidence to
+breadth-first sample execution.
+
+### Market Analyst
+
+Status: pass.
+
+The closeout captures the working finding: across the bounded pilots, the
+observed minimum postal stack is post office plus named food service, not post
+office alone.
+
+### Future Agent
+
+Status: pass.
+
+Use the closeout table as the current-phase summary before adding any real
+regional sample evidence.
+
+## Pulse 212 Minimum Postal Parish Breadth-First Roadmap
+
+### Market Geographer
+
+Status: pass.
+
+The roadmap correctly prioritizes settlement-system breadth before depth,
+including New England, Appalachia, Great Plains, Mountain West, Southwest
+Borderlands, California Interior, and Island/Remote strata.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The roadmap keeps real-data launch gated by reviewed open post-office seeds,
+versioned settlement joins, passing preflight, and manifest paths.
+
+### Catchment Modeler
+
+Status: pass.
+
+The roadmap does not infer service areas, catchments, drive times, spending,
+income, or customer behavior from strata or preflight artifacts.
+
+### Atlas Designer
+
+Status: pass.
+
+The roadmap tables provide a sequenced execution plan and regional strata list
+for the next phase.
+
+### Market Analyst
+
+Status: pass.
+
+The roadmap tests the current food-service minimum hypothesis by breadth before
+spending depth effort on outliers.
+
+### Future Agent
+
+Status: pass.
+
+Start with one next-wave stratum, obtain real open seed and settlement inputs,
+then run the preflight before sidecar classification.
+
+## Pulse 213 Minimum Postal Parish New England Rhode Island Seed
+
+### Market Geographer
+
+Status: pass.
+
+Rhode Island starts the New England breadth stratum and produces
+post-office-centered sample probes without treating them as city, ZIP, ZCTA,
+county, trade-area, or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The source is a Geofabrik OpenStreetMap GeoPackage extract with ODbL licensing
+and an archive timestamp recorded in the source metadata table.
+
+### Catchment Modeler
+
+Status: pass.
+
+The seed and target outputs contain post-office points and bounded probe boxes
+only. They do not infer service adequacy, drive time, income, spending,
+customer behavior, or catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The reusable extractor converts structured GeoPackage POI layers into the
+existing reviewed civic seed schema and the builder creates a 12-row sample
+target file.
+
+### Market Analyst
+
+Status: pass.
+
+The Rhode Island seed advances breadth, but the target sample remains
+`settlement_size_proxy=not_joined`, so no sidecar or frequency claim is allowed
+yet.
+
+### Future Agent
+
+Status: pass.
+
+Build and validate a versioned open settlement-size join for the Rhode Island
+sample before running the full preflight.
+
+## Pulse 214 Minimum Postal Parish Rhode Island Settlement Preflight
+
+### Market Geographer
+
+Status: pass.
+
+The join uses Census incorporated places where available and county
+subdivisions as New England town/city proxies otherwise, while preserving the
+target boxes as sample probes rather than place or catchment definitions.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The settlement source is the U.S. Census Bureau 2020 PL 94-171 geography file
+plus the Census coordinate geocoder. The manifest records that sidecar and
+frequency claims remain blocked.
+
+### Catchment Modeler
+
+Status: pass.
+
+The preflight attaches settlement-size strata only. It does not infer service
+adequacy, drive time, income, spending, customer behavior, or catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The Rhode Island preflight writes target, enriched target, report, and filled
+manifest artifacts with explicit join-key and bucket distributions.
+
+### Market Analyst
+
+Status: pass.
+
+The preflight enables the first New England sidecar pass but does not classify
+minimum stacks or support regional frequency.
+
+### Future Agent
+
+Status: pass.
+
+Run the food-service sidecar first against the enriched Rhode Island target
+sample and report source gates before interpretation.
+
+## Pulse 215 Minimum Postal Parish Rhode Island Sidecar Pass
+
+### Market Geographer
+
+Status: pass.
+
+The pass classifies sampled Rhode Island target boxes only and keeps Clayville
+as a depth-review candidate rather than a confirmed place or catchment claim.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The live Overpass failure is recorded, and the sidecars use the local
+Geofabrik OSM extract with ODbL provenance already recorded.
+
+### Catchment Modeler
+
+Status: pass.
+
+The sidecar pass counts named POI evidence in bounded target boxes. It does not
+infer service adequacy, drive time, income, spending, customer behavior, or
+catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The pass writes review, status, classification, synthesis, and depth-candidate
+artifacts for the first New England breadth sample.
+
+### Market Analyst
+
+Status: pass.
+
+The result mostly supports the food-service companion pattern while surfacing
+Clayville as the first breadth-phase exception to review in depth.
+
+### Future Agent
+
+Status: pass.
+
+Depth-review Clayville with alternate open sources before confirming or
+rejecting postal-only status.
+
+## Pulse 216 Minimum Postal Parish Clayville Depth Review
+
+### Market Geographer
+
+Status: pass.
+
+The review distinguishes the sampled Clayville target box from the broader
+Scituate/North Scituate service area and does not convert the box into a
+catchment or place boundary.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The evidence table records official USPS, local business association, official
+business-site, Census geocoder, and OSM API source paths with URLs and dates.
+
+### Catchment Modeler
+
+Status: pass.
+
+Nearby outside-box services are recorded without treating them as inside-box
+signals or as a catchment adequacy claim.
+
+### Atlas Designer
+
+Status: pass.
+
+The review adds separate evidence and decision tables, preserving the candidate
+status rather than mutating the Rhode Island classification into a stronger
+claim.
+
+### Market Analyst
+
+Status: pass.
+
+Clayville remains a useful outlier candidate, but the nearby-service evidence
+argues for another breadth stratum before turning it into an exemplar.
+
+### Future Agent
+
+Status: pass.
+
+Run another next-wave stratum before promoting Clayville or changing the
+target-box rule.
+
+## Pulse 217 Minimum Postal Parish Great Plains South Dakota Preflight
+
+### Market Geographer
+
+Status: pass.
+
+The South Dakota pass launches the Great Plains breadth stratum with bounded
+post-office target boxes and settlement-size proxies, not place or catchment
+boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The seed source records the Geofabrik OSM GeoPackage URL, timestamp, and ODbL
+boundary, while unnamed post-office features are excluded before sampling.
+
+### Catchment Modeler
+
+Status: pass.
+
+The Census join provides settlement-size buckets only. It does not infer
+service adequacy, drive time, income, spending, customer behavior, or
+catchments.
+
+### Atlas Designer
+
+Status: pass.
+
+The preflight writes source, seed, target, settlement-join, enriched-target,
+report, and manifest artifacts for the Great Plains sample.
+
+### Market Analyst
+
+Status: pass.
+
+The South Dakota sample is much smaller-settlement-weighted than Rhode Island,
+with 11 of 12 targets under 2,500 population.
+
+### Future Agent
+
+Status: pass.
+
+Run local sidecar classification before interpreting Great Plains stack
+sparsity.
+
+## Pulse 218 Minimum Postal Parish Great Plains South Dakota Sidecar Pass
+
+### Market Geographer
+
+Status: pass.
+
+The sidecar pass classifies the 12 sampled target boxes only and keeps the
+seven postal-only outcomes as depth candidates rather than confirmed places.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass uses local Geofabrik OSM sidecars and records absence as checked under
+that source, not complete local-commerce absence.
+
+### Catchment Modeler
+
+Status: pass.
+
+Observed and absent sidecar evidence remains inside bounded target boxes. The
+pass does not infer trade areas, service adequacy, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The pass writes review, status, classification, synthesis, and depth-candidate
+artifacts for the first Great Plains breadth sample.
+
+### Market Analyst
+
+Status: pass.
+
+South Dakota is the first breadth result to seriously challenge the current
+food-service companion pattern, but the evidence is not strong enough for a
+frequency claim.
+
+### Future Agent
+
+Status: pass.
+
+Depth-review Alcester, Alexandria, Allen, Artesian, Astoria, Avon, and Badger
+with alternate open sources before changing the working claim.
+
+## Pulse 219 Minimum Postal Parish South Dakota Depth Review
+
+### Market Geographer
+
+Status: pass.
+
+The review preserves the target-box distinction by separating inside-box
+contradictions from nearby Artesian-addressed service outside the sampled box.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The evidence table records source URLs, review date, geocoder source, and
+whether each service point is inside, outside, unknown, or community-level
+only.
+
+### Catchment Modeler
+
+Status: pass.
+
+The review does not convert service observations into catchments, access,
+drive-time, adequacy, income, spending, or customer-behavior claims.
+
+### Atlas Designer
+
+Status: pass.
+
+The new evidence and decision tables make map state clearer: rejected,
+geocode-gated, nearby-outside-box, and strict-survivor cases are separate.
+
+### Market Analyst
+
+Status: pass.
+
+The South Dakota queue is much less postal-only after depth review. Artesian
+is the only strict target-box survivor after the Allen follow-up, while Badger
+exposes a taxonomy gap.
+
+### Future Agent
+
+Status: pass.
+
+Use the Allen follow-up and trade-service gate before the next breadth stratum;
+do not mix automotive/petroleum trade-service evidence into food, grocery,
+pharmacy, or consumer gas/convenience claims.
+
+## Pulse 220 Minimum Postal Parish Allen Resolution And Trade-Service Gate
+
+### Market Geographer
+
+Status: pass.
+
+The Allen resolution uses an inside-target-box point and keeps Badger's
+trade-service evidence separate from broader place or catchment boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The Pass Creek Market point is supported by an open directory map link and the
+same address appears in the U.S. EPA Region 8 Tribal UST workbook.
+
+### Catchment Modeler
+
+Status: pass.
+
+The new trade-service class does not infer service adequacy, traffic, drive
+time, contractor demand, income, spending, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The map state is cleaner: Allen moves out of geocode-gated status, Badger
+becomes a separate trade-service case, and Artesian remains the only strict
+postal-only target-box survivor.
+
+### Market Analyst
+
+Status: pass.
+
+The South Dakota result now argues against overreading local OSM absence: six
+of seven candidates have alternate-source contradictions or taxonomy
+refinements.
+
+### Future Agent
+
+Status: pass.
+
+Run another breadth stratum before regional frequency claims, while keeping
+trade-service evidence separate from food, grocery, pharmacy, and consumer
+gas/convenience evidence.
+
+## Pulse 221 Minimum Postal Parish Appalachia West Virginia Preflight
+
+### Market Geographer
+
+Status: pass.
+
+The West Virginia pass launches the Appalachia breadth stratum with bounded
+post-office target boxes and settlement-size proxies, not place or catchment
+boundaries.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The seed source records the Geofabrik OSM GeoPackage URL, timestamp, and ODbL
+boundary, while unnamed post-office features are excluded before sampling.
+
+### Catchment Modeler
+
+Status: pass.
+
+The Census join provides settlement-size buckets only. Addison remains an
+unknown settlement proxy, not an inferred absence or catchment claim.
+
+### Atlas Designer
+
+Status: pass.
+
+The preflight writes source, seed, target, settlement-join, enriched-target,
+report, and manifest artifacts for the Appalachia sample.
+
+### Market Analyst
+
+Status: pass.
+
+The sample is a first seed-order Appalachian breadth pass. It is useful for
+sidecar stress testing but does not support regional frequency.
+
+### Future Agent
+
+Status: pass.
+
+Run local sidecar classification and report both sidecar sparsity and the one
+settlement-proxy source gate before interpretation.
+
+## Pulse 222 Minimum Postal Parish Appalachia West Virginia Sidecar Pass
+
+### Market Geographer
+
+Status: pass.
+
+The sidecar pass classifies the 12 sampled target boxes only and keeps the nine
+postal-only outcomes as depth candidates rather than confirmed places.
+
+### Source Policy Auditor
+
+Status: pass.
+
+The pass uses local Geofabrik OSM sidecars and records absence as checked under
+that source, not complete local-commerce absence.
+
+### Catchment Modeler
+
+Status: pass.
+
+Observed and absent sidecar evidence remains inside bounded target boxes. The
+pass does not infer trade areas, service adequacy, or customer behavior.
+
+### Atlas Designer
+
+Status: pass.
+
+The pass writes review, status, classification, synthesis, and depth-candidate
+artifacts for the first Appalachia breadth sample.
+
+### Market Analyst
+
+Status: pass.
+
+West Virginia is another sparse local-OSM result, but the South Dakota depth
+review shows this should trigger alternate-source depth review rather than a
+frequency claim.
+
+### Future Agent
+
+Status: pass.
+
+Depth-review Advent, Alkol, Alum Bridge, Alvy, Ameagle, Amherstdale, Amma,
+Annamoriah, and Anthony with alternate open sources before changing the working
+claim.

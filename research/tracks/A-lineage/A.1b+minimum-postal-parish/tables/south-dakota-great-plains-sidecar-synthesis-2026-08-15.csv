@@ -1,0 +1,17 @@
+metric,value,note
+sample_targets,12,South Dakota Great Plains breadth sample after validated preflight.
+post_office_seed_features,259,Geofabrik post-office features in the review extract.
+packet_ready_post_office_seed_rows,252,Named Geofabrik post-office rows available for sampling.
+excluded_post_office_seed_rows,7,Unnamed Geofabrik post-office rows excluded from packet-ready sampling.
+post_office_observed,12,All sampled targets are built from validated post-office seed rows.
+under_2500_targets,11,Most sampled targets are very small settlement proxies.
+food_service_observed,2,Named Geofabrik food-service rows found in target boxes.
+food_service_checked_absent,10,No named local Geofabrik food-service rows found in most small target boxes.
+gas_convenience_observed,3,Named Geofabrik gas/convenience rows found in target boxes.
+hardware_observed,3,Named Geofabrik hardware/doityourself rows found in target boxes.
+laundromat_observed,1,Named Geofabrik laundry row found in one target box.
+dollar_store_observed,0,No target-box Dollar Tree Dollar General or Family Dollar evidence in local Geofabrik pass.
+postal_everyday_service_minimum,4,Targets with post office plus one or more everyday sidecars.
+postal_food_service_minimum,1,Target where food service is the only observed everyday sidecar in this local pass.
+postal_only_candidate,7,Great Plains sparse targets needing depth review before any confirmed postal-only claim.
+regional_frequency_claim,blocked,No South Dakota or Great Plains frequency claim until depth review and broader sample coverage.

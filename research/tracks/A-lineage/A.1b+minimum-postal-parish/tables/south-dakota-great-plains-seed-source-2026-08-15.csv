@@ -1,0 +1,11 @@
+source_item,value,note
+regional_stratum,Great Plains,Second next-wave breadth stratum after New England/Rhode Island.
+state,SD,South Dakota selected as compact Great Plains Geofabrik extract.
+source_name,Geofabrik OpenStreetMap GeoPackage extract,Open OSM-derived state extract.
+source_url,https://download.geofabrik.de/north-america/us/south-dakota-latest-free.gpkg.zip,Downloaded to tmp for local extraction; source artifact is not committed.
+source_timestamp,2026-08-15T20:21:20Z,Timestamp reported by the Geofabrik README inside the downloaded archive.
+license_status,open,ODbL; attribution and share-alike required.
+extraction_script,scripts/extract_geofabrik_post_office_seed.py,Reusable extractor for Geofabrik GeoPackage post_office POI features.
+seed_output,research/tracks/A-lineage/A.1b+minimum-postal-parish/tables/south-dakota-great-plains-post-office-seed-2026-08-15.csv,Contains 252 packet-ready named post-office seed rows and 7 unnamed excluded rows.
+target_output,research/tracks/A-lineage/A.1b+minimum-postal-parish/tables/south-dakota-great-plains-post-office-sample-targets-2026-08-15.csv,Contains 12 bounded sample targets before settlement enrichment.
+claim_boundary,seed_and_target_scaffold_only,No sidecar or regional frequency claim until settlement join and preflight pass.

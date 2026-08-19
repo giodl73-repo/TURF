@@ -1,0 +1,11 @@
+evidence_condition,status_assignment,required_action,reason
+primary endpoint returns rows,use completed endpoint rows,Review rows with the standard facility-specific rules.,"Rows are positive evidence if they pass review rules."
+primary endpoint returns zero and fallback endpoint completes zero,checked_absent,Record endpoint names and completed zero-row status.,"Completed independent zeroes can support bounded absence."
+primary endpoint returns zero and fallback endpoint returns rows,observed,Use fallback rows and mark source note.,"Illinois post-office showed alternate Overpass zeroes can be false."
+primary endpoint times out and fallback endpoint returns rows,observed,Use fallback rows and mark source note.,"A timeout is not absence; completed positive fallback evidence resolves the gate."
+primary endpoint times out and fallback endpoint completes zero,checked_absent,Record timeout plus completed fallback zero.,"Absence is bounded to the completed fallback geometry only."
+primary endpoint returns zero and fallback endpoint hits API limit,source_gated,Do not classify as checked absent.,"Contradictory or incomplete source access cannot support absence."
+all endpoints time out or hit API limits,source_gated,Defer target or use an approved new source path.,"No absence claim can be made without a completed source pass."
+food_service broad query times out but narrow/local source returns rows,observed,Use reviewed positive rows and keep broad-query note.,"Positive food-service evidence is enough to block postal-only classification."
+food_service broad query times out and only one endpoint returns zero,source_gated,Retry with independent source path before classifying.,"Washington and Illinois showed single-path zeroes are not reliable enough."
+dense target box exceeds OSM map API limits,source_gated or subdivide in new version,Do not silently shrink the box inside the same output version.,"Changing geometry changes the claim boundary."

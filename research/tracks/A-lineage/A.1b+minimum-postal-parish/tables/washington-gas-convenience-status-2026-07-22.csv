@@ -1,0 +1,21 @@
+target_id,primary_city,gas_convenience_status,store_rows,brand_count,brands,review_note
+wa-min-postal-bingen,Bingen,observed,2,2,76; Chevron,Reviewed Overture gas/convenience layer has 2 packet-ready rows inside the target box.
+wa-min-postal-buckley,Buckley,observed,3,2,76; Exxon,Reviewed Overture gas/convenience layer has 3 packet-ready rows inside the target box.
+wa-min-postal-cashmere,Cashmere,observed,2,2,Chevron; Shell,Reviewed Overture gas/convenience layer has 2 packet-ready rows inside the target box.
+wa-min-postal-cathlamet,Cathlamet,checked_absent,0,0,,Reviewed Overture gas/convenience layer has no packet-ready rows inside the target box.
+wa-min-postal-clallam-bay,Clallam Bay,checked_absent,0,0,,Reviewed Overture gas/convenience layer has no packet-ready rows inside the target box.
+wa-min-postal-clinton,Clinton,observed,3,2,76; Exxon,Reviewed Overture gas/convenience layer has 3 packet-ready rows inside the target box.
+wa-min-postal-colfax,Colfax,observed,3,2,76; Chevron,Reviewed Overture gas/convenience layer has 3 packet-ready rows inside the target box.
+wa-min-postal-connell,Connell,observed,2,2,76; Chevron,Reviewed Overture gas/convenience layer has 2 packet-ready rows inside the target box.
+wa-min-postal-darrington,Darrington,observed,1,1,Shell,Reviewed Overture gas/convenience layer has 1 packet-ready rows inside the target box.
+wa-min-postal-dayton,Dayton,observed,2,2,76; Chevron,Reviewed Overture gas/convenience layer has 2 packet-ready rows inside the target box.
+wa-min-postal-eastsound,Eastsound,observed,1,1,Chevron,Reviewed Overture gas/convenience layer has 1 packet-ready rows inside the target box.
+wa-min-postal-eatonville,Eatonville,observed,2,2,76; Shell,Reviewed Overture gas/convenience layer has 2 packet-ready rows inside the target box.
+wa-min-postal-forks,Forks,observed,2,2,76; Shell,Reviewed Overture gas/convenience layer has 2 packet-ready rows inside the target box.
+wa-min-postal-friday-harbor,Friday Harbor,observed,4,2,76; Shell,Reviewed Overture gas/convenience layer has 4 packet-ready rows inside the target box.
+wa-min-postal-kettle-falls,Kettle Falls,observed,1,1,Chevron,Reviewed Overture gas/convenience layer has 1 packet-ready rows inside the target box.
+wa-min-postal-la-conner,La Conner,checked_absent,0,0,,Reviewed Overture gas/convenience layer has no packet-ready rows inside the target box.
+wa-min-postal-loon-lake,Loon Lake,checked_absent,0,0,,Reviewed Overture gas/convenience layer has no packet-ready rows inside the target box.
+wa-min-postal-lopez-island,Lopez Island,checked_absent,0,0,,Reviewed Overture gas/convenience layer has no packet-ready rows inside the target box.
+wa-min-postal-mattawa,Mattawa,observed,1,1,76,Reviewed Overture gas/convenience layer has 1 packet-ready rows inside the target box.
+wa-min-postal-mesa,Mesa,observed,1,1,76,Reviewed Overture gas/convenience layer has 1 packet-ready rows inside the target box.

@@ -1,0 +1,13 @@
+target_id,primary_city,settlement_size_proxy,food_service_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+national-post-office-sd-aberdeen-d465535319,Aberdeen,10000_to_49999,observed,43,42,1,Arby's; Buffalo Wings & Rings; Burger King; Caribou Coffee; Cuzco; DQ Grill & Chill; Domino's; Dulces Hispanic Store,Named food_service rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-sd-alcester-4fbca0de20,Alcester,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-alexandria-2e7eebff18,Alexandria,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-allen-79c0327f6e,Allen,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-alpena-a0ee450c87,Alpena,under_2500,observed,1,1,0,Red Hog Saloon,Named food_service rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-sd-armour-3ca30d418c,Armour,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-artesian-a7016c8d34,Artesian,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-astoria-fe7bf7e0c0,Astoria,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-avon-4e69ef7609,Avon,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-badger-fce2190452,Badger,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-baltic-88f3282873,Baltic,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-sd-batesland-cb6a7a11b2,Batesland,under_2500,checked_absent,0,0,0,,No named food_service rows found in Geofabrik OSM GeoPackage target box.

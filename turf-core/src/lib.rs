@@ -3096,7 +3096,7 @@ fn validate_ret_barrier_context(value: &str, line_number: usize) -> Result<(), S
 
 fn validate_restaurant_segment(value: &str, line_number: usize) -> Result<(), String> {
     match value {
-        "qsr" | "fast_casual" | "casual_dining" => Ok(()),
+        "qsr" | "fast_casual" | "casual_dining" | "pizza_delivery" => Ok(()),
         _ => Err(format!("line {line_number}: invalid segment")),
     }
 }
@@ -3806,13 +3806,15 @@ qsr,McDonald's,default_national_grid,1,baseline dense QSR footprint
 qsr,Taco Bell,late_day_qsr_grid,1,compare different daypart coverage
 fast_casual,Chipotle,selective_fast_casual,2,tests selective nodes
 casual_dining,Olive Garden,regional_casual_anchor,3,tests family dining anchors
+pizza_delivery,Domino's,pizza_delivery_provisioning_grid,2,tests pizza delivery and carryout coverage
 ";
         let targets = parse_restaurant_chain_targets(csv).expect("targets parse");
         let summary = summarize_restaurant_chain_targets(&targets);
 
-        assert_eq!(targets.len(), 4);
+        assert_eq!(targets.len(), 5);
         assert_eq!(targets[1].brand, "Taco Bell");
         assert_eq!(targets[3].brand, "Olive Garden");
+        assert_eq!(targets[4].segment, "pizza_delivery");
         assert_eq!(
             summary,
             vec![
@@ -3822,6 +3824,10 @@ casual_dining,Olive Garden,regional_casual_anchor,3,tests family dining anchors
                 },
                 RetCount {
                     key: "fast_casual".to_string(),
+                    examples: 1,
+                },
+                RetCount {
+                    key: "pizza_delivery".to_string(),
                     examples: 1,
                 },
                 RetCount {

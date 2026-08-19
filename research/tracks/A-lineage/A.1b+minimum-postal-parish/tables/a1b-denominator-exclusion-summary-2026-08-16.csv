@@ -1,0 +1,4 @@
+exclusion_category,denominator_eligibility,row_count,repair_or_exclusion_decision,claim_boundary
+current_anchor_failure,excluded_current_anchor_not_confirmed,10,exclude_from_clean_denominator,Bounded sampled denominator exclusions only; not regional or national frequency.
+private_shipping_semantics,excluded_private_shipping_semantics,5,exclude_from_clean_public_post_office_denominator,Bounded sampled denominator exclusions only; not regional or national frequency.
+seed_state_mismatch,excluded_seed_state_mismatch,1,exclude_from_clean_state_denominator,Bounded sampled denominator exclusions only; not regional or national frequency.

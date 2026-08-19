@@ -1,0 +1,6 @@
+metric,value,note
+packet_ready_post_office_seed_rows,84,Validated seed rows available before sampling.
+target_rows,84,Target boxes written after sampling limits.
+enriched_rows,84,Enriched target rows written.
+settlement_proxy_join_keys,target_id=84,Join-key distribution in enriched output.
+settlement_size_proxy_buckets,10000_to_49999=25; 2500_to_9999=16; 50000_plus=7; under_2500=36,Bucket distribution in enriched output.

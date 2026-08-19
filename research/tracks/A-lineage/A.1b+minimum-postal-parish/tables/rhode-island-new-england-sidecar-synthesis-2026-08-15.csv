@@ -1,0 +1,13 @@
+metric,value,note
+sample_targets,12,Rhode Island New England breadth sample after validated preflight.
+post_office_observed,12,All sampled targets are built from validated post-office seed rows.
+food_service_observed,11,Named Geofabrik food-service rows found in target boxes.
+food_service_checked_absent,1,Clayville had no named Geofabrik food-service row in the target box.
+gas_convenience_observed,8,Named Geofabrik gas/convenience rows found in target boxes.
+hardware_observed,7,Named Geofabrik hardware/doityourself rows found in target boxes.
+laundromat_observed,7,Named Geofabrik laundry rows found in target boxes.
+dollar_store_observed,0,No target-box Dollar Tree Dollar General or Family Dollar evidence in local Geofabrik pass.
+postal_everyday_service_minimum,9,Targets with post office plus one or more everyday non-food sidecars or food plus other sidecars.
+postal_food_service_minimum,2,Targets where food service is the only observed everyday sidecar in this local pass.
+postal_only_candidate,1,Clayville survives the local Geofabrik sidecar pass and narrow OSM API spot check as a depth-review candidate.
+regional_frequency_claim,blocked,No Rhode Island or New England frequency claim until source-gate/depth review completes.

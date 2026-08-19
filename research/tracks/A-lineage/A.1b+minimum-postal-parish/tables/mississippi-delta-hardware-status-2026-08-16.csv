@@ -1,0 +1,13 @@
+target_id,primary_city,facility_type,sidecar_status,packet_ready_rows,observed_facility_names,claim_boundary
+national-post-office-ms-tutwiler-0ca09919c3,Tutwiler,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-bigbee-valley-905a04396f,Bigbee Valley,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-union-church-ea072f6994,Union Church,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-wiggins-ca2830aa2a,Wiggins,hardware,observed,1,Jack's Home Improvement Center,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-phillip-594c315f87,Phillip,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-verona-b144237576,Verona,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-crowder-66d363bf86,Crowder,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-clarksdale-dd861c33cc,Clarksdale,hardware,observed,2,Deak’s Mississipi Saxophones & Harmonicas; Mississippi Hardware,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-ocean-springs-5194ac9e54,Ocean Springs,hardware,observed,2,Ace Hardware; Bailey Lumber & Supply Company,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-nitta-yuma-1b0b62daba,Nitta Yuma,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-valley-park-c02f8044f8,Valley Park,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-heidelberg-c07f8caa16,Heidelberg,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.

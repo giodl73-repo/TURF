@@ -1,0 +1,21 @@
+city,state,layers_present,qsr,grocery,pharmacy,mass_retail,auto_parts,home_improvement,current_chain_stack,sample_layer,sample_brand,sample_store,sample_address,sample_latitude,sample_longitude,pilot_reason,post_office_status
+Ball Ground,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,O'Reilly Auto Parts,O'Reilly Auto Parts,8609 Ball Ground Hwy,34.33466339111328,-84.38524627685547,Georgia auto-parts-only sparse chain signal,needs_fetch
+Cohutta,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,AutoZone,AutoZone,3931 Ruby Dr,34.89630889892578,-84.95089721679688,Georgia auto-parts-only sparse chain signal,needs_fetch
+Greenville,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,NAPA Auto Parts,NAPA Auto Parts,2019 Gaston St,33.02900314331055,-84.7107925415039,Georgia auto-parts-only sparse chain signal,needs_fetch
+Ludowici,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,O'Reilly Auto Parts,O'Reilly Auto Parts,116 E Cypress St,31.713350296020508,-81.74423217773438,Georgia auto-parts-only sparse chain signal,needs_fetch
+Cuthbert,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,Southside Plaza Hwy 27 S,31.785545349121094,-84.7815933227539,Georgia grocery-only sparse chain signal,needs_fetch
+Franklin,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,241 E Court Square,33.27863693237305,-85.09780883789062,Georgia grocery-only sparse chain signal,needs_fetch
+Kathleen,GA,1,0,1,0,0,0,0,grocery,grocery,Publix,Publix,1136 GA Highway 96,32.547183990478516,-83.69212341308594,Georgia grocery-only sparse chain signal,needs_fetch
+Richland,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,100 Piggly Wiggly Way,32.08641052246094,-84.67349243164062,Georgia grocery-only sparse chain signal,needs_fetch
+Bogart,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,2430 Monroe Hwy,33.920745849609375,-83.5162353515625,Georgia qsr-only sparse chain signal,needs_fetch
+Carnesville,GA,1,1,0,0,0,0,0,qsr,qsr,Wendy's,Wendy's,11156 GA-106,34.39052200317383,-83.22708892822266,Georgia qsr-only sparse chain signal,needs_fetch
+College Park,GA,1,3,0,0,0,0,0,qsr,qsr,Burger King,Burger King,5068 Old National Hwy,33.61723709106445,-84.47232818603516,Georgia qsr-only sparse chain signal,needs_fetch
+Colquitt,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,401 W Crawford St,31.169775009155273,-84.73271179199219,Georgia qsr-only sparse chain signal,needs_fetch
+Hull,GA,1,0,0,1,0,0,0,pharmacy,pharmacy,CVS Pharmacy,CVS Pharmacy,8895 Highway 29 S,34.031776428222656,-83.31489562988281,Georgia pharmacy-only sparse chain signal,needs_fetch
+Monticello,GA,1,0,0,1,0,0,0,pharmacy,pharmacy,CVS Pharmacy,CVS Pharmacy,330 E Greene St,33.303287506103516,-83.6808090209961,Georgia pharmacy-only sparse chain signal,needs_fetch
+Mccaysville,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,O'Reilly Auto Parts,O'Reilly Auto Parts,65 E Tennessee Ave,34.98701095581055,-84.37273406982422,Georgia auto-parts-only sparse chain signal,needs_fetch
+Ocilla,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,O'Reilly Auto Parts,O'Reilly Auto Parts,523 N Irwin Ave,31.601133346557617,-83.25011444091797,Georgia auto-parts-only sparse chain signal,needs_fetch
+Pearson,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,AutoZone,AutoZone,194 Main St N,31.29893684387207,-82.85204315185547,Georgia auto-parts-only sparse chain signal,needs_fetch
+Pelham,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,AutoZone,AutoZone,210 Butler St SW,31.123937606811523,-84.15167999267578,Georgia auto-parts-only sparse chain signal,needs_fetch
+Reynolds,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,NAPA Auto Parts,NAPA Auto Parts,101 W Marion St,32.55938720703125,-84.1056900024414,Georgia auto-parts-only sparse chain signal,needs_fetch
+Turin,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,NAPA Auto Parts,NAPA Auto Parts,5079 GA-16,33.322818756103516,-84.63041687011719,Georgia auto-parts-only sparse chain signal,needs_fetch

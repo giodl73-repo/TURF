@@ -1,0 +1,21 @@
+target_id,primary_city,food_service_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+wa-min-postal-bingen,Bingen,observed,16,11,5,Ayutulense; Beneventis; Feast Market & Delicatessen; Ground; Hennis Kitchen and Bar; Mugs Coffee,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-buckley,Buckley,observed,14,14,0,Big Burger & Teriyaki; BigFoot Java; Bootleggers Bar & Grill; Crossroads Coffee House; Espresso; Georgio's Italian Kitchen,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-cashmere,Cashmere,observed,15,15,0,Agave Azul; Aut-to Mocha Espresso; Blue Flame; Buckshot Honey; Huckleberry Cafe; Java Buzz Espresso,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-cathlamet,Cathlamet,observed,4,4,0,Julie's Java; Maria's Place; Patty Cakes; The Pizza Mill,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-clallam-bay,Clallam Bay,observed,2,2,0,Clallam Bay Inn; Liquid Sanity Espresso,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-clinton,Clinton,observed,7,7,0,Hong Kong Gardens; Mukilteo Coffee; Patron Mexican Restaurant; Southern Cross Espresso; The Shrimp Shack at Cozy's; Thirsty Crab Brewery,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-colfax,Colfax,observed,2,2,0,165 Brew LLC; Shotz Coffee,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-connell,Connell,observed,10,10,0,Burger Factory; Casita De Café; Chester's; Kaffrin's Coffee; La Herradura; Mei Ling Inn,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-darrington,Darrington,observed,5,5,0,Brew with a View; Burger Barn; Common Ground Coffee; Dos agaves; Moe's,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-dayton,Dayton,observed,9,7,2,Chief Spring's Pizzeria; Fiesta en Jalisco; Manila Bay Cafe; Moose Creek Cafe & Bakery; My Dad's Place; Rey's Roast Coffee,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-eastsound,Eastsound,observed,19,18,1,Cafe Aurora; Darvill's Cafe; Delmi’s Tacos and More; Houlme; Island Skillet; Johanna's Catering,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-eatonville,Eatonville,observed,14,14,0,Betina's; Bruno's Family Restaurant and Bar; ChopStix; Crusier's Cafe; Gypsy Wagon Espresso; Happy Piggy,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-forks,Forks,observed,17,17,0,A Shot In The Dark; BBG Blakeslee's; Benelli’s Burger; D&K BBQ; Golden Gate; Home Slice,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-friday-harbor,Friday Harbor,observed,24,24,0,Blue Water Bar & Grill; Cattle Point BBQ; Cheesecake Cafe and Bakery; China Pearl; Churchhill; Coho,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-kettle-falls,Kettle Falls,observed,9,8,1,Crandall Coffee Co.; Kettle Pho Bistro; Kettle Pub & Grub; Little Gallea Restaurant; Miss B's Haven; Northern Ales Inc,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-la-conner,La Conner,observed,21,21,0,Beaver Tales Coffee; COA Mexican Eatery; Calico Cupboard Cafe and Bakery; Country Grounds Coffee; La Conner Seafood and Prime Rib House; La Conner Thai Garden,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-loon-lake,Loon Lake,observed,4,4,0,Lakehouse Bar and Grill; Loon Lake Saloon & Grill; Pappy's Espresso; The Coffee Shop,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-lopez-island,Lopez Island,observed,10,10,0,Bucky's; Haven Kitchen & Bar; Isabelle's; Lopez Grind Coffee Shop; Setsunai; The Galley,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-mattawa,Mattawa,observed,4,3,1,El Valle; Subway; Tiddaly Diddalys,Named OSM food-service rows observed in completed target-box pass.
+wa-min-postal-mesa,Mesa,checked_absent,0,0,0,,Completed OSM food-service target-box pass returned no named rows.

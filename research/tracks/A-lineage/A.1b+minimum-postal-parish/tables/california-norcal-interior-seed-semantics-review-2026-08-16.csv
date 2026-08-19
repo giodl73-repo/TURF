@@ -1,0 +1,1343 @@
+facility_id,facility_name,city,state,review_status,semantic_review_status,semantic_review_reason
+osm:node:2686109528,$5 Notary,$5 Notary,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:28310638,"United States Post Office (USPS), Davis, California 95616","(), Davis, California 95616",CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2277866151,Post Office (93727),(93727),CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855339,18th Street Station,18th Street Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:138533979,A Station,A Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5635969722,A Station Vallejo Post Office,A Station Vallejo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11572314224,A+ MailBoxes & More,A+ MailBoxes & More,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8356284459,ABC Cargo Express,ABC Cargo Express,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11251863777,AIM Mail Center,AIM Mail Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9121305172,AIM Mail Center,AIM Mail Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13095779918,AIM Sebastopol,AIM Sebastopol,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:269756359,Acampo Post Office,Acampo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8604433236,Ad West Mail Center,Ad West Mail Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821760,Adin Post Office,Adin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:52640029,Agnew Station Santa Clara Post Office,Agnew Station Santa Clara,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:419118113,Ahwahnee Post Office,Ahwahnee,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:104685721,Airport Station Oakland Post Office,Airport Station Oakland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:42701506,Alameda Post Office,Alameda,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9008922875,Alamo Post Office,Alamo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:210339225,Albany Post Office,Albany,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12554891707,United States Post Office Albion,Albion,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:988279570,All Service Center,All Service Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:38773589,Almaden Valley Station San Jose Post Office,Almaden Valley Station San Jose,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1087946549,Alpaugh Post Office,Alpaugh,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832977,Altaville Post Office,Altaville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:416264310,Alturas Post Office,Alturas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:482783123,Alviso Post Office,Alviso,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827128,Amador City Post Office,Amador City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10198467980,Amazon Pick-up & Returns,Amazon Pick up & Returns,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9308003771,Amazon Prime Now,Amazon Prime Now,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928720801,American Canyon Post Office,American Canyon,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1708102193,Anderson Post Office,Anderson,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:341539251,Angels Camp Post Office,Angels Camp,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832331,Angwin Post Office,Angwin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:977918181,Angwin Post Office,Angwin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11105727424,Antelope Post Office,Antelope,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821199,Antioch Post Office,Antioch,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823720,Applegate Post Office,Applegate,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1504823697,Arbuckle Post Office,Arbuckle,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:61351157,Arcata Post Office,Arcata,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852233,Arden Post Office,Arden,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833335,Armona Post Office,Armona,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832926,Arnold Post Office,Arnold,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358849464,Aromas Post Office,Aromas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9985317474,Aromas Post Office,Aromas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821929,Artois Post Office,Artois,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10914501173,Atlantic Plaza Post Office,Atlantic Plaza,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8332523259,Atlas,Atlas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311712044,Atwater Post Office,Atwater,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833901,Auberry Post Office,Auberry,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827871,Aukum Post Office,Aukum,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833474,Avenal Post Office,Avenal,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832956,Avery Post Office,Avery,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4349256210,Balboa Business Canter,Balboa Business Canter,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311720187,Ballico Post Office,Ballico,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358837514,Banta Post Office,Banta,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:476751026,Barton Post Office,Barton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1496351716,Bayside Post Office,Bayside,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855325,Bayview Post Office,Bayview,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1054030245,Bella Vista Post Office,Bella Vista,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830736,Belmont Post Office,Belmont,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833330,Belvedere Tiburon Post Office,Belvedere Tiburon,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358849159,Ben Lomond Post Office,Ben Lomond,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:607965495,Benicia Post Office,Benicia,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:28842845,Berkeley Main Post Office,Berkeley Main,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855329,Bernal Heights Post Office,Bernal Heights,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:10743531,Berryessa Station San Jose Post Office,Berryessa Station San Jose,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821203,Bethel Island Post Office,Bethel Island,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1420288462,Bieber Post Office,Bieber,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819041,Big Bar Post Office,Big Bar,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830298,Big Oak Flat Post Office,Big Oak Flat,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1941034794,Big Pine Post Office,Big Pine,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1166265982,Biggs Post Office,Biggs,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833951,Biola Post Office,Biola,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832798,Bishop Post Office,Bishop,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:498650664,Blairsden-Graeagle Post Office,Blairsden Graeagle,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:38045348,Blossom Hill Station San Jose Post Office,Blossom Hill Station San Jose,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1526888579,Blue Lake Post Office,Blue Lake,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:771525361,Bodega Post Office,Bodega,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:549804508,Bodega Bay Post Office,Bodega Bay,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:20068648,Bolinas Post Office,Bolinas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:242897303,Boonville Post Office,Boonville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:559387791,Boyes Hot Springs Post Office,Boyes Hot Springs,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:124377249,Bradford Station Hayward Post Office,Bradford Station Hayward,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:160892688,Brannan Street Station,Brannan Street Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6319826914,Brentwood Post Office,Brentwood,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:42154278,Bridgeport Post Office,Bridgeport,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:136880441,Brisbane Post Office,Brisbane,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852243,Broadway Post Office,Broadway,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822675,Broderick Post Office,Broderick,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823141,Browns Valley Post Office,Browns Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823142,Brownsville Post Office,Brownsville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:256461082,Bryant Street Station,Bryant Street Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822676,Bryte Branch Broderick Post Office,Bryte Branch Broderick,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3543085958,Burlingame Post Office,Burlingame,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832929,Burson Post Office,Burson,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928942702,Byron Post Office,Byron,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1357985360,Byron Rumford US Post Office,Byron Rumford US,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7841092575,Bảo Tín Cargo,Bảo Tín Cargo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:288685039,Calistoga Post Office,Calistoga,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358805891,Callahan Post Office,Callahan,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358824708,Calpella Post Office,Calpella,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827000,Calpine Post Office,Calpine,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:479170360,Calwa Post Office,Calwa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:37624201,Cambrian Park Post Office,Cambrian Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:232276158,"Cambridge Branch, Palo Alto","Cambridge Branch, Palo Alto",CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852249,Camellia Post Office,Camellia,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1087040295,Camino Post Office,Camino,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832894,Camp Connell Post Office,Camp Connell,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831365,Camp Meeker Post Office,Camp Meeker,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2428832158,Camp Richardson Post Office,Camp Richardson,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832932,Campo Seco Post Office,Campo Seco,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1504082641,Camptonville Post Office,Camptonville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:894457665,Canyon Post Office,Canyon,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912924002,Carlotta Post Office,Carlotta,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1503809278,Carmel Post Office,Carmel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358849707,Carmel Valley Post Office,Carmel Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:32517470,Carmichael Post Office,Carmichael,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:761818087,Caruthers Post Office,Caruthers,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:330700901,Casa Grande Annex Post Office,Casa Grande Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358802563,Cassel Post Office,Cassel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:901852496,Castella Post Office,Castella,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:559355975,Castro Valley Branch Post Office,Castro Valley Branch,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12557347714,Cazadero Post Office,Cazadero,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831276,Cazadero Post Office,Cazadero,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:813506074,Cedar Ridge Post Office,Cedar Ridge,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358815429,Cedarville Post Office,Cedarville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7215715252,Centro Express,Centro Express,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:575402809,Ceres Post Office,Ceres,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:965219489,Challenge Post Office,Challenge,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820354,Chester Post Office,Chester,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830381,Chestnut Station South San Francisco Post Office,Chestnut Station South San Francisco,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:39528708,Chico Post Office,Chico,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855332,Chinatown Station,Chinatown Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:508062149,Chinese Camp Post Office,Chinese Camp,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834723,Chowchilla Post Office,Chowchilla,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:71505816,Citrus Heights Post Office,Citrus Heights,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:25169654,Civic Center Annex Oakland Post Office,Civic Center Annex Oakland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:59779898,Civic Center San Rafael Post Office,Civic Center San Rafael,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823991,Clayton Post Office,Clayton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:196108167,Clayton Street Post Office,Clayton Street,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830215,Clearlake Park Post Office,Clearlake Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358837389,Clements Post Office,Clements,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1006861724,Cloverdale Post Office,Cloverdale,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:800883330,Clovis Post Office,Clovis,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:195058723,Coalinga Post Office,Coalinga,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358816389,Coarsegold Post Office,Coarsegold,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8064824695,Coast Guard Island Post Office,Coast Guard Island,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1129634921,Colfax Post Office,Colfax,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822586,College City Post Office,College City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7827733257,Colma Station Post Office,Colma Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:492260064,Coloma Post Office,Coloma,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852264,Colonial Post Office,Colonial,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3630274641,Colonnade Station Post Office,Colonnade Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833603,Columbia Post Office,Columbia,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1323702975,Colusa Post Office,Colusa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1356542164,Comptche Post Office,Comptche,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:223174189,Concord Post Office,Concord,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2383254142,Contract Station,Contract Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2383254141,Contract Station #11,Contract Station #11,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827551,Cool Post Office,Cool,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833035,Copperopolis Post Office,Copperopolis,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833490,Corcoran Post Office,Corcoran,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:744810935,Corning Post Office,Corning,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832520,Corte Madera Post Office,Corte Madera,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831631,Cotati Post Office,Cotati,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:238196127,Cottonwood Post Office,Cottonwood,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852267,Country Club Centre Post Office,Country Club Centre,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852270,Courtland Post Office,Courtland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:654558465,Covelo Post Office,Covelo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:30060057,Coyote Post Office,Coyote,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:779135612,Crescent City Post Office,Crescent City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820359,Crescent Mills Post Office,Crescent Mills,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:488732997,Crockett Post Office,Crockett,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357563510,Crystal Bay Post Office,Crystal Bay,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:95614481,Cupertino Post Office,Cupertino,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358838982,Cutler Post Office,Cutler,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9414729440,DHL,DHL,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2733086714,DHL Express,DHL Express,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9430063463,DHL Express ServicePoint,DHL Express ServicePoint,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:827110592,Danville Post Office,Danville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6429722937,Danville Square Post Office,Danville Square,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358816117,Darwin Post Office,Darwin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9528750040,Death Valley Post Office,Death Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851319,Deer Park Post Office,Deer Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852273,Del Paso Heights Post Office,Del Paso Heights,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311699409,Delhi Post Office,Delhi,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:585249260,Denair Post Office,Denair,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1021050352,Diablo Post Office,Diablo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3523031626,Diamond Heights Post Office,Diamond Heights,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2383254143,Diamond Heights Carrier Annex,Diamond Heights Carrier Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5938114979,Diamond Market UPS,Diamond Market UPS,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:497482827,Diamond Springs Post Office,Diamond Springs,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:485598963,Dillon Beach Post Office,Dillon Beach,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358817966,Dimond Post Office,Dimond,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358838987,Dinuba Post Office,Dinuba,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831903,Dixon Post Office,Dixon,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823159,Dobbins Post Office,Dobbins,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821346,Dorris Post Office,Dorris,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835094,Dos Palos Post Office,Dos Palos,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819047,Douglas City Post Office,Douglas City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827006,Downieville Post Office,Downieville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:865758199,Downtown Eureka Post Office,Downtown Eureka,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:468689686,Downtown Redding Post Office,Downtown Redding,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:240211431,Downtown Station Redwood City Post Office,Downtown Station Redwood City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928824301,Ducor Post Office,Ducor,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831367,Duncans Mills Post Office,Duncans Mills,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822722,Dunningan Post Office,Dunningan,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:549675977,Dunsmuir Post Office,Dunsmuir,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912788902,Durham Post Office,Durham,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8759077372,E-Z Mail,E Z Mail,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928869201,Earlimart Post Office,Earlimart,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839916,Earlimart Post Office,Earlimart,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823004,East Nicolaus Post Office,East Nicolaus,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358817977,Eastmont Post Office,Eastmont,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833987,Easton Post Office,Easton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358805901,Edgewood Post Office,Edgewood,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:484701309,El Cerrito Post Office,El Cerrito,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:921916450,El Dorado Post Office,El Dorado,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827627,El Dorado Hills Post Office,El Dorado Hills,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833536,El Portal Post Office,El Portal,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:30137491,El Sobrante Post Office,El Sobrante,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831720,El Verano Post Office,El Verano,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1426769713,United States Post Office Elk,Elk,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821956,Elk Creek Post Office,Elk Creek,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:972078594,Elk Creek Post Office,Elk Creek,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:95474706,Elk Grove Post Office,Elk Grove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:318155823,Elmwood Station Berkeley Post Office,Elmwood Station Berkeley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928938902,Elverta Post Office,Elverta,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835687,Elverta Post Office,Elverta,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:112759882,Emeryville Post Office,Emeryville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1309206959,Empire Post Office,Empire,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:40443023,Encinal Station Sunnyvale Post Office,Encinal Station Sunnyvale,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912680602,Escalon Post Office,Escalon,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822731,Esparto Post Office,Esparto,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:227068072,Estes West,Estes West,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1409923906,Etna Post Office,Etna,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:374892526,Eureka Post Office,Eureka,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855342,Excelsior Station,Excelsior Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928817901,Exeter Post Office,Exeter,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839689,Exeter Post Office,Exeter,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:857688140,Fair Oaks Post Office,Fair Oaks,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:966031979,Fairfax Post Office,Fairfax,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:780018420,Fairfield Post Office,Fairfield,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820643,Fairmount Post Office,Fairmount,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358818707,Fall River Mills Post Office,Fall River Mills,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1011340382,Farmersville Post Office,Farmersville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1427624939,Farmington Post Office,Farmington,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:993180206,Fed Ex Center,Fed Ex Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10795972806,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4236834411,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6177519993,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7229119238,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8273435023,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8356321240,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8720243238,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9298157044,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:122318167,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:461612608,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:863750002,FedEx,FedEx,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1223019595,FedEx 24h office,FedEx 24h office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9118345885,FedEx Ground,FedEx Ground,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10617054524,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10693785907,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11147725547,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11511905231,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11612234497,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11660115876,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11867778689,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12637473021,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12854035994,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13358671680,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1340871803,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2297714492,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2607395542,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2923715576,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4588635629,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4616141257,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4632000744,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:487629007,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6448837334,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7967683291,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9311541510,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9409419020,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9976276744,FedEx Office,FedEx Office,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3369841094,FedEx Office Print & Ship Services,FedEx Office Print & Ship Services,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1700604299,FedEx Office Print and Ship Center,FedEx Office Print and Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:751479275,FedEx Office;FedEx Ship Center,FedEx Office;FedEx Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10722308663,FedEx Ship Center,FedEx Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12550458580,FedEx Ship Center,FedEx Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3238831124,FedEx Ship Center,FedEx Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9314419139,FedEx Ship Center,FedEx Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9891206243,FedEx Ship Center,FedEx Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1085881784,FedEx Ship Center,FedEx Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:48234017,FedEx Ship Center,FedEx Ship Center,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2383254145,Federal Building San Francisco,Federal Building San Francisco,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2993275534,Fedex,Fedex,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:358849130,Felton Post Office,Felton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:691941465,Ferndale Post Office,Ferndale,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2210086672,Fiddletown Post Office,Fiddletown,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912924001,Fields Landing Post Office,Fields Landing,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1282675677,Firebaugh Post Office,Firebaugh,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358816394,Fish Camp Post Office,Fish Camp,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852300,Florin Post Office,Florin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358815715,Folsom Post Office,Folsom,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852304,Foothill Farms Post Office,Foothill Farms,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:968238051,Forest Knolls Post Office,Forest Knolls,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823626,Foresthill Post Office,Foresthill,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831413,Forestville Post Office,Forestville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358815438,Fort Bidwell Post Office,Fort Bidwell,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:31444676,Fort Bragg Post Office,Fort Bragg,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852307,Fort Sutter Post Office,Fort Sutter,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:899377722,Fortuna Post Office,Fortuna,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11512881769,Foster City,Foster City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:744192671,Fowler Post Office,Fowler,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6427415718,USPS Fox Plaza,Fox Plaza,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928716901,Franklin Post Office,Franklin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358849342,Freedom Post Office,Freedom,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358837622,French Camp Post Office,French Camp,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:218665989,Friant Post Office,Friant,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4220797229,Fruitvale Shipping Center,Fruitvale Shipping Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819615,Fruitvale Station Oakland Post Office,Fruitvale Station Oakland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831422,Fulton Post Office,Fulton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358836928,Galt Post Office,Galt,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:674529546,Garberville Post Office,Garberville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3778987367,Garden Station,Garden Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:61690511,United States Post Office - Gateway Station,Gateway Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855346,Gateway Station San Francisco Post Office,Gateway Station San Francisco,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821367,Gazelle Post Office,Gazelle,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855349,Geary Post Office,Geary,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4318979089,USPS General Delivery,General Delivery,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827561,Georgetown Post Office,Georgetown,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10933148324,Geyserville Post Office,Geyserville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:28196416,Gilroy Post Office,Gilroy,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:860910165,Glen Ellen Post Office,Glen Ellen,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5707334951,Glen Park Mail Depot,Glen Park Mail Depot,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821988,Glenn Post Office,Glenn,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9666103531,Goin' Postal,Goin' Postal,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:948038217,USPS Gonzales Post Office,Gonzales,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8047979811,Goodyears Bar Post Office,Goodyears Bar,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10646898358,Gordon N. Chan Post Office,Gordon N. Chan,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928811901,Goshen Post Office,Goshen,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3711137998,Grand Lake Station Oakland Post Office,Grand Lake Station Oakland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11298739963,Granite Bay Postal,Granite Bay Postal,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:826419955,Grass Valley Post Office,Grass Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831425,Graton Post Office,Graton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:799484796,Graton Post Office,Graton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9738075049,Greenfield Post Office,Greenfield,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:257050461,Greenmail,Greenmail,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1430127033,Greenview Post Office,Greenview,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1124294415,Grenada Post Office,Grenada,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358824558,Gridley Post Office,Gridley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:552851157,Groveland Post Office,Groveland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1089700953,Gualala Post Office,Gualala,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:527568953,Guerneville Post Office,Guerneville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311712046,Gustine Post Office,Gustine,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9279397040,HB Postal,HB Postal,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8567999339,HR Express,HR Express,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4359144092,Haight Ashbury Express Photo & Mail,Haight Ashbury Express Photo & Mail,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:349684891,Half Moon Bay Post Office,Half Moon Bay,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821991,Hamilton City Post Office,Hamilton City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4611578316,USPS Hammer Ranch Station,Hammer Ranch Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833447,Hanford Post Office,Hanford,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821375,Happy Camp Post Office,Happy Camp,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358809583,Harris Post Office,Harris,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358809585,Hat Creek Post Office,Hat Creek,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819055,Hayfork Post Office,Hayfork,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:431580145,Hayward Post Office,Hayward,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:855652687,Henderson Post Office,Henderson,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852320,Herald Post Office,Herald,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9750578438,Hercules Post Office,Hercules,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835191,Hickman Post Office,Hickman,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311696093,Hilmar Post Office,Hilmar,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823763,Homewood Post Office,Homewood,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852325,Hood Post Office,Hood,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358824755,Hopland Post Office,Hopland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:895767512,Hornbrook Post Office,Hornbrook,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833554,Hornitos Post Office,Hornitos,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:461803479,Hudson Post Office,Hudson,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1257062617,Hughson Post Office,Hughson,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358814876,Hyampom Post Office,Hyampom,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1376788051,Hydesville Post Office,Hydesville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851316,Imola Contact Station Post Office,Imola Contact Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:759759257,Independence Post Office,Independence,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12662380818,International Postal Center,International Postal Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832680,Inverness Post Office,Inverness,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827156,Ione Post Office,Ione,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2383254146,Irving Street Station,Irving Street Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819462,Irvington Station Fremont Post Office,Irvington Station Fremont,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358836934,Isleton Post Office,Isleton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839644,Ivanhoe Post Office,Ivanhoe,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:883070311,Jackson Post Office,Jackson,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830241,Jamestown Post Office,Jamestown,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831371,Jenner Post Office,Jenner,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:224145851,John Sanchez Annex Post Office,John Sanchez Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819064,Junction City Post Office,Junction City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851299,June Lake Post Office,June Lake,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11103463238,Just Send It Postal Center,Just Send It Postal Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4642809825,Kangaroo Pack & Ship,Kangaroo Pack & Ship,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830156,Kelseyville Post Office,Kelseyville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1387048777,Kelseyville Post Office,Kelseyville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:399585390,Kentfield Post Office,Kentfield,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831600,Kenwood Post Office,Kenwood,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834016,Kerman Post Office,Kerman,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1135662162,Kettleman City Post Office,Kettleman City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:525126171,Keyes Post Office,Keyes,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823773,Kings Beach Post Office,Kings Beach,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11125733534,Kings Canyon Post Office,Kings Canyon,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834400,Kingsburg Post Office,Kingsburg,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:388995571,Klamath Post Office,Klamath,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:816734375,Klamath River Post Office,Klamath River,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822771,Knights Landing Post Office,Knights Landing,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821259,Knightsen Post Office,Knightsen,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6601976159,LBC,LBC,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9277220419,LBC Express,LBC Express,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5810841519,LPH,LPH,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835386,La Grange Post Office,La Grange,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13763954277,La Guatemalteca Express,La Guatemalteca Express,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8891003934,La Honda Post Office,La Honda,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12878460161,Lafayette Post Office,Lafayette,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:203941891,Lagunitas Post Office,Lagunitas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1682265480,Lake City Post Office,Lake City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912822501,Lakehead Post Office,Lakehead,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855355,Lakeshore Plaza Station San Francisco Post Office,Lakeshore Plaza Station San Francisco,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852341,Land Park Post Office,Land Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358817919,Landscape Post Office,Landscape,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:858712445,Larkspur Post Office,Larkspur,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358837543,Lathrop Post Office,Lathrop,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834504,Laton Post Office,Laton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:464463614,Laurel Post Office,Laurel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5187589144,Laytonville Post Office,Laytonville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1351465063,Leggett Post Office,Leggett,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928819201,Lemon Cove Post Office,Lemon Cove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833353,Lemoore Post Office,Lemoore,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819075,Lewiston Post Office,Lewiston,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821784,Likely Post Office,Likely,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823778,Lincoln Post Office,Lincoln,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830577,Linda Mar Station Pacifica Post Office,Linda Mar Station Pacifica,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912690001,Linden Post Office,Linden,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:366410127,Linden Avenue Station South San Francisco Post Office,Linden Avenue Station South San Francisco,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928820201,Lindsay Post Office,Lindsay,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839987,Lindsay Post Office,Lindsay,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358809647,Linnell Post Office,Linnell,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827634,Little Norway Post Office,Little Norway,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823051,Live Oak Post Office,Live Oak,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358815209,Livermore Post Office,Livermore,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311712043,Livingston Post Office,Livingston,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:408506632,Lockeford Post Office,Lockeford,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12564132495,Lockwood Post Office,Lockwood,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358837320,Lodi Post Office,Lodi,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:238193106,Loleta Post Office,Loleta,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831222,Loma Mar Post Office,Loma Mar,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11711912241,Long Barn Post Office,Long Barn,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:28615824,Loomis Post Office,Loomis,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311712042,Los Banos Post Office,Los Banos,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839370,Los Gatos Main Post Office,Los Gatos Main,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823696,Los Molinos Post Office,Los Molinos,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827600,Lotus Post Office,Lotus,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1321463637,Lovers Lane Post Office,Lovers Lane,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830181,Lower Lake Post Office,Lower Lake,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:313261447,Loyola Corners Post Office,Loyola Corners,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358818518,Macdoel Post Office,Macdoel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834642,Madera Post Office,Madera,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822775,Madison Post Office,Madison,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358824428,Magalia Post Office,Magalia,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12468122488,Mail & More,Mail & More,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:978576375,Mail 'N More,Mail 'N More,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5140235358,Mail Access,Mail Access,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2619982673,Mail All Center,Mail All Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5409543180,Mail Biz,Mail Biz,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5402931094,Mail Biz Etc.,Mail Biz Etc.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4675911575,Mail Boxes & More,Mail Boxes & More,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7426765496,Mail Boxes Etc.,Mail Boxes Etc.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7426765498,Mail Boxes Etc.,Mail Boxes Etc.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7426765499,Mail Boxes Etc.,Mail Boxes Etc.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:984213196,Mail Boxes Etc.,Mail Boxes Etc.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12965250224,Mail Room,Mail Room,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5271013150,Mail Room,Mail Room,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12047230543,Mail Run Business Center,Mail Run Business Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9269172419,Mail Station,Mail Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7100399100,Mail Stop,Mail Stop,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7262587465,Mailbiz,Mailbiz,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8288098806,Mailbox & More,Mailbox & More,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11933485193,Mailboxes Plus,Mailboxes Plus,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8604433234,Mailing Service Center,Mailing Service Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13352532962,Mainstreet Mailbox & Business Center,Mainstreet Mailbox & Business Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358816438,Mammoth Lakes Post Office,Mammoth Lakes,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:541343524,Manchester Post Office,Manchester,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:25270928,Manteca Post Office,Manteca,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5106546095,Manton Postal Service,Manton Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851592,Marcus Foster Station Oakland Post Office,Marcus Foster Station Oakland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855358,Marina,Marina,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:781125804,Marina City Post Office,Marina City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2383254148,Marina Green Retail,Marina Green Retail,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833567,Mariposa Post Office,Mariposa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827462,Markleeville Post Office,Markleeville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:557516028,Marshall Post Office,Marshall,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:65066729,Martinez,Martinez,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823264,Marysville Post Office,Marysville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:559692219,Maxwell Post Office,Maxwell,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:178552276,McCloud Post Office,McCloud,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358818224,McKinleyville Post Office,McKinleyville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855362,McLaren Station,McLaren Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6632478604,Meest,Meest,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13549197658,Mendocino Post Office,Mendocino,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833928,Mendota Post Office,Mendota,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835042,Merced Post Office,Merced,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823065,Meridian Post Office,Meridian,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:331127164,Metro Post Office,Metro,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:555011586,Mi-Wuk Post Office,Mi Wuk,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:372648901,Middletown Post Office,Middletown,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:478323696,Midtown Chico Post Office,Midtown Chico,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:544722639,Mill Valley Post Office,Mill Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928811902,Millennium Post Office,Millennium,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11201210271,Mills College at Northeastern University Mail and Copy Center,Mills College at Northeastern University Mail and Copy Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:157809684,Milpitas Post Office,Milpitas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928725901,Mira Vista Post Office,Mira Vista,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820793,Mira Vista Station Richmond Post Office,Mira Vista Station Richmond,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832650,Mission Rafael Post Office,Mission Rafael,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819495,Mission San Jose Station Fremont Post Office,Mission San Jose Station Fremont,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:261133923,Mission Station San Francisco Post Office,Mission Station San Francisco,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:469092623,United States Post Office Mission Station Santa Clara California 95051,Mission Station Santa Clara California 95051,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1043329105,Modesto Post Office,Modesto,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12802721569,Moffett Field Post Office,Moffett Field,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832904,Mokelumne Hill Post Office,Mokelumne Hill,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358809320,Montague Post Office,Montague,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6952562487,Monte Rio Post Office,Monte Rio,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:152295707,Monterey Post Office,Monterey,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358809009,Montgomery Creek Post Office,Montgomery Creek,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831546,Montgomery Village Post Office,Montgomery Village,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4972560064,Moraga Post Office,Moraga,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:27648752,Morgan Hill Post Office,Morgan Hill,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830581,Moss Beach Post Office,Moss Beach,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358817849,Mount Eden Station Hayward Post Office,Mount Eden Station Hayward,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358805912,Mount Shasta Post Office,Mount Shasta,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2157969014,Mountain View Hope Street Post Office,Mountain View Hope Street,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13045909912,Mtn Postal,Mtn Postal,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832971,Murphys Post Office,Murphys,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12918499108,My Mail Box,My Mail Box,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912929203,Myers Flat Post Office,Myers Flat,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:463715627,Napa Post Office,Napa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:21075658,Napoleon Street Carrier Complex,Napoleon Street Carrier Complex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912775701,Nelson Post Office,Nelson,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:952497116,Nevada City Post Office,Nevada City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:804798812,New Almaden Post Office,New Almaden,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1295110652,New Pine Creek Post Office,New Pine Creek,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:354902548,Newark Post Office,Newark,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823850,Newcastle Post Office,Newcastle,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:170478880,Newman Post Office,Newman,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832741,Nicasio Post Office,Nicasio,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830191,Nice Post Office,Nice,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13515617112,Niche Business Cafe,Niche Business Cafe,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819516,Niles Station Fremont Post Office,Niles Station Fremont,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855368,Noe Valley Station,Noe Valley Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855370,North Beach Station,North Beach Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358817928,North Berkeley Post Office,North Berkeley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6169458991,North Coast Packing and Shipping,North Coast Packing and Shipping,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834698,North Fork Post Office,North Fork,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835730,North Highlands Post Office,North Highlands,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1504082640,North San Juan Post Office,North San Juan,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833200,Novato Post Office,Novato,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:853351372,Nubieber Post Office,Nubieber,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:111249465,Oak Grove Station Menlo Park Post Office,Oak Grove Station Menlo Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852405,Oak Park Post Office,Oak Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13900000908,Oakdale Post Office,Oakdale,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:673506876,Oakhurst Post Office,Oakhurst,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5567449835,Oakland Main Post Office,Oakland Main,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:970534536,Oakley Post Office,Oakley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851312,Oakville Post Office,Oakville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6001490985,Occidental Post Office,Occidental,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:295191084,Olancha Post Office,Olancha,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:753874827,Old Station Post Office,Old Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832686,Olema Post Office,Olema,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6601600413,Olivehurst Post Office,Olivehurst,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7566849099,Olympic Valley Post Office,Olympic Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834517,Orange Cove Post Office,Orange Cove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358815804,Orangevale Post Office,Orangevale,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1118480039,Oregon House Post Office,Oregon House,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912881101,Orick Post Office,Orick,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12152178398,Orinda Post Office,Orinda,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:752902928,Orland Post Office,Orland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4270977722,Orleans Post Office,Orleans,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1220145096,Orosi Post Office,Orosi,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:474425454,Oroville Post Office,Oroville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11933483612,PJ's Mail & Parcel,PJ's Mail & Parcel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2321299183,PO Plus,PO Plus,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:224441584,Pacific Grove Post Office,Pacific Grove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830428,Pacifica Post Office,Pacifica,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1669545505,Pack & Mail Express,Pack & Mail Express,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3748096223,Package 2 Post,Package 2 Post,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12239069562,Package Depot,Package Depot,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5938102946,Pages,Pages,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835550,Paicines Post Office,Paicines,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13288293115,Pak Mail,Pak Mail,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:80482637,Palo Alto Post Office,Palo Alto,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:230508175,Palo Alto Main Post Office,Palo Alto Main,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1087431070,Palo Cedro Post Office,Palo Cedro,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912682101,Paradise Post Office,Paradise,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358824460,Paradise Post Office,Paradise,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5600856273,Paradise Post Office,Paradise,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:310972976,Park Central Station,Park Central Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7176677261,Parkmoor Post Office,Parkmoor,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:284859277,Parkside Post Office,Parkside,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852408,Parkway Post Office,Parkway,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:61168950,Parlier Post Office,Parlier,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13685409770,Passport Office,Passport Office,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831662,Penngrove Post Office,Penngrove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823861,Penryn Post Office,Penryn,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852411,Perkins Post Office,Perkins,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:239949115,Pescadero Post Office,Pescadero,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:195463337,Petaluma Post Office,Petaluma,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:557792344,Petrolia Post Office,Petrolia,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852080,Phillips Ranch Post Office,Phillips Ranch,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912934301,Phillipsville Post Office,Phillipsville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:242899473,Philo Post Office,Philo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358817973,Piedmont Station Oakland Post Office,Piedmont Station Oakland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:150941004,Piedra Post Office,Piedra,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827214,Pine Grove Post Office,Pine Grove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855380,Pine Street Station,Pine Street Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11219345674,Pinecrest Post Office,Pinecrest,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833931,Pinedale Post Office,Pinedale,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820903,Pinole Post Office,Pinole,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827170,Pioneer Post Office,Pioneer,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821484,Pittsburg Post Office,Pittsburg,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839927,Pixley Post Office,Pixley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:568636358,Placerville Post Office,Placerville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311711604,Planada Post Office,Planada,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1076389543,Pleasant Grove Post Office,Pleasant Grove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827174,Plymouth Post Office,Plymouth,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12557501330,Point Arena Post Office,Point Arena,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832689,Point Reyes Station Post Office,Point Reyes Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820929,Point Richmond Post Office,Point Richmond,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:309155404,Pollock Pines Post Office,Pollock Pines,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4360787281,Ponderosa,Ponderosa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851310,Pope Valley Post Office,Pope Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839929,Poplar Post Office,Poplar,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821152,Port Costa Post Office,Port Costa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839605,Porterville Post Office,Porterville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:765569508,Portola Post Office,Portola,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5538811243,Post & Parcel,Post & Parcel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11105721268,Post-It,Post It,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8756218105,Post N Parcel,Post N Parcel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7732168783,PostNet,PostNet,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13161586685,Postal & Pure Water Etc…,Postal & Pure Water Etc…,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11935605215,Postal Annex,Postal Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12751257911,Postal Annex,Postal Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6704967525,Postal Annex,Postal Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6859149487,Postal Annex,Postal Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9277024720,Postal Care,Postal Care,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4839249801,Postal Chase,Postal Chase,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12784264750,Postal Connections,Postal Connections,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12915994555,Postal Connections,Postal Connections,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4400574569,Postal Depot,Postal Depot,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12411478981,Postal Express & Gifts,Postal Express & Gifts,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1338114276,United States Postal Office,Postal Office,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7382729620,Postal Outlet Plus,Postal Outlet Plus,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4474939856,Postal Plus,Postal Plus,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:284454100,Postal Plus,Postal Plus,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10866505986,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11855411949,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12147224556,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12310506409,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13246538391,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13354224109,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9384980379,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1280033189,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1309163927,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:306205281,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:379499710,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:41338894,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:836658137,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:85933058,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:99813502,United States Postal Service,Postal Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:299747806,United States Postal Service - Burney,Postal Service Burney,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:371505370,United States Postal Service - Cobb,Postal Service Cobb,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1099552944,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1153392632,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12016521954,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12047230540,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12564028827,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12692255849,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13058515368,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2340747639,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2604121123,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2605485639,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3272065316,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3911828059,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4170124353,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4217840445,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5941521435,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6532925180,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7703811478,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8447172610,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8573333116,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8648300406,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8910860632,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9166749447,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9279459219,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1234493105,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:692054391,PostalAnnex,PostalAnnex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12285698004,PostalAnnex+,PostalAnnex+,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12555024091,Potter Valley Post Office,Potter Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:292517473,Prather,Prather,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822625,Princeton Post Office,Princeton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:441533656,Project City Post Office,Project City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9262522780,Puebla Express,Puebla Express,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823175,Rackerby Post Office,Rackerby,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823439,Raisin Post Office,Raisin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834329,Raisin Post Office,Raisin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852419,Rancho Cordova Post Office,Rancho Cordova,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834700,Raymond Post Office,Raymond,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:654566887,Red Bluff Post Office,Red Bluff,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912929202,Redcrest Post Office,Redcrest,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:556811929,Redding Post Office,Redding,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:239260161,Redwood City Post Office,Redwood City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1077818343,Redwood Estates,Redwood Estates,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358824801,Redwood Valley Post Office,Redwood Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834526,Reedley Post Office,Reedley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1028197020,Repressa Post Office,Repressa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827753,Rescue Post Office,Rescue,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928867101,Richgrove Post Office,Richgrove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820957,Richmond Post Office,Richmond,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5993835885,Rincon Station,Rincon Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10043972373,Rio Dell Post Office,Rio Dell,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912775301,Rio Linda Post Office,Rio Linda,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358815832,Rio Linda Post Office,Rio Linda,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823083,Rio Oso Post Office,Rio Oso,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358838111,Ripon Post Office,Ripon,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5041301651,Riverbank Post Office,Riverbank,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834535,Riverdale Post Office,Riverdale,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821307,Rivertown Station Antioch Post Office,Rivertown Station Antioch,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823088,Robbins Post Office,Robbins,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:44075659,Robertsville Post Office,Robertsville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823869,Rocklin Post Office,Rocklin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:728250537,Rodeo Post Office,Rodeo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831676,Rohnert Park Post Office,Rohnert Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:563590730,Roseland Post Office,Roseland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:659984705,Ross Post Office,Ross,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:682050347,Round Mountain Post Office,Round Mountain,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:118247811,"Roy Miller Freight Lines, LLC","Roy Miller Freight Lines, LLC",CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851309,Rutherford Post Office,Rutherford,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9429125322,Sacramento Mailboxes,Sacramento Mailboxes,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852432,Sacramento Main Post Office,Sacramento Main,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2383254154,Sacramento Street Contract Station,Sacramento Street Contract Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8909089629,Saigon Shipping,Saigon Shipping,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:378262309,Saint Helena Post Office,Saint Helena,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:158248771,Saint James Park Post Office,Saint James Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:237348250,Saint Matthews Station San Mateo Post Office,Saint Matthews Station San Mateo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:328488848,Salinas Post Office,Salinas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819082,Salyer Post Office,Salyer,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912914201,Samoa Post Office,Samoa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832946,San Andreas Post Office,San Andreas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832621,San Anselmo Post Office,San Anselmo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1251634957,San Carlos Post Office,San Carlos,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10711292835,San Francisco Post Office,San Francisco,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13927681301,San Geronimo Post Office,San Geronimo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832751,San Geronimo Post Office,San Geronimo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831226,San Gregorio Post Office,San Gregorio,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834335,San Joaquin Post Office,San Joaquin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:315635135,San Juan Bautista Post Office,San Juan Bautista,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851593,San Leandro Main Post Office,San Leandro Main,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819556,San Lorenzo Post Office,San Lorenzo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1109760424,San Lucas Post Office,San Lucas,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:137301582,San Martin Post Office,San Martin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:289492769,San Mateo Post Office,San Mateo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821047,San Pablo Post Office,San Pablo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:786174677,San Quentin Post Office,San Quentin,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:970695271,San Rafael Post Office,San Rafael,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358817105,San Ramon Post Office,San Ramon,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834296,Sanger Post Office,Sanger,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358838660,Santa Clara Post Office,Santa Clara,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:34254019,Santa Cruz Post Office,Santa Cruz,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:116268228,Santa Rosa Post Office,Santa Rosa,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358838486,Saratoga Post Office,Saratoga,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:385152028,Sausalito Post Office,Sausalito,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1474361286,Sawyers Bar Post Office,Sawyers Bar,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8615583528,Scotia Post Office,Scotia,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1425478123,Scott Bar Post Office,Scott Bar,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:37722580,Scotts Valley Post Office,Scotts Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:837515561,Sea Ranch Post Office,Sea Ranch,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358849761,Seaside Post Office,Seaside,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:691908351,Sebastopol Post Office,Sebastopol,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834415,Selma Post Office,Selma,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13900675774,Sequoia Print and Ship,Sequoia Print and Ship,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:231653574,Seven Trees Annex,Seven Trees Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1124118326,Shasta Post Office,Shasta,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:445619239,Shasta Lake Post Office,Shasta Lake,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833941,Shaver Lake Post Office,Shaver Lake,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13976533827,Sheridan Post Office,Sheridan,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827767,Shingle Springs Post Office,Shingle Springs,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5106546088,Shingtown Post Office,Shingtown,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11925793415,Ship N Mail,Ship N Mail,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3767248273,Shipping & Receiving,Shipping & Receiving,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13994247201,Shipping XPress,Shipping XPress,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4988889224,ShippingX,ShippingX,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:325827614,Shoshone Post Office,Shoshone,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3628053093,Sierra City Post Office,Sierra City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827022,Sierraville Post Office,Sierraville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8508621584,Sin Fronteras Mudanzas Envios Paqueteria,Sin Fronteras Mudanzas Envios Paqueteria,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852462,Sloughhouse - Rancho Murieta Post Office,Sloughhouse Rancho Murieta,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358828024,Smith Flat Post Office,Smith Flat,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1299186921,Smith River Post Office,Smith River,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:303902648,Snelling Post Office,Snelling,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819011,Soda Springs Post Office,Soda Springs,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:549660583,Soledad Post Office,Soledad,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:566503415,Somerset Post Office,Somerset,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831731,Sonoma Post Office,Sonoma,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830263,Sonora Post Office,Sonora,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:41382045,Soquel Post Office,Soquel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:73979758,South Berkeley Station Post Office,South Berkeley Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851595,South San Leandro Station San Leandro Post Office,South San Leandro Station San Leandro,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:642482862,Spreckels Post Office,Spreckels,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:760202792,Springstowne Post Office,Springstowne,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1287051064,Springville Post Office,Springville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1141927198,Squaw Valley Post Office,Squaw Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:232805741,Stanford Station Post Office,Stanford Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831205,Station A Redwood City Post Office,Station A Redwood City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821082,Station A Richmond Post Office,Station A Richmond,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830899,Station A San Mateo Post Office,Station A San Mateo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358838664,Station B San Jose Post Office,Station B San Jose,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819738,Station E Post Office,Station E,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855386,Steiner Street Station,Steiner Street Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8856487722,Stevens Creek Office Center Mail Drop,Stevens Creek Office Center Mail Drop,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8098369512,Stewarts Point Post Office,Stewarts Point,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833235,Stinson Beach Post Office,Stinson Beach,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:287634097,Stockton Post Office,Stockton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822635,Stonyford Post Office,Stonyford,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358833473,Stratford Post Office,Stratford,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358840009,Strathmore Post Office,Strathmore,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:484504474,Summit City Post Office,Summit City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:311591516,Sunol Post Office,Sunol,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:276610546,Sunset Station,Sunset Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820062,Susanville Post Office,Susanville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823116,Sutter Post Office,Sutter,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1187063406,Sutter Post Office,Sutter,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827228,Sutter Creek Post Office,Sutter Creek,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:392204997,Sutter Street Post Office,Sutter Street,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:488947986,TECOPA — Post Office,TECOPA —,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823635,Tahoe City Post Office,Tahoe City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:223413287,Tahoe Valley Post Office,Tahoe Valley,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1195027442,Tahoe Vista Post Office,Tahoe Vista,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823829,Tahoma Post Office,Tahoma,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12967685017,Taimek Authorized Ship Center,Taimek Authorized Ship Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819306,Tehama Post Office,Tehama,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:651063673,Temescal Post Office - 94609,Temescal 94609,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928820301,Terra Bella Post Office,Terra Bella,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839948,Terra Bella Post Office,Terra Bella,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4964902029,Terra Linda Post Office,Terra Linda,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9277149668,The Mail Counter of Los Altos,The Mail Counter of Los Altos,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5456207770,The Mailbox,The Mailbox,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5905646188,The Mailbox,The Mailbox,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12005788960,The Outpost,The Outpost,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13699931107,The Outpost,The Outpost,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2750810779,The Postal Chase,The Postal Chase,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3540160995,The Postal Chase,The Postal Chase,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3790822861,The Postal Chase,The Postal Chase,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13115327212,The Postal Station & Mobile Page,The Postal Station & Mobile Page,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3631944449,The Postal Stop,The Postal Stop,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10060225504,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10062764065,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10115193515,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10243637494,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10563106206,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10617038679,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10766892927,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10806697936,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10846405102,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10963044447,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10981827537,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11055777124,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11144790080,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11155223689,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11164513279,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11181690346,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11375428605,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11430292470,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11506546414,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11643324681,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11682756421,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11831553410,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11965816744,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11983643491,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12016321844,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12037266989,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12056488511,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1211004418,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12265557102,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12319721806,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12333942178,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12411532621,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12539376068,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12556813027,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12588851106,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12617690768,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12655498953,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12657702995,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12695916514,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12717760321,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12785172888,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12861578631,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12954736301,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12968535360,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13025437411,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13246743601,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13374668613,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13396686700,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13518348733,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13579789585,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13673180291,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13780444184,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13943701691,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13959179778,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:14081423961,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:14085466850,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1642124879,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1713269578,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1744846254,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1747594998,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1747962837,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1748985895,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1752655297,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1757645734,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1783200420,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2055529990,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2070192197,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2120465152,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2131722731,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2356416888,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2480681074,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2483025309,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2589920369,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2619982745,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2619982748,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2630773079,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2637692717,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2663431877,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2797599272,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2821712201,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2875040919,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2880721207,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2975197133,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2975364110,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3063907836,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3184251802,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3380798822,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3458890526,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:358804965,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3630274649,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3655078965,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3655078967,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3686447515,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3704012660,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3814942182,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:389414006,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3938249986,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3969664023,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4093403003,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4110684325,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:416783966,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4170062877,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:418504533,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4277285839,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4346737290,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4367160189,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4381516771,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4415329397,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4486208688,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4505464326,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4521168200,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4527800070,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4571256143,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4608698145,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4628519495,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4757358257,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:482787510,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:486844332,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4876323121,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:493887519,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4955864008,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5072653323,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5195372379,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5271583232,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5333489223,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5379572660,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5538419821,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5843184775,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5908962386,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6094554401,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6108087333,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6214944420,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6228596106,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6296221612,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6307708478,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:632819804,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6408085533,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6419894892,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6434217905,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6448797384,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6536460667,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6566898369,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6576221913,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6594791873,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6615573414,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6632478621,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6645904746,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6681775714,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6725758421,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6750614663,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6833566594,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6835340939,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6835646412,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6994373881,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7042991100,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7094840053,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7256260593,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7286972292,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7420054360,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7537811536,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7757334640,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:792205678,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7929815573,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7958679022,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8185858620,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8244032431,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8245534233,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8362031654,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8406326068,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8413941691,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8424037554,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8430924701,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8484206910,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8558664859,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8572592667,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8883627027,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8934828262,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9068677269,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9119087263,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9150192272,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9195152069,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9225267306,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9262530220,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9269027258,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9273534258,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9273534328,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9276981091,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9333723176,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9441060894,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9441386686,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9461916670,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9546068557,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9632520248,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9807537730,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9842629560,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9848385444,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9854064694,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9863068596,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9891211628,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9936345024,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9936881753,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9960552927,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9965399810,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9976231888,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9978936311,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9982832298,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9996189858,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9998360184,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:129559208,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:132746450,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1451939601,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:261044368,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:304760970,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:341926989,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:36730183,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:384584260,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:474471186,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:85688666,The UPS Store,The UPS Store,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:358837450,Thornton Post Office,Thornton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3369212268,Three Rivers Post Office,Three Rivers,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1546549319,Tipton Post Office,Tipton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9424596637,Toan Phuong Cargo,Toan Phuong Cargo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358821818,Todos Santos Station Concord Post Office,Todos Santos Station Concord,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:451682599,Tomales Post Office,Tomales,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358804202,Topaz Post Office,Topaz,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1321549566,Town Center Post Office,Town Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852476,Town and Country Post Office,Town and Country,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3573812493,Townsend Carrier Annex,Townsend Carrier Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:962983952,Tracy Post Office,Tracy,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358834034,Tranquillity Post Office,Tranquillity,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839662,Traver Post Office,Traver,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:97522818,Tres Pinos Post Office,Tres Pinos,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:454607256,Trinidad Post Office,Trinidad,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819087,Trinity Center Post Office,Trinity Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:604011957,Truckee Post Office,Truckee,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:770774044,Tulare Post Office,Tulare,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1001932463,Tulelake Post Office,Tulelake,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:552190362,Tuolumne Post Office,Tuolumne,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2361287215,Tuolumne Meadows Post Office,Tuolumne Meadows,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1288818991,Turlock Post Office,Turlock,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12682386978,Turlock Parcel Co.,Turlock Parcel Co.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:553771509,Twain Harte Post Office,Twain Harte,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8042100602,Two Rock Coast Guard Station Post Office,Two Rock Coast Guard Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8447057826,Tây Nam Cargo,Tây Nam Cargo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13784850955,U.S. Post Office,U.S.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1834843123,U.S. Post Office,U.S.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:174732456,U.S. Post Office,U.S.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:174736901,U.S. Post Office,U.S.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:99144257,U.S. Post Office,U.S.,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2386056122,UPS,UPS,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4372810090,UPS,UPS,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6441600856,UPS,UPS,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8014839185,UPS,UPS,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:104685700,UPS Customer Center,UPS Customer Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5317344850,UPS Customer Center - UPS Cordova Building,UPS Customer Center UPS Cordova Building,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11728505273,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:11840220389,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4220114181,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5009363145,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:9550208954,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:9550208965,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:9690752701,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:265613976,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:687236721,US Post Office,US,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:239271469,"US Post Office, Davenport","US , Davenport",CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6053166085,US Post Office - Crestmont Station,US Crestmont Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:24302728,US Post Office Distribution Center,US Distribution Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:125614186,US Post Office - Millbrae Branch,US Millbrae Branch,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10017282448,US Post Office Mineral CA,US Mineral CA,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:48234214,US Postal Office,US Postal Office,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1610987223,Ukiah Post Office,Ukiah,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819592,Union City Post Office,Union City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:88104921,Union City Post Office,Union City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11178044988,Union Express USA,Union Express USA,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6625189260,Union Post SF,Union Post SF,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:453196659,United Parcel Service,United Parcel Service,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10140253001,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:1014240664,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:10160402608,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11105727494,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11375352146,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11529322408,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11992987829,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12056294056,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12200471489,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12335557060,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13143614401,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:13146448441,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13153912508,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13226836471,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13511257760,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:1362592929,USPS Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:13753050454,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13959255376,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:1674436128,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:1943488152,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2020521894,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2085378876,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2388972240,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2399757049,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2403126776,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2467275620,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2509675399,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2591817577,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2642087074,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2716417674,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2776429225,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2812593737,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2957529800,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2975392797,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:314151192,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:3260413321,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:358819346,USPS,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:358849487,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:3679715123,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4215379578,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4269212795,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4270403925,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4321922452,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4555758394,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4613901100,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4703925820,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4733216590,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4852814840,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5127710510,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5283464291,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5338304559,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5497631973,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5587462376,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5843422101,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5893590052,Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:7281201944,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:761870398,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:7717587137,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:7888534504,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:8246386479,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:8784617197,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:9033905081,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:9120582130,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9211461757,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9277146919,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9510860205,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9898947164,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9925524253,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1020376663,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1024693332,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:107727205,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1188969112,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1193533136,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1218627229,USPS,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:124896892,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1315237032,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1332043002,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1362697414,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1366284109,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1372819175,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:145823233,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1514090667,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1519308072,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:156649826,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:165257514,USPS,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:197748852,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:222695826,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:235418488,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:239950061,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:256667045,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:270513445,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:273583476,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:28239299,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:287550041,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:287601315,Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:291544772,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:305030745,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:311709813,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:311710548,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:311712057,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:324320431,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:341540589,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:344436925,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:357366659,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:382937642,USPS Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:384615089,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:38524900,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:389401328,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:391382817,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:401322758,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:41746134,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:438692084,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:458840171,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:459028316,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:462242956,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:505647936,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:56053510,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:588253396,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:615882038,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:689755225,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:698165656,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:700607854,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:705361447,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:715059935,Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:730973344,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:735113450,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:759755833,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:769533925,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:779725102,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:834603313,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:859975937,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:867010037,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:872832199,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:897354205,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:930690121,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:953858185,United States Post Office,Unknown,CA,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:97638792,Post Office,Unknown,CA,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:358830128,Upper Lake Post Office,Upper Lake,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:596670193,Vallejo Post Office,Vallejo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831613,Valley Ford Post Office,Valley Ford,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835479,Valley Home Post Office,Valley Home,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832949,Valley Springs Post Office,Valley Springs,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823875,Vernon Downtown Post Office,Vernon Downtown,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851320,Veterans Home Post Office,Veterans Home,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13912698701,Victor Post Office,Victor,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8207376561,VietAir Express,VietAir Express,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831377,Villa Grande Post Office,Villa Grande,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2638611675,Village Mail Center,Village Mail Center,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13928713301,Vineburg Post Office,Vineburg,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831709,Vinebury Post Office,Vinebury,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1296419220,Visalia Post Office,Visalia,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13900353901,Visitacion Post Office,Visitacion,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855392,Visitacion Station,Visitacion Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830616,Vista Grande Station Daly City Post Office,Vista Grande Station Daly City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8356930851,Việt Cargo,Việt Cargo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358827232,Volcano Post Office,Volcano,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:151770811,Walnut Creek Post Office,Walnut Creek,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358852487,Walnut Grove Post Office,Walnut Grove,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2672383547,Warm Springs Post Office,Warm Springs,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851596,Washington Manor Station San Leandro Post Office,Washington Manor Station San Leandro,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358835410,Waterford Post Office,Waterford,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:136342802,Watsonville Post Office,Watsonville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1763742092,Wawona,Wawona,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819103,Weaverville Post Office,Weaverville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358851597,Webster Street Station Alameda Post Office,Webster Street Station Alameda,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:732773504,Weed Post Office,Weed,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823648,Weimar Post Office,Weimar,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820068,Wendel Post Office,Wendel,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7744866331,Weott Post Office,Weott,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1425318117,USPS West Grand Carrier Annex,West Grand Carrier Annex,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831210,West Menlo Park Branch Menlo Park Post Office,West Menlo Park Branch Menlo Park,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832919,West Point Post Office,West Point,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358855395,West Portal Station,West Portal Station,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:120653144,West Sacramento Post Office,West Sacramento,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:941158772,Westgate Station San Jose Post Office,Westgate Station San Jose,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358830482,Westlake Station Daly City Post Office,Westlake Station Daly City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12555064437,Westport Post Office,Westport,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358820073,Westwood Post Office,Westwood,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:781944468,Wheatland Post Office,Wheatland,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1015143997,Whitehorn Post Office,Whitehorn,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12101848021,Whitney Mailroom,Whitney Mailroom,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358822649,Williams Post Office,Williams,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358824855,Willits Post Office,Willits,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358819038,Willow Creek Post Office,Willow Creek,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:37909675,Willow Glen Post Office,Willow Glen,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:559673727,Willows Post Office,Willows,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358836969,Wilton Post Office,Wilton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831363,Windsor Post Office,Windsor,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:181487615,Winters Post Office,Winters,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:265898639,Winton Post Office,Winton,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358809613,Witter Springs Post Office,Witter Springs,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358832768,Woodacre Post Office,Woodacre,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1169369728,Woodbridge Post Office,Woodbridge,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358839669,Woodlake Post Office,Woodlake,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358831179,Woodside Post Office,Woodside,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:382937646,Woodside Mail Office,Woodside Mail Office,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5441924612,Wrap N Pack,Wrap N Pack,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13126325982,Yankee Hill Post Office,Yankee Hill,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1197827673,Yolo Post Office,Yolo,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13115230131,Yorkville Post Office,Yorkville,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:164018060,Yosemite Village Post Office,Yosemite Village,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2404422902,You Send Me,You Send Me,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358809342,Yreka Post Office,Yreka,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:358823134,Yuba City Post Office,Yuba City,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1213175966,Zamora Post Office,Zamora,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:756823045,Zenia Post Office,Zenia,CA,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2877006166,mailroomcc.com dhl,mailroomcc.com dhl,CA,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8813107045,利达快递,利达快递,CA,packet_ready,public_postal_anchor_label,public_post_office_label

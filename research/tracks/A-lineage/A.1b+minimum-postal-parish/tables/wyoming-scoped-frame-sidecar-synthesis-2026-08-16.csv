@@ -1,0 +1,4 @@
+metric,value,note
+target_rows,84,Bounded target boxes classified.
+minimum_stack_class_counts,postal_everyday_service_minimum=45; postal_food_service_minimum=15; postal_only_candidate=24,Local Geofabrik sidecar classification counts.
+postal_only_depth_candidates,"Auburn; Carpenter WY; Fairview; Fort Bridger; Grover; Hartville; Hillsdale, WY 82060; LA Barge; Lance Creek; Manville; McKinley; Meriden; Meriden; Osage; Postal Service; Postal Service; Postal Service; Postal Service; Postal Service; Postal Service; Postal Service; Powder River; Smoot; U.S.",Candidates require depth review before any postal-only claim.

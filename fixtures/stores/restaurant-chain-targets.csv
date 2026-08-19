@@ -7,3 +7,4 @@ fast_casual,Chipotle,selective_fast_casual,2,tests higher-selectivity urban and 
 fast_casual,Five Guys,selective_fast_casual,2,tests selective burger fast-casual coverage
 casual_dining,Olive Garden,regional_casual_anchor,3,tests family casual-dining destination nodes
 casual_dining,Cheesecake Factory,high_selectivity_casual_anchor,3,tests mall lifestyle and affluent regional nodes
+pizza_delivery,Domino's,pizza_delivery_provisioning_grid,2,tests pizza delivery and carryout coverage as town/provisioning and highway-service terrain

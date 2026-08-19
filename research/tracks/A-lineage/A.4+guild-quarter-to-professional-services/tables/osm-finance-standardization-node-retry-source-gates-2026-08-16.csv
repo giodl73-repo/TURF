@@ -1,0 +1,7 @@
+"region","field_id","facility_type","endpoint","fetch_status","raw_row_count","error","query_profile"
+"chicago","ford-city-cicero","bank_credit_union","https://maps.mail.ru/osm/tools/overpass/api/interpreter","fetched","1","","bank_credit_union_node_retry"
+"los_angeles","downtown-koreatown-midwilshire","bank_credit_union","https://maps.mail.ru/osm/tools/overpass/api/interpreter","fetched","61","","bank_credit_union_node_retry"
+"los_angeles","west-la-century-city-culver","bank_credit_union","https://maps.mail.ru/osm/tools/overpass/api/interpreter","fetched","36","","bank_credit_union_node_retry"
+"los_angeles","ontario-rancho-cucamonga","bank_credit_union","https://maps.mail.ru/osm/tools/overpass/api/interpreter","fetched","14","","bank_credit_union_node_retry"
+"los_angeles","long-beach-lakewood","bank_credit_union","https://maps.mail.ru/osm/tools/overpass/api/interpreter","fetched","42","","bank_credit_union_node_retry"
+"los_angeles","riverside-tyler-corona","bank_credit_union","https://maps.mail.ru/osm/tools/overpass/api/interpreter","fetched","10","","bank_credit_union_node_retry_single_merge"

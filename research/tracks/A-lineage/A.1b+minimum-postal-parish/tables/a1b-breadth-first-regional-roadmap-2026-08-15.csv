@@ -1,0 +1,8 @@
+roadmap_phase,sequence,scope,deliverable,success_gate,claim_allowed
+closeout,1,current_three_state_phase,"Closeout section, closeout table, README status, wave pulse.","All current pilot and scaffold evidence summarized with claim boundaries.","Bounded pilot finding only."
+regional_seed_acquisition,2,regional_or_multiregion,"Reviewed open post-office seed extract across diverse settlement systems.","Seed validator passes and source-gated rows are reported.","Readiness to sample; no frequency claim."
+settlement_join,3,regional_or_multiregion,"Versioned open settlement-size join for sampled seeds.","Settlement join validator passes with source/date provenance.","Sampling strata only."
+preflight_sample,4,regional_or_multiregion,"Target boxes, enriched targets, and preflight report.","Preflight passes and manifest records real artifact paths.","Auditable sample frame only."
+sidecar_breadth_pass,5,regional_or_multiregion,"Food service, gas/convenience, dollar store, hardware, laundromat, and pizza/delivery sidecars.","Source-gated share is reported by region and settlement stratum.","Sampled target classification only."
+depth_review,6,candidate_outliers,"Manual/open-source review of postal-only or food-service-only edge cases.","Every outlier has source-gate or packet-ready evidence.","Typology of minimum civic-commerce stacks."
+national_summary,7,validated_sample,"Frequency table, source-gated share, examples, counterexamples, and caveats.","Sample coverage and source-gated share meet the manifest threshold.","Bounded sampled frequency, not complete inventory unless separately proven."

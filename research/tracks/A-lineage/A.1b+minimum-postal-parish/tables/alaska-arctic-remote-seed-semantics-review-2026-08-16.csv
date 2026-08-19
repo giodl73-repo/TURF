@@ -1,0 +1,172 @@
+facility_id,facility_name,city,state,review_status,semantic_review_status,semantic_review_reason
+osm:way:513180059,"United States Post Office, Copper Center, Alaska",", Copper Center, Alaska",AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:519455463,"United States Post Office, Healy, Alaska",", Healy, Alaska",AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1347795936,Post Office 99612,99612,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4733392843,Adak Post Office,Adak,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:592807262,Akhiok Post Office,Akhiok,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:928700926,Alakanuk Post Office,Alakanuk,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:254035272,Ambler Post Office,Ambler,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2113579776,Anchor Point Post Office,Anchor Point,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6044092102,Auke Bay Post Office,Auke Bay,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:192454475,Barrow Post Office,Barrow,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:466730144,Bethel Post Office,Bethel,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:510545418,Big Lake Post Office,Big Lake,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4303460896,Campus Mail Center,Campus Mail Center,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:410448271,Cantwell Post Office,Cantwell,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2981713712,Chickaloon Post Office,Chickaloon,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1340969827,Chignik Bay Post Office,Chignik Bay,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5017344512,Chitina Post Office,Chitina,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3665551100,Clam Gulch Post Office,Clam Gulch,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1211998540,Coldfoot Post Office,Coldfoot,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:36599261,College Station Post Office,College Station,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:362349023,Cooper Landing Post Office,Cooper Landing,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:275374420,Denali National Park Post Office,Denali National Park,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:855212133,Dillingham Post Office,Dillingham,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1338987610,Dimond Estaes Mailbox West,Dimond Estaes Mailbox West,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1338985799,Dimond Estates Mail Box Central,Dimond Estates Mail Box Central,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:894584634,Douglas Post Office,Douglas,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:176994131,Dutch Harbor Post Office,Dutch Harbor,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1444048475,Eek Post Office,Eek,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:974394911,Egegik Post Office,Egegik,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1019268922,Emmonak Post Office,Emmonak,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:523706691,United States Post Office Ester Alaska,Ester Alaska,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:60779953,Fairbanks Downtown Station Post Office,Fairbanks Downtown Station,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4788650869,False Pass Post Office,False Pass,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3681459047,FedEx,FedEx,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11115524733,FedEx Ship Center,FedEx Ship Center,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3722067429,FedEx Ship Center,FedEx Ship Center,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:389605458,FedEx Ship Center,FedEx Ship Center,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3430736316,Federal Building Post Office,Federal Building,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11361147693,Fort Richardson Post Office,Fort Richardson,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:870387311,Fort Yukon Post Office,Fort Yukon,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1065197446,Galena Post Office,Galena,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:476371402,Girdwood Post Office,Girdwood,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:416782211,Gustavus Post Office,Gustavus,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1183800903,Halibut Cove Post Office,Halibut Cove,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1724812020,Homer Post Office,Homer,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2512080776,Hoonah Post Office,Hoonah,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:438919250,Hope Post Office,Hope,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:616878161,"Hyder, AK","Hyder, AK",AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:438276216,Kake Post Office,Kake,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:422552900,Kasilof Post Office,Kasilof,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4327570410,Kindred Post,Kindred Post,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1299861675,King Salmon Post Office,King Salmon,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2196693209,Kodiak Post Office,Kodiak,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:238684103,Main Post Office,Main,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1299715738,Mekoryuk Post Office,Mekoryuk,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:823674507,Meyers Chuck Post Office,Meyers Chuck,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:528947091,USPS Moose Pass,Moose Pass,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12040518660,Naknek Post Office,Naknek,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:906951354,Naknek Post Office,Naknek,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:859887468,Nikiski Post Office,Nikiski,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:808528993,Nikolaevsk Post Office,Nikolaevsk,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:677927895,Ninilchik Post Office,Ninilchik,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:287815299,Nome Post Office,Nome,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:254083063,Noorvik Post Office,Noorvik,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1014197936,North Tongass Ward Cove Post Office,North Tongass Ward Cove,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13924333367,Nulato Post Office,Nulato,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:352398529,Palmer U.S. Post Office,Palmer U.S.,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:364094842,Petersburg Post Office,Petersburg,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1446638056,Pilot Station,Pilot Station,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:966258196,Point Lay Post Office,Point Lay,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1127945659,Port Alexander Post Office,Port Alexander,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:514868188,United States Postal Office,Postal Office,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10709742900,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10924109164,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10924109165,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1354160187,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:207320260,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:335829178,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:541827540,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:581501590,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:60727855,United States Postal Service,Postal Service,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5059316901,Salcha Post Office,Salcha,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:649505275,Savoonga Post Office,Savoonga,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10990137273,Seldovia Post Office,Seldovia,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:790915058,Seward Post Office,Seward,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:495750385,Shipping and Receiving	Tent,Shipping and Receiving Tent,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6767443475,Shishmaref Post Office,Shishmaref,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13746758848,Shop and Deliver,Shop and Deliver,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1867280948,Skagway Post Office,Skagway,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:516935175,Slana Post Office,Slana,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:481678848,Stebbins Post Office,Stebbins,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3610224354,Sterling Post Office,Sterling,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7253979598,Stewart,Stewart,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:954444530,Talkeetna Post Office,Talkeetna,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13783630512,Tatitlek Post Office,Tatitlek,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:979954235,Tenakee Springs Post Office,Tenakee Springs,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11115524723,The UPS Store,The UPS Store,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11153696228,The UPS Store,The UPS Store,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2500816499,The UPS Store,The UPS Store,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3008665960,The UPS Store,The UPS Store,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5097725684,The UPS Store,The UPS Store,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5590679802,The UPS Store,The UPS Store,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8940430205,The UPS Store,The UPS Store,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:953152372,The UPS Store,The UPS Store,AK,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:503457923,Tok Post Office,Tok,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3006129337,Trapper Creek Post Office,Trapper Creek,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9969029450,Trident Post Office,Trident,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:823951506,U.S. Post Office,U.S.,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6301818300,U.S. Post Office - Hughes,U.S. Hughes,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:517090370,U.S. Post Office Mentasta Contract Branch,U.S. Mentasta Contract Branch,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2500809713,UPS Customer Center,UPS Customer Center,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:28579257,US Post Office,US,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:672977170,US Post Office - Anaktuvuk Pass,US Anaktuvuk Pass,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:672960868,US Post Office - Evansville/Bettles,US Evansville/Bettles,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:516682736,US Post Office Gakona Alaska,US Gakona Alaska,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:44946233,US Postal Service - Huffman Branch,US Postal Service Huffman Branch,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:384931416,US Postal Service - Sand Lake Branch,US Postal Service Sand Lake Branch,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10995144342,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:11225962452,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11225972866,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12195917828,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12493990001,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13700671647,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:1654987260,Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:1726117316,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2610356744,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2889296149,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2919481247,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2960592446,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4381097791,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4612996197,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4814389645,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5029126065,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:8088420504,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:8828376334,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9348889549,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9497496650,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1034500254,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1177169660,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:131316935,USPS,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1313576644,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:131475037,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1317732983,Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1323344800,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:195365255,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:202093240,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:255270199,Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:255443397,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:261004000,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:28555420,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:303894772,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:304693336,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:344430307,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:442127556,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:479379133,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:500281541,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:583332098,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:60950026,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:616878165,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:650398560,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:696551652,USPS Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:727164307,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:727176071,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:782212918,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:841686015,United States Post Office,Unknown,AK,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:878832325,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:902045723,Post Office,Unknown,AK,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:335989714,Valley Post Office,Valley,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:499549475,Wainwright Post Office,Wainwright,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:638857764,United States Post Office Wasilla AK,Wasilla AK,AK,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3008469070,Willow Post Office,Willow,AK,packet_ready,public_postal_anchor_label,public_post_office_label

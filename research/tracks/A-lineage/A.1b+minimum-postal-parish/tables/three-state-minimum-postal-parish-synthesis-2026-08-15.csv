@@ -1,0 +1,5 @@
+pilot,state,target_boxes,post_office_observed,post_office_checked_absent,post_office_source_gated,postal_observed_classified_targets,postal_food_service_minimum,postal_everyday_service_minimum,postal_only_candidate,postal_signal_absent_or_source_gated,food_service_observed_among_classified,read
+washington,WA,20,18,2,0,18,3,15,0,2,18,No postal-only targets; all postal-observed classified targets retain food-service.
+georgia,GA,20,2,18,0,2,2,0,0,0,2,No postal-only targets; all postal-observed classified targets retain food-service.
+illinois,IL,20,8,2,10,8,3,5,0,12,8,No postal-only targets; all postal-observed classified targets retain food-service.
+combined_three_state,WA+GA+IL,60,28,22,10,28,8,20,0,14,28,"Across three bounded pilots, food-service is observed in every classified postal stack; no postal-only candidate survives."

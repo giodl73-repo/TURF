@@ -1,0 +1,21 @@
+target_id,primary_city,dollar_store_status,candidate_rows,packet_ready_rows,excluded_rows,brands,review_note
+wa-min-postal-bingen,Bingen,observed,1,1,0,Dollar General,Target-brand dollar-store row observed in completed OSM target-box pass.
+wa-min-postal-buckley,Buckley,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-cashmere,Cashmere,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-cathlamet,Cathlamet,observed,1,1,0,Dollar General,Target-brand dollar-store row observed in completed OSM target-box pass.
+wa-min-postal-clallam-bay,Clallam Bay,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-clinton,Clinton,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-colfax,Colfax,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-connell,Connell,observed,1,1,0,Dollar General,Target-brand dollar-store row observed in completed OSM target-box pass.
+wa-min-postal-darrington,Darrington,observed,1,1,0,Family Dollar,Target-brand dollar-store row observed in completed OSM target-box pass.
+wa-min-postal-dayton,Dayton,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-eastsound,Eastsound,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-eatonville,Eatonville,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-forks,Forks,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-friday-harbor,Friday Harbor,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-kettle-falls,Kettle Falls,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-la-conner,La Conner,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-loon-lake,Loon Lake,observed,1,1,0,Dollar General,Target-brand dollar-store row observed in completed OSM target-box pass.
+wa-min-postal-lopez-island,Lopez Island,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.
+wa-min-postal-mattawa,Mattawa,observed,1,1,0,Dollar General,Target-brand dollar-store row observed in completed OSM target-box pass.
+wa-min-postal-mesa,Mesa,checked_absent,0,0,0,,Completed targeted OSM pass returned no target-brand dollar-store rows.

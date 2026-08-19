@@ -1,0 +1,6 @@
+sidecar_category,brand,brand_pattern,role,acquisition_priority,claim_boundary
+pizza_delivery,Domino's,domino,delivery_carryout_pizza_chain,1,"Everyday food-service signal; not delivery coverage, customer access, or service adequacy."
+pizza_delivery,Pizza Hut,pizza hut,delivery_carryout_pizza_chain,1,"Everyday food-service signal; not delivery coverage, customer access, or service adequacy."
+pizza_delivery,Papa Johns,papa john,delivery_carryout_pizza_chain,1,"Everyday food-service signal; not delivery coverage, customer access, or service adequacy."
+pizza_delivery,Little Caesars,little caesars,carryout_pizza_chain,1,"Everyday food-service signal; not delivery coverage, customer access, or service adequacy."
+pizza_delivery,Papa Murphy's,papa murphy,take_and_bake_pizza_chain,2,"Everyday food-service signal; preserve take-and-bake distinction from prepared QSR."

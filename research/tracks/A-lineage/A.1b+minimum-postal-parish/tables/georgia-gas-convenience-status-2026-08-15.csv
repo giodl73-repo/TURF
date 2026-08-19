@@ -1,0 +1,3 @@
+target_id,primary_city,gas_convenience_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+ga-second-pilot-ball-ground,Ball Ground,checked_absent,0,0,0,,Completed OSM gas/convenience target-box pass returned no packet-ready rows.
+ga-second-pilot-cohutta,Cohutta,checked_absent,0,0,0,,Completed OSM gas/convenience target-box pass returned no packet-ready rows.

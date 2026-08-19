@@ -1,0 +1,47 @@
+city,state,layers_present,qsr,grocery,pharmacy,mass_retail,auto_parts,home_improvement,current_chain_stack,sample_layer,sample_brand,sample_store,sample_address,sample_latitude,sample_longitude,pilot_reason,post_office_status
+Ball Ground,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,O'Reilly Auto Parts,O'Reilly Auto Parts,8609 Ball Ground Hwy,34.33466339111328,-84.38524627685547,Georgia auto-parts-only sparse chain signal,needs_fetch
+Cohutta,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,AutoZone,AutoZone,3931 Ruby Dr,34.89630889892578,-84.95089721679688,Georgia auto-parts-only sparse chain signal,needs_fetch
+Greenville,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,NAPA Auto Parts,NAPA Auto Parts,2019 Gaston St,33.02900314331055,-84.7107925415039,Georgia auto-parts-only sparse chain signal,needs_fetch
+Ludowici,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,O'Reilly Auto Parts,O'Reilly Auto Parts,116 E Cypress St,31.713350296020508,-81.74423217773438,Georgia auto-parts-only sparse chain signal,needs_fetch
+Mccaysville,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,O'Reilly Auto Parts,O'Reilly Auto Parts,65 E Tennessee Ave,34.98701095581055,-84.37273406982422,Georgia auto-parts-only sparse chain signal,needs_fetch
+Ocilla,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,O'Reilly Auto Parts,O'Reilly Auto Parts,523 N Irwin Ave,31.601133346557617,-83.25011444091797,Georgia auto-parts-only sparse chain signal,needs_fetch
+Pearson,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,AutoZone,AutoZone,194 Main St N,31.29893684387207,-82.85204315185547,Georgia auto-parts-only sparse chain signal,needs_fetch
+Pelham,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,AutoZone,AutoZone,210 Butler St SW,31.123937606811523,-84.15167999267578,Georgia auto-parts-only sparse chain signal,needs_fetch
+Reynolds,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,NAPA Auto Parts,NAPA Auto Parts,101 W Marion St,32.55938720703125,-84.1056900024414,Georgia auto-parts-only sparse chain signal,needs_fetch
+Turin,GA,1,0,0,0,0,1,0,auto_parts,auto_parts,NAPA Auto Parts,NAPA Auto Parts,5079 GA-16,33.322818756103516,-84.63041687011719,Georgia auto-parts-only sparse chain signal,needs_fetch
+Cuthbert,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,Southside Plaza Hwy 27 S,31.785545349121094,-84.7815933227539,Georgia grocery-only sparse chain signal,needs_fetch
+Franklin,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,241 E Court Square,33.27863693237305,-85.09780883789062,Georgia grocery-only sparse chain signal,needs_fetch
+Kathleen,GA,1,0,1,0,0,0,0,grocery,grocery,Publix,Publix,1136 GA Highway 96,32.547183990478516,-83.69212341308594,Georgia grocery-only sparse chain signal,needs_fetch
+Richland,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,100 Piggly Wiggly Way,32.08641052246094,-84.67349243164062,Georgia grocery-only sparse chain signal,needs_fetch
+Soperton,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,1053 Second Street,32.38147735595703,-82.58949279785156,Georgia grocery-only sparse chain signal,needs_fetch
+Twin City,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,2745 Hwy 80E,32.58293914794922,-82.1551284790039,Georgia grocery-only sparse chain signal,needs_fetch
+Wrightsville,GA,1,0,1,0,0,0,0,grocery,grocery,Piggly Wiggly,Piggly Wiggly,214 W Trilby St,32.73252487182617,-82.72736358642578,Georgia grocery-only sparse chain signal,needs_fetch
+Hull,GA,1,0,0,1,0,0,0,pharmacy,pharmacy,CVS Pharmacy,CVS Pharmacy,8895 Highway 29 S,34.031776428222656,-83.31489562988281,Georgia pharmacy-only sparse chain signal,needs_fetch
+Monticello,GA,1,0,0,1,0,0,0,pharmacy,pharmacy,CVS Pharmacy,CVS Pharmacy,330 E Greene St,33.303287506103516,-83.6808090209961,Georgia pharmacy-only sparse chain signal,needs_fetch
+Bogart,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,2430 Monroe Hwy,33.920745849609375,-83.5162353515625,Georgia qsr-only sparse chain signal,needs_fetch
+Carnesville,GA,1,1,0,0,0,0,0,qsr,qsr,Wendy's,Wendy's,11156 GA-106,34.39052200317383,-83.22708892822266,Georgia qsr-only sparse chain signal,needs_fetch
+College Park,GA,1,3,0,0,0,0,0,qsr,qsr,Burger King,Burger King,5068 Old National Hwy,33.61723709106445,-84.47232818603516,Georgia qsr-only sparse chain signal,needs_fetch
+Colquitt,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,401 W Crawford St,31.169775009155273,-84.73271179199219,Georgia qsr-only sparse chain signal,needs_fetch
+Danielsville,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,32 Mama B Dr,34.12668991088867,-83.21903991699219,Georgia qsr-only sparse chain signal,needs_fetch
+East Dublin,GA,1,1,0,0,0,0,0,qsr,qsr,McDonald's,McDonald's,739b Central Dr,32.54836654663086,-82.87345123291016,Georgia qsr-only sparse chain signal,needs_fetch
+Emerson,GA,1,1,0,0,0,0,0,qsr,qsr,McDonald's,McDonald's,150 Old Allatoona Rd SE,34.11906814575195,-84.74346160888672,Georgia qsr-only sparse chain signal,needs_fetch
+Fort Gordon,GA,1,2,0,0,0,0,0,qsr,qsr,Burger King,Burger King,Ft. Gordon Main,33.41420364379883,-82.13599395751953,Georgia qsr-only sparse chain signal,needs_fetch
+Fort Moore,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,Ft. Benning Mall,32.375797271728516,-84.92335510253906,Georgia qsr-only sparse chain signal,needs_fetch
+Fort Stewart,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,976 William H Wilson Ave,31.867053985595703,-81.61017608642578,Georgia qsr-only sparse chain signal,needs_fetch
+Hapeville,GA,1,3,0,0,0,0,0,qsr,qsr,McDonald's,McDonald's,309 N Central Ave,33.65377426147461,-84.39805603027344,Georgia qsr-only sparse chain signal,needs_fetch
+Helen,GA,1,1,0,0,0,0,0,qsr,qsr,Wendy's,Wendy's,8492 S Main St,34.70094299316406,-83.72803497314453,Georgia qsr-only sparse chain signal,needs_fetch
+Hogansville,GA,1,3,0,0,0,0,0,qsr,qsr,Burger King,Burger King,1945 E Main St,33.158721923828125,-84.86631774902344,Georgia qsr-only sparse chain signal,needs_fetch
+Kings Bay,GA,1,1,0,0,0,0,0,qsr,qsr,McDonald's,McDonald's,1310 USS Daniel Boone Ave,30.793193817138672,-81.57164001464844,Georgia qsr-only sparse chain signal,needs_fetch
+Lake City,GA,1,2,0,0,0,0,0,qsr,qsr,Burger King,Burger King,5141 Jonesboro Rd,33.61534118652344,-84.35016632080078,Georgia qsr-only sparse chain signal,needs_fetch
+Lexington,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,643 Athens Rd,33.87851333618164,-83.11909484863281,Georgia qsr-only sparse chain signal,needs_fetch
+Lizella,GA,1,1,0,0,0,0,0,qsr,qsr,Wendy's,Sugar Bear #1,6333 Marshall Mill Rd,32.75871658325195,-83.84827423095703,Georgia qsr-only sparse chain signal,needs_fetch
+Louisville,GA,1,1,0,0,0,0,0,qsr,qsr,McDonald's,McDonald's,204 US Highway 1 North Byp,33.01103973388672,-82.39928436279297,Georgia qsr-only sparse chain signal,needs_fetch
+Martinez,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,433 S Belair Rd,33.48369598388672,-82.13267517089844,Georgia qsr-only sparse chain signal,needs_fetch
+Moody Afb,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,904 Moody Rd Building 904,30.973766326904297,-83.20841979980469,Georgia qsr-only sparse chain signal,needs_fetch
+Nahunta,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,13200 W Cleveland St,31.201276779174805,-81.99048614501953,Georgia qsr-only sparse chain signal,needs_fetch
+Register,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,2925 US-301,32.30365753173828,-81.87124633789062,Georgia qsr-only sparse chain signal,needs_fetch
+Riceboro,GA,1,1,0,0,0,0,0,qsr,qsr,McDonald's,McDonald's,35 Montague St,31.651586532592773,-81.39293670654297,Georgia qsr-only sparse chain signal,needs_fetch
+Robins Afb,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,982 Macon St,32.599369049072266,-83.58568572998047,Georgia qsr-only sparse chain signal,needs_fetch
+Springfield,GA,1,2,0,0,0,0,0,qsr,qsr,Taco Bell,Taco Bell,1262 Hwy 21 S,32.35068130493164,-81.29642486572266,Georgia qsr-only sparse chain signal,needs_fetch
+Unadilla,GA,1,2,0,0,0,0,0,qsr,qsr,Burger King,Burger King,675 Pine St.,32.24628829956055,-83.74593353271484,Georgia qsr-only sparse chain signal,needs_fetch
+Zebulon,GA,1,1,0,0,0,0,0,qsr,qsr,Burger King,Burger King,9215 US-19,33.11311340332031,-84.33935546875,Georgia qsr-only sparse chain signal,needs_fetch

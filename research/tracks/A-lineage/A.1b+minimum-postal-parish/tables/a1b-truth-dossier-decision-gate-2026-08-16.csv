@@ -1,0 +1,4 @@
+decision_area,status,evidence_basis,next_action,claim_boundary
+truth_dossier_queue,complete,9 candidate rows; 0 unreviewed rows.,Synthesize classes before adding breadth.,Queue completeness only; not a frequency claim.
+target_box_exemplar_language,allowed_with_boundary,9 strict target-box survivors and 0 provisional survivor.,"Use only target-box language and attach operations, nearby-service, or trade-service constraints as applicable.",Does not authorize complete service absence or catchment isolation.
+frequency_language,blocked,Bounded sample remains descriptive after denominator gates and dossiers.,Add another breadth wave or a formal sampled-frequency design before regional or national claims.,"No regional, stratum, or national frequency claim."

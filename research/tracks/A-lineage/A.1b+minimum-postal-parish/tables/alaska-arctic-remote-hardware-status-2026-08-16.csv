@@ -1,0 +1,13 @@
+target_id,primary_city,facility_type,sidecar_status,packet_ready_rows,observed_facility_names,claim_boundary
+national-post-office-ak-savoonga-28e6d58a5b,Savoonga,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-denali-national-park-95f11edfc1,Denali National Park,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-nikiski-715ab2cb27,Nikiski,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-nome-957c64f1f5,Nome,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-north-tongass-ward-cove-7bf0ffd1e9,North Tongass Ward Cove,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-homer-c28298bbbd,Homer,hardware,observed,2,Spenard Builder's Supply,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-postal-service-33114dbd26,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-galena-3802346ef8,Galena,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-willow-6c7dbde30c,Willow,hardware,observed,1,Willow True Value Hardware,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-clam-gulch-e69b030ff3,Clam Gulch,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-postal-service-ed9cb8ff5d,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ak-fairbanks-downtown-station-c6be537924,Fairbanks Downtown Station,hardware,observed,4,Central Welding Supply; Lowe's; The Home Depot; The Samson Hardware Company,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.

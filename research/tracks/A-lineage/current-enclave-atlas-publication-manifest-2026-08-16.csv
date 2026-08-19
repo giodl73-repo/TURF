@@ -1,0 +1,28 @@
+artifact_id,artifact_path,artifact_type,required_for_publication,publication_role,status
+PAM-001,central-spine.md,context,yes,Defines the Track A central historical spine,present
+PAM-002,central-spine-synthesis.md,synthesis,yes,Synthesizes A.1 through A.4 into the current-enclave frame,present
+PAM-003,central-spine-synthesis-2026-08-16.csv,data,yes,Machine-readable central-spine synthesis table,present
+PAM-004,current-enclave-first-atlas-narrative.md,narrative,yes,Readable atlas narrative for the selected-field stack,present
+PAM-005,current-enclave-first-atlas-summary.md,summary,yes,Short atlas summary and field classification,present
+PAM-006,current-enclave-first-atlas-closeout.md,closeout,yes,Field-by-field closeout and caveat register,present
+PAM-007,current-enclave-first-atlas-closeout-2026-08-16.csv,data,yes,Machine-readable closeout comparison,present
+PAM-008,current-enclave-claim-surface-decision.md,decision,yes,Records selected and deferred claim surfaces,present
+PAM-009,current-enclave-claim-surface-decision-2026-08-16.csv,data,yes,Machine-readable claim-surface decision table,present
+PAM-010,current-enclave-claim-packet-design.md,design,yes,Defines packet structure and field rules,present
+PAM-011,current-enclave-claim-packet-schema-2026-08-16.csv,schema,yes,Machine-readable packet schema,present
+PAM-012,current-enclave-selected-field-manifest-2026-08-16.csv,manifest,yes,Lists selected fields and packet roles,present
+PAM-013,current-enclave-packet-CEP-001-long-beach-lakewood.md,packet,yes,Clean full-stack packet,present
+PAM-014,current-enclave-packet-CEP-001-long-beach-lakewood-ledger-2026-08-16.csv,evidence_ledger,yes,CEP-001 source ledger,present
+PAM-015,current-enclave-packet-CEP-002-arlington-grand-prairie.md,packet,yes,Highway-service full-stack packet with caveat,present
+PAM-016,current-enclave-packet-CEP-002-arlington-grand-prairie-ledger-2026-08-16.csv,evidence_ledger,yes,CEP-002 source ledger,present
+PAM-017,current-enclave-packet-CEP-003-cherry-hill-moorestown.md,packet,yes,Corridor-service partial movement packet,present
+PAM-018,current-enclave-packet-CEP-003-cherry-hill-moorestown-ledger-2026-08-16.csv,evidence_ledger,yes,CEP-003 source ledger,present
+PAM-019,current-enclave-packet-CEP-004-loop-river-north.md,packet,yes,Depot/intermodal plus service-profile-gap packet,present
+PAM-020,current-enclave-packet-CEP-004-loop-river-north-ledger-2026-08-16.csv,evidence_ledger,yes,CEP-004 source ledger,present
+PAM-021,current-enclave-packet-CEP-005-kingston-wa.md,packet,yes,Ferry-side design-only contrast packet,present
+PAM-022,current-enclave-packet-CEP-005-kingston-wa-ledger-2026-08-16.csv,evidence_ledger,yes,CEP-005 source ledger,present
+PAM-023,current-enclave-packet-CEP-006-kitsap-mall-silverdale.md,packet,yes,Light-control service-quarter contrast packet,present
+PAM-024,current-enclave-packet-CEP-006-kitsap-mall-silverdale-ledger-2026-08-16.csv,evidence_ledger,yes,CEP-006 source ledger,present
+PAM-025,current-enclave-atlas-publication-package.md,package,yes,Collects the atlas release bundle,present
+PAM-026,current-enclave-atlas-publication-readiness.md,readiness,yes,Records publication readiness and source gate,present
+PAM-027,current-enclave-atlas-publication-manifest-2026-08-16.csv,publication_manifest,yes,Inventories required package artifacts,present

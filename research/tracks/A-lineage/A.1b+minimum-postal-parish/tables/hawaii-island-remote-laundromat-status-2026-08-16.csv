@@ -1,0 +1,13 @@
+target_id,primary_city,settlement_size_proxy,sidecar_status,packet_ready_rows,named_rows,source_gated_rows,observed_names,evidence
+national-post-office-hi-aina-haina-25f05ecf40,Aina Haina,50000_plus,observed,2,2,0,Alphim’s Dry Cleaner; Hakuyosha Clean Living,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-downtown-hilo-91a7b50724,Downtown Hilo,10000_to_49999,observed,3,3,0,Big Island Dry Cleaners; Downtown Laundry Express; Tyke’s Laudromat,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-eleele-decc48678b,Eleele,2500_to_9999,observed,1,1,0,Eleele Landromat,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-89c3ba0615,FedEx,50000_plus,observed,7,7,0,Hakuyosha Clean Living; Hakuyosha Dry Cleaners; Kapahulu Xpress Laundromat; Manoa Laundry; Nuuanu Laundry; Waikiki Laundromat; iDo Laundry,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-c4048ca71c,FedEx,10000_to_49999,observed,4,4,0,Big Island Dry Cleaners; Downtown Laundry Express; Kandi’s Laundromat; Tyke’s Laudromat,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-office-5b5e62b74d,FedEx Office,50000_plus,observed,2,2,0,Aloha Dry Cleaners and Laundry; Hakuyosha Clean Living,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-office-d898801937,FedEx Office,50000_plus,observed,7,7,0,Hakuyosha Clean Living; Hakuyosha Dry Cleaners; Kapahulu Xpress Laundromat; Nuuanu Laundry; United Laundry Services; Waikiki Laundromat; iDo Laundry,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-ship-center-db01140995,FedEx Ship Center,50000_plus,observed,2,2,0,Salt Lake Laundry; United Laundry Services,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-hawaii-kai-station-35e19a89d6,Hawaii Kai Station,50000_plus,observed,1,1,0,Hakuyosha Clean Living,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-holualoa-792d6ec145,Holualoa,10000_to_49999,checked_absent,0,0,0,,No packet-ready named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-honaunau-fdd6693c98,Honaunau,2500_to_9999,checked_absent,0,0,0,,No packet-ready named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-honomu-13b4cb3d6c,Honomu,2500_to_9999,checked_absent,0,0,0,,No packet-ready named laundromat rows from Geofabrik OSM GeoPackage within target box.

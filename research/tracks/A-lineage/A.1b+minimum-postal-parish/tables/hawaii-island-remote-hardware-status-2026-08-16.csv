@@ -1,0 +1,13 @@
+target_id,primary_city,settlement_size_proxy,sidecar_status,packet_ready_rows,named_rows,source_gated_rows,observed_names,evidence
+national-post-office-hi-aina-haina-25f05ecf40,Aina Haina,50000_plus,observed,1,1,0,City Mill,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-downtown-hilo-91a7b50724,Downtown Hilo,10000_to_49999,observed,4,3,0,Ace Hardware; HPM Building Supply; The Home Depot,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-eleele-decc48678b,Eleele,2500_to_9999,checked_absent,0,0,0,,No packet-ready named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-89c3ba0615,FedEx,50000_plus,observed,8,7,0,C@C Cabinets Granite; City Mill; Golden Cabinets and Stone; Kaimuki Ace Hardware; Lowe's; The Home Depot; Wisteria Lane,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-c4048ca71c,FedEx,10000_to_49999,observed,4,3,0,Ace Hardware; HPM Building Supply; The Home Depot,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-office-5b5e62b74d,FedEx Office,50000_plus,observed,3,3,0,City Mill; Lowe's; The Home Depot,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-office-d898801937,FedEx Office,50000_plus,observed,7,7,0,C@C Cabinets Granite; City Mill; Golden Cabinets and Stone; Lowe's; Pacific Source; The Home Depot; Wisteria Lane,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-fedex-ship-center-db01140995,FedEx Ship Center,50000_plus,observed,7,6,0,C@C Cabinets Granite; Golden Cabinets and Stone; Lowe's; Pacific Source; The Home Depot; Wisteria Lane,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-hawaii-kai-station-35e19a89d6,Hawaii Kai Station,50000_plus,observed,1,1,0,City Mill,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-holualoa-792d6ec145,Holualoa,10000_to_49999,observed,1,1,0,Lowe's,Named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-honaunau-fdd6693c98,Honaunau,2500_to_9999,checked_absent,0,0,0,,No packet-ready named hardware rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-hi-honomu-13b4cb3d6c,Honomu,2500_to_9999,checked_absent,0,0,0,,No packet-ready named hardware rows from Geofabrik OSM GeoPackage within target box.

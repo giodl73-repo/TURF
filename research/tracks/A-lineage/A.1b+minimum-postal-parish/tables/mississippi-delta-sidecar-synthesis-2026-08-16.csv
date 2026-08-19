@@ -1,0 +1,4 @@
+metric,value,note
+target_rows,12,Bounded target boxes classified.
+minimum_stack_class_counts,postal_everyday_service_minimum=5; postal_only_candidate=7,Local Geofabrik sidecar classification counts.
+postal_only_depth_candidates,Tutwiler; Bigbee Valley; Union Church; Phillip; Crowder; Nitta Yuma; Valley Park,Candidates require depth review before any postal-only claim.

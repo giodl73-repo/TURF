@@ -1,0 +1,3 @@
+source,source_url,source_date,license_status,rights_status,review_status,review_note
+Geofabrik OpenStreetMap GeoPackage extract,https://download.geofabrik.de/north-america/us/hawaii-latest-free.gpkg.zip,2026-08-14T20:21:03Z,open,ODbL; attribution and share-alike required,packet_ready,Hawaii Island and Remote post-office seed extract from Geofabrik OSM GeoPackage.
+U.S. Census Bureau 2020 PL 94-171 geography,https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/Hawaii/hi2020.pl.zip,2020-04-01,open,public domain,packet_ready,Hawaii 2020 PL geography file used for settlement-size proxy join.

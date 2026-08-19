@@ -1,0 +1,21 @@
+target_id,primary_city,post_office_status,post_office_rows,primary_ready_rows,address_incomplete_rows,review_note
+ga-second-pilot-ball-ground,Ball Ground,observed,1,1,0,USPS/post-office row observed with street address and postal code where available.
+ga-second-pilot-cohutta,Cohutta,observed,2,0,2,Post-office row observed inside the target box but address tags are incomplete.
+ga-second-pilot-greenville,Greenville,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-ludowici,Ludowici,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-cuthbert,Cuthbert,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-franklin,Franklin,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-kathleen,Kathleen,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-richland,Richland,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-bogart,Bogart,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-carnesville,Carnesville,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-college-park,College Park,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-colquitt,Colquitt,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-hull,Hull,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-monticello,Monticello,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-mccaysville,Mccaysville,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-ocilla,Ocilla,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-pearson,Pearson,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-pelham,Pelham,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-reynolds,Reynolds,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.
+ga-second-pilot-turin,Turin,checked_absent,0,0,0,Completed OSM post-office target-box pass returned no post-office rows.

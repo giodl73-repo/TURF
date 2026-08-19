@@ -1,0 +1,13 @@
+target_id,primary_city,facility_type,sidecar_status,packet_ready_rows,observed_facility_names,claim_boundary
+national-post-office-mn-iverson-23fd0326ee,Iverson,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-harmony-6f58a446af,Harmony,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-porter-67f45c7c9d,Porter,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-heron-lake-96bbf7a835,Heron Lake,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-jackson-9a163870c4,Jackson,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-new-ulm-55013a5407,New Ulm,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-courtland-fb88186654,Courtland,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-magnolia-0269ffd60c,Magnolia,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-wawina-7b82e8b2c3,Wawina,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-orr-2b5957cb45,Orr,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-naytahwaush-6612276cf7,Naytahwaush,laundromat,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-mn-chanhassen-7760ede94d,Chanhassen,laundromat,observed,2,Best Cleaners; Hour Glass Cleaners,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.

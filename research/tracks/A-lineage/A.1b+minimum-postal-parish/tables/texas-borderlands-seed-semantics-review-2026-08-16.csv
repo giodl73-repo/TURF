@@ -1,0 +1,1445 @@
+facility_id,facility_name,city,state,review_status,semantic_review_status,semantic_review_reason
+osm:node:1659914169,"Post Office, Hunt, TX 78024",", Hunt, TX 78024",TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1254631344,"United States Post Office, Rowena, Texas 76857",", Rowena, Texas 76857",TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9370997459,1-Stop Mail Service,1 Stop Mail Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1459726334,USPS 79745,79745,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:498398326,United States Post Office - 8th Avenue,8th Avenue,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14053291601,USPS AMF HOUSTON,AMF HOUSTON,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1120710281,Abernathy Post Office,Abernathy,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11725083449,Ace Post Office,Ace,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:544329776,Acton Post Office,Acton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258698180,Addison Post Office,Addison,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1797092019,Addison Circle Post,Addison Circle Post,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1059823166,Adrian Post Office,Adrian,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356754489,Aldrich Post Office,Aldrich,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258702476,Allen Post Office,Allen,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:955192373,USPS Allen Post Office,Allen,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4484542248,Allison Post Office,Allison,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:362276898,Altair Post Office,Altair,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:545765944,Alvarado Post Office,Alvarado,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14066025258,United States Post Office Amarillo Downtown Station,Amarillo Downtown Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857465,Amon Carter Post Office,Amon Carter,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4331539700,Anderson Post Office,Anderson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1219583754,Angleton Post Office,Angleton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259289406,Anna Post Office,Anna,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:407116887,United States Post Office Anson Jones Station,Anson Jones Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1317723972,Aquilla Post Office,Aquilla,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1155931267,Archer City Post Office,Archer City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:686964125,Arp Post Office,Arp,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905487102,Asherton Post Office,Asherton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:186829102,Ashford West Post Office,Ashford West,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:186826435,Astrodome Post Office,Astrodome,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356861632,Atascosa Post Office,Atascosa,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1055816040,Atlanta Post Office,Atlanta,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:707437827,Aubrey Post Office,Aubrey,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:717662163,Avalon Post Office,Avalon,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1797569745,USPS - Azalea Station,Azalea Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2967651306,Azle Post Office,Azle,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1127944474,Bacliff Post Office,Bacliff,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1130672763,Baird Post Office,Baird,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258995950,Balch Springs Post Office,Balch Springs,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356854587,Balcones Post Office,Balcones,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857481,Bardin Road Post Office,Bardin Road,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258874015,Bardwell Post Office,Bardwell,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:609243617,Barker Post Office,Barker,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258874969,Barry Post Office,Barry,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905503301,Barstow Post Office,Barstow,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11725083434,Batson Post Office,Batson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8904241580,Bayor MaiL Rom,Bayor MaiL Rom,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356866823,Baytown Post Office,Baytown,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:746790663,Beacon Hill Post Office,Beacon Hill,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12954191094,Bearcat Pack & Ship,Bearcat Pack & Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:152291574,Beaumont Main Post Office,Beaumont Main,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:437272337,Bedford Post Office,Bedford,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2470041994,Bedias Post Office,Bedias,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1687385590,Beeville Post Office,Beeville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:252326681,Bellaire Post Office,Bellaire,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2636016016,Bellville Post Office,Bellville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356754486,Belott Post Office,Belott,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:383895928,Ben Wheeler Post Office,Ben Wheeler,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11846042551,Benbrook Post Office,Benbrook,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356853063,Bergheim Post Office,Bergheim,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1322836162,Bethany Post Office,Bethany,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2287609240,Big Bend National Park Post Office,Big Bend National Park,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2217089815,Big Lake Post Office,Big Lake,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6989939744,Big Sandy Post Office,Big Sandy,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905487101,Big Wells Post Office,Big Wells,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:403512520,Blanco Post Office,Blanco,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2636016032,Blieblerville Post Office,Blieblerville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:708099187,Blue Ridge Post Office,Blue Ridge,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:382502515,Bluebonnet Station,Bluebonnet Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:805838398,Bluff Dale Post Office,Bluff Dale,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:978912540,Blum Post Office,Blum,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852769,Boerne Post Office,Boerne,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905503303,Bovina Post Office,Bovina,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12401197338,Box & Go Shipping Company,Box & Go Shipping Company,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905495101,Brackettville Post Office,Brackettville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:217920512,Brady Post Office,Brady,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:734236444,Breckenridge Post Office,Breckenridge,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:834559476,Brenham Post Office,Brenham,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:584763671,USPS Briggs,Briggs,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4484542250,Briscoe Post Office,Briscoe,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1218653706,Bronte Post Office,Bronte,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:734551717,Brookeland Post Office,Brookeland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1222175730,Bruni Post Office,Bruni,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:344198320,Bryson Post Office,Bryson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356853222,Buchanan Dam Post Office,Buchanan Dam,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1261870924,Buna Post Office,Buna,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1470150107,Burkburnett Post Office,Burkburnett,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11724823714,Burkeville Post Office,Burkeville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:781680851,Burton Post Office,Burton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:948464230,Bushland Post Office,Bushland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10606645908,USPS CIVIC CENTER — Post Office™,CIVIC CENTER — ™,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14053219203,USPS CORNERSTONE,CORNERSTONE,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1127641805,Caddo Post Office,Caddo,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258897977,Caddo Mills Post Office,Caddo Mills,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1261870931,Call Post Office,Call,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1064087519,Camp Wood Post Office,Camp Wood,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1134660522,Campbellton Post Office,Campbellton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:560565584,Campus Post Office,Campus,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:5391392,Camron Post Office,Camron,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258875545,Canton Post Office,Canton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:473693531,Canyon Post Office,Canyon,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13475070541,Canyon Creek Postal,Canyon Creek Postal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:708109241,Cardinal Carriers,Cardinal Carriers,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:643015770,Carl Range Post Office,Carl Range,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905487103,Carrizo Springs Post Office,Carrizo Springs,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258701204,Carrollton Post Office - Rosemeade Station,Carrollton Rosemeade Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2636016043,Cat Spring Post Office,Cat Spring,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1467488046,Cayuga Post Office,Cayuga,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1215187288,Cedar Creek Post Office,Cedar Creek,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:239126494,Cedar Elm Post Office,Cedar Elm,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:29169983,Cedar Park Post Office,Cedar Park,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:715612397,Celeste Post Office,Celeste,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258701892,Celina Post Office,Celina,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:663947410,Central Bedford Post Office,Central Bedford,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356854603,Central Park Station Post Office,Central Park Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852980,Cervantes Post Office,Cervantes,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:476950913,Channing Post Office,Channing,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1291682978,Charlotte Post Office,Charlotte,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258877623,Chatfield Post Office,Chatfield,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1178596758,Chester Post Office,Chester,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:901708729,Childress Post Office,Childress,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356854611,Chimney Corners Post Office,Chimney Corners,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11703984453,China Post Office,China,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356757130,China Spring Post Office,China Spring,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1308297288,Christine Post Office,Christine,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:824625369,Cibolo Post Office,Cibolo,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:862880860,Claude Post Office,Claude,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:201805703,Cleburne Post Office,Cleburne,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1164899572,Clifton Post Office,Clifton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1017489612,Clute Post Office,Clute,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1125702694,Clyde Post Office,Clyde,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:292673733,Coldspring Post Office,Coldspring,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1184099373,Coleman Post Office,Coleman,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857533,Colleyville Post Office,Colleyville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:734273413,Colorado City Post Office,Colorado City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:835944976,Columbus Post Office,Columbus,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:734276266,Comanche Post Office,Comanche,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:596120056,Comstock Post Office,Comstock,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905494802,Concan Post Office,Concan,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1081638408,Connect Packing and Shipping,Connect Packing and Shipping,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:352350096,Converse Post Office,Converse,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4633445566,Cookville Post Office,Cookville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258887906,Copeville Post Office,Copeville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258703039,Coppell Post Office,Coppell,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1368209517,Copperas Cove Post Office,Copperas Cove,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852490,Copperas Cove Stagestop and Post Office,Copperas Cove Stagestop and,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13885858906,Copy Post & Ship,Copy Post & Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258895101,Corsicana Post Office,Corsicana,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:837504224,Cotulla Post Office,Cotulla,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357412688,Courtney Post Office,Courtney,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1339158712,Covington Post Office,Covington,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:702570220,Coyanosa Post Office,Coyanosa,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258880146,Crandall Post Office,Crandall,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12195871063,Cranfills Gap Post Office,Cranfills Gap,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1258902243,Crawford Post Office,Crawford,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:520687549,Crosby Post office 77532,Crosby 77532,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:31971351,USPS Cross Park GMF,Cross Park GMF,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1015097048,Crystal Beach Station,Crystal Beach Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905487104,Crystal City Post Office,Crystal City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:746222162,Cumby Post Office,Cumby,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1012801834,DFW Dallas Post Office,DFW Dallas,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13870243502,DHL,DHL,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1425957164,DHL Express Service Point,DHL Express Service Point,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:29191104,Dallas Post Office,Dallas,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259286004,Dallas Post Office - Bent Tree Station,Dallas Bent Tree Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259012008,Dallas Post Office - Beverly Hills Station,Dallas Beverly Hills Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259278555,Dallas Post Office - Brookhollow Station,Dallas Brookhollow Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:25493228,Dallas Post Office - DFW Station,Dallas DFW Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:179384842,Dallas Post Office - Downtown Station,Dallas Downtown Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259266974,Dallas Post Office - Highland Hills Station,Dallas Highland Hills Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259213507,Dallas Post Office - Lake Highlands Station,Dallas Lake Highlands Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2643276581,Dallas Post Office - Mockingbird Finance Station,Dallas Mockingbird Finance Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:221378903,Dallas Post Office - Oak Lawn Station,Dallas Oak Lawn Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259132202,Dallas Post Office - Pleasant Grove Station,Dallas Pleasant Grove Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857850,Dallas Post Office - Preston Royal Station,Dallas Preston Royal Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259281175,Dallas Post Office - Prestonwood Station,Dallas Prestonwood Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259004069,Dallas Post Office - Station A,Dallas Station A,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259002970,Dallas Post Office - University Station,Dallas University Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259135465,Dallas Post Office - White Rock Station,Dallas White Rock Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259015685,Dallas Post Office – Juanita Craft Station,Dallas – Juanita Craft Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259013439,Dallas Post Office – Lakewood Station,Dallas – Lakewood Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259157352,Dallas Post Office – Medrano Station,Dallas – Medrano Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259157629,Dallas Post Office – Northaven Station,Dallas – Northaven Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2645244855,Dallas Post Office – Northlake Finance Station,Dallas – Northlake Finance Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:223384787,Dallas Post Office – Northwest Station,Dallas – Northwest Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259156733,Dallas Post Office – Parkdale Station,Dallas – Parkdale Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:222702375,Dallas Post Office – Preston Station,Dallas – Preston Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259273041,Dallas Post Office – Richland Station,Dallas – Richland Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1144920099,Dallas Post Office – Robert E. Price Station,Dallas – Robert E. Price Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259158416,Dallas Post Office – Robert E. Price Station,Dallas – Robert E. Price Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259282055,Dallas Post Office – Seagoville Station,Dallas – Seagoville Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259265819,Dallas Post Office – Spring Valley Station,Dallas – Spring Valley Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259158776,Dallas Post Office – Vickery Station,Dallas – Vickery Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1232194618,Danbury Post Office,Danbury,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1255769398,Darrouzett Post Office,Darrouzett,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1036375029,Dawson Post Office,Dawson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:845339236,De Leon Post Office,De Leon,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258881121,DeSoto Post Office,DeSoto,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:366504278,Debora Sue Schatz Post Office,Debora Sue Schatz,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:990261504,Deer Park Post Office,Deer Park,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:199540196,Del Rio Post Office,Del Rio,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258706815,Denison Post Office,Denison,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:260407126,Denton Main Post Office 76201,Denton Main 76201,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:808066421,United States Post Office Denver Harbor,Denver Harbor,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4209883089,Deport Post Office,Deport,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1023963985,Desdemona Post Office,Desdemona,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1261870847,Deweyville Post Office,Deweyville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635448176,Diboll Post Office,Diboll,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1064902446,Diboll Post Office,Diboll,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1780052230,"Dime Box, Texas","Dime Box, Texas",TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:357556658,Doss Post Office,Doss,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1330580362,Douglass Post Office,Douglass,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1056021212,Douglassville Post Office,Douglassville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852493,Downtown Post Office,Downtown,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857570,Downtown Irving Post Office,Downtown Irving,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:442966428,Downtown Lubbock Post Office,Downtown Lubbock,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:362330153,Downtown Waco Post Office,Downtown Waco,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259126234,Dr. Caesar A. W. Clark Sr. Post Office,Dr. Caesar A. W. Clark Sr.,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:320014720,Dr. Hector Perez Garcia Post Office Building,Dr. Hector Perez Garcia Building,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:382446233,Drive-Thru Postal Services,Drive Thru Postal Services,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:919386802,USPS - Dumas,Dumas,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258898501,Duncanville Post Office,Duncanville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8857472530,EZ SHIP,EZ SHIP,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4139506350,Eagle Post Office,Eagle,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11491143381,Eagle Postal Center,Eagle Postal Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11846090025,Eagle Postal Center,Eagle Postal Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6884246524,Eagle Postal Center,Eagle Postal Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9151312697,Eagle Postal Center,Eagle Postal Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1047023180,Eagle Postal Center,Eagle Postal Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:909448545,Eagle Postal Center,Eagle Postal Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10276827908,Eagle Postal Express,Eagle Postal Express,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356854626,East Austin Post Office,East Austin,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:557080770,East Bardin Road Post Office,East Bardin Road,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:734231389,Eastland Post Office,Eastland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3071914493,EcoBox,EcoBox,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258883496,Edgewood Post Office,Edgewood,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1417648337,Edmonson Post Office,Edmonson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3203488518,El Campo Post Office,El Campo,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:747931359,El Indio Post Office,El Indio,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10754611553,El Paso Post Office,El Paso,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2634780502,Elkhart Post Office,Elkhart,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3018997839,Ellinger Post Office,Ellinger,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258884454,Elmo Post Office,Elmo,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:837439271,Encinal Post Office,Encinal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1007860614,Encino Post Office,Encino,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258886200,Ennis Post Office,Ennis,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1464408184,Estelline Post Office,Estelline,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:499570557,Euless Post Office,Euless,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258889369,Eustace Post Office,Eustace,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1261870921,Evadale Post Office,Evadale,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3666214996,USPS FOXBROOK,FOXBROOK,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1200022816,Fabens Post Office,Fabens,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:935519720,Falfurrias Post Office,Falfurrias,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:733741374,Falls City Post Office,Falls City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:658941190,Farmersville Post Office,Farmersville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1042330404,Farnsworth Post Office,Farnsworth,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:755774160,Farwell Post Office,Farwell,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:708638060,Fate Post Office,Fate,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3018972729,Fayetteville Post Office,Fayetteville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11710128533,FedEx,FedEx,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6918758027,FedEx,FedEx,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7139973437,FedEx,FedEx,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:704421141,FedEx,FedEx,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:710429172,FedEx,FedEx,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:751641814,FedEx,FedEx,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:503888881,FedEx Freight,FedEx Freight,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:525614739,FedEx Freight,FedEx Freight,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:706621724,FedEx Freight,FedEx Freight,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:853098681,FedEx Freight,FedEx Freight,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:503894672,FedEx Ground,FedEx Ground,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:840356806,FedEx Ground,FedEx Ground,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:853105251,FedEx Ground,FedEx Ground,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:923240949,FedEx Ground,FedEx Ground,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:963772456,FedEx Ground,FedEx Ground,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10745004742,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11535150235,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11710124077,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12055131337,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12393081113,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12710714317,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13111157528,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13191783735,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13248534600,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13452788085,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13643723206,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13658692820,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13757574504,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:14003701658,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5760449055,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7901902076,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8980904074,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9704163945,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:223364430,FedEx Office,FedEx Office,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11291347521,FedEx Print & Ship Center,FedEx Print & Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10772373851,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11072261948,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12737871801,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13239976036,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13373023480,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13417685840,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7412566811,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1066713157,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1203529458,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1215459329,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:220971910,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:486032444,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:557850427,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:914513285,FedEx Ship Center,FedEx Ship Center,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:258889921,Ferris Post Office,Ferris,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1416016626,Flatonia Post Office,Flatonia,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:970122924,Flint Rock Mail Building,Flint Rock Mail Building,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:383129941,Flint Rock Mailboxes,Flint Rock Mailboxes,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:383132219,Flint Rock Mailboxes,Flint Rock Mailboxes,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:383132238,Flint Rock Mailboxes,Flint Rock Mailboxes,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1419568874,Floresville Post Office,Floresville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:41734893,Flower Mound Post Office,Flower Mound,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:52054565,Forney Post Office,Forney,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:992376909,Fort Bliss Post Office,Fort Bliss,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:976495688,Fort Cavazos Post Office,Fort Cavazos,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:993123503,Fort Hancock Post Office,Fort Hancock,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852637,Fort Sam Houston Branch Post Office,Fort Sam Houston Branch,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905500201,Fort Stockton Post Office,Fort Stockton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:765825747,Fort Worth Jack D. Watson Post Office,Fort Worth Jack D. Watson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:178760843,Fort Worth Main Post Office,Fort Worth Main,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6407783993,Franklin Post Office,Franklin,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:552407785,Frankston Post Office,Frankston,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:884239934,Freedom MAIL Center,Freedom MAIL Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1017469497,Freeport Post Office,Freeport,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5109660321,Friendswood Post Office,Friendswood,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258710814,Frisco Post Office,Frisco,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:919025290,Frisco Post Office - Teel Village Station,Frisco Teel Village Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:714099793,Frost Post Office,Frost,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258892282,Fruitvale Post Office,Fruitvale,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635665897,Fulton Post Office,Fulton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14053201701,USPS GREENS NORTH,GREENS NORTH,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1024488331,Gail Post Office,Gail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:762998371,Galnea Park Post Office,Galnea Park,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:62124452,Galveston Post Office and Courthouse,Galveston and Courthouse,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:409604301,Gardendale Post Office,Gardendale,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258713804,Garland Post Office,Garland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258714248,Garland Post Office - Kingsley Station,Garland Kingsley Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258714714,Garland Post Office - North Station,Garland North Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258714356,Garland Post Office - South Station,Garland South Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1184853185,Gause Post Office,Gause,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:617259517,George West Post Office,George West,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:640841784,Glen Rose Post Office,Glen Rose,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9217128968,Global Post,Global Post,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12042730438,Go Ship,Go Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:711171279,Godley Post Office,Godley,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11032242627,Goin' Postal,Goin' Postal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4983670536,Goin' Postal,Goin' Postal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:753382535,Goin' Postal,Goin' Postal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13354511960,Goin’ Postal,Goin’ Postal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:120311918,Golden Triangle Post Office,Golden Triangle,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:745972133,Goldthwaite Post Office,Goldthwaite,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:771101730,Goodfellow Post Office,Goodfellow,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:805859860,Gordon Post Office,Gordon,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1023963984,Gorman Post Office,Gorman,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:546727259,Granbury Post Offcie,Granbury Post Offcie,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258847161,Grand Prairie Post Office,Grand Prairie,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258846658,Grand Prairie Post Office - Fountain Station,Grand Prairie Fountain Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258848048,Grand Prairie Post Office - Westchester Station,Grand Prairie Westchester Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258902906,Grand Saline Post Office,Grand Saline,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905503201,Grandfalls Post Office,Grandfalls,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:710107967,Grandview Post Office,Grandview,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857673,Great Southwest Post Office,Great Southwest,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259287794,Greenville Post Office,Greenville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:478155797,Greenville Post Office,Greenville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13531666643,Groom Post Office,Groom,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258850504,Gunter Post Office,Gunter,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:707542387,Guthrie Post Office,Guthrie,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:646086415,Hackberry Post Office,Hackberry,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1116176198,Hale Center Post Office,Hale Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:691994513,Haltom City Post Office,Haltom City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1497958035,Hamshire Post Office,Hamshire,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356861649,Harlandale Post Office,Harlandale,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:549412562,Harlingen Post Office,Harlingen,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1136337654,Harper Post Office,Harper,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3814818278,Hartley Post Office,Hartley,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1415575520,Harwood Post Office,Harwood,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1278936478,Heidenheimer Post Office,Heidenheimer,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1266737656,Hemphill Post Office,Hemphill,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905509901,Hereford Post Office,Hereford,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:140365621,Heritage Post Office,Heritage,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4804896753,Higgins Post Office,Higgins,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1206302278,Highland Hills San Antonio Post Office,Highland Hills San Antonio,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1495985868,Highway 276 Self Stor-N-More,Highway 276 Self Stor N More,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:734227908,Hillsboro Post Office,Hillsboro,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852535,Holland Post Office,Holland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1155133812,Holliday Post Office,Holliday,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1054099586,Hooks Post Office,Hooks,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852562,Horsehow Bay Post Office,Horsehow Bay,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13625704695,Household Dollar & Pack & Ship,Household Dollar & Pack & Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13864763349,United States Post Office - Huffman,Huffman,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356866840,Hufsmith Post Office,Hufsmith,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:940990423,Humble Post Office,Humble,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1351270631,Huntington Post Office,Huntington,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258918871,Hutchins Post Office,Hutchins,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13771347555,In the Box Pack and Ship,In the Box Pack and Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2636016065,Industry Post Office,Industry,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1421256206,Iraan Post Office,Iraan,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1181065522,Iredell Post Office,Iredell,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2641663265,Irving Post Office,Irving,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:30264105,Irving Post Office - Central Station,Irving Central Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258712596,Irving Post Office - Las Colinas Station,Irving Las Colinas Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:29308747,Irving Post Office - Valley Ranch Station,Irving Valley Ranch Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:976787244,Itasca Post Office,Itasca,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356861240,J Frank Dobie Post Office,J Frank Dobie,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1051244926,Jacksboro Post Office,Jacksboro,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:734019521,Jacksonville Post Office,Jacksonville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:172927878,James Griffith Station,James Griffith Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:362332687,James Moody Post Office,James Moody,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:930441114,Jarrell Post Office,Jarrell,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3726580811,Jasper Post Office,Jasper,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:458898687,Johnson City Post Office,Johnson City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:179079984,Jordan Post Office,Jordan,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258992730,Josephine Post Office,Josephine,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:712927128,Joshua Post Office,Joshua,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635905892,Jourdanton Post Office,Jourdanton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:385956803,Judson Post Office,Judson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:170183575,Julius Melcher Station,Julius Melcher Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:682761332,Junction Post Office,Junction,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:733753264,Karnes City Post Office,Karnes City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:849792159,Kat Post,Kat Post,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:604091872,Keller Post Office,Keller,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11458656183,Kemah Post Office,Kemah,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258923866,Kemp Post Office,Kemp,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1002836549,Kempner Post Office,Kempner,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356853067,Kendalia Post Office,Kendalia,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1332098450,Kenney Post Office,Kenney,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258925167,Kerens Post Office,Kerens,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1290338011,Killeen Post Office,Killeen,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356853232,Kingsland Post Office,Kingsland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:376614870,Kingwood Post Office,Kingwood,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:589674876,Klein Post Office,Klein,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1465760865,Klondike Post Office,Klondike,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13583649652,Knippa Post Office,Knippa,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13631091467,Knox Street Postal Center,Knox Street Postal Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:672572432,Kountze Post Office,Kountze,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13974936466,Kress Post Office,Kress,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9458833100,Krum Post Office,Krum,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:274592392,Kyle Post Office,Kyle,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905487105,La Pryor Post Office,La Pryor,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1558199890,Laird Hill,Laird Hill,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258852347,Lake Dallas Post Office,Lake Dallas,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2409094604,Lake Jackson Post Office,Lake Jackson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:204043418,Lakeway  Post Office,Lakeway,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:40941999,Lamar Park Post Office,Lamar Park,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258927357,Lancaster Post Office,Lancaster,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:368950578,Langtry Post Office,Langtry,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852841,Laurel Heights Station Post Office,Laurel Heights Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258994142,Lavon Post Office,Lavon,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356866849,League City Post Office,League City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:967674306,Leakey Post Office,Leakey,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1191702077,Leesburg Post Office,Leesburg,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635905893,Leming Post Office,Leming,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:480909591,Lenorah Post Office,Lenorah,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:460823578,Leon Valley Post Office,Leon Valley,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:689755238,Leona Post Office,Leona,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9458832216,Leonard Post Office,Leonard,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:667622638,Levelland Post Office,Levelland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258852744,Lewisville Post Office,Lewisville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258848581,Lewisville Post Office - Old Town Finance Station,Lewisville Old Town Finance Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:46141317,Liberty Hill Post Office,Liberty Hill,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:805749875,Lingleville Post Office,Lingleville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1037997584,Lipscomb Post Office,Lipscomb,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258852977,Little Elm Post Office,Little Elm,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:312865126,Little River Academy Post Office,Little River Academy,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:153265840,Livingston Post Office,Livingston,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:357950292,Lockhill Post Office,Lockhill,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:747938820,Lone Star Post Office,Lone Star,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:384766671,Longview Main Post Office,Longview Main,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356861249,Los Jardines Post Office,Los Jardines,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:461457160,Lubbock Post Office,Lubbock,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1161666745,Luling Post Office,Luling,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1261902852,Lumberton Post Office,Lumberton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1134644850,Lytle Post Office,Lytle,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258928842,Mabank Post Office,Mabank,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1482063588,Mail,Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:621255056,Mail Box,Mail Box,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8789981116,Mail Boxes Etc.,Mail Boxes Etc.,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9344476572,Mail Boxes Etc.,Mail Boxes Etc.,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9830961731,Mail Boxes Etc.,Mail Boxes Etc.,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:753394723,Mail Center,Mail Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11447369873,Mail Center USA,Mail Center USA,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:599493151,Mail Depot,Mail Depot,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11049644025,Mail Stop,Mail Stop,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:737039992,Mail room,Mail room,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9848502155,Mailbox Printing Postal Shipping,Mailbox Printing Postal Shipping,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258933005,Malakoff Post Office,Malakoff,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:317733482,Marathon Post Office,Marathon,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:294564808,Marfa Post Office,Marfa,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:167104936,Marshall Post Office,Marshall,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1261870884,Mauriceville Post Office,Mauriceville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:781668617,McDade Post Office,McDade,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1254740449,McGregor Post Office,McGregor,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258854319,McKinney Post Office,McKinney,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2641701033,McKinney Post Office - Linkside Park Station,McKinney Linkside Park Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:382051771,McNeil Post Office,McNeil,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:383010882,McNeil Post Office,McNeil,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:658295531,Mclean Post Office,Mclean,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:678835769,Meadow Post Office,Meadow,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635708979,Megargel Post Office,Megargel,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:658891920,Melear Post Office,Melear,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:147436806,Melissa Post Office,Melissa,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:772725013,Melvin Post Office,Melvin,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:48370638,United States Post Office - Memorial Park Station,Memorial Park Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:864652380,Menard Post Office,Menard,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1107334845,Mertens Post Office,Mertens,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13759752757,Midtown Postal Center,Midtown Postal Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2232088764,Miles Post Office,Miles,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1014149369,Millican Post Office,Millican,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:805856403,Mingus Post Office,Mingus,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:452922724,Mobeetie TX 79061,Mobeetie TX 79061,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356854643,Mockingbird Post Office,Mockingbird,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905494803,Monahans Post Office,Monahans,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:637204348,Money Mailer,Money Mailer,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2634797184,Montalba Post Office,Montalba,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1237937024,Moody Post Office,Moody,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1212866667,Moore Post Office,Moore,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1451200691,Morgan Post Office,Morgan,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:709534527,Morningside Post Office,Morningside,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1416805622,Moulton Post Office,Moulton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:798253344,Mountain Home Post Office,Mountain Home,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13982289366,My Office,My Office,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14053251301,USPS NORTH HOUSTON,NORTH HOUSTON,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:583843365,"Nada, TX Post Office","Nada, TX",TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:794935039,United States Post Office Nash,Nash,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1237972124,Nassau Bay Post Office,Nassau Bay,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2634803844,Neches Post Office,Neches,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4253958425,Nederland Post Office,Nederland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:781539834,Needville Post Office,Needville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258995402,Nevada Post Office,Nevada,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:473237387,New Deal Post Office,New Deal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1278490104,New Ulm Post Office,New Ulm,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:711195668,Newark Post Office,Newark,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1248720795,Newcastle Post Office,Newcastle,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356861251,Nimitz Post Office,Nimitz,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1417424264,Nixon Post Office,Nixon,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12926833345,North Amarillo Post Office,North Amarillo,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:409268626,North Broadway Post Office,North Broadway,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:707037501,North Fort Cavazos Post Office,North Fort Cavazos,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1014169029,North Zulch Post Office,North Zulch,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356854648,Northcross Post Office,Northcross,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356861261,Northeast Annex Post Office,Northeast Annex,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356854653,Northeast Austin Post Office,Northeast Austin,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4114946665,Northeast Odessa Post Office,Northeast Odessa,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12653999450,Northgate Station,Northgate Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:670545603,United States Post Office Oak Forest Station,Oak Forest Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:183361409,Oak Hill Post Office,Oak Hill,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857804,Oakwood Post Office,Oakwood,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:409603581,Odessa Post Office,Odessa,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1238201830,Oglesby Post Office,Oglesby,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1222169772,Oilton Post Office,Oilton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1271286888,Oklaunion Post Office,Oklaunion,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:368162682,Old United States Post Office and Courts Building,Old and Courts Building,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1007680687,Olden Post Office,Olden,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1247432196,Olney Post Office,Olney,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3905959783,Omega Postal,Omega Postal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13948756476,Pack & Mail Shoppe & Gifts,Pack & Mail Shoppe & Gifts,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12134125421,Pack 'N' Mail,Pack 'N' Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9412952902,Pack 'N' Mail,Pack 'N' Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9441862809,Pack 'N' Mail,Pack 'N' Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:776091237,Pack 'N' Mail,Pack 'N' Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1526538580,Pack 'n' Mail,Pack 'n' Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:793665256,Pack 'n' Mail,Pack 'n' Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8909091775,Pack N Mail,Pack N Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8011771122,Pak & Ship,Pak & Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8505700362,Pak & Ship Plus,Pak & Ship Plus,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12315831708,Pak Mail,Pak Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13910916102,Pak Mail,Pak Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8282328950,Pak Mail,Pak Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3857513393,Pak Mail Austin,Pak Mail Austin,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1250748051,Pak Mail CLOSED,Pak Mail CLOSED,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2622992921,PakMail,PakMail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:256800792,Palestine Post Office,Palestine,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:795485269,Pampa Pack N Mail,Pampa Pack N Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857816,Pantego Post Office,Pantego,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:219848908,Panther Creek Post Office,Panther Creek,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13391739281,Parcel Express,Parcel Express,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8522691262,Parcel Express,Parcel Express,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7207414752,Parcel Plus,Parcel Plus,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:834041984,Parcel Plus,Parcel Plus,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356866853,Pasadena Post Office,Pasadena,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356866857,Pearland Post Office,Pearland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:994032084,Pebble Hills Post Office,Pebble Hills,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1289625514,Pecan Post Office,Pecan,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5757418947,Pecan Grove Postal,Pecan Grove Postal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4114984697,Penwell Post Office,Penwell,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:361307594,Pep Post Office,Pep,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1039396998,Perryton Post Office,Perryton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11413897461,Pettus Post Office,Pettus,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:384445074,Pflugerville Post Office,Pflugerville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1814437191,Pilot Point Post Office,Pilot Point,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1259309416,Pinehurst Post office,Pinehurst,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1266737659,Pineland Post Office,Pineland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:469085874,Pittsburg Post Office,Pittsburg,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258857981,Plano Post Office,Plano,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258859142,Plano Post Office - Coit Station,Plano Coit Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258855186,Plano Post Office - Downtown Station,Plano Downtown Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258708902,Plano Post Office - Northwest Station,Plano Northwest Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258708433,Plano Post Office - Wildcat Station,Plano Wildcat Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635905895,Pleasanton Post Office,Pleasanton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635636634,Pollok Post Office,Pollok,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13800144670,Pony Xpress,Pony Xpress,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11695259401,United States Poost Office - Rochester Texas 79544,Poost Office Rochester Texas 79544,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1018283779,Port Aransas Post Office,Port Aransas,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1253180529,Port Lavaca Post Office,Port Lavaca,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1377616227,Port Neches Post Office,Port Neches,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13910038002,Portairs Post Office,Portairs,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12053536294,PostNet,PostNet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6917875414,PostNet,PostNet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7323671821,PostNet,PostNet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7786346223,PostNet,PostNet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9409250201,PostNet,PostNet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9995717164,PostNet,PostNet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1350764220,PostNet,PostNet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:759450812,PostNet,PostNet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12143867994,Postage Depot,Postage Depot,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9611814295,Postal + Copy Center,Postal + Copy Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11257411171,Postal Annex,Postal Annex,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7924498736,Postal Copy Center,Postal Copy Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8890907472,Postal Copy Center,Postal Copy Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4787141264,United States Postal Office,Postal Office,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10016090573,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11830873039,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13374302901,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13963507968,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14090328801,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14090329601,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14090329801,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2429395787,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:994024194,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1076269642,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1079364971,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1081557347,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1093599150,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1154680579,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1176297917,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1525252511,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1536077777,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1543328431,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:374893426,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:462983428,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:502257998,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:590689344,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:601472347,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:679165487,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:713977553,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:817644284,United States Postal Service,Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7122289687,Postal Station,Postal Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6654320565,Postal Zone,Postal Zone,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11072261949,PostalAnnex,PostalAnnex,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3018373036,PostalAnnex,PostalAnnex,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6655586335,PostalAnnex,PostalAnnex,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8451531315,PostalAnnex,PostalAnnex,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8500723398,PostalAnnex,PostalAnnex,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12594152137,Postmark'd,Postmark'd,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:333291095,Poteet Post Office,Poteet,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1425703595,Poth Post Office,Poth,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258859640,Pottsboro Post Office,Pottsboro,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258950924,Powell Post Office,Powell,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1212424545,Poynor Post Office,Poynor,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:44119898,Prairie View Post Office,Prairie View,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:478700275,Presidio Post Office,Presidio,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:259288658,Princeton Post Office,Princeton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6887619095,Print Package Postal,Print Package Postal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1023963986,Proctor Post Office,Proctor,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:452507574,Promenade Post Office,Promenade,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258859891,Prosper Post Office,Prosper,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9442450745,Putnam Post Office,Putnam,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905503202,Pyote Post Office,Pyote,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:430503786,"United States Post Office Quanah, TX","Quanah, TX",TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1056016347,Queen City Post Office,Queen City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12988169203,Quik pack and ship,Quik pack and ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:715511825,Quinlan Post Office,Quinlan,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4760381921,Qwik Pack & Ship,Qwik Pack & Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1000198173,Ralls Post Office,Ralls,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:745359833,Ranchland Post Office,Ranchland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:700755730,Ranger Post Office,Ranger,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13098480654,RapiCarga Travel Envios a Cuba,RapiCarga Travel Envios a Cuba,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10659686245,Red Aero Pack Mail Ship,Red Aero Pack Mail Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:600433707,United States Post Office - Red Rock,Red Rock,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:475153256,Rhome Post Office,Rhome,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258986896,Rice Post Office,Rice,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14094999091,Rice University US Post Office,Rice University US,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:764443392,Rich Hill Post Office,Rich Hill,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258862802,Richardson Post Office,Richardson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258863347,Richardson Post Office - Huffhines Park Station,Richardson Huffhines Park Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:805526685,Richland Post Office,Richland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:678170248,Richland Hills Post Office,Richland Hills,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:263325263,Richmond United States Post Office,Richmond,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6357162085,USPS Ridglea,Ridglea,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905494901,Rio Frio Post Office,Rio Frio,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5170183778,Rio Medina Post Office,Rio Medina,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:710146938,Rio Vista Post Office,Rio Vista,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1023963987,Rising Star Post Office,Rising Star,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1373581595,Ro. Ma. Service,Ro. Ma. Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:603895915,Roanoke Post Office,Roanoke,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:868109159,Roby Post Office,Roby,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1184852865,Rockdale Post Office,Rockdale,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635676933,Rockport Post Office,Rockport,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258866943,Rockwall Post Office,Rockwall,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1321512113,Rogers Post Office,Rogers,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11725083448,Romanyor Post Office,Romanyor,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:585167681,Rosanky Post Office,Rosanky,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1216937174,Roscoe Post Office,Roscoe,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:868105869,Rotan Post Office,Rotan,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:370965382,Round Rock West Post Office,Round Rock West,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:768629476,Round Top Post Office,Round Top,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13179878947,Route 66 Pack and Ship,Route 66 Pack and Ship,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258868288,Rowlett Post Office,Rowlett,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:834847778,USPS Roy Royall Station,Roy Royall Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:159069154,Rye Post Office,Rye,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14055375301,USPS SAM HOUSTON,SAM HOUSTON,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13832767401,SPEEDY MAIL & PARCEL,SPEEDY MAIL & PARCEL,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7821149886,STR 126,STR 126,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13905494801,Sabinal Post Office,Sabinal,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:840816078,Sabine Pass Post Office,Sabine Pass,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1085495043,Sadler Post Office,Sadler,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:976806735,Salado Post Office,Salado,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2636016110,San Felipe Post Office,San Felipe,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13119048334,San Jacinto Post Office,San Jacinto,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:410892504,San Marcos Post Office,San Marcos,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356754498,San Pedro Post Office,San Pedro,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:730890926,Sanderson Post Office,Sanderson,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11725083435,Saratoga Post Office,Saratoga,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:751097138,Schertz Post Office,Schertz,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2635713479,Scotland Post Office,Scotland,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:93656500,Sealy Post Office,Sealy,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356861265,Serna Post Office,Serna,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:486907720,Seven Points Post Office,Seven Points,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:435247613,Shallowater Post Office,Shallowater,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1013619118,Sharon's/Hallmark,Sharon's/Hallmark,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1012312420,Sheffield Post Office,Sheffield,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1319804418,Sheppard AFB Post Office,Sheppard AFB,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:47973060,Sherman Post Office,Sherman,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13953275752,Ship Express,Ship Express,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5476824539,Ship Stop,Ship Stop,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2470037892,Shiro Post Office,Shiro,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1261902863,Silsbee Post Office,Silsbee,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852511,Silverio de la Pena Drugstore and Post Office,Silverio de la Pena Drugstore and,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:442009685,Singer Post Office,Singer,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1346069292,Smiley Post Office,Smiley,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:797798126,Smyer Post Office,Smyer,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1184851203,Snook Post Office,Snook,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:730923495,Sonora Post Office,Sonora,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:747466231,Sour Lake Post Office,Sour Lake,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1127956229,South Bend Post Office,South Bend,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12776710794,South End Station,South End Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:142096689,South Texas Medical Center Post Office,South Texas Medical Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:449461859,Southlake Post Office,Southlake,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1085500128,Southmayd Post Office,Southmayd,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:270029169,USPS Southside Post Office,Southside,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1160921683,Spearman Post Office,Spearman,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1460341694,"Spicewood, TX Post Office","Spicewood, TX",TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356866865,Splendora Post Office,Splendora,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:317921307,Spring Post Office,Spring,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:782842641,Springlake Post Office,Springlake,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852502,Stamford Post Office,Stamford,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1207907301,Stanton Post Office,Stanton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:457768818,Stephenville Post Office,Stephenville,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:192346683,Sterling City Post Office,Sterling City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1011589690,Stockdale Post Office,Stockdale,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1136889010,Stonewall Post Office,Stonewall,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11703975790,Stowell Post Office,Stowell,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:805857196,Strawn Post Office,Strawn,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1228370171,Streetman Post Office,Streetman,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2137702647,Sublime Post Office,Sublime,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13382415101,USPS Summit Heights Station,Summit Heights Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1009730986,Sundown Post Office,Sundown,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356751559,Sunny Side Post Office,Sunny Side,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1192520975,USPS - Sunray,Sunray,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:460141332,Sunset Station Post Office,Sunset Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:538611448,Sutherland Springs Post Office,Sutherland Springs,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3935092674,Sylvester Post Office,Sylvester,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:299689214,T.W. House Station,T.W. House Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5907104488,USPS TWO HOUSTON CNTR — Post Office™,TWO HOUSTON CNTR — ™,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:324890395,Taylor Post Office,Taylor,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356861278,Tejeda Station Post Office,Tejeda Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1180293200,Telegraph Post Office,Telegraph,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1504266767,Tennessee Colony Post Office,Tennessee Colony,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1186366665,Terlingua Post Office,Terlingua,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:755771030,Texico Post Office,Texico,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258848264,The Colony Post Office,The Colony,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8046626698,The Mail Drop,The Mail Drop,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12337894192,The Mail Room,The Mail Room,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7236236398,The Mailing Store,The Mailing Store,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7913778683,The Print Pack Ship Store,The Print Pack Ship Store,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10052929802,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10069711495,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10096281224,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10159688597,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10231166020,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10245678417,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10276856995,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10292050932,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10309429381,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10719228976,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10803277656,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10805637632,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11034614058,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11035548117,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11071556587,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11132255725,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11163354167,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11177943145,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11291347522,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11330205060,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11330238166,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11346963958,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11359359428,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11395109896,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11680165968,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11682994181,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11710159889,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11728363573,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11784577924,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11879962851,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11889616823,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11934021402,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11941068805,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11989134488,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12056217981,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12329909247,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12356717259,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12357281957,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12445950577,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12477025093,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12523187422,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12552150353,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12577833092,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12646041127,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12783801973,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12852240618,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12952189061,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12957200545,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12994591502,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12996761958,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12998031106,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13020082214,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13068056584,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13093003501,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13161108245,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13248673107,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13260420730,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13266018304,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13289161395,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13322203173,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13371080376,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13427653332,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13479533777,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13564339560,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13568407732,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13599740101,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13615740452,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13712519702,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13726164657,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13731206154,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13734806009,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13792405238,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13812550905,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13867320738,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13869967091,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:13887660676,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:14026507902,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:14054580102,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2153859488,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2349352502,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2412608608,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2527535409,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2603503860,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2603733035,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2644060406,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:2941379602,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3216852042,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3412025346,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3508067416,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3632213698,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3780008579,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3905211333,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:3969652231,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4072178277,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4113059993,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4227549154,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4283557352,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4470781389,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4570893047,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4773407695,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:4942568772,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5110005189,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5263056073,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5265099001,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5332255336,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5604621748,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5753178565,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5760449054,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5790207648,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5829637852,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5982543780,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6090852293,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6190240878,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6595146842,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6655769838,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6768423656,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6873678465,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6882262015,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6897064358,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7001535343,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7025124505,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7100331445,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7119755706,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7170550287,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7208918537,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7287247419,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7596069929,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7693446266,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7742089455,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7874722882,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7914041846,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7933001625,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8067353599,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8147233964,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8272957475,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8278921817,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8369341661,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8392575809,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8421607398,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8441054522,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8851585508,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8904381817,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:8944634671,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9002676455,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9095270055,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9211225514,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9382978063,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9411824792,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9451253986,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9561511890,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9587086927,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9629490012,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9656368977,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9659711478,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9807597663,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9921246460,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9930282280,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1053208460,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:107773588,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1081622250,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1094539749,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:142438342,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1514765203,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:659567090,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:688947413,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:753404030,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:779259437,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:868737740,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:909436590,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:919025308,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:929529863,The UPS Store,The UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11756566524,The UPS Store Wylie,The UPS Store Wylie,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:219850377,The Woodlands Post Office,The Woodlands,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11725083441,Thicket Post Office,Thicket,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:237752067,Thorndale Texas Post Office,Thorndale Texas,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:357521465,Thousand Oaks Post Office,Thousand Oaks,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1184854413,Thrall Post Office,Thrall,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:264249390,Tobe Hahn Station,Tobe Hahn Station,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:805494897,Tolar Post Office,Tolar,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:957039929,Tomball Post Office,Tomball,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:992337897,Tornillo Post Office,Tornillo,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3921347677,Town North PO Annex,Town North PO Annex,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:292819653,Trenton Post Office,Trenton,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258990160,Trinidad Post Office,Trinidad,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1117057009,Troy Post Office,Troy,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11413897460,Tuleta Post Office,Tuleta,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13831295734,Tín Phát Cargo,Tín Phát Cargo,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2414049125,U.S. Post Office,U.S.,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:754335599,U.S. Post Office,U.S.,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:594520358,U.S. Post Office - Joaquin TX 75954,U.S. Joaquin TX 75954,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:385774884,U.S. Post Office - Northwest Longview,U.S. Northwest Longview,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:602445079,U.S. Post Office - Talco TX 75487,U.S. Talco TX 75487,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:600924902,U.S. Post Office - Winona Texas 75792,U.S. Winona Texas 75792,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12120905911,UPS,UPS,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:963798028,UPS Customer Center,UPS Customer Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10231897105,UPS Store,UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10231944904,UPS Store,UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9935108617,UPS Store,UPS Store,TX,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:1682579129,US Post office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4213066626,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:9207837889,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1241452133,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:186826436,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:292238389,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:294612283,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:480924592,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:540511782,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:545540628,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:652567677,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:679361412,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:734487031,US Post Office,US,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:583610955,"US Post Office, Lone Star, TX 75668","US , Lone Star, TX 75668",TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:584478046,US Post Office - Daingerfield TX 75638,US Daingerfield TX 75638,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:377420230,US Post Office - Downtown Longview,US Downtown Longview,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:792993922,US Postal Service,US Postal Service,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4582038192,US Postal Service Main Office,US Postal Service Main Office,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1251727823,US Post Office-Schwertner,US Schwertner,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852509,US Post Office and Federal Building,US and Federal Building,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:667710571,Unites States Post Office,Unites States,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1324746504,Universal City Post Office,Universal City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8165860152,University Post Office,University,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10291934663,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:10707866407,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:10808434741,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:10978007144,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11047776734,Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:11049644022,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11090213114,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11441670070,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11596667008,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:11920668104,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:12059785069,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12166096551,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:12181956925,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:1251182638,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12540866649,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12708435638,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12908893663,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:12964725113,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13007090391,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13180889296,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13391620188,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13451612800,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13712018406,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:13849602949,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:13951001941,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:14055440601,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:14055453501,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:14055466401,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:14055496501,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:14055515801,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:14055542701,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:14055546601,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:14055551702,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:14055552701,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:1526814436,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:1594936372,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:1682625646,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:1726945637,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:1810485617,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:1927243818,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2331054758,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2337654897,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:2605582193,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2641124119,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2807615177,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:300041194,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:315295676,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:3849779946,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4166695174,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4175001449,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4217652091,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4251731235,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4569822273,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4638187585,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4694372568,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:4831292406,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4926963591,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4948999447,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5043131124,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5116182332,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5207401998,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5444142130,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5771241423,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5816033778,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5877152014,USPS Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:6006751785,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:606243319,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:6165352028,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:6179300866,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:6475009100,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:6778429914,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:7443375420,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:7598641486,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:8703565811,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:8805713427,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:8902380963,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:913884796,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9750391940,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:9910863813,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9978733663,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1019994961,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1022116568,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1038797703,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1064910891,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1067013187,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1068329925,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1071099662,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1074959667,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1076202087,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1077348305,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1077656208,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1081542859,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1081544594,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1087634599,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1092724682,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1106859180,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1112813492,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1113075089,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1113141188,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1113202741,Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1113464588,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1117271432,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1136099403,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1137395645,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1146239187,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1176587093,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1178013759,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1181443137,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1182187428,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1184847946,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1184850117,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1184851598,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1184851866,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1184852450,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1184856173,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1187344256,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1232843915,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1243375833,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1255137737,Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1262030514,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1271546173,USPS,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1273498759,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1277819424,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1286735159,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1306955989,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1326285890,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1332441813,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1353872947,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1389832349,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:139285628,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1396700781,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1416215448,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1427342708,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1448462989,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1455872915,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1519225607,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:155052739,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:161137698,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:162532906,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:188591944,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:192544892,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:195818879,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:201857210,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:223628434,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:226080805,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:226936289,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:230779710,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:234147795,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:238526588,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:251682580,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258700105,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258919731,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258934123,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258935667,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258950272,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258952146,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258988158,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258988519,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258989369,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:258994704,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:259159911,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:259165446,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:259223226,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:259290155,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:259365635,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:261638010,USPS Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:274426090,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:286341634,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:290730255,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:29179304,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:311419471,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:313310724,United states Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:314134488,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:321062581,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:333693060,United States Post office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:334097356,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:334274230,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:351544102,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:362333810,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:364703985,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:368848602,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:369272882,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:382315884,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:382833917,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:383004041,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:383888159,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:387045693,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:390877963,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:402383484,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:40477799,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:406895749,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:408487723,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:415185309,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:421714239,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:431565262,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:435245526,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:44035017,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:441239568,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:451982803,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:453642248,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:462478752,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:462616555,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:470791870,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:472239628,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:479831901,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:480508983,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:481100065,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:493861951,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:497513878,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:503808254,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:504049409,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:504085285,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:510694745,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:510704093,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:510930914,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:513635687,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:520034546,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:52049765,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:521382827,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:524524709,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:529319222,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:530454820,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:543831880,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:544446471,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:544811658,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:545135806,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:546385770,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:554987429,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:555299021,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:556595434,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:558066917,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:558593136,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:560604555,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:561667324,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:562366560,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:569446191,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:570578898,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:570715707,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:574222906,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:591142962,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:601761821,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:605959618,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:611020867,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:617525971,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:622938158,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:625368154,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:633259885,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:636949187,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:654513222,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:660645026,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:664735813,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:668705646,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:669880358,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:670790253,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:672392253,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:680460824,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:689729899,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:691464756,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:691837920,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:693642504,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:698982634,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:700037354,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:700242483,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:700447400,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:700585002,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:707382743,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:707466825,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:707530685,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:707932310,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:707951335,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:707952458,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:708186457,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:708639683,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:712081475,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:712411212,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:713218040,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:713556219,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:714070311,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:714993249,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:715166693,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:715631129,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:716768107,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:716915929,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:718206830,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:720392641,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:721039708,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:727188052,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:728231801,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:729440205,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:730041620,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:730941168,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:731131241,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:732504684,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:733905635,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:734027910,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:734229413,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:734270228,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:734274983,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:734928612,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:735376935,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:736396650,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:736663548,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:737131308,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:737652956,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:738894639,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:739158621,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:739840801,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:74452876,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:745965817,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:746231714,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:749078923,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:752149158,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:754798101,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:755041647,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:758833251,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:760074379,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:760434511,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:760439587,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:760877874,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:761912486,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:762120701,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:764684458,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:764866350,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:765254333,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:765321386,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:765381131,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:765861822,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:766376620,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:768388678,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:768700214,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:768972822,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:773675971,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:785791769,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:790959118,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:791250123,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:797207221,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:80051822,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:802759151,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:808821185,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:815571017,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:818162248,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:818172238,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:825312704,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:829104296,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:839186649,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:843591496,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:846308901,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:853063066,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:853492133,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:863085997,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:865113307,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:877410359,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:882981812,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:884240222,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:886592076,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:888285446,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:891136508,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:895082899,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:903642370,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:908554764,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:908662653,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:909607201,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:912593849,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:914579140,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:914601431,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:915901598,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:916528840,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:923238441,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:930757800,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:932255344,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:942320587,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:942834442,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:95045357,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:959876069,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:959943947,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:962360553,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:966866733,United States Post Office,Unknown,TX,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:970322710,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:971497295,Post Office,Unknown,TX,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:714094538,Utopia Post Office,Utopia,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:388487027,Uvalde Post Office,Uvalde,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2244257081,Valentine Post Office  79854,Valentine 79854,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1309489968,Valera Post Office,Valera,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:859102161,Valley Hi - Post Office,Valley Hi,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1127532019,Valley Mills Post Office,Valley Mills,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:584739529,Van Post Office,Van,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:995063299,Van Horn Post Office,Van Horn,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:714121831,Vanderpool Post Office,Vanderpool,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13503678481,Vega Post Office,Vega,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:969909200,Venus Post Office,Venus,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:362331898,Victoria Post Office,Victoria,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1086972281,Vidor Post Office,Vidor,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7164922822,Viet A Cargo,Viet A Cargo,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11725083450,Village Mills Post Office,Village Mills,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:220349412,Voca Post Office,Voca,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11725083442,Votaw Post Office,Votaw,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14053240501,USPS WESTFIELD,WESTFIELD,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:14053241402,USPS WESTFIELD,WESTFIELD,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1202989467,Wainwright Post Office,Wainwright,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:391041229,Walburg Post Office,Walburg,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:570783113,Wallis Post Office,Wallis,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:607138119,Walnut Springs Post Office,Walnut Springs,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1321543735,Warda Post Office,Warda,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1194666781,Waring Post Office,Waring,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1097403539,Water Valley Post Office,Water Valley,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:642766338,Watson Community Post Office,Watson Community,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258993549,Waxahachie Post Office,Waxahachie,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1064216620,Wayside Post Office,Wayside,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1251737571,Weir Post Office,Weir,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1190109107,Welch Post Office,Welch,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356854672,West Austin Post Office,West Austin,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6822622483,West Lake Mail,West Lake Mail,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4041878551,West Odessa Post Office,West Odessa,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:432588886,Westbury Post Office,Westbury,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1418749427,Westhoff Post Office,Westhoff,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258869964,Weston Post Office,Weston,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13754179839,White Dog Ship & Print,White Dog Ship & Print,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:734715315,White Oak Post Office,White Oak,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1417404398,Whitney Post Office,Whitney,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:228612251,Wichita Falls Post Office,Wichita Falls,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:1581495817,Wickett Post Office,Wickett,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11724823715,Wiergate Post Office,Wiergate,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1137087045,Willow City Post Office,Willow City,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258995144,Wilmer Post Office,Wilmer,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:686378679,Wimberley Post Office,Wimberley,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1156229064,Windthorst Post Office,Windthorst,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:668004180,Winnie Post Office,Winnie,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:470456748,Wolfforth Post Office,Wolfforth,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356857936,World Trade Center Post Office,World Trade Center,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:258873478,Wylie Post Office,Wylie,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13625895607,Xiyou Express,Xiyou Express,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:552189099,Zavalla Post Office,Zavalla,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:356852506,United States Post Office and Federal Building,and Federal Building,TX,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:667762845,"United States Post Office | Burleson, TX","| Burleson, TX",TX,packet_ready,public_postal_anchor_label,public_post_office_label

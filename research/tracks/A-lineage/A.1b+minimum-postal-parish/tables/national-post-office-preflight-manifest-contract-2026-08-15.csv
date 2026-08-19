@@ -1,0 +1,10 @@
+manifest_item,required,status_for_smoke,artifact_or_command,claim_boundary
+reviewed_open_post_office_seed,yes,smoke_fixture_only,fixtures/civic/osm-post-office-washington-anchor-fields-review-2026-08-13.csv,Smoke seed validates wiring only; not a national post-office inventory.
+post_office_seed_validation,yes,complete,python scripts/validate_post_office_seed.py --seeds <reviewed-post-office-seed.csv>,Validation checks table readiness and provenance; it does not certify OSM completeness.
+versioned_settlement_proxy_join,yes,smoke_fixture_only,research/tracks/A-lineage/A.1b+minimum-postal-parish/tables/settlement-size-proxy-smoke-join-2026-08-15.csv,Smoke join validates schema only; not a real Census place ZIP ZCTA or population join.
+settlement_proxy_join_validation,yes,complete,python scripts/validate_settlement_proxy_join.py --join <settlement-proxy-join.csv>,Validation checks declared fields and buckets; it does not certify population-source semantics.
+sample_preflight,yes,complete,python scripts/run_post_office_sample_preflight.py --seeds <seed.csv> --settlement-join <join.csv> --targets-output <targets.csv> --enriched-output <enriched.csv> --report-output <report.csv>,Preflight produces auditable sample artifacts; smoke output is not a national sample.
+source_gate_reporting,yes,gated_by_real_run,<preflight-report.csv> plus OSM/API fallback sidecar reports,Report source gates separately before frequency or smallest-place claims.
+current_postal_anchor_review,conditional,contract_added,python scripts/validate_current_postal_anchor_review.py --review <current-postal-anchor-review.csv>,Required for postal-only candidates or source-suspicious anchors before frequency denominators are counted.
+sidecar_classification,no,not_started,scripts/fetch_osm_civic.py against enriched sample targets,Sidecars may classify sampled target boxes only after validated real seed and settlement inputs.
+national_frequency_claim,no,blocked,pending reviewed real sample plus acceptable source-gated share,No national frequency or smallest postal parish claim is allowed from smoke artifacts.

@@ -1,0 +1,4 @@
+target_id,primary_city,state,postal_code_hint,settlement_size_proxy,settlement_proxy_source,settlement_proxy_source_date,settlement_proxy_note
+national-post-office-wa-bellevue-69b87409d2,Bellevue,WA,,50000_plus,manual_smoke_fixture,2026-08-15,Smoke fixture bucket for builder contract validation only; not a national settlement join.
+national-post-office-wa-bellevue-85a6b5e44c,Bellevue,WA,98004,50000_plus,manual_smoke_fixture,2026-08-15,Smoke fixture bucket for builder contract validation only; not a national settlement join.
+national-post-office-wa-silverdale-640e2a6b1f,Silverdale,WA,98383,10000_to_49999,manual_smoke_fixture,2026-08-15,Smoke fixture bucket for builder contract validation only; not a national settlement join.

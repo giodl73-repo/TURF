@@ -1,0 +1,244 @@
+facility_id,facility_name,city,state,review_status,semantic_review_status,semantic_review_reason
+osm:way:290102929,40th Avenue Post Office,40th Avenue,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10902844478,Abbeville Post Office,Abbeville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:533486849,Amory Post Office,Amory,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1157930618,Anguilla Post Office,Anguilla,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1452088224,Arcola Post Office,Arcola,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11394182887,Arkabutla Post Office,Arkabutla,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:577203869,Avon Post Office,Avon,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:914184325,Beaumont Post Office,Beaumont,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10891125927,Becker Post Office,Becker,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:226105690,Belden Post Office,Belden,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998067,Bellefontaine Post Office,Bellefontaine,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10891675665,Belmont Post Office,Belmont,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1524770147,Benoit Post Office,Benoit,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13759378101,Bentonia Post Office,Bentonia,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998065,Bigbee Valley Post Office,Bigbee Valley,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:165921271,Biloxi Post Office,Biloxi,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11027093710,Bogue Chitto Post Office,Bogue Chitto,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998094,Bolton Post Office,Bolton,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10881872886,Bruce Post Office,Bruce,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1483923728,Byhalia Post Office,Byhalia,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10887329012,Caledonia Post Office,Caledonia,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10884306491,Calhoun City Post Office,Calhoun City,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1111233136,Carrollton Post Office,Carrollton,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1471970864,Carthage Post Office,Carthage,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1485537915,Charleston Post Office,Charleston,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998020,Church Hill Post Office,Church Hill,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998113,Clarksdale Post Office,Clarksdale,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1268726421,Cleveland Post Office,Cleveland,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1390991568,Clinton Post Office,Clinton,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1308913536,Coahoma Post Office,Coahoma,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10881872371,Coffeeville Post Office,Coffeeville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:491966823,Corinth Post Office,Corinth,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998077,Crawford Post Office,Crawford,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998053,Crossroads Post Office,Crossroads,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13930054901,Crowder Post Office,Crowder,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11047129355,Darling Post Office,Darling,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998049,Delta City Post Office,Delta City,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1469204908,Delta Station Post Office,Delta Station,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10891675680,Dennis Post Office,Dennis,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10884306493,Derma Post Office,Derma,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:286473859,Doddsville,Doddsville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9763457379,Downtown Tupelo Post Office,Downtown Tupelo,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11893485136,Drew Post Office,Drew,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11111479073,Enid Post Office,Enid,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:680445956,Enterprise Post Office,Enterprise,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879170412,Ethel Post Office,Ethel,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10884331174,Eupora Post Office,Eupora,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5421482484,Falkner Post Office,Falkner,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6042744663,FedEx,FedEx,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7140044615,FedEx Shipping Center,FedEx Shipping Center,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1385400154,Flora Post Office,Flora,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998026,Forest Post Office,Forest,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1185854594,French Camp Post Office,French Camp,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1443086222,Friars Point Post Office,Friars Point,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10891675576,Fulton Post Office,Fulton,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998011,Gallman Post Office,Gallman,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10894523674,Glen Post Office,Glen,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998150,Glen Post Office,Glen,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10891675661,Golden Post Office,Golden,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998054,Greenville Post Office,Greenville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2189979495,Greenwood Post Office,Greenwood,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2967924220,Greenwood Post Office,Greenwood,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:12835183248,Greenwood Springs Post Office,Greenwood Springs,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:674075343,Grenada Post Office,Grenada,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10887328942,Hamilton Post Office,Hamilton,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:296100650,Hattiesburg Post Office,Hattiesburg,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1383066262,Hazelhurst Post Office,Hazelhurst,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:679905002,Heidelberg Post Office,Heidelberg,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:641452884,Hernando Post Office,Hernando,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2122107041,Hickory Flat Post Office,Hickory Flat,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998344,Hillsboro Post Office,Hillsboro,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1197603758,Holly Bluff Post Office,Holly Bluff,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998536,Holly Springs Post Office,Holly Springs,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:7149770933,Horn Lake Postal Service,Horn Lake Postal Service,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998104,Houston Post Office,Houston,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1548310998,Independence Post Office,Independence,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998191,Indianola Post Office,Indianola,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:828302855,Indianola Post Office,Indianola,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11111478920,Inverness Post Office,Inverness,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879352457,Itta Benna Post Office,Itta Benna,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:292483854,Keesler AFB Post Office,Keesler AFB,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1222273825,Kilmichael Post Office,Kilmichael,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11047129356,Lambert Post Office,Lambert,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1079153466,Lauderdale Post Office,Lauderdale,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1458158269,Lefleur Post Office,Lefleur,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2659656945,Leland Post Office,Leland,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879169837,Lena Post Office,Lena,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13313829153,Louisville Post Office,Louisville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879169836,Ludlow Post Office,Ludlow,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10884331377,Maben Post Office,Maben,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:261042876,Madison Post Office,Madison,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:545404818,Magee Post Office,Magee,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10644478258,Mail Boxes Etc.,Mail Boxes Etc.,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:112390992,Main Post Office,Main,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1121796519,Mantachie Post Office,Mantachie,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11047129221,Marks Post Office,Marks,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10884331399,Mathison Post Office,Mathison,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:988458572,Mc Henry Post Office,Mc Henry,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879349970,McCarley Post Office,McCarley,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:129784267,Meridian Post Office,Meridian,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:297390181,Minter City Post Office,Minter City,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:520614839,Monticello Post Office,Monticello,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10888908171,Mooreville Post Office,Mooreville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998068,Moss Post Office,Moss,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10895566513,Myrtle Post Office,Myrtle,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997986,Natchez Post Office,Natchez,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10888907271,Nettleton Post Office,Nettleton,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997930,New Albany Post Office,New Albany,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:599953331,New Albany Post Office,New Albany,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998050,Nitta Yuma Post Office,Nitta Yuma,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879349972,North Carrollton Post Office,North Carrollton,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879611364,Oakland Post Office,Oakland,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:6717377530,Oakvale Post Office,Oakvale,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:138678203,Ocean Springs Post Office,Ocean Springs,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10884332035,Okolona Post Office,Okolona,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997965,Olive Branch Post Office,Olive Branch,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5683279106,Pak Mail,Pak Mail,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:708596256,Paulding Post Office,Paulding,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998029,Pearl Post Office,Pearl,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:197733681,Perkinston Post Office,Perkinston,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997973,Philadelphia Post Office,Philadelphia,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11111478949,Phillip Post Office,Phillip,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998088,Picayune Post Office,Picayune,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1093946879,Pittsboro Post Office,Pittsboro,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10888907915,Plantersville Post Office,Plantersville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998099,Pocahontas Post Office,Pocahontas,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998080,Poplarville Post Office,Poplarville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998064,Porterville Post Office,Porterville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1162453858,United States Postal Service,Postal Service,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:659288158,United States Postal Service,Postal Service,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:803747271,Prairie Mississippi Post Office,Prairie Mississippi,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998063,Prairie Point Post Office,Prairie Point,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998061,Preston Post Office,Preston,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:653578955,Purvis Post Office,Purvis,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997989,Ridgeland Post Office,Ridgeland,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:164878830,Ridgeland Post Office,Ridgeland,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10894523655,Rienzi Post Office,Rienzi,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:142440723,Robinsonville Post Office,Robinsonville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998006,Rose Hill Post Office,Rose Hill,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1158876595,Sallis Post Office,Sallis,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13894031601,Saltillo Post Office,Saltillo,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:165558083,Saucier Post Office,Saucier,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11111478944,Schlater Post Office,Schlater,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879610816,Scobey Post Office,Scobey,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1131149024,Senatobia Post Office,Senatobia,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10888850223,Shannon Post Office,Shannon,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:3367140319,Shelby Post Office,Shelby,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11047129354,Sledge Post Office,Sledge,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997970,Southaven Post Office,Southaven,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1526780486,Southwest Post Office,Southwest,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:9923676539,Star USPS,Star,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:625900682,State Line Post Office,State Line,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:2659719955,Stoneville Post Office,Stoneville,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998008,Stringer Post Office,Stringer,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1161946608,Sturgis Post Office,Sturgis,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:886293505,Sumrall Post Office,Sumrall,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:5712297294,Taylor Post Office,Taylor,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1469594520,Tchula Post Office,Tchula,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998103,Terry Post Office,Terry,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10881697257,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10888908169,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11000996995,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11494998577,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:11920183600,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12180825897,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12499237866,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:12980396757,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:5703540368,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6330152686,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:6439441219,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7098607180,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:7606880897,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:9900784324,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:633906895,The UPS Store,The UPS Store,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:node:10879610602,The UPS Store - Grenada,The UPS Store Grenada,MS,packet_ready,private_shipping_semantic_gate,private_shipping_facility_label
+osm:way:1338469660,Thomas G. Abernethy Federal Building,Thomas G. Abernethy Federal Building,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879610411,Tie Plant Post Office,Tie Plant,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10879610900,Tillatoba Post Office,Tillatoba,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998083,Tinsley Post Office,Tinsley,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:13804687602,Tippo Post Office,Tippo,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1549474180,Tunica Post Office,Tunica,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:41889331,Tupelo Post Office,Tupelo,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11047129073,Tutwiler Post Office,Tutwiler,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998051,Tylertown Post Office,Tylertown,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1105250759,Tylertown Post Office,Tylertown,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:4691613593,US Post Office,US,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:166047708,US Post Office,US,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:357998022,Union Church Post Office,Union Church,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:8863834411,United States Post Office - University of Southern Mississippi,University of Southern Mississippi,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:11001001114,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:2584089789,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:277458656,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:4730067406,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5324747271,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:5372118448,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5706091800,USPS,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:5830756990,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:6649012739,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:node:9796470477,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9874241366,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:node:9890841971,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1070311337,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1078943163,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1084705075,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1157308077,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1249581188,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1313539529,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1435966201,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1435974056,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:1447554016,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:165900893,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:165987867,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:166111093,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:166311918,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:212419237,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:315550049,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:380429589,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:399346084,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:435975219,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:448916376,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:516707249,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:553854011,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:568555983,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:577639838,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:595935660,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:605672868,Post Office,Unknown,MS,exclude,seed_already_excluded,input_review_status_not_packet_ready
+osm:way:925270074,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:943026048,United States Post Office,Unknown,MS,packet_ready,generic_locality_semantic_gate,generic_or_missing_locality
+osm:way:1427201844,Vaiden Post Office,Vaiden,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998081,Valley Park Post Office,Valley Park,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998107,Van Vleet Post Office,Van Vleet,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10888907385,Verona Post Office,Verona,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998009,Vossburg Post Office,Vossburg,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:1530735908,Walls Post Office,Walls,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:247100529,Walnut Post Office,Walnut,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10884331140,Walthall Post Office,Walthall,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10881872066,Water Valley Post Office,Water Valley,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997955,West Point Post Office,West Point,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:10893909107,Wheeler Post Office,Wheeler,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997919,Wiggins Post Office,Wiggins,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357997921,Winona Post Office,Winona,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:way:366319329,Winona Post Office,Winona,MS,packet_ready,public_postal_anchor_label,public_post_office_label
+osm:node:357998023,Yazoo City Post Office,Yazoo City,MS,packet_ready,public_postal_anchor_label,public_post_office_label

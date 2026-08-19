@@ -14,7 +14,8 @@ Candidate evidence stack:
 
 - public post-office points,
 - ZIP/ZCTA or postal-locality context,
-- QSR brands from existing exact-brand patterns,
+- QSR brands from existing exact-brand patterns, plus a widened
+  pizza/delivery sidecar or broader small-place QSR review,
 - gas/convenience brands from the existing sidecar pattern,
 - dollar-store brands,
 - grocery/pharmacy exact-brand layers,

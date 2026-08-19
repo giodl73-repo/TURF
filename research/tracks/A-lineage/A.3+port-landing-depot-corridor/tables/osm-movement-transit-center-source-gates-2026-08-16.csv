@@ -1,0 +1,7 @@
+"target_id","sidecar_layer","endpoint","fetch_status","raw_row_count","error"
+"camp-creek","transit_center","https://overpass-api.de/api/interpreter","fetched","0",""
+"ford-city-cicero","transit_center","https://overpass-api.de/api/interpreter","fetched","0",""
+"center-city-market-east","transit_center","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 429 (Too Many Requests)."
+"university-city-30th-street","transit_center","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 429 (Too Many Requests)."
+"loop-river-north","transit_center","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 429 (Too Many Requests)."
+"perimeter-wide","transit_center","https://overpass-api.de/api/interpreter","reused_existing_review","4","reused fixtures/civic/osm-transit-center-atlanta-anchor-fields-review-2026-08-13.csv"

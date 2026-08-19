@@ -1,0 +1,6 @@
+"target_id","sidecar_layer","endpoint","fetch_status","raw_row_count","error","name_regex"
+"kingston-wa","ferry_terminal","https://overpass-api.de/api/interpreter","fetched","8","","Kingston|Edmonds"
+"bainbridge-island-wa","ferry_terminal","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 504 (Gateway Timeout).","Bainbridge|Seattle"
+"center-city-market-east","transit_center","https://overpass-api.de/api/interpreter","fetched","9","","Jefferson|Suburban|Market East|8th|11th|13th|City Hall"
+"university-city-30th-street","transit_center","https://overpass-api.de/api/interpreter","source_gated_error","0","Response status code does not indicate success: 429 (Too Many Requests).","30th Street|Drexel|Penn Medicine|University City"
+"loop-river-north","transit_center","https://overpass-api.de/api/interpreter","fetched","14","","Clark/Lake|State/Lake|Washington|Ogilvie|Union Station|Millennium|Merchandise Mart"

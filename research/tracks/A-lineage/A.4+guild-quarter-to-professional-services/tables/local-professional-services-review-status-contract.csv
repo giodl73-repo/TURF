@@ -1,0 +1,7 @@
+"review_status","meaning","promotion_allowed","notes"
+"packet_ready","Named public-facing candidate passed category-specific inclusion and exclusion rules.","yes","May enter sidecar packet as context texture, not core profile."
+"exclude","Candidate matched an explicit exclusion rule.","no","Retain row in review artifact when useful for audit."
+"needs_manual_review","Candidate has partial evidence but ambiguous function, address, or category.","no","Do not promote until a human review resolves the ambiguity."
+"source_gated","Query or source failed before evidence could be interpreted.","no","Never convert to absence."
+"checked_absent","Clean bounded check returned no candidates for that specific query profile.","no","Only valid for the exact source, date, field, category, and query profile."
+"defer_by_default","Category is too noisy for first inclusion without a stronger local reason.","no","Default for generic business-service rows."

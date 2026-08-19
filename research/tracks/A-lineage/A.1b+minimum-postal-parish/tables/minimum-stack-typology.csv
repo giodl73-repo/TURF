@@ -1,8 +1,12 @@
 minimum_stack_class,required_signal,optional_signal,claim_boundary
 postal_only_candidate,observed post-office or postal civic point,no observed national-chain sidecar in pilot stack,"Candidate sparse addressability node; not a claim of no local commerce."
 postal_qsr_minimum,observed post-office plus QSR,QSR may be single-brand or single-row,"Everyday food-service signal; not customer behavior or complete restaurant access."
+postal_food_service_minimum,observed post-office plus checked named food-service signal,may include local restaurant/fast-food/cafe signal outside the four-brand QSR layer,"Everyday food-service signal; not customer behavior or complete restaurant access."
 postal_gas_minimum,observed post-office plus gas/convenience,may include QSR or dollar-store signal,"Car-trip/service signal; not traffic or vehicle-ownership claim."
 postal_dollar_store_minimum,observed post-office plus dollar-store signal,may include QSR or gas signal,"Value-errand footprint signal; not income or spending claim."
+postal_hardware_minimum,observed post-office plus hardware/trade-service signal,may include food-service/gas/dollar-store signal,"Trade-service footprint signal; not contractor demand or construction activity claim."
+postal_trade_service_minimum,observed post-office plus non-food local trade-service storefront,may include automotive repair bulk petroleum farm/ranch supply or mower/equipment service,"Trade-service footprint signal; not a consumer convenience-store, food-service, traffic, contractor-demand, or construction-activity claim."
+postal_laundromat_minimum,observed post-office plus laundromat/household-service signal,may include food-service/gas/dollar-store/hardware signal,"Household-service footprint signal; not housing tenure or income claim."
 postal_grocery_pharmacy_minimum,observed post-office plus grocery or pharmacy,may include QSR/gas/dollar-store signal,"Everyday provisioning signal; not health access or food access adequacy claim."
 postal_everyday_service_minimum,observed post-office plus two or more everyday-service layers,QSR/gas/dollar/grocery/pharmacy may combine,"Sparse service stack; not a full market center."
 postal_signal_absent_or_source_gated,no observed post-office or unresolved source gate,other sidecars may be present,"Cannot infer absence unless source gate is resolved."

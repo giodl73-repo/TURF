@@ -1,0 +1,13 @@
+target_id,primary_city,facility_type,sidecar_status,packet_ready_rows,observed_facility_names,claim_boundary
+national-post-office-ms-tutwiler-0ca09919c3,Tutwiler,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-bigbee-valley-905a04396f,Bigbee Valley,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-union-church-ea072f6994,Union Church,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-wiggins-ca2830aa2a,Wiggins,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-phillip-594c315f87,Phillip,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-verona-b144237576,Verona,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-crowder-66d363bf86,Crowder,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-clarksdale-dd861c33cc,Clarksdale,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-ocean-springs-5194ac9e54,Ocean Springs,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-nitta-yuma-1b0b62daba,Nitta Yuma,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-valley-park-c02f8044f8,Valley Park,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-ms-heidelberg-c07f8caa16,Heidelberg,dollar_store,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.

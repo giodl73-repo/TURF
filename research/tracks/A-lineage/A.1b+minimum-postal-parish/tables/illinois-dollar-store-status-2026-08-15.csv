@@ -1,0 +1,9 @@
+target_id,primary_city,dollar_store_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+il-third-pilot-fairbury,Fairbury,observed,3,2,1,Dollar General; Family Dollar,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-greenup,Greenup,checked_absent,0,0,0,,OSM map API sidecar pass completed and returned no packet-ready rows inside bounded target box.
+il-third-pilot-mount-carmel,Mount Carmel,checked_absent,0,0,0,,OSM map API sidecar pass completed and returned no packet-ready rows inside bounded target box.
+il-third-pilot-virden,Virden,checked_absent,0,0,0,,OSM map API sidecar pass completed and returned no packet-ready rows inside bounded target box.
+il-third-pilot-winthrop-harbor,Winthrop Harbor,observed,2,2,0,Dollar General; Dollar General,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-albion,Albion,checked_absent,0,0,0,,OSM map API sidecar pass completed and returned no packet-ready rows inside bounded target box.
+il-third-pilot-altamont,Altamont,observed,1,1,0,Dollar General,OSM map API sidecar pass returned packet-ready rows inside bounded target box.
+il-third-pilot-arcola,Arcola,checked_absent,0,0,0,,OSM map API sidecar pass completed and returned no packet-ready rows inside bounded target box.

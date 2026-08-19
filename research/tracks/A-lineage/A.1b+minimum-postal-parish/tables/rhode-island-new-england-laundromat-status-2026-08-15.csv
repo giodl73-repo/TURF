@@ -1,0 +1,13 @@
+target_id,primary_city,settlement_size_proxy,laundromat_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+national-post-office-ri-annex-finance-af912748c0,Annex Finance,50000_plus,observed,7,7,0,City Bubbles; Courtesy Cleaners; Eden Park Cleaners; Green Dry Cleaning; Lalin Coin Laundry Mat; The Laundry Club; True-shine Laundromat,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-ri-apponaug-station-f8f803db9f,Apponaug Station,50000_plus,observed,1,1,0,Thorpe's Laundromat & Dry Cleaning,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-ri-barrington-82bdad8fc9,Barrington,10000_to_49999,observed,1,1,0,Bullocks Point Laundromat,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-ri-block-island-ac7592fa0e,Block Island,under_2500,checked_absent,0,0,0,,No named laundromat rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-ri-bristol-350c233b54,Bristol,10000_to_49999,checked_absent,0,0,0,,No named laundromat rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-ri-broadway-346c2a36b6,Broadway,10000_to_49999,observed,2,2,0,Mall Laundromat; Micki's Mat,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-ri-bryant-university-1c4c9cc6b0,Bryant University,10000_to_49999,checked_absent,0,0,0,,No named laundromat rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-ri-central-falls-211329b45d,Central Falls,10000_to_49999,observed,3,2,1,Bubble Wash Laundromat; Diamond Dry Cleaners,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-ri-centreville-57742e4232,Centreville,10000_to_49999,observed,3,3,0,Ray's Polyclean Center; Thorpe's Laundromat & Dry Cleaning; Tumbletown 2,Named laundromat rows from Geofabrik OSM GeoPackage within target box.
+national-post-office-ri-chepachet-3035201489,Chepachet,2500_to_9999,checked_absent,0,0,0,,No named laundromat rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-ri-clayville-f1ff22f00c,Clayville,10000_to_49999,checked_absent,0,0,0,,No named laundromat rows found in Geofabrik OSM GeoPackage target box.
+national-post-office-ri-coventry-6d6e6926c0,Coventry,10000_to_49999,observed,1,1,0,Starbright Laundarymat,Named laundromat rows from Geofabrik OSM GeoPackage within target box.

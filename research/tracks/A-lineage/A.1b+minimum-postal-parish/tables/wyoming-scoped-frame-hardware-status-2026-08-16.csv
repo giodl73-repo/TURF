@@ -1,0 +1,85 @@
+target_id,primary_city,facility_type,sidecar_status,packet_ready_rows,observed_facility_names,claim_boundary
+national-post-office-wy-airport-fcb22eb890,Airport,hardware,observed,7,Ace Hardware; Bloedorn Lumber; Bomgaars; Harbor Freight Tools; Lowe's; Menards; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-alpine-bd2d53e915,Alpine,hardware,observed,2,Alpine Ace Hardware; Jenkins Building Supply,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-auburn-0e0a391047,Auburn,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-beulah-02adcbe8f4,Beulah,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-big-horn-809ef111f7,Big Horn,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-boulder-wy-b9fd25d928,"Boulder, WY",hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-buffalo-main-46c786b9c1,Buffalo Main,hardware,observed,1,Buffalo Ace Hardware,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-capitol-station-6ac1770321,Capitol Station,hardware,observed,7,Ace Hardware; Bloedorn Lumber; Bomgaars; Harbor Freight Tools; Lowe's; Menards; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-carpenter-wy-f9563226fe,Carpenter WY,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-casper-2e4affc90a,Casper,hardware,observed,1,The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-centennial-db8e2c4b6f,Centennial,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-cheyenne-main-42bc384548,Cheyenne Main,hardware,observed,7,Ace Hardware; Bloedorn Lumber; Bomgaars; Harbor Freight Tools; Lowe's; Menards; Murdoch's Home and Ranch Supply,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-devils-tower-2b647cad84,Devils Tower,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-downtown-d843f7ed9b,Downtown,hardware,observed,3,Ace Hardware; Jackson Lumber,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-fairview-c3a3697e9e,Fairview,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-fedex-ship-center-2a4f6d3fd4,FedEx Ship Center,hardware,observed,7,Ace Hardware; Bloedorn Lumber; Bomgaars; Harbor Freight Tools; Lowe's; Menards; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-fedex-ship-center-aa59f01bf8,FedEx Ship Center,hardware,observed,6,Bloedorn Lumber; Harbor Freight Tools; Hardware Hank; Mead Lumber; Menards; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-fedex-ship-center-cffd1b3430,FedEx Ship Center,hardware,observed,5,Ace Hardware; Bloedorn Lumber; Fortman Glass; HomeBase; True Value,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-fort-bridger-8920c21878,Fort Bridger,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-freedom-f474b81b17,Freedom,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-gillette-ea67d0f83b,Gillette,hardware,observed,6,Bloedorn Lumber; Harbor Freight Tools; Hardware Hank; Mead Lumber; Menards; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-glendo-53a4a63bbd,Glendo,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-grant-village-d820af642d,Grant Village,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-grover-331d92f06e,Grover,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-guernsey-bd2c0c26fe,Guernsey,hardware,observed,1,Do it Best,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-hartville-805f814baf,Hartville,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-hillsdale-wy-82060-0af4b2594d,"Hillsdale, WY 82060",hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-la-barge-5e857e318b,LA Barge,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-lake-outlet-af3d277c4e,Lake Outlet,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-lance-creek-c289a27ccf,Lance Creek,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-lander-698949382b,Lander,hardware,observed,3,Ace Hardware; Gannett Peak Sports; NAPA Auto Parts - Wyoming Parts Inc,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-laramie-23c310eec4,Laramie,hardware,observed,5,Ace Hardware; Bloedorn Lumber; Fortman Glass; HomeBase; True Value,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-lusk-0f27ff42ff,Lusk,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-lyman-1d1e3a25dd,Lyman,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-mail-boxes-etc-3c204459de,Mail Boxes Etc.,hardware,observed,1,Wilson Hardware,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-mail-boxes-etc-9b5c5b7976,Mail Boxes Etc.,hardware,observed,1,Wilson Hardware,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-mammoth-springs-73eb6980b8,Mammoth Springs,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-manville-d10b6af109,Manville,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-mckinley-01b99ec89a,McKinley,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-meriden-2c2d68f793,Meriden,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-meriden-3054b987cf,Meriden,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-moose-551eaac571,Moose,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-moose-fb4a47a95a,Moose,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-moosely-mail-52cbd0a071,Moosely Mail,hardware,observed,2,Ace Hardware; Standard Plumbing,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-newcastle-0aeb551b79,Newcastle,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-osage-bcbd9997e3,Osage,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-pinedale-ae0490e7c8,Pinedale,hardware,observed,2,Ace Hardware; Standard Plumbing,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-0292d86b85,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-6f8bed97c6,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-85770420d7,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-921796525a,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-c5bdf32860,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-e23816a429,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-e9a2086c00,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-f33e442d8c,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-f809a47e7a,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-postal-service-f8197738c3,Postal Service,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-powder-river-3c5dfc647e,Powder River,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-ranchester-c4e43d0fee,Ranchester,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-riverton-40d74fbcbe,Riverton,hardware,observed,1,Ace Hardware,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-saratoga-3ccdccc3ae,Saratoga,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-sheridan-567830f9a6,Sheridan,hardware,observed,3,Ace Hardware; Ace Home Center; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-smoot-07fdf6cb68,Smoot,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-the-ups-store-5dd49a85e5,The UPS Store,hardware,observed,2,Menards; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-the-ups-store-82a30bac18,The UPS Store,hardware,observed,6,Bloedorn Lumber; Harbor Freight Tools; Hardware Hank; Mead Lumber; Menards; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-the-ups-store-e0d2144187,The UPS Store,hardware,observed,8,Ace Hardware; Bloedorn Lumber; Bomgaars; Harbor Freight Tools; Lowe's; Menards; Murdoch's Home and Ranch Supply,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-the-ups-store-f03488d118,The UPS Store,hardware,observed,5,Ace Hardware; Bloedorn Lumber; Fortman Glass; HomeBase; True Value,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-thermopolis-a63759f7ea,Thermopolis,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-u-s-ccbdac0652,U.S.,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-u-s-f49751acf0,U.S.,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-0a55e011e9,Unknown,hardware,observed,1,Ace Hardware,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-386fab779e,Unknown,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-4de2fd379e,Unknown,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-4fb443ceaf,Unknown,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-5a1dc5d434,Unknown,hardware,observed,4,ACE Hardware; Big Horn CO-OP; Cenex; Greybull Building Center,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-bf72075f10,Unknown,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-c725e4aa5e,Unknown,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-e904292fce,Unknown,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-f155d8dd03,Unknown,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-unknown-ffad92b909,Unknown,hardware,observed,2,Ace Hardware; The Home Depot,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-us-cc5b48a86f,US,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-us-dubois-wyoming-82513-4f48faf4da,"US , Dubois, Wyoming 82513",hardware,observed,1,Painted Valley Mercantile - Hardware,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-us-e0cbd47345,US,hardware,checked_absent,0,,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.
+national-post-office-wy-wheatland-2bb0f23466,Wheatland,hardware,observed,1,Drube Supply,Local Geofabrik sidecar status for bounded target boxes only; not complete inventory or frequency.

@@ -1,0 +1,3 @@
+target_id,primary_city,food_service_status,candidate_rows,packet_ready_rows,excluded_rows,sample_names,review_note
+ga-second-pilot-ball-ground,Ball Ground,observed,8,8,0,Subway; Les Bon Temps Louisiana Kitchen; Ball Ground Burger Bus; Frankfurt Döner & Meats; Jill's Bakery,Resolved with OSM API 0.6 map retry after Overpass endpoint timeouts; packet-ready named food-service rows observed inside bounded target box.
+ga-second-pilot-cohutta,Cohutta,observed,5,5,0,McDonald's; Burger Den; Panda Express; Luigis Pizza; Wendy's,Resolved with OSM API 0.6 map retry after Overpass endpoint timeouts; packet-ready named food-service rows observed inside bounded target box.

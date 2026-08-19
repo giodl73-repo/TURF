@@ -47,6 +47,12 @@ OSM_TAGS = {
         ("amenity", "fuel"),
         ("shop", "convenience"),
     ],
+    "food_service": [
+        ("amenity", "fast_food"),
+        ("amenity", "restaurant"),
+        ("amenity", "cafe"),
+        ("shop", "pizza"),
+    ],
     "gym": [("leisure", "fitness_centre")],
     "hardware": [("shop", "hardware")],
     "laundromat": [("shop", "laundry")],
@@ -54,6 +60,11 @@ OSM_TAGS = {
     "park": [
         ("leisure", "park"),
         ("leisure", "recreation_ground"),
+    ],
+    "pizza_delivery": [
+        ("amenity", "fast_food"),
+        ("amenity", "restaurant"),
+        ("shop", "pizza"),
     ],
     "post_office": [("amenity", "post_office")],
     "transit_center": [
@@ -71,8 +82,57 @@ def build_query(target: dict[str, str], facility_type: str) -> str:
     max_lon = target["max_lon"]
     bbox = f"{min_lat},{min_lon},{max_lat},{max_lon}"
     selectors = []
+    if facility_type == "dollar_store":
+        brand_regex = "Dollar Tree|Dollar General|Family Dollar"
+        for key, value in OSM_TAGS[facility_type]:
+            selectors.extend(
+                [
+                    f'  node["{key}"="{value}"]["name"~"{brand_regex}",i]({bbox});',
+                    f'  way["{key}"="{value}"]["name"~"{brand_regex}",i]({bbox});',
+                    f'  node["{key}"="{value}"]["brand"~"{brand_regex}",i]({bbox});',
+                    f'  way["{key}"="{value}"]["brand"~"{brand_regex}",i]({bbox});',
+                    f'  node["{key}"="{value}"]["operator"~"{brand_regex}",i]({bbox});',
+                    f'  way["{key}"="{value}"]["operator"~"{brand_regex}",i]({bbox});',
+                ]
+            )
+        selector_block = "\n".join(selectors)
+        return f"""
+[out:json][timeout:60];
+(
+{selector_block}
+);
+out center tags;
+"""
+    if facility_type == "pizza_delivery":
+        brand_regex = "Domino|Pizza Hut|Papa John|Little Caesars|Papa Murphy"
+        for key, value in OSM_TAGS[facility_type]:
+            selectors.extend(
+                [
+                    f'  node["{key}"="{value}"]["name"~"{brand_regex}",i]({bbox});',
+                    f'  way["{key}"="{value}"]["name"~"{brand_regex}",i]({bbox});',
+                    f'  node["{key}"="{value}"]["brand"~"{brand_regex}",i]({bbox});',
+                    f'  way["{key}"="{value}"]["brand"~"{brand_regex}",i]({bbox});',
+                    f'  node["{key}"="{value}"]["operator"~"{brand_regex}",i]({bbox});',
+                    f'  way["{key}"="{value}"]["operator"~"{brand_regex}",i]({bbox});',
+                ]
+            )
+        selector_block = "\n".join(selectors)
+        return f"""
+[out:json][timeout:60];
+(
+{selector_block}
+);
+out center tags;
+"""
     for key, value in OSM_TAGS[facility_type]:
-        if facility_type in {"dollar_store", "gym", "hardware", "laundromat", "park"}:
+        if facility_type in {
+            "dollar_store",
+            "gym",
+            "hardware",
+            "laundromat",
+            "park",
+            "pizza_delivery",
+        }:
             selectors.extend(
                 [
                     f'  node["{key}"="{value}"]["name"]({bbox});',
@@ -157,6 +217,20 @@ def review_reason(tags: dict, facility_type: str) -> str:
             return "unnamed_trip_anchor"
         if "charging" in name and "station" in name:
             return "ev_charging_candidate"
+    if facility_type == "food_service" and not name:
+        return "unnamed_food_service_anchor"
+    if facility_type == "pizza_delivery":
+        if not name:
+            return "unnamed_food_service_anchor"
+        pizza_brands = (
+            "domino",
+            "pizza hut",
+            "papa john",
+            "little caesars",
+            "papa murphy",
+        )
+        if not any(brand in name or brand in operator for brand in pizza_brands):
+            return "non_target_pizza_delivery"
     if facility_type == "gym" and not name:
         return "unnamed_wellness_anchor"
     if facility_type == "hardware" and not name:
@@ -203,15 +277,21 @@ def row_from_element(
     latitude, longitude = element_point(element)
     name = tag(tags, "name") or tag(tags, "official_name") or facility_type.replace("_", " ").title()
     reason = review_reason(tags, facility_type) if latitude and longitude else "missing_coordinate"
+    state = tag(tags, "addr:state") or target["state"]
+    if state and state.upper() != target["state"].upper():
+        reason = "outside_target_state"
     status = "packet_ready"
     if reason in {
         "missing_coordinate",
         "atm_only_candidate",
         "ev_charging_candidate",
         "non_target_variety_store",
+        "non_target_pizza_delivery",
+        "outside_target_state",
         "private_shipping_counter",
         "unnamed_open_space",
         "unnamed_household_service_anchor",
+        "unnamed_food_service_anchor",
         "unnamed_trip_anchor",
         "unnamed_trade_anchor",
         "unnamed_transit_point",
@@ -229,7 +309,7 @@ def row_from_element(
         "operator": tag(tags, "operator") or tag(tags, "brand"),
         "street_address": street_address(tags),
         "city": tag(tags, "addr:city") or target["primary_city"],
-        "state": target["state"],
+        "state": state,
         "postal_code": tag(tags, "addr:postcode"),
         "latitude": latitude,
         "longitude": longitude,
@@ -242,10 +322,23 @@ def row_from_element(
     }
 
 
-def reapply_review_rules(output_path: Path, facility_type: str) -> None:
+def reapply_review_rules(
+    output_path: Path,
+    facility_type: str,
+    targets_path: Path,
+) -> None:
+    with targets_path.open(newline="", encoding="utf-8") as handle:
+        targets_by_id = {
+            row["target_id"]: row
+            for row in csv.DictReader(handle)
+        }
     with output_path.open(newline="", encoding="utf-8") as handle:
         existing_rows = list(csv.DictReader(handle))
     for row in existing_rows:
+        target_id = row.get("target_id", "")
+        target = targets_by_id.get(target_id)
+        if target is None:
+            raise ValueError(f"Unknown target_id in existing output: {target_id}")
         synthetic_tags = {
             "name": row.get("facility_name", ""),
             "operator": row.get("operator", ""),
@@ -255,6 +348,10 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
             "addr:postcode": row.get("postal_code", ""),
         }
         reason = review_reason(synthetic_tags, facility_type)
+        state = row.get("state", "")
+        target_state = target.get("state", "")
+        if state and target_state and state.upper() != target_state.upper():
+            reason = "outside_target_state"
         row["review_reason"] = reason
         row["review_status"] = (
             "exclude"
@@ -263,9 +360,12 @@ def reapply_review_rules(output_path: Path, facility_type: str) -> None:
                 "atm_only_candidate",
                 "ev_charging_candidate",
                 "non_target_variety_store",
+                "non_target_pizza_delivery",
+                "outside_target_state",
                 "private_shipping_counter",
                 "unnamed_open_space",
                 "unnamed_household_service_anchor",
+                "unnamed_food_service_anchor",
                 "unnamed_trip_anchor",
                 "unnamed_trade_anchor",
                 "unnamed_transit_point",
@@ -313,7 +413,7 @@ def main() -> None:
     output_path = Path(args.output)
 
     if args.review_existing:
-        reapply_review_rules(output_path, args.facility_type)
+        reapply_review_rules(output_path, args.facility_type, targets_path)
         return
 
     rows: list[dict[str, str]] = []

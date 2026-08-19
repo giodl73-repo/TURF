@@ -1,0 +1,9 @@
+metric,value,note
+target_rows,12,New Mexico Southwest Borderlands preflight target boxes classified.
+food_service_observed_targets,10,Targets with packet-ready named Geofabrik food-service rows.
+gas_convenience_observed_targets,9,Targets with packet-ready named Geofabrik gas-convenience rows.
+dollar_store_observed_targets,0,Targets with packet-ready named Geofabrik dollar-store rows.
+hardware_observed_targets,7,Targets with packet-ready named Geofabrik hardware rows.
+laundromat_observed_targets,6,Targets with packet-ready named Geofabrik laundromat rows.
+classification_counts,postal_everyday_service_minimum=10; postal_only_candidate=2,Minimum stack classes under local Geofabrik sidecar method.
+settlement_proxy_unknown_targets,0,Targets whose Census settlement proxy join did not resolve.

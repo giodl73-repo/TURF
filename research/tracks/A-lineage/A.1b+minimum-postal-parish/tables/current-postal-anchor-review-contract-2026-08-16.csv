@@ -1,0 +1,17 @@
+field,required,allowed_values,description,claim_boundary
+target_id,yes,,Sample target identifier from the post-office target-box table.,Identifier only; not evidence of current facility status.
+primary_city,yes,,Target primary city or postal label.,Label only; not a ZIP ZCTA CDP or municipal boundary claim.
+seed_facility_id,yes,,Original seed facility ID such as OSM node or way ID.,Seed provenance only; may represent stale or historical features until reviewed.
+seed_facility_name,yes,,Original seed facility name.,Name only; not proof of current operation.
+anchor_review_status,yes,current_anchor_confirmed_inside_box|current_anchor_confirmed_outside_box|current_anchor_status_gated|current_anchor_contradicted|source_gated,Controlled current-anchor decision for the sampled target.,May gate target eligibility; does not classify everyday-service stack.
+current_anchor_source_name,conditional,,Source used for current-anchor review.,Required for confirmed gated or contradicted outcomes.
+current_anchor_source_url,conditional,,URL or stable source locator used for current-anchor review.,Required for confirmed gated or contradicted outcomes.
+current_anchor_source_date,conditional,,Date the source was reviewed or source timestamp if available.,Required for confirmed gated or contradicted outcomes.
+observed_current_facility_name,conditional,,Observed current post-office facility name when confirmed.,Required for inside-box or outside-box confirmation.
+observed_current_facility_address,conditional,,Observed current post-office address when confirmed.,Required for inside-box or outside-box confirmation.
+observed_current_facility_latitude,conditional,,Geocoded latitude for observed current facility.,Required for inside-box or outside-box confirmation.
+observed_current_facility_longitude,conditional,,Geocoded longitude for observed current facility.,Required for inside-box or outside-box confirmation.
+inside_target_box,yes,yes|no|unknown|not_applicable,Whether the observed current facility geocodes inside the sampled target box.,Target-box membership only; no catchment or service-area claim.
+evidence_summary,yes,,Short explanation of the current-anchor evidence.,Must stay source-bound and avoid frequency or adequacy claims.
+claim_boundary,yes,,Explicit claims blocked by the row.,Blocks postal-only frequency and service-adequacy claims.
+next_action,yes,,Required follow-up if the row is gated contradicted or source-gated.,Process guidance only; not a finding.

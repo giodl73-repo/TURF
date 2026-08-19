@@ -1,0 +1,19 @@
+metric,value,note
+target_boxes,20,Bounded Washington sparse-chain candidate probes.
+post_office_checked_absent,2,Count of targets with post_office_status=checked_absent.
+post_office_observed,18,Count of targets with post_office_status=observed.
+food_service_checked_absent,1,Count of targets with food_service_status=checked_absent.
+food_service_observed,19,Count of targets with food_service_status=observed.
+gas_convenience_checked_absent,5,Count of targets with gas_convenience_status=checked_absent.
+gas_convenience_observed,15,Count of targets with gas_convenience_status=observed.
+dollar_store_checked_absent,14,Count of targets with dollar_store_status=checked_absent.
+dollar_store_observed,6,Count of targets with dollar_store_status=observed.
+hardware_checked_absent,15,Count of targets with hardware_status=checked_absent.
+hardware_observed,5,Count of targets with hardware_status=observed.
+laundromat_checked_absent,20,Count of targets with laundromat_status=checked_absent.
+minimum_stack_class_postal_everyday_service_minimum,15,Count of targets with minimum_stack_class=postal_everyday_service_minimum.
+minimum_stack_class_postal_food_service_minimum,3,Count of targets with minimum_stack_class=postal_food_service_minimum.
+minimum_stack_class_postal_signal_absent_or_source_gated,2,Count of targets with minimum_stack_class=postal_signal_absent_or_source_gated.
+postal_only_candidate,0,No target remains postal-only after broad food-service pass.
+postal_stack_classified_targets,18,Targets eligible for postal minimum-stack classification.
+post_office_checked_absent_targets,Darrington; Mesa,Everyday-service evidence exists for these targets but postal-stack classification is blocked.
