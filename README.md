@@ -715,6 +715,9 @@ not scrape private APIs or imply it has access to unpublished corporate region
 boundaries. The Home Depot / Lowe's acquisition gate is documented in
 `docs\research\home-improvement-source-policy.md`.
 
+PITFALL doctrine for public-footprint, source-gate, geography-join, scale, and
+RET interpretation failures is indexed at [`.pitfall/PITFALL.md`](.pitfall/PITFALL.md).
+
 ## Non-goals
 
 - TURF does not claim to know a chain's internal districts unless they are
