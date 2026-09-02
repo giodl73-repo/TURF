@@ -85,3 +85,29 @@ decision require deferred-claim and blocked-claim language.
 **Evidence:** `research/README.md`,
 `research/tracks/A-lineage/current-enclave-claim-surface-decision.md`, and
 `TURF-PF-05`.
+
+## TURF-INV-06: Source Absence And Scale Gates Are Machine-Readable
+
+**Status:** VERIFIED
+
+**Claim:** Missing source rows and larger scale profiles do not become service
+absence, national pattern, adequacy, behavior, demographic, income, or official
+territory claims without the required source-status and scale-gate review.
+
+**Why it matters:** TURF is most useful when it exposes uncertainty; public
+retail footprint evidence becomes misleading if data gaps or row volume are
+treated as stronger authority.
+
+**Enforcement:** `docs/turf-claim-boundaries.v1.json` names required owners,
+required source states, required scale-gate fields, and blocked claims; the
+boundary checker asserts that the role index, data policy, depth review, scale
+decision, and sidecar matrix preserve those gates.
+
+**Evidence:** `docs/turf-claim-boundaries.v1.json`,
+`.roles/parliament/source-status-steward.md`,
+`.roles/parliament/scale-gate-steward.md`, `.roles/ROLE.md`,
+`docs/data-policy.md`, `reports/ret-next-scale-decision-after-philadelphia.md`,
+`reports/ret-sidecar-promotion-evidence-matrix.md`, and
+`research/tracks/A-lineage/A.1b+minimum-postal-parish/sections/43-south-dakota-depth-review.md`.
+
+**Test:** `pwsh -NoProfile -File tools\check-pitfall-boundaries.ps1`.

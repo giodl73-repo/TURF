@@ -21,7 +21,7 @@ and reserve official-territory claims for published company boundaries.
 
 ## TURF-PF-02: Source Absence Becomes Service Absence
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Pattern:** Missing Overture, OSM, Overpass, or reviewed POI rows are treated
 as proof that a place lacks a service.
@@ -34,12 +34,19 @@ absence even when the row is actually timeout, retry-gated, source-gated, or
 source-limited.
 
 **Structural solution:** Preserve observed, checked-absent, source-gated,
-retry-gated, and depth-candidate statuses and require alternate-source review
-before absence claims.
+retry-gated, source-limited, and depth-candidate statuses and require
+alternate-source review before absence claims. The Source Status Steward role
+and `docs/turf-claim-boundaries.v1.json` block missing source rows from becoming
+service absence, unserved-market, retail-desert, customer-access,
+service-adequacy, or trade-area absence claims.
 
 **Evidence:** `context/waves/2026-08-10-retail-footprint-foundation/ROLE_REVIEW.md`,
 `reports/ret-cross-metro-type-discovery-profile.md`, and
-`research/tracks/A-lineage/A.1b+minimum-postal-parish/sections/219-south-dakota-depth-review.md`.
+`research/tracks/A-lineage/A.1b+minimum-postal-parish/sections/43-south-dakota-depth-review.md`,
+`docs/turf-claim-boundaries.v1.json`, `.roles/ROLE.md`, and
+`.roles/parliament/source-status-steward.md`.
+
+**Test:** `pwsh -NoProfile -File tools\check-pitfall-boundaries.ps1`.
 
 ## TURF-PF-03: Geography Join Collapses Place Meaning
 
@@ -63,7 +70,7 @@ candidate context, not identity replacement.
 
 ## TURF-PF-04: Scale Adds Certainty Instead Of Gates
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Pattern:** Adding more metros, categories, or sidecars is read as proof of a
 general national pattern before source quality, layer comparability, and
@@ -77,12 +84,20 @@ create momentum even when some rows are still partial, retry-gated, or
 source-quality limited.
 
 **Structural solution:** Require scale-decision gates that state the next useful
-layer, blocked claims, source-quality tiers, and why more geography changes the
-claim.
+layer, claim surface, blocked claims, source-quality tiers, layer comparability,
+and why more geography changes the claim. The Scale Gate Steward role and
+`docs/turf-claim-boundaries.v1.json` block larger profiles from becoming
+national pattern certainty, service adequacy, customer behavior,
+protected-class, income, individual-finance, official-planning, or corporate
+territory claims.
 
 **Evidence:** `reports/ret-next-scale-decision-after-philadelphia.md`,
-`reports/ret-sidecar-promotion-evidence-matrix.md`, and
-`reports/ret-cross-metro-type-discovery-profile.md`.
+`reports/ret-sidecar-promotion-evidence-matrix.md`,
+`reports/ret-cross-metro-type-discovery-profile.md`,
+`docs/turf-claim-boundaries.v1.json`, `.roles/ROLE.md`, and
+`.roles/parliament/scale-gate-steward.md`.
+
+**Test:** `pwsh -NoProfile -File tools\check-pitfall-boundaries.ps1`.
 
 ## TURF-PF-05: Retail Typology Becomes People Or Adequacy Claim
 

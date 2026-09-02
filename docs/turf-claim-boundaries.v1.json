@@ -1,0 +1,72 @@
+{
+  "$schema": "turf.claim-boundaries.v1",
+  "owner": "TURF maintainer",
+  "purpose": "Machine-readable boundaries for source absence and scale-gated retail-footprint claims.",
+  "authority": {
+    "poi_source_row": "source observation or source condition only",
+    "alternate_source_review": "bounded contradiction or confirmation within reviewed source scope",
+    "type_discovery_profile": "cross-metro public-footprint comparison with source-quality tiers",
+    "scale_decision": "next useful evidence gate, not national certainty",
+    "service_absence_or_national_pattern": "requires alternate-source and scale-gate evidence outside a single source layer"
+  },
+  "pitfall_boundaries": [
+    {
+      "entryId": "TURF-PF-02",
+      "requiredOwner": "Source Status Steward",
+      "sourceLayer": "missing, timeout, retry-gated, source-gated, or source-limited POI rows",
+      "maySupport": [
+        "source coverage note",
+        "review queue prioritization",
+        "alternate-source review trigger",
+        "bounded target-box contradiction when reviewed"
+      ],
+      "requiredStates": [
+        "observed",
+        "checked-absent",
+        "source-gated",
+        "retry-gated",
+        "source-limited",
+        "depth-candidate"
+      ],
+      "blockedClaims": [
+        "service absence",
+        "complete local-commerce coverage",
+        "unserved market",
+        "retail desert",
+        "customer access finding",
+        "service adequacy",
+        "trade-area absence"
+      ],
+      "closureGate": "alternate-source review with source date, status, target boundary, and blocked-claim language"
+    },
+    {
+      "entryId": "TURF-PF-04",
+      "requiredOwner": "Scale Gate Steward",
+      "sourceLayer": "more metros, categories, sidecars, completed pulses, or larger profile tables",
+      "maySupport": [
+        "next-layer selection",
+        "source-quality uncertainty reduction",
+        "field-label refinement",
+        "sidecar promotion review"
+      ],
+      "requiredGateFields": [
+        "next useful layer",
+        "claim surface",
+        "blocked claims",
+        "source-quality tiers",
+        "layer comparability",
+        "why scale changes the claim"
+      ],
+      "blockedClaims": [
+        "national pattern certainty",
+        "general service adequacy",
+        "customer behavior",
+        "protected-class inference",
+        "income inference",
+        "individual finance behavior",
+        "official planning or corporate territory"
+      ],
+      "closureGate": "scale decision states the next useful layer, source-quality limits, comparability limits, and blocked claims"
+    }
+  ]
+}
