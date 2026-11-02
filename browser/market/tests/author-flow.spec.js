@@ -5,7 +5,15 @@ const source=Object.fromEntries(fields.map(field=>[field,fs.readFileSync(new URL
 async function ready(page){await page.goto('./');await expect(page.locator('#status')).toContainText('Ready.');}
 async function example(page){await page.locator('#example').click();await expect(page.locator('#file-status')).toContainText('loaded atomically');}
 async function calculate(page){await page.locator('#inspect').click();await expect(page.locator('#status')).toContainText(/Packet calculated|Input rejected/);}
-async function download(page,id){console.log('Requesting download',id);const [file]=await Promise.all([page.waitForEvent('download'),page.locator(id).click()]);console.log('Received download',id,file.suggestedFilename());return fs.readFileSync(await file.path());}
+async function download(page,id){
+  // Chromium LocalFrame::ShouldThrottleDownload silently refuses the eleventh
+  // download in a one-second burst. Pace real clicks; do not disable that guard,
+  // extend deadlines, skip exports or replace actual-download byte assertions.
+  await new Promise(resolve=>setTimeout(resolve,150));
+  console.log('Requesting download',id);
+  const [file]=await Promise.all([page.waitForEvent('download'),page.locator(id).click()]);
+  console.log('Received download',id,file.suggestedFilename());return fs.readFileSync(await file.path());
+}
 
 test('synthetic task renders native ties and exports exact native reports and request',async({page})=>{
   await ready(page);await example(page);await calculate(page);
