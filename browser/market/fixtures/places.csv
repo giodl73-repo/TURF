@@ -1,0 +1,2 @@
+place_id,label,postal_city,state,zip_code,zcta,municipality,county,census_place,cbsa,urban_area,lived_place,market_area,delivery_relevance,governance_relevance,statistics_relevance,market_relevance
+synthetic,Synthetic place,Synthetic City,ZZ,00000,00000,Synthetic Municipality,Synthetic County,Synthetic Census Place,Synthetic Metro,Synthetic Urban Area,Synthetic Neighborhood,Synthetic Market,example,example,example,example

@@ -89,6 +89,17 @@ If the Philadelphia pass is clean, backfill the same layer across Los Angeles,
 Chicago, Dallas/Fort Worth, Washington, and Atlanta using the established
 anchor-field contracts and source-gate accounting.
 
+## Scale Gate Fields
+
+Before the next scale move, the decision record must state:
+
+- next useful layer;
+- claim surface;
+- blocked claims;
+- source-quality tiers;
+- layer comparability;
+- why scale changes the claim.
+
 ## Guardrail
 
 This decision does not introduce demographic, protected-class, customer,

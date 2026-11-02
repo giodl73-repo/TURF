@@ -3194,8 +3194,8 @@ fn anchor_profile_row_from_values(
                 .map_err(|_| format!("invalid nearest_spacing_miles for {}", values.area_id))?,
         )
     };
-    let anchor_modifier_v0 = anchor_modifier_v0(
-        values.geography_scope,
+    let anchor_modifier_v0 = anchor_modifier_v0(AnchorModifierInputs {
+        geography_scope: values.geography_scope,
         has_mall_complex,
         retail_complexes,
         home_improvement_brands,
@@ -3203,8 +3203,8 @@ fn anchor_profile_row_from_values(
         grocery_brands,
         mass_retail_brands,
         qsr_brands,
-        values.source_modifier,
-    );
+        source_modifier: values.source_modifier,
+    });
     let anchor_evidence_summary = anchor_evidence_summary(
         values.geography_scope,
         has_mall_complex,
@@ -3235,8 +3235,8 @@ fn anchor_profile_row_from_values(
     })
 }
 
-fn anchor_modifier_v0(
-    geography_scope: &str,
+struct AnchorModifierInputs<'a> {
+    geography_scope: &'a str,
     has_mall_complex: bool,
     retail_complexes: usize,
     home_improvement_brands: usize,
@@ -3244,8 +3244,21 @@ fn anchor_modifier_v0(
     grocery_brands: usize,
     mass_retail_brands: usize,
     qsr_brands: usize,
-    source_modifier: &str,
-) -> String {
+    source_modifier: &'a str,
+}
+
+fn anchor_modifier_v0(inputs: AnchorModifierInputs<'_>) -> String {
+    let AnchorModifierInputs {
+        geography_scope,
+        has_mall_complex,
+        retail_complexes,
+        home_improvement_brands,
+        auto_parts_brands,
+        grocery_brands,
+        mass_retail_brands,
+        qsr_brands,
+        source_modifier,
+    } = inputs;
     if has_mall_complex
         && home_improvement_brands >= 2
         && auto_parts_brands >= 2
@@ -3384,7 +3397,7 @@ fn parse_csv_records(csv: &str) -> Result<Vec<BTreeMap<String, String>>, String>
                 fields.len()
             ));
         }
-        rows.push(headers.iter().cloned().zip(fields.into_iter()).collect());
+        rows.push(headers.iter().cloned().zip(fields).collect());
     }
     Ok(rows)
 }
@@ -3560,7 +3573,7 @@ fn median(values: &[f64]) -> Option<f64> {
         return None;
     }
     let middle = values.len() / 2;
-    if values.len() % 2 == 0 {
+    if values.len() & 1 == 0 {
         Some((values[middle - 1] + values[middle]) / 2.0)
     } else {
         Some(values[middle])
@@ -3710,6 +3723,9 @@ fn escape_json(value: &str) -> String {
             '\n' => escaped.push_str("\\n"),
             '\r' => escaped.push_str("\\r"),
             '\t' => escaped.push_str("\\t"),
+            control if control < '\u{20}' => {
+                escaped.push_str(&format!("\\u{:04x}", control as u32));
+            }
             _ => escaped.push(character),
         }
     }
@@ -3719,6 +3735,54 @@ fn escape_json(value: &str) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn json_renderers_preserve_low_controls_as_valid_string_escapes() {
+        let label = "before\0\x01\x08\x0c\x1fafter Café 🦜";
+        let stores = [StorePoint {
+            brand: "Brand\x01Name".into(),
+            store_id: "synthetic-store".into(),
+            city: "Synthetic".into(),
+            state: "XX".into(),
+            latitude: 0.0,
+            longitude: 0.0,
+        }];
+        let packet = build_market_packet(label, "Synthetic", &stores, &[], &[]).unwrap();
+        let report = render_market_packet_json(&packet);
+        assert!(
+            report.contains(r#""category":"before\u0000\u0001\u0008\u000c\u001fafter Café 🦜""#)
+        );
+        assert!(report.contains(r#""brand":"Brand\u0001Name""#));
+        assert!(!report.chars().any(|character| character < '\u{20}'));
+
+        let findings = [PlaceContextFinding {
+            place_id: "synthetic-place".into(),
+            label: label.into(),
+            finding_kind: "synthetic".into(),
+            finding: "Caller text only".into(),
+        }];
+        let report = render_place_context_findings_json(&findings);
+        assert!(report.contains(r#""label":"before\u0000\u0001\u0008\u000c\u001fafter Café 🦜""#));
+        assert!(!report.chars().any(|character| character < '\u{20}'));
+    }
+
+    #[test]
+    fn compact_packet_has_no_literal_c0_for_any_admitted_control_character() {
+        let controls: String = (0u8..32).map(char::from).collect();
+        let category = format!("before{controls}after");
+        let stores = [StorePoint {
+            brand: "Synthetic".into(),
+            store_id: "synthetic-store".into(),
+            city: "Synthetic".into(),
+            state: "XX".into(),
+            latitude: 0.0,
+            longitude: 0.0,
+        }];
+        let packet = build_market_packet(&category, "Synthetic", &stores, &[], &[]).unwrap();
+        assert!(packet.category.contains(&controls));
+        let report = render_market_packet_json(&packet);
+        assert!(!report.chars().any(|character| character < '\u{20}'));
+    }
 
     const SAMPLE: &str = "\
 brand,store_id,city,state,latitude,longitude

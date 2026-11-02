@@ -31,3 +31,8 @@ Home Depot and Lowe's national acquisition is governed by
 Use "inferred catchment," "public footprint," "dominance," "contested market,"
 or "white space" for TURF outputs. Use "official region" only when a chain
 publishes the boundary or district assignment.
+
+Missing source rows are source conditions, not service absence findings. Reports
+must preserve observed, checked-absent, source-gated, retry-gated,
+source-limited, and depth-candidate states until alternate-source review closes
+the specific absence question.

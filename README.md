@@ -2,6 +2,18 @@
 
 Public retail territory intelligence.
 
+## Browser workbench
+
+The [submitted-footprint workbench](https://giodl73-repo.github.io/TURF/market/)
+runs the original Rust market-packet model in WebAssembly over your three local
+CSV inputs. Start with a wholly authored synthetic example; inspect native count,
+place-context and nearest-store results, and download exact native JSON/Markdown.
+The [build and source-scope guide](browser/market/BUILD.md) distinguishes the
+software download from the full research/data repository. Publication and live
+qualification are tracked in the [WASM wave](context/waves/2026-11-02-market-wasm/WAVE.md).
+Submitted counts and great-circle catchments do not establish actual market
+share, service absence, customer behavior or official corporate territories.
+
 TURF is a Rust CLI and library for turning public point-of-interest, Census,
 road, and demographic layers into auditable retail footprint evidence. The
 first wedge is simple: compare major chains in a market, infer catchments and
@@ -714,6 +726,9 @@ be used for manual validation only when their terms allow it. The repo should
 not scrape private APIs or imply it has access to unpublished corporate region
 boundaries. The Home Depot / Lowe's acquisition gate is documented in
 `docs\research\home-improvement-source-policy.md`.
+
+PITFALL doctrine for public-footprint, source-gate, geography-join, scale, and
+RET interpretation failures is indexed at [`.pitfall/PITFALL.md`](.pitfall/PITFALL.md).
 
 ## Non-goals
 

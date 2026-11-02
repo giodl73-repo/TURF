@@ -5,6 +5,7 @@ Work is organized into small waves and pulses.
 ## Active wave
 
 - `2026-08-10-retail-footprint-foundation`
+- `2026-11-02-market-wasm` — bounded own-input Rust/browser delivery; no raw-data expansion
 
 ## Protocol
 
