@@ -82,6 +82,16 @@ jobs:
             browser/market/.cache
           include-hidden-files: true
           if-no-files-found: error
+      - name: Retain failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: turf-market-workbench-failure
+          path: |
+            browser/market/test-results
+            browser/market/.cache
+          include-hidden-files: true
+          if-no-files-found: warn
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
