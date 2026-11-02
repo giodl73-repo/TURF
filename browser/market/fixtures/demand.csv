@@ -1,0 +1,2 @@
+demand_id,label,place_id,latitude,longitude,weight
+demo,Authored test point,synthetic,0,0,1
