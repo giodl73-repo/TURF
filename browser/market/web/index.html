@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TURF • submitted footprint workbench</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><p class="eyebrow">TURF / RUST + WEBASSEMBLY</p><h1>Inspect your submitted footprint.</h1>
+<p>Open your store, place-context and demand CSVs. TURF calculates its native count summary and nearest-store assignments locally in your browser.</p>
+<p class="boundary">Rows describe your submitted inputs, with unverified source, vintage and coverage. Counts are not actual market share. Missing rows do not establish service absence. Great-circle distance is not road travel, customer behavior or official company territory.</p></header>
+<nav aria-label="Source and artifacts"><a href="https://github.com/giodl73-repo/TURF">Repository</a><a href="https://github.com/giodl73-repo/TURF/tree/main/turf-core/src">Native Rust source</a><a href="source.zip" download>Rust and browser software ZIP</a><a href="source-scope.json">Included and omitted source paths</a><a href="pkg/turf_market_workbench_bg.wasm" download>Compiled WASM</a><a href="BUILD.md">Build instructions</a><a href="provenance.json">Build provenance</a><a href="licenses/">Licenses and notices</a><a href="https://github.com/giodl73-repo/TURF/blob/main/docs/data-policy.md">Data policy</a></nav>
+<section aria-labelledby="inputs-title"><h2 id="inputs-title">1. Your inputs</h2>
+<p>Native CSV uses exact headers, comma splitting and trimmed fields. Quoted commas and multiline quoted fields are unsupported. Opened BOM/CRLF bytes stay available; use an explicit LF copy if needed.</p>
+<div class="toolbar"><button id="example">Load synthetic example</button><button id="restart">Restart Rust engine</button><button id="request">Download current request</button></div>
+<p id="file-status" role="status">No files opened. The example is entirely hand-authored and fictional.</p>
+<div class="labels"><label>Category<input id="category" value="Fictional shops"></label><label>Geography<input id="geography" value="Synthetic only"></label></div>
+<div id="editors"></div>
+<details><summary>Workbench limits</summary><p>128 KiB UTF-8 per CSV; 256 store, 128 place-context, 512 demand rows; 1024 bytes per raw CSV field; 256 bytes per category and geography. Finite earth coordinates, finite nonnegative weights and finite sum. The workbench rejects whole operations with no truncation. Native CLI numeric admission is broader. Memory is capped at 64 MiB; read/startup/compute deadlines are 5/12/10 seconds.</p></details>
+<div class="toolbar"><button id="inspect" disabled>Calculate with Rust</button><span id="status" role="status">Starting Rust engine…</span></div></section>
+<section aria-labelledby="results-title"><h2 id="results-title">2. Native market packet</h2><div class="toolbar"><button id="json" disabled>Download native JSON</button><button id="markdown" disabled>Download native Markdown</button><button id="report-download" disabled>Download local working report</button></div>
+<p>Reports contain caller identities and source/model cautions. They are local working files, not verified-source or approval receipts.</p><div id="summary"><p>No report yet.</p></div><details><summary>Full working report</summary><pre id="report">No report yet.</pre></details></section>
+<footer><p>Native “dominant” means over half of submitted city rows; ties remain “contested.” This task establishes no national pattern, service adequacy or corporate territory. No data source is fetched or input uploaded.</p></footer>
+</main><script type="module" src="app.js"></script></body></html>

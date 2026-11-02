@@ -33,8 +33,10 @@ for command in [
 site = ROOT/'target/turf-prototype/TURF/market'
 site.mkdir(parents=True, exist_ok=True)
 subprocess.run([args.bindgen, '--target', 'web', '--remove-name-section', '--out-dir', str(site/'pkg'), '--out-name', 'turf_market_workbench', str(target/'wasm32-unknown-unknown/release/turf_market_workbench.wasm')], check=True)
-# Prototype landing is replaced by the full authoring UI in the next pulse.
-(site/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>TURF private qualification candidate</title><p>Private adapter qualification; no Pages release.</p>\n', encoding='utf-8')
+for name in ['index.html', 'style.css', 'app.js', 'worker.js']:
+    shutil.copyfile(P/'web'/name, site/name)
+for name in ['stores.csv', 'places.csv', 'demand.csv']:
+    shutil.copyfile(P/'fixtures'/name, site/name)
 cache = P/'.cache'
 cache.mkdir(exist_ok=True)
 suffix = '.exe' if os.name == 'nt' else ''

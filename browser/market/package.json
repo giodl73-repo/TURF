@@ -1,6 +1,6 @@
 {
   "private": true,
   "type": "module",
-  "scripts": { "test:parity": "playwright test" },
+  "scripts": { "test:parity": "playwright test parity.spec.js", "test:pages": "playwright test" },
   "devDependencies": { "@playwright/test": "1.61.1" }
 }
